@@ -1,12 +1,5 @@
 {
   "dependencies": {
-    "com.coffee.internal-accessible-compiler": {
-      "version": "https://github.com/mob-sakai/InternalAccessibleCompilerForUnity.git",
-      "depth": 0,
-      "source": "git",
-      "dependencies": {},
-      "hash": "d74027f38b3173cf861927d8d82acc1d00de0e93"
-    },
     "com.cysharp.r3": {
       "version": "https://github.com/Cysharp/R3.git?path=src/R3.Unity/Assets/R3.Unity",
       "depth": 0,
