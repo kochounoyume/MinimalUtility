@@ -1,0 +1,2 @@
+# MinimalUtility
+Minimal utility library.
