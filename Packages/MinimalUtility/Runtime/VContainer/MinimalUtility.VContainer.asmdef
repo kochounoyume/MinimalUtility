@@ -1,0 +1,22 @@
+{
+    "name": "MinimalUtility.VContainer",
+    "rootNamespace": "MinimalUtility.VContainer",
+    "references": [
+        "GUID:b0214a6008ed146ff8f122a6a9c2f6cc"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": true,
+    "precompiledReferences": [],
+    "autoReferenced": false,
+    "defineConstraints": [],
+    "versionDefines": [
+        {
+            "name": "jp.hadashikick.vcontainer",
+            "expression": "",
+            "define": "ENABLE_VCONTAINER"
+        }
+    ],
+    "noEngineReferences": false
+}

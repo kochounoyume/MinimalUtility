@@ -8,7 +8,7 @@ namespace MinimalUtility.VContainer
     public class LifetimeScpeBase : LifetimeScope
     {
         [SerializeField, Tooltip("Bind も Inject もする")]
-        Component[] autoBindComponents = null;
+        private Component[] autoBindComponents = null;
 
         protected override void Configure(IContainerBuilder builder)
         {
