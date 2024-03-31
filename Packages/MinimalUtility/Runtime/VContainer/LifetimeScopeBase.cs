@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace MinimalUtility.VContainer
 {
-    public class LifetimeScpeBase : LifetimeScope
+    public class LifetimeScopeBase : LifetimeScope
     {
         [SerializeField, Tooltip("Bind も Inject もする")]
         private Component[] autoBindComponents = null;
