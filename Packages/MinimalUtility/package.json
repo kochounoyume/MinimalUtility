@@ -1,0 +1,12 @@
+{
+  "name": "jp.kochounoyume.minimal.utility",
+  "displayName": "MinimalUtility",
+  "version": "1.0.0",
+  "unity": "2022.3",
+  "keyword": [
+    "Debug",
+    "Log"
+  ],
+  "author": "kochounoyume",
+  "description": "Minimal utility library."
+}
