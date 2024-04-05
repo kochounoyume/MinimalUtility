@@ -11,7 +11,8 @@
     "allowUnsafeCode": false,
     "overrideReferences": true,
     "precompiledReferences": [
-        "R3.dll"
+        "R3.dll",
+        "Microsoft.Bcl.TimeProvider.dll"
     ],
     "autoReferenced": true,
     "defineConstraints": [],
