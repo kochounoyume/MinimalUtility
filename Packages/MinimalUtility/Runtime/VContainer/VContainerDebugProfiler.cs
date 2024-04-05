@@ -8,7 +8,7 @@ namespace MinimalUtility.VContainer
     /// </summary>
     public sealed class VContainerDebugProfiler : R3.DebugProfiler, IStartable
     {
-        public VContainerDebugProfiler(MemoryUnit memoryUnit) : base(memoryUnit)
+        public VContainerDebugProfiler() : base(MemoryUnit.GB)
         {
         }
     }
