@@ -5,7 +5,7 @@
         <!-- https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/DOCUMENTATION.md -->
         <!-- Default設定は全部のアセンブリに対して適用されてしまうため、一旦全部無効化 -->
         <!-- Special Rules (SA0000-) -->
-        <Rule Id="SA0001" Action="Error" />
+        <Rule Id="SA0001" Action="Hidden" />
         <Rule Id="SA0002" Action="Error" />
         <!-- Spacing Rules (SA1000-) -->
         <Rule Id="SA1000" Action="Error" />
@@ -16,8 +16,8 @@
         <Rule Id="SA1005" Action="Error" />
         <Rule Id="SA1006" Action="Error" />
         <Rule Id="SA1007" Action="Error" />
-        <Rule Id="SA1008" Action="Error" />
-        <Rule Id="SA1009" Action="Error" />
+        <Rule Id="SA1008" Action="None" />
+        <Rule Id="SA1009" Action="None" />
         <Rule Id="SA1010" Action="Error" />
         <Rule Id="SA1011" Action="Error" />
         <Rule Id="SA1012" Action="Error" />
@@ -39,7 +39,7 @@
         <Rule Id="SA1028" Action="Error" />
         <!-- Readability Rules (SA1100-) -->
         <Rule Id="SA1100" Action="Error" />
-        <Rule Id="SA1101" Action="Error" />
+        <Rule Id="SA1101" Action="None" />
         <Rule Id="SA1102" Action="Error" />
         <Rule Id="SA1103" Action="Error" />
         <Rule Id="SA1104" Action="Error" />
@@ -54,18 +54,18 @@
         <Rule Id="SA1113" Action="Error" />
         <Rule Id="SA1114" Action="Error" />
         <Rule Id="SA1115" Action="Error" />
-        <Rule Id="SA1116" Action="Error" />
+        <Rule Id="SA1116" Action="None" />
         <Rule Id="SA1117" Action="Error" />
         <Rule Id="SA1118" Action="Error" />
         <Rule Id="SA1120" Action="Error" />
         <Rule Id="SA1121" Action="Error" />
-        <Rule Id="SA1122" Action="Error" />
+        <Rule Id="SA1122" Action="None" />
         <Rule Id="SA1123" Action="Error" />
         <Rule Id="SA1124" Action="Error" />
         <Rule Id="SA1125" Action="Error" />
         <Rule Id="SA1126" Action="Error" />
-        <Rule Id="SA1127" Action="Error" />
-        <Rule Id="SA1128" Action="Error" />
+        <Rule Id="SA1127" Action="None" />
+        <Rule Id="SA1128" Action="None" />
         <Rule Id="SA1129" Action="Error" />
         <Rule Id="SA1130" Action="Error" />
         <Rule Id="SA1131" Action="Error" />
@@ -81,7 +81,7 @@
         <Rule Id="SA1141" Action="Error" />
         <Rule Id="SA1142" Action="Error" />
         <!-- Ordering Rules (SA1200-) -->
-        <Rule Id="SA1200" Action="Error" />
+        <Rule Id="SA1200" Action="None" />
         <Rule Id="SA1201" Action="Error" />
         <Rule Id="SA1202" Action="Error" />
         <Rule Id="SA1203" Action="Error" />
@@ -105,7 +105,7 @@
         <Rule Id="SA1302" Action="Error" />
         <Rule Id="SA1303" Action="Error" />
         <Rule Id="SA1304" Action="Error" />
-        <Rule Id="SA1305" Action="Error" />
+        <Rule Id="SA1305" Action="None" />
         <Rule Id="SA1306" Action="Error" />
         <Rule Id="SA1307" Action="Error" />
         <Rule Id="SA1308" Action="Error" />
@@ -131,14 +131,14 @@
         <Rule Id="SA1409" Action="Error" />
         <Rule Id="SA1410" Action="Error" />
         <Rule Id="SA1411" Action="Error" />
-        <Rule Id="SA1412" Action="Error" />
-        <Rule Id="SA1413" Action="Error" />
+        <Rule Id="SA1412" Action="None" />
+        <Rule Id="SA1413" Action="None" />
         <Rule Id="SA1414" Action="Error" />
         <!-- Layout Rules (SA1500-) -->
         <Rule Id="SA1500" Action="Error" />
-        <Rule Id="SA1501" Action="Error" />
+        <Rule Id="SA1501" Action="None" />
         <Rule Id="SA1502" Action="Error" />
-        <Rule Id="SA1503" Action="Error" />
+        <Rule Id="SA1503" Action="None" />
         <Rule Id="SA1504" Action="Error" />
         <Rule Id="SA1505" Action="Error" />
         <Rule Id="SA1506" Action="Error" />
@@ -148,9 +148,9 @@
         <Rule Id="SA1510" Action="Error" />
         <Rule Id="SA1511" Action="Error" />
         <Rule Id="SA1512" Action="Error" />
-        <Rule Id="SA1513" Action="Error" />
+        <Rule Id="SA1513" Action="None" />
         <Rule Id="SA1514" Action="Error" />
-        <Rule Id="SA1515" Action="Error" />
+        <Rule Id="SA1515" Action="None" />
         <Rule Id="SA1516" Action="Error" />
         <Rule Id="SA1517" Action="Error" />
         <Rule Id="SA1518" Action="Error" />
@@ -166,7 +166,7 @@
         <Rule Id="SA1606" Action="Error" />
         <Rule Id="SA1607" Action="Error" />
         <Rule Id="SA1608" Action="Error" />
-        <Rule Id="SA1609" Action="Error" />
+        <Rule Id="SA1609" Action="None" />
         <Rule Id="SA1610" Action="Error" />
         <Rule Id="SA1611" Action="Error" />
         <Rule Id="SA1612" Action="Error" />
@@ -180,7 +180,7 @@
         <Rule Id="SA1620" Action="Error" />
         <Rule Id="SA1621" Action="Error" />
         <Rule Id="SA1622" Action="Error" />
-        <Rule Id="SA1623" Action="Error" />
+        <Rule Id="SA1623" Action="None" />
         <Rule Id="SA1624" Action="Error" />
         <Rule Id="SA1625" Action="Error" />
         <Rule Id="SA1626" Action="Error" />
@@ -190,7 +190,7 @@
         <Rule Id="SA1630" Action="Error" />
         <Rule Id="SA1631" Action="Error" />
         <Rule Id="SA1632" Action="Error" />
-        <Rule Id="SA1633" Action="Error" />
+        <Rule Id="SA1633" Action="None" />
         <Rule Id="SA1634" Action="Error" />
         <Rule Id="SA1635" Action="Error" />
         <Rule Id="SA1636" Action="Error" />
