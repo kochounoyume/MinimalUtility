@@ -3,8 +3,18 @@ using R3;
 
 namespace MinimalUtility.R3
 {
+    /// <content>
+    /// Observableの拡張メソッド.
+    /// </content>
     public static partial class ObservableExtensions
     {
+        /// <summary>
+        /// Observable上で起きたすべてのイベントをログに出力する.
+        /// </summary>
+        /// <param name="source">任意のObservable.</param>
+        /// <param name="label">ログに出力するラベル.</param>
+        /// <typeparam name="T">Observableの型.</typeparam>
+        /// <returns>ログ出力を行うObservable.</returns>
         public static Observable<T> Debug<T>(this Observable<T> source, string label = null)
         {
 #if UNITY_EDITOR || DEVELOPMENT_BUILD

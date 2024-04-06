@@ -1,14 +1,15 @@
-﻿using UnityEngine.UI;
-using UnityEngine.EventSystems;
+﻿using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 namespace MinimalUtility
 {
     /// <summary>
-    /// カスタムボタンのベース実装
+    /// カスタムボタンのベース実装.
     /// </summary>
     [UnityEngine.RequireComponent(typeof(Graphic))]
     public abstract class CustomButtonBase : Selectable, IPointerClickHandler
     {
+        /// <inheritdoc/>
         void IPointerClickHandler.OnPointerClick(PointerEventData eventData)
         {
             // 左クリック以外は無視
@@ -21,9 +22,9 @@ namespace MinimalUtility
         }
 
         /// <summary>
-        /// クリックを検出して実行するコールバックです
+        /// クリックを検出して実行するコールバックです.
         /// </summary>
-        /// <param name="eventData">タッチイベントの関連情報</param>
+        /// <param name="eventData">タッチイベントの関連情報.</param>
         protected abstract void OnPointerClick(ref PointerEventData eventData);
     }
 }

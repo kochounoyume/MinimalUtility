@@ -8,7 +8,7 @@ using Screen = UnityEngine.Screen;
 namespace MinimalUtility
 {
     /// <summary>
-    /// セーフエリア調整スクリプト
+    /// セーフエリア調整スクリプト.
     /// </summary>
     internal class SafeAreaAdjuster : MonoBehaviour
     {

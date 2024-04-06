@@ -3,6 +3,34 @@ using System.Collections.Generic;
 
 namespace MinimalUtility
 {
+    #pragma warning disable SA1402 // FileMayOnlyContainASingleType
+    /// <content>
+    /// <see cref="Dictionary{TKey,TValue}"/>の拡張メソッド.
+    /// </content>
+    public static partial class DictionaryExtensions
+    {
+        /// <summary>
+        /// <see cref="Dictionary{TKey,TValue}"/>を<see cref="ApproximatelyCollection{TValue}"/>に変換します.
+        /// </summary>
+        /// <param name="dictionary">変換元の<see cref="Dictionary{TKey,TValue}"/>.</param>
+        /// <param name="buffer">近似値を算出する値の範囲.</param>
+        /// <typeparam name="TValue">値の型.</typeparam>
+        /// <returns>変換後の<see cref="ApproximatelyCollection{TValue}"/>.</returns>
+        public static ApproximatelyCollection<TValue> ToProximityCollection<TValue>(this Dictionary<float, TValue> dictionary, in int buffer = 3)
+        {
+            var result = new ApproximatelyCollection<TValue>(dictionary.Count, buffer);
+            foreach (var pair in dictionary)
+            {
+                result.Add(pair);
+            }
+            return result;
+        }
+    }
+
+    /// <summary>
+    /// 近似値を算出するためのコレクション.
+    /// </summary>
+    /// <typeparam name="TValue">値の型.</typeparam>
     public sealed class ApproximatelyCollection<TValue> :
         IEnumerable<KeyValuePair<float, TValue>>,
         IReadOnlyCollection<KeyValuePair<float, TValue>>,
@@ -19,32 +47,41 @@ namespace MinimalUtility
 
         private readonly int capacity;
 
-        public int Count { get; private set; }
-
-        public float Reach { get; set; }
-
         /// <summary>
-        /// コレクションの要素数を指定して初期化する
+        /// Initializes a new instance of the <see cref="ApproximatelyCollection{TValue}"/> class.
         /// </summary>
-        /// <param name="capacity">コレクションの要素制限（後で変更する気はない）</param>
-        /// <param name="reach">近似値を算出する歳の範囲</param>
+        /// <param name="capacity">コレクションの要素制限（後で変更する気はない）.</param>
+        /// <param name="reach">近似値を算出する値の範囲.</param>
         public ApproximatelyCollection(in int capacity, in float reach) : this(capacity)
         {
             this.Reach = reach;
         }
 
         /// <summary>
-        /// コレクションの要素数を指定して初期化する
+        /// Initializes a new instance of the <see cref="ApproximatelyCollection{TValue}"/> class.
         /// </summary>
-        /// <param name="capacity">コレクションの要素制限（後で変更する気はない）</param>
+        /// <param name="capacity">コレクションの要素制限（後で変更する気はない）.</param>
         public ApproximatelyCollection(in int capacity)
         {
             this.pairs = new KeyValuePair<float, TValue>[capacity];
             this.capacity = capacity;
         }
 
+        /// <inheritdoc/>
+        public int Count { get; private set; }
+
+        /// <summary>
+        /// 近似値を算出する値の範囲.
+        /// </summary>
+        public float Reach { get; set; }
+
+        /// <inheritdoc/>
         public KeyValuePair<float, TValue> this[int index] => pairs[index];
 
+        /// <summary>
+        /// インデクサ.
+        /// </summary>
+        /// <param name="key">キー.</param>
         public TValue[] this[float key]
         {
             get
@@ -85,10 +122,28 @@ namespace MinimalUtility
             }
         }
 
+        public static explicit operator Dictionary<float, TValue>(ApproximatelyCollection<TValue> collection) => collection.ToDictionary();
+
+        public static explicit operator ReadOnlySpan<KeyValuePair<float, TValue>>(ApproximatelyCollection<TValue> collection) => collection.AsReadOnlySpan();
+
+        /// <summary>
+        /// 要素を追加します.
+        /// </summary>
+        /// <param name="key">実際に近似値を算出するために使用される値.</param>
+        /// <param name="value">追加する値.</param>
         public void Add(in float key, TValue value) => Add(key, ref value);
 
+        /// <summary>
+        /// 要素を追加します.
+        /// </summary>
+        /// <param name="key">実際に近似値を算出するために使用される値.</param>
+        /// <param name="value">追加する値.</param>
         public void Add(in float key, ref TValue value) => Add(new KeyValuePair<float, TValue>(key, value));
 
+        /// <summary>
+        /// 要素を追加します.
+        /// </summary>
+        /// <param name="pair">追加する要素.</param>
         public void Add(in KeyValuePair<float, TValue> pair)
         {
             if (Count == capacity)
@@ -121,6 +176,7 @@ namespace MinimalUtility
             pairsSpan[index] = pair;
         }
 
+        /// <inheritdoc/>
         public IEnumerator<KeyValuePair<float, TValue>> GetEnumerator()
         {
             foreach (var pair in pairs.AsSpan()[..Count].ToArray())
@@ -129,11 +185,16 @@ namespace MinimalUtility
             }
         }
 
+        /// <inheritdoc/>
         System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator()
         {
             return GetEnumerator();
         }
 
+        /// <summary>
+        /// <see cref="Dictionary{TKey,TValue}"/>に変換します.
+        /// </summary>
+        /// <returns>変換後の<see cref="Dictionary{TKey,TValue}"/>.</returns>
         public Dictionary<float, TValue> ToDictionary()
         {
             var result = new Dictionary<float, TValue>(Count);
@@ -145,23 +206,10 @@ namespace MinimalUtility
             return result;
         }
 
+        /// <summary>
+        /// <see cref="ReadOnlySpan{T}"/>に変換します.
+        /// </summary>
+        /// <returns>変換後の<see cref="ReadOnlySpan{T}"/>.</returns>
         public ReadOnlySpan<KeyValuePair<float, TValue>> AsReadOnlySpan() => new ReadOnlySpan<KeyValuePair<float, TValue>>(pairs)[..Count];
-
-        public static explicit operator Dictionary<float, TValue>(ApproximatelyCollection<TValue> collection) => collection.ToDictionary();
-
-        public static explicit operator ReadOnlySpan<KeyValuePair<float, TValue>>(ApproximatelyCollection<TValue> collection) => collection.AsReadOnlySpan();
-    }
-
-    public static partial class DictionaryExtensions
-    {
-        public static ApproximatelyCollection<TValue> ToProximityCollection<TValue>(this Dictionary<float, TValue> dictionary, in int buffer = 3)
-        {
-            var result = new ApproximatelyCollection<TValue>(dictionary.Count, buffer);
-            foreach (var pair in dictionary)
-            {
-                result.Add(pair);
-            }
-            return result;
-        }
     }
 }

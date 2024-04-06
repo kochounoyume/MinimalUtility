@@ -6,31 +6,18 @@ using UnityEngine;
 namespace MinimalUtility.Editor
 {
     /// <summary>
-    /// デフォルトのインスペクタービュー
+    /// デフォルトのインスペクタービュー.
     /// </summary>
-    [CanEditMultipleObjects, CustomEditor(typeof(UnityEngine.Object), true)]
+    [CanEditMultipleObjects]
+    [CustomEditor(typeof(UnityEngine.Object), true)]
     internal class DefaultInspector : UnityEditor.Editor
     {
         /// <summary>
-        /// メソッド情報と属性情報のタプル配列
+        /// メソッド情報と属性情報のタプル配列.
         /// </summary>
         private (MethodInfo methodInfo, ButtonAttribute attr)[] methodAttrInfos = Array.Empty<(MethodInfo, ButtonAttribute)>();
 
-        private void OnEnable()
-        {
-            // target内のメソッドを全検索してButton属性を持つものを抽出保存
-            foreach (MethodInfo methodInfo in target.GetType().GetMethods(
-                         BindingFlags.Instance | BindingFlags.Static | BindingFlags.Public | BindingFlags.NonPublic))
-            {
-                foreach (var attr in methodInfo.GetCustomAttributes<ButtonAttribute>())
-                {
-                    if(attr == null) continue;
-                    attr.ButtonName = methodInfo.Name;
-                    ArrayUtility.Add(ref methodAttrInfos, (methodInfo, attr));
-                }
-            }
-        }
-
+        /// <inheritdoc/>
         public override void OnInspectorGUI()
         {
             DrawDefaultInspector();
@@ -40,7 +27,7 @@ namespace MinimalUtility.Editor
                 {
                     try
                     {
-                        methodAttrInfo.methodInfo.Invoke(target, methodAttrInfo.attr.parameters);
+                        methodAttrInfo.methodInfo.Invoke(target, methodAttrInfo.attr.Parameters);
                     }
                     catch (TargetParameterCountException)
                     {
@@ -54,6 +41,21 @@ namespace MinimalUtility.Editor
                     {
                         Debug.LogException(e);
                     }
+                }
+            }
+        }
+
+        private void OnEnable()
+        {
+            // target内のメソッドを全検索してButton属性を持つものを抽出保存
+            foreach (MethodInfo methodInfo in target.GetType().GetMethods(
+                         BindingFlags.Instance | BindingFlags.Static | BindingFlags.Public | BindingFlags.NonPublic))
+            {
+                foreach (var attr in methodInfo.GetCustomAttributes<ButtonAttribute>())
+                {
+                    if (attr == null) continue;
+                    attr.ButtonName = methodInfo.Name;
+                    ArrayUtility.Add(ref methodAttrInfos, (methodInfo, attr));
                 }
             }
         }

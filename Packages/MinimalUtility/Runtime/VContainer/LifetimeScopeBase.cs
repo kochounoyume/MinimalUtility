@@ -1,15 +1,20 @@
 #if ENABLE_VCONTAINER
+using UnityEngine;
 using VContainer;
 using VContainer.Unity;
-using UnityEngine;
 
 namespace MinimalUtility.VContainer
 {
+    /// <summary>
+    /// <see cref="LifetimeScope"/>の共通基底クラス.
+    /// </summary>
     public class LifetimeScopeBase : LifetimeScope
     {
-        [SerializeField, Tooltip("Bind も Inject もする")]
+        [SerializeField]
+        [Tooltip("Bind も Inject もする")]
         private Component[] autoBindComponents = null;
 
+        /// <inheritdoc/>
         protected override void Configure(IContainerBuilder builder)
         {
             foreach (Component component in autoBindComponents)
