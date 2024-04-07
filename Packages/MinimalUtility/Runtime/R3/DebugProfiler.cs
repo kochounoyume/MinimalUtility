@@ -15,24 +15,6 @@ using Screen = UnityEngine.Screen;
 namespace MinimalUtility.R3
 {
     /// <summary>
-    /// 総メモリ使用量表示の単位指定列挙体.
-    /// </summary>
-    public enum MemoryUnit : int
-    {
-        /// <summary>バイト</summary>
-        B = 0,
-
-        /// <summary>キロバイト</summary>
-        KB = 1,
-
-        /// <summary>メガバイト</summary>
-        MB = 2,
-
-        /// <summary>ギガバイト</summary>
-        GB = 3
-    }
-
-    /// <summary>
     /// FPSなどのプロファイル情報を画面に表示するためのクラス.
     /// <remarks>
     /// <see cref="Time.realtimeSinceStartup"/> の公式リファレンスサンプルコードを参照
@@ -41,9 +23,36 @@ namespace MinimalUtility.R3
     public class DebugProfiler : IDisposable
     {
         /// <summary>
+        /// 総メモリ使用量表示の単位指定列挙体.
+        /// </summary>
+        public enum MemoryUnit : int
+        {
+            /// <summary>バイト</summary>
+            B = 0,
+
+            /// <summary>キロバイト</summary>
+            KB = 1,
+
+            /// <summary>メガバイト</summary>
+            MB = 2,
+
+            /// <summary>ギガバイト</summary>
+            GB = 3
+        }
+
+        private readonly struct MemoryUnitEqualityComparer : IEqualityComparer<MemoryUnit>
+        {
+            bool IEqualityComparer<MemoryUnit>.Equals(MemoryUnit x, MemoryUnit y) => (int)x == (int)y;
+
+            int IEqualityComparer<MemoryUnit>.GetHashCode(MemoryUnit obj) => ((int)obj).GetHashCode();
+        }
+
+        /// <summary>
         /// プロファイル情報を更新する間隔.
         /// </summary>
+#pragma warning disable SA1201
         private const float UpdateIntervalSecs = 0.5f;
+#pragma warning restore SA1201
 
         /// <summary>
         /// プロファイル情報を表示する際の表示領域(セーフエリアを考慮).
@@ -174,13 +183,6 @@ namespace MinimalUtility.R3
             // 破壊されないように
             Object.DontDestroyOnLoad(instanceObj);
             return instanceObj;
-        }
-
-        private readonly struct MemoryUnitEqualityComparer : IEqualityComparer<MemoryUnit>
-        {
-            bool IEqualityComparer<MemoryUnit>.Equals(MemoryUnit x, MemoryUnit y) => (int)x == (int)y;
-
-            int IEqualityComparer<MemoryUnit>.GetHashCode(MemoryUnit obj) => ((int)obj).GetHashCode();
         }
     }
 }
