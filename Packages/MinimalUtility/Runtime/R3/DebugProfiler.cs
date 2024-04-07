@@ -15,6 +15,24 @@ using Screen = UnityEngine.Screen;
 namespace MinimalUtility.R3
 {
     /// <summary>
+    /// 総メモリ使用量表示の単位指定列挙体.
+    /// </summary>
+    public enum MemoryUnit : int
+    {
+        /// <summary>バイト</summary>
+        B = 0,
+
+        /// <summary>キロバイト</summary>
+        KB = 1,
+
+        /// <summary>メガバイト</summary>
+        MB = 2,
+
+        /// <summary>ギガバイト</summary>
+        GB = 3
+    }
+
+    /// <summary>
     /// FPSなどのプロファイル情報を画面に表示するためのクラス.
     /// <remarks>
     /// <see cref="Time.realtimeSinceStartup"/> の公式リファレンスサンプルコードを参照
@@ -76,24 +94,6 @@ namespace MinimalUtility.R3
 
             // セーフエリアを考慮した表示領域を取得
             this.debugField = new Rect(Screen.safeArea.position, new Vector2(500, 80));
-        }
-
-        /// <summary>
-        /// 総メモリ使用量表示の単位指定列挙体.
-        /// </summary>
-        public enum MemoryUnit : int
-        {
-            /// <summary>バイト</summary>
-            B = 0,
-
-            /// <summary>キロバイト</summary>
-            KB = 1,
-
-            /// <summary>メガバイト</summary>
-            MB = 2,
-
-            /// <summary>ギガバイト</summary>
-            GB = 3
         }
 
         /// <summary>
