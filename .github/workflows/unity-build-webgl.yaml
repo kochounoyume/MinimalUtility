@@ -17,6 +17,8 @@ jobs:
       # リポジトリのチェックアウト
       - name: Check out my unity project.
         uses: actions/checkout@v4.1.1
+        with:
+          token: ${{secrets.GITHUB_TOKEN}}
       - name: Create LFS file list
         run: git lfs ls-files -l | cut -d' ' -f1 | sort > .lfs-assets-id
 
