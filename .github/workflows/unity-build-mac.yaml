@@ -1,6 +1,5 @@
 name: Run the MacOS Build
 on:
-  workflow_dispatch: {}
   # mainブランチにpushがあるたびに自動で実行される
   push:
     branches:
@@ -9,6 +8,8 @@ on:
     - Assets/*
     - Packages/*
     - ProjectSettings/*
+  workflow_dispatch: {}
+
 jobs:
   build:
     name: Run the MacOS Build
