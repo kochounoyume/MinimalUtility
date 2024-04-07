@@ -1,5 +1,4 @@
 name: Meta File Check (github-hosted ubuntu-latest)
-
 on:
   push:
     branches:
