@@ -13,11 +13,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout This Repository
-        uses: actions/checkout@v4.1.1
+        uses: actions/checkout@v2
         with:
           submodules: false
           lfs: true
-          token: ${{secrets.GITHUB_TOKEN}}
 
       - name: Unity meta files check (github-hosted ubuntu-latest)
         uses: DeNA/unity-meta-check@v3.2.2
