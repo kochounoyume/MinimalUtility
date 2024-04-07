@@ -1,4 +1,4 @@
-name: Run the Unity Build
+name: Run the Windows Build
 on:
   workflow_dispatch: {}
   # mainブランチにpushがあるたびに自動で実行される
@@ -11,7 +11,7 @@ on:
     - ProjectSettings/*
 jobs:
   build:
-    name: Run the Unity build
+    name: Run the Windows Build
     runs-on: ubuntu-latest
     steps:
       # リポジトリのチェックアウト
@@ -50,16 +50,6 @@ jobs:
 
       # Unityプロジェクトのビルド
       # 設定しない場合、buildフォルダに出力される
-      - name: Run the MacOS build
-        uses: game-ci/unity-builder@v4.2.3
-        env:
-          UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
-          UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
-          UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
-        with:
-          targetPlatform: StandaloneOSX
-          unityVersion: 2022.3.22f1
-
       - name: Run the WindowsOS build
         uses: game-ci/unity-builder@v4.2.3
         env:
@@ -68,44 +58,4 @@ jobs:
           UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
         with:
           targetPlatform: StandaloneWindows
-          unityVersion: 2022.3.22f1
-
-      - name: Run the iOS build
-        uses: game-ci/unity-builder@v4.2.3
-        env:
-          UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
-          UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
-          UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
-        with:
-          targetPlatform: iOS
-          unityVersion: 2022.3.22f1
-
-      - name: Run the Android build
-        uses: game-ci/unity-builder@v4.2.3
-        env:
-          UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
-          UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
-          UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
-        with:
-          targetPlatform: Android
-          unityVersion: 2022.3.22f1
-
-      - name: Run the Windows64OS build
-        uses: game-ci/unity-builder@v4.2.3
-        env:
-          UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
-          UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
-          UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
-        with:
-          targetPlatform: StandaloneWindows64
-          unityVersion: 2022.3.22f1
-
-      - name: Run the WebGL build
-        uses: game-ci/unity-builder@v4.2.3
-        env:
-          UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
-          UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
-          UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
-        with:
-          targetPlatform: WebGL
           unityVersion: 2022.3.22f1
