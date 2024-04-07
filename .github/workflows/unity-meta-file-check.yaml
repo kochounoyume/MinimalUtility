@@ -17,5 +17,5 @@ jobs:
           submodules: false
           lfs: true
 
-      - name: Meta File Check (github-hosted ubuntu-latest)
-        uses: DeNA/unity-meta-check@v3
+      - name: Unity meta files check (github-hosted ubuntu-latest)
+        uses: DeNA/unity-meta-check@v3.2.2
