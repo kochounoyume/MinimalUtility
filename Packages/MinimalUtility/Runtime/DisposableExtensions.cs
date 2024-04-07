@@ -15,7 +15,7 @@ namespace MinimalUtility
         /// <param name="disposableContainer">追加先の<see cref="IDisposable"/>コンテナ.</param>
         /// <returns>追加した<see cref="IDisposable"/>.</returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static ref IDisposable AddTo(this IDisposable disposable, ref IDisposable disposableContainer)
+        public static ref readonly IDisposable AddTo(this IDisposable disposable, ref IDisposable disposableContainer)
         {
             disposableContainer = disposable;
             return ref disposableContainer;
