@@ -5,6 +5,10 @@ on:
   push:
     branches:
     - main
+    paths:
+    - Assets/*
+    - Packages/*
+    - ProjectSettings/*
 jobs:
   build:
     name: Run the Windows build
@@ -35,7 +39,7 @@ jobs:
       - name: Set outputs
         id: vars
         run: echo "sha_short=$(git rev-parse --short HEAD)" >> $GITHUB_OUTPUT
-        
+
       # Cache
       - uses: actions/cache@v4.0.2
         with:

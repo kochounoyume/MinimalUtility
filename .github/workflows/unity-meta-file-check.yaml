@@ -6,6 +6,7 @@ on:
       - main
     paths:
       - Assets/*
+      - Packages/*
 
 jobs:
   meta-check:
