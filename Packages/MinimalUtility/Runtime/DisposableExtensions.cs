@@ -11,14 +11,13 @@ namespace MinimalUtility
         /// <summary>
         /// <see cref="IDisposable"/>を指定した<see cref="IDisposable"/>コンテナに追加します.
         /// </summary>
-        /// <param name="disposable">任意の<see cref="IDisposable"/>.</param>
+        /// <param name="disposable">任意の<see cref="IDisposable"/>実装クラスの参照.</param>
         /// <param name="disposableContainer">追加先の<see cref="IDisposable"/>コンテナ.</param>
-        /// <returns>追加した<see cref="IDisposable"/>.</returns>
+        /// <typeparam name="T">追加した<see cref="IDisposable"/>.</typeparam>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static ref readonly IDisposable AddTo(this IDisposable disposable, ref IDisposable disposableContainer)
+        public static void AddTo<T>(this T disposable, ref IDisposable disposableContainer) where T : class, IDisposable
         {
             disposableContainer = disposable;
-            return ref disposableContainer;
         }
     }
 }
