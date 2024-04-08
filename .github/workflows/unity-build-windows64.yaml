@@ -5,9 +5,9 @@ on:
     branches:
     - main
     paths:
-    - Assets/*
-    - Packages/*
-    - ProjectSettings/*
+    - Assets/**
+    - Packages/**
+    - ProjectSettings/**
   workflow_dispatch: {}
 
 jobs:

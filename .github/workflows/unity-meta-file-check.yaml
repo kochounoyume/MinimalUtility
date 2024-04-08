@@ -4,8 +4,8 @@ on:
     branches:
       - main
     paths:
-      - Assets/*
-      - Packages/*
+      - Assets/**
+      - Packages/**
   workflow_dispatch: {}
 
 jobs:
