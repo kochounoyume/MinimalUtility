@@ -7,21 +7,21 @@
       "dependencies": {
         "com.unity.modules.imgui": "1.0.0"
       },
-      "hash": "a8d433d240cecfd9356319ea1315f0e9a956ac77"
+      "hash": "0025cec067a0f6c28a40673ac7ef12ad4336e631"
     },
     "com.cysharp.unitask": {
       "version": "https://github.com/Cysharp/UniTask.git?path=src/UniTask/Assets/Plugins/UniTask",
       "depth": 0,
       "source": "git",
       "dependencies": {},
-      "hash": "d057074f177b078e29f10dd511b54df48a8806ea"
+      "hash": "88ecfa2992d4f7247aaad0322921aa3fb929aeee"
     },
     "com.github-glitchenzo.nugetforunity": {
       "version": "https://github.com/GlitchEnzo/NuGetForUnity.git?path=/src/NuGetForUnity",
       "depth": 0,
       "source": "git",
       "dependencies": {},
-      "hash": "b93741e2b5fe9073e169853ade0039c7cf2595f0"
+      "hash": "12574c32f658fa23c194357141abc3fc157ea362"
     },
     "com.unity.ext.nunit": {
       "version": "1.0.6",
@@ -73,7 +73,7 @@
       "depth": 0,
       "source": "git",
       "dependencies": {},
-      "hash": "f2afd2ac175a1e04ac59a8f69794df827b53b732"
+      "hash": "b4a55149cdd9d763a13d85fbe2ad51d6a05c5ee8"
     },
     "jp.kochounoyume.minimal.utility": {
       "version": "file:MinimalUtility",

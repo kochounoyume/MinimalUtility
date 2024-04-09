@@ -1,12 +1,14 @@
-﻿#if ENABLE_VCONTAINER
+﻿#if ENABLE_VCONTAINER && ENABLE_R3
 using VContainer.Unity;
 
 namespace MinimalUtility.VContainer
 {
+    using R3;
+
     /// <summary>
     /// <see cref="IStartable"/>のエントリーポイントを持つデバッグプロファイラー.
     /// </summary>
-    public sealed class VContainerDebugProfiler : R3.DebugProfiler, IStartable
+    public sealed class VContainerDebugProfiler : DebugProfiler, IStartable
     {
         private const MemoryUnit DefaultUnit = MemoryUnit.GB;
 

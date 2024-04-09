@@ -17,6 +17,11 @@
             "name": "jp.hadashikick.vcontainer",
             "expression": "",
             "define": "ENABLE_VCONTAINER"
+        },
+        {
+            "name": "com.cysharp.r3",
+            "expression": "",
+            "define": "ENABLE_R3"
         }
     ],
     "noEngineReferences": false

@@ -1,4 +1,5 @@
-﻿using R3;
+﻿#if ENABLE_R3
+using R3;
 using R3.Triggers;
 using UnityEngine;
 
@@ -39,3 +40,4 @@ namespace MinimalUtility.R3
         }
     }
 }
+#endif
