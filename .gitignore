@@ -36,8 +36,10 @@
 ExportedObj/
 .consulo/
 *.csproj
+!SourceGenerator/MinimalUtility.SourceGenerator/MinimalUtility.SourceGenerator.csproj
 *.unityproj
 *.sln
+!SourceGenerator/MinimalUtility.SourceGenerator/MinimalUtility.SourceGenerator.sln
 *.suo
 *.tmp
 *.user
@@ -73,3 +75,7 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+
+# Build Folders (you can keep bin if you'd like, to store dlls and pdbs)
+[Bb]in/
+[Oo]bj/
