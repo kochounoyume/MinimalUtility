@@ -88,17 +88,4 @@ public sealed class EnumEqualityComparerGenerator : IIncrementalGenerator
                         """);
             });
     }
-
-    private static class DiagnosticDescriptors
-    {
-        const string Category = "SampleGenerator";
-
-        public static readonly DiagnosticDescriptor ExistsOverrideToString = new(
-            id: "MINI001",
-            title: "Unexpected Errors",
-            messageFormat: "Failed to get the type of the base of enumerated type '{0}'.",
-            category: Category,
-            defaultSeverity: DiagnosticSeverity.Error,
-            isEnabledByDefault: true);
-    }
 }
