@@ -15,7 +15,14 @@ The repository incorporates [StyleCopAnalyzers](https://github.com/DotNetAnalyze
 
 Some rules have been disabled, but naming conventions and other rules basically follow those set out by StyleCopAnalyzers.
 
-### 2-1. StyleCopAnalyzers's License
+> [!NOTE]
+> As mentioned earlier, this repository contains StyleCopAnalyzers, but that has no effect on importing them into your Unity environment as a package.
+> 
+> StyleCopAnalyzers is merely a code maintenance role in this repository.
+>
+> Therefore, you do not have to follow the naming conventions and other rules of StyleCopAnalyzers when you introduce the `MnimalUtility`.
+
+### License
 ```
 MIT License
 
