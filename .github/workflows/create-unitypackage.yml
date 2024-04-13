@@ -26,7 +26,7 @@ jobs:
 
     - uses: pCYSl5EDgo/create-unitypackage@master
       with:
-        package-path: 'a/output.unitypackage'
+        package-path: "a/output.unitypackage"
         include-files: metaList
     - uses: actions/upload-artifact@master
       with:
