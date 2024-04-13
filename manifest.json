@@ -1,0 +1,211 @@
+{
+  "sitemap": {
+    "baseUrl": "https://kochounoyume.github.io/MinimalUtility/"
+  },
+  "source_base_path": "/home/runner/work/MinimalUtility/MinimalUtility/Documentation~",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MinimalUtility.ApproximatelyCollection-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MinimalUtility.ApproximatelyCollection-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MinimalUtility.ButtonAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MinimalUtility.ButtonAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MinimalUtility.CustomButtonBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MinimalUtility.CustomButtonBase.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MinimalUtility.DictionaryExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MinimalUtility.DictionaryExtensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MinimalUtility.DisposableExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MinimalUtility.DisposableExtensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MinimalUtility.Math.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MinimalUtility.Math.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MinimalUtility.RectTransformExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MinimalUtility.RectTransformExtensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MinimalUtility.SourceGenerator.EnableInitAccessorGenerator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MinimalUtility.SourceGenerator.EnableInitAccessorGenerator.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MinimalUtility.SourceGenerator.EnumEqualityComparerGenerator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MinimalUtility.SourceGenerator.EnumEqualityComparerGenerator.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MinimalUtility.SourceGenerator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MinimalUtility.SourceGenerator.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MinimalUtility.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MinimalUtility.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".json": {
+          "relative_path": "api/toc.json"
+        },
+        ".html": {
+          "relative_path": "api/toc.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "license/LICENSE.md",
+      "output": {
+        ".html": {
+          "relative_path": "license/LICENSE.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "license/toc.md",
+      "output": {
+        ".json": {
+          "relative_path": "license/toc.json"
+        },
+        ".html": {
+          "relative_path": "license/toc.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".json": {
+          "relative_path": "toc.json"
+        },
+        ".html": {
+          "relative_path": "toc.html"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

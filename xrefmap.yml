@@ -1,0 +1,529 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+- uid: MinimalUtility
+  name: MinimalUtility
+  href: api/MinimalUtility.html
+  commentId: N:MinimalUtility
+  fullName: MinimalUtility
+  nameWithType: MinimalUtility
+- uid: MinimalUtility.ApproximatelyCollection`1
+  name: ApproximatelyCollection<TValue>
+  href: api/MinimalUtility.ApproximatelyCollection-1.html
+  commentId: T:MinimalUtility.ApproximatelyCollection`1
+  name.vb: ApproximatelyCollection(Of TValue)
+  fullName: MinimalUtility.ApproximatelyCollection<TValue>
+  fullName.vb: MinimalUtility.ApproximatelyCollection(Of TValue)
+  nameWithType: ApproximatelyCollection<TValue>
+  nameWithType.vb: ApproximatelyCollection(Of TValue)
+- uid: MinimalUtility.ApproximatelyCollection`1.#ctor(System.Int32@)
+  name: ApproximatelyCollection(in int)
+  href: api/MinimalUtility.ApproximatelyCollection-1.html#MinimalUtility_ApproximatelyCollection_1__ctor_System_Int32__
+  commentId: M:MinimalUtility.ApproximatelyCollection`1.#ctor(System.Int32@)
+  name.vb: New(Integer)
+  fullName: MinimalUtility.ApproximatelyCollection<TValue>.ApproximatelyCollection(in int)
+  fullName.vb: MinimalUtility.ApproximatelyCollection(Of TValue).New(Integer)
+  nameWithType: ApproximatelyCollection<TValue>.ApproximatelyCollection(in int)
+  nameWithType.vb: ApproximatelyCollection(Of TValue).New(Integer)
+- uid: MinimalUtility.ApproximatelyCollection`1.#ctor(System.Int32@,System.Single@)
+  name: ApproximatelyCollection(in int, in float)
+  href: api/MinimalUtility.ApproximatelyCollection-1.html#MinimalUtility_ApproximatelyCollection_1__ctor_System_Int32__System_Single__
+  commentId: M:MinimalUtility.ApproximatelyCollection`1.#ctor(System.Int32@,System.Single@)
+  name.vb: New(Integer, Single)
+  fullName: MinimalUtility.ApproximatelyCollection<TValue>.ApproximatelyCollection(in int, in float)
+  fullName.vb: MinimalUtility.ApproximatelyCollection(Of TValue).New(Integer, Single)
+  nameWithType: ApproximatelyCollection<TValue>.ApproximatelyCollection(in int, in float)
+  nameWithType.vb: ApproximatelyCollection(Of TValue).New(Integer, Single)
+- uid: MinimalUtility.ApproximatelyCollection`1.#ctor*
+  name: ApproximatelyCollection
+  href: api/MinimalUtility.ApproximatelyCollection-1.html#MinimalUtility_ApproximatelyCollection_1__ctor_
+  commentId: Overload:MinimalUtility.ApproximatelyCollection`1.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: MinimalUtility.ApproximatelyCollection<TValue>.ApproximatelyCollection
+  fullName.vb: MinimalUtility.ApproximatelyCollection(Of TValue).New
+  nameWithType: ApproximatelyCollection<TValue>.ApproximatelyCollection
+  nameWithType.vb: ApproximatelyCollection(Of TValue).New
+- uid: MinimalUtility.ApproximatelyCollection`1.Add(System.Collections.Generic.KeyValuePair{System.Single,`0}@)
+  name: Add(in KeyValuePair<float, TValue>)
+  href: api/MinimalUtility.ApproximatelyCollection-1.html#MinimalUtility_ApproximatelyCollection_1_Add_System_Collections_Generic_KeyValuePair_System_Single__0___
+  commentId: M:MinimalUtility.ApproximatelyCollection`1.Add(System.Collections.Generic.KeyValuePair{System.Single,`0}@)
+  name.vb: Add(KeyValuePair(Of Single, TValue))
+  fullName: MinimalUtility.ApproximatelyCollection<TValue>.Add(in System.Collections.Generic.KeyValuePair<float, TValue>)
+  fullName.vb: MinimalUtility.ApproximatelyCollection(Of TValue).Add(System.Collections.Generic.KeyValuePair(Of Single, TValue))
+  nameWithType: ApproximatelyCollection<TValue>.Add(in KeyValuePair<float, TValue>)
+  nameWithType.vb: ApproximatelyCollection(Of TValue).Add(KeyValuePair(Of Single, TValue))
+- uid: MinimalUtility.ApproximatelyCollection`1.Add(System.Single@,`0)
+  name: Add(in float, TValue)
+  href: api/MinimalUtility.ApproximatelyCollection-1.html#MinimalUtility_ApproximatelyCollection_1_Add_System_Single___0_
+  commentId: M:MinimalUtility.ApproximatelyCollection`1.Add(System.Single@,`0)
+  name.vb: Add(Single, TValue)
+  fullName: MinimalUtility.ApproximatelyCollection<TValue>.Add(in float, TValue)
+  fullName.vb: MinimalUtility.ApproximatelyCollection(Of TValue).Add(Single, TValue)
+  nameWithType: ApproximatelyCollection<TValue>.Add(in float, TValue)
+  nameWithType.vb: ApproximatelyCollection(Of TValue).Add(Single, TValue)
+- uid: MinimalUtility.ApproximatelyCollection`1.Add(System.Single@,`0@)
+  name: Add(in float, ref TValue)
+  href: api/MinimalUtility.ApproximatelyCollection-1.html#MinimalUtility_ApproximatelyCollection_1_Add_System_Single___0__
+  commentId: M:MinimalUtility.ApproximatelyCollection`1.Add(System.Single@,`0@)
+  name.vb: Add(Single, TValue)
+  fullName: MinimalUtility.ApproximatelyCollection<TValue>.Add(in float, ref TValue)
+  fullName.vb: MinimalUtility.ApproximatelyCollection(Of TValue).Add(Single, TValue)
+  nameWithType: ApproximatelyCollection<TValue>.Add(in float, ref TValue)
+  nameWithType.vb: ApproximatelyCollection(Of TValue).Add(Single, TValue)
+- uid: MinimalUtility.ApproximatelyCollection`1.Add*
+  name: Add
+  href: api/MinimalUtility.ApproximatelyCollection-1.html#MinimalUtility_ApproximatelyCollection_1_Add_
+  commentId: Overload:MinimalUtility.ApproximatelyCollection`1.Add
+  isSpec: "True"
+  fullName: MinimalUtility.ApproximatelyCollection<TValue>.Add
+  fullName.vb: MinimalUtility.ApproximatelyCollection(Of TValue).Add
+  nameWithType: ApproximatelyCollection<TValue>.Add
+  nameWithType.vb: ApproximatelyCollection(Of TValue).Add
+- uid: MinimalUtility.ApproximatelyCollection`1.AsReadOnlySpan
+  name: AsReadOnlySpan()
+  href: api/MinimalUtility.ApproximatelyCollection-1.html#MinimalUtility_ApproximatelyCollection_1_AsReadOnlySpan
+  commentId: M:MinimalUtility.ApproximatelyCollection`1.AsReadOnlySpan
+  fullName: MinimalUtility.ApproximatelyCollection<TValue>.AsReadOnlySpan()
+  fullName.vb: MinimalUtility.ApproximatelyCollection(Of TValue).AsReadOnlySpan()
+  nameWithType: ApproximatelyCollection<TValue>.AsReadOnlySpan()
+  nameWithType.vb: ApproximatelyCollection(Of TValue).AsReadOnlySpan()
+- uid: MinimalUtility.ApproximatelyCollection`1.AsReadOnlySpan*
+  name: AsReadOnlySpan
+  href: api/MinimalUtility.ApproximatelyCollection-1.html#MinimalUtility_ApproximatelyCollection_1_AsReadOnlySpan_
+  commentId: Overload:MinimalUtility.ApproximatelyCollection`1.AsReadOnlySpan
+  isSpec: "True"
+  fullName: MinimalUtility.ApproximatelyCollection<TValue>.AsReadOnlySpan
+  fullName.vb: MinimalUtility.ApproximatelyCollection(Of TValue).AsReadOnlySpan
+  nameWithType: ApproximatelyCollection<TValue>.AsReadOnlySpan
+  nameWithType.vb: ApproximatelyCollection(Of TValue).AsReadOnlySpan
+- uid: MinimalUtility.ApproximatelyCollection`1.Count
+  name: Count
+  href: api/MinimalUtility.ApproximatelyCollection-1.html#MinimalUtility_ApproximatelyCollection_1_Count
+  commentId: P:MinimalUtility.ApproximatelyCollection`1.Count
+  fullName: MinimalUtility.ApproximatelyCollection<TValue>.Count
+  fullName.vb: MinimalUtility.ApproximatelyCollection(Of TValue).Count
+  nameWithType: ApproximatelyCollection<TValue>.Count
+  nameWithType.vb: ApproximatelyCollection(Of TValue).Count
+- uid: MinimalUtility.ApproximatelyCollection`1.Count*
+  name: Count
+  href: api/MinimalUtility.ApproximatelyCollection-1.html#MinimalUtility_ApproximatelyCollection_1_Count_
+  commentId: Overload:MinimalUtility.ApproximatelyCollection`1.Count
+  isSpec: "True"
+  fullName: MinimalUtility.ApproximatelyCollection<TValue>.Count
+  fullName.vb: MinimalUtility.ApproximatelyCollection(Of TValue).Count
+  nameWithType: ApproximatelyCollection<TValue>.Count
+  nameWithType.vb: ApproximatelyCollection(Of TValue).Count
+- uid: MinimalUtility.ApproximatelyCollection`1.GetEnumerator
+  name: GetEnumerator()
+  href: api/MinimalUtility.ApproximatelyCollection-1.html#MinimalUtility_ApproximatelyCollection_1_GetEnumerator
+  commentId: M:MinimalUtility.ApproximatelyCollection`1.GetEnumerator
+  fullName: MinimalUtility.ApproximatelyCollection<TValue>.GetEnumerator()
+  fullName.vb: MinimalUtility.ApproximatelyCollection(Of TValue).GetEnumerator()
+  nameWithType: ApproximatelyCollection<TValue>.GetEnumerator()
+  nameWithType.vb: ApproximatelyCollection(Of TValue).GetEnumerator()
+- uid: MinimalUtility.ApproximatelyCollection`1.GetEnumerator*
+  name: GetEnumerator
+  href: api/MinimalUtility.ApproximatelyCollection-1.html#MinimalUtility_ApproximatelyCollection_1_GetEnumerator_
+  commentId: Overload:MinimalUtility.ApproximatelyCollection`1.GetEnumerator
+  isSpec: "True"
+  fullName: MinimalUtility.ApproximatelyCollection<TValue>.GetEnumerator
+  fullName.vb: MinimalUtility.ApproximatelyCollection(Of TValue).GetEnumerator
+  nameWithType: ApproximatelyCollection<TValue>.GetEnumerator
+  nameWithType.vb: ApproximatelyCollection(Of TValue).GetEnumerator
+- uid: MinimalUtility.ApproximatelyCollection`1.Item(System.Int32)
+  name: this[int]
+  href: api/MinimalUtility.ApproximatelyCollection-1.html#MinimalUtility_ApproximatelyCollection_1_Item_System_Int32_
+  commentId: P:MinimalUtility.ApproximatelyCollection`1.Item(System.Int32)
+  name.vb: this[](Integer)
+  fullName: MinimalUtility.ApproximatelyCollection<TValue>.this[int]
+  fullName.vb: MinimalUtility.ApproximatelyCollection(Of TValue).this[](Integer)
+  nameWithType: ApproximatelyCollection<TValue>.this[int]
+  nameWithType.vb: ApproximatelyCollection(Of TValue).this[](Integer)
+- uid: MinimalUtility.ApproximatelyCollection`1.Item(System.Single)
+  name: this[float]
+  href: api/MinimalUtility.ApproximatelyCollection-1.html#MinimalUtility_ApproximatelyCollection_1_Item_System_Single_
+  commentId: P:MinimalUtility.ApproximatelyCollection`1.Item(System.Single)
+  name.vb: this[](Single)
+  fullName: MinimalUtility.ApproximatelyCollection<TValue>.this[float]
+  fullName.vb: MinimalUtility.ApproximatelyCollection(Of TValue).this[](Single)
+  nameWithType: ApproximatelyCollection<TValue>.this[float]
+  nameWithType.vb: ApproximatelyCollection(Of TValue).this[](Single)
+- uid: MinimalUtility.ApproximatelyCollection`1.Item*
+  name: this
+  href: api/MinimalUtility.ApproximatelyCollection-1.html#MinimalUtility_ApproximatelyCollection_1_Item_
+  commentId: Overload:MinimalUtility.ApproximatelyCollection`1.Item
+  isSpec: "True"
+  name.vb: this[]
+  fullName: MinimalUtility.ApproximatelyCollection<TValue>.this
+  fullName.vb: MinimalUtility.ApproximatelyCollection(Of TValue).this[]
+  nameWithType: ApproximatelyCollection<TValue>.this
+  nameWithType.vb: ApproximatelyCollection(Of TValue).this[]
+- uid: MinimalUtility.ApproximatelyCollection`1.Reach
+  name: Reach
+  href: api/MinimalUtility.ApproximatelyCollection-1.html#MinimalUtility_ApproximatelyCollection_1_Reach
+  commentId: P:MinimalUtility.ApproximatelyCollection`1.Reach
+  fullName: MinimalUtility.ApproximatelyCollection<TValue>.Reach
+  fullName.vb: MinimalUtility.ApproximatelyCollection(Of TValue).Reach
+  nameWithType: ApproximatelyCollection<TValue>.Reach
+  nameWithType.vb: ApproximatelyCollection(Of TValue).Reach
+- uid: MinimalUtility.ApproximatelyCollection`1.Reach*
+  name: Reach
+  href: api/MinimalUtility.ApproximatelyCollection-1.html#MinimalUtility_ApproximatelyCollection_1_Reach_
+  commentId: Overload:MinimalUtility.ApproximatelyCollection`1.Reach
+  isSpec: "True"
+  fullName: MinimalUtility.ApproximatelyCollection<TValue>.Reach
+  fullName.vb: MinimalUtility.ApproximatelyCollection(Of TValue).Reach
+  nameWithType: ApproximatelyCollection<TValue>.Reach
+  nameWithType.vb: ApproximatelyCollection(Of TValue).Reach
+- uid: MinimalUtility.ApproximatelyCollection`1.ToDictionary
+  name: ToDictionary()
+  href: api/MinimalUtility.ApproximatelyCollection-1.html#MinimalUtility_ApproximatelyCollection_1_ToDictionary
+  commentId: M:MinimalUtility.ApproximatelyCollection`1.ToDictionary
+  fullName: MinimalUtility.ApproximatelyCollection<TValue>.ToDictionary()
+  fullName.vb: MinimalUtility.ApproximatelyCollection(Of TValue).ToDictionary()
+  nameWithType: ApproximatelyCollection<TValue>.ToDictionary()
+  nameWithType.vb: ApproximatelyCollection(Of TValue).ToDictionary()
+- uid: MinimalUtility.ApproximatelyCollection`1.ToDictionary*
+  name: ToDictionary
+  href: api/MinimalUtility.ApproximatelyCollection-1.html#MinimalUtility_ApproximatelyCollection_1_ToDictionary_
+  commentId: Overload:MinimalUtility.ApproximatelyCollection`1.ToDictionary
+  isSpec: "True"
+  fullName: MinimalUtility.ApproximatelyCollection<TValue>.ToDictionary
+  fullName.vb: MinimalUtility.ApproximatelyCollection(Of TValue).ToDictionary
+  nameWithType: ApproximatelyCollection<TValue>.ToDictionary
+  nameWithType.vb: ApproximatelyCollection(Of TValue).ToDictionary
+- uid: MinimalUtility.ApproximatelyCollection`1.op_Explicit(MinimalUtility.ApproximatelyCollection{`0})~System.Collections.Generic.Dictionary{System.Single,`0}
+  name: explicit operator Dictionary<float, TValue>(ApproximatelyCollection<TValue>)
+  href: api/MinimalUtility.ApproximatelyCollection-1.html#MinimalUtility_ApproximatelyCollection_1_op_Explicit_MinimalUtility_ApproximatelyCollection__0___System_Collections_Generic_Dictionary_System_Single__0_
+  commentId: M:MinimalUtility.ApproximatelyCollection`1.op_Explicit(MinimalUtility.ApproximatelyCollection{`0})~System.Collections.Generic.Dictionary{System.Single,`0}
+  name.vb: CType(ApproximatelyCollection(Of TValue))
+  fullName: MinimalUtility.ApproximatelyCollection<TValue>.explicit operator System.Collections.Generic.Dictionary<float, TValue>(MinimalUtility.ApproximatelyCollection<TValue>)
+  fullName.vb: MinimalUtility.ApproximatelyCollection(Of TValue).CType(MinimalUtility.ApproximatelyCollection(Of TValue))
+  nameWithType: ApproximatelyCollection<TValue>.explicit operator Dictionary<float, TValue>(ApproximatelyCollection<TValue>)
+  nameWithType.vb: ApproximatelyCollection(Of TValue).CType(ApproximatelyCollection(Of TValue))
+- uid: MinimalUtility.ApproximatelyCollection`1.op_Explicit(MinimalUtility.ApproximatelyCollection{`0})~System.ReadOnlySpan{System.Collections.Generic.KeyValuePair{System.Single,`0}}
+  name: explicit operator ReadOnlySpan<KeyValuePair<float, TValue>>(ApproximatelyCollection<TValue>)
+  href: api/MinimalUtility.ApproximatelyCollection-1.html#MinimalUtility_ApproximatelyCollection_1_op_Explicit_MinimalUtility_ApproximatelyCollection__0___System_ReadOnlySpan_System_Collections_Generic_KeyValuePair_System_Single__0__
+  commentId: M:MinimalUtility.ApproximatelyCollection`1.op_Explicit(MinimalUtility.ApproximatelyCollection{`0})~System.ReadOnlySpan{System.Collections.Generic.KeyValuePair{System.Single,`0}}
+  name.vb: CType(ApproximatelyCollection(Of TValue))
+  fullName: MinimalUtility.ApproximatelyCollection<TValue>.explicit operator System.ReadOnlySpan<System.Collections.Generic.KeyValuePair<float, TValue>>(MinimalUtility.ApproximatelyCollection<TValue>)
+  fullName.vb: MinimalUtility.ApproximatelyCollection(Of TValue).CType(MinimalUtility.ApproximatelyCollection(Of TValue))
+  nameWithType: ApproximatelyCollection<TValue>.explicit operator ReadOnlySpan<KeyValuePair<float, TValue>>(ApproximatelyCollection<TValue>)
+  nameWithType.vb: ApproximatelyCollection(Of TValue).CType(ApproximatelyCollection(Of TValue))
+- uid: MinimalUtility.ApproximatelyCollection`1.op_Explicit*
+  name: explicit operator
+  href: api/MinimalUtility.ApproximatelyCollection-1.html#MinimalUtility_ApproximatelyCollection_1_op_Explicit_
+  commentId: Overload:MinimalUtility.ApproximatelyCollection`1.op_Explicit
+  isSpec: "True"
+  name.vb: CType
+  fullName: MinimalUtility.ApproximatelyCollection<TValue>.explicit operator
+  fullName.vb: MinimalUtility.ApproximatelyCollection(Of TValue).CType
+  nameWithType: ApproximatelyCollection<TValue>.explicit operator
+  nameWithType.vb: ApproximatelyCollection(Of TValue).CType
+- uid: MinimalUtility.ButtonAttribute
+  name: ButtonAttribute
+  href: api/MinimalUtility.ButtonAttribute.html
+  commentId: T:MinimalUtility.ButtonAttribute
+  fullName: MinimalUtility.ButtonAttribute
+  nameWithType: ButtonAttribute
+- uid: MinimalUtility.ButtonAttribute.#ctor(System.Object[])
+  name: ButtonAttribute(params object[])
+  href: api/MinimalUtility.ButtonAttribute.html#MinimalUtility_ButtonAttribute__ctor_System_Object___
+  commentId: M:MinimalUtility.ButtonAttribute.#ctor(System.Object[])
+  name.vb: New(ParamArray Object())
+  fullName: MinimalUtility.ButtonAttribute.ButtonAttribute(params object[])
+  fullName.vb: MinimalUtility.ButtonAttribute.New(ParamArray Object())
+  nameWithType: ButtonAttribute.ButtonAttribute(params object[])
+  nameWithType.vb: ButtonAttribute.New(ParamArray Object())
+- uid: MinimalUtility.ButtonAttribute.#ctor(System.String,System.Object[])
+  name: ButtonAttribute(string, params object[])
+  href: api/MinimalUtility.ButtonAttribute.html#MinimalUtility_ButtonAttribute__ctor_System_String_System_Object___
+  commentId: M:MinimalUtility.ButtonAttribute.#ctor(System.String,System.Object[])
+  name.vb: New(String, ParamArray Object())
+  fullName: MinimalUtility.ButtonAttribute.ButtonAttribute(string, params object[])
+  fullName.vb: MinimalUtility.ButtonAttribute.New(String, ParamArray Object())
+  nameWithType: ButtonAttribute.ButtonAttribute(string, params object[])
+  nameWithType.vb: ButtonAttribute.New(String, ParamArray Object())
+- uid: MinimalUtility.ButtonAttribute.#ctor*
+  name: ButtonAttribute
+  href: api/MinimalUtility.ButtonAttribute.html#MinimalUtility_ButtonAttribute__ctor_
+  commentId: Overload:MinimalUtility.ButtonAttribute.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: MinimalUtility.ButtonAttribute.ButtonAttribute
+  fullName.vb: MinimalUtility.ButtonAttribute.New
+  nameWithType: ButtonAttribute.ButtonAttribute
+  nameWithType.vb: ButtonAttribute.New
+- uid: MinimalUtility.ButtonAttribute.ButtonName
+  name: ButtonName
+  href: api/MinimalUtility.ButtonAttribute.html#MinimalUtility_ButtonAttribute_ButtonName
+  commentId: P:MinimalUtility.ButtonAttribute.ButtonName
+  fullName: MinimalUtility.ButtonAttribute.ButtonName
+  nameWithType: ButtonAttribute.ButtonName
+- uid: MinimalUtility.ButtonAttribute.ButtonName*
+  name: ButtonName
+  href: api/MinimalUtility.ButtonAttribute.html#MinimalUtility_ButtonAttribute_ButtonName_
+  commentId: Overload:MinimalUtility.ButtonAttribute.ButtonName
+  isSpec: "True"
+  fullName: MinimalUtility.ButtonAttribute.ButtonName
+  nameWithType: ButtonAttribute.ButtonName
+- uid: MinimalUtility.ButtonAttribute.Parameters
+  name: Parameters
+  href: api/MinimalUtility.ButtonAttribute.html#MinimalUtility_ButtonAttribute_Parameters
+  commentId: P:MinimalUtility.ButtonAttribute.Parameters
+  fullName: MinimalUtility.ButtonAttribute.Parameters
+  nameWithType: ButtonAttribute.Parameters
+- uid: MinimalUtility.ButtonAttribute.Parameters*
+  name: Parameters
+  href: api/MinimalUtility.ButtonAttribute.html#MinimalUtility_ButtonAttribute_Parameters_
+  commentId: Overload:MinimalUtility.ButtonAttribute.Parameters
+  isSpec: "True"
+  fullName: MinimalUtility.ButtonAttribute.Parameters
+  nameWithType: ButtonAttribute.Parameters
+- uid: MinimalUtility.CustomButtonBase
+  name: CustomButtonBase
+  href: api/MinimalUtility.CustomButtonBase.html
+  commentId: T:MinimalUtility.CustomButtonBase
+  fullName: MinimalUtility.CustomButtonBase
+  nameWithType: CustomButtonBase
+- uid: MinimalUtility.CustomButtonBase.OnPointerClick(PointerEventData@)
+  name: OnPointerClick(ref PointerEventData)
+  href: api/MinimalUtility.CustomButtonBase.html#MinimalUtility_CustomButtonBase_OnPointerClick_PointerEventData__
+  commentId: M:MinimalUtility.CustomButtonBase.OnPointerClick(PointerEventData@)
+  name.vb: OnPointerClick(PointerEventData)
+  fullName: MinimalUtility.CustomButtonBase.OnPointerClick(ref PointerEventData)
+  fullName.vb: MinimalUtility.CustomButtonBase.OnPointerClick(PointerEventData)
+  nameWithType: CustomButtonBase.OnPointerClick(ref PointerEventData)
+  nameWithType.vb: CustomButtonBase.OnPointerClick(PointerEventData)
+- uid: MinimalUtility.CustomButtonBase.OnPointerClick*
+  name: OnPointerClick
+  href: api/MinimalUtility.CustomButtonBase.html#MinimalUtility_CustomButtonBase_OnPointerClick_
+  commentId: Overload:MinimalUtility.CustomButtonBase.OnPointerClick
+  isSpec: "True"
+  fullName: MinimalUtility.CustomButtonBase.OnPointerClick
+  nameWithType: CustomButtonBase.OnPointerClick
+- uid: MinimalUtility.DictionaryExtensions
+  name: DictionaryExtensions
+  href: api/MinimalUtility.DictionaryExtensions.html
+  commentId: T:MinimalUtility.DictionaryExtensions
+  fullName: MinimalUtility.DictionaryExtensions
+  nameWithType: DictionaryExtensions
+- uid: MinimalUtility.DictionaryExtensions.ToProximityCollection*
+  name: ToProximityCollection
+  href: api/MinimalUtility.DictionaryExtensions.html#MinimalUtility_DictionaryExtensions_ToProximityCollection_
+  commentId: Overload:MinimalUtility.DictionaryExtensions.ToProximityCollection
+  isSpec: "True"
+  fullName: MinimalUtility.DictionaryExtensions.ToProximityCollection
+  nameWithType: DictionaryExtensions.ToProximityCollection
+- uid: MinimalUtility.DictionaryExtensions.ToProximityCollection``1(System.Collections.Generic.Dictionary{System.Single,``0},System.Int32@)
+  name: ToProximityCollection<TValue>(Dictionary<float, TValue>, in int)
+  href: api/MinimalUtility.DictionaryExtensions.html#MinimalUtility_DictionaryExtensions_ToProximityCollection__1_System_Collections_Generic_Dictionary_System_Single___0__System_Int32__
+  commentId: M:MinimalUtility.DictionaryExtensions.ToProximityCollection``1(System.Collections.Generic.Dictionary{System.Single,``0},System.Int32@)
+  name.vb: ToProximityCollection(Of TValue)(Dictionary(Of Single, TValue), Integer)
+  fullName: MinimalUtility.DictionaryExtensions.ToProximityCollection<TValue>(System.Collections.Generic.Dictionary<float, TValue>, in int)
+  fullName.vb: MinimalUtility.DictionaryExtensions.ToProximityCollection(Of TValue)(System.Collections.Generic.Dictionary(Of Single, TValue), Integer)
+  nameWithType: DictionaryExtensions.ToProximityCollection<TValue>(Dictionary<float, TValue>, in int)
+  nameWithType.vb: DictionaryExtensions.ToProximityCollection(Of TValue)(Dictionary(Of Single, TValue), Integer)
+- uid: MinimalUtility.DisposableExtensions
+  name: DisposableExtensions
+  href: api/MinimalUtility.DisposableExtensions.html
+  commentId: T:MinimalUtility.DisposableExtensions
+  fullName: MinimalUtility.DisposableExtensions
+  nameWithType: DisposableExtensions
+- uid: MinimalUtility.DisposableExtensions.AddTo*
+  name: AddTo
+  href: api/MinimalUtility.DisposableExtensions.html#MinimalUtility_DisposableExtensions_AddTo_
+  commentId: Overload:MinimalUtility.DisposableExtensions.AddTo
+  isSpec: "True"
+  fullName: MinimalUtility.DisposableExtensions.AddTo
+  nameWithType: DisposableExtensions.AddTo
+- uid: MinimalUtility.DisposableExtensions.AddTo``1(``0,System.IDisposable@)
+  name: AddTo<T>(T, ref IDisposable)
+  href: api/MinimalUtility.DisposableExtensions.html#MinimalUtility_DisposableExtensions_AddTo__1___0_System_IDisposable__
+  commentId: M:MinimalUtility.DisposableExtensions.AddTo``1(``0,System.IDisposable@)
+  name.vb: AddTo(Of T)(T, IDisposable)
+  fullName: MinimalUtility.DisposableExtensions.AddTo<T>(T, ref System.IDisposable)
+  fullName.vb: MinimalUtility.DisposableExtensions.AddTo(Of T)(T, System.IDisposable)
+  nameWithType: DisposableExtensions.AddTo<T>(T, ref IDisposable)
+  nameWithType.vb: DisposableExtensions.AddTo(Of T)(T, IDisposable)
+- uid: MinimalUtility.Math
+  name: Math
+  href: api/MinimalUtility.Math.html
+  commentId: T:MinimalUtility.Math
+  fullName: MinimalUtility.Math
+  nameWithType: Math
+- uid: MinimalUtility.Math.Abs(System.Int32@)
+  name: Abs(in int)
+  href: api/MinimalUtility.Math.html#MinimalUtility_Math_Abs_System_Int32__
+  commentId: M:MinimalUtility.Math.Abs(System.Int32@)
+  name.vb: Abs(Integer)
+  fullName: MinimalUtility.Math.Abs(in int)
+  fullName.vb: MinimalUtility.Math.Abs(Integer)
+  nameWithType: Math.Abs(in int)
+  nameWithType.vb: Math.Abs(Integer)
+- uid: MinimalUtility.Math.Abs(System.Single@)
+  name: Abs(in float)
+  href: api/MinimalUtility.Math.html#MinimalUtility_Math_Abs_System_Single__
+  commentId: M:MinimalUtility.Math.Abs(System.Single@)
+  name.vb: Abs(Single)
+  fullName: MinimalUtility.Math.Abs(in float)
+  fullName.vb: MinimalUtility.Math.Abs(Single)
+  nameWithType: Math.Abs(in float)
+  nameWithType.vb: Math.Abs(Single)
+- uid: MinimalUtility.Math.Abs*
+  name: Abs
+  href: api/MinimalUtility.Math.html#MinimalUtility_Math_Abs_
+  commentId: Overload:MinimalUtility.Math.Abs
+  isSpec: "True"
+  fullName: MinimalUtility.Math.Abs
+  nameWithType: Math.Abs
+- uid: MinimalUtility.Math.Approximately(System.Single@,System.Single@)
+  name: Approximately(in float, in float)
+  href: api/MinimalUtility.Math.html#MinimalUtility_Math_Approximately_System_Single__System_Single__
+  commentId: M:MinimalUtility.Math.Approximately(System.Single@,System.Single@)
+  name.vb: Approximately(Single, Single)
+  fullName: MinimalUtility.Math.Approximately(in float, in float)
+  fullName.vb: MinimalUtility.Math.Approximately(Single, Single)
+  nameWithType: Math.Approximately(in float, in float)
+  nameWithType.vb: Math.Approximately(Single, Single)
+- uid: MinimalUtility.Math.Approximately*
+  name: Approximately
+  href: api/MinimalUtility.Math.html#MinimalUtility_Math_Approximately_
+  commentId: Overload:MinimalUtility.Math.Approximately
+  isSpec: "True"
+  fullName: MinimalUtility.Math.Approximately
+  nameWithType: Math.Approximately
+- uid: MinimalUtility.Math.Deg2Rad
+  name: Deg2Rad
+  href: api/MinimalUtility.Math.html#MinimalUtility_Math_Deg2Rad
+  commentId: F:MinimalUtility.Math.Deg2Rad
+  fullName: MinimalUtility.Math.Deg2Rad
+  nameWithType: Math.Deg2Rad
+- uid: MinimalUtility.Math.Epsilon
+  name: Epsilon
+  href: api/MinimalUtility.Math.html#MinimalUtility_Math_Epsilon
+  commentId: P:MinimalUtility.Math.Epsilon
+  fullName: MinimalUtility.Math.Epsilon
+  nameWithType: Math.Epsilon
+- uid: MinimalUtility.Math.Epsilon*
+  name: Epsilon
+  href: api/MinimalUtility.Math.html#MinimalUtility_Math_Epsilon_
+  commentId: Overload:MinimalUtility.Math.Epsilon
+  isSpec: "True"
+  fullName: MinimalUtility.Math.Epsilon
+  nameWithType: Math.Epsilon
+- uid: MinimalUtility.Math.Infinity
+  name: Infinity
+  href: api/MinimalUtility.Math.html#MinimalUtility_Math_Infinity
+  commentId: F:MinimalUtility.Math.Infinity
+  fullName: MinimalUtility.Math.Infinity
+  nameWithType: Math.Infinity
+- uid: MinimalUtility.Math.Max(System.Int32@,System.Int32@)
+  name: Max(in int, in int)
+  href: api/MinimalUtility.Math.html#MinimalUtility_Math_Max_System_Int32__System_Int32__
+  commentId: M:MinimalUtility.Math.Max(System.Int32@,System.Int32@)
+  name.vb: Max(Integer, Integer)
+  fullName: MinimalUtility.Math.Max(in int, in int)
+  fullName.vb: MinimalUtility.Math.Max(Integer, Integer)
+  nameWithType: Math.Max(in int, in int)
+  nameWithType.vb: Math.Max(Integer, Integer)
+- uid: MinimalUtility.Math.Max(System.Single@,System.Single@)
+  name: Max(in float, in float)
+  href: api/MinimalUtility.Math.html#MinimalUtility_Math_Max_System_Single__System_Single__
+  commentId: M:MinimalUtility.Math.Max(System.Single@,System.Single@)
+  name.vb: Max(Single, Single)
+  fullName: MinimalUtility.Math.Max(in float, in float)
+  fullName.vb: MinimalUtility.Math.Max(Single, Single)
+  nameWithType: Math.Max(in float, in float)
+  nameWithType.vb: Math.Max(Single, Single)
+- uid: MinimalUtility.Math.Max*
+  name: Max
+  href: api/MinimalUtility.Math.html#MinimalUtility_Math_Max_
+  commentId: Overload:MinimalUtility.Math.Max
+  isSpec: "True"
+  fullName: MinimalUtility.Math.Max
+  nameWithType: Math.Max
+- uid: MinimalUtility.Math.Min(System.Int32@,System.Int32@)
+  name: Min(in int, in int)
+  href: api/MinimalUtility.Math.html#MinimalUtility_Math_Min_System_Int32__System_Int32__
+  commentId: M:MinimalUtility.Math.Min(System.Int32@,System.Int32@)
+  name.vb: Min(Integer, Integer)
+  fullName: MinimalUtility.Math.Min(in int, in int)
+  fullName.vb: MinimalUtility.Math.Min(Integer, Integer)
+  nameWithType: Math.Min(in int, in int)
+  nameWithType.vb: Math.Min(Integer, Integer)
+- uid: MinimalUtility.Math.Min(System.Single@,System.Single@)
+  name: Min(in float, in float)
+  href: api/MinimalUtility.Math.html#MinimalUtility_Math_Min_System_Single__System_Single__
+  commentId: M:MinimalUtility.Math.Min(System.Single@,System.Single@)
+  name.vb: Min(Single, Single)
+  fullName: MinimalUtility.Math.Min(in float, in float)
+  fullName.vb: MinimalUtility.Math.Min(Single, Single)
+  nameWithType: Math.Min(in float, in float)
+  nameWithType.vb: Math.Min(Single, Single)
+- uid: MinimalUtility.Math.Min*
+  name: Min
+  href: api/MinimalUtility.Math.html#MinimalUtility_Math_Min_
+  commentId: Overload:MinimalUtility.Math.Min
+  isSpec: "True"
+  fullName: MinimalUtility.Math.Min
+  nameWithType: Math.Min
+- uid: MinimalUtility.Math.NegativeInfinity
+  name: NegativeInfinity
+  href: api/MinimalUtility.Math.html#MinimalUtility_Math_NegativeInfinity
+  commentId: F:MinimalUtility.Math.NegativeInfinity
+  fullName: MinimalUtility.Math.NegativeInfinity
+  nameWithType: Math.NegativeInfinity
+- uid: MinimalUtility.Math.PI
+  name: PI
+  href: api/MinimalUtility.Math.html#MinimalUtility_Math_PI
+  commentId: F:MinimalUtility.Math.PI
+  fullName: MinimalUtility.Math.PI
+  nameWithType: Math.PI
+- uid: MinimalUtility.Math.Rad2Deg
+  name: Rad2Deg
+  href: api/MinimalUtility.Math.html#MinimalUtility_Math_Rad2Deg
+  commentId: F:MinimalUtility.Math.Rad2Deg
+  fullName: MinimalUtility.Math.Rad2Deg
+  nameWithType: Math.Rad2Deg
+- uid: MinimalUtility.RectTransformExtensions
+  name: RectTransformExtensions
+  href: api/MinimalUtility.RectTransformExtensions.html
+  commentId: T:MinimalUtility.RectTransformExtensions
+  fullName: MinimalUtility.RectTransformExtensions
+  nameWithType: RectTransformExtensions
+- uid: MinimalUtility.RectTransformExtensions.SetSafeSize(RectTransform,System.Single@,System.Single@)
+  name: SetSafeSize(RectTransform, in float, in float)
+  href: api/MinimalUtility.RectTransformExtensions.html#MinimalUtility_RectTransformExtensions_SetSafeSize_RectTransform_System_Single__System_Single__
+  commentId: M:MinimalUtility.RectTransformExtensions.SetSafeSize(RectTransform,System.Single@,System.Single@)
+  name.vb: SetSafeSize(RectTransform, Single, Single)
+  fullName: MinimalUtility.RectTransformExtensions.SetSafeSize(RectTransform, in float, in float)
+  fullName.vb: MinimalUtility.RectTransformExtensions.SetSafeSize(RectTransform, Single, Single)
+  nameWithType: RectTransformExtensions.SetSafeSize(RectTransform, in float, in float)
+  nameWithType.vb: RectTransformExtensions.SetSafeSize(RectTransform, Single, Single)
+- uid: MinimalUtility.RectTransformExtensions.SetSafeSize*
+  name: SetSafeSize
+  href: api/MinimalUtility.RectTransformExtensions.html#MinimalUtility_RectTransformExtensions_SetSafeSize_
+  commentId: Overload:MinimalUtility.RectTransformExtensions.SetSafeSize
+  isSpec: "True"
+  fullName: MinimalUtility.RectTransformExtensions.SetSafeSize
+  nameWithType: RectTransformExtensions.SetSafeSize
+- uid: MinimalUtility.SourceGenerator
+  name: MinimalUtility.SourceGenerator
+  href: api/MinimalUtility.SourceGenerator.html
+  commentId: N:MinimalUtility.SourceGenerator
+  fullName: MinimalUtility.SourceGenerator
+  nameWithType: MinimalUtility.SourceGenerator
+- uid: MinimalUtility.SourceGenerator.EnableInitAccessorGenerator
+  name: EnableInitAccessorGenerator
+  href: api/MinimalUtility.SourceGenerator.EnableInitAccessorGenerator.html
+  commentId: T:MinimalUtility.SourceGenerator.EnableInitAccessorGenerator
+  fullName: MinimalUtility.SourceGenerator.EnableInitAccessorGenerator
+  nameWithType: EnableInitAccessorGenerator
+- uid: MinimalUtility.SourceGenerator.EnumEqualityComparerGenerator
+  name: EnumEqualityComparerGenerator
+  href: api/MinimalUtility.SourceGenerator.EnumEqualityComparerGenerator.html
+  commentId: T:MinimalUtility.SourceGenerator.EnumEqualityComparerGenerator
+  fullName: MinimalUtility.SourceGenerator.EnumEqualityComparerGenerator
+  nameWithType: EnumEqualityComparerGenerator
