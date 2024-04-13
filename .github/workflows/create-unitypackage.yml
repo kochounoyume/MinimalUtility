@@ -8,6 +8,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4.1.2
+    - name: Create meta file
+      run: |
+        echo "fileFormatVersion: 2" > Packages/MinimalUtility.meta
+        echo "guid: 4374ac3819d9c494aaf255a82e464727" >> Packages/MinimalUtility.meta
+        echo "folderAsset: yes" >> Packages/MinimalUtility.meta
+        echo "DefaultImporter:" > Packages/MinimalUtility.meta
+        echo "  externalObjects: {}" >> Packages/MinimalUtility.meta
+        echo "  userData: " >> Packages/MinimalUtility.meta
+        echo "  assetBundleName: " > Packages/MinimalUtility.meta
+        echo "  assetBundleVariant: " >> Packages/MinimalUtility.meta
     - run: |
         echo "Packages/MinimalUtility.meta" > metaList
         find Packages/MinimalUtility/ -name \*.meta >> metaList
