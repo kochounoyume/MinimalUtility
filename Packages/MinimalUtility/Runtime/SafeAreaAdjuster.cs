@@ -10,7 +10,7 @@ namespace MinimalUtility
     /// <summary>
     /// セーフエリア調整スクリプト.
     /// </summary>
-    internal class SafeAreaAdjuster : MonoBehaviour
+    public class SafeAreaAdjuster : MonoBehaviour
     {
         private void Start() => Padding();
 

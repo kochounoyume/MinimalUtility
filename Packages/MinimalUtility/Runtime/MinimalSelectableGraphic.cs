@@ -10,7 +10,7 @@ namespace MinimalUtility
     /// 子オブジェクトのGraphicをキャッシュして選択時に色変化を伝播させる
     /// </remarks>
     /// </summary>
-    internal sealed class MinimalSelectableGraphic : EmptyGraphic
+    public sealed class MinimalSelectableGraphic : EmptyGraphic
     {
         /// <summary>
         /// 子オブジェクト以下のGraphicのキャッシュ.

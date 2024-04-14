@@ -10,7 +10,7 @@ namespace MinimalUtility
     /// </remarks>
     /// </summary>
     [RequireComponent(typeof(CanvasRenderer))]
-    internal class EmptyGraphic : Graphic
+    public class EmptyGraphic : Graphic
     {
         /// <inheritdoc/>
         public override void SetMaterialDirty()
