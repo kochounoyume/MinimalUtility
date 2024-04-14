@@ -2,11 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Namespace MinimalUtility |  |  </title>
+      <title>Class SafeAreaAdjuster |  |  </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Namespace MinimalUtility |  |  ">
+      <meta name="title" content="Class SafeAreaAdjuster |  |  ">
       
-      
+      <meta name="description" content="セーフエリア調整スクリプト.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       <meta name="docfx:disablenewtab" content="true">
       
-      
+      <meta name="docfx:docurl" content="https://github.com/kochounoyume/MinimalUtility/new/main/apiSpec/new?filename=MinimalUtility_SafeAreaAdjuster.md&amp;value=---%0Auid%3A%20MinimalUtility.SafeAreaAdjuster%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -84,71 +84,45 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="MinimalUtility">
+        <article data-uid="MinimalUtility.SafeAreaAdjuster">
 
-  <h1 id="MinimalUtility" data-uid="MinimalUtility" class="text-break">Namespace MinimalUtility</h1>
-  <div class="markdown level0 summary"></div>
-  <div class="markdown level0 conceptual"></div>
-  <div class="markdown level0 remarks"></div>
 
-    <h3 id="classes">
-Classes
-</h3>
-    <dl class="jumplist">
-      <dt><a class="xref" href="MinimalUtility.ApproximatelyCollection-1.html">ApproximatelyCollection&lt;TValue&gt;</a></dt>
-      <dd><p>近似値を算出するためのコレクション.</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="MinimalUtility.ButtonAttribute.html">ButtonAttribute</a></dt>
-      <dd><p>指定したメソッドをUnityのInspector上に表示したボタンでテスト実行できるようになる属性.</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="MinimalUtility.CustomButtonBase.html">CustomButtonBase</a></dt>
-      <dd><p>カスタムボタンのベース実装.</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="MinimalUtility.DictionaryExtensions.html">DictionaryExtensions</a></dt>
-      <dd></dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="MinimalUtility.DisposableExtensions.html">DisposableExtensions</a></dt>
-      <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a>の拡張メソッド.</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="MinimalUtility.EmptyGraphic.html">EmptyGraphic</a></dt>
-      <dd><p>空処理のグラフィック.
-<remarks>
-想定用途：マスク時のベース, 画面全体を透明なuGUIで覆いたいとき、Buttonの判定領域を透明にしたいとき
-</remarks></p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="MinimalUtility.Math.html">Math</a></dt>
-      <dd><p>最小限の数学関数.</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="MinimalUtility.MinimalSelectableGraphic.html">MinimalSelectableGraphic</a></dt>
-      <dd><p>UnityEngine.UI.Selectableを使用するうえで最低限の機能を持つグラフィック.
-<remarks>
-子オブジェクトのGraphicをキャッシュして選択時に色変化を伝播させる
-</remarks></p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="MinimalUtility.RectTransformExtensions.html">RectTransformExtensions</a></dt>
-      <dd><p>RectTransformの拡張メソッド.</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="MinimalUtility.SafeAreaAdjuster.html">SafeAreaAdjuster</a></dt>
-      <dd><p>セーフエリア調整スクリプト.</p>
-</dd>
-    </dl>
+
+  <h1 id="MinimalUtility_SafeAreaAdjuster" data-uid="MinimalUtility.SafeAreaAdjuster" class="text-break">
+Class SafeAreaAdjuster  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/SafeAreaAdjuster.cs/#L13"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="MinimalUtility.html">MinimalUtility</a></dd></dl>
+  
+  </div>
+
+  <div class="markdown summary"><p>セーフエリア調整スクリプト.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class SafeAreaAdjuster : MonoBehaviour</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">SafeAreaAdjuster</span></div>
+    </dd>
+  </dl>
+
+
+
+
+
+
+
+
 
 
 </article>

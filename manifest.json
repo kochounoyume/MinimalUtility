@@ -65,6 +65,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/MinimalUtility.EmptyGraphic.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MinimalUtility.EmptyGraphic.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/MinimalUtility.Math.yml",
       "output": {
         ".html": {
@@ -75,10 +85,30 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/MinimalUtility.MinimalSelectableGraphic.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MinimalUtility.MinimalSelectableGraphic.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/MinimalUtility.RectTransformExtensions.yml",
       "output": {
         ".html": {
           "relative_path": "api/MinimalUtility.RectTransformExtensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MinimalUtility.SafeAreaAdjuster.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MinimalUtility.SafeAreaAdjuster.html"
         }
       },
       "version": ""

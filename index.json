@@ -24,15 +24,30 @@
     "title": "Class DisposableExtensions | |",
     "keywords": "Class DisposableExtensions Namespace MinimalUtility IDisposableの拡張メソッド. public static class DisposableExtensions Inheritance object DisposableExtensions Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Methods AddTo<T>(T, ref IDisposable) IDisposableを指定したIDisposableコンテナに追加します. public static void AddTo<T>(this T disposable, ref IDisposable disposableContainer) where T : class, IDisposable Parameters disposable T 任意のIDisposable実装クラスの参照. disposableContainer IDisposable 追加先のIDisposableコンテナ. Type Parameters T 追加したIDisposable."
   },
+  "api/MinimalUtility.EmptyGraphic.html": {
+    "href": "api/MinimalUtility.EmptyGraphic.html",
+    "title": "Class EmptyGraphic | |",
+    "keywords": "Class EmptyGraphic Namespace MinimalUtility 空処理のグラフィック. 想定用途：マスク時のベース, 画面全体を透明なuGUIで覆いたいとき、Buttonの判定領域を透明にしたいとき public class EmptyGraphic : Graphic Inheritance object EmptyGraphic Derived MinimalSelectableGraphic Methods OnPopulateMesh(VertexHelper) protected override void OnPopulateMesh(VertexHelper vh) Parameters vh VertexHelper SetMaterialDirty() public override void SetMaterialDirty() SetVerticesDirty() public override void SetVerticesDirty()"
+  },
   "api/MinimalUtility.Math.html": {
     "href": "api/MinimalUtility.Math.html",
     "title": "Class Math | |",
     "keywords": "Class Math Namespace MinimalUtility 最小限の数学関数. public static class Math Inheritance object Math Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Fields Deg2Rad 度からラジアンに変換する定数（読み取り専用）. public const float Deg2Rad = 0.017453292 Field Value float Infinity 無限大（読み取り専用）. public const float Infinity = Infinity Field Value float NegativeInfinity 負の無限大（読み取り専用）. public const float NegativeInfinity = -Infinity Field Value float PI 円周率（読み取り専用）. public const float PI = 3.1415927 Field Value float Rad2Deg ラジアンから度に変換する定数（読み取り専用）. public const float Rad2Deg = 57.29578 Field Value float Properties Epsilon ごくわずかな浮動小数点の値（読み取り専用）. public static float Epsilon { get; } Property Value float Methods Abs(in int) /value/の絶対値を返します. public static int Abs(in int value) Parameters value int 任意の整数値. Returns int 求めた絶対値. Abs(in float) /f/の絶対値を返します. public static float Abs(in float f) Parameters f float 任意の浮動小数点値. Returns float 求めた絶対値. Approximately(in float, in float) 2つの浮動小数点値を比較し、近似している場合は true を返します. public static bool Approximately(in float a, in float b) Parameters a float 比較する一つ目の浮動小数点値. b float 比較する二つ目の浮動小数点値. Returns bool 近似している場合は true. Max(in int, in int) 2つ以上の値から最大値を返します. public static int Max(in int a, in int b) Parameters a int 比較する一つ目の整数値. b int 比較する二つ目の整数値. Returns int 最大値. Max(in float, in float) 2つ以上の値から最大値を返します. public static float Max(in float a, in float b) Parameters a float 比較する一つ目の浮動小数点値. b float 比較する二つ目の浮動小数点値. Returns float 最大値. Min(in int, in int) 2つ以上の値から最小値を返します. public static int Min(in int a, in int b) Parameters a int 比較する一つ目の整数値. b int 比較する二つ目の整数値. Returns int 最小値. Min(in float, in float) 2つ以上の値から最小値を返します. public static float Min(in float a, in float b) Parameters a float 比較する一つ目の浮動小数点値. b float 比較する二つ目の浮動小数点値. Returns float 最小値."
   },
+  "api/MinimalUtility.MinimalSelectableGraphic.html": {
+    "href": "api/MinimalUtility.MinimalSelectableGraphic.html",
+    "title": "Class MinimalSelectableGraphic | |",
+    "keywords": "Class MinimalSelectableGraphic Namespace MinimalUtility UnityEngine.UI.Selectableを使用するうえで最低限の機能を持つグラフィック. 子オブジェクトのGraphicをキャッシュして選択時に色変化を伝播させる public sealed class MinimalSelectableGraphic : EmptyGraphic Inheritance object EmptyGraphic MinimalSelectableGraphic Inherited Members EmptyGraphic.SetMaterialDirty() EmptyGraphic.SetVerticesDirty() Methods CrossFadeColor(Color, float, bool, bool) public override void CrossFadeColor(Color targetColor, float duration, bool ignoreTimeScale, bool useAlpha) Parameters targetColor Color duration float ignoreTimeScale bool useAlpha bool Start() protected override void Start()"
+  },
   "api/MinimalUtility.RectTransformExtensions.html": {
     "href": "api/MinimalUtility.RectTransformExtensions.html",
     "title": "Class RectTransformExtensions | |",
     "keywords": "Class RectTransformExtensions Namespace MinimalUtility RectTransformの拡張メソッド. public static class RectTransformExtensions Inheritance object RectTransformExtensions Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Methods SetSafeSize(RectTransform, in float, in float) RectTransform.sizeDeltaよりも安全なサイズ設定. public static void SetSafeSize(this RectTransform target, in float sizeX, in float sizeY) Parameters target RectTransform 対象のRectTransform. sizeX float 横の長さ. sizeY float 縦の長さ."
+  },
+  "api/MinimalUtility.SafeAreaAdjuster.html": {
+    "href": "api/MinimalUtility.SafeAreaAdjuster.html",
+    "title": "Class SafeAreaAdjuster | |",
+    "keywords": "Class SafeAreaAdjuster Namespace MinimalUtility セーフエリア調整スクリプト. public class SafeAreaAdjuster : MonoBehaviour Inheritance object SafeAreaAdjuster"
   },
   "api/MinimalUtility.SourceGenerator.EnableInitAccessorGenerator.html": {
     "href": "api/MinimalUtility.SourceGenerator.EnableInitAccessorGenerator.html",
@@ -52,7 +67,7 @@
   "api/MinimalUtility.html": {
     "href": "api/MinimalUtility.html",
     "title": "Namespace MinimalUtility | |",
-    "keywords": "Namespace MinimalUtility Classes ApproximatelyCollection<TValue> 近似値を算出するためのコレクション. ButtonAttribute 指定したメソッドをUnityのInspector上に表示したボタンでテスト実行できるようになる属性. CustomButtonBase カスタムボタンのベース実装. DictionaryExtensions DisposableExtensions IDisposableの拡張メソッド. Math 最小限の数学関数. RectTransformExtensions RectTransformの拡張メソッド."
+    "keywords": "Namespace MinimalUtility Classes ApproximatelyCollection<TValue> 近似値を算出するためのコレクション. ButtonAttribute 指定したメソッドをUnityのInspector上に表示したボタンでテスト実行できるようになる属性. CustomButtonBase カスタムボタンのベース実装. DictionaryExtensions DisposableExtensions IDisposableの拡張メソッド. EmptyGraphic 空処理のグラフィック. 想定用途：マスク時のベース, 画面全体を透明なuGUIで覆いたいとき、Buttonの判定領域を透明にしたいとき Math 最小限の数学関数. MinimalSelectableGraphic UnityEngine.UI.Selectableを使用するうえで最低限の機能を持つグラフィック. 子オブジェクトのGraphicをキャッシュして選択時に色変化を伝播させる RectTransformExtensions RectTransformの拡張メソッド. SafeAreaAdjuster セーフエリア調整スクリプト."
   },
   "api/index.html": {
     "href": "api/index.html",

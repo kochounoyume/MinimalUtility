@@ -347,6 +347,51 @@ references:
   fullName.vb: MinimalUtility.DisposableExtensions.AddTo(Of T)(T, System.IDisposable)
   nameWithType: DisposableExtensions.AddTo<T>(T, ref IDisposable)
   nameWithType.vb: DisposableExtensions.AddTo(Of T)(T, IDisposable)
+- uid: MinimalUtility.EmptyGraphic
+  name: EmptyGraphic
+  href: api/MinimalUtility.EmptyGraphic.html
+  commentId: T:MinimalUtility.EmptyGraphic
+  fullName: MinimalUtility.EmptyGraphic
+  nameWithType: EmptyGraphic
+- uid: MinimalUtility.EmptyGraphic.OnPopulateMesh(VertexHelper)
+  name: OnPopulateMesh(VertexHelper)
+  href: api/MinimalUtility.EmptyGraphic.html#MinimalUtility_EmptyGraphic_OnPopulateMesh_VertexHelper_
+  commentId: M:MinimalUtility.EmptyGraphic.OnPopulateMesh(VertexHelper)
+  fullName: MinimalUtility.EmptyGraphic.OnPopulateMesh(VertexHelper)
+  nameWithType: EmptyGraphic.OnPopulateMesh(VertexHelper)
+- uid: MinimalUtility.EmptyGraphic.OnPopulateMesh*
+  name: OnPopulateMesh
+  href: api/MinimalUtility.EmptyGraphic.html#MinimalUtility_EmptyGraphic_OnPopulateMesh_
+  commentId: Overload:MinimalUtility.EmptyGraphic.OnPopulateMesh
+  isSpec: "True"
+  fullName: MinimalUtility.EmptyGraphic.OnPopulateMesh
+  nameWithType: EmptyGraphic.OnPopulateMesh
+- uid: MinimalUtility.EmptyGraphic.SetMaterialDirty
+  name: SetMaterialDirty()
+  href: api/MinimalUtility.EmptyGraphic.html#MinimalUtility_EmptyGraphic_SetMaterialDirty
+  commentId: M:MinimalUtility.EmptyGraphic.SetMaterialDirty
+  fullName: MinimalUtility.EmptyGraphic.SetMaterialDirty()
+  nameWithType: EmptyGraphic.SetMaterialDirty()
+- uid: MinimalUtility.EmptyGraphic.SetMaterialDirty*
+  name: SetMaterialDirty
+  href: api/MinimalUtility.EmptyGraphic.html#MinimalUtility_EmptyGraphic_SetMaterialDirty_
+  commentId: Overload:MinimalUtility.EmptyGraphic.SetMaterialDirty
+  isSpec: "True"
+  fullName: MinimalUtility.EmptyGraphic.SetMaterialDirty
+  nameWithType: EmptyGraphic.SetMaterialDirty
+- uid: MinimalUtility.EmptyGraphic.SetVerticesDirty
+  name: SetVerticesDirty()
+  href: api/MinimalUtility.EmptyGraphic.html#MinimalUtility_EmptyGraphic_SetVerticesDirty
+  commentId: M:MinimalUtility.EmptyGraphic.SetVerticesDirty
+  fullName: MinimalUtility.EmptyGraphic.SetVerticesDirty()
+  nameWithType: EmptyGraphic.SetVerticesDirty()
+- uid: MinimalUtility.EmptyGraphic.SetVerticesDirty*
+  name: SetVerticesDirty
+  href: api/MinimalUtility.EmptyGraphic.html#MinimalUtility_EmptyGraphic_SetVerticesDirty_
+  commentId: Overload:MinimalUtility.EmptyGraphic.SetVerticesDirty
+  isSpec: "True"
+  fullName: MinimalUtility.EmptyGraphic.SetVerticesDirty
+  nameWithType: EmptyGraphic.SetVerticesDirty
 - uid: MinimalUtility.Math
   name: Math
   href: api/MinimalUtility.Math.html
@@ -487,6 +532,41 @@ references:
   commentId: F:MinimalUtility.Math.Rad2Deg
   fullName: MinimalUtility.Math.Rad2Deg
   nameWithType: Math.Rad2Deg
+- uid: MinimalUtility.MinimalSelectableGraphic
+  name: MinimalSelectableGraphic
+  href: api/MinimalUtility.MinimalSelectableGraphic.html
+  commentId: T:MinimalUtility.MinimalSelectableGraphic
+  fullName: MinimalUtility.MinimalSelectableGraphic
+  nameWithType: MinimalSelectableGraphic
+- uid: MinimalUtility.MinimalSelectableGraphic.CrossFadeColor(Color,System.Single,System.Boolean,System.Boolean)
+  name: CrossFadeColor(Color, float, bool, bool)
+  href: api/MinimalUtility.MinimalSelectableGraphic.html#MinimalUtility_MinimalSelectableGraphic_CrossFadeColor_Color_System_Single_System_Boolean_System_Boolean_
+  commentId: M:MinimalUtility.MinimalSelectableGraphic.CrossFadeColor(Color,System.Single,System.Boolean,System.Boolean)
+  name.vb: CrossFadeColor(Color, Single, Boolean, Boolean)
+  fullName: MinimalUtility.MinimalSelectableGraphic.CrossFadeColor(Color, float, bool, bool)
+  fullName.vb: MinimalUtility.MinimalSelectableGraphic.CrossFadeColor(Color, Single, Boolean, Boolean)
+  nameWithType: MinimalSelectableGraphic.CrossFadeColor(Color, float, bool, bool)
+  nameWithType.vb: MinimalSelectableGraphic.CrossFadeColor(Color, Single, Boolean, Boolean)
+- uid: MinimalUtility.MinimalSelectableGraphic.CrossFadeColor*
+  name: CrossFadeColor
+  href: api/MinimalUtility.MinimalSelectableGraphic.html#MinimalUtility_MinimalSelectableGraphic_CrossFadeColor_
+  commentId: Overload:MinimalUtility.MinimalSelectableGraphic.CrossFadeColor
+  isSpec: "True"
+  fullName: MinimalUtility.MinimalSelectableGraphic.CrossFadeColor
+  nameWithType: MinimalSelectableGraphic.CrossFadeColor
+- uid: MinimalUtility.MinimalSelectableGraphic.Start
+  name: Start()
+  href: api/MinimalUtility.MinimalSelectableGraphic.html#MinimalUtility_MinimalSelectableGraphic_Start
+  commentId: M:MinimalUtility.MinimalSelectableGraphic.Start
+  fullName: MinimalUtility.MinimalSelectableGraphic.Start()
+  nameWithType: MinimalSelectableGraphic.Start()
+- uid: MinimalUtility.MinimalSelectableGraphic.Start*
+  name: Start
+  href: api/MinimalUtility.MinimalSelectableGraphic.html#MinimalUtility_MinimalSelectableGraphic_Start_
+  commentId: Overload:MinimalUtility.MinimalSelectableGraphic.Start
+  isSpec: "True"
+  fullName: MinimalUtility.MinimalSelectableGraphic.Start
+  nameWithType: MinimalSelectableGraphic.Start
 - uid: MinimalUtility.RectTransformExtensions
   name: RectTransformExtensions
   href: api/MinimalUtility.RectTransformExtensions.html
@@ -509,6 +589,12 @@ references:
   isSpec: "True"
   fullName: MinimalUtility.RectTransformExtensions.SetSafeSize
   nameWithType: RectTransformExtensions.SetSafeSize
+- uid: MinimalUtility.SafeAreaAdjuster
+  name: SafeAreaAdjuster
+  href: api/MinimalUtility.SafeAreaAdjuster.html
+  commentId: T:MinimalUtility.SafeAreaAdjuster
+  fullName: MinimalUtility.SafeAreaAdjuster
+  nameWithType: SafeAreaAdjuster
 - uid: MinimalUtility.SourceGenerator
   name: MinimalUtility.SourceGenerator
   href: api/MinimalUtility.SourceGenerator.html
