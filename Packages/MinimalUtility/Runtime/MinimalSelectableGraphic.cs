@@ -15,7 +15,7 @@ namespace MinimalUtility
         /// <summary>
         /// 子オブジェクト以下のGraphicのキャッシュ.
         /// </summary>
-        private Graphic[] childGraphics = System.Array.Empty<Graphic>();
+        private IEnumerable<Graphic> childGraphics;
 
         /// <inheritdoc>
         /// Selectableの押下時の色変化はここを呼び出しているみたいなので、ちょっと処理を上書き.
@@ -42,9 +42,9 @@ namespace MinimalUtility
             }
             if (childGraphicList.Count > 0)
             {
-                childGraphics = childGraphicList.ToArray();
+                childGraphicList.TrimExcess();
+                childGraphics = childGraphicList;
             }
-            childGraphicList.Clear();
         }
     }
 }
