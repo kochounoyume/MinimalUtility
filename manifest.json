@@ -35,16 +35,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/MinimalUtility.CustomButtonBase.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MinimalUtility.CustomButtonBase.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/MinimalUtility.DictionaryExtensions.yml",
       "output": {
         ".html": {

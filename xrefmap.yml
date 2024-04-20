@@ -281,28 +281,6 @@ references:
   isSpec: "True"
   fullName: MinimalUtility.ButtonAttribute.Parameters
   nameWithType: ButtonAttribute.Parameters
-- uid: MinimalUtility.CustomButtonBase
-  name: CustomButtonBase
-  href: api/MinimalUtility.CustomButtonBase.html
-  commentId: T:MinimalUtility.CustomButtonBase
-  fullName: MinimalUtility.CustomButtonBase
-  nameWithType: CustomButtonBase
-- uid: MinimalUtility.CustomButtonBase.OnPointerClick(PointerEventData@)
-  name: OnPointerClick(ref PointerEventData)
-  href: api/MinimalUtility.CustomButtonBase.html#MinimalUtility_CustomButtonBase_OnPointerClick_PointerEventData__
-  commentId: M:MinimalUtility.CustomButtonBase.OnPointerClick(PointerEventData@)
-  name.vb: OnPointerClick(PointerEventData)
-  fullName: MinimalUtility.CustomButtonBase.OnPointerClick(ref PointerEventData)
-  fullName.vb: MinimalUtility.CustomButtonBase.OnPointerClick(PointerEventData)
-  nameWithType: CustomButtonBase.OnPointerClick(ref PointerEventData)
-  nameWithType.vb: CustomButtonBase.OnPointerClick(PointerEventData)
-- uid: MinimalUtility.CustomButtonBase.OnPointerClick*
-  name: OnPointerClick
-  href: api/MinimalUtility.CustomButtonBase.html#MinimalUtility_CustomButtonBase_OnPointerClick_
-  commentId: Overload:MinimalUtility.CustomButtonBase.OnPointerClick
-  isSpec: "True"
-  fullName: MinimalUtility.CustomButtonBase.OnPointerClick
-  nameWithType: CustomButtonBase.OnPointerClick
 - uid: MinimalUtility.DictionaryExtensions
   name: DictionaryExtensions
   href: api/MinimalUtility.DictionaryExtensions.html
