@@ -1,6 +1,9 @@
 name: Run the MacOS Build
 on:
-  # mainブランチにpushがあるたびに自動で実行される
+  pull_request:
+    types:
+      - opened
+      - synchronize
   push:
     branches:
     - main
