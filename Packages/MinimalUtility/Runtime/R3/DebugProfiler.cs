@@ -68,11 +68,6 @@ namespace MinimalUtility.R3
             };
 
         /// <summary>
-        /// 使いまわせるStringBuilder.
-        /// </summary>
-        private readonly StringBuilder sb = new StringBuilder();
-
-        /// <summary>
         /// このクラスのインスタンスが破棄されたときに同時に破棄される購読.
         /// </summary>
         private IDisposable subscription;
@@ -94,6 +89,7 @@ namespace MinimalUtility.R3
             subscription?.Dispose();
 
             TimeSpan interval = TimeSpan.FromSeconds(IntervalSecs);
+            StringBuilder sb = new StringBuilder();
 
             Observable.Timer(interval, interval, UnityTimeProvider.UpdateRealtime)
                 .Select(UnityFrameProvider.Update, (_, provider) => provider.GetFrameCount())
