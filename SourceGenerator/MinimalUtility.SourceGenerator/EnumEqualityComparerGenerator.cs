@@ -66,7 +66,7 @@ public sealed class EnumEqualityComparerGenerator : IIncrementalGenerator
                         ? $$"""
                           using System.Collections.Generic;
                                                                                              
-                          public readonly struct {{targetTypeName}}EqualityComparer : IEqualityComparer<{{targetTypeName}}>
+                          public sealed record {{targetTypeName}}EqualityComparer : IEqualityComparer<{{targetTypeName}}>
                           {
                               public bool Equals({{targetTypeName}} x, {{targetTypeName}} y) => ({{baseTypeString}})x == ({{baseTypeString}})y;
                           
@@ -78,7 +78,7 @@ public sealed class EnumEqualityComparerGenerator : IIncrementalGenerator
                                                                                              
                           namespace {{typeSymbol.ContainingNamespace}}
                           {
-                              public readonly struct {{targetTypeName}}EqualityComparer : IEqualityComparer<{{targetTypeName}}>
+                              public sealed record {{targetTypeName}}EqualityComparer : IEqualityComparer<{{targetTypeName}}>
                               {
                                   public bool Equals({{targetTypeName}} x, {{targetTypeName}} y) => ({{baseTypeString}})x == ({{baseTypeString}})y;
                               
