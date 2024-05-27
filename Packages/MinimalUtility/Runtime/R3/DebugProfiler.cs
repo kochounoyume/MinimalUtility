@@ -125,6 +125,9 @@ namespace MinimalUtility.R3
             // 破壊されないように
             Object.DontDestroyOnLoad(instanceObj);
 
+            AsyncGUITrigger trigger = instanceObj.GetComponent<AsyncGUITrigger>();
+            await trigger.OnGUIAsync(cancellation);
+
             const int fontSize = 30;
             GUIStyle styleBox = new GUIStyle(GUI.skin.box)
             {
@@ -137,8 +140,9 @@ namespace MinimalUtility.R3
             };
             Rect field = new Rect(Screen.safeArea.position, debugArea);
 
-            await foreach (var unused in instanceObj.GetComponent<AsyncGUITrigger>().WithCancellation(cancellation))
+            await foreach (var unused in trigger.WithCancellation(cancellation))
             {
+                Debug.Log($"{Time.frameCount} gui");
                 GUI.Box(field, sb.ToString(), styleBox);
             }
         }
