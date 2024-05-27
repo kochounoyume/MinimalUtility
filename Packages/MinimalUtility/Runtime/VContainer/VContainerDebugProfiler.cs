@@ -1,4 +1,4 @@
-﻿#if ENABLE_VCONTAINER && ENABLE_R3
+﻿#if ENABLE_VCONTAINER && ENABLE_R3 && ENABLE_UNITASK
 using VContainer.Unity;
 
 namespace MinimalUtility.VContainer
@@ -8,7 +8,7 @@ namespace MinimalUtility.VContainer
     /// <summary>
     /// <see cref="IStartable"/>のエントリーポイントを持つデバッグプロファイラー.
     /// </summary>
-    public sealed class VContainerDebugProfiler : DebugProfiler, IStartable
+    public sealed class VContainerDebugProfiler : DebugProfiler, IAsyncStartable
     {
         private const MemoryUnit DefaultUnit = MemoryUnit.GB;
 
