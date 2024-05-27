@@ -142,7 +142,6 @@ namespace MinimalUtility.R3
 
             await foreach (var unused in trigger.WithCancellation(cancellation))
             {
-                Debug.Log($"{Time.frameCount} gui");
                 GUI.Box(field, sb.ToString(), styleBox);
             }
         }
