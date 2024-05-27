@@ -1,7 +1,10 @@
-﻿#if ENABLE_R3
+﻿#if ENABLE_R3 && ENABLE_UNITASK
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading;
+using Cysharp.Threading.Tasks;
+using Cysharp.Threading.Tasks.Triggers;
 using R3;
 using UnityEngine;
 using UnityEngine.Profiling;
@@ -41,7 +44,7 @@ namespace MinimalUtility.R3
     /// <see cref="Time.realtimeSinceStartup"/> の公式リファレンスサンプルコードを参照
     /// </remarks>
     /// </summary>
-    public class DebugProfiler : IDisposable
+    public class DebugProfiler
     {
         /// <summary>
         /// プロファイル情報を更新する間隔.
@@ -68,11 +71,6 @@ namespace MinimalUtility.R3
             };
 
         /// <summary>
-        /// このクラスのインスタンスが破棄されたときに同時に破棄される購読.
-        /// </summary>
-        private IDisposable subscription;
-
-        /// <summary>
         /// Initializes a new instance of the <see cref="DebugProfiler"/> class.
         /// </summary>
         /// <param name="memoryUnit">総メモリ使用量表示の単位.</param>
@@ -84,10 +82,11 @@ namespace MinimalUtility.R3
         /// <summary>
         /// プロファイル情報の表示を開始する.
         /// </summary>
-        public void Start()
+        /// <param name="cancellation">キャンセルトークン.</param>
+#pragma warning disable SA1615 // ElementReturnValueMustBeDocumented
+        public async UniTask StartAsync(CancellationToken cancellation)
+#pragma warning restore SA1615 // ElementReturnValueMustBeDocumented
         {
-            subscription?.Dispose();
-
             TimeSpan interval = TimeSpan.FromSeconds(IntervalSecs);
             StringBuilder sb = new StringBuilder();
 
@@ -114,16 +113,15 @@ namespace MinimalUtility.R3
                         const string memoryText = "Memory: ";
                         param.sb.Append(memoryText);
                         // 確保している総メモリ
-                        float totalMemory =
-                            Profiler.GetTotalReservedMemoryLong() / Mathf.Pow(1024f, (int)param.unit);
+                        float totalMemory = Profiler.GetTotalReservedMemoryLong() / Mathf.Pow(1024f, (int)param.unit);
                         const string formatF = "F";
                         param.sb.Append(totalMemory.ToString(formatF));
                         param.sb.Append(param.unitStr);
                     })
-                .AddTo(ref subscription);
+                .RegisterTo(cancellation);
 
             const string instanceName = "DebugProfiler";
-            GameObject instanceObj = new GameObject(instanceName);
+            GameObject instanceObj = new GameObject(instanceName, typeof(AsyncGUITrigger));
             // 破壊されないように
             Object.DontDestroyOnLoad(instanceObj);
 
@@ -139,19 +137,10 @@ namespace MinimalUtility.R3
             };
             Rect field = new Rect(Screen.safeArea.position, debugArea);
 
-            instanceObj
-                .OnGUIAsObservable()
-                .Subscribe(new { sb, styleBox, field }, static (_, param) =>
-                {
-                    GUI.Box(param.field, param.sb.ToString(), param.styleBox);
-                });
-        }
-
-        /// <inheritdoc/>
-        void IDisposable.Dispose()
-        {
-            subscription?.Dispose();
-            subscription = null;
+            await foreach (var unused in instanceObj.GetComponent<AsyncGUITrigger>().WithCancellation(cancellation))
+            {
+                GUI.Box(field, sb.ToString(), styleBox);
+            }
         }
     }
 }
