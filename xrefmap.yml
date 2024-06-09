@@ -417,6 +417,95 @@ references:
   isSpec: "True"
   fullName: MinimalUtility.Math.Approximately
   nameWithType: Math.Approximately
+- uid: MinimalUtility.Math.Ceil(System.Single@)
+  name: Ceil(in float)
+  href: api/MinimalUtility.Math.html#MinimalUtility_Math_Ceil_System_Single__
+  commentId: M:MinimalUtility.Math.Ceil(System.Single@)
+  name.vb: Ceil(Single)
+  fullName: MinimalUtility.Math.Ceil(in float)
+  fullName.vb: MinimalUtility.Math.Ceil(Single)
+  nameWithType: Math.Ceil(in float)
+  nameWithType.vb: Math.Ceil(Single)
+- uid: MinimalUtility.Math.Ceil*
+  name: Ceil
+  href: api/MinimalUtility.Math.html#MinimalUtility_Math_Ceil_
+  commentId: Overload:MinimalUtility.Math.Ceil
+  isSpec: "True"
+  fullName: MinimalUtility.Math.Ceil
+  nameWithType: Math.Ceil
+- uid: MinimalUtility.Math.CeilToInt(System.Single@)
+  name: CeilToInt(in float)
+  href: api/MinimalUtility.Math.html#MinimalUtility_Math_CeilToInt_System_Single__
+  commentId: M:MinimalUtility.Math.CeilToInt(System.Single@)
+  name.vb: CeilToInt(Single)
+  fullName: MinimalUtility.Math.CeilToInt(in float)
+  fullName.vb: MinimalUtility.Math.CeilToInt(Single)
+  nameWithType: Math.CeilToInt(in float)
+  nameWithType.vb: Math.CeilToInt(Single)
+- uid: MinimalUtility.Math.CeilToInt*
+  name: CeilToInt
+  href: api/MinimalUtility.Math.html#MinimalUtility_Math_CeilToInt_
+  commentId: Overload:MinimalUtility.Math.CeilToInt
+  isSpec: "True"
+  fullName: MinimalUtility.Math.CeilToInt
+  nameWithType: Math.CeilToInt
+- uid: MinimalUtility.Math.Clamp(System.Int32@,System.Int32@,System.Int32@)
+  name: Clamp(in int, in int, in int)
+  href: api/MinimalUtility.Math.html#MinimalUtility_Math_Clamp_System_Int32__System_Int32__System_Int32__
+  commentId: M:MinimalUtility.Math.Clamp(System.Int32@,System.Int32@,System.Int32@)
+  name.vb: Clamp(Integer, Integer, Integer)
+  fullName: MinimalUtility.Math.Clamp(in int, in int, in int)
+  fullName.vb: MinimalUtility.Math.Clamp(Integer, Integer, Integer)
+  nameWithType: Math.Clamp(in int, in int, in int)
+  nameWithType.vb: Math.Clamp(Integer, Integer, Integer)
+- uid: MinimalUtility.Math.Clamp(System.Single@,System.Single@,System.Single@)
+  name: Clamp(in float, in float, in float)
+  href: api/MinimalUtility.Math.html#MinimalUtility_Math_Clamp_System_Single__System_Single__System_Single__
+  commentId: M:MinimalUtility.Math.Clamp(System.Single@,System.Single@,System.Single@)
+  name.vb: Clamp(Single, Single, Single)
+  fullName: MinimalUtility.Math.Clamp(in float, in float, in float)
+  fullName.vb: MinimalUtility.Math.Clamp(Single, Single, Single)
+  nameWithType: Math.Clamp(in float, in float, in float)
+  nameWithType.vb: Math.Clamp(Single, Single, Single)
+- uid: MinimalUtility.Math.Clamp*
+  name: Clamp
+  href: api/MinimalUtility.Math.html#MinimalUtility_Math_Clamp_
+  commentId: Overload:MinimalUtility.Math.Clamp
+  isSpec: "True"
+  fullName: MinimalUtility.Math.Clamp
+  nameWithType: Math.Clamp
+- uid: MinimalUtility.Math.Clamp01(System.Single@)
+  name: Clamp01(in float)
+  href: api/MinimalUtility.Math.html#MinimalUtility_Math_Clamp01_System_Single__
+  commentId: M:MinimalUtility.Math.Clamp01(System.Single@)
+  name.vb: Clamp01(Single)
+  fullName: MinimalUtility.Math.Clamp01(in float)
+  fullName.vb: MinimalUtility.Math.Clamp01(Single)
+  nameWithType: Math.Clamp01(in float)
+  nameWithType.vb: Math.Clamp01(Single)
+- uid: MinimalUtility.Math.Clamp01*
+  name: Clamp01
+  href: api/MinimalUtility.Math.html#MinimalUtility_Math_Clamp01_
+  commentId: Overload:MinimalUtility.Math.Clamp01
+  isSpec: "True"
+  fullName: MinimalUtility.Math.Clamp01
+  nameWithType: Math.Clamp01
+- uid: MinimalUtility.Math.Cos(System.Single@)
+  name: Cos(in float)
+  href: api/MinimalUtility.Math.html#MinimalUtility_Math_Cos_System_Single__
+  commentId: M:MinimalUtility.Math.Cos(System.Single@)
+  name.vb: Cos(Single)
+  fullName: MinimalUtility.Math.Cos(in float)
+  fullName.vb: MinimalUtility.Math.Cos(Single)
+  nameWithType: Math.Cos(in float)
+  nameWithType.vb: Math.Cos(Single)
+- uid: MinimalUtility.Math.Cos*
+  name: Cos
+  href: api/MinimalUtility.Math.html#MinimalUtility_Math_Cos_
+  commentId: Overload:MinimalUtility.Math.Cos
+  isSpec: "True"
+  fullName: MinimalUtility.Math.Cos
+  nameWithType: Math.Cos
 - uid: MinimalUtility.Math.Deg2Rad
   name: Deg2Rad
   href: api/MinimalUtility.Math.html#MinimalUtility_Math_Deg2Rad
@@ -436,12 +525,76 @@ references:
   isSpec: "True"
   fullName: MinimalUtility.Math.Epsilon
   nameWithType: Math.Epsilon
+- uid: MinimalUtility.Math.Floor(System.Single@)
+  name: Floor(in float)
+  href: api/MinimalUtility.Math.html#MinimalUtility_Math_Floor_System_Single__
+  commentId: M:MinimalUtility.Math.Floor(System.Single@)
+  name.vb: Floor(Single)
+  fullName: MinimalUtility.Math.Floor(in float)
+  fullName.vb: MinimalUtility.Math.Floor(Single)
+  nameWithType: Math.Floor(in float)
+  nameWithType.vb: Math.Floor(Single)
+- uid: MinimalUtility.Math.Floor*
+  name: Floor
+  href: api/MinimalUtility.Math.html#MinimalUtility_Math_Floor_
+  commentId: Overload:MinimalUtility.Math.Floor
+  isSpec: "True"
+  fullName: MinimalUtility.Math.Floor
+  nameWithType: Math.Floor
+- uid: MinimalUtility.Math.FloorToInt(System.Single@)
+  name: FloorToInt(in float)
+  href: api/MinimalUtility.Math.html#MinimalUtility_Math_FloorToInt_System_Single__
+  commentId: M:MinimalUtility.Math.FloorToInt(System.Single@)
+  name.vb: FloorToInt(Single)
+  fullName: MinimalUtility.Math.FloorToInt(in float)
+  fullName.vb: MinimalUtility.Math.FloorToInt(Single)
+  nameWithType: Math.FloorToInt(in float)
+  nameWithType.vb: Math.FloorToInt(Single)
+- uid: MinimalUtility.Math.FloorToInt*
+  name: FloorToInt
+  href: api/MinimalUtility.Math.html#MinimalUtility_Math_FloorToInt_
+  commentId: Overload:MinimalUtility.Math.FloorToInt
+  isSpec: "True"
+  fullName: MinimalUtility.Math.FloorToInt
+  nameWithType: Math.FloorToInt
 - uid: MinimalUtility.Math.Infinity
   name: Infinity
   href: api/MinimalUtility.Math.html#MinimalUtility_Math_Infinity
   commentId: F:MinimalUtility.Math.Infinity
   fullName: MinimalUtility.Math.Infinity
   nameWithType: Math.Infinity
+- uid: MinimalUtility.Math.Lerp(System.Single@,System.Single@,System.Single@)
+  name: Lerp(in float, in float, in float)
+  href: api/MinimalUtility.Math.html#MinimalUtility_Math_Lerp_System_Single__System_Single__System_Single__
+  commentId: M:MinimalUtility.Math.Lerp(System.Single@,System.Single@,System.Single@)
+  name.vb: Lerp(Single, Single, Single)
+  fullName: MinimalUtility.Math.Lerp(in float, in float, in float)
+  fullName.vb: MinimalUtility.Math.Lerp(Single, Single, Single)
+  nameWithType: Math.Lerp(in float, in float, in float)
+  nameWithType.vb: Math.Lerp(Single, Single, Single)
+- uid: MinimalUtility.Math.Lerp*
+  name: Lerp
+  href: api/MinimalUtility.Math.html#MinimalUtility_Math_Lerp_
+  commentId: Overload:MinimalUtility.Math.Lerp
+  isSpec: "True"
+  fullName: MinimalUtility.Math.Lerp
+  nameWithType: Math.Lerp
+- uid: MinimalUtility.Math.LerpUnClamped(System.Single@,System.Single@,System.Single@)
+  name: LerpUnClamped(in float, in float, in float)
+  href: api/MinimalUtility.Math.html#MinimalUtility_Math_LerpUnClamped_System_Single__System_Single__System_Single__
+  commentId: M:MinimalUtility.Math.LerpUnClamped(System.Single@,System.Single@,System.Single@)
+  name.vb: LerpUnClamped(Single, Single, Single)
+  fullName: MinimalUtility.Math.LerpUnClamped(in float, in float, in float)
+  fullName.vb: MinimalUtility.Math.LerpUnClamped(Single, Single, Single)
+  nameWithType: Math.LerpUnClamped(in float, in float, in float)
+  nameWithType.vb: Math.LerpUnClamped(Single, Single, Single)
+- uid: MinimalUtility.Math.LerpUnClamped*
+  name: LerpUnClamped
+  href: api/MinimalUtility.Math.html#MinimalUtility_Math_LerpUnClamped_
+  commentId: Overload:MinimalUtility.Math.LerpUnClamped
+  isSpec: "True"
+  fullName: MinimalUtility.Math.LerpUnClamped
+  nameWithType: Math.LerpUnClamped
 - uid: MinimalUtility.Math.Max(System.Int32@,System.Int32@)
   name: Max(in int, in int)
   href: api/MinimalUtility.Math.html#MinimalUtility_Math_Max_System_Int32__System_Int32__
@@ -504,12 +657,108 @@ references:
   commentId: F:MinimalUtility.Math.PI
   fullName: MinimalUtility.Math.PI
   nameWithType: Math.PI
+- uid: MinimalUtility.Math.Pow(System.Single@,System.Single@)
+  name: Pow(in float, in float)
+  href: api/MinimalUtility.Math.html#MinimalUtility_Math_Pow_System_Single__System_Single__
+  commentId: M:MinimalUtility.Math.Pow(System.Single@,System.Single@)
+  name.vb: Pow(Single, Single)
+  fullName: MinimalUtility.Math.Pow(in float, in float)
+  fullName.vb: MinimalUtility.Math.Pow(Single, Single)
+  nameWithType: Math.Pow(in float, in float)
+  nameWithType.vb: Math.Pow(Single, Single)
+- uid: MinimalUtility.Math.Pow*
+  name: Pow
+  href: api/MinimalUtility.Math.html#MinimalUtility_Math_Pow_
+  commentId: Overload:MinimalUtility.Math.Pow
+  isSpec: "True"
+  fullName: MinimalUtility.Math.Pow
+  nameWithType: Math.Pow
 - uid: MinimalUtility.Math.Rad2Deg
   name: Rad2Deg
   href: api/MinimalUtility.Math.html#MinimalUtility_Math_Rad2Deg
   commentId: F:MinimalUtility.Math.Rad2Deg
   fullName: MinimalUtility.Math.Rad2Deg
   nameWithType: Math.Rad2Deg
+- uid: MinimalUtility.Math.Round(System.Single@)
+  name: Round(in float)
+  href: api/MinimalUtility.Math.html#MinimalUtility_Math_Round_System_Single__
+  commentId: M:MinimalUtility.Math.Round(System.Single@)
+  name.vb: Round(Single)
+  fullName: MinimalUtility.Math.Round(in float)
+  fullName.vb: MinimalUtility.Math.Round(Single)
+  nameWithType: Math.Round(in float)
+  nameWithType.vb: Math.Round(Single)
+- uid: MinimalUtility.Math.Round*
+  name: Round
+  href: api/MinimalUtility.Math.html#MinimalUtility_Math_Round_
+  commentId: Overload:MinimalUtility.Math.Round
+  isSpec: "True"
+  fullName: MinimalUtility.Math.Round
+  nameWithType: Math.Round
+- uid: MinimalUtility.Math.RoundToInt(System.Single@)
+  name: RoundToInt(in float)
+  href: api/MinimalUtility.Math.html#MinimalUtility_Math_RoundToInt_System_Single__
+  commentId: M:MinimalUtility.Math.RoundToInt(System.Single@)
+  name.vb: RoundToInt(Single)
+  fullName: MinimalUtility.Math.RoundToInt(in float)
+  fullName.vb: MinimalUtility.Math.RoundToInt(Single)
+  nameWithType: Math.RoundToInt(in float)
+  nameWithType.vb: Math.RoundToInt(Single)
+- uid: MinimalUtility.Math.RoundToInt*
+  name: RoundToInt
+  href: api/MinimalUtility.Math.html#MinimalUtility_Math_RoundToInt_
+  commentId: Overload:MinimalUtility.Math.RoundToInt
+  isSpec: "True"
+  fullName: MinimalUtility.Math.RoundToInt
+  nameWithType: Math.RoundToInt
+- uid: MinimalUtility.Math.Sin(System.Single@)
+  name: Sin(in float)
+  href: api/MinimalUtility.Math.html#MinimalUtility_Math_Sin_System_Single__
+  commentId: M:MinimalUtility.Math.Sin(System.Single@)
+  name.vb: Sin(Single)
+  fullName: MinimalUtility.Math.Sin(in float)
+  fullName.vb: MinimalUtility.Math.Sin(Single)
+  nameWithType: Math.Sin(in float)
+  nameWithType.vb: Math.Sin(Single)
+- uid: MinimalUtility.Math.Sin*
+  name: Sin
+  href: api/MinimalUtility.Math.html#MinimalUtility_Math_Sin_
+  commentId: Overload:MinimalUtility.Math.Sin
+  isSpec: "True"
+  fullName: MinimalUtility.Math.Sin
+  nameWithType: Math.Sin
+- uid: MinimalUtility.Math.Sqrt(System.Single@)
+  name: Sqrt(in float)
+  href: api/MinimalUtility.Math.html#MinimalUtility_Math_Sqrt_System_Single__
+  commentId: M:MinimalUtility.Math.Sqrt(System.Single@)
+  name.vb: Sqrt(Single)
+  fullName: MinimalUtility.Math.Sqrt(in float)
+  fullName.vb: MinimalUtility.Math.Sqrt(Single)
+  nameWithType: Math.Sqrt(in float)
+  nameWithType.vb: Math.Sqrt(Single)
+- uid: MinimalUtility.Math.Sqrt*
+  name: Sqrt
+  href: api/MinimalUtility.Math.html#MinimalUtility_Math_Sqrt_
+  commentId: Overload:MinimalUtility.Math.Sqrt
+  isSpec: "True"
+  fullName: MinimalUtility.Math.Sqrt
+  nameWithType: Math.Sqrt
+- uid: MinimalUtility.Math.Tan(System.Single@)
+  name: Tan(in float)
+  href: api/MinimalUtility.Math.html#MinimalUtility_Math_Tan_System_Single__
+  commentId: M:MinimalUtility.Math.Tan(System.Single@)
+  name.vb: Tan(Single)
+  fullName: MinimalUtility.Math.Tan(in float)
+  fullName.vb: MinimalUtility.Math.Tan(Single)
+  nameWithType: Math.Tan(in float)
+  nameWithType.vb: Math.Tan(Single)
+- uid: MinimalUtility.Math.Tan*
+  name: Tan
+  href: api/MinimalUtility.Math.html#MinimalUtility_Math_Tan_
+  commentId: Overload:MinimalUtility.Math.Tan
+  isSpec: "True"
+  fullName: MinimalUtility.Math.Tan
+  nameWithType: Math.Tan
 - uid: MinimalUtility.MinimalSelectableGraphic
   name: MinimalSelectableGraphic
   href: api/MinimalUtility.MinimalSelectableGraphic.html
