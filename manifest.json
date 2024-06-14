@@ -15,30 +15,10 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/MinimalUtility.ApproximatelyCollection-1.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MinimalUtility.ApproximatelyCollection-1.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/MinimalUtility.ButtonAttribute.yml",
       "output": {
         ".html": {
           "relative_path": "api/MinimalUtility.ButtonAttribute.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MinimalUtility.DictionaryExtensions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MinimalUtility.DictionaryExtensions.html"
         }
       },
       "version": ""
