@@ -7,7 +7,7 @@ using Object = UnityEngine.Object;
 namespace MinimalUtility
 {
     /// <summary>
-    /// ObjectPoolを提供するインターフェイス
+    /// ObjectPoolを提供するインターフェイス.
     /// </summary>
     /// <typeparam name="T">プールするオブジェクトの型.</typeparam>
 #pragma warning disable SA1649
