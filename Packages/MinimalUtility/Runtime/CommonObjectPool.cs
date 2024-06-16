@@ -112,7 +112,7 @@ namespace MinimalUtility
         /// <summary>
         /// プールの初期容量と最大サイズを指定する構造体.
         /// </summary>
-        public readonly ref struct PoolSizeSetting
+        public readonly struct PoolSizeSetting
         {
             /// <summary>
             /// スタックが作成されるときの初期容量.
