@@ -76,15 +76,15 @@ references:
   fullName.vb: MinimalUtility.CommonObjectPool(Of T)
   nameWithType: CommonObjectPool<T>
   nameWithType.vb: CommonObjectPool(Of T)
-- uid: MinimalUtility.CommonObjectPool`1.#ctor(`0,Transform,System.Int32,System.Int32)
-  name: CommonObjectPool(T, Transform, int, int)
-  href: api/MinimalUtility.CommonObjectPool-1.html#MinimalUtility_CommonObjectPool_1__ctor__0_Transform_System_Int32_System_Int32_
-  commentId: M:MinimalUtility.CommonObjectPool`1.#ctor(`0,Transform,System.Int32,System.Int32)
-  name.vb: New(T, Transform, Integer, Integer)
-  fullName: MinimalUtility.CommonObjectPool<T>.CommonObjectPool(T, Transform, int, int)
-  fullName.vb: MinimalUtility.CommonObjectPool(Of T).New(T, Transform, Integer, Integer)
-  nameWithType: CommonObjectPool<T>.CommonObjectPool(T, Transform, int, int)
-  nameWithType.vb: CommonObjectPool(Of T).New(T, Transform, Integer, Integer)
+- uid: MinimalUtility.CommonObjectPool`1.#ctor(`0,Transform,MinimalUtility.CommonObjectPool{`0}.PoolSizeSetting)
+  name: CommonObjectPool(T, Transform, PoolSizeSetting)
+  href: api/MinimalUtility.CommonObjectPool-1.html#MinimalUtility_CommonObjectPool_1__ctor__0_Transform_MinimalUtility_CommonObjectPool__0__PoolSizeSetting_
+  commentId: M:MinimalUtility.CommonObjectPool`1.#ctor(`0,Transform,MinimalUtility.CommonObjectPool{`0}.PoolSizeSetting)
+  name.vb: New(T, Transform, PoolSizeSetting)
+  fullName: MinimalUtility.CommonObjectPool<T>.CommonObjectPool(T, Transform, MinimalUtility.CommonObjectPool<T>.PoolSizeSetting)
+  fullName.vb: MinimalUtility.CommonObjectPool(Of T).New(T, Transform, MinimalUtility.CommonObjectPool(Of T).PoolSizeSetting)
+  nameWithType: CommonObjectPool<T>.CommonObjectPool(T, Transform, CommonObjectPool<T>.PoolSizeSetting)
+  nameWithType.vb: CommonObjectPool(Of T).New(T, Transform, CommonObjectPool(Of T).PoolSizeSetting)
 - uid: MinimalUtility.CommonObjectPool`1.#ctor*
   name: CommonObjectPool
   href: api/MinimalUtility.CommonObjectPool-1.html#MinimalUtility_CommonObjectPool_1__ctor_
@@ -155,6 +155,34 @@ references:
   fullName.vb: MinimalUtility.CommonObjectPool(Of T).Get
   nameWithType: CommonObjectPool<T>.Get
   nameWithType.vb: CommonObjectPool(Of T).Get
+- uid: MinimalUtility.CommonObjectPool`1.PoolSizeSetting
+  name: CommonObjectPool<T>.PoolSizeSetting
+  href: api/MinimalUtility.CommonObjectPool-1.PoolSizeSetting.html
+  commentId: T:MinimalUtility.CommonObjectPool`1.PoolSizeSetting
+  name.vb: CommonObjectPool(Of T).PoolSizeSetting
+  fullName: MinimalUtility.CommonObjectPool<T>.PoolSizeSetting
+  fullName.vb: MinimalUtility.CommonObjectPool(Of T).PoolSizeSetting
+  nameWithType: CommonObjectPool<T>.PoolSizeSetting
+  nameWithType.vb: CommonObjectPool(Of T).PoolSizeSetting
+- uid: MinimalUtility.CommonObjectPool`1.PoolSizeSetting.#ctor(System.Int32@,System.Int32@)
+  name: PoolSizeSetting(in int, in int)
+  href: api/MinimalUtility.CommonObjectPool-1.PoolSizeSetting.html#MinimalUtility_CommonObjectPool_1_PoolSizeSetting__ctor_System_Int32__System_Int32__
+  commentId: M:MinimalUtility.CommonObjectPool`1.PoolSizeSetting.#ctor(System.Int32@,System.Int32@)
+  name.vb: New(Integer, Integer)
+  fullName: MinimalUtility.CommonObjectPool<T>.PoolSizeSetting.PoolSizeSetting(in int, in int)
+  fullName.vb: MinimalUtility.CommonObjectPool(Of T).PoolSizeSetting.New(Integer, Integer)
+  nameWithType: CommonObjectPool<T>.PoolSizeSetting.PoolSizeSetting(in int, in int)
+  nameWithType.vb: CommonObjectPool(Of T).PoolSizeSetting.New(Integer, Integer)
+- uid: MinimalUtility.CommonObjectPool`1.PoolSizeSetting.#ctor*
+  name: PoolSizeSetting
+  href: api/MinimalUtility.CommonObjectPool-1.PoolSizeSetting.html#MinimalUtility_CommonObjectPool_1_PoolSizeSetting__ctor_
+  commentId: Overload:MinimalUtility.CommonObjectPool`1.PoolSizeSetting.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: MinimalUtility.CommonObjectPool<T>.PoolSizeSetting.PoolSizeSetting
+  fullName.vb: MinimalUtility.CommonObjectPool(Of T).PoolSizeSetting.New
+  nameWithType: CommonObjectPool<T>.PoolSizeSetting.PoolSizeSetting
+  nameWithType.vb: CommonObjectPool(Of T).PoolSizeSetting.New
 - uid: MinimalUtility.CommonObjectPool`1.Release(`0)
   name: Release(T)
   href: api/MinimalUtility.CommonObjectPool-1.html#MinimalUtility_CommonObjectPool_1_Release__0_

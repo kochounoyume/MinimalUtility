@@ -176,9 +176,9 @@ Class CommonObjectPool&lt;T&gt;  <a class="header-action link-secondary" title="
 
   <a id="MinimalUtility_CommonObjectPool_1__ctor_" data-uid="MinimalUtility.CommonObjectPool`1.#ctor*"></a>
 
-  <h3 id="MinimalUtility_CommonObjectPool_1__ctor__0_Transform_System_Int32_System_Int32_" data-uid="MinimalUtility.CommonObjectPool`1.#ctor(`0,Transform,System.Int32,System.Int32)">
-  CommonObjectPool(T, Transform, int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/CommonObjectPool.cs/#L44"><i class="bi bi-code-slash"></i></a>
+  <h3 id="MinimalUtility_CommonObjectPool_1__ctor__0_Transform_MinimalUtility_CommonObjectPool__0__PoolSizeSetting_" data-uid="MinimalUtility.CommonObjectPool`1.#ctor(`0,Transform,MinimalUtility.CommonObjectPool{`0}.PoolSizeSetting)">
+  CommonObjectPool(T, Transform, PoolSizeSetting)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/CommonObjectPool.cs/#L43"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="MinimalUtility.CommonObjectPool-1.html">CommonObjectPool&lt;T&gt;</a> class.</p>
@@ -186,7 +186,7 @@ Class CommonObjectPool&lt;T&gt;  <a class="header-action link-secondary" title="
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public CommonObjectPool(T prefab, Transform root, int defaultCapacity, int maxSize)</code></pre>
+    <pre><code class="lang-csharp hljs">public CommonObjectPool(T prefab, Transform root, CommonObjectPool&lt;T&gt;.PoolSizeSetting setting)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -197,11 +197,8 @@ Class CommonObjectPool&lt;T&gt;  <a class="header-action link-secondary" title="
     <dt><code>root</code> <span class="xref">Transform</span></dt>
     <dd><p>プールから取得されたインスタンスに指定する親オブジェクト.</p>
 </dd>
-    <dt><code>defaultCapacity</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd><p>スタックが作成されるときの初期容量.</p>
-</dd>
-    <dt><code>maxSize</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd><p>プールの最大サイズ.</p>
+    <dt><code>setting</code> <a class="xref" href="MinimalUtility.CommonObjectPool-1.html">CommonObjectPool</a>&lt;T&gt;.<a class="xref" href="MinimalUtility.CommonObjectPool-1.PoolSizeSetting.html">PoolSizeSetting</a></dt>
+    <dd><p>プールの初期容量と最大サイズ.</p>
 </dd>
   </dl>
 
@@ -224,7 +221,7 @@ Class CommonObjectPool&lt;T&gt;  <a class="header-action link-secondary" title="
 
   <h3 id="MinimalUtility_CommonObjectPool_1_CountInactive" data-uid="MinimalUtility.CommonObjectPool`1.CountInactive">
   CountInactive
-  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/CommonObjectPool.cs/#L64"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/CommonObjectPool.cs/#L63"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -259,7 +256,7 @@ Class CommonObjectPool&lt;T&gt;  <a class="header-action link-secondary" title="
 
   <h3 id="MinimalUtility_CommonObjectPool_1_Clear" data-uid="MinimalUtility.CommonObjectPool`1.Clear">
   Clear()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/CommonObjectPool.cs/#L92"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/CommonObjectPool.cs/#L91"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -285,7 +282,7 @@ Class CommonObjectPool&lt;T&gt;  <a class="header-action link-secondary" title="
 
   <h3 id="MinimalUtility_CommonObjectPool_1_Get" data-uid="MinimalUtility.CommonObjectPool`1.Get">
   Get()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/CommonObjectPool.cs/#L67"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/CommonObjectPool.cs/#L66"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -316,7 +313,7 @@ Class CommonObjectPool&lt;T&gt;  <a class="header-action link-secondary" title="
 
   <h3 id="MinimalUtility_CommonObjectPool_1_Get__0__" data-uid="MinimalUtility.CommonObjectPool`1.Get(`0@)">
   Get(out T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/CommonObjectPool.cs/#L75"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/CommonObjectPool.cs/#L74"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -352,7 +349,7 @@ Class CommonObjectPool&lt;T&gt;  <a class="header-action link-secondary" title="
 
   <h3 id="MinimalUtility_CommonObjectPool_1_Release__0_" data-uid="MinimalUtility.CommonObjectPool`1.Release(`0)">
   Release(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/CommonObjectPool.cs/#L83"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/CommonObjectPool.cs/#L82"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -383,7 +380,7 @@ Class CommonObjectPool&lt;T&gt;  <a class="header-action link-secondary" title="
 
   <h3 id="MinimalUtility_CommonObjectPool_1_ReleaseAll" data-uid="MinimalUtility.CommonObjectPool`1.ReleaseAll">
   ReleaseAll()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/CommonObjectPool.cs/#L95"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/CommonObjectPool.cs/#L94"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>取得済みの全てのオブジェクトを解放する.</p>
