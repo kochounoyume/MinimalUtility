@@ -7,7 +7,7 @@
   "api/MinimalUtility.CommonObjectPool-1.PoolSizeSetting.html": {
     "href": "api/MinimalUtility.CommonObjectPool-1.PoolSizeSetting.html",
     "title": "Struct CommonObjectPool<T>.PoolSizeSetting | |",
-    "keywords": "Struct CommonObjectPool<T>.PoolSizeSetting Namespace MinimalUtility プールの初期容量と最大サイズを指定する構造体. public readonly ref struct CommonObjectPool<T>.PoolSizeSetting Inherited Members ValueType.Equals(object) ValueType.GetHashCode() ValueType.ToString() object.Equals(object, object) object.GetType() object.ReferenceEquals(object, object) Constructors PoolSizeSetting(in int, in int) Initializes a new instance of the CommonObjectPool<T>.PoolSizeSetting struct. public PoolSizeSetting(in int defaultCapacity, in int maxSize) Parameters defaultCapacity int スタックが作成されるときの初期容量. maxSize int プールの最大サイズ."
+    "keywords": "Struct CommonObjectPool<T>.PoolSizeSetting Namespace MinimalUtility プールの初期容量と最大サイズを指定する構造体. public readonly struct CommonObjectPool<T>.PoolSizeSetting Inherited Members ValueType.Equals(object) ValueType.GetHashCode() ValueType.ToString() object.Equals(object, object) object.GetType() object.ReferenceEquals(object, object) Constructors PoolSizeSetting(in int, in int) Initializes a new instance of the CommonObjectPool<T>.PoolSizeSetting struct. public PoolSizeSetting(in int defaultCapacity, in int maxSize) Parameters defaultCapacity int スタックが作成されるときの初期容量. maxSize int プールの最大サイズ."
   },
   "api/MinimalUtility.CommonObjectPool-1.html": {
     "href": "api/MinimalUtility.CommonObjectPool-1.html",
