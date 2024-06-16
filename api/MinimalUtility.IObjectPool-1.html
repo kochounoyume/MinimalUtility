@@ -89,7 +89,7 @@
 
 
   <h1 id="MinimalUtility_IObjectPool_1" data-uid="MinimalUtility.IObjectPool`1" class="text-break">
-Interface IObjectPool&lt;T&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/CommonObjectPool.cs/#L14"><i class="bi bi-code-slash"></i></a>
+Interface IObjectPool&lt;T&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/CommonObjectPool.cs/#L15"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -127,11 +127,50 @@ Interface IObjectPool&lt;T&gt;  <a class="header-action link-secondary" title="V
 </h2>
 
 
+  <a id="MinimalUtility_IObjectPool_1_GetWithToken_" data-uid="MinimalUtility.IObjectPool`1.GetWithToken*"></a>
+
+  <h3 id="MinimalUtility_IObjectPool_1_GetWithToken__0__" data-uid="MinimalUtility.IObjectPool`1.GetWithToken(`0@)">
+  GetWithToken(out T)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/CommonObjectPool.cs/#L23"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>プールからインスタンスとキャンセルトークンを取得する.プールが空の場合は、新しいインスタンスが作成される.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">CancellationToken GetWithToken(out T v)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>v</code> <span class="xref">T</span></dt>
+    <dd><p>取得したインスタンス.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>インスタンスがプールに戻ったときにキャンセルされるトークン.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="MinimalUtility_IObjectPool_1_ReleaseAll_" data-uid="MinimalUtility.IObjectPool`1.ReleaseAll*"></a>
 
   <h3 id="MinimalUtility_IObjectPool_1_ReleaseAll" data-uid="MinimalUtility.IObjectPool`1.ReleaseAll">
   ReleaseAll()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/CommonObjectPool.cs/#L20"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/CommonObjectPool.cs/#L28"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>取得済みの全てのオブジェクトを解放する.</p>

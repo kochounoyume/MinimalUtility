@@ -155,6 +155,24 @@ references:
   fullName.vb: MinimalUtility.CommonObjectPool(Of T).Get
   nameWithType: CommonObjectPool<T>.Get
   nameWithType.vb: CommonObjectPool(Of T).Get
+- uid: MinimalUtility.CommonObjectPool`1.GetWithToken(`0@)
+  name: GetWithToken(out T)
+  href: api/MinimalUtility.CommonObjectPool-1.html#MinimalUtility_CommonObjectPool_1_GetWithToken__0__
+  commentId: M:MinimalUtility.CommonObjectPool`1.GetWithToken(`0@)
+  name.vb: GetWithToken(T)
+  fullName: MinimalUtility.CommonObjectPool<T>.GetWithToken(out T)
+  fullName.vb: MinimalUtility.CommonObjectPool(Of T).GetWithToken(T)
+  nameWithType: CommonObjectPool<T>.GetWithToken(out T)
+  nameWithType.vb: CommonObjectPool(Of T).GetWithToken(T)
+- uid: MinimalUtility.CommonObjectPool`1.GetWithToken*
+  name: GetWithToken
+  href: api/MinimalUtility.CommonObjectPool-1.html#MinimalUtility_CommonObjectPool_1_GetWithToken_
+  commentId: Overload:MinimalUtility.CommonObjectPool`1.GetWithToken
+  isSpec: "True"
+  fullName: MinimalUtility.CommonObjectPool<T>.GetWithToken
+  fullName.vb: MinimalUtility.CommonObjectPool(Of T).GetWithToken
+  nameWithType: CommonObjectPool<T>.GetWithToken
+  nameWithType.vb: CommonObjectPool(Of T).GetWithToken
 - uid: MinimalUtility.CommonObjectPool`1.PoolSizeSetting
   name: CommonObjectPool<T>.PoolSizeSetting
   href: api/MinimalUtility.CommonObjectPool-1.PoolSizeSetting.html
@@ -293,6 +311,24 @@ references:
   fullName.vb: MinimalUtility.IObjectPool(Of T)
   nameWithType: IObjectPool<T>
   nameWithType.vb: IObjectPool(Of T)
+- uid: MinimalUtility.IObjectPool`1.GetWithToken(`0@)
+  name: GetWithToken(out T)
+  href: api/MinimalUtility.IObjectPool-1.html#MinimalUtility_IObjectPool_1_GetWithToken__0__
+  commentId: M:MinimalUtility.IObjectPool`1.GetWithToken(`0@)
+  name.vb: GetWithToken(T)
+  fullName: MinimalUtility.IObjectPool<T>.GetWithToken(out T)
+  fullName.vb: MinimalUtility.IObjectPool(Of T).GetWithToken(T)
+  nameWithType: IObjectPool<T>.GetWithToken(out T)
+  nameWithType.vb: IObjectPool(Of T).GetWithToken(T)
+- uid: MinimalUtility.IObjectPool`1.GetWithToken*
+  name: GetWithToken
+  href: api/MinimalUtility.IObjectPool-1.html#MinimalUtility_IObjectPool_1_GetWithToken_
+  commentId: Overload:MinimalUtility.IObjectPool`1.GetWithToken
+  isSpec: "True"
+  fullName: MinimalUtility.IObjectPool<T>.GetWithToken
+  fullName.vb: MinimalUtility.IObjectPool(Of T).GetWithToken
+  nameWithType: IObjectPool<T>.GetWithToken
+  nameWithType.vb: IObjectPool(Of T).GetWithToken
 - uid: MinimalUtility.IObjectPool`1.ReleaseAll
   name: ReleaseAll()
   href: api/MinimalUtility.IObjectPool-1.html#MinimalUtility_IObjectPool_1_ReleaseAll
