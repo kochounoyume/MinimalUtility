@@ -2,11 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Namespace MinimalUtility |  |  </title>
+      <title>Interface IObjectPool&lt;T&gt; |  |  </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Namespace MinimalUtility |  |  ">
+      <meta name="title" content="Interface IObjectPool&lt;T&gt; |  |  ">
       
-      
+      <meta name="description" content="ObjectPoolを提供するインターフェイス">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       <meta name="docfx:disablenewtab" content="true">
       
-      
+      <meta name="docfx:docurl" content="https://github.com/kochounoyume/MinimalUtility/new/main/apiSpec/new?filename=MinimalUtility_IObjectPool_1.md&amp;value=---%0Auid%3A%20MinimalUtility.IObjectPool%601%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -84,70 +84,75 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="MinimalUtility">
+        <article data-uid="MinimalUtility.IObjectPool`1">
 
-  <h1 id="MinimalUtility" data-uid="MinimalUtility" class="text-break">Namespace MinimalUtility</h1>
-  <div class="markdown level0 summary"></div>
-  <div class="markdown level0 conceptual"></div>
-  <div class="markdown level0 remarks"></div>
 
-    <h3 id="classes">
-Classes
-</h3>
-    <dl class="jumplist">
-      <dt><a class="xref" href="MinimalUtility.ButtonAttribute.html">ButtonAttribute</a></dt>
-      <dd><p>指定したメソッドをUnityのInspector上に表示したボタンでテスト実行できるようになる属性.</p>
+
+  <h1 id="MinimalUtility_IObjectPool_1" data-uid="MinimalUtility.IObjectPool`1" class="text-break">
+Interface IObjectPool&lt;T&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/CommonObjectPool.cs/#L14"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="MinimalUtility.html">MinimalUtility</a></dd></dl>
+  
+  </div>
+
+  <div class="markdown summary"><p>ObjectPoolを提供するインターフェイス</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IObjectPool&lt;T&gt; : UnityEngine.Pool.IObjectPool&lt;T&gt; where T : MonoBehaviour</code></pre>
+  </div>
+
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>プールするオブジェクトの型.</p>
 </dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="MinimalUtility.CommonObjectPool-1.html">CommonObjectPool&lt;T&gt;</a></dt>
-      <dd><p>汎用オブジェクトプール実装.</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="MinimalUtility.DisposableExtensions.html">DisposableExtensions</a></dt>
-      <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a>の拡張メソッド.</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="MinimalUtility.EmptyGraphic.html">EmptyGraphic</a></dt>
-      <dd><p>空処理のグラフィック.
-<remarks>
-想定用途：マスク時のベース, 画面全体を透明なuGUIで覆いたいとき、Buttonの判定領域を透明にしたいとき
-</remarks></p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="MinimalUtility.Math.html">Math</a></dt>
-      <dd><p>最小限の数学関数.</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="MinimalUtility.MinimalSelectableGraphic.html">MinimalSelectableGraphic</a></dt>
-      <dd><p>UnityEngine.UI.Selectableを使用するうえで最低限の機能を持つグラフィック.
-<remarks>
-子オブジェクトのGraphicをキャッシュして選択時に色変化を伝播させる
-</remarks></p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="MinimalUtility.RectTransformExtensions.html">RectTransformExtensions</a></dt>
-      <dd><p>RectTransformの拡張メソッド.</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="MinimalUtility.SafeAreaAdjuster.html">SafeAreaAdjuster</a></dt>
-      <dd><p>セーフエリア調整スクリプト.</p>
-</dd>
-    </dl>
-    <h3 id="interfaces">
-Interfaces
-</h3>
-    <dl class="jumplist">
-      <dt><a class="xref" href="MinimalUtility.IObjectPool-1.html">IObjectPool&lt;T&gt;</a></dt>
-      <dd><p>ObjectPoolを提供するインターフェイス</p>
-</dd>
-    </dl>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="MinimalUtility_IObjectPool_1_ReleaseAll_" data-uid="MinimalUtility.IObjectPool`1.ReleaseAll*"></a>
+
+  <h3 id="MinimalUtility_IObjectPool_1_ReleaseAll" data-uid="MinimalUtility.IObjectPool`1.ReleaseAll">
+  ReleaseAll()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/CommonObjectPool.cs/#L20"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>取得済みの全てのオブジェクトを解放する.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void ReleaseAll()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 </article>

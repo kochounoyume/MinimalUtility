@@ -67,6 +67,128 @@ references:
   isSpec: "True"
   fullName: MinimalUtility.ButtonAttribute.Parameters
   nameWithType: ButtonAttribute.Parameters
+- uid: MinimalUtility.CommonObjectPool`1
+  name: CommonObjectPool<T>
+  href: api/MinimalUtility.CommonObjectPool-1.html
+  commentId: T:MinimalUtility.CommonObjectPool`1
+  name.vb: CommonObjectPool(Of T)
+  fullName: MinimalUtility.CommonObjectPool<T>
+  fullName.vb: MinimalUtility.CommonObjectPool(Of T)
+  nameWithType: CommonObjectPool<T>
+  nameWithType.vb: CommonObjectPool(Of T)
+- uid: MinimalUtility.CommonObjectPool`1.#ctor(`0,Transform,System.Int32,System.Int32)
+  name: CommonObjectPool(T, Transform, int, int)
+  href: api/MinimalUtility.CommonObjectPool-1.html#MinimalUtility_CommonObjectPool_1__ctor__0_Transform_System_Int32_System_Int32_
+  commentId: M:MinimalUtility.CommonObjectPool`1.#ctor(`0,Transform,System.Int32,System.Int32)
+  name.vb: New(T, Transform, Integer, Integer)
+  fullName: MinimalUtility.CommonObjectPool<T>.CommonObjectPool(T, Transform, int, int)
+  fullName.vb: MinimalUtility.CommonObjectPool(Of T).New(T, Transform, Integer, Integer)
+  nameWithType: CommonObjectPool<T>.CommonObjectPool(T, Transform, int, int)
+  nameWithType.vb: CommonObjectPool(Of T).New(T, Transform, Integer, Integer)
+- uid: MinimalUtility.CommonObjectPool`1.#ctor*
+  name: CommonObjectPool
+  href: api/MinimalUtility.CommonObjectPool-1.html#MinimalUtility_CommonObjectPool_1__ctor_
+  commentId: Overload:MinimalUtility.CommonObjectPool`1.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: MinimalUtility.CommonObjectPool<T>.CommonObjectPool
+  fullName.vb: MinimalUtility.CommonObjectPool(Of T).New
+  nameWithType: CommonObjectPool<T>.CommonObjectPool
+  nameWithType.vb: CommonObjectPool(Of T).New
+- uid: MinimalUtility.CommonObjectPool`1.Clear
+  name: Clear()
+  href: api/MinimalUtility.CommonObjectPool-1.html#MinimalUtility_CommonObjectPool_1_Clear
+  commentId: M:MinimalUtility.CommonObjectPool`1.Clear
+  fullName: MinimalUtility.CommonObjectPool<T>.Clear()
+  fullName.vb: MinimalUtility.CommonObjectPool(Of T).Clear()
+  nameWithType: CommonObjectPool<T>.Clear()
+  nameWithType.vb: CommonObjectPool(Of T).Clear()
+- uid: MinimalUtility.CommonObjectPool`1.Clear*
+  name: Clear
+  href: api/MinimalUtility.CommonObjectPool-1.html#MinimalUtility_CommonObjectPool_1_Clear_
+  commentId: Overload:MinimalUtility.CommonObjectPool`1.Clear
+  isSpec: "True"
+  fullName: MinimalUtility.CommonObjectPool<T>.Clear
+  fullName.vb: MinimalUtility.CommonObjectPool(Of T).Clear
+  nameWithType: CommonObjectPool<T>.Clear
+  nameWithType.vb: CommonObjectPool(Of T).Clear
+- uid: MinimalUtility.CommonObjectPool`1.CountInactive
+  name: CountInactive
+  href: api/MinimalUtility.CommonObjectPool-1.html#MinimalUtility_CommonObjectPool_1_CountInactive
+  commentId: P:MinimalUtility.CommonObjectPool`1.CountInactive
+  fullName: MinimalUtility.CommonObjectPool<T>.CountInactive
+  fullName.vb: MinimalUtility.CommonObjectPool(Of T).CountInactive
+  nameWithType: CommonObjectPool<T>.CountInactive
+  nameWithType.vb: CommonObjectPool(Of T).CountInactive
+- uid: MinimalUtility.CommonObjectPool`1.CountInactive*
+  name: CountInactive
+  href: api/MinimalUtility.CommonObjectPool-1.html#MinimalUtility_CommonObjectPool_1_CountInactive_
+  commentId: Overload:MinimalUtility.CommonObjectPool`1.CountInactive
+  isSpec: "True"
+  fullName: MinimalUtility.CommonObjectPool<T>.CountInactive
+  fullName.vb: MinimalUtility.CommonObjectPool(Of T).CountInactive
+  nameWithType: CommonObjectPool<T>.CountInactive
+  nameWithType.vb: CommonObjectPool(Of T).CountInactive
+- uid: MinimalUtility.CommonObjectPool`1.Get
+  name: Get()
+  href: api/MinimalUtility.CommonObjectPool-1.html#MinimalUtility_CommonObjectPool_1_Get
+  commentId: M:MinimalUtility.CommonObjectPool`1.Get
+  fullName: MinimalUtility.CommonObjectPool<T>.Get()
+  fullName.vb: MinimalUtility.CommonObjectPool(Of T).Get()
+  nameWithType: CommonObjectPool<T>.Get()
+  nameWithType.vb: CommonObjectPool(Of T).Get()
+- uid: MinimalUtility.CommonObjectPool`1.Get(`0@)
+  name: Get(out T)
+  href: api/MinimalUtility.CommonObjectPool-1.html#MinimalUtility_CommonObjectPool_1_Get__0__
+  commentId: M:MinimalUtility.CommonObjectPool`1.Get(`0@)
+  name.vb: Get(T)
+  fullName: MinimalUtility.CommonObjectPool<T>.Get(out T)
+  fullName.vb: MinimalUtility.CommonObjectPool(Of T).Get(T)
+  nameWithType: CommonObjectPool<T>.Get(out T)
+  nameWithType.vb: CommonObjectPool(Of T).Get(T)
+- uid: MinimalUtility.CommonObjectPool`1.Get*
+  name: Get
+  href: api/MinimalUtility.CommonObjectPool-1.html#MinimalUtility_CommonObjectPool_1_Get_
+  commentId: Overload:MinimalUtility.CommonObjectPool`1.Get
+  isSpec: "True"
+  fullName: MinimalUtility.CommonObjectPool<T>.Get
+  fullName.vb: MinimalUtility.CommonObjectPool(Of T).Get
+  nameWithType: CommonObjectPool<T>.Get
+  nameWithType.vb: CommonObjectPool(Of T).Get
+- uid: MinimalUtility.CommonObjectPool`1.Release(`0)
+  name: Release(T)
+  href: api/MinimalUtility.CommonObjectPool-1.html#MinimalUtility_CommonObjectPool_1_Release__0_
+  commentId: M:MinimalUtility.CommonObjectPool`1.Release(`0)
+  fullName: MinimalUtility.CommonObjectPool<T>.Release(T)
+  fullName.vb: MinimalUtility.CommonObjectPool(Of T).Release(T)
+  nameWithType: CommonObjectPool<T>.Release(T)
+  nameWithType.vb: CommonObjectPool(Of T).Release(T)
+- uid: MinimalUtility.CommonObjectPool`1.Release*
+  name: Release
+  href: api/MinimalUtility.CommonObjectPool-1.html#MinimalUtility_CommonObjectPool_1_Release_
+  commentId: Overload:MinimalUtility.CommonObjectPool`1.Release
+  isSpec: "True"
+  fullName: MinimalUtility.CommonObjectPool<T>.Release
+  fullName.vb: MinimalUtility.CommonObjectPool(Of T).Release
+  nameWithType: CommonObjectPool<T>.Release
+  nameWithType.vb: CommonObjectPool(Of T).Release
+- uid: MinimalUtility.CommonObjectPool`1.ReleaseAll
+  name: ReleaseAll()
+  href: api/MinimalUtility.CommonObjectPool-1.html#MinimalUtility_CommonObjectPool_1_ReleaseAll
+  commentId: M:MinimalUtility.CommonObjectPool`1.ReleaseAll
+  fullName: MinimalUtility.CommonObjectPool<T>.ReleaseAll()
+  fullName.vb: MinimalUtility.CommonObjectPool(Of T).ReleaseAll()
+  nameWithType: CommonObjectPool<T>.ReleaseAll()
+  nameWithType.vb: CommonObjectPool(Of T).ReleaseAll()
+- uid: MinimalUtility.CommonObjectPool`1.ReleaseAll*
+  name: ReleaseAll
+  href: api/MinimalUtility.CommonObjectPool-1.html#MinimalUtility_CommonObjectPool_1_ReleaseAll_
+  commentId: Overload:MinimalUtility.CommonObjectPool`1.ReleaseAll
+  isSpec: "True"
+  fullName: MinimalUtility.CommonObjectPool<T>.ReleaseAll
+  fullName.vb: MinimalUtility.CommonObjectPool(Of T).ReleaseAll
+  nameWithType: CommonObjectPool<T>.ReleaseAll
+  nameWithType.vb: CommonObjectPool(Of T).ReleaseAll
 - uid: MinimalUtility.DisposableExtensions
   name: DisposableExtensions
   href: api/MinimalUtility.DisposableExtensions.html
@@ -134,6 +256,32 @@ references:
   isSpec: "True"
   fullName: MinimalUtility.EmptyGraphic.SetVerticesDirty
   nameWithType: EmptyGraphic.SetVerticesDirty
+- uid: MinimalUtility.IObjectPool`1
+  name: IObjectPool<T>
+  href: api/MinimalUtility.IObjectPool-1.html
+  commentId: T:MinimalUtility.IObjectPool`1
+  name.vb: IObjectPool(Of T)
+  fullName: MinimalUtility.IObjectPool<T>
+  fullName.vb: MinimalUtility.IObjectPool(Of T)
+  nameWithType: IObjectPool<T>
+  nameWithType.vb: IObjectPool(Of T)
+- uid: MinimalUtility.IObjectPool`1.ReleaseAll
+  name: ReleaseAll()
+  href: api/MinimalUtility.IObjectPool-1.html#MinimalUtility_IObjectPool_1_ReleaseAll
+  commentId: M:MinimalUtility.IObjectPool`1.ReleaseAll
+  fullName: MinimalUtility.IObjectPool<T>.ReleaseAll()
+  fullName.vb: MinimalUtility.IObjectPool(Of T).ReleaseAll()
+  nameWithType: IObjectPool<T>.ReleaseAll()
+  nameWithType.vb: IObjectPool(Of T).ReleaseAll()
+- uid: MinimalUtility.IObjectPool`1.ReleaseAll*
+  name: ReleaseAll
+  href: api/MinimalUtility.IObjectPool-1.html#MinimalUtility_IObjectPool_1_ReleaseAll_
+  commentId: Overload:MinimalUtility.IObjectPool`1.ReleaseAll
+  isSpec: "True"
+  fullName: MinimalUtility.IObjectPool<T>.ReleaseAll
+  fullName.vb: MinimalUtility.IObjectPool(Of T).ReleaseAll
+  nameWithType: IObjectPool<T>.ReleaseAll
+  nameWithType.vb: IObjectPool(Of T).ReleaseAll
 - uid: MinimalUtility.Math
   name: Math
   href: api/MinimalUtility.Math.html
