@@ -39,9 +39,8 @@ namespace MinimalUtility
         /// </summary>
         /// <param name="prefab">プール対象のプレハブ.</param>
         /// <param name="root">プールから取得されたインスタンスに指定する親オブジェクト.</param>
-        /// <param name="defaultCapacity">スタックが作成されるときの初期容量.</param>
-        /// <param name="maxSize">プールの最大サイズ.</param>
-        public CommonObjectPool(T prefab, Transform root, int defaultCapacity, int maxSize)
+        /// <param name="setting">プールの初期容量と最大サイズ.</param>
+        public CommonObjectPool(T prefab, Transform root, PoolSizeSetting setting)
         {
             this.prefab = prefab;
             this.root = root;
@@ -55,9 +54,9 @@ namespace MinimalUtility
                     Object.Destroy(instance.gameObject);
                 },
                 false,
-                defaultCapacity,
-                maxSize);
-            this.activeInstances = new List<T>(defaultCapacity);
+                setting.DefaultCapacity,
+                setting.MaxSize);
+            this.activeInstances = new List<T>(setting.DefaultCapacity);
         }
 
         /// <inheritdoc/>
@@ -109,5 +108,32 @@ namespace MinimalUtility
         }
 
         private T OnCreate() => Object.Instantiate(prefab, root);
+
+        /// <summary>
+        /// プールの初期容量と最大サイズを指定する構造体.
+        /// </summary>
+        public readonly ref struct PoolSizeSetting
+        {
+            /// <summary>
+            /// スタックが作成されるときの初期容量.
+            /// </summary>
+            internal readonly int DefaultCapacity;
+
+            /// <summary>
+            /// プールの最大サイズ.
+            /// </summary>
+            internal readonly int MaxSize;
+
+            /// <summary>
+            /// Initializes a new instance of the <see cref="PoolSizeSetting"/> struct.
+            /// </summary>
+            /// <param name="defaultCapacity">スタックが作成されるときの初期容量.</param>
+            /// <param name="maxSize">プールの最大サイズ.</param>
+            public PoolSizeSetting(in int defaultCapacity, in int maxSize)
+            {
+                this.DefaultCapacity = defaultCapacity;
+                this.MaxSize = maxSize;
+            }
+        }
     }
 }
