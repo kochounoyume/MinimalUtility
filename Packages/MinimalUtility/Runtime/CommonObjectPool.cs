@@ -102,6 +102,7 @@ namespace MinimalUtility
         /// <inheritdoc/>
         public void Release(T element)
         {
+            if (element == null) return;
             if (activeInstances.Remove(element))
             {
                 pool.Release(element);
@@ -123,6 +124,7 @@ namespace MinimalUtility
         {
             foreach (T activeInstance in activeInstances)
             {
+                if (activeInstance == null) continue;
                 pool.Release(activeInstance);
             }
             activeInstances.Clear();
