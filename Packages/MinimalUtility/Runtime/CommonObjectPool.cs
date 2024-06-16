@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Threading;
 using UnityEngine;
 using UnityEngine.Pool;
 using Object = UnityEngine.Object;
@@ -14,6 +15,13 @@ namespace MinimalUtility
     public interface IObjectPool<T> : UnityEngine.Pool.IObjectPool<T> where T : MonoBehaviour
 #pragma warning restore SA1649
     {
+        /// <summary>
+        /// プールからインスタンスとキャンセルトークンを取得する.プールが空の場合は、新しいインスタンスが作成される.
+        /// </summary>
+        /// <param name="v">取得したインスタンス.</param>
+        /// <returns>インスタンスがプールに戻ったときにキャンセルされるトークン.</returns>
+        CancellationToken GetWithToken(out T v);
+
         /// <summary>
         /// 取得済みの全てのオブジェクトを解放する.
         /// </summary>
@@ -33,6 +41,8 @@ namespace MinimalUtility
         private readonly ObjectPool<T> pool;
 
         private readonly ICollection<T> activeInstances;
+
+        private readonly IDictionary<int, CancellationTokenSource> ctses;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="CommonObjectPool{T}"/> class.
@@ -57,6 +67,7 @@ namespace MinimalUtility
                 setting.DefaultCapacity,
                 setting.MaxSize);
             this.activeInstances = new List<T>(setting.DefaultCapacity);
+            ctses = new Dictionary<int, CancellationTokenSource>(setting.DefaultCapacity);
         }
 
         /// <inheritdoc/>
@@ -79,16 +90,33 @@ namespace MinimalUtility
         }
 
         /// <inheritdoc/>
+        public CancellationToken GetWithToken(out T v)
+        {
+            v = pool.Get();
+            activeInstances.Add(v);
+            CancellationTokenSource cts = CancellationTokenSource.CreateLinkedTokenSource(v.destroyCancellationToken);
+            ctses.Add(v.GetInstanceID(), cts);
+            return cts.Token;
+        }
+
+        /// <inheritdoc/>
         public void Release(T element)
         {
             if (activeInstances.Remove(element))
             {
                 pool.Release(element);
             }
+            int instanceId = element.GetInstanceID();
+            if (ctses.TryGetValue(instanceId, out CancellationTokenSource cts))
+            {
+                if (!cts.IsCancellationRequested)
+                {
+                    cts.Cancel();
+                }
+                cts.Dispose();
+                ctses.Remove(instanceId);
+            }
         }
-
-        /// <inheritdoc/>
-        public void Clear() => pool.Clear();
 
         /// <inheritdoc/>
         public void ReleaseAll()
@@ -98,13 +126,34 @@ namespace MinimalUtility
                 pool.Release(activeInstance);
             }
             activeInstances.Clear();
+            foreach (CancellationTokenSource source in ctses.Values)
+            {
+                if (!source.IsCancellationRequested)
+                {
+                    source.Cancel();
+                }
+                source.Dispose();
+            }
+            ctses.Clear();
         }
+
+        /// <inheritdoc/>
+        public void Clear() => pool.Clear();
 
         /// <inheritdoc/>
         void IDisposable.Dispose()
         {
             pool.Dispose();
             activeInstances.Clear();
+            foreach (CancellationTokenSource source in ctses.Values)
+            {
+                if (!source.IsCancellationRequested)
+                {
+                    source.Cancel();
+                }
+                source.Dispose();
+            }
+            ctses.Clear();
         }
 
         private T OnCreate() => Object.Instantiate(prefab, root);
