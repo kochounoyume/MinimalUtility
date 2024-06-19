@@ -39,6 +39,16 @@
     "title": "Class MinimalSelectableGraphic | |",
     "keywords": "Class MinimalSelectableGraphic Namespace MinimalUtility UnityEngine.UI.Selectableを使用するうえで最低限の機能を持つグラフィック. 子オブジェクトのGraphicをキャッシュして選択時に色変化を伝播させる public sealed class MinimalSelectableGraphic : EmptyGraphic Inheritance object EmptyGraphic MinimalSelectableGraphic Inherited Members EmptyGraphic.SetMaterialDirty() EmptyGraphic.SetVerticesDirty() Methods CrossFadeColor(Color, float, bool, bool) public override void CrossFadeColor(Color targetColor, float duration, bool ignoreTimeScale, bool useAlpha) Parameters targetColor Color duration float ignoreTimeScale bool useAlpha bool Start() protected override void Start()"
   },
+  "api/MinimalUtility.R3.ObservableExtensions.html": {
+    "href": "api/MinimalUtility.R3.ObservableExtensions.html",
+    "title": "Class ObservableExtensions | |",
+    "keywords": "Class ObservableExtensions Namespace MinimalUtility.R3 ReactiveProperty<T>の拡張メソッド. public static class ObservableExtensions Inheritance object ObservableExtensions Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Methods WaitValueChangedAsync<T>(ReadOnlyReactiveProperty<T>, CancellationToken) 指定したReactiveProperty<T>の値が変更されるまで待機します. public static Task WaitValueChangedAsync<T>(this ReadOnlyReactiveProperty<T> source, CancellationToken cancellationToken = default) Parameters source ReadOnlyReactiveProperty<T> 監視対象のReactiveProperty<T>. cancellationToken CancellationToken キャンセルトークン. Returns Task 監視対象のReactiveProperty<T>の値が変更されたことを示すTask. Type Parameters T 監視対象のReactiveProperty<T>の型."
+  },
+  "api/MinimalUtility.R3.html": {
+    "href": "api/MinimalUtility.R3.html",
+    "title": "Namespace MinimalUtility.R3 | |",
+    "keywords": "Namespace MinimalUtility.R3 Classes ObservableExtensions ReactiveProperty<T>の拡張メソッド."
+  },
   "api/MinimalUtility.RectTransformExtensions.html": {
     "href": "api/MinimalUtility.RectTransformExtensions.html",
     "title": "Class RectTransformExtensions | |",

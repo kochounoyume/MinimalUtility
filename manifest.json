@@ -95,6 +95,26 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/MinimalUtility.R3.ObservableExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MinimalUtility.R3.ObservableExtensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MinimalUtility.R3.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MinimalUtility.R3.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/MinimalUtility.RectTransformExtensions.yml",
       "output": {
         ".html": {
