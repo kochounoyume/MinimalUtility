@@ -218,14 +218,15 @@ references:
   fullName.vb: MinimalUtility.CommonObjectPool(Of T).Release
   nameWithType: CommonObjectPool<T>.Release
   nameWithType.vb: CommonObjectPool(Of T).Release
-- uid: MinimalUtility.CommonObjectPool`1.ReleaseAll
-  name: ReleaseAll()
-  href: api/MinimalUtility.CommonObjectPool-1.html#MinimalUtility_CommonObjectPool_1_ReleaseAll
-  commentId: M:MinimalUtility.CommonObjectPool`1.ReleaseAll
-  fullName: MinimalUtility.CommonObjectPool<T>.ReleaseAll()
-  fullName.vb: MinimalUtility.CommonObjectPool(Of T).ReleaseAll()
-  nameWithType: CommonObjectPool<T>.ReleaseAll()
-  nameWithType.vb: CommonObjectPool(Of T).ReleaseAll()
+- uid: MinimalUtility.CommonObjectPool`1.ReleaseAll(System.Action{`0})
+  name: ReleaseAll(Action<T>)
+  href: api/MinimalUtility.CommonObjectPool-1.html#MinimalUtility_CommonObjectPool_1_ReleaseAll_System_Action__0__
+  commentId: M:MinimalUtility.CommonObjectPool`1.ReleaseAll(System.Action{`0})
+  name.vb: ReleaseAll(Action(Of T))
+  fullName: MinimalUtility.CommonObjectPool<T>.ReleaseAll(System.Action<T>)
+  fullName.vb: MinimalUtility.CommonObjectPool(Of T).ReleaseAll(System.Action(Of T))
+  nameWithType: CommonObjectPool<T>.ReleaseAll(Action<T>)
+  nameWithType.vb: CommonObjectPool(Of T).ReleaseAll(Action(Of T))
 - uid: MinimalUtility.CommonObjectPool`1.ReleaseAll*
   name: ReleaseAll
   href: api/MinimalUtility.CommonObjectPool-1.html#MinimalUtility_CommonObjectPool_1_ReleaseAll_
@@ -329,14 +330,15 @@ references:
   fullName.vb: MinimalUtility.IObjectPool(Of T).GetWithToken
   nameWithType: IObjectPool<T>.GetWithToken
   nameWithType.vb: IObjectPool(Of T).GetWithToken
-- uid: MinimalUtility.IObjectPool`1.ReleaseAll
-  name: ReleaseAll()
-  href: api/MinimalUtility.IObjectPool-1.html#MinimalUtility_IObjectPool_1_ReleaseAll
-  commentId: M:MinimalUtility.IObjectPool`1.ReleaseAll
-  fullName: MinimalUtility.IObjectPool<T>.ReleaseAll()
-  fullName.vb: MinimalUtility.IObjectPool(Of T).ReleaseAll()
-  nameWithType: IObjectPool<T>.ReleaseAll()
-  nameWithType.vb: IObjectPool(Of T).ReleaseAll()
+- uid: MinimalUtility.IObjectPool`1.ReleaseAll(System.Action{`0})
+  name: ReleaseAll(Action<T>)
+  href: api/MinimalUtility.IObjectPool-1.html#MinimalUtility_IObjectPool_1_ReleaseAll_System_Action__0__
+  commentId: M:MinimalUtility.IObjectPool`1.ReleaseAll(System.Action{`0})
+  name.vb: ReleaseAll(Action(Of T))
+  fullName: MinimalUtility.IObjectPool<T>.ReleaseAll(System.Action<T>)
+  fullName.vb: MinimalUtility.IObjectPool(Of T).ReleaseAll(System.Action(Of T))
+  nameWithType: IObjectPool<T>.ReleaseAll(Action<T>)
+  nameWithType.vb: IObjectPool(Of T).ReleaseAll(Action(Of T))
 - uid: MinimalUtility.IObjectPool`1.ReleaseAll*
   name: ReleaseAll
   href: api/MinimalUtility.IObjectPool-1.html#MinimalUtility_IObjectPool_1_ReleaseAll_
@@ -789,14 +791,23 @@ references:
   isSpec: "True"
   fullName: MinimalUtility.R3.ObservableExtensions.WaitValueChangedAsync
   nameWithType: ObservableExtensions.WaitValueChangedAsync
-- uid: MinimalUtility.R3.ObservableExtensions.WaitValueChangedAsync``1(ReadOnlyReactiveProperty{``0},System.Threading.CancellationToken)
-  name: WaitValueChangedAsync<T>(ReadOnlyReactiveProperty<T>, CancellationToken)
-  href: api/MinimalUtility.R3.ObservableExtensions.html#MinimalUtility_R3_ObservableExtensions_WaitValueChangedAsync__1_ReadOnlyReactiveProperty___0__System_Threading_CancellationToken_
-  commentId: M:MinimalUtility.R3.ObservableExtensions.WaitValueChangedAsync``1(ReadOnlyReactiveProperty{``0},System.Threading.CancellationToken)
+- uid: MinimalUtility.R3.ObservableExtensions.WaitValueChangedAsync``1(ReadOnlyReactiveProperty{``0},System.Func{``0,System.Boolean},System.Threading.CancellationToken@)
+  name: WaitValueChangedAsync<T>(ReadOnlyReactiveProperty<T>, Func<T, bool>, in CancellationToken)
+  href: api/MinimalUtility.R3.ObservableExtensions.html#MinimalUtility_R3_ObservableExtensions_WaitValueChangedAsync__1_ReadOnlyReactiveProperty___0__System_Func___0_System_Boolean__System_Threading_CancellationToken__
+  commentId: M:MinimalUtility.R3.ObservableExtensions.WaitValueChangedAsync``1(ReadOnlyReactiveProperty{``0},System.Func{``0,System.Boolean},System.Threading.CancellationToken@)
+  name.vb: WaitValueChangedAsync(Of T)(ReadOnlyReactiveProperty(Of T), Func(Of T, Boolean), CancellationToken)
+  fullName: MinimalUtility.R3.ObservableExtensions.WaitValueChangedAsync<T>(ReadOnlyReactiveProperty<T>, System.Func<T, bool>, in System.Threading.CancellationToken)
+  fullName.vb: MinimalUtility.R3.ObservableExtensions.WaitValueChangedAsync(Of T)(ReadOnlyReactiveProperty(Of T), System.Func(Of T, Boolean), System.Threading.CancellationToken)
+  nameWithType: ObservableExtensions.WaitValueChangedAsync<T>(ReadOnlyReactiveProperty<T>, Func<T, bool>, in CancellationToken)
+  nameWithType.vb: ObservableExtensions.WaitValueChangedAsync(Of T)(ReadOnlyReactiveProperty(Of T), Func(Of T, Boolean), CancellationToken)
+- uid: MinimalUtility.R3.ObservableExtensions.WaitValueChangedAsync``1(ReadOnlyReactiveProperty{``0},System.Threading.CancellationToken@)
+  name: WaitValueChangedAsync<T>(ReadOnlyReactiveProperty<T>, in CancellationToken)
+  href: api/MinimalUtility.R3.ObservableExtensions.html#MinimalUtility_R3_ObservableExtensions_WaitValueChangedAsync__1_ReadOnlyReactiveProperty___0__System_Threading_CancellationToken__
+  commentId: M:MinimalUtility.R3.ObservableExtensions.WaitValueChangedAsync``1(ReadOnlyReactiveProperty{``0},System.Threading.CancellationToken@)
   name.vb: WaitValueChangedAsync(Of T)(ReadOnlyReactiveProperty(Of T), CancellationToken)
-  fullName: MinimalUtility.R3.ObservableExtensions.WaitValueChangedAsync<T>(ReadOnlyReactiveProperty<T>, System.Threading.CancellationToken)
+  fullName: MinimalUtility.R3.ObservableExtensions.WaitValueChangedAsync<T>(ReadOnlyReactiveProperty<T>, in System.Threading.CancellationToken)
   fullName.vb: MinimalUtility.R3.ObservableExtensions.WaitValueChangedAsync(Of T)(ReadOnlyReactiveProperty(Of T), System.Threading.CancellationToken)
-  nameWithType: ObservableExtensions.WaitValueChangedAsync<T>(ReadOnlyReactiveProperty<T>, CancellationToken)
+  nameWithType: ObservableExtensions.WaitValueChangedAsync<T>(ReadOnlyReactiveProperty<T>, in CancellationToken)
   nameWithType.vb: ObservableExtensions.WaitValueChangedAsync(Of T)(ReadOnlyReactiveProperty(Of T), CancellationToken)
 - uid: MinimalUtility.RectTransformExtensions
   name: RectTransformExtensions

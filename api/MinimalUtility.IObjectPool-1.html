@@ -168,9 +168,9 @@ Interface IObjectPool&lt;T&gt;  <a class="header-action link-secondary" title="V
 
   <a id="MinimalUtility_IObjectPool_1_ReleaseAll_" data-uid="MinimalUtility.IObjectPool`1.ReleaseAll*"></a>
 
-  <h3 id="MinimalUtility_IObjectPool_1_ReleaseAll" data-uid="MinimalUtility.IObjectPool`1.ReleaseAll">
-  ReleaseAll()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/CommonObjectPool.cs/#L28"><i class="bi bi-code-slash"></i></a>
+  <h3 id="MinimalUtility_IObjectPool_1_ReleaseAll_System_Action__0__" data-uid="MinimalUtility.IObjectPool`1.ReleaseAll(System.Action{`0})">
+  ReleaseAll(Action&lt;T&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/CommonObjectPool.cs/#L29"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>取得済みの全てのオブジェクトを解放する.</p>
@@ -178,9 +178,15 @@ Interface IObjectPool&lt;T&gt;  <a class="header-action link-secondary" title="V
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ReleaseAll()</code></pre>
+    <pre><code class="lang-csharp hljs">void ReleaseAll(Action&lt;T&gt; preReleaseCallback = null)</code></pre>
   </div>
 
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>preReleaseCallback</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;T&gt;</dt>
+    <dd><p>解放前に呼び出すコールバック.</p>
+</dd>
+  </dl>
 
 
 
