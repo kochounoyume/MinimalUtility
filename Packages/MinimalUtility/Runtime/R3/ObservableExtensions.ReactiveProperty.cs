@@ -1,4 +1,5 @@
-﻿using System;
+﻿#if ENABLE_R3
+using System;
 using System.Runtime.CompilerServices;
 using System.Threading;
 using System.Threading.Tasks;
@@ -39,3 +40,4 @@ namespace MinimalUtility.R3
         }
     }
 }
+#endif
