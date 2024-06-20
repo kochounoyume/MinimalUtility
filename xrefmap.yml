@@ -772,43 +772,6 @@ references:
   isSpec: "True"
   fullName: MinimalUtility.MinimalSelectableGraphic.Start
   nameWithType: MinimalSelectableGraphic.Start
-- uid: MinimalUtility.R3
-  name: MinimalUtility.R3
-  href: api/MinimalUtility.R3.html
-  commentId: N:MinimalUtility.R3
-  fullName: MinimalUtility.R3
-  nameWithType: MinimalUtility.R3
-- uid: MinimalUtility.R3.ObservableExtensions
-  name: ObservableExtensions
-  href: api/MinimalUtility.R3.ObservableExtensions.html
-  commentId: T:MinimalUtility.R3.ObservableExtensions
-  fullName: MinimalUtility.R3.ObservableExtensions
-  nameWithType: ObservableExtensions
-- uid: MinimalUtility.R3.ObservableExtensions.WaitValueChangedAsync*
-  name: WaitValueChangedAsync
-  href: api/MinimalUtility.R3.ObservableExtensions.html#MinimalUtility_R3_ObservableExtensions_WaitValueChangedAsync_
-  commentId: Overload:MinimalUtility.R3.ObservableExtensions.WaitValueChangedAsync
-  isSpec: "True"
-  fullName: MinimalUtility.R3.ObservableExtensions.WaitValueChangedAsync
-  nameWithType: ObservableExtensions.WaitValueChangedAsync
-- uid: MinimalUtility.R3.ObservableExtensions.WaitValueChangedAsync``1(ReadOnlyReactiveProperty{``0},System.Func{``0,System.Boolean},System.Threading.CancellationToken@)
-  name: WaitValueChangedAsync<T>(ReadOnlyReactiveProperty<T>, Func<T, bool>, in CancellationToken)
-  href: api/MinimalUtility.R3.ObservableExtensions.html#MinimalUtility_R3_ObservableExtensions_WaitValueChangedAsync__1_ReadOnlyReactiveProperty___0__System_Func___0_System_Boolean__System_Threading_CancellationToken__
-  commentId: M:MinimalUtility.R3.ObservableExtensions.WaitValueChangedAsync``1(ReadOnlyReactiveProperty{``0},System.Func{``0,System.Boolean},System.Threading.CancellationToken@)
-  name.vb: WaitValueChangedAsync(Of T)(ReadOnlyReactiveProperty(Of T), Func(Of T, Boolean), CancellationToken)
-  fullName: MinimalUtility.R3.ObservableExtensions.WaitValueChangedAsync<T>(ReadOnlyReactiveProperty<T>, System.Func<T, bool>, in System.Threading.CancellationToken)
-  fullName.vb: MinimalUtility.R3.ObservableExtensions.WaitValueChangedAsync(Of T)(ReadOnlyReactiveProperty(Of T), System.Func(Of T, Boolean), System.Threading.CancellationToken)
-  nameWithType: ObservableExtensions.WaitValueChangedAsync<T>(ReadOnlyReactiveProperty<T>, Func<T, bool>, in CancellationToken)
-  nameWithType.vb: ObservableExtensions.WaitValueChangedAsync(Of T)(ReadOnlyReactiveProperty(Of T), Func(Of T, Boolean), CancellationToken)
-- uid: MinimalUtility.R3.ObservableExtensions.WaitValueChangedAsync``1(ReadOnlyReactiveProperty{``0},System.Threading.CancellationToken@)
-  name: WaitValueChangedAsync<T>(ReadOnlyReactiveProperty<T>, in CancellationToken)
-  href: api/MinimalUtility.R3.ObservableExtensions.html#MinimalUtility_R3_ObservableExtensions_WaitValueChangedAsync__1_ReadOnlyReactiveProperty___0__System_Threading_CancellationToken__
-  commentId: M:MinimalUtility.R3.ObservableExtensions.WaitValueChangedAsync``1(ReadOnlyReactiveProperty{``0},System.Threading.CancellationToken@)
-  name.vb: WaitValueChangedAsync(Of T)(ReadOnlyReactiveProperty(Of T), CancellationToken)
-  fullName: MinimalUtility.R3.ObservableExtensions.WaitValueChangedAsync<T>(ReadOnlyReactiveProperty<T>, in System.Threading.CancellationToken)
-  fullName.vb: MinimalUtility.R3.ObservableExtensions.WaitValueChangedAsync(Of T)(ReadOnlyReactiveProperty(Of T), System.Threading.CancellationToken)
-  nameWithType: ObservableExtensions.WaitValueChangedAsync<T>(ReadOnlyReactiveProperty<T>, in CancellationToken)
-  nameWithType.vb: ObservableExtensions.WaitValueChangedAsync(Of T)(ReadOnlyReactiveProperty(Of T), CancellationToken)
 - uid: MinimalUtility.RectTransformExtensions
   name: RectTransformExtensions
   href: api/MinimalUtility.RectTransformExtensions.html
