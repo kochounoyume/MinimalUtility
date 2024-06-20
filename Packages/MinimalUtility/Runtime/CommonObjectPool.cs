@@ -25,7 +25,8 @@ namespace MinimalUtility
         /// <summary>
         /// 取得済みの全てのオブジェクトを解放する.
         /// </summary>
-        void ReleaseAll();
+        /// <param name="preReleaseCallback">解放前に呼び出すコールバック.</param>
+        void ReleaseAll(Action<T> preReleaseCallback = null);
     }
 
     /// <summary>
@@ -120,11 +121,12 @@ namespace MinimalUtility
         }
 
         /// <inheritdoc/>
-        public void ReleaseAll()
+        public void ReleaseAll(Action<T> preReleaseCallback = null)
         {
             foreach (T activeInstance in activeInstances)
             {
                 if (activeInstance == null) continue;
+                preReleaseCallback?.Invoke(activeInstance);
                 pool.Release(activeInstance);
             }
             activeInstances.Clear();
