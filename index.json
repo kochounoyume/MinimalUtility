@@ -59,10 +59,10 @@
     "title": "Class EnumEqualityComparerGenerator | |",
     "keywords": "Class EnumEqualityComparerGenerator Namespace MinimalUtility.SourceGenerator public sealed class EnumEqualityComparerGenerator : IIncrementalGenerator Inheritance object EnumEqualityComparerGenerator"
   },
-  "api/MinimalUtility.SourceGenerator.EnumStringConverter.html": {
-    "href": "api/MinimalUtility.SourceGenerator.EnumStringConverter.html",
-    "title": "Class EnumStringConverter | |",
-    "keywords": "Class EnumStringConverter Namespace MinimalUtility.SourceGenerator public sealed class EnumStringConverter : IIncrementalGenerator Inheritance object EnumStringConverter"
+  "api/MinimalUtility.SourceGenerator.EnumStringConverterGenerator.html": {
+    "href": "api/MinimalUtility.SourceGenerator.EnumStringConverterGenerator.html",
+    "title": "Class EnumStringConverterGenerator | |",
+    "keywords": "Class EnumStringConverterGenerator Namespace MinimalUtility.SourceGenerator public sealed class EnumStringConverterGenerator : IIncrementalGenerator Inheritance object EnumStringConverterGenerator"
   },
   "api/MinimalUtility.SourceGenerator.GeneratorExtensions.html": {
     "href": "api/MinimalUtility.SourceGenerator.GeneratorExtensions.html",
@@ -72,7 +72,7 @@
   "api/MinimalUtility.SourceGenerator.html": {
     "href": "api/MinimalUtility.SourceGenerator.html",
     "title": "Namespace MinimalUtility.SourceGenerator | |",
-    "keywords": "Namespace MinimalUtility.SourceGenerator Classes EnableInitAccessorGenerator EnumEqualityComparerGenerator EnumStringConverter GeneratorExtensions"
+    "keywords": "Namespace MinimalUtility.SourceGenerator Classes EnableInitAccessorGenerator EnumEqualityComparerGenerator EnumStringConverterGenerator GeneratorExtensions"
   },
   "api/MinimalUtility.html": {
     "href": "api/MinimalUtility.html",

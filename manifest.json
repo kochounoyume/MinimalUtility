@@ -135,10 +135,10 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/MinimalUtility.SourceGenerator.EnumStringConverter.yml",
+      "source_relative_path": "api/MinimalUtility.SourceGenerator.EnumStringConverterGenerator.yml",
       "output": {
         ".html": {
-          "relative_path": "api/MinimalUtility.SourceGenerator.EnumStringConverter.html"
+          "relative_path": "api/MinimalUtility.SourceGenerator.EnumStringConverterGenerator.html"
         }
       },
       "version": ""

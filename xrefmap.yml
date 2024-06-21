@@ -818,12 +818,12 @@ references:
   commentId: T:MinimalUtility.SourceGenerator.EnumEqualityComparerGenerator
   fullName: MinimalUtility.SourceGenerator.EnumEqualityComparerGenerator
   nameWithType: EnumEqualityComparerGenerator
-- uid: MinimalUtility.SourceGenerator.EnumStringConverter
-  name: EnumStringConverter
-  href: api/MinimalUtility.SourceGenerator.EnumStringConverter.html
-  commentId: T:MinimalUtility.SourceGenerator.EnumStringConverter
-  fullName: MinimalUtility.SourceGenerator.EnumStringConverter
-  nameWithType: EnumStringConverter
+- uid: MinimalUtility.SourceGenerator.EnumStringConverterGenerator
+  name: EnumStringConverterGenerator
+  href: api/MinimalUtility.SourceGenerator.EnumStringConverterGenerator.html
+  commentId: T:MinimalUtility.SourceGenerator.EnumStringConverterGenerator
+  fullName: MinimalUtility.SourceGenerator.EnumStringConverterGenerator
+  nameWithType: EnumStringConverterGenerator
 - uid: MinimalUtility.SourceGenerator.GeneratorExtensions
   name: GeneratorExtensions
   href: api/MinimalUtility.SourceGenerator.GeneratorExtensions.html
