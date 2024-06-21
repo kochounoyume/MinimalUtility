@@ -4,7 +4,7 @@ using Microsoft.CodeAnalysis;
 namespace MinimalUtility.SourceGenerator;
 
 [Generator(LanguageNames.CSharp)]
-public sealed class EnumStringConverter : IIncrementalGenerator
+public sealed class EnumStringConverterGenerator : IIncrementalGenerator
 {
     void IIncrementalGenerator.Initialize(IncrementalGeneratorInitializationContext context)
     {
