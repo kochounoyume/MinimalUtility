@@ -35,31 +35,12 @@ public sealed class EnumEqualityComparerGenerator : IIncrementalGenerator
             {
                 var typeSymbol = (INamedTypeSymbol)metaDataArray.TargetSymbol;
 
-                // 対象の列挙型の基底の型を取得
-                var baseType = typeSymbol.EnumUnderlyingType;
-
-                if (baseType == null) return;
-
                 string targetTypeName = typeSymbol.Name;
 
-                string baseTypeString = baseType.Name switch
-                {
-                    nameof(Int32) => "int",
-                    nameof(UInt32) => "uint",
-                    nameof(Int64) => "long",
-                    nameof(UInt64) => "ulong",
-                    nameof(Int16) => "short",
-                    nameof(UInt16) => "ushort",
-                    nameof(Byte) => "byte",
-                    nameof(SByte) => "sbyte",
-                    _ => baseType.Name
-                };
+                string baseTypeString = typeSymbol.GetEnumBaseTypeStr();
 
                 // 出力ファイル名に利用するためにエスケープ
-                var fullType = typeSymbol.ToDisplayString(SymbolDisplayFormat.FullyQualifiedFormat)
-                    .Replace("global::", "")
-                    .Replace("<", "_")
-                    .Replace(">", "_");
+                string fullType = typeSymbol.GetFullTypeName();
 
                 context.AddSource($"{fullType}.EqualityComparer.g.cs",
                     typeSymbol.ContainingNamespace.IsGlobalNamespace
