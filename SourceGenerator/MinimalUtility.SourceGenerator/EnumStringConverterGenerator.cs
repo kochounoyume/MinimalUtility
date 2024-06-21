@@ -68,7 +68,7 @@ public sealed class EnumStringConverterGenerator : IIncrementalGenerator
                 {
                     foreach (AttributeData attribute in member.GetAttributes())
                     {
-                        if (attribute.AttributeClass?.Name != "EnumMemberAttribute") continue;
+                        if (attribute.AttributeClass?.Name != nameof(System.Runtime.Serialization.EnumMemberAttribute)) continue;
                         foreach (KeyValuePair<string, TypedConstant> argument in attribute.NamedArguments)
                         {
                             if (argument.Key != "Value") continue;
