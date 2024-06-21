@@ -135,6 +135,26 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/MinimalUtility.SourceGenerator.EnumStringConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MinimalUtility.SourceGenerator.EnumStringConverter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MinimalUtility.SourceGenerator.GeneratorExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MinimalUtility.SourceGenerator.GeneratorExtensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/MinimalUtility.SourceGenerator.yml",
       "output": {
         ".html": {

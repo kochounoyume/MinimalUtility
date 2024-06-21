@@ -59,10 +59,20 @@
     "title": "Class EnumEqualityComparerGenerator | |",
     "keywords": "Class EnumEqualityComparerGenerator Namespace MinimalUtility.SourceGenerator public sealed class EnumEqualityComparerGenerator : IIncrementalGenerator Inheritance object EnumEqualityComparerGenerator"
   },
+  "api/MinimalUtility.SourceGenerator.EnumStringConverter.html": {
+    "href": "api/MinimalUtility.SourceGenerator.EnumStringConverter.html",
+    "title": "Class EnumStringConverter | |",
+    "keywords": "Class EnumStringConverter Namespace MinimalUtility.SourceGenerator public sealed class EnumStringConverter : IIncrementalGenerator Inheritance object EnumStringConverter"
+  },
+  "api/MinimalUtility.SourceGenerator.GeneratorExtensions.html": {
+    "href": "api/MinimalUtility.SourceGenerator.GeneratorExtensions.html",
+    "title": "Class GeneratorExtensions | |",
+    "keywords": "Class GeneratorExtensions Namespace MinimalUtility.SourceGenerator public static class GeneratorExtensions Inheritance object GeneratorExtensions Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Methods GetEnumBaseTypeStr(INamedTypeSymbol) 列挙型の基底の型を文字列で取得します public static string GetEnumBaseTypeStr(this INamedTypeSymbol typeSymbol) Parameters typeSymbol INamedTypeSymbol 列挙型の型情報 Returns string 列挙型の基底の型 GetFullTypeName(INamedTypeSymbol) 出力ファイルに利用できる型名を取得します public static string GetFullTypeName(this INamedTypeSymbol typeSymbol) Parameters typeSymbol INamedTypeSymbol 型情報 Returns string 出力ファイルに利用できる型名"
+  },
   "api/MinimalUtility.SourceGenerator.html": {
     "href": "api/MinimalUtility.SourceGenerator.html",
     "title": "Namespace MinimalUtility.SourceGenerator | |",
-    "keywords": "Namespace MinimalUtility.SourceGenerator Classes EnableInitAccessorGenerator EnumEqualityComparerGenerator"
+    "keywords": "Namespace MinimalUtility.SourceGenerator Classes EnableInitAccessorGenerator EnumEqualityComparerGenerator EnumStringConverter GeneratorExtensions"
   },
   "api/MinimalUtility.html": {
     "href": "api/MinimalUtility.html",

@@ -818,3 +818,41 @@ references:
   commentId: T:MinimalUtility.SourceGenerator.EnumEqualityComparerGenerator
   fullName: MinimalUtility.SourceGenerator.EnumEqualityComparerGenerator
   nameWithType: EnumEqualityComparerGenerator
+- uid: MinimalUtility.SourceGenerator.EnumStringConverter
+  name: EnumStringConverter
+  href: api/MinimalUtility.SourceGenerator.EnumStringConverter.html
+  commentId: T:MinimalUtility.SourceGenerator.EnumStringConverter
+  fullName: MinimalUtility.SourceGenerator.EnumStringConverter
+  nameWithType: EnumStringConverter
+- uid: MinimalUtility.SourceGenerator.GeneratorExtensions
+  name: GeneratorExtensions
+  href: api/MinimalUtility.SourceGenerator.GeneratorExtensions.html
+  commentId: T:MinimalUtility.SourceGenerator.GeneratorExtensions
+  fullName: MinimalUtility.SourceGenerator.GeneratorExtensions
+  nameWithType: GeneratorExtensions
+- uid: MinimalUtility.SourceGenerator.GeneratorExtensions.GetEnumBaseTypeStr(INamedTypeSymbol)
+  name: GetEnumBaseTypeStr(INamedTypeSymbol)
+  href: api/MinimalUtility.SourceGenerator.GeneratorExtensions.html#MinimalUtility_SourceGenerator_GeneratorExtensions_GetEnumBaseTypeStr_INamedTypeSymbol_
+  commentId: M:MinimalUtility.SourceGenerator.GeneratorExtensions.GetEnumBaseTypeStr(INamedTypeSymbol)
+  fullName: MinimalUtility.SourceGenerator.GeneratorExtensions.GetEnumBaseTypeStr(INamedTypeSymbol)
+  nameWithType: GeneratorExtensions.GetEnumBaseTypeStr(INamedTypeSymbol)
+- uid: MinimalUtility.SourceGenerator.GeneratorExtensions.GetEnumBaseTypeStr*
+  name: GetEnumBaseTypeStr
+  href: api/MinimalUtility.SourceGenerator.GeneratorExtensions.html#MinimalUtility_SourceGenerator_GeneratorExtensions_GetEnumBaseTypeStr_
+  commentId: Overload:MinimalUtility.SourceGenerator.GeneratorExtensions.GetEnumBaseTypeStr
+  isSpec: "True"
+  fullName: MinimalUtility.SourceGenerator.GeneratorExtensions.GetEnumBaseTypeStr
+  nameWithType: GeneratorExtensions.GetEnumBaseTypeStr
+- uid: MinimalUtility.SourceGenerator.GeneratorExtensions.GetFullTypeName(INamedTypeSymbol)
+  name: GetFullTypeName(INamedTypeSymbol)
+  href: api/MinimalUtility.SourceGenerator.GeneratorExtensions.html#MinimalUtility_SourceGenerator_GeneratorExtensions_GetFullTypeName_INamedTypeSymbol_
+  commentId: M:MinimalUtility.SourceGenerator.GeneratorExtensions.GetFullTypeName(INamedTypeSymbol)
+  fullName: MinimalUtility.SourceGenerator.GeneratorExtensions.GetFullTypeName(INamedTypeSymbol)
+  nameWithType: GeneratorExtensions.GetFullTypeName(INamedTypeSymbol)
+- uid: MinimalUtility.SourceGenerator.GeneratorExtensions.GetFullTypeName*
+  name: GetFullTypeName
+  href: api/MinimalUtility.SourceGenerator.GeneratorExtensions.html#MinimalUtility_SourceGenerator_GeneratorExtensions_GetFullTypeName_
+  commentId: Overload:MinimalUtility.SourceGenerator.GeneratorExtensions.GetFullTypeName
+  isSpec: "True"
+  fullName: MinimalUtility.SourceGenerator.GeneratorExtensions.GetFullTypeName
+  nameWithType: GeneratorExtensions.GetFullTypeName
