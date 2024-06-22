@@ -87,7 +87,7 @@ namespace MinimalUtility.R3
             TimeSpan interval = TimeSpan.FromSeconds(IntervalSecs);
             StringBuilder sb = new StringBuilder();
 
-            Observable.Timer(interval, interval, UnityTimeProvider.UpdateRealtime)
+            Observable.Timer(interval, interval, UnityTimeProvider.UpdateRealtime, cancellation)
                 .Select(UnityFrameProvider.Update, static (_, provider) => provider.GetFrameCount())
                 .Pairwise()
                 .Subscribe(new { sb, unit = memoryUnit, unitStr = memoryUnitStringConverter.Convert(memoryUnit) },
@@ -114,8 +114,7 @@ namespace MinimalUtility.R3
                         const string formatF = "F";
                         param.sb.Append(totalMemory.ToString(formatF));
                         param.sb.Append(param.unitStr);
-                    })
-                .RegisterTo(cancellation);
+                    });
 
             const string instanceName = "DebugProfiler";
             GameObject instanceObj = new GameObject(instanceName, typeof(AsyncGUITrigger));
