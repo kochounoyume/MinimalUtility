@@ -88,7 +88,7 @@ namespace MinimalUtility.R3
             StringBuilder sb = new StringBuilder();
 
             Observable.Timer(interval, interval, UnityTimeProvider.UpdateRealtime)
-                .Select(UnityFrameProvider.Update, (_, provider) => provider.GetFrameCount())
+                .Select(UnityFrameProvider.Update, static (_, provider) => provider.GetFrameCount())
                 .Pairwise()
                 .Subscribe(new { sb, unit = memoryUnit, unitStr = memoryUnitStringConverter.Convert(memoryUnit) },
                     static (pair, param) =>
