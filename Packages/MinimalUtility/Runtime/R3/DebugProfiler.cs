@@ -1,6 +1,6 @@
 ﻿#if ENABLE_R3 && ENABLE_UNITASK
 using System;
-using System.Collections.Generic;
+using System.Runtime.Serialization;
 using System.Text;
 using System.Threading;
 using Cysharp.Threading.Tasks;
@@ -22,19 +22,23 @@ namespace MinimalUtility.R3
     /// <summary>
     /// 総メモリ使用量表示の単位指定列挙体.
     /// </summary>
-    [GenerateEqualityComparer]
+    [GenerateStringConverter]
     public enum MemoryUnit : int
     {
         /// <summary>バイト</summary>
+        [EnumMember(Value = "B")]
         B = 0,
 
         /// <summary>キロバイト</summary>
+        [EnumMember(Value = "KB")]
         KB = 1,
 
         /// <summary>メガバイト</summary>
+        [EnumMember(Value = "MB")]
         MB = 2,
 
         /// <summary>ギガバイト</summary>
+        [EnumMember(Value = "GB")]
         GB = 3
     }
 
@@ -61,14 +65,7 @@ namespace MinimalUtility.R3
         /// </summary>
         private readonly MemoryUnit memoryUnit;
 
-        private readonly IReadOnlyDictionary<MemoryUnit, string> memoryUnitStrings
-            = new Dictionary<MemoryUnit, string>(new MemoryUnitEqualityComparer())
-            {
-                { MemoryUnit.B, "B" },
-                { MemoryUnit.KB, "KB" },
-                { MemoryUnit.MB, "MB" },
-                { MemoryUnit.GB, "GB" }
-            };
+        private readonly MemoryUnitStringConverter memoryUnitStringConverter = new MemoryUnitStringConverter();
 
         /// <summary>
         /// Initializes a new instance of the <see cref="DebugProfiler"/> class.
@@ -93,7 +90,7 @@ namespace MinimalUtility.R3
             Observable.Timer(interval, interval, UnityTimeProvider.UpdateRealtime)
                 .Select(UnityFrameProvider.Update, (_, provider) => provider.GetFrameCount())
                 .Pairwise()
-                .Subscribe(new { sb, unit = memoryUnit, unitStr = memoryUnitStrings[memoryUnit] },
+                .Subscribe(new { sb, unit = memoryUnit, unitStr = memoryUnitStringConverter.Convert(memoryUnit) },
                     static (pair, param) =>
                     {
                         long count = pair.Current - pair.Previous;
