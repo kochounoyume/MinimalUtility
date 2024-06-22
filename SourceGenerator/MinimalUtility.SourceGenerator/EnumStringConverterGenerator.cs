@@ -45,16 +45,21 @@ public sealed class EnumStringConverterGenerator : IIncrementalGenerator
                 bool isGlobalNamespace = typeSymbol.ContainingNamespace.IsGlobalNamespace;
 
                 List<string> values = new ();
+                List<string> fieldNames = new ();
                 StringBuilder builder = new ();
 
                 builder.Append(isGlobalNamespace ?
                     $$"""
+                    using System;
+                    
                     public partial class {{targetTypeName}}StringConverter
                     {
                         private readonly string[] values = new string[]
                         {
                     """ :
                     $$"""
+                    using System;
+                    
                     namespace {{typeSymbol.ContainingNamespace}}
                     {
                         public partial class {{targetTypeName}}StringConverter
@@ -84,16 +89,18 @@ public sealed class EnumStringConverterGenerator : IIncrementalGenerator
                             {
                                 values.Add(value);
                             }
+                            fieldNames.Add(member.Name);
                         }
                     }
                 }
 
                 values.TrimExcess();
+                fieldNames.TrimExcess();
 
                 builder.AppendLine(isGlobalNamespace ? "    };" : "        };");
                 builder.AppendLine();
                 builder.AppendLine(isGlobalNamespace ? $$"""
-                        public System.ReadOnlySpan<string> MemberValues => values;
+                        public ReadOnlySpan<string> MemberValues => values;
                     
                         public ref readonly string Convert(in {{targetTypeName}} value)
                         {
@@ -101,7 +108,7 @@ public sealed class EnumStringConverterGenerator : IIncrementalGenerator
                             {
                     """ :
                     $$"""
-                            public System.ReadOnlySpan<string> MemberValues => values;
+                            public ReadOnlySpan<string> MemberValues => values;
                     
                             public ref readonly string Convert(in {{targetTypeName}} value)
                             {
@@ -111,7 +118,7 @@ public sealed class EnumStringConverterGenerator : IIncrementalGenerator
 
                 for (int i = 0; i < values.Count; i++)
                 {
-                    builder.AppendLine(isGlobalNamespace ?$"""
+                    builder.AppendLine(isGlobalNamespace ? $"""
                                     case {values[i]}:
                                         return ref values[{i}];
                         """ :
@@ -123,16 +130,53 @@ public sealed class EnumStringConverterGenerator : IIncrementalGenerator
 
                 values.Clear();
 
-                builder.AppendLine(isGlobalNamespace ? """
+                builder.AppendLine(isGlobalNamespace ? $$"""
                                 default:
                                     return ref string.Empty;
+                            }
+                        }
+                        
+                        public {{targetTypeName}} ReverseConvert(in string str)
+                        {
+                            switch (Array.IndexOf(values, str))
+                            {
+                    """ :
+                    $$"""
+                                    default:
+                                        return ref string.Empty;
+                                }
+                            }
+                            
+                            public {{targetTypeName}} ReverseConvert(in string str)
+                            {
+                                switch (Array.IndexOf(values, str))
+                                {
+                    """);
+
+                for (int i = 0; i < fieldNames.Count; i++)
+                {
+                    builder.AppendLine(isGlobalNamespace ? $"""
+                                    case {i}:
+                                        return {targetTypeName}.{fieldNames[i]};
+                        """ :
+                        $"""
+                                        case {i}:
+                                            return {targetTypeName}.{fieldNames[i]};
+                        """);
+                }
+
+                fieldNames.Clear();
+
+                builder.Append(isGlobalNamespace ? """
+                                default:
+                                    throw new InvalidCastException(str);
                             }
                         }
                     }
                     """ :
                     """
                                     default:
-                                        return ref string.Empty;
+                                        throw new InvalidCastException(str);
                                 }
                             }
                         }
