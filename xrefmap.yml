@@ -778,6 +778,19 @@ references:
   commentId: T:MinimalUtility.RectTransformExtensions
   fullName: MinimalUtility.RectTransformExtensions
   nameWithType: RectTransformExtensions
+- uid: MinimalUtility.RectTransformExtensions.GetSizeDelta(RectTransform)
+  name: GetSizeDelta(RectTransform)
+  href: api/MinimalUtility.RectTransformExtensions.html#MinimalUtility_RectTransformExtensions_GetSizeDelta_RectTransform_
+  commentId: M:MinimalUtility.RectTransformExtensions.GetSizeDelta(RectTransform)
+  fullName: MinimalUtility.RectTransformExtensions.GetSizeDelta(RectTransform)
+  nameWithType: RectTransformExtensions.GetSizeDelta(RectTransform)
+- uid: MinimalUtility.RectTransformExtensions.GetSizeDelta*
+  name: GetSizeDelta
+  href: api/MinimalUtility.RectTransformExtensions.html#MinimalUtility_RectTransformExtensions_GetSizeDelta_
+  commentId: Overload:MinimalUtility.RectTransformExtensions.GetSizeDelta
+  isSpec: "True"
+  fullName: MinimalUtility.RectTransformExtensions.GetSizeDelta
+  nameWithType: RectTransformExtensions.GetSizeDelta
 - uid: MinimalUtility.RectTransformExtensions.SetSafeSize(RectTransform,System.Single@,System.Single@)
   name: SetSafeSize(RectTransform, in float, in float)
   href: api/MinimalUtility.RectTransformExtensions.html#MinimalUtility_RectTransformExtensions_SetSafeSize_RectTransform_System_Single__System_Single__
@@ -794,6 +807,38 @@ references:
   isSpec: "True"
   fullName: MinimalUtility.RectTransformExtensions.SetSafeSize
   nameWithType: RectTransformExtensions.SetSafeSize
+- uid: MinimalUtility.RectTransformExtensions.SetSafeSizeHeight(RectTransform,System.Single@)
+  name: SetSafeSizeHeight(RectTransform, in float)
+  href: api/MinimalUtility.RectTransformExtensions.html#MinimalUtility_RectTransformExtensions_SetSafeSizeHeight_RectTransform_System_Single__
+  commentId: M:MinimalUtility.RectTransformExtensions.SetSafeSizeHeight(RectTransform,System.Single@)
+  name.vb: SetSafeSizeHeight(RectTransform, Single)
+  fullName: MinimalUtility.RectTransformExtensions.SetSafeSizeHeight(RectTransform, in float)
+  fullName.vb: MinimalUtility.RectTransformExtensions.SetSafeSizeHeight(RectTransform, Single)
+  nameWithType: RectTransformExtensions.SetSafeSizeHeight(RectTransform, in float)
+  nameWithType.vb: RectTransformExtensions.SetSafeSizeHeight(RectTransform, Single)
+- uid: MinimalUtility.RectTransformExtensions.SetSafeSizeHeight*
+  name: SetSafeSizeHeight
+  href: api/MinimalUtility.RectTransformExtensions.html#MinimalUtility_RectTransformExtensions_SetSafeSizeHeight_
+  commentId: Overload:MinimalUtility.RectTransformExtensions.SetSafeSizeHeight
+  isSpec: "True"
+  fullName: MinimalUtility.RectTransformExtensions.SetSafeSizeHeight
+  nameWithType: RectTransformExtensions.SetSafeSizeHeight
+- uid: MinimalUtility.RectTransformExtensions.SetSafeSizeWidth(RectTransform,System.Single@)
+  name: SetSafeSizeWidth(RectTransform, in float)
+  href: api/MinimalUtility.RectTransformExtensions.html#MinimalUtility_RectTransformExtensions_SetSafeSizeWidth_RectTransform_System_Single__
+  commentId: M:MinimalUtility.RectTransformExtensions.SetSafeSizeWidth(RectTransform,System.Single@)
+  name.vb: SetSafeSizeWidth(RectTransform, Single)
+  fullName: MinimalUtility.RectTransformExtensions.SetSafeSizeWidth(RectTransform, in float)
+  fullName.vb: MinimalUtility.RectTransformExtensions.SetSafeSizeWidth(RectTransform, Single)
+  nameWithType: RectTransformExtensions.SetSafeSizeWidth(RectTransform, in float)
+  nameWithType.vb: RectTransformExtensions.SetSafeSizeWidth(RectTransform, Single)
+- uid: MinimalUtility.RectTransformExtensions.SetSafeSizeWidth*
+  name: SetSafeSizeWidth
+  href: api/MinimalUtility.RectTransformExtensions.html#MinimalUtility_RectTransformExtensions_SetSafeSizeWidth_
+  commentId: Overload:MinimalUtility.RectTransformExtensions.SetSafeSizeWidth
+  isSpec: "True"
+  fullName: MinimalUtility.RectTransformExtensions.SetSafeSizeWidth
+  nameWithType: RectTransformExtensions.SetSafeSizeWidth
 - uid: MinimalUtility.SafeAreaAdjuster
   name: SafeAreaAdjuster
   href: api/MinimalUtility.SafeAreaAdjuster.html

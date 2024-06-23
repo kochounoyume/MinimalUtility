@@ -153,6 +153,45 @@ Class RectTransformExtensions  <a class="header-action link-secondary" title="Vi
 </h2>
 
 
+  <a id="MinimalUtility_RectTransformExtensions_GetSizeDelta_" data-uid="MinimalUtility.RectTransformExtensions.GetSizeDelta*"></a>
+
+  <h3 id="MinimalUtility_RectTransformExtensions_GetSizeDelta_RectTransform_" data-uid="MinimalUtility.RectTransformExtensions.GetSizeDelta(RectTransform)">
+  GetSizeDelta(RectTransform)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/RectTransformExtensions.cs/#L55"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>RectTransform.sizeDeltaよりも安全なサイズ取得.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector2 GetSizeDelta(this RectTransform target)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>target</code> <span class="xref">RectTransform</span></dt>
+    <dd><p>対象のRectTransform.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector2</span></dt>
+    <dd><p>対象のサイズ.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="MinimalUtility_RectTransformExtensions_SetSafeSize_" data-uid="MinimalUtility.RectTransformExtensions.SetSafeSize*"></a>
 
   <h3 id="MinimalUtility_RectTransformExtensions_SetSafeSize_RectTransform_System_Single__System_Single__" data-uid="MinimalUtility.RectTransformExtensions.SetSafeSize(RectTransform,System.Single@,System.Single@)">
@@ -165,7 +204,7 @@ Class RectTransformExtensions  <a class="header-action link-secondary" title="Vi
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void SetSafeSize(this RectTransform target, in float sizeX, in float sizeY)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void SetSafeSize(this RectTransform target, in float width, in float height)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -173,11 +212,83 @@ Class RectTransformExtensions  <a class="header-action link-secondary" title="Vi
     <dt><code>target</code> <span class="xref">RectTransform</span></dt>
     <dd><p>対象のRectTransform.</p>
 </dd>
-    <dt><code>sizeX</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dt><code>width</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
     <dd><p>横の長さ.</p>
 </dd>
-    <dt><code>sizeY</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dt><code>height</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
     <dd><p>縦の長さ.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MinimalUtility_RectTransformExtensions_SetSafeSizeHeight_" data-uid="MinimalUtility.RectTransformExtensions.SetSafeSizeHeight*"></a>
+
+  <h3 id="MinimalUtility_RectTransformExtensions_SetSafeSizeHeight_RectTransform_System_Single__" data-uid="MinimalUtility.RectTransformExtensions.SetSafeSizeHeight(RectTransform,System.Single@)">
+  SetSafeSizeHeight(RectTransform, in float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/RectTransformExtensions.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>RectTransform.sizeDeltaよりも安全な縦幅設定.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetSafeSizeHeight(this RectTransform target, in float height)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>target</code> <span class="xref">RectTransform</span></dt>
+    <dd><p>対象のRectTransform.</p>
+</dd>
+    <dt><code>height</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>縦の長さ.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MinimalUtility_RectTransformExtensions_SetSafeSizeWidth_" data-uid="MinimalUtility.RectTransformExtensions.SetSafeSizeWidth*"></a>
+
+  <h3 id="MinimalUtility_RectTransformExtensions_SetSafeSizeWidth_RectTransform_System_Single__" data-uid="MinimalUtility.RectTransformExtensions.SetSafeSizeWidth(RectTransform,System.Single@)">
+  SetSafeSizeWidth(RectTransform, in float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/RectTransformExtensions.cs/#L31"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>RectTransform.sizeDeltaよりも安全な横幅設定.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetSafeSizeWidth(this RectTransform target, in float width)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>target</code> <span class="xref">RectTransform</span></dt>
+    <dd><p>対象のRectTransform.</p>
+</dd>
+    <dt><code>width</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>横の長さ.</p>
 </dd>
   </dl>
 
