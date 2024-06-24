@@ -1,4 +1,14 @@
 {
+  "api/Global.UnityWebRequestHttpMessageHandler.html": {
+    "href": "api/Global.UnityWebRequestHttpMessageHandler.html",
+    "title": "Class UnityWebRequestHttpMessageHandler | |",
+    "keywords": "Class UnityWebRequestHttpMessageHandler Namespace Global public class UnityWebRequestHttpMessageHandler : HttpMessageHandler, IDisposable Inheritance object HttpMessageHandler UnityWebRequestHttpMessageHandler Implements IDisposable Inherited Members HttpMessageHandler.Dispose() HttpMessageHandler.Dispose(bool) HttpMessageHandler.Send(HttpRequestMessage, CancellationToken) object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Extension Methods DisposableExtensions.AddTo<T>(T, ref IDisposable) Methods SendAsync(HttpRequestMessage, CancellationToken) Send an HTTP request as an asynchronous operation. protected override Task<HttpResponseMessage> SendAsync(HttpRequestMessage requestMessage, CancellationToken cancellationToken) Parameters requestMessage HttpRequestMessage cancellationToken CancellationToken The cancellation token to cancel operation. Returns Task<HttpResponseMessage> The task object representing the asynchronous operation. Exceptions ArgumentNullException The request was null."
+  },
+  "api/Global.html": {
+    "href": "api/Global.html",
+    "title": "Namespace | |",
+    "keywords": "Namespace Classes UnityWebRequestHttpMessageHandler"
+  },
   "api/MinimalUtility.ButtonAttribute.html": {
     "href": "api/MinimalUtility.ButtonAttribute.html",
     "title": "Class ButtonAttribute | |",
