@@ -1,6 +1,28 @@
 ### YamlMime:XRefMap
 sorted: true
 references:
+- uid: Global
+  name: ''
+  href: api/Global.html
+- uid: Global.UnityWebRequestHttpMessageHandler
+  name: UnityWebRequestHttpMessageHandler
+  href: api/Global.UnityWebRequestHttpMessageHandler.html
+  commentId: T:Global.UnityWebRequestHttpMessageHandler
+  fullName: UnityWebRequestHttpMessageHandler
+  nameWithType: UnityWebRequestHttpMessageHandler
+- uid: Global.UnityWebRequestHttpMessageHandler.SendAsync(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)
+  name: SendAsync(HttpRequestMessage, CancellationToken)
+  href: api/Global.UnityWebRequestHttpMessageHandler.html#Global_UnityWebRequestHttpMessageHandler_SendAsync_System_Net_Http_HttpRequestMessage_System_Threading_CancellationToken_
+  commentId: M:Global.UnityWebRequestHttpMessageHandler.SendAsync(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)
+  fullName: UnityWebRequestHttpMessageHandler.SendAsync(System.Net.Http.HttpRequestMessage, System.Threading.CancellationToken)
+  nameWithType: UnityWebRequestHttpMessageHandler.SendAsync(HttpRequestMessage, CancellationToken)
+- uid: Global.UnityWebRequestHttpMessageHandler.SendAsync*
+  name: SendAsync
+  href: api/Global.UnityWebRequestHttpMessageHandler.html#Global_UnityWebRequestHttpMessageHandler_SendAsync_
+  commentId: Overload:Global.UnityWebRequestHttpMessageHandler.SendAsync
+  isSpec: "True"
+  fullName: UnityWebRequestHttpMessageHandler.SendAsync
+  nameWithType: UnityWebRequestHttpMessageHandler.SendAsync
 - uid: MinimalUtility
   name: MinimalUtility
   href: api/MinimalUtility.html

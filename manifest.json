@@ -15,6 +15,26 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Global.UnityWebRequestHttpMessageHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Global.UnityWebRequestHttpMessageHandler.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Global.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Global.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/MinimalUtility.ButtonAttribute.yml",
       "output": {
         ".html": {
