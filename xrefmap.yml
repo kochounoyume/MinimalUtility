@@ -258,6 +258,60 @@ references:
   fullName.vb: MinimalUtility.CommonObjectPool(Of T).ReleaseAll
   nameWithType: CommonObjectPool<T>.ReleaseAll
   nameWithType.vb: CommonObjectPool(Of T).ReleaseAll
+- uid: MinimalUtility.ComponentExtensions
+  name: ComponentExtensions
+  href: api/MinimalUtility.ComponentExtensions.html
+  commentId: T:MinimalUtility.ComponentExtensions
+  fullName: MinimalUtility.ComponentExtensions
+  nameWithType: ComponentExtensions
+- uid: MinimalUtility.ComponentExtensions.GetComponentInOnlyChild*
+  name: GetComponentInOnlyChild
+  href: api/MinimalUtility.ComponentExtensions.html#MinimalUtility_ComponentExtensions_GetComponentInOnlyChild_
+  commentId: Overload:MinimalUtility.ComponentExtensions.GetComponentInOnlyChild
+  isSpec: "True"
+  fullName: MinimalUtility.ComponentExtensions.GetComponentInOnlyChild
+  nameWithType: ComponentExtensions.GetComponentInOnlyChild
+- uid: MinimalUtility.ComponentExtensions.GetComponentInOnlyChild``1(Component)
+  name: GetComponentInOnlyChild<T>(Component)
+  href: api/MinimalUtility.ComponentExtensions.html#MinimalUtility_ComponentExtensions_GetComponentInOnlyChild__1_Component_
+  commentId: M:MinimalUtility.ComponentExtensions.GetComponentInOnlyChild``1(Component)
+  name.vb: GetComponentInOnlyChild(Of T)(Component)
+  fullName: MinimalUtility.ComponentExtensions.GetComponentInOnlyChild<T>(Component)
+  fullName.vb: MinimalUtility.ComponentExtensions.GetComponentInOnlyChild(Of T)(Component)
+  nameWithType: ComponentExtensions.GetComponentInOnlyChild<T>(Component)
+  nameWithType.vb: ComponentExtensions.GetComponentInOnlyChild(Of T)(Component)
+- uid: MinimalUtility.ComponentExtensions.GetComponentsInOnlyChildren*
+  name: GetComponentsInOnlyChildren
+  href: api/MinimalUtility.ComponentExtensions.html#MinimalUtility_ComponentExtensions_GetComponentsInOnlyChildren_
+  commentId: Overload:MinimalUtility.ComponentExtensions.GetComponentsInOnlyChildren
+  isSpec: "True"
+  fullName: MinimalUtility.ComponentExtensions.GetComponentsInOnlyChildren
+  nameWithType: ComponentExtensions.GetComponentsInOnlyChildren
+- uid: MinimalUtility.ComponentExtensions.GetComponentsInOnlyChildren``1(Component)
+  name: GetComponentsInOnlyChildren<T>(Component)
+  href: api/MinimalUtility.ComponentExtensions.html#MinimalUtility_ComponentExtensions_GetComponentsInOnlyChildren__1_Component_
+  commentId: M:MinimalUtility.ComponentExtensions.GetComponentsInOnlyChildren``1(Component)
+  name.vb: GetComponentsInOnlyChildren(Of T)(Component)
+  fullName: MinimalUtility.ComponentExtensions.GetComponentsInOnlyChildren<T>(Component)
+  fullName.vb: MinimalUtility.ComponentExtensions.GetComponentsInOnlyChildren(Of T)(Component)
+  nameWithType: ComponentExtensions.GetComponentsInOnlyChildren<T>(Component)
+  nameWithType.vb: ComponentExtensions.GetComponentsInOnlyChildren(Of T)(Component)
+- uid: MinimalUtility.ComponentExtensions.TryGetComponentInOnlyChild*
+  name: TryGetComponentInOnlyChild
+  href: api/MinimalUtility.ComponentExtensions.html#MinimalUtility_ComponentExtensions_TryGetComponentInOnlyChild_
+  commentId: Overload:MinimalUtility.ComponentExtensions.TryGetComponentInOnlyChild
+  isSpec: "True"
+  fullName: MinimalUtility.ComponentExtensions.TryGetComponentInOnlyChild
+  nameWithType: ComponentExtensions.TryGetComponentInOnlyChild
+- uid: MinimalUtility.ComponentExtensions.TryGetComponentInOnlyChild``1(Component,``0@)
+  name: TryGetComponentInOnlyChild<T>(Component, out T)
+  href: api/MinimalUtility.ComponentExtensions.html#MinimalUtility_ComponentExtensions_TryGetComponentInOnlyChild__1_Component___0__
+  commentId: M:MinimalUtility.ComponentExtensions.TryGetComponentInOnlyChild``1(Component,``0@)
+  name.vb: TryGetComponentInOnlyChild(Of T)(Component, T)
+  fullName: MinimalUtility.ComponentExtensions.TryGetComponentInOnlyChild<T>(Component, out T)
+  fullName.vb: MinimalUtility.ComponentExtensions.TryGetComponentInOnlyChild(Of T)(Component, T)
+  nameWithType: ComponentExtensions.TryGetComponentInOnlyChild<T>(Component, out T)
+  nameWithType.vb: ComponentExtensions.TryGetComponentInOnlyChild(Of T)(Component, T)
 - uid: MinimalUtility.DisposableExtensions
   name: DisposableExtensions
   href: api/MinimalUtility.DisposableExtensions.html
@@ -813,6 +867,19 @@ references:
   isSpec: "True"
   fullName: MinimalUtility.RectTransformExtensions.GetSizeDelta
   nameWithType: RectTransformExtensions.GetSizeDelta
+- uid: MinimalUtility.RectTransformExtensions.SetFullStretch(RectTransform)
+  name: SetFullStretch(RectTransform)
+  href: api/MinimalUtility.RectTransformExtensions.html#MinimalUtility_RectTransformExtensions_SetFullStretch_RectTransform_
+  commentId: M:MinimalUtility.RectTransformExtensions.SetFullStretch(RectTransform)
+  fullName: MinimalUtility.RectTransformExtensions.SetFullStretch(RectTransform)
+  nameWithType: RectTransformExtensions.SetFullStretch(RectTransform)
+- uid: MinimalUtility.RectTransformExtensions.SetFullStretch*
+  name: SetFullStretch
+  href: api/MinimalUtility.RectTransformExtensions.html#MinimalUtility_RectTransformExtensions_SetFullStretch_
+  commentId: Overload:MinimalUtility.RectTransformExtensions.SetFullStretch
+  isSpec: "True"
+  fullName: MinimalUtility.RectTransformExtensions.SetFullStretch
+  nameWithType: RectTransformExtensions.SetFullStretch
 - uid: MinimalUtility.RectTransformExtensions.SetSafeSize(RectTransform,System.Single@,System.Single@)
   name: SetSafeSize(RectTransform, in float, in float)
   href: api/MinimalUtility.RectTransformExtensions.html#MinimalUtility_RectTransformExtensions_SetSafeSize_RectTransform_System_Single__System_Single__
@@ -822,6 +889,12 @@ references:
   fullName.vb: MinimalUtility.RectTransformExtensions.SetSafeSize(RectTransform, Single, Single)
   nameWithType: RectTransformExtensions.SetSafeSize(RectTransform, in float, in float)
   nameWithType.vb: RectTransformExtensions.SetSafeSize(RectTransform, Single, Single)
+- uid: MinimalUtility.RectTransformExtensions.SetSafeSize(RectTransform,Vector2)
+  name: SetSafeSize(RectTransform, Vector2)
+  href: api/MinimalUtility.RectTransformExtensions.html#MinimalUtility_RectTransformExtensions_SetSafeSize_RectTransform_Vector2_
+  commentId: M:MinimalUtility.RectTransformExtensions.SetSafeSize(RectTransform,Vector2)
+  fullName: MinimalUtility.RectTransformExtensions.SetSafeSize(RectTransform, Vector2)
+  nameWithType: RectTransformExtensions.SetSafeSize(RectTransform, Vector2)
 - uid: MinimalUtility.RectTransformExtensions.SetSafeSize*
   name: SetSafeSize
   href: api/MinimalUtility.RectTransformExtensions.html#MinimalUtility_RectTransformExtensions_SetSafeSize_
@@ -867,6 +940,64 @@ references:
   commentId: T:MinimalUtility.SafeAreaAdjuster
   fullName: MinimalUtility.SafeAreaAdjuster
   nameWithType: SafeAreaAdjuster
+- uid: MinimalUtility.SimpleSliceGauge
+  name: SimpleSliceGauge
+  href: api/MinimalUtility.SimpleSliceGauge.html
+  commentId: T:MinimalUtility.SimpleSliceGauge
+  fullName: MinimalUtility.SimpleSliceGauge
+  nameWithType: SimpleSliceGauge
+- uid: MinimalUtility.SimpleSliceGauge.ChildFill
+  name: ChildFill
+  href: api/MinimalUtility.SimpleSliceGauge.html#MinimalUtility_SimpleSliceGauge_ChildFill
+  commentId: P:MinimalUtility.SimpleSliceGauge.ChildFill
+  fullName: MinimalUtility.SimpleSliceGauge.ChildFill
+  nameWithType: SimpleSliceGauge.ChildFill
+- uid: MinimalUtility.SimpleSliceGauge.ChildFill*
+  name: ChildFill
+  href: api/MinimalUtility.SimpleSliceGauge.html#MinimalUtility_SimpleSliceGauge_ChildFill_
+  commentId: Overload:MinimalUtility.SimpleSliceGauge.ChildFill
+  isSpec: "True"
+  fullName: MinimalUtility.SimpleSliceGauge.ChildFill
+  nameWithType: SimpleSliceGauge.ChildFill
+- uid: MinimalUtility.SimpleSliceGauge.OnDestroy
+  name: OnDestroy()
+  href: api/MinimalUtility.SimpleSliceGauge.html#MinimalUtility_SimpleSliceGauge_OnDestroy
+  commentId: M:MinimalUtility.SimpleSliceGauge.OnDestroy
+  fullName: MinimalUtility.SimpleSliceGauge.OnDestroy()
+  nameWithType: SimpleSliceGauge.OnDestroy()
+- uid: MinimalUtility.SimpleSliceGauge.OnDestroy*
+  name: OnDestroy
+  href: api/MinimalUtility.SimpleSliceGauge.html#MinimalUtility_SimpleSliceGauge_OnDestroy_
+  commentId: Overload:MinimalUtility.SimpleSliceGauge.OnDestroy
+  isSpec: "True"
+  fullName: MinimalUtility.SimpleSliceGauge.OnDestroy
+  nameWithType: SimpleSliceGauge.OnDestroy
+- uid: MinimalUtility.SimpleSliceGauge.RectTransform
+  name: RectTransform
+  href: api/MinimalUtility.SimpleSliceGauge.html#MinimalUtility_SimpleSliceGauge_RectTransform
+  commentId: P:MinimalUtility.SimpleSliceGauge.RectTransform
+  fullName: MinimalUtility.SimpleSliceGauge.RectTransform
+  nameWithType: SimpleSliceGauge.RectTransform
+- uid: MinimalUtility.SimpleSliceGauge.RectTransform*
+  name: RectTransform
+  href: api/MinimalUtility.SimpleSliceGauge.html#MinimalUtility_SimpleSliceGauge_RectTransform_
+  commentId: Overload:MinimalUtility.SimpleSliceGauge.RectTransform
+  isSpec: "True"
+  fullName: MinimalUtility.SimpleSliceGauge.RectTransform
+  nameWithType: SimpleSliceGauge.RectTransform
+- uid: MinimalUtility.SimpleSliceGauge.Value
+  name: Value
+  href: api/MinimalUtility.SimpleSliceGauge.html#MinimalUtility_SimpleSliceGauge_Value
+  commentId: P:MinimalUtility.SimpleSliceGauge.Value
+  fullName: MinimalUtility.SimpleSliceGauge.Value
+  nameWithType: SimpleSliceGauge.Value
+- uid: MinimalUtility.SimpleSliceGauge.Value*
+  name: Value
+  href: api/MinimalUtility.SimpleSliceGauge.html#MinimalUtility_SimpleSliceGauge_Value_
+  commentId: Overload:MinimalUtility.SimpleSliceGauge.Value
+  isSpec: "True"
+  fullName: MinimalUtility.SimpleSliceGauge.Value
+  nameWithType: SimpleSliceGauge.Value
 - uid: MinimalUtility.SourceGenerator
   name: MinimalUtility.SourceGenerator
   href: api/MinimalUtility.SourceGenerator.html

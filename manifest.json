@@ -65,6 +65,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/MinimalUtility.ComponentExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MinimalUtility.ComponentExtensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/MinimalUtility.DisposableExtensions.yml",
       "output": {
         ".html": {
@@ -129,6 +139,16 @@
       "output": {
         ".html": {
           "relative_path": "api/MinimalUtility.SafeAreaAdjuster.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MinimalUtility.SimpleSliceGauge.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MinimalUtility.SimpleSliceGauge.html"
         }
       },
       "version": ""
