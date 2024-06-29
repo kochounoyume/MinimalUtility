@@ -80,6 +80,7 @@ namespace MinimalUtility
             childRect.SetFullStretch();
             childRect.SetSafeSize(sizeDelta);
             childRect.pivot = Vector2.zero;
+            tracker.Clear();
             tracker.Add(childRect, childRect, DrivenTransformProperties.All);
         }
 
