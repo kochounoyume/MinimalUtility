@@ -73,13 +73,22 @@ namespace MinimalUtility
         /// <see cref="RectTransform"/>を全面的に伸ばす(stretch * stretchにする).
         /// </summary>
         /// <param name="target">対象の<see cref="RectTransform"/>.</param>
+        /// <param name="left">左端のオフセット.</param>
+        /// <param name="right">右端のオフセット.</param>
+        /// <param name="top">上端のオフセット.</param>
+        /// <param name="bottom">下端のオフセット.</param>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static void SetFullStretch(this RectTransform target)
+        public static void SetFullStretch(
+            this RectTransform target,
+            in float left = default,
+            in float right = default,
+            in float top = default,
+            in float bottom = default)
         {
             target.anchorMin = Vector2.zero;
             target.anchorMax = Vector2.one;
-            target.offsetMin = Vector2.zero;
-            target.offsetMax = Vector2.zero;
+            target.offsetMin = new Vector2(left, bottom);
+            target.offsetMax = new Vector2(-right, -top);
         }
     }
 }
