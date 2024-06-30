@@ -72,7 +72,12 @@ namespace MinimalUtility
             fillImage.type = Image.Type.Sliced;
             rectTransform = fillImage.rectTransform;
             rectTransform.pivot = Vector2.zero;
-            sizeDelta = ((RectTransform)rectTransform.parent).GetSizeDelta();
+            RectTransform parent = (RectTransform)rectTransform.parent;
+            if (parent.TryGetComponent(out Canvas _))
+            {
+                Debug.LogError("任意の親オブジェクトを設定するべきです.");
+            }
+            sizeDelta = parent.GetSizeDelta();
             value = 1.0f;
             UnityEditor.EditorApplication.update += SetValue;
         }
