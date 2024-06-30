@@ -867,12 +867,15 @@ references:
   isSpec: "True"
   fullName: MinimalUtility.RectTransformExtensions.GetSizeDelta
   nameWithType: RectTransformExtensions.GetSizeDelta
-- uid: MinimalUtility.RectTransformExtensions.SetFullStretch(RectTransform)
-  name: SetFullStretch(RectTransform)
-  href: api/MinimalUtility.RectTransformExtensions.html#MinimalUtility_RectTransformExtensions_SetFullStretch_RectTransform_
-  commentId: M:MinimalUtility.RectTransformExtensions.SetFullStretch(RectTransform)
-  fullName: MinimalUtility.RectTransformExtensions.SetFullStretch(RectTransform)
-  nameWithType: RectTransformExtensions.SetFullStretch(RectTransform)
+- uid: MinimalUtility.RectTransformExtensions.SetFullStretch(RectTransform,System.Single@,System.Single@,System.Single@,System.Single@)
+  name: SetFullStretch(RectTransform, in float, in float, in float, in float)
+  href: api/MinimalUtility.RectTransformExtensions.html#MinimalUtility_RectTransformExtensions_SetFullStretch_RectTransform_System_Single__System_Single__System_Single__System_Single__
+  commentId: M:MinimalUtility.RectTransformExtensions.SetFullStretch(RectTransform,System.Single@,System.Single@,System.Single@,System.Single@)
+  name.vb: SetFullStretch(RectTransform, Single, Single, Single, Single)
+  fullName: MinimalUtility.RectTransformExtensions.SetFullStretch(RectTransform, in float, in float, in float, in float)
+  fullName.vb: MinimalUtility.RectTransformExtensions.SetFullStretch(RectTransform, Single, Single, Single, Single)
+  nameWithType: RectTransformExtensions.SetFullStretch(RectTransform, in float, in float, in float, in float)
+  nameWithType.vb: RectTransformExtensions.SetFullStretch(RectTransform, Single, Single, Single, Single)
 - uid: MinimalUtility.RectTransformExtensions.SetFullStretch*
   name: SetFullStretch
   href: api/MinimalUtility.RectTransformExtensions.html#MinimalUtility_RectTransformExtensions_SetFullStretch_
@@ -946,32 +949,19 @@ references:
   commentId: T:MinimalUtility.SimpleSliceGauge
   fullName: MinimalUtility.SimpleSliceGauge
   nameWithType: SimpleSliceGauge
-- uid: MinimalUtility.SimpleSliceGauge.ChildFill
-  name: ChildFill
-  href: api/MinimalUtility.SimpleSliceGauge.html#MinimalUtility_SimpleSliceGauge_ChildFill
-  commentId: P:MinimalUtility.SimpleSliceGauge.ChildFill
-  fullName: MinimalUtility.SimpleSliceGauge.ChildFill
-  nameWithType: SimpleSliceGauge.ChildFill
-- uid: MinimalUtility.SimpleSliceGauge.ChildFill*
-  name: ChildFill
-  href: api/MinimalUtility.SimpleSliceGauge.html#MinimalUtility_SimpleSliceGauge_ChildFill_
-  commentId: Overload:MinimalUtility.SimpleSliceGauge.ChildFill
+- uid: MinimalUtility.SimpleSliceGauge.FillImage
+  name: FillImage
+  href: api/MinimalUtility.SimpleSliceGauge.html#MinimalUtility_SimpleSliceGauge_FillImage
+  commentId: P:MinimalUtility.SimpleSliceGauge.FillImage
+  fullName: MinimalUtility.SimpleSliceGauge.FillImage
+  nameWithType: SimpleSliceGauge.FillImage
+- uid: MinimalUtility.SimpleSliceGauge.FillImage*
+  name: FillImage
+  href: api/MinimalUtility.SimpleSliceGauge.html#MinimalUtility_SimpleSliceGauge_FillImage_
+  commentId: Overload:MinimalUtility.SimpleSliceGauge.FillImage
   isSpec: "True"
-  fullName: MinimalUtility.SimpleSliceGauge.ChildFill
-  nameWithType: SimpleSliceGauge.ChildFill
-- uid: MinimalUtility.SimpleSliceGauge.OnDestroy
-  name: OnDestroy()
-  href: api/MinimalUtility.SimpleSliceGauge.html#MinimalUtility_SimpleSliceGauge_OnDestroy
-  commentId: M:MinimalUtility.SimpleSliceGauge.OnDestroy
-  fullName: MinimalUtility.SimpleSliceGauge.OnDestroy()
-  nameWithType: SimpleSliceGauge.OnDestroy()
-- uid: MinimalUtility.SimpleSliceGauge.OnDestroy*
-  name: OnDestroy
-  href: api/MinimalUtility.SimpleSliceGauge.html#MinimalUtility_SimpleSliceGauge_OnDestroy_
-  commentId: Overload:MinimalUtility.SimpleSliceGauge.OnDestroy
-  isSpec: "True"
-  fullName: MinimalUtility.SimpleSliceGauge.OnDestroy
-  nameWithType: SimpleSliceGauge.OnDestroy
+  fullName: MinimalUtility.SimpleSliceGauge.FillImage
+  nameWithType: SimpleSliceGauge.FillImage
 - uid: MinimalUtility.SimpleSliceGauge.RectTransform
   name: RectTransform
   href: api/MinimalUtility.SimpleSliceGauge.html#MinimalUtility_SimpleSliceGauge_RectTransform
