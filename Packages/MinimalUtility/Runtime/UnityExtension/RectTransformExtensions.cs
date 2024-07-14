@@ -17,10 +17,8 @@ namespace MinimalUtility
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static void SetSafeSize(this RectTransform target, in float width, in float height)
         {
-            const RectTransform.Axis horizontal = RectTransform.Axis.Horizontal;
-            target.SetSizeWithCurrentAnchors(horizontal, width);
-            const RectTransform.Axis vertical = RectTransform.Axis.Vertical;
-            target.SetSizeWithCurrentAnchors(vertical, height);
+            target.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, width);
+            target.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, height);
         }
 
         /// <summary>
@@ -31,10 +29,8 @@ namespace MinimalUtility
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static void SetSafeSize(this RectTransform target, Vector2 size)
         {
-            const RectTransform.Axis horizontal = RectTransform.Axis.Horizontal;
-            target.SetSizeWithCurrentAnchors(horizontal, size.x);
-            const RectTransform.Axis vertical = RectTransform.Axis.Vertical;
-            target.SetSizeWithCurrentAnchors(vertical, size.y);
+            target.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, size.x);
+            target.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, size.y);
         }
 
         /// <summary>
@@ -45,8 +41,7 @@ namespace MinimalUtility
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static void SetSafeSizeWidth(this RectTransform target, in float width)
         {
-            const RectTransform.Axis horizontal = RectTransform.Axis.Horizontal;
-            target.SetSizeWithCurrentAnchors(horizontal, width);
+            target.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, width);
         }
 
         /// <summary>
@@ -57,8 +52,7 @@ namespace MinimalUtility
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static void SetSafeSizeHeight(this RectTransform target, in float height)
         {
-            const RectTransform.Axis vertical = RectTransform.Axis.Vertical;
-            target.SetSizeWithCurrentAnchors(vertical, height);
+            target.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, height);
         }
 
         /// <summary>

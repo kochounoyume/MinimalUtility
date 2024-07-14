@@ -56,10 +56,7 @@ namespace MinimalUtility
         protected override void OnEnable()
         {
             base.OnEnable();
-            if (graphic == null)
-            {
-                graphic = GetComponent<MaskableGraphic>();
-            }
+            ObjectUtility.GetNullCheck(ref graphic, this, static s => s.GetComponent<MaskableGraphic>());
             AddClippable(graphic);
         }
 

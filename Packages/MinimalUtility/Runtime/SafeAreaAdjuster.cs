@@ -10,6 +10,7 @@ namespace MinimalUtility
     /// <summary>
     /// セーフエリア調整スクリプト.
     /// </summary>
+    [RequireComponent(typeof(RectTransform))]
     public class SafeAreaAdjuster : MonoBehaviour
     {
         private void Start() => Padding();
@@ -17,12 +18,14 @@ namespace MinimalUtility
         [Button("Adjust SafeArea")]
         private void Padding()
         {
-            RectTransform rectTransform = GetComponent<RectTransform>();
             Rect safeArea = Screen.safeArea;
             Vector2 screenSize = new Vector2(Screen.width, Screen.height);
 
-            rectTransform.anchorMin = safeArea.min / screenSize;
-            rectTransform.anchorMax = safeArea.max / screenSize;
+            if (ObjectUtility.TryGetNullCheck(this, static s => s.transform as RectTransform, out var r))
+            {
+                r.anchorMin = safeArea.min / screenSize;
+                r.anchorMax = safeArea.max / screenSize;
+            }
         }
     }
 }
