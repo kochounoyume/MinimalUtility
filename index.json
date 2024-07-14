@@ -64,6 +64,11 @@
     "title": "Class MinimalSelectableGraphic | |",
     "keywords": "Class MinimalSelectableGraphic Namespace MinimalUtility UnityEngine.UI.Selectableを使用するうえで最低限の機能を持つグラフィック. 子オブジェクトのGraphicをキャッシュして選択時に色変化を伝播させる public sealed class MinimalSelectableGraphic : EmptyGraphic Inheritance object EmptyGraphic MinimalSelectableGraphic Inherited Members EmptyGraphic.SetMaterialDirty() EmptyGraphic.SetVerticesDirty() Methods CrossFadeColor(Color, float, bool, bool) public override void CrossFadeColor(Color targetColor, float duration, bool ignoreTimeScale, bool useAlpha) Parameters targetColor Color duration float ignoreTimeScale bool useAlpha bool Start() protected override void Start()"
   },
+  "api/MinimalUtility.ObjectUtility.html": {
+    "href": "api/MinimalUtility.ObjectUtility.html",
+    "title": "Class ObjectUtility | |",
+    "keywords": "Class ObjectUtility Namespace MinimalUtility UnityEngine.Objectに関連するユーティリティ. public static class ObjectUtility Inheritance object ObjectUtility Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Methods GetNullCheck<T>(ref T, Func<T>) UnityEngine.Objectのnullチェックを行い、nullの場合は指定のファクトリメソッドで生成する. public static ref T GetNullCheck<T>(ref T target, Func<T> factory) where T : UnityEngine.Object Parameters target T 対象のUnityEngine.Object. factory Func<T> nullの場合に生成するファクトリメソッド. Returns T 生成したUnityEngine.Objectの参照. Type Parameters T 生成するUnityEngine.Objectの型. GetNullCheck<T, TState>(ref T, TState, Func<TState, T>) UnityEngine.Objectのnullチェックを行い、nullの場合は指定のファクトリメソッドで生成する. public static ref T GetNullCheck<T, TState>(ref T target, TState state, Func<TState, T> factory) where T : UnityEngine.Object Parameters target T 対象のUnityEngine.Object. state TState ファクトリメソッドに渡す引数. factory Func<TState, T> nullの場合に生成するファクトリメソッド. Returns T 生成したUnityEngine.Objectの参照. Type Parameters T 生成するUnityEngine.Objectの型. TState ファクトリメソッドに渡す引数の型. TryGetNullCheck<T>(Func<T>, out T) 特定のUnityEngine.Objectについて、指定の処理の実行で生成できたかnullチェックを行う. public static bool TryGetNullCheck<T>(Func<T> factory, out T target) where T : UnityEngine.Object Parameters factory Func<T> 生成処理. target T 生成したUnityEngine.Objectの参照. Returns bool 生成できた場合はtrue. Type Parameters T 生成するUnityEngine.Objectの型. TryGetNullCheck<T, TState>(TState, Func<TState, T>, out T) 特定のUnityEngine.Objectについて、指定の処理の実行で生成できたかnullチェックを行う. public static bool TryGetNullCheck<T, TState>(TState state, Func<TState, T> factory, out T target) where T : UnityEngine.Object Parameters state TState ファクトリメソッドに渡す引数. factory Func<TState, T> 生成処理. target T 生成したUnityEngine.Objectの参照. Returns bool 生成できた場合はtrue. Type Parameters T 生成するUnityEngine.Objectの型. TState ファクトリメソッドに渡す引数の型."
+  },
   "api/MinimalUtility.RectTransformExtensions.html": {
     "href": "api/MinimalUtility.RectTransformExtensions.html",
     "title": "Class RectTransformExtensions | |",
@@ -79,10 +84,30 @@
     "title": "Class SimpleGauge | |",
     "keywords": "Class SimpleGauge Namespace MinimalUtility RectMask2Dを継承利用したシンプルで綺麗なゲージ表示. public class SimpleGauge : RectMask2D Inheritance object SimpleGauge Properties Value ゲージの値(0.0 ～ 1.0). public float Value { get; set; } Property Value float Methods OnEnable() protected override void OnEnable()"
   },
+  "api/MinimalUtility.SloppyDisposable-1.html": {
+    "href": "api/MinimalUtility.SloppyDisposable-1.html",
+    "title": "Struct SloppyDisposable<T0> | |",
+    "keywords": "Struct SloppyDisposable<T0> Namespace MinimalUtility usingステートメントスコープを抜けた際にコールバックを呼び出すための構造体. public readonly ref struct SloppyDisposable<T0> Type Parameters T0 破棄時に呼び出す処理の引数の型. Inherited Members ValueType.Equals(object) ValueType.GetHashCode() ValueType.ToString() object.Equals(object, object) object.GetType() object.ReferenceEquals(object, object) Constructors SloppyDisposable(T0, Action<T0>) Initializes a new instance of the SloppyDisposable<T0> struct. public SloppyDisposable(T0 state0, Action<T0> onDispose) Parameters state0 T0 破棄時に呼び出す処理の引数. onDispose Action<T0> 破棄時に呼び出す処理. Methods Dispose() 破棄処理. public void Dispose()"
+  },
+  "api/MinimalUtility.SloppyDisposable-2.html": {
+    "href": "api/MinimalUtility.SloppyDisposable-2.html",
+    "title": "Struct SloppyDisposable<T0, T1> | |",
+    "keywords": "Struct SloppyDisposable<T0, T1> Namespace MinimalUtility usingステートメントスコープを抜けた際にコールバックを呼び出すための構造体. public readonly ref struct SloppyDisposable<T0, T1> Type Parameters T0 破棄時に呼び出す処理の第一引数の型. T1 破棄時に呼び出す処理の第二引数の型. Inherited Members ValueType.Equals(object) ValueType.GetHashCode() ValueType.ToString() object.Equals(object, object) object.GetType() object.ReferenceEquals(object, object) Constructors SloppyDisposable(T0, T1, Action<T0, T1>) Initializes a new instance of the SloppyDisposable<T0, T1> struct. public SloppyDisposable(T0 state0, T1 state1, Action<T0, T1> onDispose) Parameters state0 T0 破棄時に呼び出す処理の第一引数. state1 T1 破棄時に呼び出す処理の第二引数. onDispose Action<T0, T1> 破棄時に呼び出す処理. Methods Dispose() 破棄処理. public void Dispose()"
+  },
+  "api/MinimalUtility.SloppyDisposable-3.html": {
+    "href": "api/MinimalUtility.SloppyDisposable-3.html",
+    "title": "Struct SloppyDisposable<T0, T1, T2> | |",
+    "keywords": "Struct SloppyDisposable<T0, T1, T2> Namespace MinimalUtility usingステートメントスコープを抜けた際にコールバックを呼び出すための構造体. public readonly ref struct SloppyDisposable<T0, T1, T2> Type Parameters T0 破棄時に呼び出す処理の第一引数の型. T1 破棄時に呼び出す処理の第二引数の型. T2 破棄時に呼び出す処理の第三引数の型. Inherited Members ValueType.Equals(object) ValueType.GetHashCode() ValueType.ToString() object.Equals(object, object) object.GetType() object.ReferenceEquals(object, object) Constructors SloppyDisposable(T0, T1, T2, Action<T0, T1, T2>) Initializes a new instance of the SloppyDisposable<T0, T1, T2> struct. public SloppyDisposable(T0 state0, T1 state1, T2 state2, Action<T0, T1, T2> onDispose) Parameters state0 T0 破棄時に呼び出す処理の第一引数. state1 T1 破棄時に呼び出す処理の第二引数. state2 T2 破棄時に呼び出す処理の第三引数. onDispose Action<T0, T1, T2> 破棄時に呼び出す処理. Methods Dispose() 破棄処理. public void Dispose()"
+  },
+  "api/MinimalUtility.SloppyDisposable.html": {
+    "href": "api/MinimalUtility.SloppyDisposable.html",
+    "title": "Struct SloppyDisposable | |",
+    "keywords": "Struct SloppyDisposable Namespace MinimalUtility usingステートメントスコープを抜けた際にコールバックを呼び出すための構造体. public readonly ref struct SloppyDisposable Inherited Members ValueType.Equals(object) ValueType.GetHashCode() ValueType.ToString() object.Equals(object, object) object.GetType() object.ReferenceEquals(object, object) Constructors SloppyDisposable(Action) Initializes a new instance of the SloppyDisposable struct. public SloppyDisposable(Action onDispose) Parameters onDispose Action 破棄時に呼び出す処理. Methods Dispose() 破棄処理. public void Dispose()"
+  },
   "api/MinimalUtility.html": {
     "href": "api/MinimalUtility.html",
     "title": "Namespace MinimalUtility | |",
-    "keywords": "Namespace MinimalUtility Classes ButtonAttribute 指定したメソッドをUnityのInspector上に表示したボタンでテスト実行できるようになる属性. CommonObjectPool<T> 汎用オブジェクトプール実装. ComponentExtensions Componentの拡張メソッド. DisposableExtensions IDisposableの拡張メソッド. EmptyGraphic 空処理のグラフィック. 想定用途：マスク時のベース, 画面全体を透明なuGUIで覆いたいとき、Buttonの判定領域を透明にしたいとき Math 最小限の数学関数. MinimalSelectableGraphic UnityEngine.UI.Selectableを使用するうえで最低限の機能を持つグラフィック. 子オブジェクトのGraphicをキャッシュして選択時に色変化を伝播させる RectTransformExtensions RectTransformの拡張メソッド. SafeAreaAdjuster セーフエリア調整スクリプト. SimpleGauge RectMask2Dを継承利用したシンプルで綺麗なゲージ表示. Structs CommonObjectPool<T>.PoolSizeSetting プールの初期容量と最大サイズを指定する構造体. Interfaces IObjectPool<T> ObjectPoolを提供するインターフェイス."
+    "keywords": "Namespace MinimalUtility Classes ButtonAttribute 指定したメソッドをUnityのInspector上に表示したボタンでテスト実行できるようになる属性. CommonObjectPool<T> 汎用オブジェクトプール実装. ComponentExtensions Componentの拡張メソッド. DisposableExtensions IDisposableの拡張メソッド. EmptyGraphic 空処理のグラフィック. 想定用途：マスク時のベース, 画面全体を透明なuGUIで覆いたいとき、Buttonの判定領域を透明にしたいとき Math 最小限の数学関数. MinimalSelectableGraphic UnityEngine.UI.Selectableを使用するうえで最低限の機能を持つグラフィック. 子オブジェクトのGraphicをキャッシュして選択時に色変化を伝播させる ObjectUtility UnityEngine.Objectに関連するユーティリティ. RectTransformExtensions RectTransformの拡張メソッド. SafeAreaAdjuster セーフエリア調整スクリプト. SimpleGauge RectMask2Dを継承利用したシンプルで綺麗なゲージ表示. Structs CommonObjectPool<T>.PoolSizeSetting プールの初期容量と最大サイズを指定する構造体. SloppyDisposable usingステートメントスコープを抜けた際にコールバックを呼び出すための構造体. SloppyDisposable<T0> usingステートメントスコープを抜けた際にコールバックを呼び出すための構造体. SloppyDisposable<T0, T1> usingステートメントスコープを抜けた際にコールバックを呼び出すための構造体. SloppyDisposable<T0, T1, T2> usingステートメントスコープを抜けた際にコールバックを呼び出すための構造体. Interfaces IObjectPool<T> ObjectPoolを提供するインターフェイス."
   },
   "api/index.html": {
     "href": "api/index.html",

@@ -145,6 +145,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/MinimalUtility.ObjectUtility.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MinimalUtility.ObjectUtility.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/MinimalUtility.RectTransformExtensions.yml",
       "output": {
         ".html": {
@@ -169,6 +179,46 @@
       "output": {
         ".html": {
           "relative_path": "api/MinimalUtility.SimpleGauge.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MinimalUtility.SloppyDisposable-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MinimalUtility.SloppyDisposable-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MinimalUtility.SloppyDisposable-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MinimalUtility.SloppyDisposable-2.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MinimalUtility.SloppyDisposable-3.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MinimalUtility.SloppyDisposable-3.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MinimalUtility.SloppyDisposable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MinimalUtility.SloppyDisposable.html"
         }
       },
       "version": ""
