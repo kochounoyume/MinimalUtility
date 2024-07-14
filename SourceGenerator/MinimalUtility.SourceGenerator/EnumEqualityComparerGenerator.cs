@@ -3,7 +3,7 @@
 namespace MinimalUtility.SourceGenerator;
 
 [Generator(LanguageNames.CSharp)]
-public sealed class EnumEqualityComparerGenerator : IIncrementalGenerator
+internal sealed class EnumEqualityComparerGenerator : IIncrementalGenerator
 {
     void IIncrementalGenerator.Initialize(IncrementalGeneratorInitializationContext context)
     {
@@ -37,6 +37,8 @@ public sealed class EnumEqualityComparerGenerator : IIncrementalGenerator
 
                 string targetTypeName = typeSymbol.Name;
 
+                string targetNestedTypeName = typeSymbol.GetNestedName();
+
                 string baseTypeString = typeSymbol.GetEnumBaseTypeStr();
 
                 // 出力ファイル名に利用するためにエスケープ
@@ -47,11 +49,11 @@ public sealed class EnumEqualityComparerGenerator : IIncrementalGenerator
                         ? $$"""
                           using System.Collections.Generic;
                                                                                              
-                          public sealed record {{targetTypeName}}EqualityComparer : IEqualityComparer<{{targetTypeName}}>
+                          public sealed record {{targetTypeName}}EqualityComparer : IEqualityComparer<{{targetNestedTypeName}}>
                           {
-                              public bool Equals({{targetTypeName}} x, {{targetTypeName}} y) => ({{baseTypeString}})x == ({{baseTypeString}})y;
+                              public bool Equals({{targetNestedTypeName}} x, {{targetNestedTypeName}} y) => ({{baseTypeString}})x == ({{baseTypeString}})y;
                           
-                              public int GetHashCode({{targetTypeName}} obj) => (({{baseTypeString}})obj).GetHashCode();
+                              public int GetHashCode({{targetNestedTypeName}} obj) => (({{baseTypeString}})obj).GetHashCode();
                           }
                         """
                         : $$"""
@@ -59,11 +61,11 @@ public sealed class EnumEqualityComparerGenerator : IIncrementalGenerator
                                                                                              
                           namespace {{typeSymbol.ContainingNamespace}}
                           {
-                              public sealed record {{targetTypeName}}EqualityComparer : IEqualityComparer<{{targetTypeName}}>
+                              public sealed record {{targetTypeName}}EqualityComparer : IEqualityComparer<{{targetNestedTypeName}}>
                               {
-                                  public bool Equals({{targetTypeName}} x, {{targetTypeName}} y) => ({{baseTypeString}})x == ({{baseTypeString}})y;
+                                  public bool Equals({{targetNestedTypeName}} x, {{targetNestedTypeName}} y) => ({{baseTypeString}})x == ({{baseTypeString}})y;
                               
-                                  public int GetHashCode({{targetTypeName}} obj) => (({{baseTypeString}})obj).GetHashCode();
+                                  public int GetHashCode({{targetNestedTypeName}} obj) => (({{baseTypeString}})obj).GetHashCode();
                               }
                           }
                         """);

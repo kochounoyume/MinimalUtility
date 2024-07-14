@@ -4,7 +4,7 @@ using Microsoft.CodeAnalysis;
 namespace MinimalUtility.SourceGenerator;
 
 [Generator(LanguageNames.CSharp)]
-public sealed class EnumStringConverterGenerator : IIncrementalGenerator
+internal sealed class EnumStringConverterGenerator : IIncrementalGenerator
 {
     void IIncrementalGenerator.Initialize(IncrementalGeneratorInitializationContext context)
     {
@@ -37,6 +37,8 @@ public sealed class EnumStringConverterGenerator : IIncrementalGenerator
                 var typeSymbol = (INamedTypeSymbol)metaDataArray.TargetSymbol;
 
                 string targetTypeName = typeSymbol.Name;
+
+                string targetNestedTypeName = typeSymbol.GetNestedName();
 
                 string baseType = typeSymbol.GetEnumBaseTypeStr();
 
@@ -102,7 +104,7 @@ public sealed class EnumStringConverterGenerator : IIncrementalGenerator
                 builder.AppendLine(isGlobalNamespace ? $$"""
                         public ReadOnlySpan<string> MemberValues => values;
                     
-                        public ref readonly string Convert(in {{targetTypeName}} value)
+                        public ref readonly string Convert(in {{targetNestedTypeName}} value)
                         {
                             switch (({{baseType}})value)
                             {
@@ -110,7 +112,7 @@ public sealed class EnumStringConverterGenerator : IIncrementalGenerator
                     $$"""
                             public ReadOnlySpan<string> MemberValues => values;
                     
-                            public ref readonly string Convert(in {{targetTypeName}} value)
+                            public ref readonly string Convert(in {{targetNestedTypeName}} value)
                             {
                                 switch (({{baseType}})value)
                                 {
@@ -136,7 +138,7 @@ public sealed class EnumStringConverterGenerator : IIncrementalGenerator
                             }
                         }
                         
-                        public {{targetTypeName}} ReverseConvert(in string str)
+                        public {{targetNestedTypeName}} ReverseConvert(in string str)
                         {
                             switch (Array.IndexOf(values, str))
                             {
@@ -147,7 +149,7 @@ public sealed class EnumStringConverterGenerator : IIncrementalGenerator
                                 }
                             }
                             
-                            public {{targetTypeName}} ReverseConvert(in string str)
+                            public {{targetNestedTypeName}} ReverseConvert(in string str)
                             {
                                 switch (Array.IndexOf(values, str))
                                 {
@@ -157,11 +159,11 @@ public sealed class EnumStringConverterGenerator : IIncrementalGenerator
                 {
                     builder.AppendLine(isGlobalNamespace ? $"""
                                     case {i}:
-                                        return {targetTypeName}.{fieldNames[i]};
+                                        return {targetNestedTypeName}.{fieldNames[i]};
                         """ :
                         $"""
                                         case {i}:
-                                            return {targetTypeName}.{fieldNames[i]};
+                                            return {targetNestedTypeName}.{fieldNames[i]};
                         """);
                 }
 

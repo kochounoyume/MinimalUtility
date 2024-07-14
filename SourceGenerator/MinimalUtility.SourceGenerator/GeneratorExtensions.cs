@@ -3,7 +3,7 @@ using Microsoft.CodeAnalysis;
 
 namespace MinimalUtility.SourceGenerator;
 
-public static class GeneratorExtensions
+internal static class GeneratorExtensions
 {
     /// <summary>
     /// 列挙型の基底の型を文字列で取得します
@@ -12,7 +12,7 @@ public static class GeneratorExtensions
     /// <returns>列挙型の基底の型</returns>
     /// <exception cref="InvalidOperationException">指定された型が無効な場合</exception>
     [MethodImpl(MethodImplOptions.AggressiveInlining)]
-    public static string GetEnumBaseTypeStr(this INamedTypeSymbol typeSymbol)
+    internal static string GetEnumBaseTypeStr(this INamedTypeSymbol typeSymbol)
     {
         // 対象の列挙型の基底の型を取得
         var baseType = typeSymbol.EnumUnderlyingType;
@@ -38,11 +38,25 @@ public static class GeneratorExtensions
     /// </summary>
     /// <param name="typeSymbol">型情報</param>
     /// <returns>出力ファイルに利用できる型名</returns>
-    public static string GetFullTypeName(this INamedTypeSymbol typeSymbol)
+    [MethodImpl(MethodImplOptions.AggressiveInlining)]
+    internal static string GetFullTypeName(this INamedTypeSymbol typeSymbol)
     {
         return typeSymbol.ToDisplayString(SymbolDisplayFormat.FullyQualifiedFormat)
             .Replace("global::", "")
             .Replace("<", "_")
             .Replace(">", "_");
+    }
+
+    /// <summary>
+    /// 入れ子クラスであれば親クラス名を含めた型名を取得します
+    /// </summary>
+    /// <param name="typeSymbol">型情報</param>
+    /// <returns>入れ子クラスであれば親クラス名を含めた型名</returns>
+    [MethodImpl(MethodImplOptions.AggressiveInlining)]
+    internal static string GetNestedName(this INamedTypeSymbol typeSymbol)
+    {
+        return typeSymbol.ContainingType is null
+            ? typeSymbol.Name
+            : $"{typeSymbol.ContainingType.GetNestedName()}.{typeSymbol.Name}";
     }
 }

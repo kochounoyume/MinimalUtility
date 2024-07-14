@@ -4,7 +4,7 @@ using Microsoft.CodeAnalysis.CSharp.Syntax;
 namespace MinimalUtility.SourceGenerator;
 
 [Generator(LanguageNames.CSharp)]
-public sealed class EnableInitAccessorGenerator : IIncrementalGenerator
+internal sealed class EnableInitAccessorGenerator : IIncrementalGenerator
 {
     void IIncrementalGenerator.Initialize(IncrementalGeneratorInitializationContext context)
     {
