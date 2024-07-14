@@ -2,11 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class SimpleSliceGauge |  |  </title>
+      <title>Class SimpleGaugeEditor |  |  </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class SimpleSliceGauge |  |  ">
+      <meta name="title" content="Class SimpleGaugeEditor |  |  ">
       
-      <meta name="description" content="Image.typeをImage.Type.Slicedに設定したImageを適当にゲージ化させる実装. Image.Type.Filledよりは綺麗な表示のゲージ.">
+      <meta name="description" content="のカスタムエディタ.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       <meta name="docfx:disablenewtab" content="true">
       
-      <meta name="docfx:docurl" content="https://github.com/kochounoyume/MinimalUtility/new/main/apiSpec/new?filename=MinimalUtility_SimpleSliceGauge.md&amp;value=---%0Auid%3A%20MinimalUtility.SimpleSliceGauge%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/kochounoyume/MinimalUtility/new/main/apiSpec/new?filename=MinimalUtility_Editor_SimpleGaugeEditor.md&amp;value=---%0Auid%3A%20MinimalUtility.Editor.SimpleGaugeEditor%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -84,26 +84,25 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="MinimalUtility.SimpleSliceGauge">
+        <article data-uid="MinimalUtility.Editor.SimpleGaugeEditor">
 
 
 
-  <h1 id="MinimalUtility_SimpleSliceGauge" data-uid="MinimalUtility.SimpleSliceGauge" class="text-break">
-Class SimpleSliceGauge  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/SimpleSliceGauge.cs/#L11"><i class="bi bi-code-slash"></i></a>
+  <h1 id="MinimalUtility_Editor_SimpleGaugeEditor" data-uid="MinimalUtility.Editor.SimpleGaugeEditor" class="text-break">
+Class SimpleGaugeEditor  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Editor/SimpleGaugeEditor.cs/#L8"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="MinimalUtility.html">MinimalUtility</a></dd></dl>
+    <dl><dt>Namespace</dt><dd><a class="xref" href="MinimalUtility.html">MinimalUtility</a>.<a class="xref" href="MinimalUtility.Editor.html">Editor</a></dd></dl>
   
   </div>
 
-  <div class="markdown summary"><p>Image.typeをImage.Type.Slicedに設定したImageを適当にゲージ化させる実装.
-Image.Type.Filledよりは綺麗な表示のゲージ.</p>
+  <div class="markdown summary"><p><a class="xref" href="MinimalUtility.SimpleGauge.html">SimpleGauge</a>のカスタムエディタ.</p>
 </div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class SimpleSliceGauge : MonoBehaviour</code></pre>
+    <pre><code class="lang-csharp hljs">public class SimpleGaugeEditor : UnityEditor.Editor</code></pre>
   </div>
 
 
@@ -113,7 +112,7 @@ Image.Type.Filledよりは綺麗な表示のゲージ.</p>
     <dt>Inheritance</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-      <div><span class="xref">SimpleSliceGauge</span></div>
+      <div><span class="xref">SimpleGaugeEditor</span></div>
     </dd>
   </dl>
 
@@ -125,98 +124,28 @@ Image.Type.Filledよりは綺麗な表示のゲージ.</p>
 
 
 
-  <h2 class="section" id="properties">Properties
+  <h2 class="section" id="methods">Methods
 </h2>
 
 
-  <a id="MinimalUtility_SimpleSliceGauge_FillImage_" data-uid="MinimalUtility.SimpleSliceGauge.FillImage*"></a>
+  <a id="MinimalUtility_Editor_SimpleGaugeEditor_OnInspectorGUI_" data-uid="MinimalUtility.Editor.SimpleGaugeEditor.OnInspectorGUI*"></a>
 
-  <h3 id="MinimalUtility_SimpleSliceGauge_FillImage" data-uid="MinimalUtility.SimpleSliceGauge.FillImage">
-  FillImage
-  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/SimpleSliceGauge.cs/#L48"><i class="bi bi-code-slash"></i></a>
+  <h3 id="MinimalUtility_Editor_SimpleGaugeEditor_OnInspectorGUI" data-uid="MinimalUtility.Editor.SimpleGaugeEditor.OnInspectorGUI">
+  OnInspectorGUI()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Editor/SimpleGaugeEditor.cs/#L15"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Imageコンポーネント（読み取り専用）.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ref Image FillImage { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public override void OnInspectorGUI()</code></pre>
   </div>
 
 
 
 
 
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><span class="xref">Image</span></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <a id="MinimalUtility_SimpleSliceGauge_RectTransform_" data-uid="MinimalUtility.SimpleSliceGauge.RectTransform*"></a>
-
-  <h3 id="MinimalUtility_SimpleSliceGauge_RectTransform" data-uid="MinimalUtility.SimpleSliceGauge.RectTransform">
-  RectTransform
-  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/SimpleSliceGauge.cs/#L53"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p><a class="xref" href="MinimalUtility.SimpleSliceGauge.html#MinimalUtility_SimpleSliceGauge_RectTransform">RectTransform</a>コンポーネント（読み取り専用）.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ref RectTransform RectTransform { get; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><span class="xref">RectTransform</span></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <a id="MinimalUtility_SimpleSliceGauge_Value_" data-uid="MinimalUtility.SimpleSliceGauge.Value*"></a>
-
-  <h3 id="MinimalUtility_SimpleSliceGauge_Value" data-uid="MinimalUtility.SimpleSliceGauge.Value">
-  Value
-  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/SimpleSliceGauge.cs/#L35"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>ゲージの値.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual float Value { get; set; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
-    <dd></dd>
-  </dl>
 
 
 

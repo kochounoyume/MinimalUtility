@@ -85,6 +85,26 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/MinimalUtility.Editor.SimpleGaugeEditor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MinimalUtility.Editor.SimpleGaugeEditor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MinimalUtility.Editor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MinimalUtility.Editor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/MinimalUtility.EmptyGraphic.yml",
       "output": {
         ".html": {
@@ -145,60 +165,10 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/MinimalUtility.SimpleSliceGauge.yml",
+      "source_relative_path": "api/MinimalUtility.SimpleGauge.yml",
       "output": {
         ".html": {
-          "relative_path": "api/MinimalUtility.SimpleSliceGauge.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MinimalUtility.SourceGenerator.EnableInitAccessorGenerator.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MinimalUtility.SourceGenerator.EnableInitAccessorGenerator.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MinimalUtility.SourceGenerator.EnumEqualityComparerGenerator.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MinimalUtility.SourceGenerator.EnumEqualityComparerGenerator.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MinimalUtility.SourceGenerator.EnumStringConverterGenerator.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MinimalUtility.SourceGenerator.EnumStringConverterGenerator.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MinimalUtility.SourceGenerator.GeneratorExtensions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MinimalUtility.SourceGenerator.GeneratorExtensions.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MinimalUtility.SourceGenerator.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MinimalUtility.SourceGenerator.html"
+          "relative_path": "api/MinimalUtility.SimpleGauge.html"
         }
       },
       "version": ""
