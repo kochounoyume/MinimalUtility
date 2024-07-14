@@ -81,7 +81,7 @@
         <Rule Id="SA1142" Action="Error" />
         <!-- Ordering Rules (SA1200-) -->
         <Rule Id="SA1200" Action="None" />
-        <Rule Id="SA1201" Action="Error" />
+        <Rule Id="SA1201" Action="None" />
         <Rule Id="SA1202" Action="Error" />
         <Rule Id="SA1203" Action="Error" />
         <Rule Id="SA1204" Action="Error" />
@@ -158,7 +158,7 @@
         <!-- Documentation Rules (SA1600-) -->
         <Rule Id="SA1600" Action="Error" />
         <Rule Id="SA1601" Action="Error" />
-        <Rule Id="SA1602" Action="Error" />
+        <Rule Id="SA1602" Action="None" />
         <Rule Id="SA1603" Action="Error" />
         <Rule Id="SA1604" Action="Error" />
         <Rule Id="SA1605" Action="Error" />
