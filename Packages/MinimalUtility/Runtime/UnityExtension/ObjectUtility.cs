@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Runtime.CompilerServices;
 using Object = UnityEngine.Object;
 
 namespace MinimalUtility
@@ -8,6 +9,18 @@ namespace MinimalUtility
     /// </summary>
     public static class ObjectUtility
     {
+        /// <summary>
+        /// <see cref="UnityEngine.Object"/>のnullチェックを行う.
+        /// </summary>
+        /// <param name="target">対象の<see cref="UnityEngine.Object"/>.</param>
+        /// <typeparam name="T">対象の<see cref="UnityEngine.Object"/>の型.</typeparam>
+        /// <returns>対象の<see cref="UnityEngine.Object"/>がnullの場合はnullを返し、そうでなければそのまま返す.</returns>
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        public static T Chk<T>(this T target) where T : Object
+        {
+            return target == null ? null : target;
+        }
+
         /// <summary>
         /// <see cref="UnityEngine.Object"/>のnullチェックを行い、nullの場合は指定のファクトリメソッドで生成する.
         /// </summary>
