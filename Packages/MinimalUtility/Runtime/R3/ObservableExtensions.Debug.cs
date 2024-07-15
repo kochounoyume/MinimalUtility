@@ -2,7 +2,7 @@
 using System;
 using R3;
 
-namespace MinimalUtility.R3
+namespace MinimalUtility
 {
     /// <content>
     /// Observableの拡張メソッド.

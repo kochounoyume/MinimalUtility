@@ -6,26 +6,12 @@ namespace MinimalUtility.SourceGenerator;
 [Generator(LanguageNames.CSharp)]
 internal sealed class EnumStringConverterGenerator : IIncrementalGenerator
 {
+    private const string AttributeName = "MinimalUtility.GenerateStringConverterAttribute";
+
     void IIncrementalGenerator.Initialize(IncrementalGeneratorInitializationContext context)
     {
-        // 属性クラスの出力
-        context.RegisterPostInitializationOutput(static context =>
-        {
-            context.AddSource("GenerateStringConverterAttribute.g.cs", """
-            using System;
-
-            namespace MinimalUtility.SourceGenerator
-            {
-                [AttributeUsage(AttributeTargets.Enum, Inherited = false, AllowMultiple = false)]
-                internal sealed class GenerateStringConverterAttribute : Attribute
-                {
-                }
-            }
-            """);
-        });
-
         var source = context.SyntaxProvider.ForAttributeWithMetadataName(
-            "MinimalUtility.SourceGenerator.GenerateStringConverterAttribute",
+            AttributeName,
             static (_, _) => true,
             static (context, _) => context
         );
@@ -35,16 +21,13 @@ internal sealed class EnumStringConverterGenerator : IIncrementalGenerator
             static (context, metaDataArray) =>
             {
                 var typeSymbol = (INamedTypeSymbol)metaDataArray.TargetSymbol;
-
                 string targetTypeName = typeSymbol.Name;
-
                 string targetNestedTypeName = typeSymbol.GetNestedName();
-
                 string baseType = typeSymbol.GetEnumBaseTypeStr();
-
                 string fullType = typeSymbol.GetFullTypeName();
-
                 bool isGlobalNamespace = typeSymbol.ContainingNamespace.IsGlobalNamespace;
+
+                bool autoGenerate = metaDataArray.Attributes[0].ConstructorArguments[0].Value?.ToString() == "True";
 
                 List<string> values = new ();
                 List<string> fieldNames = new ();
@@ -73,6 +56,7 @@ internal sealed class EnumStringConverterGenerator : IIncrementalGenerator
 
                 foreach (ISymbol member in typeSymbol.GetMembers())
                 {
+                    bool shouldAutoGenerate = autoGenerate && member.Kind == SymbolKind.Field;
                     foreach (AttributeData attribute in member.GetAttributes())
                     {
                         if (attribute.AttributeClass?.Name != nameof(System.Runtime.Serialization.EnumMemberAttribute)) continue;
@@ -81,18 +65,14 @@ internal sealed class EnumStringConverterGenerator : IIncrementalGenerator
                             if (argument.Key != "Value") continue;
                             string? enumMemberValue = argument.Value.Value?.ToString();
                             if (enumMemberValue is null) continue;
-                            builder.Append(isGlobalNamespace ? "        \"" : "            \"");
-                            builder.Append(enumMemberValue);
-                            builder.AppendLine("\",");
-
-                            if (member is not IFieldSymbol fieldSymbol) continue;
-                            string? value = fieldSymbol.ConstantValue?.ToString();
-                            if (value is not null)
-                            {
-                                values.Add(value);
-                            }
-                            fieldNames.Add(member.Name);
+                            AddMember(builder, isGlobalNamespace, enumMemberValue, member, values, fieldNames);
+                            shouldAutoGenerate = false;
                         }
+                    }
+
+                    if (shouldAutoGenerate)
+                    {
+                        AddMember(builder, isGlobalNamespace, member.Name, member, values, fieldNames);
                     }
                 }
 
@@ -187,5 +167,26 @@ internal sealed class EnumStringConverterGenerator : IIncrementalGenerator
 
                 context.AddSource($"{fullType}.StringConverter.g.cs", builder.ToString());
             });
+
+        static void AddMember(
+            StringBuilder builder,
+            bool isGlobalNamespace,
+            string elementValue,
+            ISymbol member,
+            ICollection<string> values,
+            ICollection<string> fieldNames)
+        {
+            builder.Append(isGlobalNamespace ? "        \"" : "            \"");
+            builder.Append(elementValue);
+            builder.AppendLine("\",");
+
+            if (member is not IFieldSymbol fieldSymbol) return;
+            string? value = fieldSymbol.ConstantValue?.ToString();
+            if (value is not null)
+            {
+                values.Add(value);
+            }
+            fieldNames.Add(member.Name);
+        }
     }
 }

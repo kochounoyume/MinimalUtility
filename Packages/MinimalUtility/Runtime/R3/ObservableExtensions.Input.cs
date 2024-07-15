@@ -8,7 +8,7 @@ using Task = Cysharp.Threading.Tasks.UniTask;
 using Task = System.Threading.Tasks.ValueTask;
 #endif
 
-namespace MinimalUtility.R3
+namespace MinimalUtility
 {
     /// <content>
     /// Observableの拡張メソッド.

@@ -39,7 +39,7 @@ internal static class GeneratorExtensions
     /// <param name="typeSymbol">型情報</param>
     /// <returns>出力ファイルに利用できる型名</returns>
     [MethodImpl(MethodImplOptions.AggressiveInlining)]
-    internal static string GetFullTypeName(this INamedTypeSymbol typeSymbol)
+    internal static string GetFullTypeName(this ISymbol typeSymbol)
     {
         return typeSymbol.ToDisplayString(SymbolDisplayFormat.FullyQualifiedFormat)
             .Replace("global::", "")
@@ -53,7 +53,7 @@ internal static class GeneratorExtensions
     /// <param name="typeSymbol">型情報</param>
     /// <returns>入れ子クラスであれば親クラス名を含めた型名</returns>
     [MethodImpl(MethodImplOptions.AggressiveInlining)]
-    internal static string GetNestedName(this INamedTypeSymbol typeSymbol)
+    internal static string GetNestedName(this ISymbol typeSymbol)
     {
         return typeSymbol.ContainingType is null
             ? typeSymbol.Name

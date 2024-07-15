@@ -1,6 +1,5 @@
 ﻿#if ENABLE_R3 && ENABLE_UNITASK
 using System;
-using System.Runtime.Serialization;
 using System.Text;
 using System.Threading;
 using Cysharp.Threading.Tasks;
@@ -15,10 +14,8 @@ using Screen = UnityEngine.Device.Screen;
 using Screen = UnityEngine.Screen;
 #endif
 
-namespace MinimalUtility.R3
+namespace MinimalUtility
 {
-    using SourceGenerator;
-
     /// <summary>
     /// FPSなどのプロファイル情報を画面に表示するためのクラス.
     /// <remarks>
@@ -30,23 +27,19 @@ namespace MinimalUtility.R3
         /// <summary>
         /// 総メモリ使用量表示の単位指定列挙体.
         /// </summary>
-        [GenerateStringConverter]
+        [GenerateStringConverter(true)]
         public enum MemoryUnit : int
         {
             [InspectorName("バイト")]
-            [EnumMember(Value = nameof(B))]
             B = 0,
 
             [InspectorName("キロバイト")]
-            [EnumMember(Value = nameof(KB))]
             KB = 1,
 
             [InspectorName("メガバイト")]
-            [EnumMember(Value = nameof(MB))]
             MB = 2,
 
             [InspectorName("ギガバイト")]
-            [EnumMember(Value = nameof(GB))]
             GB = 3
         }
 

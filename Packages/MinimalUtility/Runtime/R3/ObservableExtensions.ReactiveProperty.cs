@@ -5,7 +5,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using R3;
 
-namespace MinimalUtility.R3
+namespace MinimalUtility
 {
     /// <summary>
     /// <see cref="ReactiveProperty{T}"/>の拡張メソッド.

@@ -3,8 +3,6 @@ using VContainer.Unity;
 
 namespace MinimalUtility.VContainer
 {
-    using R3;
-
     /// <summary>
     /// <see cref="IStartable"/>のエントリーポイントを持つデバッグプロファイラー.
     /// </summary>
