@@ -926,6 +926,22 @@ references:
   commentId: T:MinimalUtility.ObjectUtility
   fullName: MinimalUtility.ObjectUtility
   nameWithType: ObjectUtility
+- uid: MinimalUtility.ObjectUtility.Chk*
+  name: Chk
+  href: api/MinimalUtility.ObjectUtility.html#MinimalUtility_ObjectUtility_Chk_
+  commentId: Overload:MinimalUtility.ObjectUtility.Chk
+  isSpec: "True"
+  fullName: MinimalUtility.ObjectUtility.Chk
+  nameWithType: ObjectUtility.Chk
+- uid: MinimalUtility.ObjectUtility.Chk``1(``0)
+  name: Chk<T>(T)
+  href: api/MinimalUtility.ObjectUtility.html#MinimalUtility_ObjectUtility_Chk__1___0_
+  commentId: M:MinimalUtility.ObjectUtility.Chk``1(``0)
+  name.vb: Chk(Of T)(T)
+  fullName: MinimalUtility.ObjectUtility.Chk<T>(T)
+  fullName.vb: MinimalUtility.ObjectUtility.Chk(Of T)(T)
+  nameWithType: ObjectUtility.Chk<T>(T)
+  nameWithType.vb: ObjectUtility.Chk(Of T)(T)
 - uid: MinimalUtility.ObjectUtility.GetNullCheck*
   name: GetNullCheck
   href: api/MinimalUtility.ObjectUtility.html#MinimalUtility_ObjectUtility_GetNullCheck_
