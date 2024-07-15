@@ -404,6 +404,53 @@ references:
   isSpec: "True"
   fullName: MinimalUtility.EmptyGraphic.SetVerticesDirty
   nameWithType: EmptyGraphic.SetVerticesDirty
+- uid: MinimalUtility.EqualityComparer
+  name: EqualityComparer
+  href: api/MinimalUtility.EqualityComparer.html
+  commentId: T:MinimalUtility.EqualityComparer
+  fullName: MinimalUtility.EqualityComparer
+  nameWithType: EqualityComparer
+- uid: MinimalUtility.EqualityComparer.Create*
+  name: Create
+  href: api/MinimalUtility.EqualityComparer.html#MinimalUtility_EqualityComparer_Create_
+  commentId: Overload:MinimalUtility.EqualityComparer.Create
+  isSpec: "True"
+  fullName: MinimalUtility.EqualityComparer.Create
+  nameWithType: EqualityComparer.Create
+- uid: MinimalUtility.EqualityComparer.Create``1(System.Func{``0,``0,System.Boolean},System.Func{``0,System.Int32})
+  name: Create<T>(Func<T, T, bool>, Func<T, int>)
+  href: api/MinimalUtility.EqualityComparer.html#MinimalUtility_EqualityComparer_Create__1_System_Func___0___0_System_Boolean__System_Func___0_System_Int32__
+  commentId: M:MinimalUtility.EqualityComparer.Create``1(System.Func{``0,``0,System.Boolean},System.Func{``0,System.Int32})
+  name.vb: Create(Of T)(Func(Of T, T, Boolean), Func(Of T, Integer))
+  fullName: MinimalUtility.EqualityComparer.Create<T>(System.Func<T, T, bool>, System.Func<T, int>)
+  fullName.vb: MinimalUtility.EqualityComparer.Create(Of T)(System.Func(Of T, T, Boolean), System.Func(Of T, Integer))
+  nameWithType: EqualityComparer.Create<T>(Func<T, T, bool>, Func<T, int>)
+  nameWithType.vb: EqualityComparer.Create(Of T)(Func(Of T, T, Boolean), Func(Of T, Integer))
+- uid: MinimalUtility.GenerateStringConverterAttribute
+  name: GenerateStringConverterAttribute
+  href: api/MinimalUtility.GenerateStringConverterAttribute.html
+  commentId: T:MinimalUtility.GenerateStringConverterAttribute
+  fullName: MinimalUtility.GenerateStringConverterAttribute
+  nameWithType: GenerateStringConverterAttribute
+- uid: MinimalUtility.GenerateStringConverterAttribute.#ctor(System.Boolean)
+  name: GenerateStringConverterAttribute(bool)
+  href: api/MinimalUtility.GenerateStringConverterAttribute.html#MinimalUtility_GenerateStringConverterAttribute__ctor_System_Boolean_
+  commentId: M:MinimalUtility.GenerateStringConverterAttribute.#ctor(System.Boolean)
+  name.vb: New(Boolean)
+  fullName: MinimalUtility.GenerateStringConverterAttribute.GenerateStringConverterAttribute(bool)
+  fullName.vb: MinimalUtility.GenerateStringConverterAttribute.New(Boolean)
+  nameWithType: GenerateStringConverterAttribute.GenerateStringConverterAttribute(bool)
+  nameWithType.vb: GenerateStringConverterAttribute.New(Boolean)
+- uid: MinimalUtility.GenerateStringConverterAttribute.#ctor*
+  name: GenerateStringConverterAttribute
+  href: api/MinimalUtility.GenerateStringConverterAttribute.html#MinimalUtility_GenerateStringConverterAttribute__ctor_
+  commentId: Overload:MinimalUtility.GenerateStringConverterAttribute.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: MinimalUtility.GenerateStringConverterAttribute.GenerateStringConverterAttribute
+  fullName.vb: MinimalUtility.GenerateStringConverterAttribute.New
+  nameWithType: GenerateStringConverterAttribute.GenerateStringConverterAttribute
+  nameWithType.vb: GenerateStringConverterAttribute.New
 - uid: MinimalUtility.IObjectPool`1
   name: IObjectPool<T>
   href: api/MinimalUtility.IObjectPool-1.html

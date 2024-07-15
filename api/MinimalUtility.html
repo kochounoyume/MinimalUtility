@@ -123,6 +123,67 @@ Classes
 </dd>
     </dl>
     <dl class="jumplist">
+      <dt><a class="xref" href="MinimalUtility.EqualityComparer.html">EqualityComparer</a></dt>
+      <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.equalitycomparer-1">EqualityComparer&lt;T&gt;</a>の拡張クラス.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MinimalUtility.GenerateStringConverterAttribute.html">GenerateStringConverterAttribute</a></dt>
+      <dd><p>Enumの文字列変換クラスを自動生成するための属性. 以下のようなコードが自動生成されます.</p>
+<pre><code class="lang-csharp">using System;
+
+namespace MinimalUtility
+{
+    public partial class MemoryUnitStringConverter
+    {
+        private readonly string[] values = new string[]
+        {
+            "B",
+            "KB",
+            "MB",
+            "GB",
+        };
+
+        public ReadOnlySpan&lt;string&gt; MemberValues =&gt; values;
+
+        public ref readonly string Convert(in DebugProfiler.MemoryUnit value)
+        {
+            switch ((int)value)
+            {
+                case 0:
+                    return ref values[0];
+                case 1:
+                    return ref values[1];
+                case 2:
+                    return ref values[2];
+                case 3:
+                    return ref values[3];
+                default:
+                    return ref string.Empty;
+            }
+        }
+
+        public DebugProfiler.MemoryUnit ReverseConvert(in string str)
+        {
+            switch (Array.IndexOf(values, str))
+            {
+                case 0:
+                    return DebugProfiler.MemoryUnit.B;
+                case 1:
+                    return DebugProfiler.MemoryUnit.KB;
+                case 2:
+                    return DebugProfiler.MemoryUnit.MB;
+                case 3:
+                    return DebugProfiler.MemoryUnit.GB;
+                default:
+                    throw new InvalidCastException(str);
+            }
+        }
+    }
+}</code></pre>
+</dd>
+    </dl>
+    <dl class="jumplist">
       <dt><a class="xref" href="MinimalUtility.Math.html">Math</a></dt>
       <dd><p>最小限の数学関数.</p>
 </dd>
