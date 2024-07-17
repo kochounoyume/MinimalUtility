@@ -87,7 +87,7 @@
   "api/MinimalUtility.SafeAreaAdjuster.html": {
     "href": "api/MinimalUtility.SafeAreaAdjuster.html",
     "title": "Class SafeAreaAdjuster | |",
-    "keywords": "Class SafeAreaAdjuster Namespace MinimalUtility セーフエリア調整スクリプト. public class SafeAreaAdjuster : MonoBehaviour Inheritance object SafeAreaAdjuster"
+    "keywords": "Class SafeAreaAdjuster Namespace MinimalUtility セーフエリア調整スクリプト. public sealed class SafeAreaAdjuster : MonoBehaviour Inheritance object SafeAreaAdjuster"
   },
   "api/MinimalUtility.SimpleGauge.html": {
     "href": "api/MinimalUtility.SimpleGauge.html",
