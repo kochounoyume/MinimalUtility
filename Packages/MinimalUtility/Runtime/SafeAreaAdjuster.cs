@@ -10,8 +10,9 @@ namespace MinimalUtility
     /// <summary>
     /// セーフエリア調整スクリプト.
     /// </summary>
+    [DisallowMultipleComponent]
     [RequireComponent(typeof(RectTransform))]
-    public class SafeAreaAdjuster : MonoBehaviour
+    public sealed class SafeAreaAdjuster : MonoBehaviour
     {
         private void Start() => Padding();
 
