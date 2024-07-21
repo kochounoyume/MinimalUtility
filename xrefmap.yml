@@ -989,78 +989,6 @@ references:
   isSpec: "True"
   fullName: MinimalUtility.MinimalSelectableGraphic.Start
   nameWithType: MinimalSelectableGraphic.Start
-- uid: MinimalUtility.ObjectUtility
-  name: ObjectUtility
-  href: api/MinimalUtility.ObjectUtility.html
-  commentId: T:MinimalUtility.ObjectUtility
-  fullName: MinimalUtility.ObjectUtility
-  nameWithType: ObjectUtility
-- uid: MinimalUtility.ObjectUtility.Chk*
-  name: Chk
-  href: api/MinimalUtility.ObjectUtility.html#MinimalUtility_ObjectUtility_Chk_
-  commentId: Overload:MinimalUtility.ObjectUtility.Chk
-  isSpec: "True"
-  fullName: MinimalUtility.ObjectUtility.Chk
-  nameWithType: ObjectUtility.Chk
-- uid: MinimalUtility.ObjectUtility.Chk``1(``0)
-  name: Chk<T>(T)
-  href: api/MinimalUtility.ObjectUtility.html#MinimalUtility_ObjectUtility_Chk__1___0_
-  commentId: M:MinimalUtility.ObjectUtility.Chk``1(``0)
-  name.vb: Chk(Of T)(T)
-  fullName: MinimalUtility.ObjectUtility.Chk<T>(T)
-  fullName.vb: MinimalUtility.ObjectUtility.Chk(Of T)(T)
-  nameWithType: ObjectUtility.Chk<T>(T)
-  nameWithType.vb: ObjectUtility.Chk(Of T)(T)
-- uid: MinimalUtility.ObjectUtility.GetNullCheck*
-  name: GetNullCheck
-  href: api/MinimalUtility.ObjectUtility.html#MinimalUtility_ObjectUtility_GetNullCheck_
-  commentId: Overload:MinimalUtility.ObjectUtility.GetNullCheck
-  isSpec: "True"
-  fullName: MinimalUtility.ObjectUtility.GetNullCheck
-  nameWithType: ObjectUtility.GetNullCheck
-- uid: MinimalUtility.ObjectUtility.GetNullCheck``1(``0@,System.Func{``0})
-  name: GetNullCheck<T>(ref T, Func<T>)
-  href: api/MinimalUtility.ObjectUtility.html#MinimalUtility_ObjectUtility_GetNullCheck__1___0__System_Func___0__
-  commentId: M:MinimalUtility.ObjectUtility.GetNullCheck``1(``0@,System.Func{``0})
-  name.vb: GetNullCheck(Of T)(T, Func(Of T))
-  fullName: MinimalUtility.ObjectUtility.GetNullCheck<T>(ref T, System.Func<T>)
-  fullName.vb: MinimalUtility.ObjectUtility.GetNullCheck(Of T)(T, System.Func(Of T))
-  nameWithType: ObjectUtility.GetNullCheck<T>(ref T, Func<T>)
-  nameWithType.vb: ObjectUtility.GetNullCheck(Of T)(T, Func(Of T))
-- uid: MinimalUtility.ObjectUtility.GetNullCheck``2(``0@,``1,System.Func{``1,``0})
-  name: GetNullCheck<T, TState>(ref T, TState, Func<TState, T>)
-  href: api/MinimalUtility.ObjectUtility.html#MinimalUtility_ObjectUtility_GetNullCheck__2___0____1_System_Func___1___0__
-  commentId: M:MinimalUtility.ObjectUtility.GetNullCheck``2(``0@,``1,System.Func{``1,``0})
-  name.vb: GetNullCheck(Of T, TState)(T, TState, Func(Of TState, T))
-  fullName: MinimalUtility.ObjectUtility.GetNullCheck<T, TState>(ref T, TState, System.Func<TState, T>)
-  fullName.vb: MinimalUtility.ObjectUtility.GetNullCheck(Of T, TState)(T, TState, System.Func(Of TState, T))
-  nameWithType: ObjectUtility.GetNullCheck<T, TState>(ref T, TState, Func<TState, T>)
-  nameWithType.vb: ObjectUtility.GetNullCheck(Of T, TState)(T, TState, Func(Of TState, T))
-- uid: MinimalUtility.ObjectUtility.TryGetNullCheck*
-  name: TryGetNullCheck
-  href: api/MinimalUtility.ObjectUtility.html#MinimalUtility_ObjectUtility_TryGetNullCheck_
-  commentId: Overload:MinimalUtility.ObjectUtility.TryGetNullCheck
-  isSpec: "True"
-  fullName: MinimalUtility.ObjectUtility.TryGetNullCheck
-  nameWithType: ObjectUtility.TryGetNullCheck
-- uid: MinimalUtility.ObjectUtility.TryGetNullCheck``1(System.Func{``0},``0@)
-  name: TryGetNullCheck<T>(Func<T>, out T)
-  href: api/MinimalUtility.ObjectUtility.html#MinimalUtility_ObjectUtility_TryGetNullCheck__1_System_Func___0____0__
-  commentId: M:MinimalUtility.ObjectUtility.TryGetNullCheck``1(System.Func{``0},``0@)
-  name.vb: TryGetNullCheck(Of T)(Func(Of T), T)
-  fullName: MinimalUtility.ObjectUtility.TryGetNullCheck<T>(System.Func<T>, out T)
-  fullName.vb: MinimalUtility.ObjectUtility.TryGetNullCheck(Of T)(System.Func(Of T), T)
-  nameWithType: ObjectUtility.TryGetNullCheck<T>(Func<T>, out T)
-  nameWithType.vb: ObjectUtility.TryGetNullCheck(Of T)(Func(Of T), T)
-- uid: MinimalUtility.ObjectUtility.TryGetNullCheck``2(``1,System.Func{``1,``0},``0@)
-  name: TryGetNullCheck<T, TState>(TState, Func<TState, T>, out T)
-  href: api/MinimalUtility.ObjectUtility.html#MinimalUtility_ObjectUtility_TryGetNullCheck__2___1_System_Func___1___0____0__
-  commentId: M:MinimalUtility.ObjectUtility.TryGetNullCheck``2(``1,System.Func{``1,``0},``0@)
-  name.vb: TryGetNullCheck(Of T, TState)(TState, Func(Of TState, T), T)
-  fullName: MinimalUtility.ObjectUtility.TryGetNullCheck<T, TState>(TState, System.Func<TState, T>, out T)
-  fullName.vb: MinimalUtility.ObjectUtility.TryGetNullCheck(Of T, TState)(TState, System.Func(Of TState, T), T)
-  nameWithType: ObjectUtility.TryGetNullCheck<T, TState>(TState, Func<TState, T>, out T)
-  nameWithType.vb: ObjectUtility.TryGetNullCheck(Of T, TState)(TState, Func(Of TState, T), T)
 - uid: MinimalUtility.RectTransformExtensions
   name: RectTransformExtensions
   href: api/MinimalUtility.RectTransformExtensions.html
@@ -1162,6 +1090,19 @@ references:
   commentId: T:MinimalUtility.SimpleGauge
   fullName: MinimalUtility.SimpleGauge
   nameWithType: SimpleGauge
+- uid: MinimalUtility.SimpleGauge.Graphic
+  name: Graphic
+  href: api/MinimalUtility.SimpleGauge.html#MinimalUtility_SimpleGauge_Graphic
+  commentId: P:MinimalUtility.SimpleGauge.Graphic
+  fullName: MinimalUtility.SimpleGauge.Graphic
+  nameWithType: SimpleGauge.Graphic
+- uid: MinimalUtility.SimpleGauge.Graphic*
+  name: Graphic
+  href: api/MinimalUtility.SimpleGauge.html#MinimalUtility_SimpleGauge_Graphic_
+  commentId: Overload:MinimalUtility.SimpleGauge.Graphic
+  isSpec: "True"
+  fullName: MinimalUtility.SimpleGauge.Graphic
+  nameWithType: SimpleGauge.Graphic
 - uid: MinimalUtility.SimpleGauge.OnEnable
   name: OnEnable()
   href: api/MinimalUtility.SimpleGauge.html#MinimalUtility_SimpleGauge_OnEnable

@@ -185,16 +185,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/MinimalUtility.ObjectUtility.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MinimalUtility.ObjectUtility.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/MinimalUtility.RectTransformExtensions.yml",
       "output": {
         ".html": {
