@@ -1,4 +1,3 @@
-#if ENABLE_VCONTAINER
 using UnityEngine;
 using VContainer;
 using VContainer.Unity;
@@ -30,4 +29,3 @@ namespace MinimalUtility.VContainer
         }
     }
 }
-#endif

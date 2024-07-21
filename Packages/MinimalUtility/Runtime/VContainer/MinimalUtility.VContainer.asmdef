@@ -12,7 +12,9 @@
     "overrideReferences": true,
     "precompiledReferences": [],
     "autoReferenced": true,
-    "defineConstraints": [],
+    "defineConstraints": [
+        "ENABLE_VCONTAINER"
+    ],
     "versionDefines": [
         {
             "name": "jp.hadashikick.vcontainer",

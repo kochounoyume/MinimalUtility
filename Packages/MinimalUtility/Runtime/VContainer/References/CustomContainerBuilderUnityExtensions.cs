@@ -1,4 +1,3 @@
-#if ENABLE_VCONTAINER
 using UnityEngine;
 
 namespace VContainer.Unity
@@ -26,4 +25,3 @@ namespace VContainer.Unity
         }
     }
 }
-#endif
