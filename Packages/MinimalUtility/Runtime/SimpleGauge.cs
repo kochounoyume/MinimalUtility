@@ -52,12 +52,16 @@ namespace MinimalUtility
 
         private MaskableGraphic graphic;
 
+        /// <summary>
+        /// ゲージの表示に使用する<see cref="MaskableGraphic"/>.
+        /// </summary>
+        public MaskableGraphic Graphic => graphic == null ? graphic = GetComponent<MaskableGraphic>() : graphic;
+
         /// <inheritdoc/>
         protected override void OnEnable()
         {
             base.OnEnable();
-            ObjectUtility.GetNullCheck(ref graphic, this, static s => s.GetComponent<MaskableGraphic>());
-            AddClippable(graphic);
+            AddClippable(Graphic);
         }
 
 #if UNITY_EDITOR

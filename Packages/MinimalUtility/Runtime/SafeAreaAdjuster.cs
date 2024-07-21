@@ -22,10 +22,11 @@ namespace MinimalUtility
             Rect safeArea = Screen.safeArea;
             Vector2 screenSize = new Vector2(Screen.width, Screen.height);
 
-            if (ObjectUtility.TryGetNullCheck(this, static s => s.transform as RectTransform, out var r))
+            RectTransform rectTransform = transform as RectTransform;
+            if (rectTransform != null)
             {
-                r.anchorMin = safeArea.min / screenSize;
-                r.anchorMax = safeArea.max / screenSize;
+                rectTransform.anchorMin = safeArea.min / screenSize;
+                rectTransform.anchorMax = safeArea.max / screenSize;
             }
         }
     }
