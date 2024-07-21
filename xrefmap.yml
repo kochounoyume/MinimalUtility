@@ -1119,176 +1119,162 @@ references:
   isSpec: "True"
   fullName: MinimalUtility.SimpleGauge.Value
   nameWithType: SimpleGauge.Value
-- uid: MinimalUtility.SloppyDisposable
-  name: SloppyDisposable
-  href: api/MinimalUtility.SloppyDisposable.html
-  commentId: T:MinimalUtility.SloppyDisposable
-  fullName: MinimalUtility.SloppyDisposable
-  nameWithType: SloppyDisposable
-- uid: MinimalUtility.SloppyDisposable.#ctor(System.Action)
-  name: SloppyDisposable(Action)
-  href: api/MinimalUtility.SloppyDisposable.html#MinimalUtility_SloppyDisposable__ctor_System_Action_
-  commentId: M:MinimalUtility.SloppyDisposable.#ctor(System.Action)
+- uid: MinimalUtility.UsingDisposable
+  name: UsingDisposable
+  href: api/MinimalUtility.UsingDisposable.html
+  commentId: T:MinimalUtility.UsingDisposable
+  fullName: MinimalUtility.UsingDisposable
+  nameWithType: UsingDisposable
+- uid: MinimalUtility.UsingDisposable.#ctor(System.Action)
+  name: UsingDisposable(Action)
+  href: api/MinimalUtility.UsingDisposable.html#MinimalUtility_UsingDisposable__ctor_System_Action_
+  commentId: M:MinimalUtility.UsingDisposable.#ctor(System.Action)
   name.vb: New(Action)
-  fullName: MinimalUtility.SloppyDisposable.SloppyDisposable(System.Action)
-  fullName.vb: MinimalUtility.SloppyDisposable.New(System.Action)
-  nameWithType: SloppyDisposable.SloppyDisposable(Action)
-  nameWithType.vb: SloppyDisposable.New(Action)
-- uid: MinimalUtility.SloppyDisposable.#ctor*
-  name: SloppyDisposable
-  href: api/MinimalUtility.SloppyDisposable.html#MinimalUtility_SloppyDisposable__ctor_
-  commentId: Overload:MinimalUtility.SloppyDisposable.#ctor
+  fullName: MinimalUtility.UsingDisposable.UsingDisposable(System.Action)
+  fullName.vb: MinimalUtility.UsingDisposable.New(System.Action)
+  nameWithType: UsingDisposable.UsingDisposable(Action)
+  nameWithType.vb: UsingDisposable.New(Action)
+- uid: MinimalUtility.UsingDisposable.#ctor*
+  name: UsingDisposable
+  href: api/MinimalUtility.UsingDisposable.html#MinimalUtility_UsingDisposable__ctor_
+  commentId: Overload:MinimalUtility.UsingDisposable.#ctor
   isSpec: "True"
   name.vb: New
-  fullName: MinimalUtility.SloppyDisposable.SloppyDisposable
-  fullName.vb: MinimalUtility.SloppyDisposable.New
-  nameWithType: SloppyDisposable.SloppyDisposable
-  nameWithType.vb: SloppyDisposable.New
-- uid: MinimalUtility.SloppyDisposable.Dispose
-  name: Dispose()
-  href: api/MinimalUtility.SloppyDisposable.html#MinimalUtility_SloppyDisposable_Dispose
-  commentId: M:MinimalUtility.SloppyDisposable.Dispose
-  fullName: MinimalUtility.SloppyDisposable.Dispose()
-  nameWithType: SloppyDisposable.Dispose()
-- uid: MinimalUtility.SloppyDisposable.Dispose*
-  name: Dispose
-  href: api/MinimalUtility.SloppyDisposable.html#MinimalUtility_SloppyDisposable_Dispose_
-  commentId: Overload:MinimalUtility.SloppyDisposable.Dispose
-  isSpec: "True"
-  fullName: MinimalUtility.SloppyDisposable.Dispose
-  nameWithType: SloppyDisposable.Dispose
-- uid: MinimalUtility.SloppyDisposable`1
-  name: SloppyDisposable<T0>
-  href: api/MinimalUtility.SloppyDisposable-1.html
-  commentId: T:MinimalUtility.SloppyDisposable`1
-  name.vb: SloppyDisposable(Of T0)
-  fullName: MinimalUtility.SloppyDisposable<T0>
-  fullName.vb: MinimalUtility.SloppyDisposable(Of T0)
-  nameWithType: SloppyDisposable<T0>
-  nameWithType.vb: SloppyDisposable(Of T0)
-- uid: MinimalUtility.SloppyDisposable`1.#ctor(`0,System.Action{`0})
-  name: SloppyDisposable(T0, Action<T0>)
-  href: api/MinimalUtility.SloppyDisposable-1.html#MinimalUtility_SloppyDisposable_1__ctor__0_System_Action__0__
-  commentId: M:MinimalUtility.SloppyDisposable`1.#ctor(`0,System.Action{`0})
+  fullName: MinimalUtility.UsingDisposable.UsingDisposable
+  fullName.vb: MinimalUtility.UsingDisposable.New
+  nameWithType: UsingDisposable.UsingDisposable
+  nameWithType.vb: UsingDisposable.New
+- uid: MinimalUtility.UsingDisposable`1
+  name: UsingDisposable<T0>
+  href: api/MinimalUtility.UsingDisposable-1.html
+  commentId: T:MinimalUtility.UsingDisposable`1
+  name.vb: UsingDisposable(Of T0)
+  fullName: MinimalUtility.UsingDisposable<T0>
+  fullName.vb: MinimalUtility.UsingDisposable(Of T0)
+  nameWithType: UsingDisposable<T0>
+  nameWithType.vb: UsingDisposable(Of T0)
+- uid: MinimalUtility.UsingDisposable`1.#ctor(`0,System.Action{`0})
+  name: UsingDisposable(T0, Action<T0>)
+  href: api/MinimalUtility.UsingDisposable-1.html#MinimalUtility_UsingDisposable_1__ctor__0_System_Action__0__
+  commentId: M:MinimalUtility.UsingDisposable`1.#ctor(`0,System.Action{`0})
   name.vb: New(T0, Action(Of T0))
-  fullName: MinimalUtility.SloppyDisposable<T0>.SloppyDisposable(T0, System.Action<T0>)
-  fullName.vb: MinimalUtility.SloppyDisposable(Of T0).New(T0, System.Action(Of T0))
-  nameWithType: SloppyDisposable<T0>.SloppyDisposable(T0, Action<T0>)
-  nameWithType.vb: SloppyDisposable(Of T0).New(T0, Action(Of T0))
-- uid: MinimalUtility.SloppyDisposable`1.#ctor*
-  name: SloppyDisposable
-  href: api/MinimalUtility.SloppyDisposable-1.html#MinimalUtility_SloppyDisposable_1__ctor_
-  commentId: Overload:MinimalUtility.SloppyDisposable`1.#ctor
+  fullName: MinimalUtility.UsingDisposable<T0>.UsingDisposable(T0, System.Action<T0>)
+  fullName.vb: MinimalUtility.UsingDisposable(Of T0).New(T0, System.Action(Of T0))
+  nameWithType: UsingDisposable<T0>.UsingDisposable(T0, Action<T0>)
+  nameWithType.vb: UsingDisposable(Of T0).New(T0, Action(Of T0))
+- uid: MinimalUtility.UsingDisposable`1.#ctor*
+  name: UsingDisposable
+  href: api/MinimalUtility.UsingDisposable-1.html#MinimalUtility_UsingDisposable_1__ctor_
+  commentId: Overload:MinimalUtility.UsingDisposable`1.#ctor
   isSpec: "True"
   name.vb: New
-  fullName: MinimalUtility.SloppyDisposable<T0>.SloppyDisposable
-  fullName.vb: MinimalUtility.SloppyDisposable(Of T0).New
-  nameWithType: SloppyDisposable<T0>.SloppyDisposable
-  nameWithType.vb: SloppyDisposable(Of T0).New
-- uid: MinimalUtility.SloppyDisposable`1.Dispose
-  name: Dispose()
-  href: api/MinimalUtility.SloppyDisposable-1.html#MinimalUtility_SloppyDisposable_1_Dispose
-  commentId: M:MinimalUtility.SloppyDisposable`1.Dispose
-  fullName: MinimalUtility.SloppyDisposable<T0>.Dispose()
-  fullName.vb: MinimalUtility.SloppyDisposable(Of T0).Dispose()
-  nameWithType: SloppyDisposable<T0>.Dispose()
-  nameWithType.vb: SloppyDisposable(Of T0).Dispose()
-- uid: MinimalUtility.SloppyDisposable`1.Dispose*
-  name: Dispose
-  href: api/MinimalUtility.SloppyDisposable-1.html#MinimalUtility_SloppyDisposable_1_Dispose_
-  commentId: Overload:MinimalUtility.SloppyDisposable`1.Dispose
-  isSpec: "True"
-  fullName: MinimalUtility.SloppyDisposable<T0>.Dispose
-  fullName.vb: MinimalUtility.SloppyDisposable(Of T0).Dispose
-  nameWithType: SloppyDisposable<T0>.Dispose
-  nameWithType.vb: SloppyDisposable(Of T0).Dispose
-- uid: MinimalUtility.SloppyDisposable`2
-  name: SloppyDisposable<T0, T1>
-  href: api/MinimalUtility.SloppyDisposable-2.html
-  commentId: T:MinimalUtility.SloppyDisposable`2
-  name.vb: SloppyDisposable(Of T0, T1)
-  fullName: MinimalUtility.SloppyDisposable<T0, T1>
-  fullName.vb: MinimalUtility.SloppyDisposable(Of T0, T1)
-  nameWithType: SloppyDisposable<T0, T1>
-  nameWithType.vb: SloppyDisposable(Of T0, T1)
-- uid: MinimalUtility.SloppyDisposable`2.#ctor(`0,`1,System.Action{`0,`1})
-  name: SloppyDisposable(T0, T1, Action<T0, T1>)
-  href: api/MinimalUtility.SloppyDisposable-2.html#MinimalUtility_SloppyDisposable_2__ctor__0__1_System_Action__0__1__
-  commentId: M:MinimalUtility.SloppyDisposable`2.#ctor(`0,`1,System.Action{`0,`1})
+  fullName: MinimalUtility.UsingDisposable<T0>.UsingDisposable
+  fullName.vb: MinimalUtility.UsingDisposable(Of T0).New
+  nameWithType: UsingDisposable<T0>.UsingDisposable
+  nameWithType.vb: UsingDisposable(Of T0).New
+- uid: MinimalUtility.UsingDisposable`2
+  name: UsingDisposable<T0, T1>
+  href: api/MinimalUtility.UsingDisposable-2.html
+  commentId: T:MinimalUtility.UsingDisposable`2
+  name.vb: UsingDisposable(Of T0, T1)
+  fullName: MinimalUtility.UsingDisposable<T0, T1>
+  fullName.vb: MinimalUtility.UsingDisposable(Of T0, T1)
+  nameWithType: UsingDisposable<T0, T1>
+  nameWithType.vb: UsingDisposable(Of T0, T1)
+- uid: MinimalUtility.UsingDisposable`2.#ctor(`0,`1,System.Action{`0,`1})
+  name: UsingDisposable(T0, T1, Action<T0, T1>)
+  href: api/MinimalUtility.UsingDisposable-2.html#MinimalUtility_UsingDisposable_2__ctor__0__1_System_Action__0__1__
+  commentId: M:MinimalUtility.UsingDisposable`2.#ctor(`0,`1,System.Action{`0,`1})
   name.vb: New(T0, T1, Action(Of T0, T1))
-  fullName: MinimalUtility.SloppyDisposable<T0, T1>.SloppyDisposable(T0, T1, System.Action<T0, T1>)
-  fullName.vb: MinimalUtility.SloppyDisposable(Of T0, T1).New(T0, T1, System.Action(Of T0, T1))
-  nameWithType: SloppyDisposable<T0, T1>.SloppyDisposable(T0, T1, Action<T0, T1>)
-  nameWithType.vb: SloppyDisposable(Of T0, T1).New(T0, T1, Action(Of T0, T1))
-- uid: MinimalUtility.SloppyDisposable`2.#ctor*
-  name: SloppyDisposable
-  href: api/MinimalUtility.SloppyDisposable-2.html#MinimalUtility_SloppyDisposable_2__ctor_
-  commentId: Overload:MinimalUtility.SloppyDisposable`2.#ctor
+  fullName: MinimalUtility.UsingDisposable<T0, T1>.UsingDisposable(T0, T1, System.Action<T0, T1>)
+  fullName.vb: MinimalUtility.UsingDisposable(Of T0, T1).New(T0, T1, System.Action(Of T0, T1))
+  nameWithType: UsingDisposable<T0, T1>.UsingDisposable(T0, T1, Action<T0, T1>)
+  nameWithType.vb: UsingDisposable(Of T0, T1).New(T0, T1, Action(Of T0, T1))
+- uid: MinimalUtility.UsingDisposable`2.#ctor*
+  name: UsingDisposable
+  href: api/MinimalUtility.UsingDisposable-2.html#MinimalUtility_UsingDisposable_2__ctor_
+  commentId: Overload:MinimalUtility.UsingDisposable`2.#ctor
   isSpec: "True"
   name.vb: New
-  fullName: MinimalUtility.SloppyDisposable<T0, T1>.SloppyDisposable
-  fullName.vb: MinimalUtility.SloppyDisposable(Of T0, T1).New
-  nameWithType: SloppyDisposable<T0, T1>.SloppyDisposable
-  nameWithType.vb: SloppyDisposable(Of T0, T1).New
-- uid: MinimalUtility.SloppyDisposable`2.Dispose
-  name: Dispose()
-  href: api/MinimalUtility.SloppyDisposable-2.html#MinimalUtility_SloppyDisposable_2_Dispose
-  commentId: M:MinimalUtility.SloppyDisposable`2.Dispose
-  fullName: MinimalUtility.SloppyDisposable<T0, T1>.Dispose()
-  fullName.vb: MinimalUtility.SloppyDisposable(Of T0, T1).Dispose()
-  nameWithType: SloppyDisposable<T0, T1>.Dispose()
-  nameWithType.vb: SloppyDisposable(Of T0, T1).Dispose()
-- uid: MinimalUtility.SloppyDisposable`2.Dispose*
-  name: Dispose
-  href: api/MinimalUtility.SloppyDisposable-2.html#MinimalUtility_SloppyDisposable_2_Dispose_
-  commentId: Overload:MinimalUtility.SloppyDisposable`2.Dispose
-  isSpec: "True"
-  fullName: MinimalUtility.SloppyDisposable<T0, T1>.Dispose
-  fullName.vb: MinimalUtility.SloppyDisposable(Of T0, T1).Dispose
-  nameWithType: SloppyDisposable<T0, T1>.Dispose
-  nameWithType.vb: SloppyDisposable(Of T0, T1).Dispose
-- uid: MinimalUtility.SloppyDisposable`3
-  name: SloppyDisposable<T0, T1, T2>
-  href: api/MinimalUtility.SloppyDisposable-3.html
-  commentId: T:MinimalUtility.SloppyDisposable`3
-  name.vb: SloppyDisposable(Of T0, T1, T2)
-  fullName: MinimalUtility.SloppyDisposable<T0, T1, T2>
-  fullName.vb: MinimalUtility.SloppyDisposable(Of T0, T1, T2)
-  nameWithType: SloppyDisposable<T0, T1, T2>
-  nameWithType.vb: SloppyDisposable(Of T0, T1, T2)
-- uid: MinimalUtility.SloppyDisposable`3.#ctor(`0,`1,`2,System.Action{`0,`1,`2})
-  name: SloppyDisposable(T0, T1, T2, Action<T0, T1, T2>)
-  href: api/MinimalUtility.SloppyDisposable-3.html#MinimalUtility_SloppyDisposable_3__ctor__0__1__2_System_Action__0__1__2__
-  commentId: M:MinimalUtility.SloppyDisposable`3.#ctor(`0,`1,`2,System.Action{`0,`1,`2})
+  fullName: MinimalUtility.UsingDisposable<T0, T1>.UsingDisposable
+  fullName.vb: MinimalUtility.UsingDisposable(Of T0, T1).New
+  nameWithType: UsingDisposable<T0, T1>.UsingDisposable
+  nameWithType.vb: UsingDisposable(Of T0, T1).New
+- uid: MinimalUtility.UsingDisposable`3
+  name: UsingDisposable<T0, T1, T2>
+  href: api/MinimalUtility.UsingDisposable-3.html
+  commentId: T:MinimalUtility.UsingDisposable`3
+  name.vb: UsingDisposable(Of T0, T1, T2)
+  fullName: MinimalUtility.UsingDisposable<T0, T1, T2>
+  fullName.vb: MinimalUtility.UsingDisposable(Of T0, T1, T2)
+  nameWithType: UsingDisposable<T0, T1, T2>
+  nameWithType.vb: UsingDisposable(Of T0, T1, T2)
+- uid: MinimalUtility.UsingDisposable`3.#ctor(`0,`1,`2,System.Action{`0,`1,`2})
+  name: UsingDisposable(T0, T1, T2, Action<T0, T1, T2>)
+  href: api/MinimalUtility.UsingDisposable-3.html#MinimalUtility_UsingDisposable_3__ctor__0__1__2_System_Action__0__1__2__
+  commentId: M:MinimalUtility.UsingDisposable`3.#ctor(`0,`1,`2,System.Action{`0,`1,`2})
   name.vb: New(T0, T1, T2, Action(Of T0, T1, T2))
-  fullName: MinimalUtility.SloppyDisposable<T0, T1, T2>.SloppyDisposable(T0, T1, T2, System.Action<T0, T1, T2>)
-  fullName.vb: MinimalUtility.SloppyDisposable(Of T0, T1, T2).New(T0, T1, T2, System.Action(Of T0, T1, T2))
-  nameWithType: SloppyDisposable<T0, T1, T2>.SloppyDisposable(T0, T1, T2, Action<T0, T1, T2>)
-  nameWithType.vb: SloppyDisposable(Of T0, T1, T2).New(T0, T1, T2, Action(Of T0, T1, T2))
-- uid: MinimalUtility.SloppyDisposable`3.#ctor*
-  name: SloppyDisposable
-  href: api/MinimalUtility.SloppyDisposable-3.html#MinimalUtility_SloppyDisposable_3__ctor_
-  commentId: Overload:MinimalUtility.SloppyDisposable`3.#ctor
+  fullName: MinimalUtility.UsingDisposable<T0, T1, T2>.UsingDisposable(T0, T1, T2, System.Action<T0, T1, T2>)
+  fullName.vb: MinimalUtility.UsingDisposable(Of T0, T1, T2).New(T0, T1, T2, System.Action(Of T0, T1, T2))
+  nameWithType: UsingDisposable<T0, T1, T2>.UsingDisposable(T0, T1, T2, Action<T0, T1, T2>)
+  nameWithType.vb: UsingDisposable(Of T0, T1, T2).New(T0, T1, T2, Action(Of T0, T1, T2))
+- uid: MinimalUtility.UsingDisposable`3.#ctor*
+  name: UsingDisposable
+  href: api/MinimalUtility.UsingDisposable-3.html#MinimalUtility_UsingDisposable_3__ctor_
+  commentId: Overload:MinimalUtility.UsingDisposable`3.#ctor
   isSpec: "True"
   name.vb: New
-  fullName: MinimalUtility.SloppyDisposable<T0, T1, T2>.SloppyDisposable
-  fullName.vb: MinimalUtility.SloppyDisposable(Of T0, T1, T2).New
-  nameWithType: SloppyDisposable<T0, T1, T2>.SloppyDisposable
-  nameWithType.vb: SloppyDisposable(Of T0, T1, T2).New
-- uid: MinimalUtility.SloppyDisposable`3.Dispose
-  name: Dispose()
-  href: api/MinimalUtility.SloppyDisposable-3.html#MinimalUtility_SloppyDisposable_3_Dispose
-  commentId: M:MinimalUtility.SloppyDisposable`3.Dispose
-  fullName: MinimalUtility.SloppyDisposable<T0, T1, T2>.Dispose()
-  fullName.vb: MinimalUtility.SloppyDisposable(Of T0, T1, T2).Dispose()
-  nameWithType: SloppyDisposable<T0, T1, T2>.Dispose()
-  nameWithType.vb: SloppyDisposable(Of T0, T1, T2).Dispose()
-- uid: MinimalUtility.SloppyDisposable`3.Dispose*
-  name: Dispose
-  href: api/MinimalUtility.SloppyDisposable-3.html#MinimalUtility_SloppyDisposable_3_Dispose_
-  commentId: Overload:MinimalUtility.SloppyDisposable`3.Dispose
+  fullName: MinimalUtility.UsingDisposable<T0, T1, T2>.UsingDisposable
+  fullName.vb: MinimalUtility.UsingDisposable(Of T0, T1, T2).New
+  nameWithType: UsingDisposable<T0, T1, T2>.UsingDisposable
+  nameWithType.vb: UsingDisposable(Of T0, T1, T2).New
+- uid: MinimalUtility.VContainer
+  name: MinimalUtility.VContainer
+  href: api/MinimalUtility.VContainer.html
+  commentId: N:MinimalUtility.VContainer
+  fullName: MinimalUtility.VContainer
+  nameWithType: MinimalUtility.VContainer
+- uid: MinimalUtility.VContainer.LifetimeScopeBase
+  name: LifetimeScopeBase
+  href: api/MinimalUtility.VContainer.LifetimeScopeBase.html
+  commentId: T:MinimalUtility.VContainer.LifetimeScopeBase
+  fullName: MinimalUtility.VContainer.LifetimeScopeBase
+  nameWithType: LifetimeScopeBase
+- uid: MinimalUtility.VContainer.LifetimeScopeBase.Configure(IContainerBuilder)
+  name: Configure(IContainerBuilder)
+  href: api/MinimalUtility.VContainer.LifetimeScopeBase.html#MinimalUtility_VContainer_LifetimeScopeBase_Configure_IContainerBuilder_
+  commentId: M:MinimalUtility.VContainer.LifetimeScopeBase.Configure(IContainerBuilder)
+  fullName: MinimalUtility.VContainer.LifetimeScopeBase.Configure(IContainerBuilder)
+  nameWithType: LifetimeScopeBase.Configure(IContainerBuilder)
+- uid: MinimalUtility.VContainer.LifetimeScopeBase.Configure*
+  name: Configure
+  href: api/MinimalUtility.VContainer.LifetimeScopeBase.html#MinimalUtility_VContainer_LifetimeScopeBase_Configure_
+  commentId: Overload:MinimalUtility.VContainer.LifetimeScopeBase.Configure
   isSpec: "True"
-  fullName: MinimalUtility.SloppyDisposable<T0, T1, T2>.Dispose
-  fullName.vb: MinimalUtility.SloppyDisposable(Of T0, T1, T2).Dispose
-  nameWithType: SloppyDisposable<T0, T1, T2>.Dispose
-  nameWithType.vb: SloppyDisposable(Of T0, T1, T2).Dispose
+  fullName: MinimalUtility.VContainer.LifetimeScopeBase.Configure
+  nameWithType: LifetimeScopeBase.Configure
+- uid: VContainer.Unity
+  name: VContainer.Unity
+  href: api/VContainer.Unity.html
+  commentId: N:VContainer.Unity
+  fullName: VContainer.Unity
+  nameWithType: VContainer.Unity
+- uid: VContainer.Unity.CustomContainerBuilderUnityExtensions
+  name: CustomContainerBuilderUnityExtensions
+  href: api/VContainer.Unity.CustomContainerBuilderUnityExtensions.html
+  commentId: T:VContainer.Unity.CustomContainerBuilderUnityExtensions
+  fullName: VContainer.Unity.CustomContainerBuilderUnityExtensions
+  nameWithType: CustomContainerBuilderUnityExtensions
+- uid: VContainer.Unity.CustomContainerBuilderUnityExtensions.RegisterComponent(IContainerBuilder,Component)
+  name: RegisterComponent(IContainerBuilder, Component)
+  href: api/VContainer.Unity.CustomContainerBuilderUnityExtensions.html#VContainer_Unity_CustomContainerBuilderUnityExtensions_RegisterComponent_IContainerBuilder_Component_
+  commentId: M:VContainer.Unity.CustomContainerBuilderUnityExtensions.RegisterComponent(IContainerBuilder,Component)
+  fullName: VContainer.Unity.CustomContainerBuilderUnityExtensions.RegisterComponent(IContainerBuilder, Component)
+  nameWithType: CustomContainerBuilderUnityExtensions.RegisterComponent(IContainerBuilder, Component)
+- uid: VContainer.Unity.CustomContainerBuilderUnityExtensions.RegisterComponent*
+  name: RegisterComponent
+  href: api/VContainer.Unity.CustomContainerBuilderUnityExtensions.html#VContainer_Unity_CustomContainerBuilderUnityExtensions_RegisterComponent_
+  commentId: Overload:VContainer.Unity.CustomContainerBuilderUnityExtensions.RegisterComponent
+  isSpec: "True"
+  fullName: VContainer.Unity.CustomContainerBuilderUnityExtensions.RegisterComponent
+  nameWithType: CustomContainerBuilderUnityExtensions.RegisterComponent

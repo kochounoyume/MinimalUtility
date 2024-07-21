@@ -205,40 +205,60 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/MinimalUtility.SloppyDisposable-1.yml",
+      "source_relative_path": "api/MinimalUtility.UsingDisposable-1.yml",
       "output": {
         ".html": {
-          "relative_path": "api/MinimalUtility.SloppyDisposable-1.html"
+          "relative_path": "api/MinimalUtility.UsingDisposable-1.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/MinimalUtility.SloppyDisposable-2.yml",
+      "source_relative_path": "api/MinimalUtility.UsingDisposable-2.yml",
       "output": {
         ".html": {
-          "relative_path": "api/MinimalUtility.SloppyDisposable-2.html"
+          "relative_path": "api/MinimalUtility.UsingDisposable-2.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/MinimalUtility.SloppyDisposable-3.yml",
+      "source_relative_path": "api/MinimalUtility.UsingDisposable-3.yml",
       "output": {
         ".html": {
-          "relative_path": "api/MinimalUtility.SloppyDisposable-3.html"
+          "relative_path": "api/MinimalUtility.UsingDisposable-3.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/MinimalUtility.SloppyDisposable.yml",
+      "source_relative_path": "api/MinimalUtility.UsingDisposable.yml",
       "output": {
         ".html": {
-          "relative_path": "api/MinimalUtility.SloppyDisposable.html"
+          "relative_path": "api/MinimalUtility.UsingDisposable.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MinimalUtility.VContainer.LifetimeScopeBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MinimalUtility.VContainer.LifetimeScopeBase.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MinimalUtility.VContainer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MinimalUtility.VContainer.html"
         }
       },
       "version": ""
@@ -249,6 +269,26 @@
       "output": {
         ".html": {
           "relative_path": "api/MinimalUtility.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VContainer.Unity.CustomContainerBuilderUnityExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VContainer.Unity.CustomContainerBuilderUnityExtensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VContainer.Unity.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VContainer.Unity.html"
         }
       },
       "version": ""

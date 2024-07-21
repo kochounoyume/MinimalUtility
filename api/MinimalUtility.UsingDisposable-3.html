@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Struct SloppyDisposable&lt;T0&gt; |  |  </title>
+      <title>Struct UsingDisposable&lt;T0, T1, T2&gt; |  |  </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Struct SloppyDisposable&lt;T0&gt; |  |  ">
+      <meta name="title" content="Struct UsingDisposable&lt;T0, T1, T2&gt; |  |  ">
       
       <meta name="description" content="usingステートメントスコープを抜けた際にコールバックを呼び出すための構造体.">
       <link rel="icon" href="../favicon.ico">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       <meta name="docfx:disablenewtab" content="true">
       
-      <meta name="docfx:docurl" content="https://github.com/kochounoyume/MinimalUtility/new/main/apiSpec/new?filename=MinimalUtility_SloppyDisposable_1.md&amp;value=---%0Auid%3A%20MinimalUtility.SloppyDisposable%601%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/kochounoyume/MinimalUtility/new/main/apiSpec/new?filename=MinimalUtility_UsingDisposable_3.md&amp;value=---%0Auid%3A%20MinimalUtility.UsingDisposable%603%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -84,12 +84,12 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="MinimalUtility.SloppyDisposable`1">
+        <article data-uid="MinimalUtility.UsingDisposable`3">
 
 
 
-  <h1 id="MinimalUtility_SloppyDisposable_1" data-uid="MinimalUtility.SloppyDisposable`1" class="text-break">
-Struct SloppyDisposable&lt;T0&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/SloppyDisposable.cs/#L34"><i class="bi bi-code-slash"></i></a>
+  <h1 id="MinimalUtility_UsingDisposable_3" data-uid="MinimalUtility.UsingDisposable`3" class="text-break">
+Struct UsingDisposable&lt;T0, T1, T2&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/UsingDisposable.cs/#L98"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -102,7 +102,7 @@ Struct SloppyDisposable&lt;T0&gt;  <a class="header-action link-secondary" title
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public readonly ref struct SloppyDisposable&lt;T0&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public readonly struct UsingDisposable&lt;T0, T1, T2&gt; : IDisposable</code></pre>
   </div>
 
 
@@ -110,11 +110,23 @@ Struct SloppyDisposable&lt;T0&gt;  <a class="header-action link-secondary" title
   <h4 class="section">Type Parameters</h4>
   <dl class="parameters">
     <dt><code>T0</code></dt>
-    <dd><p>破棄時に呼び出す処理の引数の型.</p>
+    <dd><p>破棄時に呼び出す処理の第一引数の型.</p>
+</dd>
+    <dt><code>T1</code></dt>
+    <dd><p>破棄時に呼び出す処理の第二引数の型.</p>
+</dd>
+    <dt><code>T2</code></dt>
+    <dd><p>破棄時に呼び出す処理の第三引数の型.</p>
 </dd>
   </dl>
 
 
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
 
 
   <dl class="typelist inheritedMembers">
@@ -149,61 +161,36 @@ Struct SloppyDisposable&lt;T0&gt;  <a class="header-action link-secondary" title
 </h2>
 
 
-  <a id="MinimalUtility_SloppyDisposable_1__ctor_" data-uid="MinimalUtility.SloppyDisposable`1.#ctor*"></a>
+  <a id="MinimalUtility_UsingDisposable_3__ctor_" data-uid="MinimalUtility.UsingDisposable`3.#ctor*"></a>
 
-  <h3 id="MinimalUtility_SloppyDisposable_1__ctor__0_System_Action__0__" data-uid="MinimalUtility.SloppyDisposable`1.#ctor(`0,System.Action{`0})">
-  SloppyDisposable(T0, Action&lt;T0&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/SloppyDisposable.cs/#L44"><i class="bi bi-code-slash"></i></a>
+  <h3 id="MinimalUtility_UsingDisposable_3__ctor__0__1__2_System_Action__0__1__2__" data-uid="MinimalUtility.UsingDisposable`3.#ctor(`0,`1,`2,System.Action{`0,`1,`2})">
+  UsingDisposable(T0, T1, T2, Action&lt;T0, T1, T2&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/UsingDisposable.cs/#L112"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="MinimalUtility.SloppyDisposable-1.html">SloppyDisposable&lt;T0&gt;</a> struct.</p>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="MinimalUtility.UsingDisposable-3.html">UsingDisposable&lt;T0, T1, T2&gt;</a> struct.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public SloppyDisposable(T0 state0, Action&lt;T0&gt; onDispose)</code></pre>
+    <pre><code class="lang-csharp hljs">public UsingDisposable(T0 state0, T1 state1, T2 state2, Action&lt;T0, T1, T2&gt; onDispose)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>state0</code> <span class="xref">T0</span></dt>
-    <dd><p>破棄時に呼び出す処理の引数.</p>
+    <dd><p>破棄時に呼び出す処理の第一引数.</p>
 </dd>
-    <dt><code>onDispose</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;T0&gt;</dt>
+    <dt><code>state1</code> <span class="xref">T1</span></dt>
+    <dd><p>破棄時に呼び出す処理の第二引数.</p>
+</dd>
+    <dt><code>state2</code> <span class="xref">T2</span></dt>
+    <dd><p>破棄時に呼び出す処理の第三引数.</p>
+</dd>
+    <dt><code>onDispose</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-3">Action</a>&lt;T0, T1, T2&gt;</dt>
     <dd><p>破棄時に呼び出す処理.</p>
 </dd>
   </dl>
-
-
-
-
-
-
-
-
-
-
-
-
-  <h2 class="section" id="methods">Methods
-</h2>
-
-
-  <a id="MinimalUtility_SloppyDisposable_1_Dispose_" data-uid="MinimalUtility.SloppyDisposable`1.Dispose*"></a>
-
-  <h3 id="MinimalUtility_SloppyDisposable_1_Dispose" data-uid="MinimalUtility.SloppyDisposable`1.Dispose">
-  Dispose()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/SloppyDisposable.cs/#L53"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>破棄処理.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
-  </div>
-
 
 
 
