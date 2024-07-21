@@ -1,4 +1,14 @@
 {
+  "api/Cysharp.Threading.Tasks.UniTask.html": {
+    "href": "api/Cysharp.Threading.Tasks.UniTask.html",
+    "title": "Struct UniTask | |",
+    "keywords": "Struct UniTask Namespace Cysharp.Threading.Tasks public struct UniTask Inherited Members ValueType.Equals(object) ValueType.GetHashCode() ValueType.ToString() object.Equals(object, object) object.GetType() object.ReferenceEquals(object, object) Methods Defer<T>(T, Func<T, UniTask>) Defer the task creation just before call await. public static UniTask Defer<T>(T state, Func<T, UniTask> factory) Parameters state T factory Func<T, UniTask> Returns UniTask Type Parameters T Defer<TState, TResult>(TState, Func<TState, UniTask<TResult>>) Defer the task creation just before call await. public static UniTask<TResult> Defer<TState, TResult>(TState state, Func<TState, UniTask<TResult>> factory) Parameters state TState factory Func<TState, UniTask<TResult>> Returns UniTask<TResult> Type Parameters TState TResult WaitUntil<T>(T, Func<T, bool>, PlayerLoopTiming, CancellationToken, bool) public static UniTask WaitUntil<T>(T state, Func<T, bool> predicate, PlayerLoopTiming timing = null, CancellationToken cancellationToken = default, bool cancelImmediately = false) Parameters state T predicate Func<T, bool> timing PlayerLoopTiming cancellationToken CancellationToken cancelImmediately bool Returns UniTask Type Parameters T WaitWhile<T>(T, Func<T, bool>, PlayerLoopTiming, CancellationToken, bool) public static UniTask WaitWhile<T>(T state, Func<T, bool> predicate, PlayerLoopTiming timing = null, CancellationToken cancellationToken = default, bool cancelImmediately = false) Parameters state T predicate Func<T, bool> timing PlayerLoopTiming cancellationToken CancellationToken cancelImmediately bool Returns UniTask Type Parameters T"
+  },
+  "api/Cysharp.Threading.Tasks.html": {
+    "href": "api/Cysharp.Threading.Tasks.html",
+    "title": "Namespace Cysharp.Threading.Tasks | |",
+    "keywords": "Namespace Cysharp.Threading.Tasks Structs UniTask"
+  },
   "api/Global.UnityWebRequestHttpMessageHandler.html": {
     "href": "api/Global.UnityWebRequestHttpMessageHandler.html",
     "title": "Class UnityWebRequestHttpMessageHandler | |",
