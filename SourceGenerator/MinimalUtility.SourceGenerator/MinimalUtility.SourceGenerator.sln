@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinimalUtility.SourceGenerator", "MinimalUtility.SourceGenerator.csproj", "{CC446697-1E40-4017-9BD8-AA3888B26486}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinimalUtility.SourceGenerator.Test", "..\MinimalUtility.SourceGenerator.Test\MinimalUtility.SourceGenerator.Test.csproj", "{E9238015-5DAC-453C-B2C3-7F6E6EE09E1B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{CC446697-1E40-4017-9BD8-AA3888B26486}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CC446697-1E40-4017-9BD8-AA3888B26486}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CC446697-1E40-4017-9BD8-AA3888B26486}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E9238015-5DAC-453C-B2C3-7F6E6EE09E1B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9238015-5DAC-453C-B2C3-7F6E6EE09E1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9238015-5DAC-453C-B2C3-7F6E6EE09E1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9238015-5DAC-453C-B2C3-7F6E6EE09E1B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
