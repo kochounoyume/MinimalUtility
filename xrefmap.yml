@@ -73,6 +73,30 @@ references:
 - uid: Global
   name: ''
   href: api/Global.html
+- uid: Global.Fruits
+  name: Fruits
+  href: api/Global.Fruits.html
+  commentId: T:Global.Fruits
+  fullName: Fruits
+  nameWithType: Fruits
+- uid: Global.Fruits.Apple
+  name: Apple
+  href: api/Global.Fruits.html#Global_Fruits_Apple
+  commentId: F:Global.Fruits.Apple
+  fullName: Fruits.Apple
+  nameWithType: Fruits.Apple
+- uid: Global.Fruits.Banana
+  name: Banana
+  href: api/Global.Fruits.html#Global_Fruits_Banana
+  commentId: F:Global.Fruits.Banana
+  fullName: Fruits.Banana
+  nameWithType: Fruits.Banana
+- uid: Global.Fruits.Orange
+  name: Orange
+  href: api/Global.Fruits.html#Global_Fruits_Orange
+  commentId: F:Global.Fruits.Orange
+  fullName: Fruits.Orange
+  nameWithType: Fruits.Orange
 - uid: Global.UnityWebRequestHttpMessageHandler
   name: UnityWebRequestHttpMessageHandler
   href: api/Global.UnityWebRequestHttpMessageHandler.html
