@@ -41,7 +41,7 @@ internal sealed class EnumStringConverterGenerator : IIncrementalGenerator
 
                           public partial class {{targetTypeName}}StringConverter
                           {
-                              private readonly string[] values = new string[]
+                              private readonly string[] names = new string[]
                               {
                           """ :
                         $$"""
@@ -51,7 +51,7 @@ internal sealed class EnumStringConverterGenerator : IIncrementalGenerator
                           {
                               public partial class {{targetTypeName}}StringConverter
                               {
-                                  private readonly string[] values = new string[]
+                                  private readonly string[] names = new string[]
                                   {
                           """
                     );
@@ -84,18 +84,37 @@ internal sealed class EnumStringConverterGenerator : IIncrementalGenerator
 
                     builder.AppendLine(isGlobalNamespace ? "    };" : "        };");
                     builder.AppendLine();
+                    builder.Append(isGlobalNamespace
+                        ? $$"""
+                                public ReadOnlySpan<string> MemberNames => names;
+                                
+                                public ReadOnlySpan<{{targetNestedTypeName}}> MemberValues
+                                    => new {{targetNestedTypeName}}[] {
+                            """
+                        : $$"""
+                                    public ReadOnlySpan<string> MemberNames => names;
+                                    
+                                    public ReadOnlySpan<{{targetNestedTypeName}}> MemberValues
+                                        => new {{targetNestedTypeName}}[] {
+                            """
+                    );
+                    builder.Append(" ");
+
+                    foreach (string fieldName in fieldNames)
+                    {
+                        builder.Append($"{targetNestedTypeName}.{fieldName}, ");
+                    }
+                    builder.AppendLine("};");
+
+                    builder.AppendLine();
                     builder.AppendLine(isGlobalNamespace
                         ? $$"""
-                                public ReadOnlySpan<string> MemberValues => values;
-                            
                                 public ref readonly string Convert(in {{targetNestedTypeName}} value)
                                 {
                                     switch (({{baseType}})value)
                                     {
                             """
                         : $$"""
-                                    public ReadOnlySpan<string> MemberValues => values;
-                            
                                     public ref readonly string Convert(in {{targetNestedTypeName}} value)
                                     {
                                         switch (({{baseType}})value)
@@ -108,11 +127,11 @@ internal sealed class EnumStringConverterGenerator : IIncrementalGenerator
                         builder.AppendLine(isGlobalNamespace
                             ? $"""
                                            case {values[i]}:
-                                               return ref values[{i}];
+                                               return ref names[{i}];
                                """
                             : $"""
                                                case {values[i]}:
-                                                   return ref values[{i}];
+                                                   return ref names[{i}];
                                """
                         );
                     }
@@ -126,9 +145,9 @@ internal sealed class EnumStringConverterGenerator : IIncrementalGenerator
                                     }
                                 }
                                 
-                                public {{targetNestedTypeName}} ReverseConvert(in string str)
+                                public {{targetNestedTypeName}} ReverseConvert(in string name)
                                 {
-                                    switch (Array.IndexOf(values, str))
+                                    switch (Array.IndexOf(names, name))
                                     {
                             """
                         : $$"""
@@ -137,9 +156,9 @@ internal sealed class EnumStringConverterGenerator : IIncrementalGenerator
                                         }
                                     }
                                     
-                                    public {{targetNestedTypeName}} ReverseConvert(in string str)
+                                    public {{targetNestedTypeName}} ReverseConvert(in string name)
                                     {
-                                        switch (Array.IndexOf(values, str))
+                                        switch (Array.IndexOf(names, name))
                                         {
                             """
                     );
@@ -160,21 +179,22 @@ internal sealed class EnumStringConverterGenerator : IIncrementalGenerator
 
                     fieldNames.Clear();
 
-                    builder.Append(isGlobalNamespace ? """
-                                                                   default:
-                                                                       throw new InvalidCastException(str);
-                                                               }
-                                                           }
-                                                       }
-                                                       """ :
-                        """
-                                        default:
-                                            throw new InvalidCastException(str);
-                                    }
-                                }
-                            }
-                        }
-                        """);
+                    builder.Append(isGlobalNamespace
+                        ? """
+                                      default:
+                                          throw new InvalidCastException(name);
+                                  }
+                              }
+                          }
+                          """
+                        : """
+                                          default:
+                                              throw new InvalidCastException(name);
+                                      }
+                                  }
+                              }
+                          }
+                          """);
 
                     context.AddSource($"{fullType}.StringConverter.g.cs", builder.ToString());
                 }
