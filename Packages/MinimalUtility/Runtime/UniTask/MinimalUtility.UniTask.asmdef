@@ -1,0 +1,24 @@
+{
+    "name": "MinimalUtility.UniTask",
+    "rootNamespace": "MinimalUtility.UniTask",
+    "references": [
+        "GUID:f51ebe6a0ceec4240a699833d6309b23"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": true,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [
+        "ENABLE_UNITASK"
+    ],
+    "versionDefines": [
+        {
+            "name": "com.cysharp.unitask",
+            "expression": "",
+            "define": "ENABLE_UNITASK"
+        }
+    ],
+    "noEngineReferences": false
+}
