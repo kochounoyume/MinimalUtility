@@ -1,4 +1,4 @@
-﻿#if ENABLE_R3 && ENABLE_UNITASK
+﻿#if ENABLE_VCONTAINER
 using VContainer.Unity;
 
 namespace MinimalUtility.VContainer

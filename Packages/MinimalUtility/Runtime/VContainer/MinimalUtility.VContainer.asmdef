@@ -2,9 +2,7 @@
     "name": "MinimalUtility.VContainer",
     "rootNamespace": "MinimalUtility.VContainer",
     "references": [
-        "GUID:b0214a6008ed146ff8f122a6a9c2f6cc",
-        "GUID:2294a65d721f9974ca66d13b434e6b7b",
-        "GUID:f51ebe6a0ceec4240a699833d6309b23"
+        "GUID:b0214a6008ed146ff8f122a6a9c2f6cc"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
@@ -20,16 +18,6 @@
             "name": "jp.hadashikick.vcontainer",
             "expression": "",
             "define": "ENABLE_VCONTAINER"
-        },
-        {
-            "name": "com.cysharp.r3",
-            "expression": "",
-            "define": "ENABLE_R3"
-        },
-        {
-            "name": "com.cysharp.unitask",
-            "expression": "",
-            "define": "ENABLE_UNITASK"
         }
     ],
     "noEngineReferences": false

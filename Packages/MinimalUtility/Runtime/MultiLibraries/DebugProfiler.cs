@@ -1,5 +1,4 @@
-﻿#if ENABLE_R3 && ENABLE_UNITASK
-using System;
+﻿using System;
 using System.Text;
 using System.Threading;
 using Cysharp.Threading.Tasks;
@@ -128,4 +127,3 @@ namespace MinimalUtility
         }
     }
 }
-#endif
