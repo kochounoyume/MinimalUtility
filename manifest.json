@@ -105,26 +105,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/MinimalUtility.DebugProfiler.MemoryUnit.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MinimalUtility.DebugProfiler.MemoryUnit.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MinimalUtility.DebugProfiler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MinimalUtility.DebugProfiler.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/MinimalUtility.DisposableExtensions.yml",
       "output": {
         ".html": {
@@ -209,6 +189,36 @@
       "output": {
         ".html": {
           "relative_path": "api/MinimalUtility.MinimalSelectableGraphic.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MinimalUtility.MultiLibraries.DebugProfiler.MemoryUnit.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MinimalUtility.MultiLibraries.DebugProfiler.MemoryUnit.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MinimalUtility.MultiLibraries.DebugProfiler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MinimalUtility.MultiLibraries.DebugProfiler.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MinimalUtility.MultiLibraries.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MinimalUtility.MultiLibraries.html"
         }
       },
       "version": ""
