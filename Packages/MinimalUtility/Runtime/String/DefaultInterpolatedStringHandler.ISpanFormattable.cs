@@ -1,3 +1,4 @@
+#if !NET6_0_OR_GREATER
 #nullable enable
 
 namespace System.Runtime.CompilerServices
@@ -790,4 +791,6 @@ namespace System.Runtime.CompilerServices
 
     }
 }
+
+#endif
 
