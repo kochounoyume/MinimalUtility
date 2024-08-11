@@ -1,8 +1,7 @@
-﻿#if ENABLE_R3
-using System;
+﻿using System;
 using R3;
 
-namespace MinimalUtility
+namespace MinimalUtility.R3
 {
     /// <content>
     /// Observableの拡張メソッド.
@@ -58,4 +57,3 @@ namespace MinimalUtility
         }
     }
 }
-#endif

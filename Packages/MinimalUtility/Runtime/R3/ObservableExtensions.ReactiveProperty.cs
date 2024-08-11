@@ -1,11 +1,10 @@
-﻿#if ENABLE_R3
-using System;
+﻿using System;
 using System.Runtime.CompilerServices;
 using System.Threading;
 using System.Threading.Tasks;
 using R3;
 
-namespace MinimalUtility
+namespace MinimalUtility.R3
 {
     /// <summary>
     /// <see cref="ReactiveProperty{T}"/>の拡張メソッド.
@@ -40,4 +39,3 @@ namespace MinimalUtility
         }
     }
 }
-#endif

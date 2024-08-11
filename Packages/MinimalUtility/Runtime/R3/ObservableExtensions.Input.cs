@@ -1,5 +1,4 @@
-﻿#if ENABLE_R3
-using System;
+﻿using System;
 using System.Threading;
 using R3;
 #if ENABLE_UNITASK
@@ -8,7 +7,7 @@ using Task = Cysharp.Threading.Tasks.UniTask;
 using Task = System.Threading.Tasks.ValueTask;
 #endif
 
-namespace MinimalUtility
+namespace MinimalUtility.R3
 {
     /// <content>
     /// Observableの拡張メソッド.
@@ -67,4 +66,3 @@ namespace MinimalUtility
         }
     }
 }
-#endif

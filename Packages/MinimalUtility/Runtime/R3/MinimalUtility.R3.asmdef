@@ -1,0 +1,27 @@
+{
+    "name": "MinimalUtility.R3",
+    "rootNamespace": "MinimalUtility.R3",
+    "references": [
+        "GUID:77221876cc6b8244180b96e320b1bcd4"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": true,
+    "precompiledReferences": [
+        "R3.dll",
+        "Microsoft.Bcl.TimeProvider.dll"
+    ],
+    "autoReferenced": true,
+    "defineConstraints": [
+        "ENABLE_R3"
+    ],
+    "versionDefines": [
+        {
+            "name": "com.cysharp.r3",
+            "expression": "",
+            "define": "ENABLE_R3"
+        }
+    ],
+    "noEngineReferences": false
+}
