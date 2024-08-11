@@ -1,7 +1,6 @@
 ﻿// Licensed to the .NET Foundation under one or more agreements.
 // The .NET Foundation licenses this file to you under the MIT license.
 
-#if !NET6_0_OR_GREATER
 #nullable enable
 
 using System;
@@ -26,5 +25,3 @@ public static partial class StringUtils
     public static string Create(IFormatProvider? provider, Span<char> initialBuffer, [InterpolatedStringHandlerArgument("provider", "initialBuffer")] ref DefaultInterpolatedStringHandler handler) =>
         handler.ToStringAndClear();
 }
-
-#endif

@@ -30,18 +30,18 @@ namespace MinimalUtility
     /// <summary>
     /// usingステートメントスコープを抜けた際にコールバックを呼び出すための構造体.
     /// </summary>
-    /// <typeparam name="T0">破棄時に呼び出す処理の引数の型.</typeparam>
-    public readonly struct UsingDisposable<T0> : IDisposable
+    /// <typeparam name="T1">破棄時に呼び出す処理の引数の型.</typeparam>
+    public readonly struct UsingDisposable<T1> : IDisposable
     {
-        private readonly T0 state0;
-        private readonly Action<T0> onDispose;
+        private readonly T1 state0;
+        private readonly Action<T1> onDispose;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="UsingDisposable{T}"/> struct.
         /// </summary>
         /// <param name="state0">破棄時に呼び出す処理の引数.</param>
         /// <param name="onDispose">破棄時に呼び出す処理.</param>
-        public UsingDisposable(T0 state0, Action<T0> onDispose)
+        public UsingDisposable(T1 state0, Action<T1> onDispose)
         {
             this.state0 = state0;
             this.onDispose = onDispose;
@@ -59,13 +59,13 @@ namespace MinimalUtility
     /// <summary>
     /// usingステートメントスコープを抜けた際にコールバックを呼び出すための構造体.
     /// </summary>
-    /// <typeparam name="T0">破棄時に呼び出す処理の第一引数の型.</typeparam>
-    /// <typeparam name="T1">破棄時に呼び出す処理の第二引数の型.</typeparam>
-    public readonly struct UsingDisposable<T0, T1> : IDisposable
+    /// <typeparam name="T1">破棄時に呼び出す処理の第一引数の型.</typeparam>
+    /// <typeparam name="T2">破棄時に呼び出す処理の第二引数の型.</typeparam>
+    public readonly struct UsingDisposable<T1, T2> : IDisposable
     {
-        private readonly T0 state0;
-        private readonly T1 state1;
-        private readonly Action<T0, T1> onDispose;
+        private readonly T1 state0;
+        private readonly T2 state1;
+        private readonly Action<T1, T2> onDispose;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="UsingDisposable{T0, T1}"/> struct.
@@ -73,7 +73,7 @@ namespace MinimalUtility
         /// <param name="state0">破棄時に呼び出す処理の第一引数.</param>
         /// <param name="state1">破棄時に呼び出す処理の第二引数.</param>
         /// <param name="onDispose">破棄時に呼び出す処理.</param>
-        public UsingDisposable(T0 state0, T1 state1, Action<T0, T1> onDispose)
+        public UsingDisposable(T1 state0, T2 state1, Action<T1, T2> onDispose)
         {
             this.state0 = state0;
             this.state1 = state1;
@@ -92,15 +92,15 @@ namespace MinimalUtility
     /// <summary>
     /// usingステートメントスコープを抜けた際にコールバックを呼び出すための構造体.
     /// </summary>
-    /// <typeparam name="T0">破棄時に呼び出す処理の第一引数の型.</typeparam>
-    /// <typeparam name="T1">破棄時に呼び出す処理の第二引数の型.</typeparam>
-    /// <typeparam name="T2">破棄時に呼び出す処理の第三引数の型.</typeparam>
-    public readonly struct UsingDisposable<T0, T1, T2> : IDisposable
+    /// <typeparam name="T1">破棄時に呼び出す処理の第一引数の型.</typeparam>
+    /// <typeparam name="T2">破棄時に呼び出す処理の第二引数の型.</typeparam>
+    /// <typeparam name="T3">破棄時に呼び出す処理の第三引数の型.</typeparam>
+    public readonly struct UsingDisposable<T1, T2, T3> : IDisposable
     {
-        private readonly T0 state0;
-        private readonly T1 state1;
-        private readonly T2 state2;
-        private readonly Action<T0, T1, T2> onDispose;
+        private readonly T1 state0;
+        private readonly T2 state1;
+        private readonly T3 state2;
+        private readonly Action<T1, T2, T3> onDispose;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="UsingDisposable{T0, T1, T2}"/> struct.
@@ -109,7 +109,7 @@ namespace MinimalUtility
         /// <param name="state1">破棄時に呼び出す処理の第二引数.</param>
         /// <param name="state2">破棄時に呼び出す処理の第三引数.</param>
         /// <param name="onDispose">破棄時に呼び出す処理.</param>
-        public UsingDisposable(T0 state0, T1 state1, T2 state2, Action<T0, T1, T2> onDispose)
+        public UsingDisposable(T1 state0, T2 state1, T3 state2, Action<T1, T2, T3> onDispose)
         {
             this.state0 = state0;
             this.state1 = state1;
