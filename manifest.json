@@ -265,6 +265,26 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/MinimalUtility.String.StringUtils.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MinimalUtility.String.StringUtils.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MinimalUtility.String.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MinimalUtility.String.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/MinimalUtility.UsingDisposable-1.yml",
       "output": {
         ".html": {
@@ -329,6 +349,26 @@
       "output": {
         ".html": {
           "relative_path": "api/MinimalUtility.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Runtime.CompilerServices.DefaultInterpolatedStringHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Runtime.CompilerServices.DefaultInterpolatedStringHandler.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Runtime.CompilerServices.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Runtime.CompilerServices.html"
         }
       },
       "version": ""
