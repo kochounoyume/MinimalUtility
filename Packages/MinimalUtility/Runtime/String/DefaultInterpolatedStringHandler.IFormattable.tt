@@ -2,7 +2,7 @@
 <#@ assembly name="System.Core" #>
 <#@ output extension=".cs" #>
 <#
-    var formattableType = new string[]
+    var formattableTypes = new string[]
     {
         "UnityEngine.Bounds",
         "UnityEngine.BoundsInt",
@@ -30,7 +30,7 @@ namespace System.Runtime.CompilerServices
 {
     public ref partial struct DefaultInterpolatedStringHandler
     {
-<# foreach (var typeStr in formattableType) { #>
+<# foreach (var typeStr in formattableTypes) { #>
         public void AppendFormatted(<#= typeStr #> value)
         {
             // If there's a custom formatter, always use it.

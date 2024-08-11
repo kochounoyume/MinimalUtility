@@ -15,7 +15,7 @@ namespace System.Runtime.CompilerServices
             }
 
             int charsWritten;
-            while (!value.TryFormat(_chars.Slice(_pos), out charsWritten, null, _provider)) // constrained call avoiding boxing for value types
+            while (!value.TryFormat(_chars.Slice(_pos), out charsWritten, format: null, _provider)) // constrained call avoiding boxing for value types
             {
                 Grow();
             }
@@ -43,7 +43,7 @@ namespace System.Runtime.CompilerServices
             }
 
             int charsWritten;
-            while (!value.TryFormat(_chars.Slice(_pos), out charsWritten, format, _provider)) // constrained call avoiding boxing for value types
+            while (!value.TryFormat(_chars.Slice(_pos), out charsWritten, format: format, _provider)) // constrained call avoiding boxing for value types
             {
                 Grow();
             }
@@ -71,7 +71,7 @@ namespace System.Runtime.CompilerServices
             }
 
             int charsWritten;
-            while (!value.TryFormat(_chars.Slice(_pos), out charsWritten, null, _provider)) // constrained call avoiding boxing for value types
+            while (!value.TryFormat(_chars.Slice(_pos), out charsWritten, format: null, _provider)) // constrained call avoiding boxing for value types
             {
                 Grow();
             }
@@ -99,7 +99,7 @@ namespace System.Runtime.CompilerServices
             }
 
             int charsWritten;
-            while (!value.TryFormat(_chars.Slice(_pos), out charsWritten, format, _provider)) // constrained call avoiding boxing for value types
+            while (!value.TryFormat(_chars.Slice(_pos), out charsWritten, format: format, _provider)) // constrained call avoiding boxing for value types
             {
                 Grow();
             }
@@ -127,7 +127,7 @@ namespace System.Runtime.CompilerServices
             }
 
             int charsWritten;
-            while (!value.TryFormat(_chars.Slice(_pos), out charsWritten, null, _provider)) // constrained call avoiding boxing for value types
+            while (!value.TryFormat(_chars.Slice(_pos), out charsWritten, format: null, _provider)) // constrained call avoiding boxing for value types
             {
                 Grow();
             }
@@ -155,7 +155,7 @@ namespace System.Runtime.CompilerServices
             }
 
             int charsWritten;
-            while (!value.TryFormat(_chars.Slice(_pos), out charsWritten, format, _provider)) // constrained call avoiding boxing for value types
+            while (!value.TryFormat(_chars.Slice(_pos), out charsWritten, format: format, _provider)) // constrained call avoiding boxing for value types
             {
                 Grow();
             }
@@ -183,7 +183,7 @@ namespace System.Runtime.CompilerServices
             }
 
             int charsWritten;
-            while (!value.TryFormat(_chars.Slice(_pos), out charsWritten, null, _provider)) // constrained call avoiding boxing for value types
+            while (!value.TryFormat(_chars.Slice(_pos), out charsWritten, format: null, _provider)) // constrained call avoiding boxing for value types
             {
                 Grow();
             }
@@ -211,7 +211,7 @@ namespace System.Runtime.CompilerServices
             }
 
             int charsWritten;
-            while (!value.TryFormat(_chars.Slice(_pos), out charsWritten, format, _provider)) // constrained call avoiding boxing for value types
+            while (!value.TryFormat(_chars.Slice(_pos), out charsWritten, format: format, _provider)) // constrained call avoiding boxing for value types
             {
                 Grow();
             }
@@ -239,7 +239,7 @@ namespace System.Runtime.CompilerServices
             }
 
             int charsWritten;
-            while (!value.TryFormat(_chars.Slice(_pos), out charsWritten, null, _provider)) // constrained call avoiding boxing for value types
+            while (!value.TryFormat(_chars.Slice(_pos), out charsWritten, format: null, _provider)) // constrained call avoiding boxing for value types
             {
                 Grow();
             }
@@ -267,7 +267,7 @@ namespace System.Runtime.CompilerServices
             }
 
             int charsWritten;
-            while (!value.TryFormat(_chars.Slice(_pos), out charsWritten, format, _provider)) // constrained call avoiding boxing for value types
+            while (!value.TryFormat(_chars.Slice(_pos), out charsWritten, format: format, _provider)) // constrained call avoiding boxing for value types
             {
                 Grow();
             }
@@ -295,7 +295,7 @@ namespace System.Runtime.CompilerServices
             }
 
             int charsWritten;
-            while (!value.TryFormat(_chars.Slice(_pos), out charsWritten, null, _provider)) // constrained call avoiding boxing for value types
+            while (!value.TryFormat(_chars.Slice(_pos), out charsWritten, format: null, _provider)) // constrained call avoiding boxing for value types
             {
                 Grow();
             }
@@ -323,7 +323,7 @@ namespace System.Runtime.CompilerServices
             }
 
             int charsWritten;
-            while (!value.TryFormat(_chars.Slice(_pos), out charsWritten, format, _provider)) // constrained call avoiding boxing for value types
+            while (!value.TryFormat(_chars.Slice(_pos), out charsWritten, format: format, _provider)) // constrained call avoiding boxing for value types
             {
                 Grow();
             }
@@ -351,7 +351,7 @@ namespace System.Runtime.CompilerServices
             }
 
             int charsWritten;
-            while (!value.TryFormat(_chars.Slice(_pos), out charsWritten, null, _provider)) // constrained call avoiding boxing for value types
+            while (!value.TryFormat(_chars.Slice(_pos), out charsWritten, format: null, _provider)) // constrained call avoiding boxing for value types
             {
                 Grow();
             }
@@ -379,7 +379,7 @@ namespace System.Runtime.CompilerServices
             }
 
             int charsWritten;
-            while (!value.TryFormat(_chars.Slice(_pos), out charsWritten, format, _provider)) // constrained call avoiding boxing for value types
+            while (!value.TryFormat(_chars.Slice(_pos), out charsWritten, format: format, _provider)) // constrained call avoiding boxing for value types
             {
                 Grow();
             }
@@ -407,7 +407,7 @@ namespace System.Runtime.CompilerServices
             }
 
             int charsWritten;
-            while (!value.TryFormat(_chars.Slice(_pos), out charsWritten, null, _provider)) // constrained call avoiding boxing for value types
+            while (!value.TryFormat(_chars.Slice(_pos), out charsWritten, format: null, _provider)) // constrained call avoiding boxing for value types
             {
                 Grow();
             }
@@ -435,7 +435,7 @@ namespace System.Runtime.CompilerServices
             }
 
             int charsWritten;
-            while (!value.TryFormat(_chars.Slice(_pos), out charsWritten, format, _provider)) // constrained call avoiding boxing for value types
+            while (!value.TryFormat(_chars.Slice(_pos), out charsWritten, format: format, _provider)) // constrained call avoiding boxing for value types
             {
                 Grow();
             }
@@ -463,7 +463,7 @@ namespace System.Runtime.CompilerServices
             }
 
             int charsWritten;
-            while (!value.TryFormat(_chars.Slice(_pos), out charsWritten, null, _provider)) // constrained call avoiding boxing for value types
+            while (!value.TryFormat(_chars.Slice(_pos), out charsWritten, format: null, _provider)) // constrained call avoiding boxing for value types
             {
                 Grow();
             }
@@ -491,7 +491,7 @@ namespace System.Runtime.CompilerServices
             }
 
             int charsWritten;
-            while (!value.TryFormat(_chars.Slice(_pos), out charsWritten, format, _provider)) // constrained call avoiding boxing for value types
+            while (!value.TryFormat(_chars.Slice(_pos), out charsWritten, format: format, _provider)) // constrained call avoiding boxing for value types
             {
                 Grow();
             }
@@ -519,7 +519,7 @@ namespace System.Runtime.CompilerServices
             }
 
             int charsWritten;
-            while (!value.TryFormat(_chars.Slice(_pos), out charsWritten, null, _provider)) // constrained call avoiding boxing for value types
+            while (!value.TryFormat(_chars.Slice(_pos), out charsWritten, format: null, _provider)) // constrained call avoiding boxing for value types
             {
                 Grow();
             }
@@ -547,7 +547,7 @@ namespace System.Runtime.CompilerServices
             }
 
             int charsWritten;
-            while (!value.TryFormat(_chars.Slice(_pos), out charsWritten, format, _provider)) // constrained call avoiding boxing for value types
+            while (!value.TryFormat(_chars.Slice(_pos), out charsWritten, format: format, _provider)) // constrained call avoiding boxing for value types
             {
                 Grow();
             }
@@ -575,7 +575,7 @@ namespace System.Runtime.CompilerServices
             }
 
             int charsWritten;
-            while (!value.TryFormat(_chars.Slice(_pos), out charsWritten, null, _provider)) // constrained call avoiding boxing for value types
+            while (!value.TryFormat(_chars.Slice(_pos), out charsWritten, format: null, _provider)) // constrained call avoiding boxing for value types
             {
                 Grow();
             }
@@ -603,7 +603,7 @@ namespace System.Runtime.CompilerServices
             }
 
             int charsWritten;
-            while (!value.TryFormat(_chars.Slice(_pos), out charsWritten, format, _provider)) // constrained call avoiding boxing for value types
+            while (!value.TryFormat(_chars.Slice(_pos), out charsWritten, format: format, _provider)) // constrained call avoiding boxing for value types
             {
                 Grow();
             }
@@ -631,7 +631,7 @@ namespace System.Runtime.CompilerServices
             }
 
             int charsWritten;
-            while (!value.TryFormat(_chars.Slice(_pos), out charsWritten, null, _provider)) // constrained call avoiding boxing for value types
+            while (!value.TryFormat(_chars.Slice(_pos), out charsWritten, format: null, _provider)) // constrained call avoiding boxing for value types
             {
                 Grow();
             }
@@ -659,7 +659,7 @@ namespace System.Runtime.CompilerServices
             }
 
             int charsWritten;
-            while (!value.TryFormat(_chars.Slice(_pos), out charsWritten, format, _provider)) // constrained call avoiding boxing for value types
+            while (!value.TryFormat(_chars.Slice(_pos), out charsWritten, format: format, _provider)) // constrained call avoiding boxing for value types
             {
                 Grow();
             }
@@ -687,7 +687,7 @@ namespace System.Runtime.CompilerServices
             }
 
             int charsWritten;
-            while (!value.TryFormat(_chars.Slice(_pos), out charsWritten, null, _provider)) // constrained call avoiding boxing for value types
+            while (!value.TryFormat(_chars.Slice(_pos), out charsWritten, format: null, _provider)) // constrained call avoiding boxing for value types
             {
                 Grow();
             }
@@ -715,7 +715,7 @@ namespace System.Runtime.CompilerServices
             }
 
             int charsWritten;
-            while (!value.TryFormat(_chars.Slice(_pos), out charsWritten, format, _provider)) // constrained call avoiding boxing for value types
+            while (!value.TryFormat(_chars.Slice(_pos), out charsWritten, format: format, _provider)) // constrained call avoiding boxing for value types
             {
                 Grow();
             }
@@ -743,7 +743,7 @@ namespace System.Runtime.CompilerServices
             }
 
             int charsWritten;
-            while (!value.TryFormat(_chars.Slice(_pos), out charsWritten, null, _provider)) // constrained call avoiding boxing for value types
+            while (!value.TryFormat(_chars.Slice(_pos), out charsWritten, format: null, _provider)) // constrained call avoiding boxing for value types
             {
                 Grow();
             }
@@ -771,7 +771,7 @@ namespace System.Runtime.CompilerServices
             }
 
             int charsWritten;
-            while (!value.TryFormat(_chars.Slice(_pos), out charsWritten, format, _provider)) // constrained call avoiding boxing for value types
+            while (!value.TryFormat(_chars.Slice(_pos), out charsWritten, format: format, _provider)) // constrained call avoiding boxing for value types
             {
                 Grow();
             }
@@ -780,6 +780,118 @@ namespace System.Runtime.CompilerServices
         }
 
         public void AppendFormatted(TimeSpan value, int alignment, string? format)
+        {
+            int startingPos = _pos;
+            AppendFormatted(value, format);
+            if (alignment != 0)
+            {
+                AppendOrInsertAlignmentIfNeeded(startingPos, alignment);
+            }
+        }
+
+        public void AppendFormatted(Guid value)
+        {
+            // If there's a custom formatter, always use it.
+            if (_hasCustomFormatter)
+            {
+                AppendCustomFormatter(value, format: null);
+                return;
+            }
+
+            int charsWritten;
+            while (!value.TryFormat(_chars.Slice(_pos), out charsWritten, format: null)) // constrained call avoiding boxing for value types
+            {
+                Grow();
+            }
+
+            _pos += charsWritten;
+        }
+
+        public void AppendFormatted(Guid value, int alignment)
+        {
+            int startingPos = _pos;
+            AppendFormatted(value);
+            if (alignment != 0)
+            {
+                AppendOrInsertAlignmentIfNeeded(startingPos, alignment);
+            }
+        }
+
+        public void AppendFormatted(Guid value, string? format)
+        {
+            // If there's a custom formatter, always use it.
+            if (_hasCustomFormatter)
+            {
+                AppendCustomFormatter(value, format);
+                return;
+            }
+
+            int charsWritten;
+            while (!value.TryFormat(_chars.Slice(_pos), out charsWritten, format: format)) // constrained call avoiding boxing for value types
+            {
+                Grow();
+            }
+
+            _pos += charsWritten;
+        }
+
+        public void AppendFormatted(Guid value, int alignment, string? format)
+        {
+            int startingPos = _pos;
+            AppendFormatted(value, format);
+            if (alignment != 0)
+            {
+                AppendOrInsertAlignmentIfNeeded(startingPos, alignment);
+            }
+        }
+
+        public void AppendFormatted(bool value)
+        {
+            // If there's a custom formatter, always use it.
+            if (_hasCustomFormatter)
+            {
+                AppendCustomFormatter(value, format: null);
+                return;
+            }
+
+            int charsWritten;
+            while (!value.TryFormat(_chars.Slice(_pos), out charsWritten)) // constrained call avoiding boxing for value types
+            {
+                Grow();
+            }
+
+            _pos += charsWritten;
+        }
+
+        public void AppendFormatted(bool value, int alignment)
+        {
+            int startingPos = _pos;
+            AppendFormatted(value);
+            if (alignment != 0)
+            {
+                AppendOrInsertAlignmentIfNeeded(startingPos, alignment);
+            }
+        }
+
+        public void AppendFormatted(bool value, string? format)
+        {
+            // If there's a custom formatter, always use it.
+            if (_hasCustomFormatter)
+            {
+                AppendCustomFormatter(value, format);
+                return;
+            }
+
+            int charsWritten;
+            while (!value.TryFormat(_chars.Slice(_pos), out charsWritten)) // constrained call avoiding boxing for value types
+            {
+                Grow();
+            }
+
+            _pos += charsWritten;
+        }
+
+        public void AppendFormatted(bool value, int alignment, string? format)
         {
             int startingPos = _pos;
             AppendFormatted(value, format);
