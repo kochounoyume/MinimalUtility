@@ -1216,6 +1216,22 @@ references:
   isSpec: "True"
   fullName: MinimalUtility.RectTransformExtensions.SetFullStretch
   nameWithType: RectTransformExtensions.SetFullStretch
+- uid: MinimalUtility.RectTransformExtensions.SetSafeHeight(RectTransform,System.Single@)
+  name: SetSafeHeight(RectTransform, in float)
+  href: api/MinimalUtility.RectTransformExtensions.html#MinimalUtility_RectTransformExtensions_SetSafeHeight_RectTransform_System_Single__
+  commentId: M:MinimalUtility.RectTransformExtensions.SetSafeHeight(RectTransform,System.Single@)
+  name.vb: SetSafeHeight(RectTransform, Single)
+  fullName: MinimalUtility.RectTransformExtensions.SetSafeHeight(RectTransform, in float)
+  fullName.vb: MinimalUtility.RectTransformExtensions.SetSafeHeight(RectTransform, Single)
+  nameWithType: RectTransformExtensions.SetSafeHeight(RectTransform, in float)
+  nameWithType.vb: RectTransformExtensions.SetSafeHeight(RectTransform, Single)
+- uid: MinimalUtility.RectTransformExtensions.SetSafeHeight*
+  name: SetSafeHeight
+  href: api/MinimalUtility.RectTransformExtensions.html#MinimalUtility_RectTransformExtensions_SetSafeHeight_
+  commentId: Overload:MinimalUtility.RectTransformExtensions.SetSafeHeight
+  isSpec: "True"
+  fullName: MinimalUtility.RectTransformExtensions.SetSafeHeight
+  nameWithType: RectTransformExtensions.SetSafeHeight
 - uid: MinimalUtility.RectTransformExtensions.SetSafeSize(RectTransform,System.Single@,System.Single@)
   name: SetSafeSize(RectTransform, in float, in float)
   href: api/MinimalUtility.RectTransformExtensions.html#MinimalUtility_RectTransformExtensions_SetSafeSize_RectTransform_System_Single__System_Single__
@@ -1238,38 +1254,22 @@ references:
   isSpec: "True"
   fullName: MinimalUtility.RectTransformExtensions.SetSafeSize
   nameWithType: RectTransformExtensions.SetSafeSize
-- uid: MinimalUtility.RectTransformExtensions.SetSafeSizeHeight(RectTransform,System.Single@)
-  name: SetSafeSizeHeight(RectTransform, in float)
-  href: api/MinimalUtility.RectTransformExtensions.html#MinimalUtility_RectTransformExtensions_SetSafeSizeHeight_RectTransform_System_Single__
-  commentId: M:MinimalUtility.RectTransformExtensions.SetSafeSizeHeight(RectTransform,System.Single@)
-  name.vb: SetSafeSizeHeight(RectTransform, Single)
-  fullName: MinimalUtility.RectTransformExtensions.SetSafeSizeHeight(RectTransform, in float)
-  fullName.vb: MinimalUtility.RectTransformExtensions.SetSafeSizeHeight(RectTransform, Single)
-  nameWithType: RectTransformExtensions.SetSafeSizeHeight(RectTransform, in float)
-  nameWithType.vb: RectTransformExtensions.SetSafeSizeHeight(RectTransform, Single)
-- uid: MinimalUtility.RectTransformExtensions.SetSafeSizeHeight*
-  name: SetSafeSizeHeight
-  href: api/MinimalUtility.RectTransformExtensions.html#MinimalUtility_RectTransformExtensions_SetSafeSizeHeight_
-  commentId: Overload:MinimalUtility.RectTransformExtensions.SetSafeSizeHeight
+- uid: MinimalUtility.RectTransformExtensions.SetSafeWidth(RectTransform,System.Single@)
+  name: SetSafeWidth(RectTransform, in float)
+  href: api/MinimalUtility.RectTransformExtensions.html#MinimalUtility_RectTransformExtensions_SetSafeWidth_RectTransform_System_Single__
+  commentId: M:MinimalUtility.RectTransformExtensions.SetSafeWidth(RectTransform,System.Single@)
+  name.vb: SetSafeWidth(RectTransform, Single)
+  fullName: MinimalUtility.RectTransformExtensions.SetSafeWidth(RectTransform, in float)
+  fullName.vb: MinimalUtility.RectTransformExtensions.SetSafeWidth(RectTransform, Single)
+  nameWithType: RectTransformExtensions.SetSafeWidth(RectTransform, in float)
+  nameWithType.vb: RectTransformExtensions.SetSafeWidth(RectTransform, Single)
+- uid: MinimalUtility.RectTransformExtensions.SetSafeWidth*
+  name: SetSafeWidth
+  href: api/MinimalUtility.RectTransformExtensions.html#MinimalUtility_RectTransformExtensions_SetSafeWidth_
+  commentId: Overload:MinimalUtility.RectTransformExtensions.SetSafeWidth
   isSpec: "True"
-  fullName: MinimalUtility.RectTransformExtensions.SetSafeSizeHeight
-  nameWithType: RectTransformExtensions.SetSafeSizeHeight
-- uid: MinimalUtility.RectTransformExtensions.SetSafeSizeWidth(RectTransform,System.Single@)
-  name: SetSafeSizeWidth(RectTransform, in float)
-  href: api/MinimalUtility.RectTransformExtensions.html#MinimalUtility_RectTransformExtensions_SetSafeSizeWidth_RectTransform_System_Single__
-  commentId: M:MinimalUtility.RectTransformExtensions.SetSafeSizeWidth(RectTransform,System.Single@)
-  name.vb: SetSafeSizeWidth(RectTransform, Single)
-  fullName: MinimalUtility.RectTransformExtensions.SetSafeSizeWidth(RectTransform, in float)
-  fullName.vb: MinimalUtility.RectTransformExtensions.SetSafeSizeWidth(RectTransform, Single)
-  nameWithType: RectTransformExtensions.SetSafeSizeWidth(RectTransform, in float)
-  nameWithType.vb: RectTransformExtensions.SetSafeSizeWidth(RectTransform, Single)
-- uid: MinimalUtility.RectTransformExtensions.SetSafeSizeWidth*
-  name: SetSafeSizeWidth
-  href: api/MinimalUtility.RectTransformExtensions.html#MinimalUtility_RectTransformExtensions_SetSafeSizeWidth_
-  commentId: Overload:MinimalUtility.RectTransformExtensions.SetSafeSizeWidth
-  isSpec: "True"
-  fullName: MinimalUtility.RectTransformExtensions.SetSafeSizeWidth
-  nameWithType: RectTransformExtensions.SetSafeSizeWidth
+  fullName: MinimalUtility.RectTransformExtensions.SetSafeWidth
+  nameWithType: RectTransformExtensions.SetSafeWidth
 - uid: MinimalUtility.SafeAreaAdjuster
   name: SafeAreaAdjuster
   href: api/MinimalUtility.SafeAreaAdjuster.html
@@ -1384,89 +1384,89 @@ references:
   nameWithType: UsingDisposable.UsingDisposable
   nameWithType.vb: UsingDisposable.New
 - uid: MinimalUtility.UsingDisposable`1
-  name: UsingDisposable<T0>
+  name: UsingDisposable<T1>
   href: api/MinimalUtility.UsingDisposable-1.html
   commentId: T:MinimalUtility.UsingDisposable`1
-  name.vb: UsingDisposable(Of T0)
-  fullName: MinimalUtility.UsingDisposable<T0>
-  fullName.vb: MinimalUtility.UsingDisposable(Of T0)
-  nameWithType: UsingDisposable<T0>
-  nameWithType.vb: UsingDisposable(Of T0)
+  name.vb: UsingDisposable(Of T1)
+  fullName: MinimalUtility.UsingDisposable<T1>
+  fullName.vb: MinimalUtility.UsingDisposable(Of T1)
+  nameWithType: UsingDisposable<T1>
+  nameWithType.vb: UsingDisposable(Of T1)
 - uid: MinimalUtility.UsingDisposable`1.#ctor(`0,System.Action{`0})
-  name: UsingDisposable(T0, Action<T0>)
+  name: UsingDisposable(T1, Action<T1>)
   href: api/MinimalUtility.UsingDisposable-1.html#MinimalUtility_UsingDisposable_1__ctor__0_System_Action__0__
   commentId: M:MinimalUtility.UsingDisposable`1.#ctor(`0,System.Action{`0})
-  name.vb: New(T0, Action(Of T0))
-  fullName: MinimalUtility.UsingDisposable<T0>.UsingDisposable(T0, System.Action<T0>)
-  fullName.vb: MinimalUtility.UsingDisposable(Of T0).New(T0, System.Action(Of T0))
-  nameWithType: UsingDisposable<T0>.UsingDisposable(T0, Action<T0>)
-  nameWithType.vb: UsingDisposable(Of T0).New(T0, Action(Of T0))
+  name.vb: New(T1, Action(Of T1))
+  fullName: MinimalUtility.UsingDisposable<T1>.UsingDisposable(T1, System.Action<T1>)
+  fullName.vb: MinimalUtility.UsingDisposable(Of T1).New(T1, System.Action(Of T1))
+  nameWithType: UsingDisposable<T1>.UsingDisposable(T1, Action<T1>)
+  nameWithType.vb: UsingDisposable(Of T1).New(T1, Action(Of T1))
 - uid: MinimalUtility.UsingDisposable`1.#ctor*
   name: UsingDisposable
   href: api/MinimalUtility.UsingDisposable-1.html#MinimalUtility_UsingDisposable_1__ctor_
   commentId: Overload:MinimalUtility.UsingDisposable`1.#ctor
   isSpec: "True"
   name.vb: New
-  fullName: MinimalUtility.UsingDisposable<T0>.UsingDisposable
-  fullName.vb: MinimalUtility.UsingDisposable(Of T0).New
-  nameWithType: UsingDisposable<T0>.UsingDisposable
-  nameWithType.vb: UsingDisposable(Of T0).New
+  fullName: MinimalUtility.UsingDisposable<T1>.UsingDisposable
+  fullName.vb: MinimalUtility.UsingDisposable(Of T1).New
+  nameWithType: UsingDisposable<T1>.UsingDisposable
+  nameWithType.vb: UsingDisposable(Of T1).New
 - uid: MinimalUtility.UsingDisposable`2
-  name: UsingDisposable<T0, T1>
+  name: UsingDisposable<T1, T2>
   href: api/MinimalUtility.UsingDisposable-2.html
   commentId: T:MinimalUtility.UsingDisposable`2
-  name.vb: UsingDisposable(Of T0, T1)
-  fullName: MinimalUtility.UsingDisposable<T0, T1>
-  fullName.vb: MinimalUtility.UsingDisposable(Of T0, T1)
-  nameWithType: UsingDisposable<T0, T1>
-  nameWithType.vb: UsingDisposable(Of T0, T1)
+  name.vb: UsingDisposable(Of T1, T2)
+  fullName: MinimalUtility.UsingDisposable<T1, T2>
+  fullName.vb: MinimalUtility.UsingDisposable(Of T1, T2)
+  nameWithType: UsingDisposable<T1, T2>
+  nameWithType.vb: UsingDisposable(Of T1, T2)
 - uid: MinimalUtility.UsingDisposable`2.#ctor(`0,`1,System.Action{`0,`1})
-  name: UsingDisposable(T0, T1, Action<T0, T1>)
+  name: UsingDisposable(T1, T2, Action<T1, T2>)
   href: api/MinimalUtility.UsingDisposable-2.html#MinimalUtility_UsingDisposable_2__ctor__0__1_System_Action__0__1__
   commentId: M:MinimalUtility.UsingDisposable`2.#ctor(`0,`1,System.Action{`0,`1})
-  name.vb: New(T0, T1, Action(Of T0, T1))
-  fullName: MinimalUtility.UsingDisposable<T0, T1>.UsingDisposable(T0, T1, System.Action<T0, T1>)
-  fullName.vb: MinimalUtility.UsingDisposable(Of T0, T1).New(T0, T1, System.Action(Of T0, T1))
-  nameWithType: UsingDisposable<T0, T1>.UsingDisposable(T0, T1, Action<T0, T1>)
-  nameWithType.vb: UsingDisposable(Of T0, T1).New(T0, T1, Action(Of T0, T1))
+  name.vb: New(T1, T2, Action(Of T1, T2))
+  fullName: MinimalUtility.UsingDisposable<T1, T2>.UsingDisposable(T1, T2, System.Action<T1, T2>)
+  fullName.vb: MinimalUtility.UsingDisposable(Of T1, T2).New(T1, T2, System.Action(Of T1, T2))
+  nameWithType: UsingDisposable<T1, T2>.UsingDisposable(T1, T2, Action<T1, T2>)
+  nameWithType.vb: UsingDisposable(Of T1, T2).New(T1, T2, Action(Of T1, T2))
 - uid: MinimalUtility.UsingDisposable`2.#ctor*
   name: UsingDisposable
   href: api/MinimalUtility.UsingDisposable-2.html#MinimalUtility_UsingDisposable_2__ctor_
   commentId: Overload:MinimalUtility.UsingDisposable`2.#ctor
   isSpec: "True"
   name.vb: New
-  fullName: MinimalUtility.UsingDisposable<T0, T1>.UsingDisposable
-  fullName.vb: MinimalUtility.UsingDisposable(Of T0, T1).New
-  nameWithType: UsingDisposable<T0, T1>.UsingDisposable
-  nameWithType.vb: UsingDisposable(Of T0, T1).New
+  fullName: MinimalUtility.UsingDisposable<T1, T2>.UsingDisposable
+  fullName.vb: MinimalUtility.UsingDisposable(Of T1, T2).New
+  nameWithType: UsingDisposable<T1, T2>.UsingDisposable
+  nameWithType.vb: UsingDisposable(Of T1, T2).New
 - uid: MinimalUtility.UsingDisposable`3
-  name: UsingDisposable<T0, T1, T2>
+  name: UsingDisposable<T1, T2, T3>
   href: api/MinimalUtility.UsingDisposable-3.html
   commentId: T:MinimalUtility.UsingDisposable`3
-  name.vb: UsingDisposable(Of T0, T1, T2)
-  fullName: MinimalUtility.UsingDisposable<T0, T1, T2>
-  fullName.vb: MinimalUtility.UsingDisposable(Of T0, T1, T2)
-  nameWithType: UsingDisposable<T0, T1, T2>
-  nameWithType.vb: UsingDisposable(Of T0, T1, T2)
+  name.vb: UsingDisposable(Of T1, T2, T3)
+  fullName: MinimalUtility.UsingDisposable<T1, T2, T3>
+  fullName.vb: MinimalUtility.UsingDisposable(Of T1, T2, T3)
+  nameWithType: UsingDisposable<T1, T2, T3>
+  nameWithType.vb: UsingDisposable(Of T1, T2, T3)
 - uid: MinimalUtility.UsingDisposable`3.#ctor(`0,`1,`2,System.Action{`0,`1,`2})
-  name: UsingDisposable(T0, T1, T2, Action<T0, T1, T2>)
+  name: UsingDisposable(T1, T2, T3, Action<T1, T2, T3>)
   href: api/MinimalUtility.UsingDisposable-3.html#MinimalUtility_UsingDisposable_3__ctor__0__1__2_System_Action__0__1__2__
   commentId: M:MinimalUtility.UsingDisposable`3.#ctor(`0,`1,`2,System.Action{`0,`1,`2})
-  name.vb: New(T0, T1, T2, Action(Of T0, T1, T2))
-  fullName: MinimalUtility.UsingDisposable<T0, T1, T2>.UsingDisposable(T0, T1, T2, System.Action<T0, T1, T2>)
-  fullName.vb: MinimalUtility.UsingDisposable(Of T0, T1, T2).New(T0, T1, T2, System.Action(Of T0, T1, T2))
-  nameWithType: UsingDisposable<T0, T1, T2>.UsingDisposable(T0, T1, T2, Action<T0, T1, T2>)
-  nameWithType.vb: UsingDisposable(Of T0, T1, T2).New(T0, T1, T2, Action(Of T0, T1, T2))
+  name.vb: New(T1, T2, T3, Action(Of T1, T2, T3))
+  fullName: MinimalUtility.UsingDisposable<T1, T2, T3>.UsingDisposable(T1, T2, T3, System.Action<T1, T2, T3>)
+  fullName.vb: MinimalUtility.UsingDisposable(Of T1, T2, T3).New(T1, T2, T3, System.Action(Of T1, T2, T3))
+  nameWithType: UsingDisposable<T1, T2, T3>.UsingDisposable(T1, T2, T3, Action<T1, T2, T3>)
+  nameWithType.vb: UsingDisposable(Of T1, T2, T3).New(T1, T2, T3, Action(Of T1, T2, T3))
 - uid: MinimalUtility.UsingDisposable`3.#ctor*
   name: UsingDisposable
   href: api/MinimalUtility.UsingDisposable-3.html#MinimalUtility_UsingDisposable_3__ctor_
   commentId: Overload:MinimalUtility.UsingDisposable`3.#ctor
   isSpec: "True"
   name.vb: New
-  fullName: MinimalUtility.UsingDisposable<T0, T1, T2>.UsingDisposable
-  fullName.vb: MinimalUtility.UsingDisposable(Of T0, T1, T2).New
-  nameWithType: UsingDisposable<T0, T1, T2>.UsingDisposable
-  nameWithType.vb: UsingDisposable(Of T0, T1, T2).New
+  fullName: MinimalUtility.UsingDisposable<T1, T2, T3>.UsingDisposable
+  fullName.vb: MinimalUtility.UsingDisposable(Of T1, T2, T3).New
+  nameWithType: UsingDisposable<T1, T2, T3>.UsingDisposable
+  nameWithType.vb: UsingDisposable(Of T1, T2, T3).New
 - uid: MinimalUtility.VContainer
   name: MinimalUtility.VContainer
   href: api/MinimalUtility.VContainer.html

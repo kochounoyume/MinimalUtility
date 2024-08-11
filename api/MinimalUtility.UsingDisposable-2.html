@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Struct UsingDisposable&lt;T0, T1&gt; |  |  </title>
+      <title>Struct UsingDisposable&lt;T1, T2&gt; |  |  </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Struct UsingDisposable&lt;T0, T1&gt; |  |  ">
+      <meta name="title" content="Struct UsingDisposable&lt;T1, T2&gt; |  |  ">
       
       <meta name="description" content="usingステートメントスコープを抜けた際にコールバックを呼び出すための構造体.">
       <link rel="icon" href="../favicon.ico">
@@ -89,7 +89,7 @@
 
 
   <h1 id="MinimalUtility_UsingDisposable_2" data-uid="MinimalUtility.UsingDisposable`2" class="text-break">
-Struct UsingDisposable&lt;T0, T1&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/UsingDisposable.cs/#L64"><i class="bi bi-code-slash"></i></a>
+Struct UsingDisposable&lt;T1, T2&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/UsingDisposable.cs/#L64"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -102,17 +102,17 @@ Struct UsingDisposable&lt;T0, T1&gt;  <a class="header-action link-secondary" ti
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public readonly struct UsingDisposable&lt;T0, T1&gt; : IDisposable</code></pre>
+    <pre><code class="lang-csharp hljs">public readonly struct UsingDisposable&lt;T1, T2&gt; : IDisposable</code></pre>
   </div>
 
 
 
   <h4 class="section">Type Parameters</h4>
   <dl class="parameters">
-    <dt><code>T0</code></dt>
+    <dt><code>T1</code></dt>
     <dd><p>破棄時に呼び出す処理の第一引数の型.</p>
 </dd>
-    <dt><code>T1</code></dt>
+    <dt><code>T2</code></dt>
     <dd><p>破棄時に呼び出す処理の第二引数の型.</p>
 </dd>
   </dl>
@@ -161,27 +161,27 @@ Struct UsingDisposable&lt;T0, T1&gt;  <a class="header-action link-secondary" ti
   <a id="MinimalUtility_UsingDisposable_2__ctor_" data-uid="MinimalUtility.UsingDisposable`2.#ctor*"></a>
 
   <h3 id="MinimalUtility_UsingDisposable_2__ctor__0__1_System_Action__0__1__" data-uid="MinimalUtility.UsingDisposable`2.#ctor(`0,`1,System.Action{`0,`1})">
-  UsingDisposable(T0, T1, Action&lt;T0, T1&gt;)
+  UsingDisposable(T1, T2, Action&lt;T1, T2&gt;)
   <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/UsingDisposable.cs/#L76"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="MinimalUtility.UsingDisposable-2.html">UsingDisposable&lt;T0, T1&gt;</a> struct.</p>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="MinimalUtility.UsingDisposable-2.html">UsingDisposable&lt;T1, T2&gt;</a> struct.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public UsingDisposable(T0 state0, T1 state1, Action&lt;T0, T1&gt; onDispose)</code></pre>
+    <pre><code class="lang-csharp hljs">public UsingDisposable(T1 state0, T2 state1, Action&lt;T1, T2&gt; onDispose)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>state0</code> <span class="xref">T0</span></dt>
+    <dt><code>state0</code> <span class="xref">T1</span></dt>
     <dd><p>破棄時に呼び出す処理の第一引数.</p>
 </dd>
-    <dt><code>state1</code> <span class="xref">T1</span></dt>
+    <dt><code>state1</code> <span class="xref">T2</span></dt>
     <dd><p>破棄時に呼び出す処理の第二引数.</p>
 </dd>
-    <dt><code>onDispose</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-2">Action</a>&lt;T0, T1&gt;</dt>
+    <dt><code>onDispose</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-2">Action</a>&lt;T1, T2&gt;</dt>
     <dd><p>破棄時に呼び出す処理.</p>
 </dd>
   </dl>
