@@ -12,7 +12,7 @@ using Screen = UnityEngine.Device.Screen;
 using Screen = UnityEngine.Screen;
 #endif
 
-namespace MinimalUtility
+namespace MinimalUtility.MultiLibraries
 {
     /// <summary>
     /// FPSなどのプロファイル情報を画面に表示するためのクラス.
@@ -20,7 +20,7 @@ namespace MinimalUtility
     /// <see cref="Time.realtimeSinceStartup"/> の公式リファレンスサンプルコードを参照
     /// </remarks>
     /// </summary>
-    public class DebugProfiler
+    public sealed partial class DebugProfiler
     {
         /// <summary>
         /// 総メモリ使用量表示の単位指定列挙体.
@@ -93,7 +93,7 @@ namespace MinimalUtility
                         float ms = IntervalSecs / count * 1000f;
                         // 確保している総メモリ
                         float totalMemory = Profiler.GetTotalReservedMemoryLong() / Mathf.Pow(1024f, (int)param.unit);
-                        param.text.Value = $"CPU: {fps:F0}fps ({ms:F1}ms) Memory: {totalMemory:F}{param.unitStr}";
+                        param.text.Value = $"CPU: {fps:F0}fps ({ms:F1}ms){Environment.NewLine}Memory: {totalMemory:F}{param.unitStr}";
                     });
 
             GameObject instanceObj = new GameObject("DebugProfiler", typeof(AsyncGUITrigger));
