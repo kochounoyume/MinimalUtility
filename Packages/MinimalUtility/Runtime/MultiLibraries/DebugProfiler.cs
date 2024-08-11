@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Text;
 using System.Threading;
 using Cysharp.Threading.Tasks;
 using Cysharp.Threading.Tasks.Triggers;
@@ -42,6 +41,11 @@ namespace MinimalUtility
             GB = 3
         }
 
+        private sealed class Text
+        {
+            public string Value { get; set; }
+        }
+
         /// <summary>
         /// プロファイル情報を更新する間隔.
         /// </summary>
@@ -76,12 +80,12 @@ namespace MinimalUtility
         public async UniTask StartAsync(CancellationToken cancellation)
         {
             TimeSpan interval = TimeSpan.FromSeconds(IntervalSecs);
-            StringBuilder sb = new StringBuilder();
+            Text text = new Text();
 
             Observable.Timer(interval, interval, UnityTimeProvider.UpdateRealtime, cancellation)
                 .Select(UnityFrameProvider.Update, static (_, provider) => provider.GetFrameCount())
                 .Pairwise()
-                .Subscribe((sb, unit: memoryUnit, unitStr: memoryUnitStringConverter.Convert(memoryUnit)),
+                .Subscribe((text, unit: memoryUnit, unitStr: memoryUnitStringConverter.Convert(memoryUnit)),
                     static (pair, param) =>
                     {
                         long count = pair.Current - pair.Previous;
@@ -89,16 +93,7 @@ namespace MinimalUtility
                         float ms = IntervalSecs / count * 1000f;
                         // 確保している総メモリ
                         float totalMemory = Profiler.GetTotalReservedMemoryLong() / Mathf.Pow(1024f, (int)param.unit);
-                        param.sb.Clear();
-                        param.sb
-                            .Append("CPU: ")
-                            .Append(fps.ToString("F0"))
-                            .Append("fps (")
-                            .Append(ms.ToString("F1"))
-                            .AppendLine("ms)")
-                            .Append("Memory: ")
-                            .Append(totalMemory.ToString("F"))
-                            .Append(param.unitStr);
+                        param.text.Value = $"CPU: {fps:F0}fps ({ms:F1}ms) Memory: {totalMemory:F}{param.unitStr}";
                     });
 
             GameObject instanceObj = new GameObject("DebugProfiler", typeof(AsyncGUITrigger));
@@ -122,7 +117,7 @@ namespace MinimalUtility
 
             await foreach (var unused in trigger.WithCancellation(cancellation))
             {
-                GUI.Box(field, sb.ToString(), styleBox);
+                GUI.Box(field, text.Value, styleBox);
             }
         }
     }
