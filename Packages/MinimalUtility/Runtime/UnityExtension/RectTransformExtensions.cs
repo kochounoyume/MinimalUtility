@@ -39,7 +39,7 @@ namespace MinimalUtility
         /// <param name="target">対象の<see cref="RectTransform"/>.</param>
         /// <param name="width">横の長さ.</param>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static void SetSafeSizeWidth(this RectTransform target, in float width)
+        public static void SetSafeWidth(this RectTransform target, in float width)
         {
             target.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, width);
         }
@@ -50,7 +50,7 @@ namespace MinimalUtility
         /// <param name="target">対象の<see cref="RectTransform"/>.</param>
         /// <param name="height">縦の長さ.</param>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static void SetSafeSizeHeight(this RectTransform target, in float height)
+        public static void SetSafeHeight(this RectTransform target, in float height)
         {
             target.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, height);
         }

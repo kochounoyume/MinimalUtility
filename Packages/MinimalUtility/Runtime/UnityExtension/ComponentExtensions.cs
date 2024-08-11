@@ -24,7 +24,7 @@ namespace MinimalUtility
             Transform transform = self.transform;
             foreach (Transform child in transform)
             {
-                if (child.TryGetComponent(out T component))
+                if (child.gameObject.TryGetComponent(out T component))
                 {
                     return component;
                 }
@@ -45,7 +45,7 @@ namespace MinimalUtility
             Transform transform = self.transform;
             foreach (Transform child in transform)
             {
-                if (child.TryGetComponent(out component))
+                if (child.gameObject.TryGetComponent(out component))
                 {
                     return true;
                 }
@@ -64,13 +64,13 @@ namespace MinimalUtility
         /// <typeparam name="T">取得したいコンポーネントの型.</typeparam>
         /// <returns>取得したコンポーネントインスタンスのコレクション.</returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static IList<T> GetComponentsInOnlyChildren<T>(this Component self) where T : Component
+        public static IReadOnlyList<T> GetComponentsInOnlyChildren<T>(this Component self) where T : Component
         {
             Transform transform = self.transform;
             List<T> list = new List<T>(transform.childCount);
             foreach (Transform child in transform)
             {
-                if (child.TryGetComponent(out T component))
+                if (child.gameObject.TryGetComponent(out T component))
                 {
                     list.Add(component);
                 }
