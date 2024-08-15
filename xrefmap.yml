@@ -1358,6 +1358,43 @@ references:
   isSpec: "True"
   fullName: MinimalUtility.String.StringUtils.Create
   nameWithType: StringUtils.Create
+- uid: MinimalUtility.UniTaskEx
+  name: MinimalUtility.UniTaskEx
+  href: api/MinimalUtility.UniTaskEx.html
+  commentId: N:MinimalUtility.UniTaskEx
+  fullName: MinimalUtility.UniTaskEx
+  nameWithType: MinimalUtility.UniTaskEx
+- uid: MinimalUtility.UniTaskEx.UniTaskExtensions
+  name: UniTaskExtensions
+  href: api/MinimalUtility.UniTaskEx.UniTaskExtensions.html
+  commentId: T:MinimalUtility.UniTaskEx.UniTaskExtensions
+  fullName: MinimalUtility.UniTaskEx.UniTaskExtensions
+  nameWithType: UniTaskExtensions
+- uid: MinimalUtility.UniTaskEx.UniTaskExtensions.WaitForEndFrameSafety(MonoBehaviour,System.Boolean)
+  name: WaitForEndFrameSafety(MonoBehaviour, bool)
+  href: api/MinimalUtility.UniTaskEx.UniTaskExtensions.html#MinimalUtility_UniTaskEx_UniTaskExtensions_WaitForEndFrameSafety_MonoBehaviour_System_Boolean_
+  commentId: M:MinimalUtility.UniTaskEx.UniTaskExtensions.WaitForEndFrameSafety(MonoBehaviour,System.Boolean)
+  name.vb: WaitForEndFrameSafety(MonoBehaviour, Boolean)
+  fullName: MinimalUtility.UniTaskEx.UniTaskExtensions.WaitForEndFrameSafety(MonoBehaviour, bool)
+  fullName.vb: MinimalUtility.UniTaskEx.UniTaskExtensions.WaitForEndFrameSafety(MonoBehaviour, Boolean)
+  nameWithType: UniTaskExtensions.WaitForEndFrameSafety(MonoBehaviour, bool)
+  nameWithType.vb: UniTaskExtensions.WaitForEndFrameSafety(MonoBehaviour, Boolean)
+- uid: MinimalUtility.UniTaskEx.UniTaskExtensions.WaitForEndFrameSafety(MonoBehaviour,System.Threading.CancellationToken,System.Boolean)
+  name: WaitForEndFrameSafety(MonoBehaviour, CancellationToken, bool)
+  href: api/MinimalUtility.UniTaskEx.UniTaskExtensions.html#MinimalUtility_UniTaskEx_UniTaskExtensions_WaitForEndFrameSafety_MonoBehaviour_System_Threading_CancellationToken_System_Boolean_
+  commentId: M:MinimalUtility.UniTaskEx.UniTaskExtensions.WaitForEndFrameSafety(MonoBehaviour,System.Threading.CancellationToken,System.Boolean)
+  name.vb: WaitForEndFrameSafety(MonoBehaviour, CancellationToken, Boolean)
+  fullName: MinimalUtility.UniTaskEx.UniTaskExtensions.WaitForEndFrameSafety(MonoBehaviour, System.Threading.CancellationToken, bool)
+  fullName.vb: MinimalUtility.UniTaskEx.UniTaskExtensions.WaitForEndFrameSafety(MonoBehaviour, System.Threading.CancellationToken, Boolean)
+  nameWithType: UniTaskExtensions.WaitForEndFrameSafety(MonoBehaviour, CancellationToken, bool)
+  nameWithType.vb: UniTaskExtensions.WaitForEndFrameSafety(MonoBehaviour, CancellationToken, Boolean)
+- uid: MinimalUtility.UniTaskEx.UniTaskExtensions.WaitForEndFrameSafety*
+  name: WaitForEndFrameSafety
+  href: api/MinimalUtility.UniTaskEx.UniTaskExtensions.html#MinimalUtility_UniTaskEx_UniTaskExtensions_WaitForEndFrameSafety_
+  commentId: Overload:MinimalUtility.UniTaskEx.UniTaskExtensions.WaitForEndFrameSafety
+  isSpec: "True"
+  fullName: MinimalUtility.UniTaskEx.UniTaskExtensions.WaitForEndFrameSafety
+  nameWithType: UniTaskExtensions.WaitForEndFrameSafety
 - uid: MinimalUtility.UsingDisposable
   name: UsingDisposable
   href: api/MinimalUtility.UsingDisposable.html

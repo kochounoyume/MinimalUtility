@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class GenerateStringConverterAttribute |  |  ">
       
-      <meta name="description" content="Enumの文字列変換クラスを自動生成するための属性. 以下のようなコードが自動生成されます. using System;  namespace MinimalUtility {     public partial class MemoryUnitStringConverter     {         private readonly string[] values = new string[]         {             &quot;B&quot;,             &quot;KB&quot;,             &quot;MB&quot;,             &quot;GB&quot;,         };          public ReadOnlySpan&amp;lt;string&amp;gt; MemberValues =&amp;gt; values;          public ref readonly string Convert(in DebugProfiler.MemoryUnit value)         {             switch ((int)value)             {                 case 0:                     return ref values[0];                 case 1:                     return ref values[1];                 case 2:                     return ref values[2];                 case 3:                     return ref values[3];                 default:                     return ref string.Empty;             }         }          public DebugProfiler.MemoryUnit ReverseConvert(in string str)         {             switch (Array.IndexOf(values, str))             {                 case 0:                     return DebugProfiler.MemoryUnit.B;                 case 1:                     return DebugProfiler.MemoryUnit.KB;                 case 2:                     return DebugProfiler.MemoryUnit.MB;                 case 3:                     return DebugProfiler.MemoryUnit.GB;                 default:                     throw new InvalidCastException(str);             }         }     } }">
+      <meta name="description" content="Enumの文字列変換クラスを自動生成するための属性. 以下のようなコードが自動生成されます. using System;  namespace MinimalUtility.MultiLibraries {     public partial class MemoryUnitStringConverter     {         private readonly string[] names = new string[]         {             &quot;B&quot;,             &quot;KB&quot;,             &quot;MB&quot;,             &quot;GB&quot;,         };          public ReadOnlySpan&amp;lt;string&amp;gt; MemberNames =&amp;gt; names;          public ReadOnlySpan&amp;lt;DebugProfiler.MemoryUnit&amp;gt; MemberValues             =&amp;gt; new DebugProfiler.MemoryUnit[] { DebugProfiler.MemoryUnit.B, DebugProfiler.MemoryUnit.KB, DebugProfiler.MemoryUnit.MB, DebugProfiler.MemoryUnit.GB, };          public ref readonly string Convert(in DebugProfiler.MemoryUnit value)         {             switch ((int)value)             {                 case 0:                     return ref names[0];                 case 1:                     return ref names[1];                 case 2:                     return ref names[2];                 case 3:                     return ref names[3];                 default:                     return ref string.Empty;             }         }          public DebugProfiler.MemoryUnit ReverseConvert(in string name)         {             switch (Array.IndexOf(names, name))             {                 case 0:                     return DebugProfiler.MemoryUnit.B;                 case 1:                     return DebugProfiler.MemoryUnit.KB;                 case 2:                     return DebugProfiler.MemoryUnit.MB;                 case 3:                     return DebugProfiler.MemoryUnit.GB;                 default:                     throw new InvalidCastException(name);             }         }     } }">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="MinimalUtility_GenerateStringConverterAttribute" data-uid="MinimalUtility.GenerateStringConverterAttribute" class="text-break">
-Class GenerateStringConverterAttribute  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/GenerateStringConverterAttribute.cs/#L63"><i class="bi bi-code-slash"></i></a>
+Class GenerateStringConverterAttribute  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/GenerateStringConverterAttribute.cs/#L66"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -100,11 +100,11 @@ Class GenerateStringConverterAttribute  <a class="header-action link-secondary" 
   <div class="markdown summary"><p>Enumの文字列変換クラスを自動生成するための属性. 以下のようなコードが自動生成されます.</p>
 <pre><code class="lang-csharp">using System;
 
-namespace MinimalUtility
+namespace MinimalUtility.MultiLibraries
 {
     public partial class MemoryUnitStringConverter
     {
-        private readonly string[] values = new string[]
+        private readonly string[] names = new string[]
         {
             "B",
             "KB",
@@ -112,28 +112,31 @@ namespace MinimalUtility
             "GB",
         };
 
-        public ReadOnlySpan&lt;string&gt; MemberValues =&gt; values;
+        public ReadOnlySpan&lt;string&gt; MemberNames =&gt; names;
+
+        public ReadOnlySpan&lt;DebugProfiler.MemoryUnit&gt; MemberValues
+            =&gt; new DebugProfiler.MemoryUnit[] { DebugProfiler.MemoryUnit.B, DebugProfiler.MemoryUnit.KB, DebugProfiler.MemoryUnit.MB, DebugProfiler.MemoryUnit.GB, };
 
         public ref readonly string Convert(in DebugProfiler.MemoryUnit value)
         {
             switch ((int)value)
             {
                 case 0:
-                    return ref values[0];
+                    return ref names[0];
                 case 1:
-                    return ref values[1];
+                    return ref names[1];
                 case 2:
-                    return ref values[2];
+                    return ref names[2];
                 case 3:
-                    return ref values[3];
+                    return ref names[3];
                 default:
                     return ref string.Empty;
             }
         }
 
-        public DebugProfiler.MemoryUnit ReverseConvert(in string str)
+        public DebugProfiler.MemoryUnit ReverseConvert(in string name)
         {
-            switch (Array.IndexOf(values, str))
+            switch (Array.IndexOf(names, name))
             {
                 case 0:
                     return DebugProfiler.MemoryUnit.B;
@@ -144,7 +147,7 @@ namespace MinimalUtility
                 case 3:
                     return DebugProfiler.MemoryUnit.GB;
                 default:
-                    throw new InvalidCastException(str);
+                    throw new InvalidCastException(name);
             }
         }
     }
@@ -318,7 +321,7 @@ public sealed class GenerateStringConverterAttribute : Attribute, Attribute</cod
 
   <h3 id="MinimalUtility_GenerateStringConverterAttribute__ctor_System_Boolean_" data-uid="MinimalUtility.GenerateStringConverterAttribute.#ctor(System.Boolean)">
   GenerateStringConverterAttribute(bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/GenerateStringConverterAttribute.cs/#L72"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/GenerateStringConverterAttribute.cs/#L75"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="MinimalUtility.GenerateStringConverterAttribute.html">GenerateStringConverterAttribute</a> class.</p>
@@ -351,7 +354,7 @@ public sealed class GenerateStringConverterAttribute : Attribute, Attribute</cod
 
   <h3 id="MinimalUtility_GenerateStringConverterAttribute__ctor_System_Boolean_" data-uid="MinimalUtility.GenerateStringConverterAttribute.#ctor(System.Boolean)">
   GenerateStringConverterAttribute(bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/GenerateStringConverterAttribute.cs/#L72"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/GenerateStringConverterAttribute.cs/#L75"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="MinimalUtility.GenerateStringConverterAttribute.html">GenerateStringConverterAttribute</a> class.</p>
