@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Runtime.CompilerServices;
 using System.Threading;
 using R3;
 #if ENABLE_UNITASK
@@ -28,6 +29,7 @@ namespace MinimalUtility.R3
         /// <typeparam name="T">Observableの型.</typeparam>
         /// <typeparam name="TGate">排他制御用の<see cref="ReactiveProperty{T}"/>の型.</typeparam>
         /// <returns>排他的な購読.</returns>
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static IDisposable SubscribeLockAwait<T, TGate>(this Observable<T> source, TGate gate, Func<T, CancellationToken, Task> onNextAsync) where TGate : ReactiveProperty<bool>
         {
             return source
@@ -51,6 +53,7 @@ namespace MinimalUtility.R3
         /// <typeparam name="T">Observableの型.</typeparam>
         /// <typeparam name="TGate">排他制御用の<see cref="ReactiveProperty{T}"/>の型.</typeparam>
         /// <returns>排他的な購読.</returns>
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static IDisposable SubscribeLock<T, TGate>(this Observable<T> source, TGate gate, Action<T> onNext) where TGate : ReactiveProperty<bool>
         {
             return source

@@ -20,8 +20,7 @@ namespace MinimalUtility.VContainer
             {
                 if (component == null || !component.gameObject.scene.IsValid())
                 {
-                    const string message = "autoBindComponentsにnullまたはシーン外のコンポーネントが指定されています";
-                    Debug.LogError(message);
+                    Debug.LogError("autoBindComponentsにnullまたはシーン外のコンポーネントが指定されています");
                     continue;
                 }
                 builder.RegisterComponent(component);

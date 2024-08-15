@@ -8,11 +8,11 @@ namespace MinimalUtility
     /// <![CDATA[
     /// using System;
     ///
-    /// namespace MinimalUtility
+    /// namespace MinimalUtility.MultiLibraries
     /// {
     ///     public partial class MemoryUnitStringConverter
     ///     {
-    ///         private readonly string[] values = new string[]
+    ///         private readonly string[] names = new string[]
     ///         {
     ///             "B",
     ///             "KB",
@@ -20,28 +20,31 @@ namespace MinimalUtility
     ///             "GB",
     ///         };
     ///
-    ///         public ReadOnlySpan<string> MemberValues => values;
+    ///         public ReadOnlySpan<string> MemberNames => names;
+    ///
+    ///         public ReadOnlySpan<DebugProfiler.MemoryUnit> MemberValues
+    ///             => new DebugProfiler.MemoryUnit[] { DebugProfiler.MemoryUnit.B, DebugProfiler.MemoryUnit.KB, DebugProfiler.MemoryUnit.MB, DebugProfiler.MemoryUnit.GB, };
     ///
     ///         public ref readonly string Convert(in DebugProfiler.MemoryUnit value)
     ///         {
     ///             switch ((int)value)
     ///             {
     ///                 case 0:
-    ///                     return ref values[0];
+    ///                     return ref names[0];
     ///                 case 1:
-    ///                     return ref values[1];
+    ///                     return ref names[1];
     ///                 case 2:
-    ///                     return ref values[2];
+    ///                     return ref names[2];
     ///                 case 3:
-    ///                     return ref values[3];
+    ///                     return ref names[3];
     ///                 default:
     ///                     return ref string.Empty;
     ///             }
     ///         }
     ///
-    ///         public DebugProfiler.MemoryUnit ReverseConvert(in string str)
+    ///         public DebugProfiler.MemoryUnit ReverseConvert(in string name)
     ///         {
-    ///             switch (Array.IndexOf(values, str))
+    ///             switch (Array.IndexOf(names, name))
     ///             {
     ///                 case 0:
     ///                     return DebugProfiler.MemoryUnit.B;
@@ -52,7 +55,7 @@ namespace MinimalUtility
     ///                 case 3:
     ///                     return DebugProfiler.MemoryUnit.GB;
     ///                 default:
-    ///                     throw new InvalidCastException(str);
+    ///                     throw new InvalidCastException(name);
     ///             }
     ///         }
     ///     }

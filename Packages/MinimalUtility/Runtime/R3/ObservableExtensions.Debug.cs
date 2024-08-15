@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Runtime.CompilerServices;
 using R3;
 
 namespace MinimalUtility.R3
@@ -15,6 +16,7 @@ namespace MinimalUtility.R3
         /// <param name="label">ログに出力するラベル.</param>
         /// <typeparam name="T">Observableの型.</typeparam>
         /// <returns>ログ出力を行うObservable.</returns>
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static Observable<T> Debug<T>(this Observable<T> source, string label = null)
         {
 #if UNITY_EDITOR || DEVELOPMENT_BUILD
@@ -40,6 +42,7 @@ namespace MinimalUtility.R3
         /// <typeparam name="T">Observableの型.</typeparam>
         /// <typeparam name="TState">ログに出力したい値の型.</typeparam>
         /// <returns>ログ出力を行うObservable.</returns>
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static Observable<T> Debug<T, TState>(this Observable<T> source, Func<T, TState> onNext)
         {
 #if UNITY_EDITOR || DEVELOPMENT_BUILD
