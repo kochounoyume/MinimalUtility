@@ -4,10 +4,15 @@
     "title": "Struct UniTask | |",
     "keywords": "Struct UniTask Namespace Cysharp.Threading.Tasks public struct UniTask Inherited Members ValueType.Equals(object) ValueType.GetHashCode() ValueType.ToString() object.Equals(object, object) object.GetType() object.ReferenceEquals(object, object) Methods Defer<T>(T, Func<T, UniTask>) Defer the task creation just before call await. public static UniTask Defer<T>(T state, Func<T, UniTask> factory) Parameters state T factory Func<T, UniTask> Returns UniTask Type Parameters T Defer<TState, TResult>(TState, Func<TState, UniTask<TResult>>) Defer the task creation just before call await. public static UniTask<TResult> Defer<TState, TResult>(TState state, Func<TState, UniTask<TResult>> factory) Parameters state TState factory Func<TState, UniTask<TResult>> Returns UniTask<TResult> Type Parameters TState TResult WaitUntil<T>(T, Func<T, bool>, PlayerLoopTiming, CancellationToken, bool) public static UniTask WaitUntil<T>(T state, Func<T, bool> predicate, PlayerLoopTiming timing = null, CancellationToken cancellationToken = default, bool cancelImmediately = false) Parameters state T predicate Func<T, bool> timing PlayerLoopTiming cancellationToken CancellationToken cancelImmediately bool Returns UniTask Type Parameters T WaitWhile<T>(T, Func<T, bool>, PlayerLoopTiming, CancellationToken, bool) public static UniTask WaitWhile<T>(T state, Func<T, bool> predicate, PlayerLoopTiming timing = null, CancellationToken cancellationToken = default, bool cancelImmediately = false) Parameters state T predicate Func<T, bool> timing PlayerLoopTiming cancellationToken CancellationToken cancelImmediately bool Returns UniTask Type Parameters T"
   },
+  "api/Cysharp.Threading.Tasks.UniTaskInternalAccessor.html": {
+    "href": "api/Cysharp.Threading.Tasks.UniTaskInternalAccessor.html",
+    "title": "Class UniTaskInternalAccessor | |",
+    "keywords": "Class UniTaskInternalAccessor Namespace Cysharp.Threading.Tasks public static class UniTaskInternalAccessor Inheritance object UniTaskInternalAccessor Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Methods GetEqualityComparer<T>() Get default equality comparer for T. public static IEqualityComparer<T> GetEqualityComparer<T>() Returns IEqualityComparer<T> Default equality comparer for T. Type Parameters T Type of T."
+  },
   "api/Cysharp.Threading.Tasks.html": {
     "href": "api/Cysharp.Threading.Tasks.html",
     "title": "Namespace Cysharp.Threading.Tasks | |",
-    "keywords": "Namespace Cysharp.Threading.Tasks Structs UniTask"
+    "keywords": "Namespace Cysharp.Threading.Tasks Classes UniTaskInternalAccessor Structs UniTask"
   },
   "api/Global.Fruits.html": {
     "href": "api/Global.Fruits.html",
@@ -49,15 +54,25 @@
     "title": "Class DisposableExtensions | |",
     "keywords": "Class DisposableExtensions Namespace MinimalUtility IDisposableの拡張メソッド. public static class DisposableExtensions Inheritance object DisposableExtensions Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Methods AddTo<T>(T, ref IDisposable) IDisposableを指定したIDisposableコンテナに追加します. public static void AddTo<T>(this T disposable, ref IDisposable disposableContainer) where T : class, IDisposable Parameters disposable T 任意のIDisposable実装クラスの参照. disposableContainer IDisposable 追加先のIDisposableコンテナ. Type Parameters T 追加したIDisposable."
   },
+  "api/MinimalUtility.Editor.DefaultInspector.html": {
+    "href": "api/MinimalUtility.Editor.DefaultInspector.html",
+    "title": "Class DefaultInspector | |",
+    "keywords": "Class DefaultInspector Namespace MinimalUtility.Editor デフォルトのインスペクタービュー. public class DefaultInspector : UnityEditor.Editor Inheritance object DefaultInspector Methods OnInspectorGUI() public override void OnInspectorGUI()"
+  },
   "api/MinimalUtility.Editor.SimpleGaugeEditor.html": {
     "href": "api/MinimalUtility.Editor.SimpleGaugeEditor.html",
     "title": "Class SimpleGaugeEditor | |",
     "keywords": "Class SimpleGaugeEditor Namespace MinimalUtility.Editor SimpleGaugeのカスタムエディタ. public class SimpleGaugeEditor : UnityEditor.Editor Inheritance object SimpleGaugeEditor Methods OnInspectorGUI() public override void OnInspectorGUI()"
   },
+  "api/MinimalUtility.Editor.TransformEditor.html": {
+    "href": "api/MinimalUtility.Editor.TransformEditor.html",
+    "title": "Class TransformEditor | |",
+    "keywords": "Class TransformEditor Namespace MinimalUtility.Editor Transformのカスタムインスペクター. public class TransformEditor : UnityEditor.Editor Inheritance object TransformEditor Methods OnInspectorGUI() public override void OnInspectorGUI()"
+  },
   "api/MinimalUtility.Editor.html": {
     "href": "api/MinimalUtility.Editor.html",
     "title": "Namespace MinimalUtility.Editor | |",
-    "keywords": "Namespace MinimalUtility.Editor Classes SimpleGaugeEditor SimpleGaugeのカスタムエディタ."
+    "keywords": "Namespace MinimalUtility.Editor Classes DefaultInspector デフォルトのインスペクタービュー. SimpleGaugeEditor SimpleGaugeのカスタムエディタ. TransformEditor Transformのカスタムインスペクター."
   },
   "api/MinimalUtility.EmptyGraphic.html": {
     "href": "api/MinimalUtility.EmptyGraphic.html",
@@ -139,15 +154,20 @@
     "title": "Namespace MinimalUtility.String | |",
     "keywords": "Namespace MinimalUtility.String Classes StringUtils"
   },
-  "api/MinimalUtility.UniTaskEx.UniTaskExtensions.html": {
-    "href": "api/MinimalUtility.UniTaskEx.UniTaskExtensions.html",
-    "title": "Class UniTaskExtensions | |",
-    "keywords": "Class UniTaskExtensions Namespace MinimalUtility.UniTaskEx public static class UniTaskExtensions Inheritance object UniTaskExtensions Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Methods WaitForEndFrameSafety(MonoBehaviour, bool) UniTask.WaitForEndOfFrame(MonoBehaviour)は内部にコルーチンを含む. そのためコルーチンの駆動元であるMonoBehaviourが非表示になるとエラーが発生する. それを回避したうえで安全にフレーム終わりまで待機する. public static UniTask WaitForEndFrameSafety(this MonoBehaviour monoBehaviour, bool cancelImmediately = false) Parameters monoBehaviour MonoBehaviour cancelImmediately bool Returns UniTask WaitForEndFrameSafety(MonoBehaviour, CancellationToken, bool) UniTask.WaitForEndOfFrame(MonoBehaviour)は内部にコルーチンを含む. そのためコルーチンの駆動元であるMonoBehaviourが非表示になるとエラーが発生する. それを回避したうえで安全にフレーム終わりまで待機する. public static UniTask WaitForEndFrameSafety(this MonoBehaviour monoBehaviour, CancellationToken cancellationToken, bool cancelImmediately = false) Parameters monoBehaviour MonoBehaviour cancellationToken CancellationToken cancelImmediately bool Returns UniTask"
+  "api/MinimalUtility.Tasks.Progress.html": {
+    "href": "api/MinimalUtility.Tasks.Progress.html",
+    "title": "Class Progress | |",
+    "keywords": "Class Progress Namespace MinimalUtility.Tasks 簡易IProgress<T>ファクトリ. public static class Progress Inheritance object Progress Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Methods CreateOnlyValueChanged<T, TState>(TState, Action<T, TState>, IEqualityComparer<T>) 進捗状況の値が変更された時だけ通知するProgressを生成します. Cysharp.Threading.Tasks.Progress.CreateOnlyValueChanged<T>(Action<T>, IEqualityComparer<T>)の引数を設定できる版. public static IProgress<T> CreateOnlyValueChanged<T, TState>(TState state, Action<T, TState> handler, IEqualityComparer<T> comparer = null) Parameters state TState 引数として渡したい値. handler Action<T, TState> 進捗状況が変更された時に呼び出されるコールバック. comparer IEqualityComparer<T> 進捗状況の値を比較するためのEqualityComparer<T>. Returns IProgress<T> 進捗状況の値が変更された時だけコールバックを呼び出すProgress. Type Parameters T 進捗状況の値の型. TState 渡したい引数の型. Create<T, TState>(TState, Action<T, TState>) 進捗状況の値を通知するProgressを生成します. Cysharp.Threading.Tasks.Progress.Create<T>(Action<T>)の引数を設定できる版. public static IProgress<T> Create<T, TState>(TState state, Action<T, TState> handler) Parameters state TState 引数として渡したい値. handler Action<T, TState> 進捗状況が変更された時に呼び出されるコールバック. Returns IProgress<T> 進捗状況の値を通知するProgress. Type Parameters T 進捗状況の値の型. TState 渡したい引数の型."
   },
-  "api/MinimalUtility.UniTaskEx.html": {
-    "href": "api/MinimalUtility.UniTaskEx.html",
-    "title": "Namespace MinimalUtility.UniTaskEx | |",
-    "keywords": "Namespace MinimalUtility.UniTaskEx Classes UniTaskExtensions"
+  "api/MinimalUtility.Tasks.UniTaskExtensions.html": {
+    "href": "api/MinimalUtility.Tasks.UniTaskExtensions.html",
+    "title": "Class UniTaskExtensions | |",
+    "keywords": "Class UniTaskExtensions Namespace MinimalUtility.Tasks UniTaskの拡張メソッド. public static class UniTaskExtensions Inheritance object UniTaskExtensions Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Methods WaitForEndFrameSafety(MonoBehaviour, bool) UniTask.WaitForEndOfFrame(MonoBehaviour)は内部にコルーチンを含む. そのためコルーチンの駆動元であるMonoBehaviourが非表示になるとエラーが発生する. それを回避したうえで安全にフレーム終わりまで待機する. public static UniTask WaitForEndFrameSafety(this MonoBehaviour monoBehaviour, bool cancelImmediately = false) Parameters monoBehaviour MonoBehaviour コルーチン駆動の基盤となるMonoBehaviour. cancelImmediately bool 即座にキャンセルするかどうか. Returns UniTask フレーム終わりまで待機するUniTask. WaitForEndFrameSafety(MonoBehaviour, CancellationToken, bool) UniTask.WaitForEndOfFrame(MonoBehaviour)は内部にコルーチンを含む. そのためコルーチンの駆動元であるMonoBehaviourが非表示になるとエラーが発生する. それを回避したうえで安全にフレーム終わりまで待機する. public static UniTask WaitForEndFrameSafety(this MonoBehaviour monoBehaviour, CancellationToken cancellationToken, bool cancelImmediately = false) Parameters monoBehaviour MonoBehaviour コルーチン駆動の基盤となるMonoBehaviour. cancellationToken CancellationToken キャンセルトークン. cancelImmediately bool 即座にキャンセルするかどうか. Returns UniTask フレーム終わりまで待機するUniTask."
+  },
+  "api/MinimalUtility.Tasks.html": {
+    "href": "api/MinimalUtility.Tasks.html",
+    "title": "Namespace MinimalUtility.Tasks | |",
+    "keywords": "Namespace MinimalUtility.Tasks Classes Progress 簡易IProgress<T>ファクトリ. UniTaskExtensions UniTaskの拡張メソッド."
   },
   "api/MinimalUtility.UsingDisposable-1.html": {
     "href": "api/MinimalUtility.UsingDisposable-1.html",
@@ -184,6 +204,11 @@
     "title": "Namespace MinimalUtility | |",
     "keywords": "Namespace MinimalUtility Classes ButtonAttribute 指定したメソッドをUnityのInspector上に表示したボタンでテスト実行できるようになる属性. CommonObjectPool<T> 汎用オブジェクトプール実装. ComponentExtensions Componentの拡張メソッド. DisposableExtensions IDisposableの拡張メソッド. EmptyGraphic 空処理のグラフィック. 想定用途：マスク時のベース, 画面全体を透明なuGUIで覆いたいとき、Buttonの判定領域を透明にしたいとき EqualityComparer EqualityComparer<T>の拡張クラス. GenerateStringConverterAttribute Enumの文字列変換クラスを自動生成するための属性. 以下のようなコードが自動生成されます. using System; namespace MinimalUtility.MultiLibraries { public partial class MemoryUnitStringConverter { private readonly string[] names = new string[] { \"B\", \"KB\", \"MB\", \"GB\", }; public ReadOnlySpan<string> MemberNames => names; public ReadOnlySpan<DebugProfiler.MemoryUnit> MemberValues => new DebugProfiler.MemoryUnit[] { DebugProfiler.MemoryUnit.B, DebugProfiler.MemoryUnit.KB, DebugProfiler.MemoryUnit.MB, DebugProfiler.MemoryUnit.GB, }; public ref readonly string Convert(in DebugProfiler.MemoryUnit value) { switch ((int)value) { case 0: return ref names[0]; case 1: return ref names[1]; case 2: return ref names[2]; case 3: return ref names[3]; default: return ref string.Empty; } } public DebugProfiler.MemoryUnit ReverseConvert(in string name) { switch (Array.IndexOf(names, name)) { case 0: return DebugProfiler.MemoryUnit.B; case 1: return DebugProfiler.MemoryUnit.KB; case 2: return DebugProfiler.MemoryUnit.MB; case 3: return DebugProfiler.MemoryUnit.GB; default: throw new InvalidCastException(name); } } } } Math 最小限の数学関数. MinimalSelectableGraphic UnityEngine.UI.Selectableを使用するうえで最低限の機能を持つグラフィック. 子オブジェクトのGraphicをキャッシュして選択時に色変化を伝播させる RectTransformExtensions RectTransformの拡張メソッド. SafeAreaAdjuster セーフエリア調整スクリプト. SimpleGauge RectMask2Dを継承利用したシンプルで綺麗なゲージ表示. Structs CommonObjectPool<T>.PoolSizeSetting プールの初期容量と最大サイズを指定する構造体. UsingDisposable usingステートメントスコープを抜けた際にコールバックを呼び出すための構造体. UsingDisposable<T1> usingステートメントスコープを抜けた際にコールバックを呼び出すための構造体. UsingDisposable<T1, T2> usingステートメントスコープを抜けた際にコールバックを呼び出すための構造体. UsingDisposable<T1, T2, T3> usingステートメントスコープを抜けた際にコールバックを呼び出すための構造体. Interfaces IObjectPool<T> ObjectPoolを提供するインターフェイス."
   },
+  "api/System.Runtime.CompilerServices.CallerArgumentExpressionAttribute.html": {
+    "href": "api/System.Runtime.CompilerServices.CallerArgumentExpressionAttribute.html",
+    "title": "Class CallerArgumentExpressionAttribute | |",
+    "keywords": "Class CallerArgumentExpressionAttribute Namespace System.Runtime.CompilerServices [AttributeUsage(AttributeTargets.Parameter, AllowMultiple = false, Inherited = false)] public sealed class CallerArgumentExpressionAttribute : Attribute Inheritance object Attribute CallerArgumentExpressionAttribute Inherited Members Attribute.Equals(object) Attribute.GetCustomAttribute(Assembly, Type) Attribute.GetCustomAttribute(Assembly, Type, bool) Attribute.GetCustomAttribute(MemberInfo, Type) Attribute.GetCustomAttribute(MemberInfo, Type, bool) Attribute.GetCustomAttribute(Module, Type) Attribute.GetCustomAttribute(Module, Type, bool) Attribute.GetCustomAttribute(ParameterInfo, Type) Attribute.GetCustomAttribute(ParameterInfo, Type, bool) Attribute.GetCustomAttributes(Assembly) Attribute.GetCustomAttributes(Assembly, bool) Attribute.GetCustomAttributes(Assembly, Type) Attribute.GetCustomAttributes(Assembly, Type, bool) Attribute.GetCustomAttributes(MemberInfo) Attribute.GetCustomAttributes(MemberInfo, bool) Attribute.GetCustomAttributes(MemberInfo, Type) Attribute.GetCustomAttributes(MemberInfo, Type, bool) Attribute.GetCustomAttributes(Module) Attribute.GetCustomAttributes(Module, bool) Attribute.GetCustomAttributes(Module, Type) Attribute.GetCustomAttributes(Module, Type, bool) Attribute.GetCustomAttributes(ParameterInfo) Attribute.GetCustomAttributes(ParameterInfo, bool) Attribute.GetCustomAttributes(ParameterInfo, Type) Attribute.GetCustomAttributes(ParameterInfo, Type, bool) Attribute.GetHashCode() Attribute.IsDefaultAttribute() Attribute.IsDefined(Assembly, Type) Attribute.IsDefined(Assembly, Type, bool) Attribute.IsDefined(MemberInfo, Type) Attribute.IsDefined(MemberInfo, Type, bool) Attribute.IsDefined(Module, Type) Attribute.IsDefined(Module, Type, bool) Attribute.IsDefined(ParameterInfo, Type) Attribute.IsDefined(ParameterInfo, Type, bool) Attribute.Match(object) Attribute.TypeId object.Equals(object, object) object.GetType() object.ReferenceEquals(object, object) object.ToString() Constructors CallerArgumentExpressionAttribute(string) public CallerArgumentExpressionAttribute(string parameterName) Parameters parameterName string Properties ParameterName public string ParameterName { get; } Property Value string"
+  },
   "api/System.Runtime.CompilerServices.DefaultInterpolatedStringHandler.html": {
     "href": "api/System.Runtime.CompilerServices.DefaultInterpolatedStringHandler.html",
     "title": "Struct DefaultInterpolatedStringHandler | |",
@@ -192,7 +217,7 @@
   "api/System.Runtime.CompilerServices.html": {
     "href": "api/System.Runtime.CompilerServices.html",
     "title": "Namespace System.Runtime.CompilerServices | |",
-    "keywords": "Namespace System.Runtime.CompilerServices Structs DefaultInterpolatedStringHandler Provides a handler used by the language compiler to process interpolated strings into string instances."
+    "keywords": "Namespace System.Runtime.CompilerServices Classes CallerArgumentExpressionAttribute Structs DefaultInterpolatedStringHandler Provides a handler used by the language compiler to process interpolated strings into string instances."
   },
   "api/VContainer.Unity.CustomContainerBuilderUnityExtensions.html": {
     "href": "api/VContainer.Unity.CustomContainerBuilderUnityExtensions.html",

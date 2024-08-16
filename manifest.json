@@ -25,6 +25,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Cysharp.Threading.Tasks.UniTaskInternalAccessor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Cysharp.Threading.Tasks.UniTaskInternalAccessor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Cysharp.Threading.Tasks.yml",
       "output": {
         ".html": {
@@ -115,10 +125,30 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/MinimalUtility.Editor.DefaultInspector.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MinimalUtility.Editor.DefaultInspector.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/MinimalUtility.Editor.SimpleGaugeEditor.yml",
       "output": {
         ".html": {
           "relative_path": "api/MinimalUtility.Editor.SimpleGaugeEditor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MinimalUtility.Editor.TransformEditor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MinimalUtility.Editor.TransformEditor.html"
         }
       },
       "version": ""
@@ -295,20 +325,30 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/MinimalUtility.UniTaskEx.UniTaskExtensions.yml",
+      "source_relative_path": "api/MinimalUtility.Tasks.Progress.yml",
       "output": {
         ".html": {
-          "relative_path": "api/MinimalUtility.UniTaskEx.UniTaskExtensions.html"
+          "relative_path": "api/MinimalUtility.Tasks.Progress.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/MinimalUtility.UniTaskEx.yml",
+      "source_relative_path": "api/MinimalUtility.Tasks.UniTaskExtensions.yml",
       "output": {
         ".html": {
-          "relative_path": "api/MinimalUtility.UniTaskEx.html"
+          "relative_path": "api/MinimalUtility.Tasks.UniTaskExtensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MinimalUtility.Tasks.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MinimalUtility.Tasks.html"
         }
       },
       "version": ""
@@ -379,6 +419,16 @@
       "output": {
         ".html": {
           "relative_path": "api/MinimalUtility.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Runtime.CompilerServices.CallerArgumentExpressionAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Runtime.CompilerServices.CallerArgumentExpressionAttribute.html"
         }
       },
       "version": ""

@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class UniTaskExtensions |  |  </title>
+      <title>Class UniTaskInternalAccessor |  |  </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class UniTaskExtensions |  |  ">
+      <meta name="title" content="Class UniTaskInternalAccessor |  |  ">
       
       
       <link rel="icon" href="../favicon.ico">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       <meta name="docfx:disablenewtab" content="true">
       
-      <meta name="docfx:docurl" content="https://github.com/kochounoyume/MinimalUtility/new/main/apiSpec/new?filename=MinimalUtility_UniTaskEx_UniTaskExtensions.md&amp;value=---%0Auid%3A%20MinimalUtility.UniTaskEx.UniTaskExtensions%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/kochounoyume/MinimalUtility/new/main/apiSpec/new?filename=Cysharp_Threading_Tasks_UniTaskInternalAccessor.md&amp;value=---%0Auid%3A%20Cysharp.Threading.Tasks.UniTaskInternalAccessor%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -84,16 +84,16 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="MinimalUtility.UniTaskEx.UniTaskExtensions">
+        <article data-uid="Cysharp.Threading.Tasks.UniTaskInternalAccessor">
 
 
 
-  <h1 id="MinimalUtility_UniTaskEx_UniTaskExtensions" data-uid="MinimalUtility.UniTaskEx.UniTaskExtensions" class="text-break">
-Class UniTaskExtensions  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/UniTaskEx/UniTaskExtensions.cs/#L8"><i class="bi bi-code-slash"></i></a>
+  <h1 id="Cysharp_Threading_Tasks_UniTaskInternalAccessor" data-uid="Cysharp.Threading.Tasks.UniTaskInternalAccessor" class="text-break">
+Class UniTaskInternalAccessor  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/Tasks/UniTaskReferences/UniTaskInternalAccessor.cs/#L8"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="MinimalUtility.html">MinimalUtility</a>.<a class="xref" href="MinimalUtility.UniTaskEx.html">UniTaskEx</a></dd></dl>
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Cysharp.html">Cysharp</a>.<a class="xref" href="Cysharp.Threading.html">Threading</a>.<a class="xref" href="Cysharp.Threading.Tasks.html">Tasks</a></dd></dl>
   
   </div>
 
@@ -101,7 +101,7 @@ Class UniTaskExtensions  <a class="header-action link-secondary" title="View sou
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static class UniTaskExtensions</code></pre>
+    <pre><code class="lang-csharp hljs">public static class UniTaskInternalAccessor</code></pre>
   </div>
 
 
@@ -111,7 +111,7 @@ Class UniTaskExtensions  <a class="header-action link-secondary" title="View sou
     <dt>Inheritance</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-      <div><span class="xref">UniTaskExtensions</span></div>
+      <div><span class="xref">UniTaskInternalAccessor</span></div>
     </dd>
   </dl>
 
@@ -152,80 +152,35 @@ Class UniTaskExtensions  <a class="header-action link-secondary" title="View sou
 </h2>
 
 
-  <a id="MinimalUtility_UniTaskEx_UniTaskExtensions_WaitForEndFrameSafety_" data-uid="MinimalUtility.UniTaskEx.UniTaskExtensions.WaitForEndFrameSafety*"></a>
+  <a id="Cysharp_Threading_Tasks_UniTaskInternalAccessor_GetEqualityComparer_" data-uid="Cysharp.Threading.Tasks.UniTaskInternalAccessor.GetEqualityComparer*"></a>
 
-  <h3 id="MinimalUtility_UniTaskEx_UniTaskExtensions_WaitForEndFrameSafety_MonoBehaviour_System_Boolean_" data-uid="MinimalUtility.UniTaskEx.UniTaskExtensions.WaitForEndFrameSafety(MonoBehaviour,System.Boolean)">
-  WaitForEndFrameSafety(MonoBehaviour, bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/UniTaskEx/UniTaskExtensions.cs/#L17"><i class="bi bi-code-slash"></i></a>
+  <h3 id="Cysharp_Threading_Tasks_UniTaskInternalAccessor_GetEqualityComparer__1" data-uid="Cysharp.Threading.Tasks.UniTaskInternalAccessor.GetEqualityComparer``1">
+  GetEqualityComparer&lt;T&gt;()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/Tasks/UniTaskReferences/UniTaskInternalAccessor.cs/#L15"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>UniTask.WaitForEndOfFrame(MonoBehaviour)は内部にコルーチンを含む.
-そのためコルーチンの駆動元であるMonoBehaviourが非表示になるとエラーが発生する.
-それを回避したうえで安全にフレーム終わりまで待機する.</p>
+  <div class="markdown level1 summary"><p>Get default equality comparer for T.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static UniTask WaitForEndFrameSafety(this MonoBehaviour monoBehaviour, bool cancelImmediately = false)</code></pre>
+    <pre><code class="lang-csharp hljs">public static IEqualityComparer&lt;T&gt; GetEqualityComparer&lt;T&gt;()</code></pre>
   </div>
 
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>monoBehaviour</code> <span class="xref">MonoBehaviour</span></dt>
-    <dd></dd>
-    <dt><code>cancelImmediately</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
-  </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="Cysharp.Threading.Tasks.UniTask.html">UniTask</a></dt>
-    <dd></dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1">IEqualityComparer</a>&lt;T&gt;</dt>
+    <dd><p>Default equality comparer for T.</p>
+</dd>
   </dl>
 
-
-
-
-
-
-
-
-
-
-
-  <a id="MinimalUtility_UniTaskEx_UniTaskExtensions_WaitForEndFrameSafety_" data-uid="MinimalUtility.UniTaskEx.UniTaskExtensions.WaitForEndFrameSafety*"></a>
-
-  <h3 id="MinimalUtility_UniTaskEx_UniTaskExtensions_WaitForEndFrameSafety_MonoBehaviour_System_Threading_CancellationToken_System_Boolean_" data-uid="MinimalUtility.UniTaskEx.UniTaskExtensions.WaitForEndFrameSafety(MonoBehaviour,System.Threading.CancellationToken,System.Boolean)">
-  WaitForEndFrameSafety(MonoBehaviour, CancellationToken, bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/UniTaskEx/UniTaskExtensions.cs/#L36"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>UniTask.WaitForEndOfFrame(MonoBehaviour)は内部にコルーチンを含む.
-そのためコルーチンの駆動元であるMonoBehaviourが非表示になるとエラーが発生する.
-それを回避したうえで安全にフレーム終わりまで待機する.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static UniTask WaitForEndFrameSafety(this MonoBehaviour monoBehaviour, CancellationToken cancellationToken, bool cancelImmediately = false)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
+  <h4 class="section">Type Parameters</h4>
   <dl class="parameters">
-    <dt><code>monoBehaviour</code> <span class="xref">MonoBehaviour</span></dt>
-    <dd></dd>
-    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
-    <dd></dd>
-    <dt><code>cancelImmediately</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
+    <dt><code>T</code></dt>
+    <dd><p>Type of T.</p>
+</dd>
   </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="Cysharp.Threading.Tasks.UniTask.html">UniTask</a></dt>
-    <dd></dd>
-  </dl>
-
 
 
 
