@@ -10,7 +10,7 @@ namespace MinimalUtility.Editor
     /// </summary>
     [CanEditMultipleObjects]
     [CustomEditor(typeof(UnityEngine.Object), true)]
-    internal class DefaultInspector : UnityEditor.Editor
+    public class DefaultInspector : UnityEditor.Editor
     {
         /// <summary>
         /// メソッド情報と属性情報のタプル配列.

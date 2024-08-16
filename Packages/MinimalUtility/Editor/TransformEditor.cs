@@ -8,7 +8,7 @@ namespace MinimalUtility.Editor
     /// </summary>
     [CanEditMultipleObjects]
     [CustomEditor(typeof(Transform))]
-    internal class TransformEditor : UnityEditor.Editor
+    public class TransformEditor : UnityEditor.Editor
     {
         /// <inheritdoc/>
         public override void OnInspectorGUI()
