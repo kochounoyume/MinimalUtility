@@ -7,7 +7,7 @@ namespace MinimalUtility.Tasks
     /// <summary>
     /// 簡易<see cref="IProgress{T}"/>ファクトリ.
     /// </summary>
-    public static class Progress
+    public static class MinimalProgress
     {
         /// <summary>
         /// 進捗状況の値を通知するProgressを生成します.
