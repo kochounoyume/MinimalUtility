@@ -1,18 +1,16 @@
-﻿using UnityEditor;
-using UnityEngine;
+﻿using UnityEngine;
 
-namespace MinimalUtility.Editor
+namespace UnityEditor.UI
 {
     /// <summary>
     /// <see cref="Transform"/>のカスタムインスペクター.
     /// </summary>
-    [CanEditMultipleObjects]
-    [CustomEditor(typeof(Transform))]
-    public class TransformEditor : UnityEditor.Editor
+    internal class TransformEditor : TransformInspector
     {
         /// <inheritdoc/>
         public override void OnInspectorGUI()
         {
+            base.OnInspectorGUI();
             Transform transform = target as Transform;
             if (transform == null) return;
             transform.position = EditorGUILayout.Vector3Field("World Position", transform.position);
@@ -20,7 +18,6 @@ namespace MinimalUtility.Editor
             EditorGUI.BeginDisabledGroup(true);
             EditorGUILayout.Vector3Field("World Scale", transform.lossyScale);
             EditorGUI.EndDisabledGroup();
-            base.OnInspectorGUI();
         }
     }
 }
