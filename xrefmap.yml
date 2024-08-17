@@ -493,25 +493,6 @@ references:
   isSpec: "True"
   fullName: MinimalUtility.Editor.SimpleGaugeEditor.OnInspectorGUI
   nameWithType: SimpleGaugeEditor.OnInspectorGUI
-- uid: MinimalUtility.Editor.TransformEditor
-  name: TransformEditor
-  href: api/MinimalUtility.Editor.TransformEditor.html
-  commentId: T:MinimalUtility.Editor.TransformEditor
-  fullName: MinimalUtility.Editor.TransformEditor
-  nameWithType: TransformEditor
-- uid: MinimalUtility.Editor.TransformEditor.OnInspectorGUI
-  name: OnInspectorGUI()
-  href: api/MinimalUtility.Editor.TransformEditor.html#MinimalUtility_Editor_TransformEditor_OnInspectorGUI
-  commentId: M:MinimalUtility.Editor.TransformEditor.OnInspectorGUI
-  fullName: MinimalUtility.Editor.TransformEditor.OnInspectorGUI()
-  nameWithType: TransformEditor.OnInspectorGUI()
-- uid: MinimalUtility.Editor.TransformEditor.OnInspectorGUI*
-  name: OnInspectorGUI
-  href: api/MinimalUtility.Editor.TransformEditor.html#MinimalUtility_Editor_TransformEditor_OnInspectorGUI_
-  commentId: Overload:MinimalUtility.Editor.TransformEditor.OnInspectorGUI
-  isSpec: "True"
-  fullName: MinimalUtility.Editor.TransformEditor.OnInspectorGUI
-  nameWithType: TransformEditor.OnInspectorGUI
 - uid: MinimalUtility.EmptyGraphic
   name: EmptyGraphic
   href: api/MinimalUtility.EmptyGraphic.html

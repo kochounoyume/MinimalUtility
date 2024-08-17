@@ -57,22 +57,17 @@
   "api/MinimalUtility.Editor.DefaultInspector.html": {
     "href": "api/MinimalUtility.Editor.DefaultInspector.html",
     "title": "Class DefaultInspector | |",
-    "keywords": "Class DefaultInspector Namespace MinimalUtility.Editor デフォルトのインスペクタービュー. public class DefaultInspector : UnityEditor.Editor Inheritance object DefaultInspector Methods OnInspectorGUI() public override void OnInspectorGUI()"
+    "keywords": "Class DefaultInspector Namespace MinimalUtility.Editor デフォルトのインスペクタービュー. public class DefaultInspector : Editor Inheritance object DefaultInspector Methods OnInspectorGUI() public override void OnInspectorGUI()"
   },
   "api/MinimalUtility.Editor.SimpleGaugeEditor.html": {
     "href": "api/MinimalUtility.Editor.SimpleGaugeEditor.html",
     "title": "Class SimpleGaugeEditor | |",
-    "keywords": "Class SimpleGaugeEditor Namespace MinimalUtility.Editor SimpleGaugeのカスタムエディタ. public class SimpleGaugeEditor : UnityEditor.Editor Inheritance object SimpleGaugeEditor Methods OnInspectorGUI() public override void OnInspectorGUI()"
-  },
-  "api/MinimalUtility.Editor.TransformEditor.html": {
-    "href": "api/MinimalUtility.Editor.TransformEditor.html",
-    "title": "Class TransformEditor | |",
-    "keywords": "Class TransformEditor Namespace MinimalUtility.Editor Transformのカスタムインスペクター. public class TransformEditor : UnityEditor.Editor Inheritance object TransformEditor Methods OnInspectorGUI() public override void OnInspectorGUI()"
+    "keywords": "Class SimpleGaugeEditor Namespace MinimalUtility.Editor SimpleGaugeのカスタムエディタ. public class SimpleGaugeEditor : Editor Inheritance object SimpleGaugeEditor Methods OnInspectorGUI() public override void OnInspectorGUI()"
   },
   "api/MinimalUtility.Editor.html": {
     "href": "api/MinimalUtility.Editor.html",
     "title": "Namespace MinimalUtility.Editor | |",
-    "keywords": "Namespace MinimalUtility.Editor Classes DefaultInspector デフォルトのインスペクタービュー. SimpleGaugeEditor SimpleGaugeのカスタムエディタ. TransformEditor Transformのカスタムインスペクター."
+    "keywords": "Namespace MinimalUtility.Editor Classes DefaultInspector デフォルトのインスペクタービュー. SimpleGaugeEditor SimpleGaugeのカスタムエディタ."
   },
   "api/MinimalUtility.EmptyGraphic.html": {
     "href": "api/MinimalUtility.EmptyGraphic.html",
