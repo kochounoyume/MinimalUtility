@@ -89,7 +89,7 @@
 
 
   <h1 id="MinimalUtility_MinimalDisposable_2" data-uid="MinimalUtility.MinimalDisposable`2" class="text-break">
-Struct MinimalDisposable&lt;T1, T2&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/MinimalDisposable.cs/#L88"><i class="bi bi-code-slash"></i></a>
+Struct MinimalDisposable&lt;T1, T2&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/MinimalDisposable.cs/#L127"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -162,7 +162,7 @@ Struct MinimalDisposable&lt;T1, T2&gt;  <a class="header-action link-secondary" 
 
   <h3 id="MinimalUtility_MinimalDisposable_2__ctor__0__1_System_Action__0__1__" data-uid="MinimalUtility.MinimalDisposable`2.#ctor(`0,`1,System.Action{`0,`1})">
   MinimalDisposable(T1, T2, Action&lt;T1, T2&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/MinimalDisposable.cs/#L113"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/MinimalDisposable.cs/#L139"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="MinimalUtility.MinimalDisposable-2.html">MinimalDisposable&lt;T1, T2&gt;</a> struct.</p>
@@ -186,55 +186,6 @@ Struct MinimalDisposable&lt;T1, T2&gt;  <a class="header-action link-secondary" 
 </dd>
   </dl>
 
-
-
-
-
-
-
-
-
-
-
-
-  <h2 class="section" id="methods">Methods
-</h2>
-
-
-  <a id="MinimalUtility_MinimalDisposable_2_Create_" data-uid="MinimalUtility.MinimalDisposable`2.Create*"></a>
-
-  <h3 id="MinimalUtility_MinimalDisposable_2_Create__0__1_System_Action__0__1__" data-uid="MinimalUtility.MinimalDisposable`2.Create(`0,`1,System.Action{`0,`1})">
-  Create(T1, T2, Action&lt;T1, T2&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/MinimalDisposable.cs/#L101"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>usingステートメントスコープを抜けた際にコールバックを呼び出す構造体のファクトリメソッド.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static MinimalDisposable&lt;T1, T2&gt; Create(T1 state1, T2 state2, Action&lt;T1, T2&gt; onDispose)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>state1</code> <span class="xref">T1</span></dt>
-    <dd><p>第一引数.</p>
-</dd>
-    <dt><code>state2</code> <span class="xref">T2</span></dt>
-    <dd><p>第二引数.</p>
-</dd>
-    <dt><code>onDispose</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-2">Action</a>&lt;T1, T2&gt;</dt>
-    <dd><p>破棄時に呼び出す処理.</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="MinimalUtility.MinimalDisposable-2.html">MinimalDisposable</a>&lt;T1, T2&gt;</dt>
-    <dd><p>usingステートメントスコープを抜けた際にコールバックを呼び出す構造体.</p>
-</dd>
-  </dl>
 
 
 

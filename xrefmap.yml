@@ -1057,6 +1057,33 @@ references:
   isSpec: "True"
   fullName: MinimalUtility.MinimalDisposable.Create
   nameWithType: MinimalDisposable.Create
+- uid: MinimalUtility.MinimalDisposable.Create``1(``0,System.Action{``0})
+  name: Create<T1>(T1, Action<T1>)
+  href: api/MinimalUtility.MinimalDisposable.html#MinimalUtility_MinimalDisposable_Create__1___0_System_Action___0__
+  commentId: M:MinimalUtility.MinimalDisposable.Create``1(``0,System.Action{``0})
+  name.vb: Create(Of T1)(T1, Action(Of T1))
+  fullName: MinimalUtility.MinimalDisposable.Create<T1>(T1, System.Action<T1>)
+  fullName.vb: MinimalUtility.MinimalDisposable.Create(Of T1)(T1, System.Action(Of T1))
+  nameWithType: MinimalDisposable.Create<T1>(T1, Action<T1>)
+  nameWithType.vb: MinimalDisposable.Create(Of T1)(T1, Action(Of T1))
+- uid: MinimalUtility.MinimalDisposable.Create``2(``0,``1,System.Action{``0,``1})
+  name: Create<T1, T2>(T1, T2, Action<T1, T2>)
+  href: api/MinimalUtility.MinimalDisposable.html#MinimalUtility_MinimalDisposable_Create__2___0___1_System_Action___0___1__
+  commentId: M:MinimalUtility.MinimalDisposable.Create``2(``0,``1,System.Action{``0,``1})
+  name.vb: Create(Of T1, T2)(T1, T2, Action(Of T1, T2))
+  fullName: MinimalUtility.MinimalDisposable.Create<T1, T2>(T1, T2, System.Action<T1, T2>)
+  fullName.vb: MinimalUtility.MinimalDisposable.Create(Of T1, T2)(T1, T2, System.Action(Of T1, T2))
+  nameWithType: MinimalDisposable.Create<T1, T2>(T1, T2, Action<T1, T2>)
+  nameWithType.vb: MinimalDisposable.Create(Of T1, T2)(T1, T2, Action(Of T1, T2))
+- uid: MinimalUtility.MinimalDisposable.Create``3(``0,``1,``2,System.Action{``0,``1,``2})
+  name: Create<T1, T2, T3>(T1, T2, T3, Action<T1, T2, T3>)
+  href: api/MinimalUtility.MinimalDisposable.html#MinimalUtility_MinimalDisposable_Create__3___0___1___2_System_Action___0___1___2__
+  commentId: M:MinimalUtility.MinimalDisposable.Create``3(``0,``1,``2,System.Action{``0,``1,``2})
+  name.vb: Create(Of T1, T2, T3)(T1, T2, T3, Action(Of T1, T2, T3))
+  fullName: MinimalUtility.MinimalDisposable.Create<T1, T2, T3>(T1, T2, T3, System.Action<T1, T2, T3>)
+  fullName.vb: MinimalUtility.MinimalDisposable.Create(Of T1, T2, T3)(T1, T2, T3, System.Action(Of T1, T2, T3))
+  nameWithType: MinimalDisposable.Create<T1, T2, T3>(T1, T2, T3, Action<T1, T2, T3>)
+  nameWithType.vb: MinimalDisposable.Create(Of T1, T2, T3)(T1, T2, T3, Action(Of T1, T2, T3))
 - uid: MinimalUtility.MinimalDisposable`1
   name: MinimalDisposable<T1>
   href: api/MinimalUtility.MinimalDisposable-1.html
@@ -1085,24 +1112,6 @@ references:
   fullName.vb: MinimalUtility.MinimalDisposable(Of T1).New
   nameWithType: MinimalDisposable<T1>.MinimalDisposable
   nameWithType.vb: MinimalDisposable(Of T1).New
-- uid: MinimalUtility.MinimalDisposable`1.Create(`0,System.Action{`0})
-  name: Create(T1, Action<T1>)
-  href: api/MinimalUtility.MinimalDisposable-1.html#MinimalUtility_MinimalDisposable_1_Create__0_System_Action__0__
-  commentId: M:MinimalUtility.MinimalDisposable`1.Create(`0,System.Action{`0})
-  name.vb: Create(T1, Action(Of T1))
-  fullName: MinimalUtility.MinimalDisposable<T1>.Create(T1, System.Action<T1>)
-  fullName.vb: MinimalUtility.MinimalDisposable(Of T1).Create(T1, System.Action(Of T1))
-  nameWithType: MinimalDisposable<T1>.Create(T1, Action<T1>)
-  nameWithType.vb: MinimalDisposable(Of T1).Create(T1, Action(Of T1))
-- uid: MinimalUtility.MinimalDisposable`1.Create*
-  name: Create
-  href: api/MinimalUtility.MinimalDisposable-1.html#MinimalUtility_MinimalDisposable_1_Create_
-  commentId: Overload:MinimalUtility.MinimalDisposable`1.Create
-  isSpec: "True"
-  fullName: MinimalUtility.MinimalDisposable<T1>.Create
-  fullName.vb: MinimalUtility.MinimalDisposable(Of T1).Create
-  nameWithType: MinimalDisposable<T1>.Create
-  nameWithType.vb: MinimalDisposable(Of T1).Create
 - uid: MinimalUtility.MinimalDisposable`2
   name: MinimalDisposable<T1, T2>
   href: api/MinimalUtility.MinimalDisposable-2.html
@@ -1131,24 +1140,6 @@ references:
   fullName.vb: MinimalUtility.MinimalDisposable(Of T1, T2).New
   nameWithType: MinimalDisposable<T1, T2>.MinimalDisposable
   nameWithType.vb: MinimalDisposable(Of T1, T2).New
-- uid: MinimalUtility.MinimalDisposable`2.Create(`0,`1,System.Action{`0,`1})
-  name: Create(T1, T2, Action<T1, T2>)
-  href: api/MinimalUtility.MinimalDisposable-2.html#MinimalUtility_MinimalDisposable_2_Create__0__1_System_Action__0__1__
-  commentId: M:MinimalUtility.MinimalDisposable`2.Create(`0,`1,System.Action{`0,`1})
-  name.vb: Create(T1, T2, Action(Of T1, T2))
-  fullName: MinimalUtility.MinimalDisposable<T1, T2>.Create(T1, T2, System.Action<T1, T2>)
-  fullName.vb: MinimalUtility.MinimalDisposable(Of T1, T2).Create(T1, T2, System.Action(Of T1, T2))
-  nameWithType: MinimalDisposable<T1, T2>.Create(T1, T2, Action<T1, T2>)
-  nameWithType.vb: MinimalDisposable(Of T1, T2).Create(T1, T2, Action(Of T1, T2))
-- uid: MinimalUtility.MinimalDisposable`2.Create*
-  name: Create
-  href: api/MinimalUtility.MinimalDisposable-2.html#MinimalUtility_MinimalDisposable_2_Create_
-  commentId: Overload:MinimalUtility.MinimalDisposable`2.Create
-  isSpec: "True"
-  fullName: MinimalUtility.MinimalDisposable<T1, T2>.Create
-  fullName.vb: MinimalUtility.MinimalDisposable(Of T1, T2).Create
-  nameWithType: MinimalDisposable<T1, T2>.Create
-  nameWithType.vb: MinimalDisposable(Of T1, T2).Create
 - uid: MinimalUtility.MinimalDisposable`3
   name: MinimalDisposable<T1, T2, T3>
   href: api/MinimalUtility.MinimalDisposable-3.html
@@ -1177,24 +1168,6 @@ references:
   fullName.vb: MinimalUtility.MinimalDisposable(Of T1, T2, T3).New
   nameWithType: MinimalDisposable<T1, T2, T3>.MinimalDisposable
   nameWithType.vb: MinimalDisposable(Of T1, T2, T3).New
-- uid: MinimalUtility.MinimalDisposable`3.Create(`0,`1,`2,System.Action{`0,`1,`2})
-  name: Create(T1, T2, T3, Action<T1, T2, T3>)
-  href: api/MinimalUtility.MinimalDisposable-3.html#MinimalUtility_MinimalDisposable_3_Create__0__1__2_System_Action__0__1__2__
-  commentId: M:MinimalUtility.MinimalDisposable`3.Create(`0,`1,`2,System.Action{`0,`1,`2})
-  name.vb: Create(T1, T2, T3, Action(Of T1, T2, T3))
-  fullName: MinimalUtility.MinimalDisposable<T1, T2, T3>.Create(T1, T2, T3, System.Action<T1, T2, T3>)
-  fullName.vb: MinimalUtility.MinimalDisposable(Of T1, T2, T3).Create(T1, T2, T3, System.Action(Of T1, T2, T3))
-  nameWithType: MinimalDisposable<T1, T2, T3>.Create(T1, T2, T3, Action<T1, T2, T3>)
-  nameWithType.vb: MinimalDisposable(Of T1, T2, T3).Create(T1, T2, T3, Action(Of T1, T2, T3))
-- uid: MinimalUtility.MinimalDisposable`3.Create*
-  name: Create
-  href: api/MinimalUtility.MinimalDisposable-3.html#MinimalUtility_MinimalDisposable_3_Create_
-  commentId: Overload:MinimalUtility.MinimalDisposable`3.Create
-  isSpec: "True"
-  fullName: MinimalUtility.MinimalDisposable<T1, T2, T3>.Create
-  fullName.vb: MinimalUtility.MinimalDisposable(Of T1, T2, T3).Create
-  nameWithType: MinimalDisposable<T1, T2, T3>.Create
-  nameWithType.vb: MinimalDisposable(Of T1, T2, T3).Create
 - uid: MinimalUtility.MinimalSelectableGraphic
   name: MinimalSelectableGraphic
   href: api/MinimalUtility.MinimalSelectableGraphic.html
