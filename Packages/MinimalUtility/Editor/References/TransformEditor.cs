@@ -2,9 +2,6 @@
 
 namespace UnityEditor.UI
 {
-    /// <summary>
-    /// <see cref="Transform"/>のカスタムインスペクター.
-    /// </summary>
     [CanEditMultipleObjects]
     [CustomEditor(typeof(Transform))]
     internal class TransformEditor : TransformInspector
