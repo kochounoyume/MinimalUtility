@@ -76,7 +76,7 @@ namespace MinimalUtility
         /// Initializes a new instance of the <see cref="MinimalDisposable"/> struct.
         /// </summary>
         /// <param name="onDispose">破棄時に呼び出す処理.</param>
-        public MinimalDisposable(Action onDispose)
+        private MinimalDisposable(Action onDispose)
         {
             this.onDispose = onDispose;
         }
@@ -104,7 +104,7 @@ namespace MinimalUtility
         /// </summary>
         /// <param name="state1">破棄時に呼び出す処理の引数.</param>
         /// <param name="onDispose">破棄時に呼び出す処理.</param>
-        public MinimalDisposable(T1 state1, Action<T1> onDispose)
+        internal MinimalDisposable(T1 state1, Action<T1> onDispose)
         {
             this.state1 = state1;
             this.onDispose = onDispose;
@@ -136,7 +136,7 @@ namespace MinimalUtility
         /// <param name="state1">破棄時に呼び出す処理の第一引数.</param>
         /// <param name="state2">破棄時に呼び出す処理の第二引数.</param>
         /// <param name="onDispose">破棄時に呼び出す処理.</param>
-        public MinimalDisposable(T1 state1, T2 state2, Action<T1, T2> onDispose)
+        internal MinimalDisposable(T1 state1, T2 state2, Action<T1, T2> onDispose)
         {
             this.state1 = state1;
             this.state2 = state2;
@@ -172,7 +172,7 @@ namespace MinimalUtility
         /// <param name="state2">破棄時に呼び出す処理の第二引数.</param>
         /// <param name="state3">破棄時に呼び出す処理の第三引数.</param>
         /// <param name="onDispose">破棄時に呼び出す処理.</param>
-        public MinimalDisposable(T1 state1, T2 state2, T3 state3, Action<T1, T2, T3> onDispose)
+        internal MinimalDisposable(T1 state1, T2 state2, T3 state3, Action<T1, T2, T3> onDispose)
         {
             this.state1 = state1;
             this.state2 = state2;
