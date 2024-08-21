@@ -57,7 +57,7 @@
   "api/MinimalUtility.Editor.AnimatorInspector.html": {
     "href": "api/MinimalUtility.Editor.AnimatorInspector.html",
     "title": "Class AnimatorInspector | |",
-    "keywords": "Class AnimatorInspector Namespace MinimalUtility.Editor Animatorコンポーネントのカスタムエディタ. public class AnimatorInspector : UnityComponentInspector<Animator> Inheritance object UnityComponentInspector<Animator> AnimatorInspector Inherited Members UnityComponentInspector<Animator>.Target UnityComponentInspector<Animator>.OnDisable() Properties InspectorTypeName 対象となるコンポーネントのインスペクター拡張既存クラスの名前. protected override string InspectorTypeName { get; } Property Value string Methods OnEnable() ロードされたときに呼び出される. protected override void OnEnable() OnInspectorGUI() public override void OnInspectorGUI()"
+    "keywords": "Class AnimatorInspector Namespace MinimalUtility.Editor Animator.keepAnimatorStateOnDisableやAnimator.writeDefaultValuesOnDisableも編集できる Animatorカスタムエディタ. public class AnimatorInspector : UnityComponentInspector<Animator> Inheritance object UnityComponentInspector<Animator> AnimatorInspector Inherited Members UnityComponentInspector<Animator>.Target UnityComponentInspector<Animator>.OnDisable() Properties InspectorTypeName 対象となるコンポーネントのインスペクター拡張既存クラスの名前. protected override string InspectorTypeName { get; } Property Value string Methods OnEnable() ロードされたときに呼び出される. protected override void OnEnable() OnInspectorGUI() public override void OnInspectorGUI()"
   },
   "api/MinimalUtility.Editor.DefaultInspector.html": {
     "href": "api/MinimalUtility.Editor.DefaultInspector.html",
@@ -77,7 +77,7 @@
   "api/MinimalUtility.Editor.TransformInspector.html": {
     "href": "api/MinimalUtility.Editor.TransformInspector.html",
     "title": "Class TransformInspector | |",
-    "keywords": "Class TransformInspector Namespace MinimalUtility.Editor Transformコンポーネントのカスタムエディタ. public class TransformInspector : UnityComponentInspector<Transform> Inheritance object UnityComponentInspector<Transform> TransformInspector Inherited Members UnityComponentInspector<Transform>.Target UnityComponentInspector<Transform>.OnEnable() UnityComponentInspector<Transform>.OnDisable() Properties InspectorTypeName 対象となるコンポーネントのインスペクター拡張既存クラスの名前. protected override string InspectorTypeName { get; } Property Value string Methods OnInspectorGUI() public override void OnInspectorGUI()"
+    "keywords": "Class TransformInspector Namespace MinimalUtility.Editor ワールドの座標・回転・大きさも表示するTransformカスタムエディタ. public class TransformInspector : UnityComponentInspector<Transform> Inheritance object UnityComponentInspector<Transform> TransformInspector Inherited Members UnityComponentInspector<Transform>.Target UnityComponentInspector<Transform>.OnEnable() UnityComponentInspector<Transform>.OnDisable() Properties InspectorTypeName 対象となるコンポーネントのインスペクター拡張既存クラスの名前. protected override string InspectorTypeName { get; } Property Value string Methods OnInspectorGUI() public override void OnInspectorGUI()"
   },
   "api/MinimalUtility.Editor.UnityComponentInspector-1.html": {
     "href": "api/MinimalUtility.Editor.UnityComponentInspector-1.html",
@@ -87,7 +87,7 @@
   "api/MinimalUtility.Editor.html": {
     "href": "api/MinimalUtility.Editor.html",
     "title": "Namespace MinimalUtility.Editor | |",
-    "keywords": "Namespace MinimalUtility.Editor Classes AnimatorInspector Animatorコンポーネントのカスタムエディタ. DefaultInspector デフォルトのインスペクタービュー. MinimalEditorUtility エディタ拡張のユーティリティクラス. SimpleGaugeEditor SimpleGaugeのカスタムエディタ. TransformInspector Transformコンポーネントのカスタムエディタ. UnityComponentInspector<T> 既存のUnityコンポーネントのカスタムエディタを作成するための基底クラスです."
+    "keywords": "Namespace MinimalUtility.Editor Classes AnimatorInspector Animator.keepAnimatorStateOnDisableやAnimator.writeDefaultValuesOnDisableも編集できる Animatorカスタムエディタ. DefaultInspector デフォルトのインスペクタービュー. MinimalEditorUtility エディタ拡張のユーティリティクラス. SimpleGaugeEditor SimpleGaugeのカスタムエディタ. TransformInspector ワールドの座標・回転・大きさも表示するTransformカスタムエディタ. UnityComponentInspector<T> 既存のUnityコンポーネントのカスタムエディタを作成するための基底クラスです."
   },
   "api/MinimalUtility.EmptyGraphic.html": {
     "href": "api/MinimalUtility.EmptyGraphic.html",
