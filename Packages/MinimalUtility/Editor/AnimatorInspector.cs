@@ -4,7 +4,8 @@ using UnityEngine;
 namespace MinimalUtility.Editor
 {
     /// <summary>
-    /// <see cref="Animator"/>コンポーネントのカスタムエディタ.
+    /// <see cref="Animator.keepAnimatorStateOnDisable"/>や<see cref="Animator.writeDefaultValuesOnDisable"/>も編集できる
+    /// <see cref="Animator"/>カスタムエディタ.
     /// </summary>
     [CanEditMultipleObjects]
     [CustomEditor(typeof(Animator))]

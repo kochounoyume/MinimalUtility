@@ -4,7 +4,7 @@ using UnityEngine;
 namespace MinimalUtility.Editor
 {
     /// <summary>
-    /// <see cref="Transform"/>コンポーネントのカスタムエディタ.
+    /// ワールドの座標・回転・大きさも表示する<see cref="Transform"/>カスタムエディタ.
     /// </summary>
     [CanEditMultipleObjects]
     [CustomEditor(typeof(Transform))]
