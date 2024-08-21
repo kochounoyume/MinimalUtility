@@ -54,20 +54,40 @@
     "title": "Class DisposableExtensions | |",
     "keywords": "Class DisposableExtensions Namespace MinimalUtility IDisposableの拡張メソッド. public static class DisposableExtensions Inheritance object DisposableExtensions Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Methods AddTo<T>(T, ref IDisposable) IDisposableを指定したIDisposableコンテナに追加します. public static void AddTo<T>(this T disposable, ref IDisposable disposableContainer) where T : class, IDisposable Parameters disposable T 任意のIDisposable実装クラスの参照. disposableContainer IDisposable 追加先のIDisposableコンテナ. Type Parameters T 追加したIDisposable."
   },
+  "api/MinimalUtility.Editor.AnimatorInspector.html": {
+    "href": "api/MinimalUtility.Editor.AnimatorInspector.html",
+    "title": "Class AnimatorInspector | |",
+    "keywords": "Class AnimatorInspector Namespace MinimalUtility.Editor Animatorコンポーネントのカスタムエディタ. public class AnimatorInspector : UnityComponentInspector<Animator> Inheritance object UnityComponentInspector<Animator> AnimatorInspector Inherited Members UnityComponentInspector<Animator>.Target UnityComponentInspector<Animator>.OnDisable() Properties InspectorTypeName 対象となるコンポーネントのインスペクター拡張既存クラスの名前. protected override string InspectorTypeName { get; } Property Value string Methods OnEnable() ロードされたときに呼び出される. protected override void OnEnable() OnInspectorGUI() public override void OnInspectorGUI()"
+  },
   "api/MinimalUtility.Editor.DefaultInspector.html": {
     "href": "api/MinimalUtility.Editor.DefaultInspector.html",
     "title": "Class DefaultInspector | |",
     "keywords": "Class DefaultInspector Namespace MinimalUtility.Editor デフォルトのインスペクタービュー. public class DefaultInspector : Editor Inheritance object DefaultInspector Methods OnInspectorGUI() public override void OnInspectorGUI()"
+  },
+  "api/MinimalUtility.Editor.MinimalEditorUtility.html": {
+    "href": "api/MinimalUtility.Editor.MinimalEditorUtility.html",
+    "title": "Class MinimalEditorUtility | |",
+    "keywords": "Class MinimalEditorUtility Namespace MinimalUtility.Editor エディタ拡張のユーティリティクラス. public static class MinimalEditorUtility Inheritance object MinimalEditorUtility Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Methods TrTextContent(string, string, Texture) Unity組み込みリソースからGUIContentを取得するか、GUI要素のGUIContentを作成する. public static GUIContent TrTextContent(string text, string tooltip = null, Texture icon = null) Parameters text string GUIContentのテキスト. tooltip string カーソルを合わせたときに表示されるツールチップ. icon Texture GUIContentのアイコン. Returns GUIContent GUIContent."
   },
   "api/MinimalUtility.Editor.SimpleGaugeEditor.html": {
     "href": "api/MinimalUtility.Editor.SimpleGaugeEditor.html",
     "title": "Class SimpleGaugeEditor | |",
     "keywords": "Class SimpleGaugeEditor Namespace MinimalUtility.Editor SimpleGaugeのカスタムエディタ. public class SimpleGaugeEditor : Editor Inheritance object SimpleGaugeEditor Methods OnInspectorGUI() public override void OnInspectorGUI()"
   },
+  "api/MinimalUtility.Editor.TransformInspector.html": {
+    "href": "api/MinimalUtility.Editor.TransformInspector.html",
+    "title": "Class TransformInspector | |",
+    "keywords": "Class TransformInspector Namespace MinimalUtility.Editor Transformコンポーネントのカスタムエディタ. public class TransformInspector : UnityComponentInspector<Transform> Inheritance object UnityComponentInspector<Transform> TransformInspector Inherited Members UnityComponentInspector<Transform>.Target UnityComponentInspector<Transform>.OnEnable() UnityComponentInspector<Transform>.OnDisable() Properties InspectorTypeName 対象となるコンポーネントのインスペクター拡張既存クラスの名前. protected override string InspectorTypeName { get; } Property Value string Methods OnInspectorGUI() public override void OnInspectorGUI()"
+  },
+  "api/MinimalUtility.Editor.UnityComponentInspector-1.html": {
+    "href": "api/MinimalUtility.Editor.UnityComponentInspector-1.html",
+    "title": "Class UnityComponentInspector<T> | |",
+    "keywords": "Class UnityComponentInspector<T> Namespace MinimalUtility.Editor 既存のUnityコンポーネントのカスタムエディタを作成するための基底クラスです. public abstract class UnityComponentInspector<T> : Editor where T : UnityEngine.Component Type Parameters T カスタムエディタを作成するコンポーネントの型. Inheritance object UnityComponentInspector<T> Derived AnimatorInspector TransformInspector Properties InspectorTypeName 対象となるコンポーネントのインスペクター拡張既存クラスの名前. protected abstract string InspectorTypeName { get; } Property Value string Target 対象となるコンポーネントのインスタンス. protected T Target { get; } Property Value T Methods OnDisable() オブジェクトがスコープ外になったときに呼び出される. protected virtual void OnDisable() OnEnable() ロードされたときに呼び出される. protected virtual void OnEnable() OnInspectorGUI() public override void OnInspectorGUI()"
+  },
   "api/MinimalUtility.Editor.html": {
     "href": "api/MinimalUtility.Editor.html",
     "title": "Namespace MinimalUtility.Editor | |",
-    "keywords": "Namespace MinimalUtility.Editor Classes DefaultInspector デフォルトのインスペクタービュー. SimpleGaugeEditor SimpleGaugeのカスタムエディタ."
+    "keywords": "Namespace MinimalUtility.Editor Classes AnimatorInspector Animatorコンポーネントのカスタムエディタ. DefaultInspector デフォルトのインスペクタービュー. MinimalEditorUtility エディタ拡張のユーティリティクラス. SimpleGaugeEditor SimpleGaugeのカスタムエディタ. TransformInspector Transformコンポーネントのカスタムエディタ. UnityComponentInspector<T> 既存のUnityコンポーネントのカスタムエディタを作成するための基底クラスです."
   },
   "api/MinimalUtility.EmptyGraphic.html": {
     "href": "api/MinimalUtility.EmptyGraphic.html",

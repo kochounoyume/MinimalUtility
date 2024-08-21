@@ -125,6 +125,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/MinimalUtility.Editor.AnimatorInspector.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MinimalUtility.Editor.AnimatorInspector.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/MinimalUtility.Editor.DefaultInspector.yml",
       "output": {
         ".html": {
@@ -135,10 +145,40 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/MinimalUtility.Editor.MinimalEditorUtility.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MinimalUtility.Editor.MinimalEditorUtility.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/MinimalUtility.Editor.SimpleGaugeEditor.yml",
       "output": {
         ".html": {
           "relative_path": "api/MinimalUtility.Editor.SimpleGaugeEditor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MinimalUtility.Editor.TransformInspector.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MinimalUtility.Editor.TransformInspector.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MinimalUtility.Editor.UnityComponentInspector-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MinimalUtility.Editor.UnityComponentInspector-1.html"
         }
       },
       "version": ""
