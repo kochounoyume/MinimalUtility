@@ -2,7 +2,8 @@
     "name": "MinimalUtility.Editor",
     "rootNamespace": "MinimalUtility.Editor",
     "references": [
-        "GUID:2294a65d721f9974ca66d13b434e6b7b"
+        "GUID:2294a65d721f9974ca66d13b434e6b7b",
+        "GUID:eb014bd0dae606c44a234c52ffeb53e2"
     ],
     "includePlatforms": [
         "Editor"
