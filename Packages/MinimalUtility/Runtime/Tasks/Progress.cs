@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using Cysharp.Threading.Tasks;
 
 namespace MinimalUtility.Tasks
@@ -7,8 +8,27 @@ namespace MinimalUtility.Tasks
     /// <summary>
     /// 簡易<see cref="IProgress{T}"/>ファクトリ.
     /// </summary>
-    public static class MinimalProgress
+    public static class Progress
     {
+        /// <summary>
+        /// 進捗状況の値を通知するProgressを生成します.
+        /// </summary>
+        /// <param name="handler">進捗状況が変更された時に呼び出されるコールバック.</param>
+        /// <typeparam name="T">進捗状況の値の型.</typeparam>
+        /// <returns>進捗状況の値を通知するProgress.</returns>
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        public static IProgress<T> Create<T>(Action<T> handler) => Cysharp.Threading.Tasks.Progress.Create(handler);
+
+        /// <summary>
+        /// 進捗状況の値が変更された時だけ通知するProgressを生成します.
+        /// </summary>
+        /// <param name="handler">進捗状況が変更された時に呼び出されるコールバック.</param>
+        /// <typeparam name="T">進捗状況の値の型.</typeparam>
+        /// <returns>進捗状況の値が変更された時だけコールバックを呼び出すProgress.</returns>
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        public static IProgress<T> CreateOnlyValueChanged<T>(Action<T> handler)
+            => Cysharp.Threading.Tasks.Progress.CreateOnlyValueChanged(handler);
+
         /// <summary>
         /// 進捗状況の値を通知するProgressを生成します.
         /// <remarks>
