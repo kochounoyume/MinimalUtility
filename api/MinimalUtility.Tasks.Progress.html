@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class MinimalProgress |  |  </title>
+      <title>Class Progress |  |  </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class MinimalProgress |  |  ">
+      <meta name="title" content="Class Progress |  |  ">
       
       <meta name="description" content="簡易ファクトリ.">
       <link rel="icon" href="../favicon.ico">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       <meta name="docfx:disablenewtab" content="true">
       
-      <meta name="docfx:docurl" content="https://github.com/kochounoyume/MinimalUtility/new/main/apiSpec/new?filename=MinimalUtility_Tasks_MinimalProgress.md&amp;value=---%0Auid%3A%20MinimalUtility.Tasks.MinimalProgress%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/kochounoyume/MinimalUtility/new/main/apiSpec/new?filename=MinimalUtility_Tasks_Progress.md&amp;value=---%0Auid%3A%20MinimalUtility.Tasks.Progress%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -84,12 +84,12 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="MinimalUtility.Tasks.MinimalProgress">
+        <article data-uid="MinimalUtility.Tasks.Progress">
 
 
 
-  <h1 id="MinimalUtility_Tasks_MinimalProgress" data-uid="MinimalUtility.Tasks.MinimalProgress" class="text-break">
-Class MinimalProgress  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/Tasks/MinimalProgress.cs/#L10"><i class="bi bi-code-slash"></i></a>
+  <h1 id="MinimalUtility_Tasks_Progress" data-uid="MinimalUtility.Tasks.Progress" class="text-break">
+Class Progress  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/Tasks/Progress.cs/#L11"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -102,7 +102,7 @@ Class MinimalProgress  <a class="header-action link-secondary" title="View sourc
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static class MinimalProgress</code></pre>
+    <pre><code class="lang-csharp hljs">public static class Progress</code></pre>
   </div>
 
 
@@ -112,7 +112,7 @@ Class MinimalProgress  <a class="header-action link-secondary" title="View sourc
     <dt>Inheritance</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-      <div><span class="xref">MinimalProgress</span></div>
+      <div><span class="xref">Progress</span></div>
     </dd>
   </dl>
 
@@ -153,11 +153,56 @@ Class MinimalProgress  <a class="header-action link-secondary" title="View sourc
 </h2>
 
 
-  <a id="MinimalUtility_Tasks_MinimalProgress_CreateOnlyValueChanged_" data-uid="MinimalUtility.Tasks.MinimalProgress.CreateOnlyValueChanged*"></a>
+  <a id="MinimalUtility_Tasks_Progress_CreateOnlyValueChanged_" data-uid="MinimalUtility.Tasks.Progress.CreateOnlyValueChanged*"></a>
 
-  <h3 id="MinimalUtility_Tasks_MinimalProgress_CreateOnlyValueChanged__2___1_System_Action___0___1__System_Collections_Generic_IEqualityComparer___0__" data-uid="MinimalUtility.Tasks.MinimalProgress.CreateOnlyValueChanged``2(``1,System.Action{``0,``1},System.Collections.Generic.IEqualityComparer{``0})">
+  <h3 id="MinimalUtility_Tasks_Progress_CreateOnlyValueChanged__1_System_Action___0__" data-uid="MinimalUtility.Tasks.Progress.CreateOnlyValueChanged``1(System.Action{``0})">
+  CreateOnlyValueChanged&lt;T&gt;(Action&lt;T&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/Tasks/Progress.cs/#L28"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>進捗状況の値が変更された時だけ通知するProgressを生成します.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IProgress&lt;T&gt; CreateOnlyValueChanged&lt;T&gt;(Action&lt;T&gt; handler)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>handler</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;T&gt;</dt>
+    <dd><p>進捗状況が変更された時に呼び出されるコールバック.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iprogress-1">IProgress</a>&lt;T&gt;</dt>
+    <dd><p>進捗状況の値が変更された時だけコールバックを呼び出すProgress.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>進捗状況の値の型.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="MinimalUtility_Tasks_Progress_CreateOnlyValueChanged_" data-uid="MinimalUtility.Tasks.Progress.CreateOnlyValueChanged*"></a>
+
+  <h3 id="MinimalUtility_Tasks_Progress_CreateOnlyValueChanged__2___1_System_Action___0___1__System_Collections_Generic_IEqualityComparer___0__" data-uid="MinimalUtility.Tasks.Progress.CreateOnlyValueChanged``2(``1,System.Action{``0,``1},System.Collections.Generic.IEqualityComparer{``0})">
   CreateOnlyValueChanged&lt;T, TState&gt;(TState, Action&lt;T, TState&gt;, IEqualityComparer&lt;T&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/Tasks/MinimalProgress.cs/#L40"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/Tasks/Progress.cs/#L60"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>進捗状況の値が変更された時だけ通知するProgressを生成します.
@@ -209,11 +254,56 @@ Class MinimalProgress  <a class="header-action link-secondary" title="View sourc
 
 
 
-  <a id="MinimalUtility_Tasks_MinimalProgress_Create_" data-uid="MinimalUtility.Tasks.MinimalProgress.Create*"></a>
+  <a id="MinimalUtility_Tasks_Progress_Create_" data-uid="MinimalUtility.Tasks.Progress.Create*"></a>
 
-  <h3 id="MinimalUtility_Tasks_MinimalProgress_Create__2___1_System_Action___0___1__" data-uid="MinimalUtility.Tasks.MinimalProgress.Create``2(``1,System.Action{``0,``1})">
+  <h3 id="MinimalUtility_Tasks_Progress_Create__1_System_Action___0__" data-uid="MinimalUtility.Tasks.Progress.Create``1(System.Action{``0})">
+  Create&lt;T&gt;(Action&lt;T&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/Tasks/Progress.cs/#L19"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>進捗状況の値を通知するProgressを生成します.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IProgress&lt;T&gt; Create&lt;T&gt;(Action&lt;T&gt; handler)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>handler</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;T&gt;</dt>
+    <dd><p>進捗状況が変更された時に呼び出されるコールバック.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iprogress-1">IProgress</a>&lt;T&gt;</dt>
+    <dd><p>進捗状況の値を通知するProgress.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>進捗状況の値の型.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="MinimalUtility_Tasks_Progress_Create_" data-uid="MinimalUtility.Tasks.Progress.Create*"></a>
+
+  <h3 id="MinimalUtility_Tasks_Progress_Create__2___1_System_Action___0___1__" data-uid="MinimalUtility.Tasks.Progress.Create``2(``1,System.Action{``0,``1})">
   Create&lt;T, TState&gt;(TState, Action&lt;T, TState&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/Tasks/MinimalProgress.cs/#L23"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/Tasks/Progress.cs/#L43"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>進捗状況の値を通知するProgressを生成します.

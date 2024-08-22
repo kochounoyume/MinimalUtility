@@ -1671,44 +1671,62 @@ references:
   commentId: N:MinimalUtility.Tasks
   fullName: MinimalUtility.Tasks
   nameWithType: MinimalUtility.Tasks
-- uid: MinimalUtility.Tasks.MinimalProgress
-  name: MinimalProgress
-  href: api/MinimalUtility.Tasks.MinimalProgress.html
-  commentId: T:MinimalUtility.Tasks.MinimalProgress
-  fullName: MinimalUtility.Tasks.MinimalProgress
-  nameWithType: MinimalProgress
-- uid: MinimalUtility.Tasks.MinimalProgress.Create*
+- uid: MinimalUtility.Tasks.Progress
+  name: Progress
+  href: api/MinimalUtility.Tasks.Progress.html
+  commentId: T:MinimalUtility.Tasks.Progress
+  fullName: MinimalUtility.Tasks.Progress
+  nameWithType: Progress
+- uid: MinimalUtility.Tasks.Progress.Create*
   name: Create
-  href: api/MinimalUtility.Tasks.MinimalProgress.html#MinimalUtility_Tasks_MinimalProgress_Create_
-  commentId: Overload:MinimalUtility.Tasks.MinimalProgress.Create
+  href: api/MinimalUtility.Tasks.Progress.html#MinimalUtility_Tasks_Progress_Create_
+  commentId: Overload:MinimalUtility.Tasks.Progress.Create
   isSpec: "True"
-  fullName: MinimalUtility.Tasks.MinimalProgress.Create
-  nameWithType: MinimalProgress.Create
-- uid: MinimalUtility.Tasks.MinimalProgress.CreateOnlyValueChanged*
+  fullName: MinimalUtility.Tasks.Progress.Create
+  nameWithType: Progress.Create
+- uid: MinimalUtility.Tasks.Progress.CreateOnlyValueChanged*
   name: CreateOnlyValueChanged
-  href: api/MinimalUtility.Tasks.MinimalProgress.html#MinimalUtility_Tasks_MinimalProgress_CreateOnlyValueChanged_
-  commentId: Overload:MinimalUtility.Tasks.MinimalProgress.CreateOnlyValueChanged
+  href: api/MinimalUtility.Tasks.Progress.html#MinimalUtility_Tasks_Progress_CreateOnlyValueChanged_
+  commentId: Overload:MinimalUtility.Tasks.Progress.CreateOnlyValueChanged
   isSpec: "True"
-  fullName: MinimalUtility.Tasks.MinimalProgress.CreateOnlyValueChanged
-  nameWithType: MinimalProgress.CreateOnlyValueChanged
-- uid: MinimalUtility.Tasks.MinimalProgress.CreateOnlyValueChanged``2(``1,System.Action{``0,``1},System.Collections.Generic.IEqualityComparer{``0})
+  fullName: MinimalUtility.Tasks.Progress.CreateOnlyValueChanged
+  nameWithType: Progress.CreateOnlyValueChanged
+- uid: MinimalUtility.Tasks.Progress.CreateOnlyValueChanged``1(System.Action{``0})
+  name: CreateOnlyValueChanged<T>(Action<T>)
+  href: api/MinimalUtility.Tasks.Progress.html#MinimalUtility_Tasks_Progress_CreateOnlyValueChanged__1_System_Action___0__
+  commentId: M:MinimalUtility.Tasks.Progress.CreateOnlyValueChanged``1(System.Action{``0})
+  name.vb: CreateOnlyValueChanged(Of T)(Action(Of T))
+  fullName: MinimalUtility.Tasks.Progress.CreateOnlyValueChanged<T>(System.Action<T>)
+  fullName.vb: MinimalUtility.Tasks.Progress.CreateOnlyValueChanged(Of T)(System.Action(Of T))
+  nameWithType: Progress.CreateOnlyValueChanged<T>(Action<T>)
+  nameWithType.vb: Progress.CreateOnlyValueChanged(Of T)(Action(Of T))
+- uid: MinimalUtility.Tasks.Progress.CreateOnlyValueChanged``2(``1,System.Action{``0,``1},System.Collections.Generic.IEqualityComparer{``0})
   name: CreateOnlyValueChanged<T, TState>(TState, Action<T, TState>, IEqualityComparer<T>)
-  href: api/MinimalUtility.Tasks.MinimalProgress.html#MinimalUtility_Tasks_MinimalProgress_CreateOnlyValueChanged__2___1_System_Action___0___1__System_Collections_Generic_IEqualityComparer___0__
-  commentId: M:MinimalUtility.Tasks.MinimalProgress.CreateOnlyValueChanged``2(``1,System.Action{``0,``1},System.Collections.Generic.IEqualityComparer{``0})
+  href: api/MinimalUtility.Tasks.Progress.html#MinimalUtility_Tasks_Progress_CreateOnlyValueChanged__2___1_System_Action___0___1__System_Collections_Generic_IEqualityComparer___0__
+  commentId: M:MinimalUtility.Tasks.Progress.CreateOnlyValueChanged``2(``1,System.Action{``0,``1},System.Collections.Generic.IEqualityComparer{``0})
   name.vb: CreateOnlyValueChanged(Of T, TState)(TState, Action(Of T, TState), IEqualityComparer(Of T))
-  fullName: MinimalUtility.Tasks.MinimalProgress.CreateOnlyValueChanged<T, TState>(TState, System.Action<T, TState>, System.Collections.Generic.IEqualityComparer<T>)
-  fullName.vb: MinimalUtility.Tasks.MinimalProgress.CreateOnlyValueChanged(Of T, TState)(TState, System.Action(Of T, TState), System.Collections.Generic.IEqualityComparer(Of T))
-  nameWithType: MinimalProgress.CreateOnlyValueChanged<T, TState>(TState, Action<T, TState>, IEqualityComparer<T>)
-  nameWithType.vb: MinimalProgress.CreateOnlyValueChanged(Of T, TState)(TState, Action(Of T, TState), IEqualityComparer(Of T))
-- uid: MinimalUtility.Tasks.MinimalProgress.Create``2(``1,System.Action{``0,``1})
+  fullName: MinimalUtility.Tasks.Progress.CreateOnlyValueChanged<T, TState>(TState, System.Action<T, TState>, System.Collections.Generic.IEqualityComparer<T>)
+  fullName.vb: MinimalUtility.Tasks.Progress.CreateOnlyValueChanged(Of T, TState)(TState, System.Action(Of T, TState), System.Collections.Generic.IEqualityComparer(Of T))
+  nameWithType: Progress.CreateOnlyValueChanged<T, TState>(TState, Action<T, TState>, IEqualityComparer<T>)
+  nameWithType.vb: Progress.CreateOnlyValueChanged(Of T, TState)(TState, Action(Of T, TState), IEqualityComparer(Of T))
+- uid: MinimalUtility.Tasks.Progress.Create``1(System.Action{``0})
+  name: Create<T>(Action<T>)
+  href: api/MinimalUtility.Tasks.Progress.html#MinimalUtility_Tasks_Progress_Create__1_System_Action___0__
+  commentId: M:MinimalUtility.Tasks.Progress.Create``1(System.Action{``0})
+  name.vb: Create(Of T)(Action(Of T))
+  fullName: MinimalUtility.Tasks.Progress.Create<T>(System.Action<T>)
+  fullName.vb: MinimalUtility.Tasks.Progress.Create(Of T)(System.Action(Of T))
+  nameWithType: Progress.Create<T>(Action<T>)
+  nameWithType.vb: Progress.Create(Of T)(Action(Of T))
+- uid: MinimalUtility.Tasks.Progress.Create``2(``1,System.Action{``0,``1})
   name: Create<T, TState>(TState, Action<T, TState>)
-  href: api/MinimalUtility.Tasks.MinimalProgress.html#MinimalUtility_Tasks_MinimalProgress_Create__2___1_System_Action___0___1__
-  commentId: M:MinimalUtility.Tasks.MinimalProgress.Create``2(``1,System.Action{``0,``1})
+  href: api/MinimalUtility.Tasks.Progress.html#MinimalUtility_Tasks_Progress_Create__2___1_System_Action___0___1__
+  commentId: M:MinimalUtility.Tasks.Progress.Create``2(``1,System.Action{``0,``1})
   name.vb: Create(Of T, TState)(TState, Action(Of T, TState))
-  fullName: MinimalUtility.Tasks.MinimalProgress.Create<T, TState>(TState, System.Action<T, TState>)
-  fullName.vb: MinimalUtility.Tasks.MinimalProgress.Create(Of T, TState)(TState, System.Action(Of T, TState))
-  nameWithType: MinimalProgress.Create<T, TState>(TState, Action<T, TState>)
-  nameWithType.vb: MinimalProgress.Create(Of T, TState)(TState, Action(Of T, TState))
+  fullName: MinimalUtility.Tasks.Progress.Create<T, TState>(TState, System.Action<T, TState>)
+  fullName.vb: MinimalUtility.Tasks.Progress.Create(Of T, TState)(TState, System.Action(Of T, TState))
+  nameWithType: Progress.Create<T, TState>(TState, Action<T, TState>)
+  nameWithType.vb: Progress.Create(Of T, TState)(TState, Action(Of T, TState))
 - uid: MinimalUtility.Tasks.UniTaskExtensions
   name: UniTaskExtensions
   href: api/MinimalUtility.Tasks.UniTaskExtensions.html

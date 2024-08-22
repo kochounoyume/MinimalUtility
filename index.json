@@ -189,10 +189,10 @@
     "title": "Namespace MinimalUtility.String | |",
     "keywords": "Namespace MinimalUtility.String Classes StringUtils"
   },
-  "api/MinimalUtility.Tasks.MinimalProgress.html": {
-    "href": "api/MinimalUtility.Tasks.MinimalProgress.html",
-    "title": "Class MinimalProgress | |",
-    "keywords": "Class MinimalProgress Namespace MinimalUtility.Tasks 簡易IProgress<T>ファクトリ. public static class MinimalProgress Inheritance object MinimalProgress Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Methods CreateOnlyValueChanged<T, TState>(TState, Action<T, TState>, IEqualityComparer<T>) 進捗状況の値が変更された時だけ通知するProgressを生成します. Cysharp.Threading.Tasks.Progress.CreateOnlyValueChanged<T>(Action<T>, IEqualityComparer<T>)の引数を設定できる版. public static IProgress<T> CreateOnlyValueChanged<T, TState>(TState state, Action<T, TState> handler, IEqualityComparer<T> comparer = null) Parameters state TState 引数として渡したい値. handler Action<T, TState> 進捗状況が変更された時に呼び出されるコールバック. comparer IEqualityComparer<T> 進捗状況の値を比較するためのEqualityComparer<T>. Returns IProgress<T> 進捗状況の値が変更された時だけコールバックを呼び出すProgress. Type Parameters T 進捗状況の値の型. TState 渡したい引数の型. Create<T, TState>(TState, Action<T, TState>) 進捗状況の値を通知するProgressを生成します. Cysharp.Threading.Tasks.Progress.Create<T>(Action<T>)の引数を設定できる版. public static IProgress<T> Create<T, TState>(TState state, Action<T, TState> handler) Parameters state TState 引数として渡したい値. handler Action<T, TState> 進捗状況が変更された時に呼び出されるコールバック. Returns IProgress<T> 進捗状況の値を通知するProgress. Type Parameters T 進捗状況の値の型. TState 渡したい引数の型."
+  "api/MinimalUtility.Tasks.Progress.html": {
+    "href": "api/MinimalUtility.Tasks.Progress.html",
+    "title": "Class Progress | |",
+    "keywords": "Class Progress Namespace MinimalUtility.Tasks 簡易IProgress<T>ファクトリ. public static class Progress Inheritance object Progress Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Methods CreateOnlyValueChanged<T>(Action<T>) 進捗状況の値が変更された時だけ通知するProgressを生成します. public static IProgress<T> CreateOnlyValueChanged<T>(Action<T> handler) Parameters handler Action<T> 進捗状況が変更された時に呼び出されるコールバック. Returns IProgress<T> 進捗状況の値が変更された時だけコールバックを呼び出すProgress. Type Parameters T 進捗状況の値の型. CreateOnlyValueChanged<T, TState>(TState, Action<T, TState>, IEqualityComparer<T>) 進捗状況の値が変更された時だけ通知するProgressを生成します. Cysharp.Threading.Tasks.Progress.CreateOnlyValueChanged<T>(Action<T>, IEqualityComparer<T>)の引数を設定できる版. public static IProgress<T> CreateOnlyValueChanged<T, TState>(TState state, Action<T, TState> handler, IEqualityComparer<T> comparer = null) Parameters state TState 引数として渡したい値. handler Action<T, TState> 進捗状況が変更された時に呼び出されるコールバック. comparer IEqualityComparer<T> 進捗状況の値を比較するためのEqualityComparer<T>. Returns IProgress<T> 進捗状況の値が変更された時だけコールバックを呼び出すProgress. Type Parameters T 進捗状況の値の型. TState 渡したい引数の型. Create<T>(Action<T>) 進捗状況の値を通知するProgressを生成します. public static IProgress<T> Create<T>(Action<T> handler) Parameters handler Action<T> 進捗状況が変更された時に呼び出されるコールバック. Returns IProgress<T> 進捗状況の値を通知するProgress. Type Parameters T 進捗状況の値の型. Create<T, TState>(TState, Action<T, TState>) 進捗状況の値を通知するProgressを生成します. Cysharp.Threading.Tasks.Progress.Create<T>(Action<T>)の引数を設定できる版. public static IProgress<T> Create<T, TState>(TState state, Action<T, TState> handler) Parameters state TState 引数として渡したい値. handler Action<T, TState> 進捗状況が変更された時に呼び出されるコールバック. Returns IProgress<T> 進捗状況の値を通知するProgress. Type Parameters T 進捗状況の値の型. TState 渡したい引数の型."
   },
   "api/MinimalUtility.Tasks.UniTaskExtensions.html": {
     "href": "api/MinimalUtility.Tasks.UniTaskExtensions.html",
@@ -202,7 +202,7 @@
   "api/MinimalUtility.Tasks.html": {
     "href": "api/MinimalUtility.Tasks.html",
     "title": "Namespace MinimalUtility.Tasks | |",
-    "keywords": "Namespace MinimalUtility.Tasks Classes MinimalProgress 簡易IProgress<T>ファクトリ. UniTaskExtensions UniTaskの拡張メソッド."
+    "keywords": "Namespace MinimalUtility.Tasks Classes Progress 簡易IProgress<T>ファクトリ. UniTaskExtensions UniTaskの拡張メソッド."
   },
   "api/MinimalUtility.VContainer.LifetimeScopeBase.html": {
     "href": "api/MinimalUtility.VContainer.LifetimeScopeBase.html",

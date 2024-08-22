@@ -395,10 +395,10 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/MinimalUtility.Tasks.MinimalProgress.yml",
+      "source_relative_path": "api/MinimalUtility.Tasks.Progress.yml",
       "output": {
         ".html": {
-          "relative_path": "api/MinimalUtility.Tasks.MinimalProgress.html"
+          "relative_path": "api/MinimalUtility.Tasks.Progress.html"
         }
       },
       "version": ""
