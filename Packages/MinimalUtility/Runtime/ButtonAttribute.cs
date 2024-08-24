@@ -24,7 +24,7 @@ namespace MinimalUtility
         /// <param name="parameters">引数.</param>
         public ButtonAttribute(string buttonName, params object[] parameters)
         {
-            ButtonName = buttonName;
+            this.buttonName = buttonName;
             this.parameters = parameters;
         }
 
