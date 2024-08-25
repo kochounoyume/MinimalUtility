@@ -41,27 +41,29 @@ namespace MinimalUtility.MultiLibraries
             GB = 3
         }
 
-        private sealed class Text
-        {
-            public string Value { get; set; }
-        }
-
         /// <summary>
         /// プロファイル情報を更新する間隔.
         /// </summary>
         private const float IntervalSecs = 0.5f;
 
         /// <summary>
-        /// プロファイル情報を表示する際の表示範囲.
-        /// </summary>
-        private readonly Vector2 debugArea = new Vector2(500, 80);
-
-        /// <summary>
         /// 表示する総メモリ使用量の単位.
         /// </summary>
         private readonly MemoryUnit memoryUnit;
 
-        private readonly MemoryUnitStringConverter memoryUnitStringConverter = new MemoryUnitStringConverter();
+        private readonly MemoryUnitStringConverter memoryUnitStringConverter = new ();
+
+        private readonly FrameTiming[] frameTiming = new FrameTiming[300];
+
+        /// <summary>
+        /// フレームタイミング情報.
+        /// </summary>
+        public FrameTiming FrameTiming => frameTiming[0];
+
+        /// <summary>
+        /// GUI表示の可視状態.
+        /// </summary>
+        public bool IsGUIVisible { get; set; } = true;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="DebugProfiler"/> class.
@@ -77,48 +79,56 @@ namespace MinimalUtility.MultiLibraries
         /// </summary>
         /// <param name="cancellation">キャンセルトークン.</param>
         /// <returns>UniTask.</returns>
-        public async UniTask StartAsync(CancellationToken cancellation)
+        public UniTask StartAsync(CancellationToken cancellation)
         {
             TimeSpan interval = TimeSpan.FromSeconds(IntervalSecs);
-            Text text = new Text();
 
-            Observable.Timer(interval, interval, UnityTimeProvider.UpdateRealtime, cancellation)
-                .Select(UnityFrameProvider.Update, static (_, provider) => provider.GetFrameCount())
-                .Pairwise()
-                .Subscribe((text, unit: memoryUnit, unitStr: memoryUnitStringConverter.Convert(memoryUnit)),
-                    static (pair, param) =>
+            Observable
+                .EveryUpdate(cancellation)
+                .Subscribe(frameTiming, static (_, frameTiming) =>
+                {
+                    FrameTimingManager.CaptureFrameTimings();
+                    FrameTimingManager.GetLatestTimings((uint)frameTiming.Length, frameTiming);
+                });
+
+            if (IsGUIVisible)
+            {
+                GameObject instanceObj = new GameObject("DebugProfiler", typeof(AsyncGUITrigger));
+                Object.DontDestroyOnLoad(instanceObj);
+                AsyncGUITrigger trigger = instanceObj.GetComponent<AsyncGUITrigger>();
+
+                string unitStr = memoryUnitStringConverter.Convert(memoryUnit);
+                // GUIStyleは生成タイミングがOnGUIの中でないとエラーになるため、Lazyで遅延生成
+                Lazy<GUIStyle> styleBox = new (static () => new GUIStyle(GUI.skin.box)
+                {
+                    fontSize = 30,
+                    normal = { textColor = Color.white },
+                    alignment = TextAnchor.UpperLeft
+                });
+
+                Observable
+                    .Timer(interval, interval, cancellation)
+                    .Select((frameTiming, trigger, styleBox, unit: memoryUnit, unitStr),
+                        static (_, param) => param)
+                    .SubscribeAwait(static async (param, ct) =>
                     {
-                        long count = pair.Current - pair.Previous;
-                        float fps = count / IntervalSecs;
-                        float ms = IntervalSecs / count * 1000f;
+                        await param.trigger.OnGUIAsync(ct);
+                        double ms = param.frameTiming[0].cpuFrameTime;
+                        double fps = 1000 / ms;
                         // 確保している総メモリ
                         float totalMemory = Profiler.GetTotalReservedMemoryLong() / Mathf.Pow(1024f, (int)param.unit);
-                        param.text.Value = $"CPU: {fps:F0}fps ({ms:F1}ms){Environment.NewLine}Memory: {totalMemory:F}{param.unitStr}";
-                    });
+                        string text = $"CPU: {fps:F0}fps ({ms:F1}ms){Environment.NewLine}Memory: {totalMemory:F}{param.unitStr}";
 
-            GameObject instanceObj = new GameObject("DebugProfiler", typeof(AsyncGUITrigger));
-            // 破壊されないように
-            Object.DontDestroyOnLoad(instanceObj);
-
-            AsyncGUITrigger trigger = instanceObj.GetComponent<AsyncGUITrigger>();
-            await trigger.OnGUIAsync(cancellation);
-
-            const int fontSize = 30;
-            GUIStyle styleBox = new GUIStyle(GUI.skin.box)
-            {
-                fontSize = fontSize,
-                normal =
-                {
-                    textColor = Color.white
-                },
-                alignment = TextAnchor.UpperLeft
-            };
-            Rect field = new Rect(Screen.safeArea.position, debugArea);
-
-            await foreach (var unused in trigger.WithCancellation(cancellation))
-            {
-                GUI.Box(field, text.Value, styleBox);
+                        Rect rect = new Rect(Screen.safeArea.position, new Vector2(500, 80));
+                        while (!ct.IsCancellationRequested)
+                        {
+                            GUI.Box(rect, text, param.styleBox.Value);
+                            await param.trigger.OnGUIAsync(ct);
+                        }
+                    }, AwaitOperation.Switch);
             }
+
+            return UniTask.CompletedTask;
         }
     }
 }
