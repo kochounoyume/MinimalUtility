@@ -1351,6 +1351,32 @@ references:
   fullName.vb: MinimalUtility.MultiLibraries.DebugProfiler.New
   nameWithType: DebugProfiler.DebugProfiler
   nameWithType.vb: DebugProfiler.New
+- uid: MinimalUtility.MultiLibraries.DebugProfiler.FrameTiming
+  name: FrameTiming
+  href: api/MinimalUtility.MultiLibraries.DebugProfiler.html#MinimalUtility_MultiLibraries_DebugProfiler_FrameTiming
+  commentId: P:MinimalUtility.MultiLibraries.DebugProfiler.FrameTiming
+  fullName: MinimalUtility.MultiLibraries.DebugProfiler.FrameTiming
+  nameWithType: DebugProfiler.FrameTiming
+- uid: MinimalUtility.MultiLibraries.DebugProfiler.FrameTiming*
+  name: FrameTiming
+  href: api/MinimalUtility.MultiLibraries.DebugProfiler.html#MinimalUtility_MultiLibraries_DebugProfiler_FrameTiming_
+  commentId: Overload:MinimalUtility.MultiLibraries.DebugProfiler.FrameTiming
+  isSpec: "True"
+  fullName: MinimalUtility.MultiLibraries.DebugProfiler.FrameTiming
+  nameWithType: DebugProfiler.FrameTiming
+- uid: MinimalUtility.MultiLibraries.DebugProfiler.IsGUIVisible
+  name: IsGUIVisible
+  href: api/MinimalUtility.MultiLibraries.DebugProfiler.html#MinimalUtility_MultiLibraries_DebugProfiler_IsGUIVisible
+  commentId: P:MinimalUtility.MultiLibraries.DebugProfiler.IsGUIVisible
+  fullName: MinimalUtility.MultiLibraries.DebugProfiler.IsGUIVisible
+  nameWithType: DebugProfiler.IsGUIVisible
+- uid: MinimalUtility.MultiLibraries.DebugProfiler.IsGUIVisible*
+  name: IsGUIVisible
+  href: api/MinimalUtility.MultiLibraries.DebugProfiler.html#MinimalUtility_MultiLibraries_DebugProfiler_IsGUIVisible_
+  commentId: Overload:MinimalUtility.MultiLibraries.DebugProfiler.IsGUIVisible
+  isSpec: "True"
+  fullName: MinimalUtility.MultiLibraries.DebugProfiler.IsGUIVisible
+  nameWithType: DebugProfiler.IsGUIVisible
 - uid: MinimalUtility.MultiLibraries.DebugProfiler.MemoryUnit
   name: DebugProfiler.MemoryUnit
   href: api/MinimalUtility.MultiLibraries.DebugProfiler.MemoryUnit.html
