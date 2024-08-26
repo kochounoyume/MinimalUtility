@@ -2,11 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Enum DebugProfiler.MemoryUnit |  |  </title>
+      <title>Class DebugProfileViewer.OnGUITrigger |  |  </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Enum DebugProfiler.MemoryUnit |  |  ">
+      <meta name="title" content="Class DebugProfileViewer.OnGUITrigger |  |  ">
       
-      <meta name="description" content="総メモリ使用量表示の単位指定列挙体.">
+      <meta name="description" content="OnGUIイベントを取得するトリガークラス.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       <meta name="docfx:disablenewtab" content="true">
       
-      <meta name="docfx:docurl" content="https://github.com/kochounoyume/MinimalUtility/new/main/apiSpec/new?filename=MinimalUtility_MultiLibraries_DebugProfiler_MemoryUnit.md&amp;value=---%0Auid%3A%20MinimalUtility.MultiLibraries.DebugProfiler.MemoryUnit%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/kochounoyume/MinimalUtility/new/main/apiSpec/new?filename=MinimalUtility_DebugProfileViewer_OnGUITrigger.md&amp;value=---%0Auid%3A%20MinimalUtility.DebugProfileViewer.OnGUITrigger%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -84,26 +84,99 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="MinimalUtility.MultiLibraries.DebugProfiler.MemoryUnit">
+        <article data-uid="MinimalUtility.DebugProfileViewer.OnGUITrigger">
 
 
 
-
-  <h1 id="MinimalUtility_MultiLibraries_DebugProfiler_MemoryUnit" data-uid="MinimalUtility.MultiLibraries.DebugProfiler.MemoryUnit" class="text-break">
-Enum DebugProfiler.MemoryUnit  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/MultiLibraries/DebugProfiler.cs/#L28"><i class="bi bi-code-slash"></i></a>
+  <h1 id="MinimalUtility_DebugProfileViewer_OnGUITrigger" data-uid="MinimalUtility.DebugProfileViewer.OnGUITrigger" class="text-break">
+Class DebugProfileViewer.OnGUITrigger  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/DebugProfileViewer.cs/#L35"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="MinimalUtility.html">MinimalUtility</a>.<a class="xref" href="MinimalUtility.MultiLibraries.html">MultiLibraries</a></dd></dl>
+    <dl><dt>Namespace</dt><dd><a class="xref" href="MinimalUtility.html">MinimalUtility</a></dd></dl>
   
   </div>
 
-  <div class="markdown summary"><p>総メモリ使用量表示の単位指定列挙体.</p>
+  <div class="markdown summary"><p>OnGUIイベントを取得するトリガークラス.</p>
 </div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public enum DebugProfiler.MemoryUnit</code></pre>
+    <pre><code class="lang-csharp hljs">protected class DebugProfileViewer.OnGUITrigger : FrameDataProvider.EmptyMonoBehaviour</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="MinimalUtility.FrameDataProvider.html">FrameDataProvider</a>.<a class="xref" href="MinimalUtility.FrameDataProvider.EmptyMonoBehaviour.html">EmptyMonoBehaviour</a></div>
+      <div><span class="xref">DebugProfileViewer.OnGUITrigger</span></div>
+    </dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="MinimalUtility_DebugProfileViewer_OnGUITrigger_State_" data-uid="MinimalUtility.DebugProfileViewer.OnGUITrigger.State*"></a>
+
+  <h3 id="MinimalUtility_DebugProfileViewer_OnGUITrigger_State" data-uid="MinimalUtility.DebugProfileViewer.OnGUITrigger.State">
+  State
+  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/DebugProfileViewer.cs/#L46"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>イベントの引数として渡される、フレームタイミング情報.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FrameTiming State { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">FrameTiming</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="events">Events
+</h2>
+
+
+
+  <h3 id="MinimalUtility_DebugProfileViewer_OnGUITrigger_OnGUIEvent" data-uid="MinimalUtility.DebugProfileViewer.OnGUITrigger.OnGUIEvent">
+  OnGUIEvent
+  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/DebugProfileViewer.cs/#L41"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>OnGUIのタイミングで呼ばれるイベント.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action&lt;FrameTiming&gt; OnGUIEvent</code></pre>
   </div>
 
 
@@ -111,21 +184,16 @@ Enum DebugProfiler.MemoryUnit  <a class="header-action link-secondary" title="Vi
 
 
 
-
-
-
-  <h2 id="fields">Fields
-</h2>
+  <h4 class="section">Event Type</h4>
   <dl class="parameters">
-    <dt id="MinimalUtility_MultiLibraries_DebugProfiler_MemoryUnit_B"><code>B = 0</code></dt>
-    <dd></dd>
-    <dt id="MinimalUtility_MultiLibraries_DebugProfiler_MemoryUnit_GB"><code>GB = 3</code></dt>
-    <dd></dd>
-    <dt id="MinimalUtility_MultiLibraries_DebugProfiler_MemoryUnit_KB"><code>KB = 1</code></dt>
-    <dd></dd>
-    <dt id="MinimalUtility_MultiLibraries_DebugProfiler_MemoryUnit_MB"><code>MB = 2</code></dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<span class="xref">FrameTiming</span>&gt;</dt>
     <dd></dd>
   </dl>
+
+
+
+
+
 
 
 
