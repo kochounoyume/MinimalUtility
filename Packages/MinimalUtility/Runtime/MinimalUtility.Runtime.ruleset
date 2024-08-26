@@ -119,7 +119,7 @@
         <!-- Maintainability Rules (SA1400-) -->
         <Rule Id="SA1119" Action="Error" />
         <Rule Id="SA1400" Action="Error" />
-        <Rule Id="SA1401" Action="Error" />
+        <Rule Id="SA1401" Action="None" />
         <Rule Id="SA1402" Action="Error" />
         <Rule Id="SA1403" Action="Error" />
         <Rule Id="SA1404" Action="Error" />
