@@ -78,5 +78,21 @@ namespace MinimalUtility
             list.TrimExcess();
             return list;
         }
+
+        /// <summary>
+        /// 安全な<see cref="Component.GetComponent{T}"/>.
+        /// </summary>
+        /// <param name="self">対象の<see cref="Component"/>.</param>
+        /// <typeparam name="T">取得したいコンポーネントの型.</typeparam>
+        /// <returns>取得したコンポーネントインスタンス.なお取得不可の場合はSystemのnullを返す.</returns>
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        public static T SafeGetComponent<T>(this Component self) where T : Component
+        {
+            if (self.TryGetComponent(out T component))
+            {
+                return component;
+            }
+            return null;
+        }
     }
 }

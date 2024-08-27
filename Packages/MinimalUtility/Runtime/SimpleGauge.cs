@@ -55,7 +55,7 @@ namespace MinimalUtility
         /// <summary>
         /// ゲージの表示に使用する<see cref="MaskableGraphic"/>.
         /// </summary>
-        public MaskableGraphic Graphic => graphic == null ? graphic = GetComponent<MaskableGraphic>() : graphic;
+        public MaskableGraphic Graphic => graphic == null ? graphic = this.SafeGetComponent<MaskableGraphic>() : graphic;
 
         /// <inheritdoc/>
         protected override void OnEnable()
