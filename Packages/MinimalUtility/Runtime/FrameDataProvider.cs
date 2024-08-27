@@ -34,14 +34,16 @@ namespace MinimalUtility
         /// 空のMonoBehaviour.
         /// </summary>
         [DisallowMultipleComponent]
-        protected class EmptyMonoBehaviour : MonoBehaviour
+        public class EmptyMonoBehaviour : MonoBehaviour
         {
         }
 
+        private readonly Lazy<EmptyMonoBehaviour> coroutineRunner;
+
         /// <summary>
-        /// コルーチンを実行するための<see cref="MonoBehaviour"/>の遅延生成.
+        /// コルーチンを実行するための<see cref="MonoBehaviour"/>.
         /// </summary>
-        protected readonly Lazy<EmptyMonoBehaviour> CoroutineRunner;
+        public EmptyMonoBehaviour CoroutineRunner => coroutineRunner.Value;
 
         private readonly FrameTiming[] frameTiming = new FrameTiming[1];
 
@@ -52,9 +54,9 @@ namespace MinimalUtility
         {
             get
             {
-                if (CoroutineRunner.IsValueCreated)
+                if (coroutineRunner.IsValueCreated)
                 {
-                    CoroutineRunner.Value.StartCoroutine(UpdateFrameTiming());
+                    coroutineRunner.Value.StartCoroutine(UpdateFrameTiming());
                 }
                 return ref frameTiming[0];
             }
@@ -65,7 +67,16 @@ namespace MinimalUtility
         /// </summary>
         public FrameDataProvider()
         {
-            CoroutineRunner = new Lazy<EmptyMonoBehaviour>(GetCoroutineRunner);
+            coroutineRunner = new Lazy<EmptyMonoBehaviour>(CreateCoroutineRunner<EmptyMonoBehaviour>());
+        }
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="FrameDataProvider"/> class.
+        /// </summary>
+        /// <param name="coroutineRunnerFactory">コルーチンを実行するための<see cref="MonoBehaviour"/>を生成する関数.</param>
+        internal FrameDataProvider(Func<EmptyMonoBehaviour> coroutineRunnerFactory)
+        {
+            coroutineRunner = new Lazy<EmptyMonoBehaviour>(coroutineRunnerFactory);
         }
 
         /// <summary>
@@ -74,33 +85,25 @@ namespace MinimalUtility
         /// <param name="unit">メモリ単位.</param>
         /// <returns>指定した単位でのメモリ合計.</returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static float GetTotalMemory(in MemoryUnit unit)
-        {
-            return UnityEngine.Profiling.Profiler.GetTotalReservedMemoryLong() / Mathf.Pow(1024f, (int)unit);
-        }
+        public static float GetTotalMemory(MemoryUnit unit)
+            => UnityEngine.Profiling.Profiler.GetTotalReservedMemoryLong() / Mathf.Pow(1024f, (int)unit);
 
         /// <summary>
         /// コルーチンを実行するための<see cref="MonoBehaviour"/>を取得する汎用実装.
         /// </summary>
         /// <typeparam name="T"><see cref="EmptyMonoBehaviour"/>を継承したクラス.</typeparam>
-        /// <returns>コルーチンを実行するための<see cref="MonoBehaviour"/>..</returns>
+        /// <returns>コルーチンを実行するための<see cref="MonoBehaviour"/>.</returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        protected static EmptyMonoBehaviour CreateCoroutineRunner<T>() where T : EmptyMonoBehaviour
+        public static EmptyMonoBehaviour CreateCoroutineRunner<T>() where T : EmptyMonoBehaviour
         {
             var go = new GameObject("Debug Profiler", typeof(T));
             UnityEngine.Object.DontDestroyOnLoad(go);
             return go.GetComponent<T>();
         }
 
-        /// <summary>
-        /// コルーチンを実行するための<see cref="MonoBehaviour"/>を取得します.
-        /// </summary>
-        /// <returns>コルーチンを実行するための<see cref="MonoBehaviour"/>.</returns>
-        protected virtual EmptyMonoBehaviour GetCoroutineRunner() => CreateCoroutineRunner<EmptyMonoBehaviour>();
-
         private IEnumerator UpdateFrameTiming()
         {
-            while (CoroutineRunner.Value != null)
+            while (coroutineRunner.Value != null)
             {
                 FrameTimingManager.CaptureFrameTimings();
                 if (FrameTimingManager.GetLatestTimings(1, frameTiming) == 0)

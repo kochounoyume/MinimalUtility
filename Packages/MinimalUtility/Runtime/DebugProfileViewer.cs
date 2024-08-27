@@ -4,11 +4,13 @@ using UnityEngine;
 
 namespace MinimalUtility
 {
+    using static FrameDataProvider;
+
     /// <summary>
     /// プロファイル情報を表示するためのクラス.
     /// </summary>
     [Unity.Profiling.IgnoredByDeepProfiler]
-    public partial class DebugProfileViewer : FrameDataProvider
+    public partial class DebugProfileViewer
     {
         /// <summary>
         /// OnGUIイベントを取得するトリガークラス.
@@ -30,6 +32,7 @@ namespace MinimalUtility
         }
 
         private const float IntervalSecs = 0.5f;
+        private readonly FrameDataProvider frameDataProvider = new (CreateCoroutineRunner<OnGUITrigger>);
         private readonly Lazy<WaitForSeconds> intervalWait = new (static () => new WaitForSeconds(IntervalSecs));
         private readonly Lazy<OnGUITrigger> onGUITrigger;
         private readonly MemoryUnitStringConverter memoryUnitStringConverter = new ();
@@ -61,7 +64,7 @@ namespace MinimalUtility
                 if (value)
                 {
                     onGUITrigger.Value.OnGUIEvent += UpdateGUI;
-                    CoroutineRunner.Value.StartCoroutine(UpdateGUIInterval());
+                    frameDataProvider.CoroutineRunner.StartCoroutine(UpdateGUIInterval());
                 }
                 else
                 {
@@ -73,21 +76,18 @@ namespace MinimalUtility
         /// <summary>
         /// Initializes a new instance of the <see cref="DebugProfileViewer"/> class.
         /// </summary>
-        public DebugProfileViewer() : base()
+        public DebugProfileViewer()
         {
             onGUITrigger = new Lazy<OnGUITrigger>(Cast);
 
-            OnGUITrigger Cast() => CoroutineRunner.Value as OnGUITrigger;
+            OnGUITrigger Cast() => frameDataProvider.CoroutineRunner as OnGUITrigger;
         }
-
-        /// <inheritdoc/>
-        protected override EmptyMonoBehaviour GetCoroutineRunner() => CreateCoroutineRunner<OnGUITrigger>();
 
         private IEnumerator UpdateGUIInterval()
         {
-            while (isGUIVisible && CoroutineRunner.Value != null)
+            while (isGUIVisible && frameDataProvider.CoroutineRunner != null)
             {
-                onGUITrigger.Value.State = LatestFrameData;
+                onGUITrigger.Value.State = frameDataProvider.LatestFrameData;
                 yield return intervalWait.Value;
             }
         }
