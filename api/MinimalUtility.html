@@ -212,14 +212,6 @@ namespace MinimalUtility.MultiLibraries
 </dd>
     </dl>
     <dl class="jumplist">
-      <dt><a class="xref" href="MinimalUtility.MinimalSelectableGraphic.html">MinimalSelectableGraphic</a></dt>
-      <dd><p>UnityEngine.UI.Selectableを使用するうえで最低限の機能を持つグラフィック.
-<remarks>
-子オブジェクトのGraphicをキャッシュして選択時に色変化を伝播させる
-</remarks></p>
-</dd>
-    </dl>
-    <dl class="jumplist">
       <dt><a class="xref" href="MinimalUtility.RectTransformExtensions.html">RectTransformExtensions</a></dt>
       <dd><p>RectTransformの拡張メソッド.</p>
 </dd>
@@ -230,8 +222,25 @@ namespace MinimalUtility.MultiLibraries
 </dd>
     </dl>
     <dl class="jumplist">
+      <dt><a class="xref" href="MinimalUtility.SelectablesGraphic.html">SelectablesGraphic</a></dt>
+      <dd><p>UnityEngine.UI.Selectableを使用するうえで最低限の機能を持つグラフィック.
+<remarks>
+子オブジェクトのGraphicをキャッシュして選択時に色変化を伝播させる
+</remarks></p>
+</dd>
+    </dl>
+    <dl class="jumplist">
       <dt><a class="xref" href="MinimalUtility.SimpleGauge.html">SimpleGauge</a></dt>
       <dd><p>RectMask2Dを継承利用したシンプルで綺麗なゲージ表示.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MinimalUtility.ValueDisposable.html">ValueDisposable</a></dt>
+      <dd><p>値型で軽量な<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a>のファクトリ.
+<remarks>
+usingステートメントでの仕様を想定しており、<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a>にキャストするとアロケーションが発生する.
+<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a>にキャストして使用したい場合は素直に専用クラス実装するか、Rxライブラリの<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a>ファクトリを使用する.
+</remarks></p>
 </dd>
     </dl>
     <h3 id="structs">
@@ -243,22 +252,22 @@ Structs
 </dd>
     </dl>
     <dl class="jumplist">
-      <dt><a class="xref" href="MinimalUtility.MinimalDisposable.html">MinimalDisposable</a></dt>
+      <dt><a class="xref" href="MinimalUtility.Disposable.html">Disposable</a></dt>
       <dd><p>usingステートメントスコープを抜けた際にコールバックを呼び出すための構造体.</p>
 </dd>
     </dl>
     <dl class="jumplist">
-      <dt><a class="xref" href="MinimalUtility.MinimalDisposable-1.html">MinimalDisposable&lt;T1&gt;</a></dt>
+      <dt><a class="xref" href="MinimalUtility.Disposable-1.html">Disposable&lt;T1&gt;</a></dt>
       <dd><p>usingステートメントスコープを抜けた際にコールバックを呼び出すための構造体.</p>
 </dd>
     </dl>
     <dl class="jumplist">
-      <dt><a class="xref" href="MinimalUtility.MinimalDisposable-2.html">MinimalDisposable&lt;T1, T2&gt;</a></dt>
+      <dt><a class="xref" href="MinimalUtility.Disposable-2.html">Disposable&lt;T1, T2&gt;</a></dt>
       <dd><p>usingステートメントスコープを抜けた際にコールバックを呼び出すための構造体.</p>
 </dd>
     </dl>
     <dl class="jumplist">
-      <dt><a class="xref" href="MinimalUtility.MinimalDisposable-3.html">MinimalDisposable&lt;T1, T2, T3&gt;</a></dt>
+      <dt><a class="xref" href="MinimalUtility.Disposable-3.html">Disposable&lt;T1, T2, T3&gt;</a></dt>
       <dd><p>usingステートメントスコープを抜けた際にコールバックを呼び出すための構造体.</p>
 </dd>
     </dl>

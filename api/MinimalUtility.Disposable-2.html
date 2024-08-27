@@ -2,11 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class MinimalSelectableGraphic |  |  </title>
+      <title>Struct Disposable&lt;T1, T2&gt; |  |  </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class MinimalSelectableGraphic |  |  ">
+      <meta name="title" content="Struct Disposable&lt;T1, T2&gt; |  |  ">
       
-      <meta name="description" content="UnityEngine.UI.Selectableを使用するうえで最低限の機能を持つグラフィック.  子オブジェクトのGraphicをキャッシュして選択時に色変化を伝播させる">
+      <meta name="description" content="usingステートメントスコープを抜けた際にコールバックを呼び出すための構造体.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       <meta name="docfx:disablenewtab" content="true">
       
-      <meta name="docfx:docurl" content="https://github.com/kochounoyume/MinimalUtility/new/main/apiSpec/new?filename=MinimalUtility_MinimalSelectableGraphic.md&amp;value=---%0Auid%3A%20MinimalUtility.MinimalSelectableGraphic%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/kochounoyume/MinimalUtility/new/main/apiSpec/new?filename=MinimalUtility_Disposable_2.md&amp;value=---%0Auid%3A%20MinimalUtility.Disposable%602%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -84,12 +84,12 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="MinimalUtility.MinimalSelectableGraphic">
+        <article data-uid="MinimalUtility.Disposable`2">
 
 
 
-  <h1 id="MinimalUtility_MinimalSelectableGraphic" data-uid="MinimalUtility.MinimalSelectableGraphic" class="text-break">
-Class MinimalSelectableGraphic  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/MinimalSelectableGraphic.cs/#L13"><i class="bi bi-code-slash"></i></a>
+  <h1 id="MinimalUtility_Disposable_2" data-uid="MinimalUtility.Disposable`2" class="text-break">
+Struct Disposable&lt;T1, T2&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/ValueDisposable.cs/#L121"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,108 +97,57 @@ Class MinimalSelectableGraphic  <a class="header-action link-secondary" title="V
   
   </div>
 
-  <div class="markdown summary"><p>UnityEngine.UI.Selectableを使用するうえで最低限の機能を持つグラフィック.
-<remarks>
-子オブジェクトのGraphicをキャッシュして選択時に色変化を伝播させる
-</remarks></p>
+  <div class="markdown summary"><p>usingステートメントスコープを抜けた際にコールバックを呼び出すための構造体.</p>
 </div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public sealed class MinimalSelectableGraphic : EmptyGraphic</code></pre>
+    <pre><code class="lang-csharp hljs">public readonly struct Disposable&lt;T1, T2&gt; : IDisposable</code></pre>
   </div>
 
 
 
-
-  <dl class="typelist inheritance">
-    <dt>Inheritance</dt>
-    <dd>
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-      <div><a class="xref" href="MinimalUtility.EmptyGraphic.html">EmptyGraphic</a></div>
-      <div><span class="xref">MinimalSelectableGraphic</span></div>
-    </dd>
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T1</code></dt>
+    <dd><p>破棄時に呼び出す処理の第一引数の型.</p>
+</dd>
+    <dt><code>T2</code></dt>
+    <dd><p>破棄時に呼び出す処理の第二引数の型.</p>
+</dd>
   </dl>
 
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
 
 
   <dl class="typelist inheritedMembers">
     <dt>Inherited Members</dt>
     <dd>
     <div>
-      <a class="xref" href="MinimalUtility.EmptyGraphic.html#MinimalUtility_EmptyGraphic_SetMaterialDirty">EmptyGraphic.SetMaterialDirty()</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetype.equals">ValueType.Equals(object)</a>
     </div>
     <div>
-      <a class="xref" href="MinimalUtility.EmptyGraphic.html#MinimalUtility_EmptyGraphic_SetVerticesDirty">EmptyGraphic.SetVerticesDirty()</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode">ValueType.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetype.tostring">ValueType.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
     </div>
   </dd></dl>
-
-
-
-
-
-
-  <h2 class="section" id="methods">Methods
-</h2>
-
-
-  <a id="MinimalUtility_MinimalSelectableGraphic_CrossFadeColor_" data-uid="MinimalUtility.MinimalSelectableGraphic.CrossFadeColor*"></a>
-
-  <h3 id="MinimalUtility_MinimalSelectableGraphic_CrossFadeColor_Color_System_Single_System_Boolean_System_Boolean_" data-uid="MinimalUtility.MinimalSelectableGraphic.CrossFadeColor(Color,System.Single,System.Boolean,System.Boolean)">
-  CrossFadeColor(Color, float, bool, bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/MinimalSelectableGraphic.cs/#L23"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override void CrossFadeColor(Color targetColor, float duration, bool ignoreTimeScale, bool useAlpha)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>targetColor</code> <span class="xref">Color</span></dt>
-    <dd></dd>
-    <dt><code>duration</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
-    <dd></dd>
-    <dt><code>ignoreTimeScale</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
-    <dt><code>useAlpha</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-
-  <a id="MinimalUtility_MinimalSelectableGraphic_Start_" data-uid="MinimalUtility.MinimalSelectableGraphic.Start*"></a>
-
-  <h3 id="MinimalUtility_MinimalSelectableGraphic_Start" data-uid="MinimalUtility.MinimalSelectableGraphic.Start">
-  Start()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/MinimalSelectableGraphic.cs/#L32"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected override void Start()</code></pre>
-  </div>
-
-
-
-
-
-
-
 
 
 

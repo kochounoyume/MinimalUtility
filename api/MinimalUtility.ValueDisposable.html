@@ -2,11 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Struct MinimalDisposable |  |  </title>
+      <title>Class ValueDisposable |  |  </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Struct MinimalDisposable |  |  ">
+      <meta name="title" content="Class ValueDisposable |  |  ">
       
-      <meta name="description" content="usingステートメントスコープを抜けた際にコールバックを呼び出すための構造体.">
+      <meta name="description" content="値型で軽量なのファクトリ.  usingステートメントでの仕様を想定しており、にキャストするとアロケーションが発生する. にキャストして使用したい場合は素直に専用クラス実装するか、Rxライブラリのファクトリを使用する.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       <meta name="docfx:disablenewtab" content="true">
       
-      <meta name="docfx:docurl" content="https://github.com/kochounoyume/MinimalUtility/new/main/apiSpec/new?filename=MinimalUtility_MinimalDisposable.md&amp;value=---%0Auid%3A%20MinimalUtility.MinimalDisposable%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/kochounoyume/MinimalUtility/new/main/apiSpec/new?filename=MinimalUtility_ValueDisposable.md&amp;value=---%0Auid%3A%20MinimalUtility.ValueDisposable%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -84,12 +84,12 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="MinimalUtility.MinimalDisposable">
+        <article data-uid="MinimalUtility.ValueDisposable">
 
 
 
-  <h1 id="MinimalUtility_MinimalDisposable" data-uid="MinimalUtility.MinimalDisposable" class="text-break">
-Struct MinimalDisposable  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/MinimalDisposable.cs/#L71"><i class="bi bi-code-slash"></i></a>
+  <h1 id="MinimalUtility_ValueDisposable" data-uid="MinimalUtility.ValueDisposable" class="text-break">
+Class ValueDisposable  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/ValueDisposable.cs/#L13"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,46 +97,54 @@ Struct MinimalDisposable  <a class="header-action link-secondary" title="View so
   
   </div>
 
-  <div class="markdown summary"><p>usingステートメントスコープを抜けた際にコールバックを呼び出すための構造体.</p>
+  <div class="markdown summary"><p>値型で軽量な<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a>のファクトリ.
+<remarks>
+usingステートメントでの仕様を想定しており、<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a>にキャストするとアロケーションが発生する.
+<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a>にキャストして使用したい場合は素直に専用クラス実装するか、Rxライブラリの<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a>ファクトリを使用する.
+</remarks></p>
 </div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public readonly struct MinimalDisposable : IDisposable</code></pre>
+    <pre><code class="lang-csharp hljs">public static class ValueDisposable</code></pre>
   </div>
 
 
 
 
-
-  <dl class="typelist implements">
-    <dt>Implements</dt>
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
     <dd>
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">ValueDisposable</span></div>
     </dd>
   </dl>
+
 
 
   <dl class="typelist inheritedMembers">
     <dt>Inherited Members</dt>
     <dd>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetype.equals">ValueType.Equals(object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode">ValueType.GetHashCode()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetype.tostring">ValueType.ToString()</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
     </div>
     <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
     </div>
     <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
     </div>
   </dd></dl>
 
@@ -149,11 +157,11 @@ Struct MinimalDisposable  <a class="header-action link-secondary" title="View so
 </h2>
 
 
-  <a id="MinimalUtility_MinimalDisposable_Create_" data-uid="MinimalUtility.MinimalDisposable.Create*"></a>
+  <a id="MinimalUtility_ValueDisposable_Create_" data-uid="MinimalUtility.ValueDisposable.Create*"></a>
 
-  <h3 id="MinimalUtility_MinimalDisposable_Create_System_Action_" data-uid="MinimalUtility.MinimalDisposable.Create(System.Action)">
+  <h3 id="MinimalUtility_ValueDisposable_Create_System_Action_" data-uid="MinimalUtility.ValueDisposable.Create(System.Action)">
   Create(Action)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/MinimalDisposable.cs/#L16"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/ValueDisposable.cs/#L20"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>usingステートメントスコープを抜けた際にコールバックを呼び出す構造体のファクトリメソッド.</p>
@@ -161,7 +169,7 @@ Struct MinimalDisposable  <a class="header-action link-secondary" title="View so
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static MinimalDisposable Create(Action onDispose)</code></pre>
+    <pre><code class="lang-csharp hljs">public static Disposable Create(Action onDispose)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -173,7 +181,7 @@ Struct MinimalDisposable  <a class="header-action link-secondary" title="View so
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="MinimalUtility.MinimalDisposable.html">MinimalDisposable</a></dt>
+    <dt><a class="xref" href="MinimalUtility.Disposable.html">Disposable</a></dt>
     <dd><p>usingステートメントスコープを抜けた際にコールバックを呼び出す構造体.</p>
 </dd>
   </dl>
@@ -188,11 +196,11 @@ Struct MinimalDisposable  <a class="header-action link-secondary" title="View so
 
 
 
-  <a id="MinimalUtility_MinimalDisposable_Create_" data-uid="MinimalUtility.MinimalDisposable.Create*"></a>
+  <a id="MinimalUtility_ValueDisposable_Create_" data-uid="MinimalUtility.ValueDisposable.Create*"></a>
 
-  <h3 id="MinimalUtility_MinimalDisposable_Create__1___0_System_Action___0__" data-uid="MinimalUtility.MinimalDisposable.Create``1(``0,System.Action{``0})">
+  <h3 id="MinimalUtility_ValueDisposable_Create__1___0_System_Action___0__" data-uid="MinimalUtility.ValueDisposable.Create``1(``0,System.Action{``0})">
   Create&lt;T1&gt;(T1, Action&lt;T1&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/MinimalDisposable.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/ValueDisposable.cs/#L30"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>usingステートメントスコープを抜けた際にコールバックを呼び出す構造体のファクトリメソッド.</p>
@@ -200,7 +208,7 @@ Struct MinimalDisposable  <a class="header-action link-secondary" title="View so
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static MinimalDisposable&lt;T1&gt; Create&lt;T1&gt;(T1 state1, Action&lt;T1&gt; onDispose)</code></pre>
+    <pre><code class="lang-csharp hljs">public static Disposable&lt;T1&gt; Create&lt;T1&gt;(T1 state1, Action&lt;T1&gt; onDispose)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -215,7 +223,7 @@ Struct MinimalDisposable  <a class="header-action link-secondary" title="View so
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="MinimalUtility.MinimalDisposable-1.html">MinimalDisposable</a>&lt;T1&gt;</dt>
+    <dt><a class="xref" href="MinimalUtility.Disposable-1.html">Disposable</a>&lt;T1&gt;</dt>
     <dd><p>usingステートメントスコープを抜けた際にコールバックを呼び出す構造体.</p>
 </dd>
   </dl>
@@ -236,11 +244,11 @@ Struct MinimalDisposable  <a class="header-action link-secondary" title="View so
 
 
 
-  <a id="MinimalUtility_MinimalDisposable_Create_" data-uid="MinimalUtility.MinimalDisposable.Create*"></a>
+  <a id="MinimalUtility_ValueDisposable_Create_" data-uid="MinimalUtility.ValueDisposable.Create*"></a>
 
-  <h3 id="MinimalUtility_MinimalDisposable_Create__2___0___1_System_Action___0___1__" data-uid="MinimalUtility.MinimalDisposable.Create``2(``0,``1,System.Action{``0,``1})">
+  <h3 id="MinimalUtility_ValueDisposable_Create__2___0___1_System_Action___0___1__" data-uid="MinimalUtility.ValueDisposable.Create``2(``0,``1,System.Action{``0,``1})">
   Create&lt;T1, T2&gt;(T1, T2, Action&lt;T1, T2&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/MinimalDisposable.cs/#L44"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/ValueDisposable.cs/#L42"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>usingステートメントスコープを抜けた際にコールバックを呼び出す構造体のファクトリメソッド.</p>
@@ -248,7 +256,7 @@ Struct MinimalDisposable  <a class="header-action link-secondary" title="View so
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static MinimalDisposable&lt;T1, T2&gt; Create&lt;T1, T2&gt;(T1 state1, T2 state2, Action&lt;T1, T2&gt; onDispose)</code></pre>
+    <pre><code class="lang-csharp hljs">public static Disposable&lt;T1, T2&gt; Create&lt;T1, T2&gt;(T1 state1, T2 state2, Action&lt;T1, T2&gt; onDispose)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -266,7 +274,7 @@ Struct MinimalDisposable  <a class="header-action link-secondary" title="View so
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="MinimalUtility.MinimalDisposable-2.html">MinimalDisposable</a>&lt;T1, T2&gt;</dt>
+    <dt><a class="xref" href="MinimalUtility.Disposable-2.html">Disposable</a>&lt;T1, T2&gt;</dt>
     <dd><p>usingステートメントスコープを抜けた際にコールバックを呼び出す構造体.</p>
 </dd>
   </dl>
@@ -290,11 +298,11 @@ Struct MinimalDisposable  <a class="header-action link-secondary" title="View so
 
 
 
-  <a id="MinimalUtility_MinimalDisposable_Create_" data-uid="MinimalUtility.MinimalDisposable.Create*"></a>
+  <a id="MinimalUtility_ValueDisposable_Create_" data-uid="MinimalUtility.ValueDisposable.Create*"></a>
 
-  <h3 id="MinimalUtility_MinimalDisposable_Create__3___0___1___2_System_Action___0___1___2__" data-uid="MinimalUtility.MinimalDisposable.Create``3(``0,``1,``2,System.Action{``0,``1,``2})">
+  <h3 id="MinimalUtility_ValueDisposable_Create__3___0___1___2_System_Action___0___1___2__" data-uid="MinimalUtility.ValueDisposable.Create``3(``0,``1,``2,System.Action{``0,``1,``2})">
   Create&lt;T1, T2, T3&gt;(T1, T2, T3, Action&lt;T1, T2, T3&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/MinimalDisposable.cs/#L61"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/ValueDisposable.cs/#L57"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>usingステートメントスコープを抜けた際にコールバックを呼び出す構造体のファクトリメソッド.</p>
@@ -302,7 +310,7 @@ Struct MinimalDisposable  <a class="header-action link-secondary" title="View so
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static MinimalDisposable&lt;T1, T2, T3&gt; Create&lt;T1, T2, T3&gt;(T1 state1, T2 state2, T3 state3, Action&lt;T1, T2, T3&gt; onDispose)</code></pre>
+    <pre><code class="lang-csharp hljs">public static Disposable&lt;T1, T2, T3&gt; Create&lt;T1, T2, T3&gt;(T1 state1, T2 state2, T3 state3, Action&lt;T1, T2, T3&gt; onDispose)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -323,7 +331,7 @@ Struct MinimalDisposable  <a class="header-action link-secondary" title="View so
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="MinimalUtility.MinimalDisposable-3.html">MinimalDisposable</a>&lt;T1, T2, T3&gt;</dt>
+    <dt><a class="xref" href="MinimalUtility.Disposable-3.html">Disposable</a>&lt;T1, T2, T3&gt;</dt>
     <dd><p>usingステートメントスコープを抜けた際にコールバックを呼び出す構造体.</p>
 </dd>
   </dl>

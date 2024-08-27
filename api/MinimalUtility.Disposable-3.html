@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Struct MinimalDisposable&lt;T1&gt; |  |  </title>
+      <title>Struct Disposable&lt;T1, T2, T3&gt; |  |  </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Struct MinimalDisposable&lt;T1&gt; |  |  ">
+      <meta name="title" content="Struct Disposable&lt;T1, T2, T3&gt; |  |  ">
       
       <meta name="description" content="usingステートメントスコープを抜けた際にコールバックを呼び出すための構造体.">
       <link rel="icon" href="../favicon.ico">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       <meta name="docfx:disablenewtab" content="true">
       
-      <meta name="docfx:docurl" content="https://github.com/kochounoyume/MinimalUtility/new/main/apiSpec/new?filename=MinimalUtility_MinimalDisposable_1.md&amp;value=---%0Auid%3A%20MinimalUtility.MinimalDisposable%601%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/kochounoyume/MinimalUtility/new/main/apiSpec/new?filename=MinimalUtility_Disposable_3.md&amp;value=---%0Auid%3A%20MinimalUtility.Disposable%603%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -84,12 +84,12 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="MinimalUtility.MinimalDisposable`1">
+        <article data-uid="MinimalUtility.Disposable`3">
 
 
 
-  <h1 id="MinimalUtility_MinimalDisposable_1" data-uid="MinimalUtility.MinimalDisposable`1" class="text-break">
-Struct MinimalDisposable&lt;T1&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/MinimalDisposable.cs/#L97"><i class="bi bi-code-slash"></i></a>
+  <h1 id="MinimalUtility_Disposable_3" data-uid="MinimalUtility.Disposable`3" class="text-break">
+Struct Disposable&lt;T1, T2, T3&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/ValueDisposable.cs/#L155"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -102,7 +102,7 @@ Struct MinimalDisposable&lt;T1&gt;  <a class="header-action link-secondary" titl
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public readonly struct MinimalDisposable&lt;T1&gt; : IDisposable</code></pre>
+    <pre><code class="lang-csharp hljs">public readonly struct Disposable&lt;T1, T2, T3&gt; : IDisposable</code></pre>
   </div>
 
 
@@ -110,7 +110,13 @@ Struct MinimalDisposable&lt;T1&gt;  <a class="header-action link-secondary" titl
   <h4 class="section">Type Parameters</h4>
   <dl class="parameters">
     <dt><code>T1</code></dt>
-    <dd><p>破棄時に呼び出す処理の引数の型.</p>
+    <dd><p>破棄時に呼び出す処理の第一引数の型.</p>
+</dd>
+    <dt><code>T2</code></dt>
+    <dd><p>破棄時に呼び出す処理の第二引数の型.</p>
+</dd>
+    <dt><code>T3</code></dt>
+    <dd><p>破棄時に呼び出す処理の第三引数の型.</p>
 </dd>
   </dl>
 
