@@ -11,25 +11,6 @@ namespace MinimalUtility
     public partial class DebugProfileViewer : FrameDataProvider
     {
         /// <summary>
-        /// 総メモリ使用量表示の単位指定列挙体.
-        /// </summary>
-        [GenerateStringConverter(true)]
-        public enum MemoryUnit : int
-        {
-            [InspectorName("バイト")]
-            B = 0,
-
-            [InspectorName("キロバイト")]
-            KB = 1,
-
-            [InspectorName("メガバイト")]
-            MB = 2,
-
-            [InspectorName("ギガバイト")]
-            GB = 3
-        }
-
-        /// <summary>
         /// OnGUIイベントを取得するトリガークラス.
         /// </summary>
         [DisallowMultipleComponent]
@@ -96,12 +77,7 @@ namespace MinimalUtility
         }
 
         /// <inheritdoc/>
-        protected override EmptyMonoBehaviour GetCoroutineRunner()
-        {
-            var go = new GameObject(RunnerName, typeof(OnGUITrigger));
-            UnityEngine.Object.DontDestroyOnLoad(go);
-            return go.GetComponent<OnGUITrigger>();
-        }
+        protected override EmptyMonoBehaviour GetCoroutineRunner() => CreateCoroutineRunner<OnGUITrigger>();
 
         private IEnumerator UpdateGUIInterval()
         {
@@ -117,7 +93,7 @@ namespace MinimalUtility
             double ms = latest.cpuFrameTime;
             double fps = 1000 / ms;
             // 確保している総メモリ
-            float totalMemory = UnityEngine.Profiling.Profiler.GetTotalReservedMemoryLong() / Mathf.Pow(1024f, (int)Unit);
+            float totalMemory = GetTotalMemory(Unit);
             string text = $"CPU: {fps:F0}fps ({ms:F1}ms){Environment.NewLine}Memory: {totalMemory:F}{memoryUnitStringConverter.Convert(Unit)}";
             Rect rect = new Rect(Screen.safeArea.position, new Vector2(500, 80));
             GUI.Box(rect, text, styleBox.Value);

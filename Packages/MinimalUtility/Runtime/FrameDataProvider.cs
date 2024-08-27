@@ -11,17 +11,31 @@ namespace MinimalUtility
     public class FrameDataProvider
     {
         /// <summary>
+        /// 総メモリ使用量表示の単位指定列挙体.
+        /// </summary>
+        [GenerateStringConverter(true)]
+        public enum MemoryUnit : int
+        {
+            [InspectorName("バイト")]
+            B = 0,
+
+            [InspectorName("キロバイト")]
+            KB = 1,
+
+            [InspectorName("メガバイト")]
+            MB = 2,
+
+            [InspectorName("ギガバイト")]
+            GB = 3
+        }
+
+        /// <summary>
         /// 空のMonoBehaviour.
         /// </summary>
         [DisallowMultipleComponent]
         protected class EmptyMonoBehaviour : MonoBehaviour
         {
         }
-
-        /// <summary>
-        /// ランナーゲームオブジェクトの名前.
-        /// </summary>
-        protected const string RunnerName = "Debug Profiler";
 
         /// <summary>
         /// コルーチンを実行するための<see cref="MonoBehaviour"/>の遅延生成.
@@ -54,15 +68,32 @@ namespace MinimalUtility
         }
 
         /// <summary>
+        /// Unityによって予約されたメモリの合計を単位指定して取得します.
+        /// </summary>
+        /// <param name="unit">メモリ単位.</param>
+        /// <returns>指定した単位でのメモリ合計.</returns>
+        public static float GetTotalMemory(in MemoryUnit unit)
+        {
+            return UnityEngine.Profiling.Profiler.GetTotalReservedMemoryLong() / Mathf.Pow(1024f, (int)unit);
+        }
+
+        /// <summary>
+        /// コルーチンを実行するための<see cref="MonoBehaviour"/>を取得する汎用実装.
+        /// </summary>
+        /// <typeparam name="T"><see cref="EmptyMonoBehaviour"/>を継承したクラス.</typeparam>
+        /// <returns>コルーチンを実行するための<see cref="MonoBehaviour"/>..</returns>
+        protected static EmptyMonoBehaviour CreateCoroutineRunner<T>() where T : EmptyMonoBehaviour
+        {
+            var go = new GameObject("Debug Profiler", typeof(T));
+            UnityEngine.Object.DontDestroyOnLoad(go);
+            return go.GetComponent<T>();
+        }
+
+        /// <summary>
         /// コルーチンを実行するための<see cref="MonoBehaviour"/>を取得します.
         /// </summary>
         /// <returns>コルーチンを実行するための<see cref="MonoBehaviour"/>.</returns>
-        protected virtual EmptyMonoBehaviour GetCoroutineRunner()
-        {
-            var go = new GameObject(RunnerName, typeof(EmptyMonoBehaviour));
-            UnityEngine.Object.DontDestroyOnLoad(go);
-            return go.GetComponent<EmptyMonoBehaviour>();
-        }
+        protected virtual EmptyMonoBehaviour GetCoroutineRunner() => CreateCoroutineRunner<EmptyMonoBehaviour>();
 
         private IEnumerator UpdateFrameTiming()
         {
