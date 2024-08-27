@@ -56,12 +56,16 @@ namespace MinimalUtility
             get => isGUIVisible;
             set
             {
-                var before = isGUIVisible;
+                if (value == isGUIVisible) return;
                 isGUIVisible = value;
-                if (value && !before)
+                if (value)
                 {
                     onGUITrigger.Value.OnGUIEvent += UpdateGUI;
                     CoroutineRunner.Value.StartCoroutine(UpdateGUIInterval());
+                }
+                else
+                {
+                    onGUITrigger.Value.OnGUIEvent -= UpdateGUI;
                 }
             }
         }
