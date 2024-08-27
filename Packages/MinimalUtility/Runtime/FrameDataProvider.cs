@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections;
+using System.Runtime.CompilerServices;
 using UnityEngine;
 
 namespace MinimalUtility
@@ -72,6 +73,7 @@ namespace MinimalUtility
         /// </summary>
         /// <param name="unit">メモリ単位.</param>
         /// <returns>指定した単位でのメモリ合計.</returns>
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static float GetTotalMemory(in MemoryUnit unit)
         {
             return UnityEngine.Profiling.Profiler.GetTotalReservedMemoryLong() / Mathf.Pow(1024f, (int)unit);
@@ -82,6 +84,7 @@ namespace MinimalUtility
         /// </summary>
         /// <typeparam name="T"><see cref="EmptyMonoBehaviour"/>を継承したクラス.</typeparam>
         /// <returns>コルーチンを実行するための<see cref="MonoBehaviour"/>..</returns>
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         protected static EmptyMonoBehaviour CreateCoroutineRunner<T>() where T : EmptyMonoBehaviour
         {
             var go = new GameObject("Debug Profiler", typeof(T));
