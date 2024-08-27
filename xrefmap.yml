@@ -411,6 +411,22 @@ references:
   fullName.vb: MinimalUtility.ComponentExtensions.GetComponentsInOnlyChildren(Of T)(Component)
   nameWithType: ComponentExtensions.GetComponentsInOnlyChildren<T>(Component)
   nameWithType.vb: ComponentExtensions.GetComponentsInOnlyChildren(Of T)(Component)
+- uid: MinimalUtility.ComponentExtensions.SafeGetComponent*
+  name: SafeGetComponent
+  href: api/MinimalUtility.ComponentExtensions.html#MinimalUtility_ComponentExtensions_SafeGetComponent_
+  commentId: Overload:MinimalUtility.ComponentExtensions.SafeGetComponent
+  isSpec: "True"
+  fullName: MinimalUtility.ComponentExtensions.SafeGetComponent
+  nameWithType: ComponentExtensions.SafeGetComponent
+- uid: MinimalUtility.ComponentExtensions.SafeGetComponent``1(Component)
+  name: SafeGetComponent<T>(Component)
+  href: api/MinimalUtility.ComponentExtensions.html#MinimalUtility_ComponentExtensions_SafeGetComponent__1_Component_
+  commentId: M:MinimalUtility.ComponentExtensions.SafeGetComponent``1(Component)
+  name.vb: SafeGetComponent(Of T)(Component)
+  fullName: MinimalUtility.ComponentExtensions.SafeGetComponent<T>(Component)
+  fullName.vb: MinimalUtility.ComponentExtensions.SafeGetComponent(Of T)(Component)
+  nameWithType: ComponentExtensions.SafeGetComponent<T>(Component)
+  nameWithType.vb: ComponentExtensions.SafeGetComponent(Of T)(Component)
 - uid: MinimalUtility.ComponentExtensions.TryGetComponentInOnlyChild*
   name: TryGetComponentInOnlyChild
   href: api/MinimalUtility.ComponentExtensions.html#MinimalUtility_ComponentExtensions_TryGetComponentInOnlyChild_

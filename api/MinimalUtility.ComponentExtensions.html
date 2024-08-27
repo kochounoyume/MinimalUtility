@@ -247,6 +247,51 @@ Class ComponentExtensions  <a class="header-action link-secondary" title="View s
 
 
 
+  <a id="MinimalUtility_ComponentExtensions_SafeGetComponent_" data-uid="MinimalUtility.ComponentExtensions.SafeGetComponent*"></a>
+
+  <h3 id="MinimalUtility_ComponentExtensions_SafeGetComponent__1_Component_" data-uid="MinimalUtility.ComponentExtensions.SafeGetComponent``1(Component)">
+  SafeGetComponent&lt;T&gt;(Component)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/UnityExtension/ComponentExtensions.cs/#L88"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>安全なComponent.GetComponent&lt;T&gt;.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T SafeGetComponent&lt;T&gt;(this Component self) where T : Component</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>self</code> <span class="xref">Component</span></dt>
+    <dd><p>対象のComponent.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd><p>取得したコンポーネントインスタンス.なお取得不可の場合はSystemのnullを返す.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>取得したいコンポーネントの型.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
   <a id="MinimalUtility_ComponentExtensions_TryGetComponentInOnlyChild_" data-uid="MinimalUtility.ComponentExtensions.TryGetComponentInOnlyChild*"></a>
 
   <h3 id="MinimalUtility_ComponentExtensions_TryGetComponentInOnlyChild__1_Component___0__" data-uid="MinimalUtility.ComponentExtensions.TryGetComponentInOnlyChild``1(Component,``0@)">
