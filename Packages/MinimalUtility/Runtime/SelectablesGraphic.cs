@@ -32,17 +32,9 @@ namespace MinimalUtility
         protected override void Start()
         {
             base.Start();
-            List<Graphic> childGraphicList = new List<Graphic>(transform.childCount);
-            foreach (Transform child in transform)
-            {
-                if (child.TryGetComponent(out Graphic graphic))
-                {
-                    childGraphicList.Add(graphic);
-                }
-            }
+            var childGraphicList = this.GetComponentsInOnlyChildren<Graphic>();
             if (childGraphicList.Count > 0)
             {
-                childGraphicList.TrimExcess();
                 childGraphics = childGraphicList;
             }
         }
