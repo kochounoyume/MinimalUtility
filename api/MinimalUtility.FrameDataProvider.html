@@ -163,7 +163,7 @@ Class FrameDataProvider  <a class="header-action link-secondary" title="View sou
 
   <h3 id="MinimalUtility_FrameDataProvider__ctor" data-uid="MinimalUtility.FrameDataProvider.#ctor">
   FrameDataProvider()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/FrameDataProvider.cs/#L51"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/FrameDataProvider.cs/#L65"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="MinimalUtility.FrameDataProvider.html">FrameDataProvider</a> class.</p>
@@ -193,7 +193,7 @@ Class FrameDataProvider  <a class="header-action link-secondary" title="View sou
 
   <h3 id="MinimalUtility_FrameDataProvider_CoroutineRunner" data-uid="MinimalUtility.FrameDataProvider.CoroutineRunner">
   CoroutineRunner
-  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/FrameDataProvider.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/FrameDataProvider.cs/#L43"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>コルーチンを実行するためのMonoBehaviourの遅延生成.</p>
@@ -221,37 +221,6 @@ Class FrameDataProvider  <a class="header-action link-secondary" title="View sou
 
 
 
-
-  <h3 id="MinimalUtility_FrameDataProvider_RunnerName" data-uid="MinimalUtility.FrameDataProvider.RunnerName">
-  RunnerName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/FrameDataProvider.cs/#L24"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>ランナーゲームオブジェクトの名前.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected const string RunnerName = &quot;Debug Profiler&quot;</code></pre>
-  </div>
-
-
-
-
-  <h4 class="section">Field Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
   <h2 class="section" id="properties">Properties
 </h2>
 
@@ -260,7 +229,7 @@ Class FrameDataProvider  <a class="header-action link-secondary" title="View sou
 
   <h3 id="MinimalUtility_FrameDataProvider_LatestFrameData" data-uid="MinimalUtility.FrameDataProvider.LatestFrameData">
   LatestFrameData
-  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/FrameDataProvider.cs/#L36"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/FrameDataProvider.cs/#L50"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>フレームタイミング情報.</p>
@@ -292,11 +261,50 @@ Class FrameDataProvider  <a class="header-action link-secondary" title="View sou
 </h2>
 
 
+  <a id="MinimalUtility_FrameDataProvider_CreateCoroutineRunner_" data-uid="MinimalUtility.FrameDataProvider.CreateCoroutineRunner*"></a>
+
+  <h3 id="MinimalUtility_FrameDataProvider_CreateCoroutineRunner__1" data-uid="MinimalUtility.FrameDataProvider.CreateCoroutineRunner``1">
+  CreateCoroutineRunner&lt;T&gt;()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/FrameDataProvider.cs/#L85"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>コルーチンを実行するためのMonoBehaviourを取得する汎用実装.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static FrameDataProvider.EmptyMonoBehaviour CreateCoroutineRunner&lt;T&gt;() where T : FrameDataProvider.EmptyMonoBehaviour</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MinimalUtility.FrameDataProvider.html">FrameDataProvider</a>.<a class="xref" href="MinimalUtility.FrameDataProvider.EmptyMonoBehaviour.html">EmptyMonoBehaviour</a></dt>
+    <dd><p>コルーチンを実行するためのMonoBehaviour..</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p><a class="xref" href="MinimalUtility.FrameDataProvider.EmptyMonoBehaviour.html">FrameDataProvider.EmptyMonoBehaviour</a>を継承したクラス.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
   <a id="MinimalUtility_FrameDataProvider_GetCoroutineRunner_" data-uid="MinimalUtility.FrameDataProvider.GetCoroutineRunner*"></a>
 
   <h3 id="MinimalUtility_FrameDataProvider_GetCoroutineRunner" data-uid="MinimalUtility.FrameDataProvider.GetCoroutineRunner">
   GetCoroutineRunner()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/FrameDataProvider.cs/#L60"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/FrameDataProvider.cs/#L96"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>コルーチンを実行するためのMonoBehaviourを取得します.</p>
@@ -312,6 +320,45 @@ Class FrameDataProvider  <a class="header-action link-secondary" title="View sou
   <dl class="parameters">
     <dt><a class="xref" href="MinimalUtility.FrameDataProvider.html">FrameDataProvider</a>.<a class="xref" href="MinimalUtility.FrameDataProvider.EmptyMonoBehaviour.html">EmptyMonoBehaviour</a></dt>
     <dd><p>コルーチンを実行するためのMonoBehaviour.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MinimalUtility_FrameDataProvider_GetTotalMemory_" data-uid="MinimalUtility.FrameDataProvider.GetTotalMemory*"></a>
+
+  <h3 id="MinimalUtility_FrameDataProvider_GetTotalMemory_MinimalUtility_FrameDataProvider_MemoryUnit__" data-uid="MinimalUtility.FrameDataProvider.GetTotalMemory(MinimalUtility.FrameDataProvider.MemoryUnit@)">
+  GetTotalMemory(in MemoryUnit)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/FrameDataProvider.cs/#L75"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Unityによって予約されたメモリの合計を単位指定して取得します.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float GetTotalMemory(in FrameDataProvider.MemoryUnit unit)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>unit</code> <a class="xref" href="MinimalUtility.FrameDataProvider.html">FrameDataProvider</a>.<a class="xref" href="MinimalUtility.FrameDataProvider.MemoryUnit.html">MemoryUnit</a></dt>
+    <dd><p>メモリ単位.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>指定した単位でのメモリ合計.</p>
 </dd>
   </dl>
 

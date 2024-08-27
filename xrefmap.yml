@@ -478,36 +478,6 @@ references:
   isSpec: "True"
   fullName: MinimalUtility.DebugProfileViewer.IsGUIVisible
   nameWithType: DebugProfileViewer.IsGUIVisible
-- uid: MinimalUtility.DebugProfileViewer.MemoryUnit
-  name: DebugProfileViewer.MemoryUnit
-  href: api/MinimalUtility.DebugProfileViewer.MemoryUnit.html
-  commentId: T:MinimalUtility.DebugProfileViewer.MemoryUnit
-  fullName: MinimalUtility.DebugProfileViewer.MemoryUnit
-  nameWithType: DebugProfileViewer.MemoryUnit
-- uid: MinimalUtility.DebugProfileViewer.MemoryUnit.B
-  name: B
-  href: api/MinimalUtility.DebugProfileViewer.MemoryUnit.html#MinimalUtility_DebugProfileViewer_MemoryUnit_B
-  commentId: F:MinimalUtility.DebugProfileViewer.MemoryUnit.B
-  fullName: MinimalUtility.DebugProfileViewer.MemoryUnit.B
-  nameWithType: DebugProfileViewer.MemoryUnit.B
-- uid: MinimalUtility.DebugProfileViewer.MemoryUnit.GB
-  name: GB
-  href: api/MinimalUtility.DebugProfileViewer.MemoryUnit.html#MinimalUtility_DebugProfileViewer_MemoryUnit_GB
-  commentId: F:MinimalUtility.DebugProfileViewer.MemoryUnit.GB
-  fullName: MinimalUtility.DebugProfileViewer.MemoryUnit.GB
-  nameWithType: DebugProfileViewer.MemoryUnit.GB
-- uid: MinimalUtility.DebugProfileViewer.MemoryUnit.KB
-  name: KB
-  href: api/MinimalUtility.DebugProfileViewer.MemoryUnit.html#MinimalUtility_DebugProfileViewer_MemoryUnit_KB
-  commentId: F:MinimalUtility.DebugProfileViewer.MemoryUnit.KB
-  fullName: MinimalUtility.DebugProfileViewer.MemoryUnit.KB
-  nameWithType: DebugProfileViewer.MemoryUnit.KB
-- uid: MinimalUtility.DebugProfileViewer.MemoryUnit.MB
-  name: MB
-  href: api/MinimalUtility.DebugProfileViewer.MemoryUnit.html#MinimalUtility_DebugProfileViewer_MemoryUnit_MB
-  commentId: F:MinimalUtility.DebugProfileViewer.MemoryUnit.MB
-  fullName: MinimalUtility.DebugProfileViewer.MemoryUnit.MB
-  nameWithType: DebugProfileViewer.MemoryUnit.MB
 - uid: MinimalUtility.DebugProfileViewer.OnGUITrigger
   name: DebugProfileViewer.OnGUITrigger
   href: api/MinimalUtility.DebugProfileViewer.OnGUITrigger.html
@@ -903,6 +873,22 @@ references:
   commentId: F:MinimalUtility.FrameDataProvider.CoroutineRunner
   fullName: MinimalUtility.FrameDataProvider.CoroutineRunner
   nameWithType: FrameDataProvider.CoroutineRunner
+- uid: MinimalUtility.FrameDataProvider.CreateCoroutineRunner*
+  name: CreateCoroutineRunner
+  href: api/MinimalUtility.FrameDataProvider.html#MinimalUtility_FrameDataProvider_CreateCoroutineRunner_
+  commentId: Overload:MinimalUtility.FrameDataProvider.CreateCoroutineRunner
+  isSpec: "True"
+  fullName: MinimalUtility.FrameDataProvider.CreateCoroutineRunner
+  nameWithType: FrameDataProvider.CreateCoroutineRunner
+- uid: MinimalUtility.FrameDataProvider.CreateCoroutineRunner``1
+  name: CreateCoroutineRunner<T>()
+  href: api/MinimalUtility.FrameDataProvider.html#MinimalUtility_FrameDataProvider_CreateCoroutineRunner__1
+  commentId: M:MinimalUtility.FrameDataProvider.CreateCoroutineRunner``1
+  name.vb: CreateCoroutineRunner(Of T)()
+  fullName: MinimalUtility.FrameDataProvider.CreateCoroutineRunner<T>()
+  fullName.vb: MinimalUtility.FrameDataProvider.CreateCoroutineRunner(Of T)()
+  nameWithType: FrameDataProvider.CreateCoroutineRunner<T>()
+  nameWithType.vb: FrameDataProvider.CreateCoroutineRunner(Of T)()
 - uid: MinimalUtility.FrameDataProvider.EmptyMonoBehaviour
   name: FrameDataProvider.EmptyMonoBehaviour
   href: api/MinimalUtility.FrameDataProvider.EmptyMonoBehaviour.html
@@ -922,6 +908,22 @@ references:
   isSpec: "True"
   fullName: MinimalUtility.FrameDataProvider.GetCoroutineRunner
   nameWithType: FrameDataProvider.GetCoroutineRunner
+- uid: MinimalUtility.FrameDataProvider.GetTotalMemory(MinimalUtility.FrameDataProvider.MemoryUnit@)
+  name: GetTotalMemory(in MemoryUnit)
+  href: api/MinimalUtility.FrameDataProvider.html#MinimalUtility_FrameDataProvider_GetTotalMemory_MinimalUtility_FrameDataProvider_MemoryUnit__
+  commentId: M:MinimalUtility.FrameDataProvider.GetTotalMemory(MinimalUtility.FrameDataProvider.MemoryUnit@)
+  name.vb: GetTotalMemory(MemoryUnit)
+  fullName: MinimalUtility.FrameDataProvider.GetTotalMemory(in MinimalUtility.FrameDataProvider.MemoryUnit)
+  fullName.vb: MinimalUtility.FrameDataProvider.GetTotalMemory(MinimalUtility.FrameDataProvider.MemoryUnit)
+  nameWithType: FrameDataProvider.GetTotalMemory(in FrameDataProvider.MemoryUnit)
+  nameWithType.vb: FrameDataProvider.GetTotalMemory(FrameDataProvider.MemoryUnit)
+- uid: MinimalUtility.FrameDataProvider.GetTotalMemory*
+  name: GetTotalMemory
+  href: api/MinimalUtility.FrameDataProvider.html#MinimalUtility_FrameDataProvider_GetTotalMemory_
+  commentId: Overload:MinimalUtility.FrameDataProvider.GetTotalMemory
+  isSpec: "True"
+  fullName: MinimalUtility.FrameDataProvider.GetTotalMemory
+  nameWithType: FrameDataProvider.GetTotalMemory
 - uid: MinimalUtility.FrameDataProvider.LatestFrameData
   name: LatestFrameData
   href: api/MinimalUtility.FrameDataProvider.html#MinimalUtility_FrameDataProvider_LatestFrameData
@@ -935,12 +937,36 @@ references:
   isSpec: "True"
   fullName: MinimalUtility.FrameDataProvider.LatestFrameData
   nameWithType: FrameDataProvider.LatestFrameData
-- uid: MinimalUtility.FrameDataProvider.RunnerName
-  name: RunnerName
-  href: api/MinimalUtility.FrameDataProvider.html#MinimalUtility_FrameDataProvider_RunnerName
-  commentId: F:MinimalUtility.FrameDataProvider.RunnerName
-  fullName: MinimalUtility.FrameDataProvider.RunnerName
-  nameWithType: FrameDataProvider.RunnerName
+- uid: MinimalUtility.FrameDataProvider.MemoryUnit
+  name: FrameDataProvider.MemoryUnit
+  href: api/MinimalUtility.FrameDataProvider.MemoryUnit.html
+  commentId: T:MinimalUtility.FrameDataProvider.MemoryUnit
+  fullName: MinimalUtility.FrameDataProvider.MemoryUnit
+  nameWithType: FrameDataProvider.MemoryUnit
+- uid: MinimalUtility.FrameDataProvider.MemoryUnit.B
+  name: B
+  href: api/MinimalUtility.FrameDataProvider.MemoryUnit.html#MinimalUtility_FrameDataProvider_MemoryUnit_B
+  commentId: F:MinimalUtility.FrameDataProvider.MemoryUnit.B
+  fullName: MinimalUtility.FrameDataProvider.MemoryUnit.B
+  nameWithType: FrameDataProvider.MemoryUnit.B
+- uid: MinimalUtility.FrameDataProvider.MemoryUnit.GB
+  name: GB
+  href: api/MinimalUtility.FrameDataProvider.MemoryUnit.html#MinimalUtility_FrameDataProvider_MemoryUnit_GB
+  commentId: F:MinimalUtility.FrameDataProvider.MemoryUnit.GB
+  fullName: MinimalUtility.FrameDataProvider.MemoryUnit.GB
+  nameWithType: FrameDataProvider.MemoryUnit.GB
+- uid: MinimalUtility.FrameDataProvider.MemoryUnit.KB
+  name: KB
+  href: api/MinimalUtility.FrameDataProvider.MemoryUnit.html#MinimalUtility_FrameDataProvider_MemoryUnit_KB
+  commentId: F:MinimalUtility.FrameDataProvider.MemoryUnit.KB
+  fullName: MinimalUtility.FrameDataProvider.MemoryUnit.KB
+  nameWithType: FrameDataProvider.MemoryUnit.KB
+- uid: MinimalUtility.FrameDataProvider.MemoryUnit.MB
+  name: MB
+  href: api/MinimalUtility.FrameDataProvider.MemoryUnit.html#MinimalUtility_FrameDataProvider_MemoryUnit_MB
+  commentId: F:MinimalUtility.FrameDataProvider.MemoryUnit.MB
+  fullName: MinimalUtility.FrameDataProvider.MemoryUnit.MB
+  nameWithType: FrameDataProvider.MemoryUnit.MB
 - uid: MinimalUtility.GenerateStringConverterAttribute
   name: GenerateStringConverterAttribute
   href: api/MinimalUtility.GenerateStringConverterAttribute.html
