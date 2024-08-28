@@ -759,51 +759,6 @@ references:
   fullName.vb: MinimalUtility.Editor.UnityComponentInspector(Of T).Target
   nameWithType: UnityComponentInspector<T>.Target
   nameWithType.vb: UnityComponentInspector(Of T).Target
-- uid: MinimalUtility.EmptyGraphic
-  name: EmptyGraphic
-  href: api/MinimalUtility.EmptyGraphic.html
-  commentId: T:MinimalUtility.EmptyGraphic
-  fullName: MinimalUtility.EmptyGraphic
-  nameWithType: EmptyGraphic
-- uid: MinimalUtility.EmptyGraphic.OnPopulateMesh(VertexHelper)
-  name: OnPopulateMesh(VertexHelper)
-  href: api/MinimalUtility.EmptyGraphic.html#MinimalUtility_EmptyGraphic_OnPopulateMesh_VertexHelper_
-  commentId: M:MinimalUtility.EmptyGraphic.OnPopulateMesh(VertexHelper)
-  fullName: MinimalUtility.EmptyGraphic.OnPopulateMesh(VertexHelper)
-  nameWithType: EmptyGraphic.OnPopulateMesh(VertexHelper)
-- uid: MinimalUtility.EmptyGraphic.OnPopulateMesh*
-  name: OnPopulateMesh
-  href: api/MinimalUtility.EmptyGraphic.html#MinimalUtility_EmptyGraphic_OnPopulateMesh_
-  commentId: Overload:MinimalUtility.EmptyGraphic.OnPopulateMesh
-  isSpec: "True"
-  fullName: MinimalUtility.EmptyGraphic.OnPopulateMesh
-  nameWithType: EmptyGraphic.OnPopulateMesh
-- uid: MinimalUtility.EmptyGraphic.SetMaterialDirty
-  name: SetMaterialDirty()
-  href: api/MinimalUtility.EmptyGraphic.html#MinimalUtility_EmptyGraphic_SetMaterialDirty
-  commentId: M:MinimalUtility.EmptyGraphic.SetMaterialDirty
-  fullName: MinimalUtility.EmptyGraphic.SetMaterialDirty()
-  nameWithType: EmptyGraphic.SetMaterialDirty()
-- uid: MinimalUtility.EmptyGraphic.SetMaterialDirty*
-  name: SetMaterialDirty
-  href: api/MinimalUtility.EmptyGraphic.html#MinimalUtility_EmptyGraphic_SetMaterialDirty_
-  commentId: Overload:MinimalUtility.EmptyGraphic.SetMaterialDirty
-  isSpec: "True"
-  fullName: MinimalUtility.EmptyGraphic.SetMaterialDirty
-  nameWithType: EmptyGraphic.SetMaterialDirty
-- uid: MinimalUtility.EmptyGraphic.SetVerticesDirty
-  name: SetVerticesDirty()
-  href: api/MinimalUtility.EmptyGraphic.html#MinimalUtility_EmptyGraphic_SetVerticesDirty
-  commentId: M:MinimalUtility.EmptyGraphic.SetVerticesDirty
-  fullName: MinimalUtility.EmptyGraphic.SetVerticesDirty()
-  nameWithType: EmptyGraphic.SetVerticesDirty()
-- uid: MinimalUtility.EmptyGraphic.SetVerticesDirty*
-  name: SetVerticesDirty
-  href: api/MinimalUtility.EmptyGraphic.html#MinimalUtility_EmptyGraphic_SetVerticesDirty_
-  commentId: Overload:MinimalUtility.EmptyGraphic.SetVerticesDirty
-  isSpec: "True"
-  fullName: MinimalUtility.EmptyGraphic.SetVerticesDirty
-  nameWithType: EmptyGraphic.SetVerticesDirty
 - uid: MinimalUtility.EqualityComparer
   name: EqualityComparer
   href: api/MinimalUtility.EqualityComparer.html
@@ -1590,86 +1545,6 @@ references:
   commentId: T:MinimalUtility.SafeAreaAdjuster
   fullName: MinimalUtility.SafeAreaAdjuster
   nameWithType: SafeAreaAdjuster
-- uid: MinimalUtility.SelectablesGraphic
-  name: SelectablesGraphic
-  href: api/MinimalUtility.SelectablesGraphic.html
-  commentId: T:MinimalUtility.SelectablesGraphic
-  fullName: MinimalUtility.SelectablesGraphic
-  nameWithType: SelectablesGraphic
-- uid: MinimalUtility.SelectablesGraphic.CrossFadeColor(Color,System.Single,System.Boolean,System.Boolean)
-  name: CrossFadeColor(Color, float, bool, bool)
-  href: api/MinimalUtility.SelectablesGraphic.html#MinimalUtility_SelectablesGraphic_CrossFadeColor_Color_System_Single_System_Boolean_System_Boolean_
-  commentId: M:MinimalUtility.SelectablesGraphic.CrossFadeColor(Color,System.Single,System.Boolean,System.Boolean)
-  name.vb: CrossFadeColor(Color, Single, Boolean, Boolean)
-  fullName: MinimalUtility.SelectablesGraphic.CrossFadeColor(Color, float, bool, bool)
-  fullName.vb: MinimalUtility.SelectablesGraphic.CrossFadeColor(Color, Single, Boolean, Boolean)
-  nameWithType: SelectablesGraphic.CrossFadeColor(Color, float, bool, bool)
-  nameWithType.vb: SelectablesGraphic.CrossFadeColor(Color, Single, Boolean, Boolean)
-- uid: MinimalUtility.SelectablesGraphic.CrossFadeColor*
-  name: CrossFadeColor
-  href: api/MinimalUtility.SelectablesGraphic.html#MinimalUtility_SelectablesGraphic_CrossFadeColor_
-  commentId: Overload:MinimalUtility.SelectablesGraphic.CrossFadeColor
-  isSpec: "True"
-  fullName: MinimalUtility.SelectablesGraphic.CrossFadeColor
-  nameWithType: SelectablesGraphic.CrossFadeColor
-- uid: MinimalUtility.SelectablesGraphic.Start
-  name: Start()
-  href: api/MinimalUtility.SelectablesGraphic.html#MinimalUtility_SelectablesGraphic_Start
-  commentId: M:MinimalUtility.SelectablesGraphic.Start
-  fullName: MinimalUtility.SelectablesGraphic.Start()
-  nameWithType: SelectablesGraphic.Start()
-- uid: MinimalUtility.SelectablesGraphic.Start*
-  name: Start
-  href: api/MinimalUtility.SelectablesGraphic.html#MinimalUtility_SelectablesGraphic_Start_
-  commentId: Overload:MinimalUtility.SelectablesGraphic.Start
-  isSpec: "True"
-  fullName: MinimalUtility.SelectablesGraphic.Start
-  nameWithType: SelectablesGraphic.Start
-- uid: MinimalUtility.SimpleGauge
-  name: SimpleGauge
-  href: api/MinimalUtility.SimpleGauge.html
-  commentId: T:MinimalUtility.SimpleGauge
-  fullName: MinimalUtility.SimpleGauge
-  nameWithType: SimpleGauge
-- uid: MinimalUtility.SimpleGauge.Graphic
-  name: Graphic
-  href: api/MinimalUtility.SimpleGauge.html#MinimalUtility_SimpleGauge_Graphic
-  commentId: P:MinimalUtility.SimpleGauge.Graphic
-  fullName: MinimalUtility.SimpleGauge.Graphic
-  nameWithType: SimpleGauge.Graphic
-- uid: MinimalUtility.SimpleGauge.Graphic*
-  name: Graphic
-  href: api/MinimalUtility.SimpleGauge.html#MinimalUtility_SimpleGauge_Graphic_
-  commentId: Overload:MinimalUtility.SimpleGauge.Graphic
-  isSpec: "True"
-  fullName: MinimalUtility.SimpleGauge.Graphic
-  nameWithType: SimpleGauge.Graphic
-- uid: MinimalUtility.SimpleGauge.OnEnable
-  name: OnEnable()
-  href: api/MinimalUtility.SimpleGauge.html#MinimalUtility_SimpleGauge_OnEnable
-  commentId: M:MinimalUtility.SimpleGauge.OnEnable
-  fullName: MinimalUtility.SimpleGauge.OnEnable()
-  nameWithType: SimpleGauge.OnEnable()
-- uid: MinimalUtility.SimpleGauge.OnEnable*
-  name: OnEnable
-  href: api/MinimalUtility.SimpleGauge.html#MinimalUtility_SimpleGauge_OnEnable_
-  commentId: Overload:MinimalUtility.SimpleGauge.OnEnable
-  isSpec: "True"
-  fullName: MinimalUtility.SimpleGauge.OnEnable
-  nameWithType: SimpleGauge.OnEnable
-- uid: MinimalUtility.SimpleGauge.Value
-  name: Value
-  href: api/MinimalUtility.SimpleGauge.html#MinimalUtility_SimpleGauge_Value
-  commentId: P:MinimalUtility.SimpleGauge.Value
-  fullName: MinimalUtility.SimpleGauge.Value
-  nameWithType: SimpleGauge.Value
-- uid: MinimalUtility.SimpleGauge.Value*
-  name: Value
-  href: api/MinimalUtility.SimpleGauge.html#MinimalUtility_SimpleGauge_Value_
-  commentId: Overload:MinimalUtility.SimpleGauge.Value
-  isSpec: "True"
-  fullName: MinimalUtility.SimpleGauge.Value
-  nameWithType: SimpleGauge.Value
 - uid: MinimalUtility.String
   name: MinimalUtility.String
   href: api/MinimalUtility.String.html
@@ -1834,25 +1709,6 @@ references:
   isSpec: "True"
   fullName: MinimalUtility.Tasks.UniTaskExtensions.WaitForEndFrameSafety
   nameWithType: UniTaskExtensions.WaitForEndFrameSafety
-- uid: MinimalUtility.Tasks.UnityWebRequestHttpMessageHandler
-  name: UnityWebRequestHttpMessageHandler
-  href: api/MinimalUtility.Tasks.UnityWebRequestHttpMessageHandler.html
-  commentId: T:MinimalUtility.Tasks.UnityWebRequestHttpMessageHandler
-  fullName: MinimalUtility.Tasks.UnityWebRequestHttpMessageHandler
-  nameWithType: UnityWebRequestHttpMessageHandler
-- uid: MinimalUtility.Tasks.UnityWebRequestHttpMessageHandler.SendAsync(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)
-  name: SendAsync(HttpRequestMessage, CancellationToken)
-  href: api/MinimalUtility.Tasks.UnityWebRequestHttpMessageHandler.html#MinimalUtility_Tasks_UnityWebRequestHttpMessageHandler_SendAsync_System_Net_Http_HttpRequestMessage_System_Threading_CancellationToken_
-  commentId: M:MinimalUtility.Tasks.UnityWebRequestHttpMessageHandler.SendAsync(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)
-  fullName: MinimalUtility.Tasks.UnityWebRequestHttpMessageHandler.SendAsync(System.Net.Http.HttpRequestMessage, System.Threading.CancellationToken)
-  nameWithType: UnityWebRequestHttpMessageHandler.SendAsync(HttpRequestMessage, CancellationToken)
-- uid: MinimalUtility.Tasks.UnityWebRequestHttpMessageHandler.SendAsync*
-  name: SendAsync
-  href: api/MinimalUtility.Tasks.UnityWebRequestHttpMessageHandler.html#MinimalUtility_Tasks_UnityWebRequestHttpMessageHandler_SendAsync_
-  commentId: Overload:MinimalUtility.Tasks.UnityWebRequestHttpMessageHandler.SendAsync
-  isSpec: "True"
-  fullName: MinimalUtility.Tasks.UnityWebRequestHttpMessageHandler.SendAsync
-  nameWithType: UnityWebRequestHttpMessageHandler.SendAsync
 - uid: MinimalUtility.VContainer
   name: MinimalUtility.VContainer
   href: api/MinimalUtility.VContainer.html

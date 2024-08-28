@@ -205,16 +205,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/MinimalUtility.EmptyGraphic.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MinimalUtility.EmptyGraphic.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/MinimalUtility.EqualityComparer.yml",
       "output": {
         ".html": {
@@ -325,26 +315,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/MinimalUtility.SelectablesGraphic.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MinimalUtility.SelectablesGraphic.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MinimalUtility.SimpleGauge.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MinimalUtility.SimpleGauge.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/MinimalUtility.String.StringUtils.yml",
       "output": {
         ".html": {
@@ -379,16 +349,6 @@
       "output": {
         ".html": {
           "relative_path": "api/MinimalUtility.Tasks.UniTaskExtensions.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MinimalUtility.Tasks.UnityWebRequestHttpMessageHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MinimalUtility.Tasks.UnityWebRequestHttpMessageHandler.html"
         }
       },
       "version": ""
