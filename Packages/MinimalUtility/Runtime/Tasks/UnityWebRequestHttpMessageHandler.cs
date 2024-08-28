@@ -11,6 +11,7 @@ namespace MinimalUtility.Tasks
     /// <summary>
     /// UniTaskのサポートを活用した、<see cref="UnityWebRequest"/>を使用する<see cref="HttpMessageHandler"/>.
     /// </summary>
+    /// <exception cref="UnityWebRequestException">通信結果のエラーはUniTask製のExceptionクラスで発行される.</exception>
     public class UnityWebRequestHttpMessageHandler : HttpMessageHandler
     {
         /// <inheritdoc/>
