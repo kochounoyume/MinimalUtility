@@ -1,4 +1,6 @@
-﻿using System.Collections.Generic;
+﻿#if ENABLE_UGUI
+
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -40,3 +42,5 @@ namespace MinimalUtility
         }
     }
 }
+
+#endif

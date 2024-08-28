@@ -1,3 +1,5 @@
+#if ENABLE_UGUI
+
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -31,3 +33,5 @@ namespace MinimalUtility
         }
     }
 }
+
+#endif

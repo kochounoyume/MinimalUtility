@@ -1,4 +1,6 @@
-﻿using System.Net;
+﻿#if ENABLE_UNITYWEBREQUEST
+
+using System.Net;
 using System.Net.Http;
 using System.Threading;
 using Cysharp.Threading.Tasks;
@@ -46,3 +48,5 @@ namespace MinimalUtility.Tasks
         }
     }
 }
+
+#endif
