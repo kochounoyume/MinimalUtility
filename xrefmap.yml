@@ -119,25 +119,6 @@ references:
   commentId: F:Global.Fruits.Orange
   fullName: Fruits.Orange
   nameWithType: Fruits.Orange
-- uid: Global.UnityWebRequestHttpMessageHandler
-  name: UnityWebRequestHttpMessageHandler
-  href: api/Global.UnityWebRequestHttpMessageHandler.html
-  commentId: T:Global.UnityWebRequestHttpMessageHandler
-  fullName: UnityWebRequestHttpMessageHandler
-  nameWithType: UnityWebRequestHttpMessageHandler
-- uid: Global.UnityWebRequestHttpMessageHandler.SendAsync(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)
-  name: SendAsync(HttpRequestMessage, CancellationToken)
-  href: api/Global.UnityWebRequestHttpMessageHandler.html#Global_UnityWebRequestHttpMessageHandler_SendAsync_System_Net_Http_HttpRequestMessage_System_Threading_CancellationToken_
-  commentId: M:Global.UnityWebRequestHttpMessageHandler.SendAsync(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)
-  fullName: UnityWebRequestHttpMessageHandler.SendAsync(System.Net.Http.HttpRequestMessage, System.Threading.CancellationToken)
-  nameWithType: UnityWebRequestHttpMessageHandler.SendAsync(HttpRequestMessage, CancellationToken)
-- uid: Global.UnityWebRequestHttpMessageHandler.SendAsync*
-  name: SendAsync
-  href: api/Global.UnityWebRequestHttpMessageHandler.html#Global_UnityWebRequestHttpMessageHandler_SendAsync_
-  commentId: Overload:Global.UnityWebRequestHttpMessageHandler.SendAsync
-  isSpec: "True"
-  fullName: UnityWebRequestHttpMessageHandler.SendAsync
-  nameWithType: UnityWebRequestHttpMessageHandler.SendAsync
 - uid: MinimalUtility
   name: MinimalUtility
   href: api/MinimalUtility.html
@@ -519,12 +500,6 @@ references:
   isSpec: "True"
   fullName: MinimalUtility.DebugProfileViewer.Unit
   nameWithType: DebugProfileViewer.Unit
-- uid: MinimalUtility.Disposable
-  name: Disposable
-  href: api/MinimalUtility.Disposable.html
-  commentId: T:MinimalUtility.Disposable
-  fullName: MinimalUtility.Disposable
-  nameWithType: Disposable
 - uid: MinimalUtility.DisposableExtensions
   name: DisposableExtensions
   href: api/MinimalUtility.DisposableExtensions.html
@@ -547,33 +522,6 @@ references:
   fullName.vb: MinimalUtility.DisposableExtensions.AddTo(Of T)(T, System.IDisposable)
   nameWithType: DisposableExtensions.AddTo<T>(T, ref IDisposable)
   nameWithType.vb: DisposableExtensions.AddTo(Of T)(T, IDisposable)
-- uid: MinimalUtility.Disposable`1
-  name: Disposable<T1>
-  href: api/MinimalUtility.Disposable-1.html
-  commentId: T:MinimalUtility.Disposable`1
-  name.vb: Disposable(Of T1)
-  fullName: MinimalUtility.Disposable<T1>
-  fullName.vb: MinimalUtility.Disposable(Of T1)
-  nameWithType: Disposable<T1>
-  nameWithType.vb: Disposable(Of T1)
-- uid: MinimalUtility.Disposable`2
-  name: Disposable<T1, T2>
-  href: api/MinimalUtility.Disposable-2.html
-  commentId: T:MinimalUtility.Disposable`2
-  name.vb: Disposable(Of T1, T2)
-  fullName: MinimalUtility.Disposable<T1, T2>
-  fullName.vb: MinimalUtility.Disposable(Of T1, T2)
-  nameWithType: Disposable<T1, T2>
-  nameWithType.vb: Disposable(Of T1, T2)
-- uid: MinimalUtility.Disposable`3
-  name: Disposable<T1, T2, T3>
-  href: api/MinimalUtility.Disposable-3.html
-  commentId: T:MinimalUtility.Disposable`3
-  name.vb: Disposable(Of T1, T2, T3)
-  fullName: MinimalUtility.Disposable<T1, T2, T3>
-  fullName.vb: MinimalUtility.Disposable(Of T1, T2, T3)
-  nameWithType: Disposable<T1, T2, T3>
-  nameWithType.vb: Disposable(Of T1, T2, T3)
 - uid: MinimalUtility.Editor
   name: MinimalUtility.Editor
   href: api/MinimalUtility.Editor.html
@@ -1759,6 +1707,40 @@ references:
   isSpec: "True"
   fullName: MinimalUtility.String.StringUtils.Create
   nameWithType: StringUtils.Create
+- uid: MinimalUtility.String.StringUtils.Join(System.Char,System.Collections.Generic.IEnumerable{System.String})
+  name: Join(char, IEnumerable<string?>)
+  href: api/MinimalUtility.String.StringUtils.html#MinimalUtility_String_StringUtils_Join_System_Char_System_Collections_Generic_IEnumerable_System_String__
+  commentId: M:MinimalUtility.String.StringUtils.Join(System.Char,System.Collections.Generic.IEnumerable{System.String})
+  name.vb: Join(Char, IEnumerable(Of String))
+  fullName: MinimalUtility.String.StringUtils.Join(char, System.Collections.Generic.IEnumerable<string?>)
+  fullName.vb: MinimalUtility.String.StringUtils.Join(Char, System.Collections.Generic.IEnumerable(Of String))
+  nameWithType: StringUtils.Join(char, IEnumerable<string?>)
+  nameWithType.vb: StringUtils.Join(Char, IEnumerable(Of String))
+- uid: MinimalUtility.String.StringUtils.Join(System.ReadOnlySpan{System.Char},System.Collections.Generic.IEnumerable{System.String})
+  name: Join(ReadOnlySpan<char>, IEnumerable<string?>)
+  href: api/MinimalUtility.String.StringUtils.html#MinimalUtility_String_StringUtils_Join_System_ReadOnlySpan_System_Char__System_Collections_Generic_IEnumerable_System_String__
+  commentId: M:MinimalUtility.String.StringUtils.Join(System.ReadOnlySpan{System.Char},System.Collections.Generic.IEnumerable{System.String})
+  name.vb: Join(ReadOnlySpan(Of Char), IEnumerable(Of String))
+  fullName: MinimalUtility.String.StringUtils.Join(System.ReadOnlySpan<char>, System.Collections.Generic.IEnumerable<string?>)
+  fullName.vb: MinimalUtility.String.StringUtils.Join(System.ReadOnlySpan(Of Char), System.Collections.Generic.IEnumerable(Of String))
+  nameWithType: StringUtils.Join(ReadOnlySpan<char>, IEnumerable<string?>)
+  nameWithType.vb: StringUtils.Join(ReadOnlySpan(Of Char), IEnumerable(Of String))
+- uid: MinimalUtility.String.StringUtils.Join(System.String,System.Collections.Generic.IEnumerable{System.String})
+  name: Join(string?, IEnumerable<string?>)
+  href: api/MinimalUtility.String.StringUtils.html#MinimalUtility_String_StringUtils_Join_System_String_System_Collections_Generic_IEnumerable_System_String__
+  commentId: M:MinimalUtility.String.StringUtils.Join(System.String,System.Collections.Generic.IEnumerable{System.String})
+  name.vb: Join(String, IEnumerable(Of String))
+  fullName: MinimalUtility.String.StringUtils.Join(string?, System.Collections.Generic.IEnumerable<string?>)
+  fullName.vb: MinimalUtility.String.StringUtils.Join(String, System.Collections.Generic.IEnumerable(Of String))
+  nameWithType: StringUtils.Join(string?, IEnumerable<string?>)
+  nameWithType.vb: StringUtils.Join(String, IEnumerable(Of String))
+- uid: MinimalUtility.String.StringUtils.Join*
+  name: Join
+  href: api/MinimalUtility.String.StringUtils.html#MinimalUtility_String_StringUtils_Join_
+  commentId: Overload:MinimalUtility.String.StringUtils.Join
+  isSpec: "True"
+  fullName: MinimalUtility.String.StringUtils.Join
+  nameWithType: StringUtils.Join
 - uid: MinimalUtility.Tasks
   name: MinimalUtility.Tasks
   href: api/MinimalUtility.Tasks.html
@@ -1852,6 +1834,25 @@ references:
   isSpec: "True"
   fullName: MinimalUtility.Tasks.UniTaskExtensions.WaitForEndFrameSafety
   nameWithType: UniTaskExtensions.WaitForEndFrameSafety
+- uid: MinimalUtility.Tasks.UnityWebRequestHttpMessageHandler
+  name: UnityWebRequestHttpMessageHandler
+  href: api/MinimalUtility.Tasks.UnityWebRequestHttpMessageHandler.html
+  commentId: T:MinimalUtility.Tasks.UnityWebRequestHttpMessageHandler
+  fullName: MinimalUtility.Tasks.UnityWebRequestHttpMessageHandler
+  nameWithType: UnityWebRequestHttpMessageHandler
+- uid: MinimalUtility.Tasks.UnityWebRequestHttpMessageHandler.SendAsync(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)
+  name: SendAsync(HttpRequestMessage, CancellationToken)
+  href: api/MinimalUtility.Tasks.UnityWebRequestHttpMessageHandler.html#MinimalUtility_Tasks_UnityWebRequestHttpMessageHandler_SendAsync_System_Net_Http_HttpRequestMessage_System_Threading_CancellationToken_
+  commentId: M:MinimalUtility.Tasks.UnityWebRequestHttpMessageHandler.SendAsync(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)
+  fullName: MinimalUtility.Tasks.UnityWebRequestHttpMessageHandler.SendAsync(System.Net.Http.HttpRequestMessage, System.Threading.CancellationToken)
+  nameWithType: UnityWebRequestHttpMessageHandler.SendAsync(HttpRequestMessage, CancellationToken)
+- uid: MinimalUtility.Tasks.UnityWebRequestHttpMessageHandler.SendAsync*
+  name: SendAsync
+  href: api/MinimalUtility.Tasks.UnityWebRequestHttpMessageHandler.html#MinimalUtility_Tasks_UnityWebRequestHttpMessageHandler_SendAsync_
+  commentId: Overload:MinimalUtility.Tasks.UnityWebRequestHttpMessageHandler.SendAsync
+  isSpec: "True"
+  fullName: MinimalUtility.Tasks.UnityWebRequestHttpMessageHandler.SendAsync
+  nameWithType: UnityWebRequestHttpMessageHandler.SendAsync
 - uid: MinimalUtility.VContainer
   name: MinimalUtility.VContainer
   href: api/MinimalUtility.VContainer.html
@@ -1923,6 +1924,39 @@ references:
   fullName.vb: MinimalUtility.ValueDisposable.Create(Of T1, T2, T3)(T1, T2, T3, System.Action(Of T1, T2, T3))
   nameWithType: ValueDisposable.Create<T1, T2, T3>(T1, T2, T3, Action<T1, T2, T3>)
   nameWithType.vb: ValueDisposable.Create(Of T1, T2, T3)(T1, T2, T3, Action(Of T1, T2, T3))
+- uid: MinimalUtility.ValueDisposable.Disposable
+  name: ValueDisposable.Disposable
+  href: api/MinimalUtility.ValueDisposable.Disposable.html
+  commentId: T:MinimalUtility.ValueDisposable.Disposable
+  fullName: MinimalUtility.ValueDisposable.Disposable
+  nameWithType: ValueDisposable.Disposable
+- uid: MinimalUtility.ValueDisposable.Disposable`1
+  name: ValueDisposable.Disposable<T1>
+  href: api/MinimalUtility.ValueDisposable.Disposable-1.html
+  commentId: T:MinimalUtility.ValueDisposable.Disposable`1
+  name.vb: ValueDisposable.Disposable(Of T1)
+  fullName: MinimalUtility.ValueDisposable.Disposable<T1>
+  fullName.vb: MinimalUtility.ValueDisposable.Disposable(Of T1)
+  nameWithType: ValueDisposable.Disposable<T1>
+  nameWithType.vb: ValueDisposable.Disposable(Of T1)
+- uid: MinimalUtility.ValueDisposable.Disposable`2
+  name: ValueDisposable.Disposable<T1, T2>
+  href: api/MinimalUtility.ValueDisposable.Disposable-2.html
+  commentId: T:MinimalUtility.ValueDisposable.Disposable`2
+  name.vb: ValueDisposable.Disposable(Of T1, T2)
+  fullName: MinimalUtility.ValueDisposable.Disposable<T1, T2>
+  fullName.vb: MinimalUtility.ValueDisposable.Disposable(Of T1, T2)
+  nameWithType: ValueDisposable.Disposable<T1, T2>
+  nameWithType.vb: ValueDisposable.Disposable(Of T1, T2)
+- uid: MinimalUtility.ValueDisposable.Disposable`3
+  name: ValueDisposable.Disposable<T1, T2, T3>
+  href: api/MinimalUtility.ValueDisposable.Disposable-3.html
+  commentId: T:MinimalUtility.ValueDisposable.Disposable`3
+  name.vb: ValueDisposable.Disposable(Of T1, T2, T3)
+  fullName: MinimalUtility.ValueDisposable.Disposable<T1, T2, T3>
+  fullName.vb: MinimalUtility.ValueDisposable.Disposable(Of T1, T2, T3)
+  nameWithType: ValueDisposable.Disposable<T1, T2, T3>
+  nameWithType.vb: ValueDisposable.Disposable(Of T1, T2, T3)
 - uid: System.Runtime.CompilerServices
   name: System.Runtime.CompilerServices
   href: api/System.Runtime.CompilerServices.html

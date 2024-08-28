@@ -55,16 +55,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Global.UnityWebRequestHttpMessageHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Global.UnityWebRequestHttpMessageHandler.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/Global.yml",
       "output": {
         ".html": {
@@ -129,46 +119,6 @@
       "output": {
         ".html": {
           "relative_path": "api/MinimalUtility.DebugProfileViewer.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MinimalUtility.Disposable-1.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MinimalUtility.Disposable-1.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MinimalUtility.Disposable-2.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MinimalUtility.Disposable-2.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MinimalUtility.Disposable-3.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MinimalUtility.Disposable-3.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MinimalUtility.Disposable.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MinimalUtility.Disposable.html"
         }
       },
       "version": ""
@@ -435,6 +385,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/MinimalUtility.Tasks.UnityWebRequestHttpMessageHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MinimalUtility.Tasks.UnityWebRequestHttpMessageHandler.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/MinimalUtility.Tasks.yml",
       "output": {
         ".html": {
@@ -459,6 +419,46 @@
       "output": {
         ".html": {
           "relative_path": "api/MinimalUtility.VContainer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MinimalUtility.ValueDisposable.Disposable-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MinimalUtility.ValueDisposable.Disposable-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MinimalUtility.ValueDisposable.Disposable-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MinimalUtility.ValueDisposable.Disposable-2.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MinimalUtility.ValueDisposable.Disposable-3.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MinimalUtility.ValueDisposable.Disposable-3.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MinimalUtility.ValueDisposable.Disposable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MinimalUtility.ValueDisposable.Disposable.html"
         }
       },
       "version": ""

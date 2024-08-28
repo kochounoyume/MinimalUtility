@@ -89,7 +89,7 @@
 
 
   <h1 id="MinimalUtility_String_StringUtils" data-uid="MinimalUtility.String.StringUtils" class="text-break">
-Class StringUtils  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/String/StringUtils.Create.cs/#L11"><i class="bi bi-code-slash"></i></a>
+Class StringUtils  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/String/StringUtils.Join.cs/#L8"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -227,6 +227,120 @@ Class StringUtils  <a class="header-action link-secondary" title="View source" h
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd><p>The string that results for formatting the interpolated string using the specified format provider.</p>
 </dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MinimalUtility_String_StringUtils_Join_" data-uid="MinimalUtility.String.StringUtils.Join*"></a>
+
+  <h3 id="MinimalUtility_String_StringUtils_Join_System_Char_System_Collections_Generic_IEnumerable_System_String__" data-uid="MinimalUtility.String.StringUtils.Join(System.Char,System.Collections.Generic.IEnumerable{System.String})">
+  Join(char, IEnumerable&lt;string?&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/String/StringUtils.Join.cs/#L13"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string Join(char separator, IEnumerable&lt;string?&gt; values)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>separator</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a></dt>
+    <dd></dd>
+    <dt><code>values</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MinimalUtility_String_StringUtils_Join_" data-uid="MinimalUtility.String.StringUtils.Join*"></a>
+
+  <h3 id="MinimalUtility_String_StringUtils_Join_System_ReadOnlySpan_System_Char__System_Collections_Generic_IEnumerable_System_String__" data-uid="MinimalUtility.String.StringUtils.Join(System.ReadOnlySpan{System.Char},System.Collections.Generic.IEnumerable{System.String})">
+  Join(ReadOnlySpan&lt;char&gt;, IEnumerable&lt;string?&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/String/StringUtils.Join.cs/#L23"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string Join(ReadOnlySpan&lt;char&gt; separator, IEnumerable&lt;string?&gt; values)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>separator</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>values</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MinimalUtility_String_StringUtils_Join_" data-uid="MinimalUtility.String.StringUtils.Join*"></a>
+
+  <h3 id="MinimalUtility_String_StringUtils_Join_System_String_System_Collections_Generic_IEnumerable_System_String__" data-uid="MinimalUtility.String.StringUtils.Join(System.String,System.Collections.Generic.IEnumerable{System.String})">
+  Join(string?, IEnumerable&lt;string?&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/String/StringUtils.Join.cs/#L10"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string Join(string? separator, IEnumerable&lt;string?&gt; values)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>separator</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>values</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
   </dl>
 
 

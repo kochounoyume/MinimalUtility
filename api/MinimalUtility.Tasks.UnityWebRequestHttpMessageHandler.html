@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class UnityWebRequestHttpMessageHandler |  |  ">
       
-      
+      <meta name="description" content="UniTaskのサポートを活用した、UnityWebRequestを使用する.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       <meta name="docfx:disablenewtab" content="true">
       
-      <meta name="docfx:docurl" content="https://gist.github.com/kochounoyume/1c73668e2f8ea0ea209f74780567db1c/new/main/apiSpec/new?filename=Global_UnityWebRequestHttpMessageHandler.md&amp;value=---%0Auid%3A%20Global.UnityWebRequestHttpMessageHandler%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/kochounoyume/MinimalUtility/new/main/apiSpec/new?filename=MinimalUtility_Tasks_UnityWebRequestHttpMessageHandler.md&amp;value=---%0Auid%3A%20MinimalUtility.Tasks.UnityWebRequestHttpMessageHandler%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -84,20 +84,21 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="Global.UnityWebRequestHttpMessageHandler">
+        <article data-uid="MinimalUtility.Tasks.UnityWebRequestHttpMessageHandler">
 
 
 
-  <h1 id="Global_UnityWebRequestHttpMessageHandler" data-uid="Global.UnityWebRequestHttpMessageHandler" class="text-break">
-Class UnityWebRequestHttpMessageHandler  <a class="header-action link-secondary" title="View source" href="https://gist.github.com/kochounoyume/1c73668e2f8ea0ea209f74780567db1c/blob/main/UnityWebRequestHttpMessageHandler.cs/#L10"><i class="bi bi-code-slash"></i></a>
+  <h1 id="MinimalUtility_Tasks_UnityWebRequestHttpMessageHandler" data-uid="MinimalUtility.Tasks.UnityWebRequestHttpMessageHandler" class="text-break">
+Class UnityWebRequestHttpMessageHandler  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/Tasks/UnityWebRequestHttpMessageHandler.cs/#L12"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="Global.html">Global</a></dd></dl>
+    <dl><dt>Namespace</dt><dd><a class="xref" href="MinimalUtility.html">MinimalUtility</a>.<a class="xref" href="MinimalUtility.Tasks.html">Tasks</a></dd></dl>
   
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>UniTaskのサポートを活用した、UnityWebRequestを使用する<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.http.httpmessagehandler">HttpMessageHandler</a>.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -175,58 +176,11 @@ Class UnityWebRequestHttpMessageHandler  <a class="header-action link-secondary"
 </h2>
 
 
-  <a id="Global_UnityWebRequestHttpMessageHandler_SendAsync_" data-uid="Global.UnityWebRequestHttpMessageHandler.SendAsync*"></a>
+  <a id="MinimalUtility_Tasks_UnityWebRequestHttpMessageHandler_SendAsync_" data-uid="MinimalUtility.Tasks.UnityWebRequestHttpMessageHandler.SendAsync*"></a>
 
-  <h3 id="Global_UnityWebRequestHttpMessageHandler_SendAsync_System_Net_Http_HttpRequestMessage_System_Threading_CancellationToken_" data-uid="Global.UnityWebRequestHttpMessageHandler.SendAsync(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)">
+  <h3 id="MinimalUtility_Tasks_UnityWebRequestHttpMessageHandler_SendAsync_System_Net_Http_HttpRequestMessage_System_Threading_CancellationToken_" data-uid="MinimalUtility.Tasks.UnityWebRequestHttpMessageHandler.SendAsync(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)">
   SendAsync(HttpRequestMessage, CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://gist.github.com/kochounoyume/1c73668e2f8ea0ea209f74780567db1c/blob/main/UnityWebRequestHttpMessageHandler.cs/#L12"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Send an HTTP request as an asynchronous operation.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected override Task&lt;HttpResponseMessage&gt; SendAsync(HttpRequestMessage requestMessage, CancellationToken cancellationToken)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>requestMessage</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.http.httprequestmessage">HttpRequestMessage</a></dt>
-    <dd></dd>
-    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
-    <dd><p>The cancellation token to cancel operation.</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.http.httpresponsemessage">HttpResponseMessage</a>&gt;</dt>
-    <dd><p>The task object representing the asynchronous operation.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <h4 class="section">Exceptions</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
-    <dd><p>The <code class="paramref">request</code> was <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</p>
-</dd>
-  </dl>
-
-
-
-  <a id="Global_UnityWebRequestHttpMessageHandler_SendAsync_" data-uid="Global.UnityWebRequestHttpMessageHandler.SendAsync*"></a>
-
-  <h3 id="Global_UnityWebRequestHttpMessageHandler_SendAsync_System_Net_Http_HttpRequestMessage_System_Threading_CancellationToken_" data-uid="Global.UnityWebRequestHttpMessageHandler.SendAsync(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)">
-  SendAsync(HttpRequestMessage, CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://gist.github.com/kochounoyume/1c73668e2f8ea0ea209f74780567db1c/blob/main/UnityWebRequestHttpMessageHandler.cs/#L12"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/Tasks/UnityWebRequestHttpMessageHandler.cs/#L15"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Send an HTTP request as an asynchronous operation.</p>
