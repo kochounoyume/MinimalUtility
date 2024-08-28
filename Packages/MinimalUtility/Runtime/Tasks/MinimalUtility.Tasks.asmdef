@@ -2,6 +2,7 @@
     "name": "MinimalUtility.Tasks",
     "rootNamespace": "MinimalUtility.Tasks",
     "references": [
+        "GUID:eb014bd0dae606c44a234c52ffeb53e2",
         "GUID:f51ebe6a0ceec4240a699833d6309b23"
     ],
     "includePlatforms": [],
