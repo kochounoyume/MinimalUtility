@@ -57,129 +57,129 @@ namespace MinimalUtility
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static Disposable<T1, T2, T3> Create<T1, T2, T3>(T1 state1, T2 state2, T3 state3, Action<T1, T2, T3> onDispose)
             => new (state1, state2, state3, onDispose);
-    }
-
-    /// <summary>
-    /// usingステートメントスコープを抜けた際にコールバックを呼び出すための構造体.
-    /// </summary>
-    public readonly struct Disposable : IDisposable
-    {
-        private readonly Action onDispose;
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="Disposable"/> struct.
+        /// usingステートメントスコープを抜けた際にコールバックを呼び出すための構造体.
         /// </summary>
-        /// <param name="onDispose">破棄時に呼び出す処理.</param>
-        internal Disposable(Action onDispose)
+        public readonly struct Disposable : IDisposable
         {
-            this.onDispose = onDispose;
+            private readonly Action onDispose;
+
+            /// <summary>
+            /// Initializes a new instance of the <see cref="Disposable"/> struct.
+            /// </summary>
+            /// <param name="onDispose">破棄時に呼び出す処理.</param>
+            internal Disposable(Action onDispose)
+            {
+                this.onDispose = onDispose;
+            }
+
+            /// <summary>
+            /// 破棄処理.
+            /// </summary>
+            void IDisposable.Dispose()
+            {
+                onDispose?.Invoke();
+            }
         }
 
         /// <summary>
-        /// 破棄処理.
+        /// usingステートメントスコープを抜けた際にコールバックを呼び出すための構造体.
         /// </summary>
-        void IDisposable.Dispose()
+        /// <typeparam name="T1">破棄時に呼び出す処理の引数の型.</typeparam>
+        public readonly struct Disposable<T1> : IDisposable
         {
-            onDispose?.Invoke();
-        }
-    }
+            private readonly T1 state1;
+            private readonly Action<T1> onDispose;
 
-    /// <summary>
-    /// usingステートメントスコープを抜けた際にコールバックを呼び出すための構造体.
-    /// </summary>
-    /// <typeparam name="T1">破棄時に呼び出す処理の引数の型.</typeparam>
-    public readonly struct Disposable<T1> : IDisposable
-    {
-        private readonly T1 state1;
-        private readonly Action<T1> onDispose;
+            /// <summary>
+            /// Initializes a new instance of the <see cref="Disposable{T1}"/> struct.
+            /// </summary>
+            /// <param name="state1">破棄時に呼び出す処理の引数.</param>
+            /// <param name="onDispose">破棄時に呼び出す処理.</param>
+            internal Disposable(T1 state1, Action<T1> onDispose)
+            {
+                this.state1 = state1;
+                this.onDispose = onDispose;
+            }
 
-        /// <summary>
-        /// Initializes a new instance of the <see cref="Disposable{T1}"/> struct.
-        /// </summary>
-        /// <param name="state1">破棄時に呼び出す処理の引数.</param>
-        /// <param name="onDispose">破棄時に呼び出す処理.</param>
-        internal Disposable(T1 state1, Action<T1> onDispose)
-        {
-            this.state1 = state1;
-            this.onDispose = onDispose;
-        }
-
-        /// <summary>
-        /// 破棄処理.
-        /// </summary>
-        void IDisposable.Dispose()
-        {
-            onDispose?.Invoke(state1);
-        }
-    }
-
-    /// <summary>
-    /// usingステートメントスコープを抜けた際にコールバックを呼び出すための構造体.
-    /// </summary>
-    /// <typeparam name="T1">破棄時に呼び出す処理の第一引数の型.</typeparam>
-    /// <typeparam name="T2">破棄時に呼び出す処理の第二引数の型.</typeparam>
-    public readonly struct Disposable<T1, T2> : IDisposable
-    {
-        private readonly T1 state1;
-        private readonly T2 state2;
-        private readonly Action<T1, T2> onDispose;
-
-        /// <summary>
-        /// Initializes a new instance of the <see cref="Disposable{T1,T2}"/> struct.
-        /// </summary>
-        /// <param name="state1">破棄時に呼び出す処理の第一引数.</param>
-        /// <param name="state2">破棄時に呼び出す処理の第二引数.</param>
-        /// <param name="onDispose">破棄時に呼び出す処理.</param>
-        internal Disposable(T1 state1, T2 state2, Action<T1, T2> onDispose)
-        {
-            this.state1 = state1;
-            this.state2 = state2;
-            this.onDispose = onDispose;
+            /// <summary>
+            /// 破棄処理.
+            /// </summary>
+            void IDisposable.Dispose()
+            {
+                onDispose?.Invoke(state1);
+            }
         }
 
         /// <summary>
-        /// 破棄処理.
+        /// usingステートメントスコープを抜けた際にコールバックを呼び出すための構造体.
         /// </summary>
-        void IDisposable.Dispose()
+        /// <typeparam name="T1">破棄時に呼び出す処理の第一引数の型.</typeparam>
+        /// <typeparam name="T2">破棄時に呼び出す処理の第二引数の型.</typeparam>
+        public readonly struct Disposable<T1, T2> : IDisposable
         {
-            onDispose?.Invoke(state1, state2);
-        }
-    }
+            private readonly T1 state1;
+            private readonly T2 state2;
+            private readonly Action<T1, T2> onDispose;
 
-    /// <summary>
-    /// usingステートメントスコープを抜けた際にコールバックを呼び出すための構造体.
-    /// </summary>
-    /// <typeparam name="T1">破棄時に呼び出す処理の第一引数の型.</typeparam>
-    /// <typeparam name="T2">破棄時に呼び出す処理の第二引数の型.</typeparam>
-    /// <typeparam name="T3">破棄時に呼び出す処理の第三引数の型.</typeparam>
-    public readonly struct Disposable<T1, T2, T3> : IDisposable
-    {
-        private readonly T1 state1;
-        private readonly T2 state2;
-        private readonly T3 state3;
-        private readonly Action<T1, T2, T3> onDispose;
+            /// <summary>
+            /// Initializes a new instance of the <see cref="Disposable{T1,T2}"/> struct.
+            /// </summary>
+            /// <param name="state1">破棄時に呼び出す処理の第一引数.</param>
+            /// <param name="state2">破棄時に呼び出す処理の第二引数.</param>
+            /// <param name="onDispose">破棄時に呼び出す処理.</param>
+            internal Disposable(T1 state1, T2 state2, Action<T1, T2> onDispose)
+            {
+                this.state1 = state1;
+                this.state2 = state2;
+                this.onDispose = onDispose;
+            }
 
-        /// <summary>
-        /// Initializes a new instance of the <see cref="Disposable{T1,T2,T3}"/> struct.
-        /// </summary>
-        /// <param name="state1">破棄時に呼び出す処理の第一引数.</param>
-        /// <param name="state2">破棄時に呼び出す処理の第二引数.</param>
-        /// <param name="state3">破棄時に呼び出す処理の第三引数.</param>
-        /// <param name="onDispose">破棄時に呼び出す処理.</param>
-        internal Disposable(T1 state1, T2 state2, T3 state3, Action<T1, T2, T3> onDispose)
-        {
-            this.state1 = state1;
-            this.state2 = state2;
-            this.state3 = state3;
-            this.onDispose = onDispose;
+            /// <summary>
+            /// 破棄処理.
+            /// </summary>
+            void IDisposable.Dispose()
+            {
+                onDispose?.Invoke(state1, state2);
+            }
         }
 
         /// <summary>
-        /// 破棄処理.
+        /// usingステートメントスコープを抜けた際にコールバックを呼び出すための構造体.
         /// </summary>
-        void IDisposable.Dispose()
+        /// <typeparam name="T1">破棄時に呼び出す処理の第一引数の型.</typeparam>
+        /// <typeparam name="T2">破棄時に呼び出す処理の第二引数の型.</typeparam>
+        /// <typeparam name="T3">破棄時に呼び出す処理の第三引数の型.</typeparam>
+        public readonly struct Disposable<T1, T2, T3> : IDisposable
         {
-            onDispose?.Invoke(state1, state2, state3);
+            private readonly T1 state1;
+            private readonly T2 state2;
+            private readonly T3 state3;
+            private readonly Action<T1, T2, T3> onDispose;
+
+            /// <summary>
+            /// Initializes a new instance of the <see cref="Disposable{T1,T2,T3}"/> struct.
+            /// </summary>
+            /// <param name="state1">破棄時に呼び出す処理の第一引数.</param>
+            /// <param name="state2">破棄時に呼び出す処理の第二引数.</param>
+            /// <param name="state3">破棄時に呼び出す処理の第三引数.</param>
+            /// <param name="onDispose">破棄時に呼び出す処理.</param>
+            internal Disposable(T1 state1, T2 state2, T3 state3, Action<T1, T2, T3> onDispose)
+            {
+                this.state1 = state1;
+                this.state2 = state2;
+                this.state3 = state3;
+                this.onDispose = onDispose;
+            }
+
+            /// <summary>
+            /// 破棄処理.
+            /// </summary>
+            void IDisposable.Dispose()
+            {
+                onDispose?.Invoke(state1, state2, state3);
+            }
         }
     }
 }
