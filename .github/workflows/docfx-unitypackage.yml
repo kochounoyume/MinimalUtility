@@ -18,8 +18,18 @@ jobs:
         with:
           submodules: true
 
+      - name: Checkout docfx-unitypackage Repository
+        uses: actions/checkout@v4.1.2
+        with:
+          # 使いたいactionがあるorganization/repositoryをcheckoutする対象に指定
+          repository: kochounoyume/docfx-unitypackage-supported-define
+          # branch名だけでなくtagやcommit hashなど取得元を一意に特定できるものなら何でもok
+	        ref: main
+	        # 取得したアクションをこのリポジトリのどこのディレクトリに持ってくるか決める
+          path: .github/actions/other-repository
+
       - name: Build
-        uses: CaseyHofland/docfx-unitypackage@v1.0.2
+        uses: ./.github/actions/other-repository
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
 
