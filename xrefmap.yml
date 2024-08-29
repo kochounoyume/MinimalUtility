@@ -1407,15 +1407,15 @@ references:
   isSpec: "True"
   fullName: MinimalUtility.R3.ObservableExtensions.SubscribeLockAwait
   nameWithType: ObservableExtensions.SubscribeLockAwait
-- uid: MinimalUtility.R3.ObservableExtensions.SubscribeLockAwait``2(Observable{``0},``1,System.Func{``0,System.Threading.CancellationToken,System.Threading.Tasks.ValueTask})
-  name: SubscribeLockAwait<T, TGate>(Observable<T>, TGate, Func<T, CancellationToken, ValueTask>)
-  href: api/MinimalUtility.R3.ObservableExtensions.html#MinimalUtility_R3_ObservableExtensions_SubscribeLockAwait__2_Observable___0____1_System_Func___0_System_Threading_CancellationToken_System_Threading_Tasks_ValueTask__
-  commentId: M:MinimalUtility.R3.ObservableExtensions.SubscribeLockAwait``2(Observable{``0},``1,System.Func{``0,System.Threading.CancellationToken,System.Threading.Tasks.ValueTask})
-  name.vb: SubscribeLockAwait(Of T, TGate)(Observable(Of T), TGate, Func(Of T, CancellationToken, ValueTask))
-  fullName: MinimalUtility.R3.ObservableExtensions.SubscribeLockAwait<T, TGate>(Observable<T>, TGate, System.Func<T, System.Threading.CancellationToken, System.Threading.Tasks.ValueTask>)
-  fullName.vb: MinimalUtility.R3.ObservableExtensions.SubscribeLockAwait(Of T, TGate)(Observable(Of T), TGate, System.Func(Of T, System.Threading.CancellationToken, System.Threading.Tasks.ValueTask))
-  nameWithType: ObservableExtensions.SubscribeLockAwait<T, TGate>(Observable<T>, TGate, Func<T, CancellationToken, ValueTask>)
-  nameWithType.vb: ObservableExtensions.SubscribeLockAwait(Of T, TGate)(Observable(Of T), TGate, Func(Of T, CancellationToken, ValueTask))
+- uid: MinimalUtility.R3.ObservableExtensions.SubscribeLockAwait``2(Observable{``0},``1,System.Func{``0,System.Threading.CancellationToken,Cysharp.Threading.Tasks.UniTask})
+  name: SubscribeLockAwait<T, TGate>(Observable<T>, TGate, Func<T, CancellationToken, UniTask>)
+  href: api/MinimalUtility.R3.ObservableExtensions.html#MinimalUtility_R3_ObservableExtensions_SubscribeLockAwait__2_Observable___0____1_System_Func___0_System_Threading_CancellationToken_Cysharp_Threading_Tasks_UniTask__
+  commentId: M:MinimalUtility.R3.ObservableExtensions.SubscribeLockAwait``2(Observable{``0},``1,System.Func{``0,System.Threading.CancellationToken,Cysharp.Threading.Tasks.UniTask})
+  name.vb: SubscribeLockAwait(Of T, TGate)(Observable(Of T), TGate, Func(Of T, CancellationToken, UniTask))
+  fullName: MinimalUtility.R3.ObservableExtensions.SubscribeLockAwait<T, TGate>(Observable<T>, TGate, System.Func<T, System.Threading.CancellationToken, Cysharp.Threading.Tasks.UniTask>)
+  fullName.vb: MinimalUtility.R3.ObservableExtensions.SubscribeLockAwait(Of T, TGate)(Observable(Of T), TGate, System.Func(Of T, System.Threading.CancellationToken, Cysharp.Threading.Tasks.UniTask))
+  nameWithType: ObservableExtensions.SubscribeLockAwait<T, TGate>(Observable<T>, TGate, Func<T, CancellationToken, UniTask>)
+  nameWithType.vb: ObservableExtensions.SubscribeLockAwait(Of T, TGate)(Observable(Of T), TGate, Func(Of T, CancellationToken, UniTask))
 - uid: MinimalUtility.R3.ObservableExtensions.SubscribeLock``2(Observable{``0},``1,System.Action{``0})
   name: SubscribeLock<T, TGate>(Observable<T>, TGate, Action<T>)
   href: api/MinimalUtility.R3.ObservableExtensions.html#MinimalUtility_R3_ObservableExtensions_SubscribeLock__2_Observable___0____1_System_Action___0__
