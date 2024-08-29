@@ -22,7 +22,7 @@ jobs:
         uses: actions/checkout@v4.1.2
         with:
           repository: kochounoyume/docfx-unitypackage-supported-define
-          # path: .github/actions/other-repository
+          path: .github/actions/other-repository
 
       - name: Build
         uses: ./.github/actions/other-repository
