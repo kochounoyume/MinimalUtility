@@ -26,9 +26,10 @@ jobs:
 
       - name: Build
         uses: ./.github/actions/other-repository
+          
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          option_defines: ${{ "UNITY_EDITOR" }}
+          option_defines: "UNITY_EDITOR"
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4.0.0
