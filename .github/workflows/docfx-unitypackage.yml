@@ -23,9 +23,7 @@ jobs:
         with:
           # 使いたいactionがあるorganization/repositoryをcheckoutする対象に指定
           repository: kochounoyume/docfx-unitypackage-supported-define
-          # branch名だけでなくtagやcommit hashなど取得元を一意に特定できるものなら何でもok
-	        ref: main
-	        # 取得したアクションをこのリポジトリのどこのディレクトリに持ってくるか決める
+	  # 取得したアクションをこのリポジトリのどこのディレクトリに持ってくるか決める
           path: .github/actions/other-repository
 
       - name: Build
