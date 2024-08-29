@@ -240,8 +240,8 @@ Class ObservableExtensions  <a class="header-action link-secondary" title="View 
 
   <a id="MinimalUtility_R3_ObservableExtensions_SubscribeLockAwait_" data-uid="MinimalUtility.R3.ObservableExtensions.SubscribeLockAwait*"></a>
 
-  <h3 id="MinimalUtility_R3_ObservableExtensions_SubscribeLockAwait__2_Observable___0____1_System_Func___0_System_Threading_CancellationToken_Cysharp_Threading_Tasks_UniTask__" data-uid="MinimalUtility.R3.ObservableExtensions.SubscribeLockAwait``2(Observable{``0},``1,System.Func{``0,System.Threading.CancellationToken,Cysharp.Threading.Tasks.UniTask})">
-  SubscribeLockAwait&lt;T, TGate&gt;(Observable&lt;T&gt;, TGate, Func&lt;T, CancellationToken, UniTask&gt;)
+  <h3 id="MinimalUtility_R3_ObservableExtensions_SubscribeLockAwait__2_Observable___0____1_System_Func___0_System_Threading_CancellationToken_System_Threading_Tasks_ValueTask__" data-uid="MinimalUtility.R3.ObservableExtensions.SubscribeLockAwait``2(Observable{``0},``1,System.Func{``0,System.Threading.CancellationToken,System.Threading.Tasks.ValueTask})">
+  SubscribeLockAwait&lt;T, TGate&gt;(Observable&lt;T&gt;, TGate, Func&lt;T, CancellationToken, ValueTask&gt;)
   <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/R3/ObservableExtensions.Input.cs/#L32"><i class="bi bi-code-slash"></i></a>
   </h3>
 
@@ -250,7 +250,7 @@ Class ObservableExtensions  <a class="header-action link-secondary" title="View 
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static IDisposable SubscribeLockAwait&lt;T, TGate&gt;(this Observable&lt;T&gt; source, TGate gate, Func&lt;T, CancellationToken, UniTask&gt; onNextAsync) where TGate : ReactiveProperty&lt;bool&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public static IDisposable SubscribeLockAwait&lt;T, TGate&gt;(this Observable&lt;T&gt; source, TGate gate, Func&lt;T, CancellationToken, ValueTask&gt; onNextAsync) where TGate : ReactiveProperty&lt;bool&gt;</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -261,7 +261,7 @@ Class ObservableExtensions  <a class="header-action link-secondary" title="View 
     <dt><code>gate</code> <span class="xref">TGate</span></dt>
     <dd><p>排他制御用のReactiveProperty&lt;T&gt;.</p>
 </dd>
-    <dt><code>onNextAsync</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-3">Func</a>&lt;T, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a>, <a class="xref" href="Cysharp.Threading.Tasks.UniTask.html">UniTask</a>&gt;</dt>
+    <dt><code>onNextAsync</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-3">Func</a>&lt;T, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask">ValueTask</a>&gt;</dt>
     <dd><p>非同期処理.</p>
 </dd>
   </dl>

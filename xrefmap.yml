@@ -759,6 +759,51 @@ references:
   fullName.vb: MinimalUtility.Editor.UnityComponentInspector(Of T).Target
   nameWithType: UnityComponentInspector<T>.Target
   nameWithType.vb: UnityComponentInspector(Of T).Target
+- uid: MinimalUtility.EmptyGraphic
+  name: EmptyGraphic
+  href: api/MinimalUtility.EmptyGraphic.html
+  commentId: T:MinimalUtility.EmptyGraphic
+  fullName: MinimalUtility.EmptyGraphic
+  nameWithType: EmptyGraphic
+- uid: MinimalUtility.EmptyGraphic.OnPopulateMesh(VertexHelper)
+  name: OnPopulateMesh(VertexHelper)
+  href: api/MinimalUtility.EmptyGraphic.html#MinimalUtility_EmptyGraphic_OnPopulateMesh_VertexHelper_
+  commentId: M:MinimalUtility.EmptyGraphic.OnPopulateMesh(VertexHelper)
+  fullName: MinimalUtility.EmptyGraphic.OnPopulateMesh(VertexHelper)
+  nameWithType: EmptyGraphic.OnPopulateMesh(VertexHelper)
+- uid: MinimalUtility.EmptyGraphic.OnPopulateMesh*
+  name: OnPopulateMesh
+  href: api/MinimalUtility.EmptyGraphic.html#MinimalUtility_EmptyGraphic_OnPopulateMesh_
+  commentId: Overload:MinimalUtility.EmptyGraphic.OnPopulateMesh
+  isSpec: "True"
+  fullName: MinimalUtility.EmptyGraphic.OnPopulateMesh
+  nameWithType: EmptyGraphic.OnPopulateMesh
+- uid: MinimalUtility.EmptyGraphic.SetMaterialDirty
+  name: SetMaterialDirty()
+  href: api/MinimalUtility.EmptyGraphic.html#MinimalUtility_EmptyGraphic_SetMaterialDirty
+  commentId: M:MinimalUtility.EmptyGraphic.SetMaterialDirty
+  fullName: MinimalUtility.EmptyGraphic.SetMaterialDirty()
+  nameWithType: EmptyGraphic.SetMaterialDirty()
+- uid: MinimalUtility.EmptyGraphic.SetMaterialDirty*
+  name: SetMaterialDirty
+  href: api/MinimalUtility.EmptyGraphic.html#MinimalUtility_EmptyGraphic_SetMaterialDirty_
+  commentId: Overload:MinimalUtility.EmptyGraphic.SetMaterialDirty
+  isSpec: "True"
+  fullName: MinimalUtility.EmptyGraphic.SetMaterialDirty
+  nameWithType: EmptyGraphic.SetMaterialDirty
+- uid: MinimalUtility.EmptyGraphic.SetVerticesDirty
+  name: SetVerticesDirty()
+  href: api/MinimalUtility.EmptyGraphic.html#MinimalUtility_EmptyGraphic_SetVerticesDirty
+  commentId: M:MinimalUtility.EmptyGraphic.SetVerticesDirty
+  fullName: MinimalUtility.EmptyGraphic.SetVerticesDirty()
+  nameWithType: EmptyGraphic.SetVerticesDirty()
+- uid: MinimalUtility.EmptyGraphic.SetVerticesDirty*
+  name: SetVerticesDirty
+  href: api/MinimalUtility.EmptyGraphic.html#MinimalUtility_EmptyGraphic_SetVerticesDirty_
+  commentId: Overload:MinimalUtility.EmptyGraphic.SetVerticesDirty
+  isSpec: "True"
+  fullName: MinimalUtility.EmptyGraphic.SetVerticesDirty
+  nameWithType: EmptyGraphic.SetVerticesDirty
 - uid: MinimalUtility.EqualityComparer
   name: EqualityComparer
   href: api/MinimalUtility.EqualityComparer.html
@@ -1407,15 +1452,15 @@ references:
   isSpec: "True"
   fullName: MinimalUtility.R3.ObservableExtensions.SubscribeLockAwait
   nameWithType: ObservableExtensions.SubscribeLockAwait
-- uid: MinimalUtility.R3.ObservableExtensions.SubscribeLockAwait``2(Observable{``0},``1,System.Func{``0,System.Threading.CancellationToken,Cysharp.Threading.Tasks.UniTask})
-  name: SubscribeLockAwait<T, TGate>(Observable<T>, TGate, Func<T, CancellationToken, UniTask>)
-  href: api/MinimalUtility.R3.ObservableExtensions.html#MinimalUtility_R3_ObservableExtensions_SubscribeLockAwait__2_Observable___0____1_System_Func___0_System_Threading_CancellationToken_Cysharp_Threading_Tasks_UniTask__
-  commentId: M:MinimalUtility.R3.ObservableExtensions.SubscribeLockAwait``2(Observable{``0},``1,System.Func{``0,System.Threading.CancellationToken,Cysharp.Threading.Tasks.UniTask})
-  name.vb: SubscribeLockAwait(Of T, TGate)(Observable(Of T), TGate, Func(Of T, CancellationToken, UniTask))
-  fullName: MinimalUtility.R3.ObservableExtensions.SubscribeLockAwait<T, TGate>(Observable<T>, TGate, System.Func<T, System.Threading.CancellationToken, Cysharp.Threading.Tasks.UniTask>)
-  fullName.vb: MinimalUtility.R3.ObservableExtensions.SubscribeLockAwait(Of T, TGate)(Observable(Of T), TGate, System.Func(Of T, System.Threading.CancellationToken, Cysharp.Threading.Tasks.UniTask))
-  nameWithType: ObservableExtensions.SubscribeLockAwait<T, TGate>(Observable<T>, TGate, Func<T, CancellationToken, UniTask>)
-  nameWithType.vb: ObservableExtensions.SubscribeLockAwait(Of T, TGate)(Observable(Of T), TGate, Func(Of T, CancellationToken, UniTask))
+- uid: MinimalUtility.R3.ObservableExtensions.SubscribeLockAwait``2(Observable{``0},``1,System.Func{``0,System.Threading.CancellationToken,System.Threading.Tasks.ValueTask})
+  name: SubscribeLockAwait<T, TGate>(Observable<T>, TGate, Func<T, CancellationToken, ValueTask>)
+  href: api/MinimalUtility.R3.ObservableExtensions.html#MinimalUtility_R3_ObservableExtensions_SubscribeLockAwait__2_Observable___0____1_System_Func___0_System_Threading_CancellationToken_System_Threading_Tasks_ValueTask__
+  commentId: M:MinimalUtility.R3.ObservableExtensions.SubscribeLockAwait``2(Observable{``0},``1,System.Func{``0,System.Threading.CancellationToken,System.Threading.Tasks.ValueTask})
+  name.vb: SubscribeLockAwait(Of T, TGate)(Observable(Of T), TGate, Func(Of T, CancellationToken, ValueTask))
+  fullName: MinimalUtility.R3.ObservableExtensions.SubscribeLockAwait<T, TGate>(Observable<T>, TGate, System.Func<T, System.Threading.CancellationToken, System.Threading.Tasks.ValueTask>)
+  fullName.vb: MinimalUtility.R3.ObservableExtensions.SubscribeLockAwait(Of T, TGate)(Observable(Of T), TGate, System.Func(Of T, System.Threading.CancellationToken, System.Threading.Tasks.ValueTask))
+  nameWithType: ObservableExtensions.SubscribeLockAwait<T, TGate>(Observable<T>, TGate, Func<T, CancellationToken, ValueTask>)
+  nameWithType.vb: ObservableExtensions.SubscribeLockAwait(Of T, TGate)(Observable(Of T), TGate, Func(Of T, CancellationToken, ValueTask))
 - uid: MinimalUtility.R3.ObservableExtensions.SubscribeLock``2(Observable{``0},``1,System.Action{``0})
   name: SubscribeLock<T, TGate>(Observable<T>, TGate, Action<T>)
   href: api/MinimalUtility.R3.ObservableExtensions.html#MinimalUtility_R3_ObservableExtensions_SubscribeLock__2_Observable___0____1_System_Action___0__
@@ -1545,6 +1590,86 @@ references:
   commentId: T:MinimalUtility.SafeAreaAdjuster
   fullName: MinimalUtility.SafeAreaAdjuster
   nameWithType: SafeAreaAdjuster
+- uid: MinimalUtility.SelectablesGraphic
+  name: SelectablesGraphic
+  href: api/MinimalUtility.SelectablesGraphic.html
+  commentId: T:MinimalUtility.SelectablesGraphic
+  fullName: MinimalUtility.SelectablesGraphic
+  nameWithType: SelectablesGraphic
+- uid: MinimalUtility.SelectablesGraphic.CrossFadeColor(Color,System.Single,System.Boolean,System.Boolean)
+  name: CrossFadeColor(Color, float, bool, bool)
+  href: api/MinimalUtility.SelectablesGraphic.html#MinimalUtility_SelectablesGraphic_CrossFadeColor_Color_System_Single_System_Boolean_System_Boolean_
+  commentId: M:MinimalUtility.SelectablesGraphic.CrossFadeColor(Color,System.Single,System.Boolean,System.Boolean)
+  name.vb: CrossFadeColor(Color, Single, Boolean, Boolean)
+  fullName: MinimalUtility.SelectablesGraphic.CrossFadeColor(Color, float, bool, bool)
+  fullName.vb: MinimalUtility.SelectablesGraphic.CrossFadeColor(Color, Single, Boolean, Boolean)
+  nameWithType: SelectablesGraphic.CrossFadeColor(Color, float, bool, bool)
+  nameWithType.vb: SelectablesGraphic.CrossFadeColor(Color, Single, Boolean, Boolean)
+- uid: MinimalUtility.SelectablesGraphic.CrossFadeColor*
+  name: CrossFadeColor
+  href: api/MinimalUtility.SelectablesGraphic.html#MinimalUtility_SelectablesGraphic_CrossFadeColor_
+  commentId: Overload:MinimalUtility.SelectablesGraphic.CrossFadeColor
+  isSpec: "True"
+  fullName: MinimalUtility.SelectablesGraphic.CrossFadeColor
+  nameWithType: SelectablesGraphic.CrossFadeColor
+- uid: MinimalUtility.SelectablesGraphic.Start
+  name: Start()
+  href: api/MinimalUtility.SelectablesGraphic.html#MinimalUtility_SelectablesGraphic_Start
+  commentId: M:MinimalUtility.SelectablesGraphic.Start
+  fullName: MinimalUtility.SelectablesGraphic.Start()
+  nameWithType: SelectablesGraphic.Start()
+- uid: MinimalUtility.SelectablesGraphic.Start*
+  name: Start
+  href: api/MinimalUtility.SelectablesGraphic.html#MinimalUtility_SelectablesGraphic_Start_
+  commentId: Overload:MinimalUtility.SelectablesGraphic.Start
+  isSpec: "True"
+  fullName: MinimalUtility.SelectablesGraphic.Start
+  nameWithType: SelectablesGraphic.Start
+- uid: MinimalUtility.SimpleGauge
+  name: SimpleGauge
+  href: api/MinimalUtility.SimpleGauge.html
+  commentId: T:MinimalUtility.SimpleGauge
+  fullName: MinimalUtility.SimpleGauge
+  nameWithType: SimpleGauge
+- uid: MinimalUtility.SimpleGauge.Graphic
+  name: Graphic
+  href: api/MinimalUtility.SimpleGauge.html#MinimalUtility_SimpleGauge_Graphic
+  commentId: P:MinimalUtility.SimpleGauge.Graphic
+  fullName: MinimalUtility.SimpleGauge.Graphic
+  nameWithType: SimpleGauge.Graphic
+- uid: MinimalUtility.SimpleGauge.Graphic*
+  name: Graphic
+  href: api/MinimalUtility.SimpleGauge.html#MinimalUtility_SimpleGauge_Graphic_
+  commentId: Overload:MinimalUtility.SimpleGauge.Graphic
+  isSpec: "True"
+  fullName: MinimalUtility.SimpleGauge.Graphic
+  nameWithType: SimpleGauge.Graphic
+- uid: MinimalUtility.SimpleGauge.OnEnable
+  name: OnEnable()
+  href: api/MinimalUtility.SimpleGauge.html#MinimalUtility_SimpleGauge_OnEnable
+  commentId: M:MinimalUtility.SimpleGauge.OnEnable
+  fullName: MinimalUtility.SimpleGauge.OnEnable()
+  nameWithType: SimpleGauge.OnEnable()
+- uid: MinimalUtility.SimpleGauge.OnEnable*
+  name: OnEnable
+  href: api/MinimalUtility.SimpleGauge.html#MinimalUtility_SimpleGauge_OnEnable_
+  commentId: Overload:MinimalUtility.SimpleGauge.OnEnable
+  isSpec: "True"
+  fullName: MinimalUtility.SimpleGauge.OnEnable
+  nameWithType: SimpleGauge.OnEnable
+- uid: MinimalUtility.SimpleGauge.Value
+  name: Value
+  href: api/MinimalUtility.SimpleGauge.html#MinimalUtility_SimpleGauge_Value
+  commentId: P:MinimalUtility.SimpleGauge.Value
+  fullName: MinimalUtility.SimpleGauge.Value
+  nameWithType: SimpleGauge.Value
+- uid: MinimalUtility.SimpleGauge.Value*
+  name: Value
+  href: api/MinimalUtility.SimpleGauge.html#MinimalUtility_SimpleGauge_Value_
+  commentId: Overload:MinimalUtility.SimpleGauge.Value
+  isSpec: "True"
+  fullName: MinimalUtility.SimpleGauge.Value
+  nameWithType: SimpleGauge.Value
 - uid: MinimalUtility.String
   name: MinimalUtility.String
   href: api/MinimalUtility.String.html
