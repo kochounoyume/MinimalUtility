@@ -21,10 +21,8 @@ jobs:
       - name: Checkout docfx-unitypackage Repository
         uses: actions/checkout@v4.1.2
         with:
-          # 使いたいactionがあるorganization/repositoryをcheckoutする対象に指定
           repository: kochounoyume/docfx-unitypackage-supported-define
-	  # 取得したアクションをこのリポジトリのどこのディレクトリに持ってくるか決める
-          path: .github/actions/other-repository
+          # path: .github/actions/other-repository
 
       - name: Build
         uses: ./.github/actions/other-repository
