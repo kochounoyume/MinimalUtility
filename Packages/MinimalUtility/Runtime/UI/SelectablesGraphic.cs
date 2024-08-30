@@ -1,10 +1,8 @@
-﻿#if ENABLE_UGUI
-
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace MinimalUtility
+namespace MinimalUtility.UI
 {
     /// <summary>
     /// <see cref="UnityEngine.UI.Selectable"/>を使用するうえで最低限の機能を持つグラフィック.
@@ -42,5 +40,3 @@ namespace MinimalUtility
         }
     }
 }
-
-#endif

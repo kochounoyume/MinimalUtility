@@ -5,7 +5,7 @@ namespace MinimalUtility.Editor
     /// <summary>
     /// <see cref="SimpleGauge"/>のカスタムエディタ.
     /// </summary>
-    [CustomEditor(typeof(SimpleGauge))]
+    [CustomEditor(typeof(UI.SimpleGauge))]
     public class SimpleGaugeEditor : UnityEditor.Editor
     {
         private SerializedProperty mode;
@@ -22,8 +22,8 @@ namespace MinimalUtility.Editor
 
         private void OnEnable()
         {
-            mode = serializedObject.FindProperty("mode");
-            value = serializedObject.FindProperty("value");
+            mode = serializedObject.FindProperty(nameof(mode));
+            value = serializedObject.FindProperty(nameof(value));
         }
     }
 }

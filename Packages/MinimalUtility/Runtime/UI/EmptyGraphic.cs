@@ -1,9 +1,7 @@
-#if ENABLE_UGUI
-
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace MinimalUtility
+namespace MinimalUtility.UI
 {
     /// <summary>
     /// 空処理のグラフィック.
@@ -33,5 +31,3 @@ namespace MinimalUtility
         }
     }
 }
-
-#endif

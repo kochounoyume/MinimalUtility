@@ -1,12 +1,10 @@
-﻿#if ENABLE_UNITYWEBREQUEST
-
-using System.Net;
+﻿using System.Net;
 using System.Net.Http;
 using System.Threading;
 using Cysharp.Threading.Tasks;
 using UnityEngine.Networking;
 
-namespace MinimalUtility.Tasks
+namespace MinimalUtility.WebRequest
 {
     /// <summary>
     /// UniTaskのサポートを活用した、<see cref="UnityWebRequest"/>を使用する<see cref="HttpMessageHandler"/>.
@@ -49,5 +47,3 @@ namespace MinimalUtility.Tasks
         }
     }
 }
-
-#endif

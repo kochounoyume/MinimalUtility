@@ -1,6 +1,6 @@
 {
-    "name": "MinimalUtility.Tasks",
-    "rootNamespace": "MinimalUtility.Tasks",
+    "name": "MinimalUtility.WebRequest",
+    "rootNamespace": "MinimalUtility.WebRequest",
     "references": [
         "GUID:eb014bd0dae606c44a234c52ffeb53e2",
         "GUID:f51ebe6a0ceec4240a699833d6309b23"
@@ -12,13 +12,19 @@
     "precompiledReferences": [],
     "autoReferenced": true,
     "defineConstraints": [
-        "ENABLE_UNITASK"
+        "ENABLE_UNITASK",
+        "ENABLE_WEBREQUEST"
     ],
     "versionDefines": [
         {
             "name": "com.cysharp.unitask",
             "expression": "",
             "define": "ENABLE_UNITASK"
+        },
+        {
+            "name": "com.unity.modules.unitywebrequest",
+            "expression": "",
+            "define": "ENABLE_WEBREQUEST"
         }
     ],
     "noEngineReferences": false

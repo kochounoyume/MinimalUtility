@@ -1,10 +1,8 @@
-﻿#if ENABLE_UGUI
-
-using System;
+﻿using System;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace MinimalUtility
+namespace MinimalUtility.UI
 {
     /// <summary>
     /// <see cref="RectMask2D"/>を継承利用したシンプルで綺麗なゲージ表示.
@@ -76,5 +74,3 @@ namespace MinimalUtility
 #endif
     }
 }
-
-#endif
