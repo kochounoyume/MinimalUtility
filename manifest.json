@@ -265,16 +265,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/MinimalUtility.Math.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MinimalUtility.Math.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/MinimalUtility.R3.ObservableExtensions.yml",
       "output": {
         ".html": {
@@ -365,6 +355,46 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/MinimalUtility.UI.EmptyGraphic.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MinimalUtility.UI.EmptyGraphic.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MinimalUtility.UI.SelectablesGraphic.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MinimalUtility.UI.SelectablesGraphic.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MinimalUtility.UI.SimpleGauge.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MinimalUtility.UI.SimpleGauge.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MinimalUtility.UI.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MinimalUtility.UI.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/MinimalUtility.VContainer.LifetimeScopeBase.yml",
       "output": {
         ".html": {
@@ -429,6 +459,26 @@
       "output": {
         ".html": {
           "relative_path": "api/MinimalUtility.ValueDisposable.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MinimalUtility.WebRequest.UnityWebRequestHttpMessageHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MinimalUtility.WebRequest.UnityWebRequestHttpMessageHandler.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MinimalUtility.WebRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MinimalUtility.WebRequest.html"
         }
       },
       "version": ""
