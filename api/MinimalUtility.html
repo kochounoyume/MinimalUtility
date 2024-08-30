@@ -39,7 +39,7 @@
 
   </head>
 
-  <body class="tex2jax_ignore" data-layout="System.Dynamic.ExpandoObject" data-yaml-mime="ManagedReference">
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
     <header class="bg-body border-bottom">
       <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
         <div class="container-xxl flex-nowrap">
@@ -63,9 +63,23 @@
     </header>
 
     <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
 
       <div class="content">
         <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
 
           <nav id="breadcrumb"></nav>
         </div>
@@ -108,14 +122,6 @@ Classes
     <dl class="jumplist">
       <dt><a class="xref" href="MinimalUtility.DisposableExtensions.html">DisposableExtensions</a></dt>
       <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a>の拡張メソッド.</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="MinimalUtility.EmptyGraphic.html">EmptyGraphic</a></dt>
-      <dd><p>空処理のグラフィック.
-<remarks>
-想定用途：マスク時のベース, 画面全体を透明なuGUIで覆いたいとき、Buttonの判定領域を透明にしたいとき
-</remarks></p>
 </dd>
     </dl>
     <dl class="jumplist">
@@ -205,19 +211,6 @@ namespace MinimalUtility.MultiLibraries
     <dl class="jumplist">
       <dt><a class="xref" href="MinimalUtility.SafeAreaAdjuster.html">SafeAreaAdjuster</a></dt>
       <dd><p>セーフエリア調整スクリプト.</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="MinimalUtility.SelectablesGraphic.html">SelectablesGraphic</a></dt>
-      <dd><p>UnityEngine.UI.Selectableを使用するうえで最低限の機能を持つグラフィック.
-<remarks>
-子オブジェクトのGraphicをキャッシュして選択時に色変化を伝播させる
-</remarks></p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="MinimalUtility.SimpleGauge.html">SimpleGauge</a></dt>
-      <dd><p>RectMask2Dを継承利用したシンプルで綺麗なゲージ表示.</p>
 </dd>
     </dl>
     <dl class="jumplist">
