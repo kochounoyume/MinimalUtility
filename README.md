@@ -20,7 +20,7 @@ Some rules have been disabled, but naming conventions and other rules basically 
 > 
 > StyleCopAnalyzers is merely a code maintenance role in this repository.
 >
-> Therefore, you do not have to follow the naming conventions and other rules of StyleCopAnalyzers when you introduce the `MnimalUtility`.
+> Therefore, you do not have to follow the naming conventions and other rules of StyleCopAnalyzers when you introduce the `MinimalUtility`.
 
 ### License
 ```
