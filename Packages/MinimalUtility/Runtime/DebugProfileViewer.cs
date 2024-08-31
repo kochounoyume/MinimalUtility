@@ -10,7 +10,7 @@ namespace MinimalUtility
     /// プロファイル情報を表示するためのクラス.
     /// </summary>
     [Unity.Profiling.IgnoredByDeepProfiler]
-    public partial class DebugProfileViewer
+    public class DebugProfileViewer
     {
         /// <summary>
         /// OnGUIイベントを取得するトリガークラス.
@@ -33,7 +33,7 @@ namespace MinimalUtility
 
         private const float IntervalSecs = 0.5f;
         private readonly FrameDataProvider frameDataProvider = new (CreateCoroutineRunner<OnGUITrigger>);
-        private readonly Lazy<WaitForSeconds> intervalWait = new (static () => new WaitForSeconds(IntervalSecs));
+        private readonly WaitForSeconds intervalWait = new (IntervalSecs);
         private readonly Lazy<OnGUITrigger> onGUITrigger;
         private readonly MemoryUnitStringConverter memoryUnitStringConverter = new ();
         // GUIStyleは生成タイミングがOnGUIの中でないとエラーになるため、Lazyで遅延生成
@@ -88,7 +88,7 @@ namespace MinimalUtility
             while (isGUIVisible && frameDataProvider.CoroutineRunner != null)
             {
                 onGUITrigger.Value.State = frameDataProvider.LatestFrameData;
-                yield return intervalWait.Value;
+                yield return intervalWait;
             }
         }
 
