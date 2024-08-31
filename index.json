@@ -52,7 +52,7 @@
   "api/MinimalUtility.DebugProfileViewer.html": {
     "href": "api/MinimalUtility.DebugProfileViewer.html",
     "title": "Class DebugProfileViewer | |",
-    "keywords": "Class DebugProfileViewer Namespace MinimalUtility プロファイル情報を表示するためのクラス. public class DebugProfileViewer Inheritance object DebugProfileViewer Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Constructors DebugProfileViewer() Initializes a new instance of the DebugProfileViewer class. public DebugProfileViewer() Properties IsGUIVisible GUI表示の可視状態. public bool IsGUIVisible { get; set; } Property Value bool Unit 表示する総メモリ使用量の単位. public FrameDataProvider.MemoryUnit Unit { get; set; } Property Value FrameDataProvider.MemoryUnit"
+    "keywords": "Class DebugProfileViewer Namespace MinimalUtility プロファイル情報を表示するためのクラス. public class DebugProfileViewer Inheritance object DebugProfileViewer Derived VContainerDebugProfileViewer Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Constructors DebugProfileViewer() Initializes a new instance of the DebugProfileViewer class. public DebugProfileViewer() Properties IsGUIVisible GUI表示の可視状態. public bool IsGUIVisible { get; set; } Property Value bool Unit 表示する総メモリ使用量の単位. public FrameDataProvider.MemoryUnit Unit { get; set; } Property Value FrameDataProvider.MemoryUnit"
   },
   "api/MinimalUtility.DisposableExtensions.html": {
     "href": "api/MinimalUtility.DisposableExtensions.html",
@@ -194,10 +194,15 @@
     "title": "Class LifetimeScopeBase | |",
     "keywords": "Class LifetimeScopeBase Namespace MinimalUtility.VContainer LifetimeScopeの共通基底クラス. public class LifetimeScopeBase : LifetimeScope Inheritance object LifetimeScopeBase Methods Configure(IContainerBuilder) protected override void Configure(IContainerBuilder builder) Parameters builder IContainerBuilder"
   },
+  "api/MinimalUtility.VContainer.VContainerDebugProfileViewer.html": {
+    "href": "api/MinimalUtility.VContainer.VContainerDebugProfileViewer.html",
+    "title": "Class VContainerDebugProfileViewer | |",
+    "keywords": "Class VContainerDebugProfileViewer Namespace MinimalUtility.VContainer MinimalUtility.VContainerのエントリーポイントを利用して、デバッグプロファイル情報を表示するクラス. public class VContainerDebugProfileViewer : DebugProfileViewer, IStartable Inheritance object DebugProfileViewer VContainerDebugProfileViewer Implements IStartable Inherited Members DebugProfileViewer.Unit DebugProfileViewer.IsGUIVisible object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Constructors VContainerDebugProfileViewer() Initializes a new instance of the VContainerDebugProfileViewer class. public VContainerDebugProfileViewer()"
+  },
   "api/MinimalUtility.VContainer.html": {
     "href": "api/MinimalUtility.VContainer.html",
     "title": "Namespace MinimalUtility.VContainer | |",
-    "keywords": "Namespace MinimalUtility.VContainer Classes LifetimeScopeBase LifetimeScopeの共通基底クラス."
+    "keywords": "Namespace MinimalUtility.VContainer Classes LifetimeScopeBase LifetimeScopeの共通基底クラス. VContainerDebugProfileViewer MinimalUtility.VContainerのエントリーポイントを利用して、デバッグプロファイル情報を表示するクラス."
   },
   "api/MinimalUtility.ValueDisposable.Disposable-1.html": {
     "href": "api/MinimalUtility.ValueDisposable.Disposable-1.html",

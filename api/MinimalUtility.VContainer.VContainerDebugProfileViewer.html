@@ -2,11 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class UniTaskInternalAccessor |  |  </title>
+      <title>Class VContainerDebugProfileViewer |  |  </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class UniTaskInternalAccessor |  |  ">
+      <meta name="title" content="Class VContainerDebugProfileViewer |  |  ">
       
-      
+      <meta name="description" content="のエントリーポイントを利用して、デバッグプロファイル情報を表示するクラス.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       <meta name="docfx:disablenewtab" content="true">
       
-      <meta name="docfx:docurl" content="https://github.com/kochounoyume/MinimalUtility/new/main/apiSpec/new?filename=Cysharp_Threading_Tasks_UniTaskInternalAccessor.md&amp;value=---%0Auid%3A%20Cysharp.Threading.Tasks.UniTaskInternalAccessor%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/kochounoyume/MinimalUtility/new/main/apiSpec/new?filename=MinimalUtility_VContainer_VContainerDebugProfileViewer.md&amp;value=---%0Auid%3A%20MinimalUtility.VContainer.VContainerDebugProfileViewer%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -84,24 +84,25 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="Cysharp.Threading.Tasks.UniTaskInternalAccessor">
+        <article data-uid="MinimalUtility.VContainer.VContainerDebugProfileViewer">
 
 
 
-  <h1 id="Cysharp_Threading_Tasks_UniTaskInternalAccessor" data-uid="Cysharp.Threading.Tasks.UniTaskInternalAccessor" class="text-break">
-Class UniTaskInternalAccessor  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/Tasks/References/UniTaskInternalAccessor.cs/#L8"><i class="bi bi-code-slash"></i></a>
+  <h1 id="MinimalUtility_VContainer_VContainerDebugProfileViewer" data-uid="MinimalUtility.VContainer.VContainerDebugProfileViewer" class="text-break">
+Class VContainerDebugProfileViewer  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/VContainer/VContainerDebugProfileViewer.cs/#L8"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="Cysharp.html">Cysharp</a>.<a class="xref" href="Cysharp.Threading.html">Threading</a>.<a class="xref" href="Cysharp.Threading.Tasks.html">Tasks</a></dd></dl>
+    <dl><dt>Namespace</dt><dd><a class="xref" href="MinimalUtility.html">MinimalUtility</a>.<a class="xref" href="MinimalUtility.VContainer.html">VContainer</a></dd></dl>
   
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p><a class="xref" href="MinimalUtility.VContainer.html">MinimalUtility.VContainer</a>のエントリーポイントを利用して、デバッグプロファイル情報を表示するクラス.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static class UniTaskInternalAccessor</code></pre>
+    <pre><code class="lang-csharp hljs">public class VContainerDebugProfileViewer : DebugProfileViewer, IStartable</code></pre>
   </div>
 
 
@@ -111,15 +112,28 @@ Class UniTaskInternalAccessor  <a class="header-action link-secondary" title="Vi
     <dt>Inheritance</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-      <div><span class="xref">UniTaskInternalAccessor</span></div>
+      <div><a class="xref" href="MinimalUtility.DebugProfileViewer.html">DebugProfileViewer</a></div>
+      <div><span class="xref">VContainerDebugProfileViewer</span></div>
     </dd>
   </dl>
 
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><span class="xref">IStartable</span></div>
+    </dd>
+  </dl>
 
 
   <dl class="typelist inheritedMembers">
     <dt>Inherited Members</dt>
     <dd>
+    <div>
+      <a class="xref" href="MinimalUtility.DebugProfileViewer.html#MinimalUtility_DebugProfileViewer_Unit">DebugProfileViewer.Unit</a>
+    </div>
+    <div>
+      <a class="xref" href="MinimalUtility.DebugProfileViewer.html#MinimalUtility_DebugProfileViewer_IsGUIVisible">DebugProfileViewer.IsGUIVisible</a>
+    </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
     </div>
@@ -148,39 +162,27 @@ Class UniTaskInternalAccessor  <a class="header-action link-secondary" title="Vi
 
 
 
-  <h2 class="section" id="methods">Methods
+  <h2 class="section" id="constructors">Constructors
 </h2>
 
 
-  <a id="Cysharp_Threading_Tasks_UniTaskInternalAccessor_GetEqualityComparer_" data-uid="Cysharp.Threading.Tasks.UniTaskInternalAccessor.GetEqualityComparer*"></a>
+  <a id="MinimalUtility_VContainer_VContainerDebugProfileViewer__ctor_" data-uid="MinimalUtility.VContainer.VContainerDebugProfileViewer.#ctor*"></a>
 
-  <h3 id="Cysharp_Threading_Tasks_UniTaskInternalAccessor_GetEqualityComparer__1" data-uid="Cysharp.Threading.Tasks.UniTaskInternalAccessor.GetEqualityComparer``1">
-  GetEqualityComparer&lt;T&gt;()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/Tasks/References/UniTaskInternalAccessor.cs/#L15"><i class="bi bi-code-slash"></i></a>
+  <h3 id="MinimalUtility_VContainer_VContainerDebugProfileViewer__ctor" data-uid="MinimalUtility.VContainer.VContainerDebugProfileViewer.#ctor">
+  VContainerDebugProfileViewer()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/VContainer/VContainerDebugProfileViewer.cs/#L13"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Get default equality comparer for T.</p>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="MinimalUtility.VContainer.VContainerDebugProfileViewer.html">VContainerDebugProfileViewer</a> class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static IEqualityComparer&lt;T&gt; GetEqualityComparer&lt;T&gt;()</code></pre>
+    <pre><code class="lang-csharp hljs">public VContainerDebugProfileViewer()</code></pre>
   </div>
 
 
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1">IEqualityComparer</a>&lt;T&gt;</dt>
-    <dd><p>Default equality comparer for T.</p>
-</dd>
-  </dl>
 
-  <h4 class="section">Type Parameters</h4>
-  <dl class="parameters">
-    <dt><code>T</code></dt>
-    <dd><p>Type of T.</p>
-</dd>
-  </dl>
 
 
 

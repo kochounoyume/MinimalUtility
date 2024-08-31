@@ -1476,6 +1476,31 @@ references:
   isSpec: "True"
   fullName: MinimalUtility.VContainer.LifetimeScopeBase.Configure
   nameWithType: LifetimeScopeBase.Configure
+- uid: MinimalUtility.VContainer.VContainerDebugProfileViewer
+  name: VContainerDebugProfileViewer
+  href: api/MinimalUtility.VContainer.VContainerDebugProfileViewer.html
+  commentId: T:MinimalUtility.VContainer.VContainerDebugProfileViewer
+  fullName: MinimalUtility.VContainer.VContainerDebugProfileViewer
+  nameWithType: VContainerDebugProfileViewer
+- uid: MinimalUtility.VContainer.VContainerDebugProfileViewer.#ctor
+  name: VContainerDebugProfileViewer()
+  href: api/MinimalUtility.VContainer.VContainerDebugProfileViewer.html#MinimalUtility_VContainer_VContainerDebugProfileViewer__ctor
+  commentId: M:MinimalUtility.VContainer.VContainerDebugProfileViewer.#ctor
+  name.vb: New()
+  fullName: MinimalUtility.VContainer.VContainerDebugProfileViewer.VContainerDebugProfileViewer()
+  fullName.vb: MinimalUtility.VContainer.VContainerDebugProfileViewer.New()
+  nameWithType: VContainerDebugProfileViewer.VContainerDebugProfileViewer()
+  nameWithType.vb: VContainerDebugProfileViewer.New()
+- uid: MinimalUtility.VContainer.VContainerDebugProfileViewer.#ctor*
+  name: VContainerDebugProfileViewer
+  href: api/MinimalUtility.VContainer.VContainerDebugProfileViewer.html#MinimalUtility_VContainer_VContainerDebugProfileViewer__ctor_
+  commentId: Overload:MinimalUtility.VContainer.VContainerDebugProfileViewer.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: MinimalUtility.VContainer.VContainerDebugProfileViewer.VContainerDebugProfileViewer
+  fullName.vb: MinimalUtility.VContainer.VContainerDebugProfileViewer.New
+  nameWithType: VContainerDebugProfileViewer.VContainerDebugProfileViewer
+  nameWithType.vb: VContainerDebugProfileViewer.New
 - uid: MinimalUtility.ValueDisposable
   name: ValueDisposable
   href: api/MinimalUtility.ValueDisposable.html
