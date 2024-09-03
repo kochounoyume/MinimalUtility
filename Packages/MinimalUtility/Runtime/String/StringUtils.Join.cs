@@ -1,65 +1,68 @@
-﻿using System;
+﻿#nullable enable
+
+using System;
 using System.Buffers;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 
-namespace MinimalUtility.String;
-
-public static partial class StringUtils
+namespace MinimalUtility.String
 {
-    [MethodImpl(MethodImplOptions.AggressiveInlining)]
-    public static string Join(string? separator, IEnumerable<string?> values) => Join(separator.AsSpan(), values);
-
-    [MethodImpl(MethodImplOptions.AggressiveInlining)]
-    public static string Join(char separator, IEnumerable<string?> values)
+    public static partial class StringUtils
     {
-        char[] separatorArray = ArrayPool<char>.Shared.Rent(1);
-        separatorArray[0] = separator;
-        string result = Join(new ReadOnlySpan<char>(separatorArray), values);
-        ArrayPool<char>.Shared.Return(separatorArray);
-        return result;
-    }
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        public static string Join(string? separator, IEnumerable<string?> values) => Join(separator.AsSpan(), values);
 
-    [MethodImpl(MethodImplOptions.AggressiveInlining)]
-    public static string Join(ReadOnlySpan<char> separator, IEnumerable<string?> values)
-    {
-        if (values == null)
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        public static string Join(char separator, IEnumerable<string?> values)
         {
-            throw new ArgumentNullException(nameof(values));
+            char[] separatorArray = ArrayPool<char>.Shared.Rent(1);
+            separatorArray[0] = separator;
+            string result = Join(new ReadOnlySpan<char>(separatorArray), values);
+            ArrayPool<char>.Shared.Return(separatorArray);
+            return result;
         }
 
-        using (IEnumerator<string?> en = values.GetEnumerator())
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        public static string Join(ReadOnlySpan<char> separator, IEnumerable<string?> values)
         {
-            if (!en.MoveNext())
+            if (values == null)
             {
-                return "";
+                throw new ArgumentNullException(nameof(values));
             }
 
-            string? firstValue = en.Current;
-
-            if (!en.MoveNext())
+            using (IEnumerator<string?> en = values.GetEnumerator())
             {
-                return firstValue ?? "";
-            }
-
-            DefaultInterpolatedStringHandler result = new ();
-
-            if (firstValue != null)
-            {
-                result.AppendLiteral(firstValue);
-            }
-
-            do
-            {
-                result.AppendFormatted(separator);
-                if (en.Current != null)
+                if (!en.MoveNext())
                 {
-                    result.AppendLiteral(en.Current);
+                    return "";
                 }
-            }
-            while (en.MoveNext());
 
-            return result.ToString();
+                string? firstValue = en.Current;
+
+                if (!en.MoveNext())
+                {
+                    return firstValue ?? "";
+                }
+
+                DefaultInterpolatedStringHandler result = new ();
+
+                if (firstValue != null)
+                {
+                    result.AppendLiteral(firstValue);
+                }
+
+                do
+                {
+                    result.AppendFormatted(separator);
+                    if (en.Current != null)
+                    {
+                        result.AppendLiteral(en.Current);
+                    }
+                }
+                while (en.MoveNext());
+
+                return result.ToString();
+            }
         }
     }
 }
