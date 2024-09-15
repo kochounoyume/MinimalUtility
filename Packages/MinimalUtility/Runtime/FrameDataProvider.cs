@@ -38,12 +38,12 @@ namespace MinimalUtility
         {
         }
 
-        private readonly Lazy<EmptyMonoBehaviour> coroutineRunner;
+        private readonly Lazy<MonoBehaviour> coroutineRunner;
 
         /// <summary>
         /// コルーチンを実行するための<see cref="MonoBehaviour"/>.
         /// </summary>
-        public EmptyMonoBehaviour CoroutineRunner => coroutineRunner.Value;
+        public MonoBehaviour CoroutineRunner => coroutineRunner.Value;
 
         private readonly FrameTiming[] frameTiming = new FrameTiming[1];
 
@@ -67,16 +67,16 @@ namespace MinimalUtility
         /// </summary>
         public FrameDataProvider()
         {
-            coroutineRunner = new Lazy<EmptyMonoBehaviour>(CreateCoroutineRunner<EmptyMonoBehaviour>());
+            coroutineRunner = new Lazy<MonoBehaviour>(CreateCoroutineRunner<MonoBehaviour>());
         }
 
         /// <summary>
         /// Initializes a new instance of the <see cref="FrameDataProvider"/> class.
         /// </summary>
         /// <param name="coroutineRunnerFactory">コルーチンを実行するための<see cref="MonoBehaviour"/>を生成する関数.</param>
-        internal FrameDataProvider(Func<EmptyMonoBehaviour> coroutineRunnerFactory)
+        internal FrameDataProvider(Func<MonoBehaviour> coroutineRunnerFactory)
         {
-            coroutineRunner = new Lazy<EmptyMonoBehaviour>(coroutineRunnerFactory);
+            coroutineRunner = new Lazy<MonoBehaviour>(coroutineRunnerFactory);
         }
 
         /// <summary>
@@ -91,10 +91,10 @@ namespace MinimalUtility
         /// <summary>
         /// コルーチンを実行するための<see cref="MonoBehaviour"/>を取得する汎用実装.
         /// </summary>
-        /// <typeparam name="T"><see cref="EmptyMonoBehaviour"/>を継承したクラス.</typeparam>
+        /// <typeparam name="T"><see cref="MonoBehaviour"/>を継承したクラス.</typeparam>
         /// <returns>コルーチンを実行するための<see cref="MonoBehaviour"/>.</returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static EmptyMonoBehaviour CreateCoroutineRunner<T>() where T : EmptyMonoBehaviour
+        public static T CreateCoroutineRunner<T>() where T : MonoBehaviour
         {
             var go = new GameObject("Debug Profiler", typeof(T));
             UnityEngine.Object.DontDestroyOnLoad(go);
