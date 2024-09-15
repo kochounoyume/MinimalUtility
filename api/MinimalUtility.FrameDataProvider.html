@@ -196,7 +196,7 @@ Class FrameDataProvider  <a class="header-action link-secondary" title="View sou
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public FrameDataProvider.EmptyMonoBehaviour CoroutineRunner { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public MonoBehaviour CoroutineRunner { get; }</code></pre>
   </div>
 
 
@@ -205,7 +205,7 @@ Class FrameDataProvider  <a class="header-action link-secondary" title="View sou
 
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="MinimalUtility.FrameDataProvider.html">FrameDataProvider</a>.<a class="xref" href="MinimalUtility.FrameDataProvider.EmptyMonoBehaviour.html">EmptyMonoBehaviour</a></dt>
+    <dt><span class="xref">MonoBehaviour</span></dt>
     <dd></dd>
   </dl>
 
@@ -264,13 +264,13 @@ Class FrameDataProvider  <a class="header-action link-secondary" title="View sou
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static FrameDataProvider.EmptyMonoBehaviour CreateCoroutineRunner&lt;T&gt;() where T : FrameDataProvider.EmptyMonoBehaviour</code></pre>
+    <pre><code class="lang-csharp hljs">public static T CreateCoroutineRunner&lt;T&gt;() where T : MonoBehaviour</code></pre>
   </div>
 
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="MinimalUtility.FrameDataProvider.html">FrameDataProvider</a>.<a class="xref" href="MinimalUtility.FrameDataProvider.EmptyMonoBehaviour.html">EmptyMonoBehaviour</a></dt>
+    <dt><span class="xref">T</span></dt>
     <dd><p>コルーチンを実行するためのMonoBehaviour.</p>
 </dd>
   </dl>
@@ -278,7 +278,7 @@ Class FrameDataProvider  <a class="header-action link-secondary" title="View sou
   <h4 class="section">Type Parameters</h4>
   <dl class="parameters">
     <dt><code>T</code></dt>
-    <dd><p><a class="xref" href="MinimalUtility.FrameDataProvider.EmptyMonoBehaviour.html">FrameDataProvider.EmptyMonoBehaviour</a>を継承したクラス.</p>
+    <dd><p>MonoBehaviourを継承したクラス.</p>
 </dd>
   </dl>
 
