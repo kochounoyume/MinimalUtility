@@ -262,7 +262,7 @@ public sealed class ButtonAttribute : Attribute</code></pre>
 
   <h3 id="MinimalUtility_ButtonAttribute__ctor_System_Object___" data-uid="MinimalUtility.ButtonAttribute.#ctor(System.Object[])">
   ButtonAttribute(params object[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/ButtonAttribute.cs/#L35"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/ButtonAttribute.cs/#L38"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="MinimalUtility.ButtonAttribute.html">ButtonAttribute</a> class.</p>
@@ -295,7 +295,7 @@ public sealed class ButtonAttribute : Attribute</code></pre>
 
   <h3 id="MinimalUtility_ButtonAttribute__ctor_System_String_System_Object___" data-uid="MinimalUtility.ButtonAttribute.#ctor(System.String,System.Object[])">
   ButtonAttribute(string, params object[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/ButtonAttribute.cs/#L25"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/ButtonAttribute.cs/#L28"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="MinimalUtility.ButtonAttribute.html">ButtonAttribute</a> class.</p>
@@ -327,15 +327,14 @@ public sealed class ButtonAttribute : Attribute</code></pre>
 
 
 
-  <h2 class="section" id="properties">Properties
+  <h2 class="section" id="fields">Fields
 </h2>
 
 
-  <a id="MinimalUtility_ButtonAttribute_ButtonName_" data-uid="MinimalUtility.ButtonAttribute.ButtonName*"></a>
 
   <h3 id="MinimalUtility_ButtonAttribute_ButtonName" data-uid="MinimalUtility.ButtonAttribute.ButtonName">
   ButtonName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/ButtonAttribute.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/ButtonAttribute.cs/#L21"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>ボタンの名前.</p>
@@ -343,14 +342,13 @@ public sealed class ButtonAttribute : Attribute</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string ButtonName { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public readonly string ButtonName</code></pre>
   </div>
 
 
 
 
-
-  <h4 class="section">Property Value</h4>
+  <h4 class="section">Field Value</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd></dd>
@@ -363,11 +361,11 @@ public sealed class ButtonAttribute : Attribute</code></pre>
 
 
 
-  <a id="MinimalUtility_ButtonAttribute_Parameters_" data-uid="MinimalUtility.ButtonAttribute.Parameters*"></a>
+
 
   <h3 id="MinimalUtility_ButtonAttribute_Parameters" data-uid="MinimalUtility.ButtonAttribute.Parameters">
   Parameters
-  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/ButtonAttribute.cs/#L58"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/ButtonAttribute.cs/#L16"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>引数.</p>
@@ -375,18 +373,18 @@ public sealed class ButtonAttribute : Attribute</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ref readonly object[] Parameters { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public readonly object[] Parameters</code></pre>
   </div>
 
 
 
 
-
-  <h4 class="section">Property Value</h4>
+  <h4 class="section">Field Value</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
     <dd></dd>
   </dl>
+
 
 
 
