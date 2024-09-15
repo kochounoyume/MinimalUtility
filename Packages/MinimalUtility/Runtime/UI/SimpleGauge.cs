@@ -73,4 +73,19 @@ namespace MinimalUtility.UI
         }
 #endif
     }
+
+#if UNITY_EDITOR
+    [UnityEditor.CustomEditor(typeof(SimpleGauge))]
+    public class SimpleGaugeEditor : UnityEditor.Editor
+    {
+        /// <inheritdoc/>
+        public override UnityEngine.UIElements.VisualElement CreateInspectorGUI()
+        {
+            UnityEngine.UIElements.VisualElement root = new ();
+            root.Add(new UnityEditor.UIElements.PropertyField(serializedObject.FindProperty("mode")));
+            root.Add(new UnityEditor.UIElements.PropertyField(serializedObject.FindProperty("value")));
+            return root;
+        }
+    }
+#endif
 }
