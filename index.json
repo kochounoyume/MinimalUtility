@@ -69,16 +69,6 @@
     "title": "Class DefaultInspector | |",
     "keywords": "Class DefaultInspector Namespace MinimalUtility.Editor デフォルトのインスペクタービュー. public class DefaultInspector : Editor Inheritance object DefaultInspector Methods CreateInspectorGUI() public override VisualElement CreateInspectorGUI() Returns VisualElement"
   },
-  "api/MinimalUtility.Editor.MinimalEditorUtility.html": {
-    "href": "api/MinimalUtility.Editor.MinimalEditorUtility.html",
-    "title": "Class MinimalEditorUtility | |",
-    "keywords": "Class MinimalEditorUtility Namespace MinimalUtility.Editor エディタ拡張のユーティリティクラス. public static class MinimalEditorUtility Inheritance object MinimalEditorUtility Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Methods TrTextContent(string, string, Texture) Unity組み込みリソースからGUIContentを取得するか、GUI要素のGUIContentを作成する. public static GUIContent TrTextContent(string text, string tooltip = null, Texture icon = null) Parameters text string GUIContentのテキスト. tooltip string カーソルを合わせたときに表示されるツールチップ. icon Texture GUIContentのアイコン. Returns GUIContent GUIContent."
-  },
-  "api/MinimalUtility.Editor.SimpleGaugeEditor.html": {
-    "href": "api/MinimalUtility.Editor.SimpleGaugeEditor.html",
-    "title": "Class SimpleGaugeEditor | |",
-    "keywords": "Class SimpleGaugeEditor Namespace MinimalUtility.Editor SimpleGaugeのカスタムエディタ. public class SimpleGaugeEditor : Editor Inheritance object SimpleGaugeEditor Methods CreateInspectorGUI() public override VisualElement CreateInspectorGUI() Returns VisualElement"
-  },
   "api/MinimalUtility.Editor.TransformInspector.html": {
     "href": "api/MinimalUtility.Editor.TransformInspector.html",
     "title": "Class TransformInspector | |",
@@ -92,7 +82,7 @@
   "api/MinimalUtility.Editor.html": {
     "href": "api/MinimalUtility.Editor.html",
     "title": "Namespace MinimalUtility.Editor | |",
-    "keywords": "Namespace MinimalUtility.Editor Classes AnimatorInspector Animator.keepAnimatorStateOnDisableやAnimator.writeDefaultValuesOnDisableも編集できる Animatorカスタムエディタ. DefaultInspector デフォルトのインスペクタービュー. MinimalEditorUtility エディタ拡張のユーティリティクラス. SimpleGaugeEditor SimpleGaugeのカスタムエディタ. TransformInspector ワールドの座標・回転・大きさも表示するTransformカスタムエディタ. UnityComponentInspector<T> 既存のUnityコンポーネントのカスタムエディタを作成するための基底クラスです."
+    "keywords": "Namespace MinimalUtility.Editor Classes AnimatorInspector Animator.keepAnimatorStateOnDisableやAnimator.writeDefaultValuesOnDisableも編集できる Animatorカスタムエディタ. DefaultInspector デフォルトのインスペクタービュー. TransformInspector ワールドの座標・回転・大きさも表示するTransformカスタムエディタ. UnityComponentInspector<T> 既存のUnityコンポーネントのカスタムエディタを作成するための基底クラスです."
   },
   "api/MinimalUtility.EqualityComparer.html": {
     "href": "api/MinimalUtility.EqualityComparer.html",

@@ -565,47 +565,6 @@ references:
   isSpec: "True"
   fullName: MinimalUtility.Editor.DefaultInspector.CreateInspectorGUI
   nameWithType: DefaultInspector.CreateInspectorGUI
-- uid: MinimalUtility.Editor.MinimalEditorUtility
-  name: MinimalEditorUtility
-  href: api/MinimalUtility.Editor.MinimalEditorUtility.html
-  commentId: T:MinimalUtility.Editor.MinimalEditorUtility
-  fullName: MinimalUtility.Editor.MinimalEditorUtility
-  nameWithType: MinimalEditorUtility
-- uid: MinimalUtility.Editor.MinimalEditorUtility.TrTextContent(System.String,System.String,Texture)
-  name: TrTextContent(string, string, Texture)
-  href: api/MinimalUtility.Editor.MinimalEditorUtility.html#MinimalUtility_Editor_MinimalEditorUtility_TrTextContent_System_String_System_String_Texture_
-  commentId: M:MinimalUtility.Editor.MinimalEditorUtility.TrTextContent(System.String,System.String,Texture)
-  name.vb: TrTextContent(String, String, Texture)
-  fullName: MinimalUtility.Editor.MinimalEditorUtility.TrTextContent(string, string, Texture)
-  fullName.vb: MinimalUtility.Editor.MinimalEditorUtility.TrTextContent(String, String, Texture)
-  nameWithType: MinimalEditorUtility.TrTextContent(string, string, Texture)
-  nameWithType.vb: MinimalEditorUtility.TrTextContent(String, String, Texture)
-- uid: MinimalUtility.Editor.MinimalEditorUtility.TrTextContent*
-  name: TrTextContent
-  href: api/MinimalUtility.Editor.MinimalEditorUtility.html#MinimalUtility_Editor_MinimalEditorUtility_TrTextContent_
-  commentId: Overload:MinimalUtility.Editor.MinimalEditorUtility.TrTextContent
-  isSpec: "True"
-  fullName: MinimalUtility.Editor.MinimalEditorUtility.TrTextContent
-  nameWithType: MinimalEditorUtility.TrTextContent
-- uid: MinimalUtility.Editor.SimpleGaugeEditor
-  name: SimpleGaugeEditor
-  href: api/MinimalUtility.Editor.SimpleGaugeEditor.html
-  commentId: T:MinimalUtility.Editor.SimpleGaugeEditor
-  fullName: MinimalUtility.Editor.SimpleGaugeEditor
-  nameWithType: SimpleGaugeEditor
-- uid: MinimalUtility.Editor.SimpleGaugeEditor.CreateInspectorGUI
-  name: CreateInspectorGUI()
-  href: api/MinimalUtility.Editor.SimpleGaugeEditor.html#MinimalUtility_Editor_SimpleGaugeEditor_CreateInspectorGUI
-  commentId: M:MinimalUtility.Editor.SimpleGaugeEditor.CreateInspectorGUI
-  fullName: MinimalUtility.Editor.SimpleGaugeEditor.CreateInspectorGUI()
-  nameWithType: SimpleGaugeEditor.CreateInspectorGUI()
-- uid: MinimalUtility.Editor.SimpleGaugeEditor.CreateInspectorGUI*
-  name: CreateInspectorGUI
-  href: api/MinimalUtility.Editor.SimpleGaugeEditor.html#MinimalUtility_Editor_SimpleGaugeEditor_CreateInspectorGUI_
-  commentId: Overload:MinimalUtility.Editor.SimpleGaugeEditor.CreateInspectorGUI
-  isSpec: "True"
-  fullName: MinimalUtility.Editor.SimpleGaugeEditor.CreateInspectorGUI
-  nameWithType: SimpleGaugeEditor.CreateInspectorGUI
 - uid: MinimalUtility.Editor.TransformInspector
   name: TransformInspector
   href: api/MinimalUtility.Editor.TransformInspector.html
