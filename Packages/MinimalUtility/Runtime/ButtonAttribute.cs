@@ -13,9 +13,12 @@ namespace MinimalUtility
         /// <summary>
         /// 引数.
         /// </summary>
-        private readonly object[] parameters;
+        public readonly object[] Parameters;
 
-        private string buttonName = "";
+        /// <summary>
+        /// ボタンの名前.
+        /// </summary>
+        public readonly string ButtonName;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="ButtonAttribute"/> class.
@@ -24,8 +27,8 @@ namespace MinimalUtility
         /// <param name="parameters">引数.</param>
         public ButtonAttribute(string buttonName, params object[] parameters)
         {
-            this.buttonName = buttonName;
-            this.parameters = parameters;
+            ButtonName = buttonName;
+            Parameters = parameters;
         }
 
         /// <summary>
@@ -34,27 +37,7 @@ namespace MinimalUtility
         /// <param name="parameters">引数.</param>
         public ButtonAttribute(params object[] parameters)
         {
-            this.parameters = parameters;
+            parameters = parameters;
         }
-
-        /// <summary>
-        /// ボタンの名前.
-        /// </summary>
-        public string ButtonName
-        {
-            get => buttonName;
-            set
-            {
-                if (string.IsNullOrEmpty(buttonName))
-                {
-                    buttonName = value;
-                }
-            }
-        }
-
-        /// <summary>
-        /// 引数.
-        /// </summary>
-        public ref readonly object[] Parameters => ref parameters;
     }
 }

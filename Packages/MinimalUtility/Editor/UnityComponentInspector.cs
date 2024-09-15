@@ -1,4 +1,5 @@
 ﻿using UnityEditor;
+using UnityEngine.UIElements;
 
 namespace MinimalUtility.Editor
 {
@@ -8,39 +9,19 @@ namespace MinimalUtility.Editor
     /// <typeparam name="T">カスタムエディタを作成するコンポーネントの型.</typeparam>
     public abstract class UnityComponentInspector<T> : UnityEditor.Editor where T : UnityEngine.Component
     {
-        private UnityEditor.Editor editor;
-        private new T target;
-
-        /// <summary>
-        /// 対象となるコンポーネントのインスタンス.
-        /// </summary>
-        protected T Target => target == null ? target = base.target as T : target;
-
         /// <summary>
         /// 対象となるコンポーネントのインスペクター拡張既存クラスの名前.
         /// </summary>
         protected abstract string InspectorTypeName { get; }
 
         /// <inheritdoc/>
-        public override void OnInspectorGUI()
+        public override VisualElement CreateInspectorGUI()
         {
-            editor.OnInspectorGUI();
-        }
-
-        /// <summary>
-        /// ロードされたときに呼び出される.
-        /// </summary>
-        protected virtual void OnEnable()
-        {
-            editor = CreateEditor(Target, typeof(EditorApplication).Assembly.GetType(InspectorTypeName));
-        }
-
-        /// <summary>
-        /// オブジェクトがスコープ外になったときに呼び出される.
-        /// </summary>
-        protected virtual void OnDisable()
-        {
-            DestroyImmediate(editor);
+            VisualElement root = new ();
+            System.Type customEditorType = typeof(EditorApplication).Assembly.GetType(InspectorTypeName);
+            var editor = CreateEditor(target, customEditorType);
+            root.Add(new IMGUIContainer(() => CreateEditor(target, customEditorType).OnInspectorGUI()));
+            return root;
         }
     }
 }
