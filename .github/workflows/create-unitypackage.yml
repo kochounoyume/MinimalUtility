@@ -23,6 +23,6 @@ jobs:
         include-files: metaList
     - uses: actions/upload-artifact@master
       with:
-        path: a
-        name: package
+        path: a/MinimalUtility.unitypackage
+        name: MinimalUtility
         retention-days: 2
