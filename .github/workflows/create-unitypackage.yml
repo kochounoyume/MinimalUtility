@@ -19,9 +19,10 @@ jobs:
 
     - uses: pCYSl5EDgo/create-unitypackage@master
       with:
-        package-path: "a/output.unitypackage"
+        package-path: "a/MinimalUtility.unitypackage"
         include-files: metaList
     - uses: actions/upload-artifact@master
       with:
         path: a
         name: package
+        retention-days: 2
