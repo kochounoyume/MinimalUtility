@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Diagnostics;
+using System.Runtime.CompilerServices;
 
 namespace MinimalUtility
 {
@@ -23,21 +24,12 @@ namespace MinimalUtility
         /// <summary>
         /// Initializes a new instance of the <see cref="ButtonAttribute"/> class.
         /// </summary>
-        /// <param name="buttonName">ボタンの名前.</param>
+        /// <param name="buttonName">ボタンの名前.デフォルト値は対象メソッド名.</param>
         /// <param name="parameters">引数.</param>
-        public ButtonAttribute(string buttonName, params object[] parameters)
+        public ButtonAttribute([CallerMemberName] string buttonName = "", params object[] parameters)
         {
             ButtonName = buttonName;
             Parameters = parameters;
-        }
-
-        /// <summary>
-        /// Initializes a new instance of the <see cref="ButtonAttribute"/> class.
-        /// </summary>
-        /// <param name="parameters">引数.</param>
-        public ButtonAttribute(params object[] parameters)
-        {
-            parameters = parameters;
         }
     }
 }

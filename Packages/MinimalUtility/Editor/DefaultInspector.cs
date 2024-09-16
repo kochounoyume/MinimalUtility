@@ -27,7 +27,7 @@ namespace MinimalUtility.Editor
                     if (attr == null) continue;
                     root.Add(new Button(() => methodInfo.Invoke(target, attr.Parameters))
                     {
-                        text = attr.ButtonName ?? methodInfo.Name
+                        text = attr.ButtonName
                     });
                 }
             }
