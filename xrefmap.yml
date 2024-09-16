@@ -131,15 +131,6 @@ references:
   commentId: T:MinimalUtility.ButtonAttribute
   fullName: MinimalUtility.ButtonAttribute
   nameWithType: ButtonAttribute
-- uid: MinimalUtility.ButtonAttribute.#ctor(System.Object[])
-  name: ButtonAttribute(params object[])
-  href: api/MinimalUtility.ButtonAttribute.html#MinimalUtility_ButtonAttribute__ctor_System_Object___
-  commentId: M:MinimalUtility.ButtonAttribute.#ctor(System.Object[])
-  name.vb: New(ParamArray Object())
-  fullName: MinimalUtility.ButtonAttribute.ButtonAttribute(params object[])
-  fullName.vb: MinimalUtility.ButtonAttribute.New(ParamArray Object())
-  nameWithType: ButtonAttribute.ButtonAttribute(params object[])
-  nameWithType.vb: ButtonAttribute.New(ParamArray Object())
 - uid: MinimalUtility.ButtonAttribute.#ctor(System.String,System.Object[])
   name: ButtonAttribute(string, params object[])
   href: api/MinimalUtility.ButtonAttribute.html#MinimalUtility_ButtonAttribute__ctor_System_String_System_Object___
