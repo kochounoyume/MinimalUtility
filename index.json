@@ -179,6 +179,21 @@
     "title": "Namespace MinimalUtility.UGUI | |",
     "keywords": "Namespace MinimalUtility.UGUI Classes EmptyGraphic 空処理のグラフィック. 想定用途：マスク時のベース, 画面全体を透明なuGUIで覆いたいとき、Buttonの判定領域を透明にしたいとき SelectablesGraphic UnityEngine.UI.Selectableを使用するうえで最低限の機能を持つグラフィック. 子オブジェクトのGraphicをキャッシュして選択時に色変化を伝播させる SimpleGauge RectMask2Dを継承利用したシンプルで綺麗なゲージ表示."
   },
+  "api/MinimalUtility.UIToolkit.SafeAreaElement.SafeAreaFactory.html": {
+    "href": "api/MinimalUtility.UIToolkit.SafeAreaElement.SafeAreaFactory.html",
+    "title": "Class SafeAreaElement.SafeAreaFactory | |",
+    "keywords": "Class SafeAreaElement.SafeAreaFactory Namespace MinimalUtility.UIToolkit UIBuilderのLibraryに登録するためのUXML要素のファクトリクラス. public class SafeAreaElement.SafeAreaFactory : UxmlFactory<SafeAreaElement, UxmlTraits> Inheritance object SafeAreaElement.SafeAreaFactory"
+  },
+  "api/MinimalUtility.UIToolkit.SafeAreaElement.html": {
+    "href": "api/MinimalUtility.UIToolkit.SafeAreaElement.html",
+    "title": "Class SafeAreaElement | |",
+    "keywords": "Class SafeAreaElement Namespace MinimalUtility.UIToolkit セーフエリアを考慮したVisualElement. public class SafeAreaElement : VisualElement Inheritance object SafeAreaElement Constructors SafeAreaElement() Initializes a new instance of the SafeAreaElement class. public SafeAreaElement()"
+  },
+  "api/MinimalUtility.UIToolkit.html": {
+    "href": "api/MinimalUtility.UIToolkit.html",
+    "title": "Namespace MinimalUtility.UIToolkit | |",
+    "keywords": "Namespace MinimalUtility.UIToolkit Classes SafeAreaElement セーフエリアを考慮したVisualElement. SafeAreaElement.SafeAreaFactory UIBuilderのLibraryに登録するためのUXML要素のファクトリクラス."
+  },
   "api/MinimalUtility.VContainer.LifetimeScopeBase.html": {
     "href": "api/MinimalUtility.VContainer.LifetimeScopeBase.html",
     "title": "Class LifetimeScopeBase | |",

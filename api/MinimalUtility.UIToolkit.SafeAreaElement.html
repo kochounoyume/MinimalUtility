@@ -2,11 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class SelectablesGraphic |  |  </title>
+      <title>Class SafeAreaElement |  |  </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class SelectablesGraphic |  |  ">
+      <meta name="title" content="Class SafeAreaElement |  |  ">
       
-      <meta name="description" content="UnityEngine.UI.Selectableを使用するうえで最低限の機能を持つグラフィック.  子オブジェクトのGraphicをキャッシュして選択時に色変化を伝播させる">
+      <meta name="description" content="セーフエリアを考慮したVisualElement.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       <meta name="docfx:disablenewtab" content="true">
       
-      <meta name="docfx:docurl" content="https://github.com/kochounoyume/MinimalUtility/new/main/apiSpec/new?filename=MinimalUtility_UGUI_SelectablesGraphic.md&amp;value=---%0Auid%3A%20MinimalUtility.UGUI.SelectablesGraphic%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/kochounoyume/MinimalUtility/new/main/apiSpec/new?filename=MinimalUtility_UIToolkit_SafeAreaElement.md&amp;value=---%0Auid%3A%20MinimalUtility.UIToolkit.SafeAreaElement%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -84,28 +84,25 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="MinimalUtility.UGUI.SelectablesGraphic">
+        <article data-uid="MinimalUtility.UIToolkit.SafeAreaElement">
 
 
 
-  <h1 id="MinimalUtility_UGUI_SelectablesGraphic" data-uid="MinimalUtility.UGUI.SelectablesGraphic" class="text-break">
-Class SelectablesGraphic  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/UGUI/SelectablesGraphic.cs/#L13"><i class="bi bi-code-slash"></i></a>
+  <h1 id="MinimalUtility_UIToolkit_SafeAreaElement" data-uid="MinimalUtility.UIToolkit.SafeAreaElement" class="text-break">
+Class SafeAreaElement  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/UIToolkit/SafeAreaElement.cs/#L14"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="MinimalUtility.html">MinimalUtility</a>.<a class="xref" href="MinimalUtility.UGUI.html">UGUI</a></dd></dl>
+    <dl><dt>Namespace</dt><dd><a class="xref" href="MinimalUtility.html">MinimalUtility</a>.<a class="xref" href="MinimalUtility.UIToolkit.html">UIToolkit</a></dd></dl>
   
   </div>
 
-  <div class="markdown summary"><p>UnityEngine.UI.Selectableを使用するうえで最低限の機能を持つグラフィック.
-<remarks>
-子オブジェクトのGraphicをキャッシュして選択時に色変化を伝播させる
-</remarks></p>
+  <div class="markdown summary"><p>セーフエリアを考慮したVisualElement.</p>
 </div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public sealed class SelectablesGraphic : EmptyGraphic</code></pre>
+    <pre><code class="lang-csharp hljs">public class SafeAreaElement : VisualElement</code></pre>
   </div>
 
 
@@ -115,82 +112,35 @@ Class SelectablesGraphic  <a class="header-action link-secondary" title="View so
     <dt>Inheritance</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-      <div><a class="xref" href="MinimalUtility.UGUI.EmptyGraphic.html">EmptyGraphic</a></div>
-      <div><span class="xref">SelectablesGraphic</span></div>
+      <div><span class="xref">SafeAreaElement</span></div>
     </dd>
   </dl>
 
 
 
-  <dl class="typelist inheritedMembers">
-    <dt>Inherited Members</dt>
-    <dd>
-    <div>
-      <a class="xref" href="MinimalUtility.UGUI.EmptyGraphic.html#MinimalUtility_UGUI_EmptyGraphic_SetMaterialDirty">EmptyGraphic.SetMaterialDirty()</a>
-    </div>
-    <div>
-      <a class="xref" href="MinimalUtility.UGUI.EmptyGraphic.html#MinimalUtility_UGUI_EmptyGraphic_SetVerticesDirty">EmptyGraphic.SetVerticesDirty()</a>
-    </div>
-  </dd></dl>
 
 
 
 
 
 
-  <h2 class="section" id="methods">Methods
+  <h2 class="section" id="constructors">Constructors
 </h2>
 
 
-  <a id="MinimalUtility_UGUI_SelectablesGraphic_CrossFadeColor_" data-uid="MinimalUtility.UGUI.SelectablesGraphic.CrossFadeColor*"></a>
+  <a id="MinimalUtility_UIToolkit_SafeAreaElement__ctor_" data-uid="MinimalUtility.UIToolkit.SafeAreaElement.#ctor*"></a>
 
-  <h3 id="MinimalUtility_UGUI_SelectablesGraphic_CrossFadeColor_Color_System_Single_System_Boolean_System_Boolean_" data-uid="MinimalUtility.UGUI.SelectablesGraphic.CrossFadeColor(Color,System.Single,System.Boolean,System.Boolean)">
-  CrossFadeColor(Color, float, bool, bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/UGUI/SelectablesGraphic.cs/#L23"><i class="bi bi-code-slash"></i></a>
+  <h3 id="MinimalUtility_UIToolkit_SafeAreaElement__ctor" data-uid="MinimalUtility.UIToolkit.SafeAreaElement.#ctor">
+  SafeAreaElement()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/UIToolkit/SafeAreaElement.cs/#L26"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="MinimalUtility.UIToolkit.SafeAreaElement.html">SafeAreaElement</a> class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override void CrossFadeColor(Color targetColor, float duration, bool ignoreTimeScale, bool useAlpha)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>targetColor</code> <span class="xref">Color</span></dt>
-    <dd></dd>
-    <dt><code>duration</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
-    <dd></dd>
-    <dt><code>ignoreTimeScale</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
-    <dt><code>useAlpha</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-
-  <a id="MinimalUtility_UGUI_SelectablesGraphic_Start_" data-uid="MinimalUtility.UGUI.SelectablesGraphic.Start*"></a>
-
-  <h3 id="MinimalUtility_UGUI_SelectablesGraphic_Start" data-uid="MinimalUtility.UGUI.SelectablesGraphic.Start">
-  Start()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/UGUI/SelectablesGraphic.cs/#L32"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected override void Start()</code></pre>
+    <pre><code class="lang-csharp hljs">public SafeAreaElement()</code></pre>
   </div>
 
 

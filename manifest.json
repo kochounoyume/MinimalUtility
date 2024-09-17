@@ -375,6 +375,36 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/MinimalUtility.UIToolkit.SafeAreaElement.SafeAreaFactory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MinimalUtility.UIToolkit.SafeAreaElement.SafeAreaFactory.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MinimalUtility.UIToolkit.SafeAreaElement.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MinimalUtility.UIToolkit.SafeAreaElement.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MinimalUtility.UIToolkit.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MinimalUtility.UIToolkit.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/MinimalUtility.VContainer.LifetimeScopeBase.yml",
       "output": {
         ".html": {

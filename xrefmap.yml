@@ -1323,6 +1323,43 @@ references:
   isSpec: "True"
   fullName: MinimalUtility.UGUI.SimpleGauge.Value
   nameWithType: SimpleGauge.Value
+- uid: MinimalUtility.UIToolkit
+  name: MinimalUtility.UIToolkit
+  href: api/MinimalUtility.UIToolkit.html
+  commentId: N:MinimalUtility.UIToolkit
+  fullName: MinimalUtility.UIToolkit
+  nameWithType: MinimalUtility.UIToolkit
+- uid: MinimalUtility.UIToolkit.SafeAreaElement
+  name: SafeAreaElement
+  href: api/MinimalUtility.UIToolkit.SafeAreaElement.html
+  commentId: T:MinimalUtility.UIToolkit.SafeAreaElement
+  fullName: MinimalUtility.UIToolkit.SafeAreaElement
+  nameWithType: SafeAreaElement
+- uid: MinimalUtility.UIToolkit.SafeAreaElement.#ctor
+  name: SafeAreaElement()
+  href: api/MinimalUtility.UIToolkit.SafeAreaElement.html#MinimalUtility_UIToolkit_SafeAreaElement__ctor
+  commentId: M:MinimalUtility.UIToolkit.SafeAreaElement.#ctor
+  name.vb: New()
+  fullName: MinimalUtility.UIToolkit.SafeAreaElement.SafeAreaElement()
+  fullName.vb: MinimalUtility.UIToolkit.SafeAreaElement.New()
+  nameWithType: SafeAreaElement.SafeAreaElement()
+  nameWithType.vb: SafeAreaElement.New()
+- uid: MinimalUtility.UIToolkit.SafeAreaElement.#ctor*
+  name: SafeAreaElement
+  href: api/MinimalUtility.UIToolkit.SafeAreaElement.html#MinimalUtility_UIToolkit_SafeAreaElement__ctor_
+  commentId: Overload:MinimalUtility.UIToolkit.SafeAreaElement.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: MinimalUtility.UIToolkit.SafeAreaElement.SafeAreaElement
+  fullName.vb: MinimalUtility.UIToolkit.SafeAreaElement.New
+  nameWithType: SafeAreaElement.SafeAreaElement
+  nameWithType.vb: SafeAreaElement.New
+- uid: MinimalUtility.UIToolkit.SafeAreaElement.SafeAreaFactory
+  name: SafeAreaElement.SafeAreaFactory
+  href: api/MinimalUtility.UIToolkit.SafeAreaElement.SafeAreaFactory.html
+  commentId: T:MinimalUtility.UIToolkit.SafeAreaElement.SafeAreaFactory
+  fullName: MinimalUtility.UIToolkit.SafeAreaElement.SafeAreaFactory
+  nameWithType: SafeAreaElement.SafeAreaFactory
 - uid: MinimalUtility.VContainer
   name: MinimalUtility.VContainer
   href: api/MinimalUtility.VContainer.html

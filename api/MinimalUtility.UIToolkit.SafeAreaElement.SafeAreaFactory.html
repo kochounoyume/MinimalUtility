@@ -2,11 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class SimpleGauge |  |  </title>
+      <title>Class SafeAreaElement.SafeAreaFactory |  |  </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class SimpleGauge |  |  ">
+      <meta name="title" content="Class SafeAreaElement.SafeAreaFactory |  |  ">
       
-      <meta name="description" content="RectMask2Dを継承利用したシンプルで綺麗なゲージ表示.">
+      <meta name="description" content="UIBuilderのLibraryに登録するためのUXML要素のファクトリクラス.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       <meta name="docfx:disablenewtab" content="true">
       
-      <meta name="docfx:docurl" content="https://github.com/kochounoyume/MinimalUtility/new/main/apiSpec/new?filename=MinimalUtility_UGUI_SimpleGauge.md&amp;value=---%0Auid%3A%20MinimalUtility.UGUI.SimpleGauge%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/kochounoyume/MinimalUtility/new/main/apiSpec/new?filename=MinimalUtility_UIToolkit_SafeAreaElement_SafeAreaFactory.md&amp;value=---%0Auid%3A%20MinimalUtility.UIToolkit.SafeAreaElement.SafeAreaFactory%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -84,25 +84,25 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="MinimalUtility.UGUI.SimpleGauge">
+        <article data-uid="MinimalUtility.UIToolkit.SafeAreaElement.SafeAreaFactory">
 
 
 
-  <h1 id="MinimalUtility_UGUI_SimpleGauge" data-uid="MinimalUtility.UGUI.SimpleGauge" class="text-break">
-Class SimpleGauge  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/UGUI/SimpleGauge.cs/#L10"><i class="bi bi-code-slash"></i></a>
+  <h1 id="MinimalUtility_UIToolkit_SafeAreaElement_SafeAreaFactory" data-uid="MinimalUtility.UIToolkit.SafeAreaElement.SafeAreaFactory" class="text-break">
+Class SafeAreaElement.SafeAreaFactory  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/UIToolkit/SafeAreaElement.cs/#L19"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="MinimalUtility.html">MinimalUtility</a>.<a class="xref" href="MinimalUtility.UGUI.html">UGUI</a></dd></dl>
+    <dl><dt>Namespace</dt><dd><a class="xref" href="MinimalUtility.html">MinimalUtility</a>.<a class="xref" href="MinimalUtility.UIToolkit.html">UIToolkit</a></dd></dl>
   
   </div>
 
-  <div class="markdown summary"><p>RectMask2Dを継承利用したシンプルで綺麗なゲージ表示.</p>
+  <div class="markdown summary"><p>UIBuilderのLibraryに登録するためのUXML要素のファクトリクラス.</p>
 </div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class SimpleGauge : RectMask2D</code></pre>
+    <pre><code class="lang-csharp hljs">public class SafeAreaElement.SafeAreaFactory : UxmlFactory&lt;SafeAreaElement, UxmlTraits&gt;</code></pre>
   </div>
 
 
@@ -112,107 +112,9 @@ Class SimpleGauge  <a class="header-action link-secondary" title="View source" h
     <dt>Inheritance</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-      <div><span class="xref">SimpleGauge</span></div>
+      <div><span class="xref">SafeAreaElement.SafeAreaFactory</span></div>
     </dd>
   </dl>
-
-
-
-
-
-
-
-
-
-  <h2 class="section" id="properties">Properties
-</h2>
-
-
-  <a id="MinimalUtility_UGUI_SimpleGauge_Graphic_" data-uid="MinimalUtility.UGUI.SimpleGauge.Graphic*"></a>
-
-  <h3 id="MinimalUtility_UGUI_SimpleGauge_Graphic" data-uid="MinimalUtility.UGUI.SimpleGauge.Graphic">
-  Graphic
-  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/UGUI/SimpleGauge.cs/#L58"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>ゲージの表示に使用するMaskableGraphic.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public MaskableGraphic Graphic { get; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><span class="xref">MaskableGraphic</span></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <a id="MinimalUtility_UGUI_SimpleGauge_Value_" data-uid="MinimalUtility.UGUI.SimpleGauge.Value*"></a>
-
-  <h3 id="MinimalUtility_UGUI_SimpleGauge_Value" data-uid="MinimalUtility.UGUI.SimpleGauge.Value">
-  Value
-  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/UGUI/SimpleGauge.cs/#L25"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>ゲージの値(0.0 ～ 1.0).</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public float Value { get; set; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <h2 class="section" id="methods">Methods
-</h2>
-
-
-  <a id="MinimalUtility_UGUI_SimpleGauge_OnEnable_" data-uid="MinimalUtility.UGUI.SimpleGauge.OnEnable*"></a>
-
-  <h3 id="MinimalUtility_UGUI_SimpleGauge_OnEnable" data-uid="MinimalUtility.UGUI.SimpleGauge.OnEnable">
-  OnEnable()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/UGUI/SimpleGauge.cs/#L61"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected override void OnEnable()</code></pre>
-  </div>
-
-
-
-
 
 
 
