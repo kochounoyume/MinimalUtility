@@ -2,7 +2,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace MinimalUtility.UI
+namespace MinimalUtility.UGUI
 {
     /// <summary>
     /// <see cref="UnityEngine.UI.Selectable"/>を使用するうえで最低限の機能を持つグラフィック.

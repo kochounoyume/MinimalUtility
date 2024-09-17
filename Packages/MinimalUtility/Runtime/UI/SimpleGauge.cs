@@ -2,7 +2,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace MinimalUtility.UI
+namespace MinimalUtility.UGUI
 {
     /// <summary>
     /// <see cref="RectMask2D"/>を継承利用したシンプルで綺麗なゲージ表示.

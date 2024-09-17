@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace MinimalUtility.UI
+namespace MinimalUtility.UGUI
 {
     /// <summary>
     /// 空処理のグラフィック.
