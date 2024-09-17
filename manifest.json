@@ -335,40 +335,40 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/MinimalUtility.UI.EmptyGraphic.yml",
+      "source_relative_path": "api/MinimalUtility.UGUI.EmptyGraphic.yml",
       "output": {
         ".html": {
-          "relative_path": "api/MinimalUtility.UI.EmptyGraphic.html"
+          "relative_path": "api/MinimalUtility.UGUI.EmptyGraphic.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/MinimalUtility.UI.SelectablesGraphic.yml",
+      "source_relative_path": "api/MinimalUtility.UGUI.SelectablesGraphic.yml",
       "output": {
         ".html": {
-          "relative_path": "api/MinimalUtility.UI.SelectablesGraphic.html"
+          "relative_path": "api/MinimalUtility.UGUI.SelectablesGraphic.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/MinimalUtility.UI.SimpleGauge.yml",
+      "source_relative_path": "api/MinimalUtility.UGUI.SimpleGauge.yml",
       "output": {
         ".html": {
-          "relative_path": "api/MinimalUtility.UI.SimpleGauge.html"
+          "relative_path": "api/MinimalUtility.UGUI.SimpleGauge.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/MinimalUtility.UI.yml",
+      "source_relative_path": "api/MinimalUtility.UGUI.yml",
       "output": {
         ".html": {
-          "relative_path": "api/MinimalUtility.UI.html"
+          "relative_path": "api/MinimalUtility.UGUI.html"
         }
       },
       "version": ""

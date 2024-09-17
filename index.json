@@ -159,25 +159,25 @@
     "title": "Namespace MinimalUtility.Tasks | |",
     "keywords": "Namespace MinimalUtility.Tasks Classes Progress 簡易IProgress<T>ファクトリ. UniTaskExtensions UniTaskの拡張メソッド."
   },
-  "api/MinimalUtility.UI.EmptyGraphic.html": {
-    "href": "api/MinimalUtility.UI.EmptyGraphic.html",
+  "api/MinimalUtility.UGUI.EmptyGraphic.html": {
+    "href": "api/MinimalUtility.UGUI.EmptyGraphic.html",
     "title": "Class EmptyGraphic | |",
-    "keywords": "Class EmptyGraphic Namespace MinimalUtility.UI 空処理のグラフィック. 想定用途：マスク時のベース, 画面全体を透明なuGUIで覆いたいとき、Buttonの判定領域を透明にしたいとき public class EmptyGraphic : Graphic Inheritance object EmptyGraphic Derived SelectablesGraphic Methods OnPopulateMesh(VertexHelper) protected override void OnPopulateMesh(VertexHelper vh) Parameters vh VertexHelper SetMaterialDirty() public override void SetMaterialDirty() SetVerticesDirty() public override void SetVerticesDirty()"
+    "keywords": "Class EmptyGraphic Namespace MinimalUtility.UGUI 空処理のグラフィック. 想定用途：マスク時のベース, 画面全体を透明なuGUIで覆いたいとき、Buttonの判定領域を透明にしたいとき public class EmptyGraphic : Graphic Inheritance object EmptyGraphic Derived SelectablesGraphic Methods OnPopulateMesh(VertexHelper) protected override void OnPopulateMesh(VertexHelper vh) Parameters vh VertexHelper SetMaterialDirty() public override void SetMaterialDirty() SetVerticesDirty() public override void SetVerticesDirty()"
   },
-  "api/MinimalUtility.UI.SelectablesGraphic.html": {
-    "href": "api/MinimalUtility.UI.SelectablesGraphic.html",
+  "api/MinimalUtility.UGUI.SelectablesGraphic.html": {
+    "href": "api/MinimalUtility.UGUI.SelectablesGraphic.html",
     "title": "Class SelectablesGraphic | |",
-    "keywords": "Class SelectablesGraphic Namespace MinimalUtility.UI UnityEngine.UI.Selectableを使用するうえで最低限の機能を持つグラフィック. 子オブジェクトのGraphicをキャッシュして選択時に色変化を伝播させる public sealed class SelectablesGraphic : EmptyGraphic Inheritance object EmptyGraphic SelectablesGraphic Inherited Members EmptyGraphic.SetMaterialDirty() EmptyGraphic.SetVerticesDirty() Methods CrossFadeColor(Color, float, bool, bool) public override void CrossFadeColor(Color targetColor, float duration, bool ignoreTimeScale, bool useAlpha) Parameters targetColor Color duration float ignoreTimeScale bool useAlpha bool Start() protected override void Start()"
+    "keywords": "Class SelectablesGraphic Namespace MinimalUtility.UGUI UnityEngine.UI.Selectableを使用するうえで最低限の機能を持つグラフィック. 子オブジェクトのGraphicをキャッシュして選択時に色変化を伝播させる public sealed class SelectablesGraphic : EmptyGraphic Inheritance object EmptyGraphic SelectablesGraphic Inherited Members EmptyGraphic.SetMaterialDirty() EmptyGraphic.SetVerticesDirty() Methods CrossFadeColor(Color, float, bool, bool) public override void CrossFadeColor(Color targetColor, float duration, bool ignoreTimeScale, bool useAlpha) Parameters targetColor Color duration float ignoreTimeScale bool useAlpha bool Start() protected override void Start()"
   },
-  "api/MinimalUtility.UI.SimpleGauge.html": {
-    "href": "api/MinimalUtility.UI.SimpleGauge.html",
+  "api/MinimalUtility.UGUI.SimpleGauge.html": {
+    "href": "api/MinimalUtility.UGUI.SimpleGauge.html",
     "title": "Class SimpleGauge | |",
-    "keywords": "Class SimpleGauge Namespace MinimalUtility.UI RectMask2Dを継承利用したシンプルで綺麗なゲージ表示. public class SimpleGauge : RectMask2D Inheritance object SimpleGauge Properties Graphic ゲージの表示に使用するMaskableGraphic. public MaskableGraphic Graphic { get; } Property Value MaskableGraphic Value ゲージの値(0.0 ～ 1.0). public float Value { get; set; } Property Value float Methods OnEnable() protected override void OnEnable()"
+    "keywords": "Class SimpleGauge Namespace MinimalUtility.UGUI RectMask2Dを継承利用したシンプルで綺麗なゲージ表示. public class SimpleGauge : RectMask2D Inheritance object SimpleGauge Properties Graphic ゲージの表示に使用するMaskableGraphic. public MaskableGraphic Graphic { get; } Property Value MaskableGraphic Value ゲージの値(0.0 ～ 1.0). public float Value { get; set; } Property Value float Methods OnEnable() protected override void OnEnable()"
   },
-  "api/MinimalUtility.UI.html": {
-    "href": "api/MinimalUtility.UI.html",
-    "title": "Namespace MinimalUtility.UI | |",
-    "keywords": "Namespace MinimalUtility.UI Classes EmptyGraphic 空処理のグラフィック. 想定用途：マスク時のベース, 画面全体を透明なuGUIで覆いたいとき、Buttonの判定領域を透明にしたいとき SelectablesGraphic UnityEngine.UI.Selectableを使用するうえで最低限の機能を持つグラフィック. 子オブジェクトのGraphicをキャッシュして選択時に色変化を伝播させる SimpleGauge RectMask2Dを継承利用したシンプルで綺麗なゲージ表示."
+  "api/MinimalUtility.UGUI.html": {
+    "href": "api/MinimalUtility.UGUI.html",
+    "title": "Namespace MinimalUtility.UGUI | |",
+    "keywords": "Namespace MinimalUtility.UGUI Classes EmptyGraphic 空処理のグラフィック. 想定用途：マスク時のベース, 画面全体を透明なuGUIで覆いたいとき、Buttonの判定領域を透明にしたいとき SelectablesGraphic UnityEngine.UI.Selectableを使用するうえで最低限の機能を持つグラフィック. 子オブジェクトのGraphicをキャッシュして選択時に色変化を伝播させる SimpleGauge RectMask2Dを継承利用したシンプルで綺麗なゲージ表示."
   },
   "api/MinimalUtility.VContainer.LifetimeScopeBase.html": {
     "href": "api/MinimalUtility.VContainer.LifetimeScopeBase.html",

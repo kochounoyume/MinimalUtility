@@ -1192,136 +1192,136 @@ references:
   isSpec: "True"
   fullName: MinimalUtility.Tasks.UniTaskExtensions.WaitForEndFrameSafety
   nameWithType: UniTaskExtensions.WaitForEndFrameSafety
-- uid: MinimalUtility.UI
-  name: MinimalUtility.UI
-  href: api/MinimalUtility.UI.html
-  commentId: N:MinimalUtility.UI
-  fullName: MinimalUtility.UI
-  nameWithType: MinimalUtility.UI
-- uid: MinimalUtility.UI.EmptyGraphic
+- uid: MinimalUtility.UGUI
+  name: MinimalUtility.UGUI
+  href: api/MinimalUtility.UGUI.html
+  commentId: N:MinimalUtility.UGUI
+  fullName: MinimalUtility.UGUI
+  nameWithType: MinimalUtility.UGUI
+- uid: MinimalUtility.UGUI.EmptyGraphic
   name: EmptyGraphic
-  href: api/MinimalUtility.UI.EmptyGraphic.html
-  commentId: T:MinimalUtility.UI.EmptyGraphic
-  fullName: MinimalUtility.UI.EmptyGraphic
+  href: api/MinimalUtility.UGUI.EmptyGraphic.html
+  commentId: T:MinimalUtility.UGUI.EmptyGraphic
+  fullName: MinimalUtility.UGUI.EmptyGraphic
   nameWithType: EmptyGraphic
-- uid: MinimalUtility.UI.EmptyGraphic.OnPopulateMesh(VertexHelper)
+- uid: MinimalUtility.UGUI.EmptyGraphic.OnPopulateMesh(VertexHelper)
   name: OnPopulateMesh(VertexHelper)
-  href: api/MinimalUtility.UI.EmptyGraphic.html#MinimalUtility_UI_EmptyGraphic_OnPopulateMesh_VertexHelper_
-  commentId: M:MinimalUtility.UI.EmptyGraphic.OnPopulateMesh(VertexHelper)
-  fullName: MinimalUtility.UI.EmptyGraphic.OnPopulateMesh(VertexHelper)
+  href: api/MinimalUtility.UGUI.EmptyGraphic.html#MinimalUtility_UGUI_EmptyGraphic_OnPopulateMesh_VertexHelper_
+  commentId: M:MinimalUtility.UGUI.EmptyGraphic.OnPopulateMesh(VertexHelper)
+  fullName: MinimalUtility.UGUI.EmptyGraphic.OnPopulateMesh(VertexHelper)
   nameWithType: EmptyGraphic.OnPopulateMesh(VertexHelper)
-- uid: MinimalUtility.UI.EmptyGraphic.OnPopulateMesh*
+- uid: MinimalUtility.UGUI.EmptyGraphic.OnPopulateMesh*
   name: OnPopulateMesh
-  href: api/MinimalUtility.UI.EmptyGraphic.html#MinimalUtility_UI_EmptyGraphic_OnPopulateMesh_
-  commentId: Overload:MinimalUtility.UI.EmptyGraphic.OnPopulateMesh
+  href: api/MinimalUtility.UGUI.EmptyGraphic.html#MinimalUtility_UGUI_EmptyGraphic_OnPopulateMesh_
+  commentId: Overload:MinimalUtility.UGUI.EmptyGraphic.OnPopulateMesh
   isSpec: "True"
-  fullName: MinimalUtility.UI.EmptyGraphic.OnPopulateMesh
+  fullName: MinimalUtility.UGUI.EmptyGraphic.OnPopulateMesh
   nameWithType: EmptyGraphic.OnPopulateMesh
-- uid: MinimalUtility.UI.EmptyGraphic.SetMaterialDirty
+- uid: MinimalUtility.UGUI.EmptyGraphic.SetMaterialDirty
   name: SetMaterialDirty()
-  href: api/MinimalUtility.UI.EmptyGraphic.html#MinimalUtility_UI_EmptyGraphic_SetMaterialDirty
-  commentId: M:MinimalUtility.UI.EmptyGraphic.SetMaterialDirty
-  fullName: MinimalUtility.UI.EmptyGraphic.SetMaterialDirty()
+  href: api/MinimalUtility.UGUI.EmptyGraphic.html#MinimalUtility_UGUI_EmptyGraphic_SetMaterialDirty
+  commentId: M:MinimalUtility.UGUI.EmptyGraphic.SetMaterialDirty
+  fullName: MinimalUtility.UGUI.EmptyGraphic.SetMaterialDirty()
   nameWithType: EmptyGraphic.SetMaterialDirty()
-- uid: MinimalUtility.UI.EmptyGraphic.SetMaterialDirty*
+- uid: MinimalUtility.UGUI.EmptyGraphic.SetMaterialDirty*
   name: SetMaterialDirty
-  href: api/MinimalUtility.UI.EmptyGraphic.html#MinimalUtility_UI_EmptyGraphic_SetMaterialDirty_
-  commentId: Overload:MinimalUtility.UI.EmptyGraphic.SetMaterialDirty
+  href: api/MinimalUtility.UGUI.EmptyGraphic.html#MinimalUtility_UGUI_EmptyGraphic_SetMaterialDirty_
+  commentId: Overload:MinimalUtility.UGUI.EmptyGraphic.SetMaterialDirty
   isSpec: "True"
-  fullName: MinimalUtility.UI.EmptyGraphic.SetMaterialDirty
+  fullName: MinimalUtility.UGUI.EmptyGraphic.SetMaterialDirty
   nameWithType: EmptyGraphic.SetMaterialDirty
-- uid: MinimalUtility.UI.EmptyGraphic.SetVerticesDirty
+- uid: MinimalUtility.UGUI.EmptyGraphic.SetVerticesDirty
   name: SetVerticesDirty()
-  href: api/MinimalUtility.UI.EmptyGraphic.html#MinimalUtility_UI_EmptyGraphic_SetVerticesDirty
-  commentId: M:MinimalUtility.UI.EmptyGraphic.SetVerticesDirty
-  fullName: MinimalUtility.UI.EmptyGraphic.SetVerticesDirty()
+  href: api/MinimalUtility.UGUI.EmptyGraphic.html#MinimalUtility_UGUI_EmptyGraphic_SetVerticesDirty
+  commentId: M:MinimalUtility.UGUI.EmptyGraphic.SetVerticesDirty
+  fullName: MinimalUtility.UGUI.EmptyGraphic.SetVerticesDirty()
   nameWithType: EmptyGraphic.SetVerticesDirty()
-- uid: MinimalUtility.UI.EmptyGraphic.SetVerticesDirty*
+- uid: MinimalUtility.UGUI.EmptyGraphic.SetVerticesDirty*
   name: SetVerticesDirty
-  href: api/MinimalUtility.UI.EmptyGraphic.html#MinimalUtility_UI_EmptyGraphic_SetVerticesDirty_
-  commentId: Overload:MinimalUtility.UI.EmptyGraphic.SetVerticesDirty
+  href: api/MinimalUtility.UGUI.EmptyGraphic.html#MinimalUtility_UGUI_EmptyGraphic_SetVerticesDirty_
+  commentId: Overload:MinimalUtility.UGUI.EmptyGraphic.SetVerticesDirty
   isSpec: "True"
-  fullName: MinimalUtility.UI.EmptyGraphic.SetVerticesDirty
+  fullName: MinimalUtility.UGUI.EmptyGraphic.SetVerticesDirty
   nameWithType: EmptyGraphic.SetVerticesDirty
-- uid: MinimalUtility.UI.SelectablesGraphic
+- uid: MinimalUtility.UGUI.SelectablesGraphic
   name: SelectablesGraphic
-  href: api/MinimalUtility.UI.SelectablesGraphic.html
-  commentId: T:MinimalUtility.UI.SelectablesGraphic
-  fullName: MinimalUtility.UI.SelectablesGraphic
+  href: api/MinimalUtility.UGUI.SelectablesGraphic.html
+  commentId: T:MinimalUtility.UGUI.SelectablesGraphic
+  fullName: MinimalUtility.UGUI.SelectablesGraphic
   nameWithType: SelectablesGraphic
-- uid: MinimalUtility.UI.SelectablesGraphic.CrossFadeColor(Color,System.Single,System.Boolean,System.Boolean)
+- uid: MinimalUtility.UGUI.SelectablesGraphic.CrossFadeColor(Color,System.Single,System.Boolean,System.Boolean)
   name: CrossFadeColor(Color, float, bool, bool)
-  href: api/MinimalUtility.UI.SelectablesGraphic.html#MinimalUtility_UI_SelectablesGraphic_CrossFadeColor_Color_System_Single_System_Boolean_System_Boolean_
-  commentId: M:MinimalUtility.UI.SelectablesGraphic.CrossFadeColor(Color,System.Single,System.Boolean,System.Boolean)
+  href: api/MinimalUtility.UGUI.SelectablesGraphic.html#MinimalUtility_UGUI_SelectablesGraphic_CrossFadeColor_Color_System_Single_System_Boolean_System_Boolean_
+  commentId: M:MinimalUtility.UGUI.SelectablesGraphic.CrossFadeColor(Color,System.Single,System.Boolean,System.Boolean)
   name.vb: CrossFadeColor(Color, Single, Boolean, Boolean)
-  fullName: MinimalUtility.UI.SelectablesGraphic.CrossFadeColor(Color, float, bool, bool)
-  fullName.vb: MinimalUtility.UI.SelectablesGraphic.CrossFadeColor(Color, Single, Boolean, Boolean)
+  fullName: MinimalUtility.UGUI.SelectablesGraphic.CrossFadeColor(Color, float, bool, bool)
+  fullName.vb: MinimalUtility.UGUI.SelectablesGraphic.CrossFadeColor(Color, Single, Boolean, Boolean)
   nameWithType: SelectablesGraphic.CrossFadeColor(Color, float, bool, bool)
   nameWithType.vb: SelectablesGraphic.CrossFadeColor(Color, Single, Boolean, Boolean)
-- uid: MinimalUtility.UI.SelectablesGraphic.CrossFadeColor*
+- uid: MinimalUtility.UGUI.SelectablesGraphic.CrossFadeColor*
   name: CrossFadeColor
-  href: api/MinimalUtility.UI.SelectablesGraphic.html#MinimalUtility_UI_SelectablesGraphic_CrossFadeColor_
-  commentId: Overload:MinimalUtility.UI.SelectablesGraphic.CrossFadeColor
+  href: api/MinimalUtility.UGUI.SelectablesGraphic.html#MinimalUtility_UGUI_SelectablesGraphic_CrossFadeColor_
+  commentId: Overload:MinimalUtility.UGUI.SelectablesGraphic.CrossFadeColor
   isSpec: "True"
-  fullName: MinimalUtility.UI.SelectablesGraphic.CrossFadeColor
+  fullName: MinimalUtility.UGUI.SelectablesGraphic.CrossFadeColor
   nameWithType: SelectablesGraphic.CrossFadeColor
-- uid: MinimalUtility.UI.SelectablesGraphic.Start
+- uid: MinimalUtility.UGUI.SelectablesGraphic.Start
   name: Start()
-  href: api/MinimalUtility.UI.SelectablesGraphic.html#MinimalUtility_UI_SelectablesGraphic_Start
-  commentId: M:MinimalUtility.UI.SelectablesGraphic.Start
-  fullName: MinimalUtility.UI.SelectablesGraphic.Start()
+  href: api/MinimalUtility.UGUI.SelectablesGraphic.html#MinimalUtility_UGUI_SelectablesGraphic_Start
+  commentId: M:MinimalUtility.UGUI.SelectablesGraphic.Start
+  fullName: MinimalUtility.UGUI.SelectablesGraphic.Start()
   nameWithType: SelectablesGraphic.Start()
-- uid: MinimalUtility.UI.SelectablesGraphic.Start*
+- uid: MinimalUtility.UGUI.SelectablesGraphic.Start*
   name: Start
-  href: api/MinimalUtility.UI.SelectablesGraphic.html#MinimalUtility_UI_SelectablesGraphic_Start_
-  commentId: Overload:MinimalUtility.UI.SelectablesGraphic.Start
+  href: api/MinimalUtility.UGUI.SelectablesGraphic.html#MinimalUtility_UGUI_SelectablesGraphic_Start_
+  commentId: Overload:MinimalUtility.UGUI.SelectablesGraphic.Start
   isSpec: "True"
-  fullName: MinimalUtility.UI.SelectablesGraphic.Start
+  fullName: MinimalUtility.UGUI.SelectablesGraphic.Start
   nameWithType: SelectablesGraphic.Start
-- uid: MinimalUtility.UI.SimpleGauge
+- uid: MinimalUtility.UGUI.SimpleGauge
   name: SimpleGauge
-  href: api/MinimalUtility.UI.SimpleGauge.html
-  commentId: T:MinimalUtility.UI.SimpleGauge
-  fullName: MinimalUtility.UI.SimpleGauge
+  href: api/MinimalUtility.UGUI.SimpleGauge.html
+  commentId: T:MinimalUtility.UGUI.SimpleGauge
+  fullName: MinimalUtility.UGUI.SimpleGauge
   nameWithType: SimpleGauge
-- uid: MinimalUtility.UI.SimpleGauge.Graphic
+- uid: MinimalUtility.UGUI.SimpleGauge.Graphic
   name: Graphic
-  href: api/MinimalUtility.UI.SimpleGauge.html#MinimalUtility_UI_SimpleGauge_Graphic
-  commentId: P:MinimalUtility.UI.SimpleGauge.Graphic
-  fullName: MinimalUtility.UI.SimpleGauge.Graphic
+  href: api/MinimalUtility.UGUI.SimpleGauge.html#MinimalUtility_UGUI_SimpleGauge_Graphic
+  commentId: P:MinimalUtility.UGUI.SimpleGauge.Graphic
+  fullName: MinimalUtility.UGUI.SimpleGauge.Graphic
   nameWithType: SimpleGauge.Graphic
-- uid: MinimalUtility.UI.SimpleGauge.Graphic*
+- uid: MinimalUtility.UGUI.SimpleGauge.Graphic*
   name: Graphic
-  href: api/MinimalUtility.UI.SimpleGauge.html#MinimalUtility_UI_SimpleGauge_Graphic_
-  commentId: Overload:MinimalUtility.UI.SimpleGauge.Graphic
+  href: api/MinimalUtility.UGUI.SimpleGauge.html#MinimalUtility_UGUI_SimpleGauge_Graphic_
+  commentId: Overload:MinimalUtility.UGUI.SimpleGauge.Graphic
   isSpec: "True"
-  fullName: MinimalUtility.UI.SimpleGauge.Graphic
+  fullName: MinimalUtility.UGUI.SimpleGauge.Graphic
   nameWithType: SimpleGauge.Graphic
-- uid: MinimalUtility.UI.SimpleGauge.OnEnable
+- uid: MinimalUtility.UGUI.SimpleGauge.OnEnable
   name: OnEnable()
-  href: api/MinimalUtility.UI.SimpleGauge.html#MinimalUtility_UI_SimpleGauge_OnEnable
-  commentId: M:MinimalUtility.UI.SimpleGauge.OnEnable
-  fullName: MinimalUtility.UI.SimpleGauge.OnEnable()
+  href: api/MinimalUtility.UGUI.SimpleGauge.html#MinimalUtility_UGUI_SimpleGauge_OnEnable
+  commentId: M:MinimalUtility.UGUI.SimpleGauge.OnEnable
+  fullName: MinimalUtility.UGUI.SimpleGauge.OnEnable()
   nameWithType: SimpleGauge.OnEnable()
-- uid: MinimalUtility.UI.SimpleGauge.OnEnable*
+- uid: MinimalUtility.UGUI.SimpleGauge.OnEnable*
   name: OnEnable
-  href: api/MinimalUtility.UI.SimpleGauge.html#MinimalUtility_UI_SimpleGauge_OnEnable_
-  commentId: Overload:MinimalUtility.UI.SimpleGauge.OnEnable
+  href: api/MinimalUtility.UGUI.SimpleGauge.html#MinimalUtility_UGUI_SimpleGauge_OnEnable_
+  commentId: Overload:MinimalUtility.UGUI.SimpleGauge.OnEnable
   isSpec: "True"
-  fullName: MinimalUtility.UI.SimpleGauge.OnEnable
+  fullName: MinimalUtility.UGUI.SimpleGauge.OnEnable
   nameWithType: SimpleGauge.OnEnable
-- uid: MinimalUtility.UI.SimpleGauge.Value
+- uid: MinimalUtility.UGUI.SimpleGauge.Value
   name: Value
-  href: api/MinimalUtility.UI.SimpleGauge.html#MinimalUtility_UI_SimpleGauge_Value
-  commentId: P:MinimalUtility.UI.SimpleGauge.Value
-  fullName: MinimalUtility.UI.SimpleGauge.Value
+  href: api/MinimalUtility.UGUI.SimpleGauge.html#MinimalUtility_UGUI_SimpleGauge_Value
+  commentId: P:MinimalUtility.UGUI.SimpleGauge.Value
+  fullName: MinimalUtility.UGUI.SimpleGauge.Value
   nameWithType: SimpleGauge.Value
-- uid: MinimalUtility.UI.SimpleGauge.Value*
+- uid: MinimalUtility.UGUI.SimpleGauge.Value*
   name: Value
-  href: api/MinimalUtility.UI.SimpleGauge.html#MinimalUtility_UI_SimpleGauge_Value_
-  commentId: Overload:MinimalUtility.UI.SimpleGauge.Value
+  href: api/MinimalUtility.UGUI.SimpleGauge.html#MinimalUtility_UGUI_SimpleGauge_Value_
+  commentId: Overload:MinimalUtility.UGUI.SimpleGauge.Value
   isSpec: "True"
-  fullName: MinimalUtility.UI.SimpleGauge.Value
+  fullName: MinimalUtility.UGUI.SimpleGauge.Value
   nameWithType: SimpleGauge.Value
 - uid: MinimalUtility.VContainer
   name: MinimalUtility.VContainer
