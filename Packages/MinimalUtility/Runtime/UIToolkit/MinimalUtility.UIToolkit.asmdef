@@ -1,0 +1,22 @@
+{
+    "name": "MinimalUtility.UIToolkit",
+    "rootNamespace": "MinimalUtility.UIToolkit",
+    "references": [],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": true,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [
+        "ENABLE_UITOOLKIT"
+    ],
+    "versionDefines": [
+        {
+            "name": "com.unity.modules.uielements",
+            "expression": "",
+            "define": "ENABLE_UITOOLKIT"
+        }
+    ],
+    "noEngineReferences": false
+}
