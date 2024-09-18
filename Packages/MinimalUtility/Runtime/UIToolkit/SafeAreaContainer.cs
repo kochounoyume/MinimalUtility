@@ -11,19 +11,19 @@ namespace MinimalUtility.UIToolkit
     /// <summary>
     /// セーフエリアを考慮した<see cref="VisualElement"/>.
     /// </summary>
-    public class SafeAreaElement : VisualElement
+    public class SafeAreaContainer : VisualElement
     {
         /// <summary>
         /// UIBuilderのLibraryに登録するためのUXML要素のファクトリクラス.
         /// </summary>
-        public class SafeAreaFactory : UxmlFactory<SafeAreaElement, UxmlTraits>
+        public class SafeAreaContainerFactory : UxmlFactory<SafeAreaContainer, UxmlTraits>
         {
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="SafeAreaElement"/> class.
+        /// Initializes a new instance of the <see cref="SafeAreaContainer"/> class.
         /// </summary>
-        public SafeAreaElement()
+        public SafeAreaContainer()
         {
             style.flexGrow = 1;
             style.flexShrink = 1;
