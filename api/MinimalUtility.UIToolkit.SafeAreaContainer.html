@@ -2,11 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class SafeAreaElement.SafeAreaFactory |  |  </title>
+      <title>Class SafeAreaContainer |  |  </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class SafeAreaElement.SafeAreaFactory |  |  ">
+      <meta name="title" content="Class SafeAreaContainer |  |  ">
       
-      <meta name="description" content="UIBuilderのLibraryに登録するためのUXML要素のファクトリクラス.">
+      <meta name="description" content="セーフエリアを考慮したVisualElement.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       <meta name="docfx:disablenewtab" content="true">
       
-      <meta name="docfx:docurl" content="https://github.com/kochounoyume/MinimalUtility/new/main/apiSpec/new?filename=MinimalUtility_UIToolkit_SafeAreaElement_SafeAreaFactory.md&amp;value=---%0Auid%3A%20MinimalUtility.UIToolkit.SafeAreaElement.SafeAreaFactory%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/kochounoyume/MinimalUtility/new/main/apiSpec/new?filename=MinimalUtility_UIToolkit_SafeAreaContainer.md&amp;value=---%0Auid%3A%20MinimalUtility.UIToolkit.SafeAreaContainer%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -84,12 +84,12 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="MinimalUtility.UIToolkit.SafeAreaElement.SafeAreaFactory">
+        <article data-uid="MinimalUtility.UIToolkit.SafeAreaContainer">
 
 
 
-  <h1 id="MinimalUtility_UIToolkit_SafeAreaElement_SafeAreaFactory" data-uid="MinimalUtility.UIToolkit.SafeAreaElement.SafeAreaFactory" class="text-break">
-Class SafeAreaElement.SafeAreaFactory  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/UIToolkit/SafeAreaElement.cs/#L19"><i class="bi bi-code-slash"></i></a>
+  <h1 id="MinimalUtility_UIToolkit_SafeAreaContainer" data-uid="MinimalUtility.UIToolkit.SafeAreaContainer" class="text-break">
+Class SafeAreaContainer  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/UIToolkit/SafeAreaContainer.cs/#L14"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,12 +97,12 @@ Class SafeAreaElement.SafeAreaFactory  <a class="header-action link-secondary" t
   
   </div>
 
-  <div class="markdown summary"><p>UIBuilderのLibraryに登録するためのUXML要素のファクトリクラス.</p>
+  <div class="markdown summary"><p>セーフエリアを考慮したVisualElement.</p>
 </div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class SafeAreaElement.SafeAreaFactory : UxmlFactory&lt;SafeAreaElement, UxmlTraits&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public class SafeAreaContainer : VisualElement</code></pre>
   </div>
 
 
@@ -112,9 +112,40 @@ Class SafeAreaElement.SafeAreaFactory  <a class="header-action link-secondary" t
     <dt>Inheritance</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-      <div><span class="xref">SafeAreaElement.SafeAreaFactory</span></div>
+      <div><span class="xref">SafeAreaContainer</span></div>
     </dd>
   </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="MinimalUtility_UIToolkit_SafeAreaContainer__ctor_" data-uid="MinimalUtility.UIToolkit.SafeAreaContainer.#ctor*"></a>
+
+  <h3 id="MinimalUtility_UIToolkit_SafeAreaContainer__ctor" data-uid="MinimalUtility.UIToolkit.SafeAreaContainer.#ctor">
+  SafeAreaContainer()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/UIToolkit/SafeAreaContainer.cs/#L26"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="MinimalUtility.UIToolkit.SafeAreaContainer.html">SafeAreaContainer</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SafeAreaContainer()</code></pre>
+  </div>
+
+
+
+
 
 
 

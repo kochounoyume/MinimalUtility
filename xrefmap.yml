@@ -1329,37 +1329,37 @@ references:
   commentId: N:MinimalUtility.UIToolkit
   fullName: MinimalUtility.UIToolkit
   nameWithType: MinimalUtility.UIToolkit
-- uid: MinimalUtility.UIToolkit.SafeAreaElement
-  name: SafeAreaElement
-  href: api/MinimalUtility.UIToolkit.SafeAreaElement.html
-  commentId: T:MinimalUtility.UIToolkit.SafeAreaElement
-  fullName: MinimalUtility.UIToolkit.SafeAreaElement
-  nameWithType: SafeAreaElement
-- uid: MinimalUtility.UIToolkit.SafeAreaElement.#ctor
-  name: SafeAreaElement()
-  href: api/MinimalUtility.UIToolkit.SafeAreaElement.html#MinimalUtility_UIToolkit_SafeAreaElement__ctor
-  commentId: M:MinimalUtility.UIToolkit.SafeAreaElement.#ctor
+- uid: MinimalUtility.UIToolkit.SafeAreaContainer
+  name: SafeAreaContainer
+  href: api/MinimalUtility.UIToolkit.SafeAreaContainer.html
+  commentId: T:MinimalUtility.UIToolkit.SafeAreaContainer
+  fullName: MinimalUtility.UIToolkit.SafeAreaContainer
+  nameWithType: SafeAreaContainer
+- uid: MinimalUtility.UIToolkit.SafeAreaContainer.#ctor
+  name: SafeAreaContainer()
+  href: api/MinimalUtility.UIToolkit.SafeAreaContainer.html#MinimalUtility_UIToolkit_SafeAreaContainer__ctor
+  commentId: M:MinimalUtility.UIToolkit.SafeAreaContainer.#ctor
   name.vb: New()
-  fullName: MinimalUtility.UIToolkit.SafeAreaElement.SafeAreaElement()
-  fullName.vb: MinimalUtility.UIToolkit.SafeAreaElement.New()
-  nameWithType: SafeAreaElement.SafeAreaElement()
-  nameWithType.vb: SafeAreaElement.New()
-- uid: MinimalUtility.UIToolkit.SafeAreaElement.#ctor*
-  name: SafeAreaElement
-  href: api/MinimalUtility.UIToolkit.SafeAreaElement.html#MinimalUtility_UIToolkit_SafeAreaElement__ctor_
-  commentId: Overload:MinimalUtility.UIToolkit.SafeAreaElement.#ctor
+  fullName: MinimalUtility.UIToolkit.SafeAreaContainer.SafeAreaContainer()
+  fullName.vb: MinimalUtility.UIToolkit.SafeAreaContainer.New()
+  nameWithType: SafeAreaContainer.SafeAreaContainer()
+  nameWithType.vb: SafeAreaContainer.New()
+- uid: MinimalUtility.UIToolkit.SafeAreaContainer.#ctor*
+  name: SafeAreaContainer
+  href: api/MinimalUtility.UIToolkit.SafeAreaContainer.html#MinimalUtility_UIToolkit_SafeAreaContainer__ctor_
+  commentId: Overload:MinimalUtility.UIToolkit.SafeAreaContainer.#ctor
   isSpec: "True"
   name.vb: New
-  fullName: MinimalUtility.UIToolkit.SafeAreaElement.SafeAreaElement
-  fullName.vb: MinimalUtility.UIToolkit.SafeAreaElement.New
-  nameWithType: SafeAreaElement.SafeAreaElement
-  nameWithType.vb: SafeAreaElement.New
-- uid: MinimalUtility.UIToolkit.SafeAreaElement.SafeAreaFactory
-  name: SafeAreaElement.SafeAreaFactory
-  href: api/MinimalUtility.UIToolkit.SafeAreaElement.SafeAreaFactory.html
-  commentId: T:MinimalUtility.UIToolkit.SafeAreaElement.SafeAreaFactory
-  fullName: MinimalUtility.UIToolkit.SafeAreaElement.SafeAreaFactory
-  nameWithType: SafeAreaElement.SafeAreaFactory
+  fullName: MinimalUtility.UIToolkit.SafeAreaContainer.SafeAreaContainer
+  fullName.vb: MinimalUtility.UIToolkit.SafeAreaContainer.New
+  nameWithType: SafeAreaContainer.SafeAreaContainer
+  nameWithType.vb: SafeAreaContainer.New
+- uid: MinimalUtility.UIToolkit.SafeAreaContainer.SafeAreaContainerFactory
+  name: SafeAreaContainer.SafeAreaContainerFactory
+  href: api/MinimalUtility.UIToolkit.SafeAreaContainer.SafeAreaContainerFactory.html
+  commentId: T:MinimalUtility.UIToolkit.SafeAreaContainer.SafeAreaContainerFactory
+  fullName: MinimalUtility.UIToolkit.SafeAreaContainer.SafeAreaContainerFactory
+  nameWithType: SafeAreaContainer.SafeAreaContainerFactory
 - uid: MinimalUtility.VContainer
   name: MinimalUtility.VContainer
   href: api/MinimalUtility.VContainer.html
