@@ -7,7 +7,7 @@ namespace MinimalUtility.SourceGenerator.Internal;
 internal static class CompilationExtensions
 {
     [MethodImpl(MethodImplOptions.AggressiveInlining)]
-    public static IEnumerable<(IMethodSymbol method, Location location)> SelectInvocationInfo(
+    public static IEnumerable<IMethodSymbol> SelectInvocationInfo(
         this Compilation compilation, CancellationToken cancellationToken = default)
     {
         foreach (var syntaxTree in compilation.SyntaxTrees)
@@ -22,7 +22,7 @@ internal static class CompilationExtensions
                 var symbolInfo = semanticModel.GetSymbolInfo(invocationExpression, cancellationToken).Symbol;
                 if (symbolInfo is IMethodSymbol methodSymbol)
                 {
-                    yield return (methodSymbol, syntaxNode.GetLocation());
+                    yield return methodSymbol;
                 }
             }
         }

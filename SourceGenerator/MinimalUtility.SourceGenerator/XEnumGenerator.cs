@@ -22,7 +22,7 @@ internal sealed class XEnumGenerator : IIncrementalGenerator
                 token.ThrowIfCancellationRequested();
                 return method;
             })
-            .Where(static info => info.method.Name is "GetNames" or "GetValues" or "GetName" or "IsDefined" or "Parse" or "TryParse")
+            .Where(static method => method.Name is "GetNames" or "GetValues" or "GetName" or "IsDefined" or "Parse" or "TryParse")
             .Collect();
         context.RegisterSourceOutput(methods, RegisterCoreImplementation);
     }
@@ -61,8 +61,7 @@ internal sealed class XEnumGenerator : IIncrementalGenerator
         """);
     }
 
-    private static void RegisterCoreImplementation(SourceProductionContext context,
-        ImmutableArray<(IMethodSymbol method, Location location)> metaDataArray)
+    private static void RegisterCoreImplementation(SourceProductionContext context, ImmutableArray<IMethodSymbol> metaDataArray)
     {
         context.CancellationToken.ThrowIfCancellationRequested();
         if (metaDataArray.IsEmpty) return;
@@ -90,14 +89,15 @@ internal sealed class XEnumGenerator : IIncrementalGenerator
 
         var cacheSb = new StringBuilder();
 
-        foreach (var (method, location) in metaDataArray)
+        foreach (var method in metaDataArray)
         {
             if (method.ContainingType.ToDisplayString() == "MinimalUtility.XEnum.Cache<T>") continue;
             if (!method.IsGenericMethod) continue;
             var genericSymbol = method.TypeArguments[0];
             if (genericSymbol.DeclaredAccessibility != Accessibility.Public)
             {
-                var diagnostic = Diagnostic.Create(DiagnosticDescriptors.ENUMGEN001, location, genericSymbol.GetFullTypeName());
+                var syntax = genericSymbol.DeclaringSyntaxReferences[0].GetSyntax();
+                var diagnostic = Diagnostic.Create(DiagnosticDescriptors.ENUMGEN001, syntax.GetLocation(), genericSymbol.GetFullTypeName());
                 context.ReportDiagnostic(diagnostic);
                 continue;
             }
