@@ -35,7 +35,6 @@ namespace MinimalUtility
         private readonly FrameDataProvider frameDataProvider = new (CreateCoroutineRunner<OnGUITrigger>);
         private readonly WaitForSeconds intervalWait = new (IntervalSecs);
         private readonly Lazy<OnGUITrigger> onGUITrigger;
-        private readonly MemoryUnitStringConverter memoryUnitStringConverter = new ();
         // GUIStyleは生成タイミングがOnGUIの中でないとエラーになるため、Lazyで遅延生成
         private readonly Lazy<GUIStyle> styleBox = new (static () => new GUIStyle(GUI.skin.box)
         {
@@ -98,7 +97,7 @@ namespace MinimalUtility
             double fps = 1000 / ms;
             // 確保している総メモリ
             float totalMemory = GetTotalMemory(Unit);
-            string text = $"CPU: {fps:F0}fps ({ms:F1}ms){Environment.NewLine}Memory: {totalMemory:F}{memoryUnitStringConverter.Convert(Unit)}";
+            string text = $"CPU: {fps:F0}fps ({ms:F1}ms){Environment.NewLine}Memory: {totalMemory:F}{XEnum.GetName(Unit)}";
             Rect rect = new Rect(Screen.safeArea.position, new Vector2(500, 80));
             GUI.Box(rect, text, styleBox.Value);
         }
