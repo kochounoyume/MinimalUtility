@@ -43,9 +43,11 @@ internal sealed class XEnumGenerator : IIncrementalGenerator
                 public static bool IsDefined<T, TValue>(in TValue value) where T : struct, Enum where TValue : struct => Cache<T>.Default.IsDefined(value);
                 public static T Parse<T>(in string value) where T : struct, Enum => Cache<T>.Default.Parse(value);
                 public static bool TryParse<T>(in string value, out T result) where T : struct, Enum => Cache<T>.Default.TryParse(value, out result);
-            
+
                 public static string ToXEnumString<T>(this T value) where T : struct, Enum => Cache<T>.Default.GetName(value);
-            
+                public static bool HasBitFlag<T>(this T value, in T flag) where T : struct, Enum => Cache<T>.Default.HasBitFlag(value, flag);
+                public static string GetEnumMemberValue<T>(this T value) where T : struct, Enum => Cache<T>.Default.GetEnumMemberValue(value);
+
                 private abstract partial class Cache<T> where T : struct, Enum
                 {
                     public static readonly Cache<T> Default;
@@ -55,6 +57,8 @@ internal sealed class XEnumGenerator : IIncrementalGenerator
                     public abstract bool IsDefined<TValue>(in TValue value) where TValue : struct;
                     public abstract T Parse(in string value);
                     public abstract bool TryParse(in string value, out T result);
+                    public abstract bool HasBitFlag(in T value, in T flag);
+                    public abstract string GetEnumMemberValue(in T value);
                 }
             }
         }
@@ -165,6 +169,14 @@ internal sealed class XEnumGenerator : IIncrementalGenerator
             //                 return false;
             //         }
             //     }
+            //     public override bool HasBitFlag(in Hoge value, in Hoge flag) => (value & flag) == flag;
+            //     public override string GetEnumMemberValue(in Hoge value) => (int)value switch
+            //     {
+            //         0 => "A",
+            //         1 => "B",
+            //         2 => "C",
+            //         _ => throw new ArgumentOutOfRangeException(nameof(value), value, default)
+            //     };
             // }
             var valuesSb = new StringBuilder();
             var namesSb = new StringBuilder();
@@ -172,9 +184,11 @@ internal sealed class XEnumGenerator : IIncrementalGenerator
             var isDefinedSb = new StringBuilder();
             var parseSb = new StringBuilder();
             var tryParseSb = new StringBuilder();
+            var getEnumMemberValueSb = new StringBuilder();
 
             foreach (var member in genericSymbol.GetMembers())
             {
+                if (member.Kind != SymbolKind.Field) continue;
                 var current = member as IFieldSymbol;
                 if (!current.TryGetNameAndValue(out var name, out var value)) continue;
                 var fieldName = typeFullName + "." + name;
@@ -192,7 +206,23 @@ internal sealed class XEnumGenerator : IIncrementalGenerator
                     .Append("result = ").Append(fieldName).Append(';').AppendLine()
                     .Append("                        ")
                     .AppendLine("return true;");
+
+                // Attributes
+                foreach (var attribute in member.GetAttributes())
+                {
+                    switch (attribute.AttributeClass?.Name)
+                    {
+                        case nameof(System.Runtime.Serialization.EnumMemberAttribute):
+                            var enumMemberValue = attribute.NamedArguments[0].Value.Value?.ToString();
+                            if (enumMemberValue is null) break;
+                            getEnumMemberValueSb.Append("                ")
+                                .Append(value).Append(" => \"").Append(enumMemberValue).AppendLine("\",");
+                            break;
+                    }
+                }
             }
+
+            var baseType = ((INamedTypeSymbol)genericSymbol).GetEnumBaseTypeStr();
 
             cacheSb.Append("        private sealed class ");
             cacheSb.Append(typeName);
@@ -216,11 +246,7 @@ internal sealed class XEnumGenerator : IIncrementalGenerator
                                        public override string GetName(in 
                            """);
             cacheSb.Append(typeFullName);
-            cacheSb.Append("""
-                            value) => (int)value switch
-                                       {
-                           
-                           """);
+            cacheSb.Append(" value) => (").Append(baseType).AppendLine(")value switch").AppendLine("            {");
             cacheSb.Append(getNameSb);
             cacheSb.Append("""
                                            _ => throw new ArgumentOutOfRangeException(nameof(value), value, default)
@@ -253,12 +279,42 @@ internal sealed class XEnumGenerator : IIncrementalGenerator
                            
                            """);
             cacheSb.Append(tryParseSb);
-            cacheSb.AppendLine("""
+            cacheSb.Append("""
                                                default:
                                                    result = default;
                                                    return false;
                                            }
                                        }
+                                       public override bool HasBitFlag(in 
+                           """);
+            cacheSb.Append(typeFullName).Append(" value, in ").Append(typeFullName).Append(" flag) => ");
+            if (genericSymbol.ContainFlagsAttribute())
+            {
+                cacheSb.AppendLine("(value & flag) == flag;");
+            }
+            else
+            {
+                cacheSb.AppendLine("value == flag;");
+            }
+            cacheSb.Append("            public override string GetEnumMemberValue(in ");
+            cacheSb.Append(typeFullName);
+            cacheSb.Append(" value) => ");
+
+            if (getEnumMemberValueSb.Length == 0)
+            {
+                cacheSb.Append("throw new InvalidOperationException(\"").Append(typeFullName).AppendLine(" has no EnumMemberAttribute.\");");
+            }
+            else
+            {
+                cacheSb.Append("(").Append(baseType).AppendLine(")value switch").AppendLine("            {");
+                cacheSb.Append(getEnumMemberValueSb);
+                cacheSb.AppendLine("""
+                                               _ => throw new ArgumentOutOfRangeException(nameof(value), value, default)
+                                           };
+                               """);
+            }
+
+            cacheSb.Append("""
                                    }
 
                            """);

@@ -39,9 +39,7 @@ internal static class SymbolExtensions
         // 対象の列挙型の基底の型を取得
         var baseType = typeSymbol.EnumUnderlyingType;
 
-        if (baseType == null) throw new InvalidOperationException("Invalid type specified");
-
-        return baseType.Name switch
+        return baseType?.Name switch
         {
             nameof(Int32) => "int",
             nameof(UInt32) => "uint",
@@ -51,7 +49,7 @@ internal static class SymbolExtensions
             nameof(UInt16) => "ushort",
             nameof(Byte) => "byte",
             nameof(SByte) => "sbyte",
-            _ => baseType.Name
+            _ => ""
         };
     }
 
@@ -80,5 +78,23 @@ internal static class SymbolExtensions
         return typeSymbol.ContainingType is null
             ? typeSymbol.Name
             : $"{typeSymbol.ContainingType.GetNestedName()}.{typeSymbol.Name}";
+    }
+
+    /// <summary>
+    /// 列挙型が <see cref="FlagsAttribute"/> を持っているかどうかを取得します
+    /// </summary>
+    /// <param name="typeSymbol">列挙型の型情報</param>
+    /// <returns><see cref="FlagsAttribute"/> を持っている場合は true、それ以外は false</returns>
+    [MethodImpl(MethodImplOptions.AggressiveInlining)]
+    public static bool ContainFlagsAttribute(this ITypeSymbol typeSymbol)
+    {
+        foreach (var attribute in typeSymbol.GetAttributes())
+        {
+            if (attribute.AttributeClass?.Name == nameof(FlagsAttribute))
+            {
+                return true;
+            }
+        }
+        return false;
     }
 }
