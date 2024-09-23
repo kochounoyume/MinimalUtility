@@ -99,9 +99,12 @@ internal sealed class XEnumGenerator : IIncrementalGenerator
 
         var cacheSb = new StringBuilder();
 
+        var typeHashset = new HashSet<ITypeSymbol>(SymbolEqualityComparer.Default);
+
         foreach (var method in metaDataArray)
         {
             var genericSymbol = method.TypeArguments[0];
+            if (!typeHashset.Add(genericSymbol)) continue;
             if (genericSymbol.DeclaredAccessibility != Accessibility.Public)
             {
                 var syntax = genericSymbol.DeclaringSyntaxReferences[0].GetSyntax();
