@@ -1028,76 +1028,70 @@ references:
   commentId: T:MinimalUtility.SafeAreaAdjuster
   fullName: MinimalUtility.SafeAreaAdjuster
   nameWithType: SafeAreaAdjuster
-- uid: MinimalUtility.String
-  name: MinimalUtility.String
-  href: api/MinimalUtility.String.html
-  commentId: N:MinimalUtility.String
-  fullName: MinimalUtility.String
-  nameWithType: MinimalUtility.String
-- uid: MinimalUtility.String.StringUtils
+- uid: MinimalUtility.StringUtils
   name: StringUtils
-  href: api/MinimalUtility.String.StringUtils.html
-  commentId: T:MinimalUtility.String.StringUtils
-  fullName: MinimalUtility.String.StringUtils
+  href: api/MinimalUtility.StringUtils.html
+  commentId: T:MinimalUtility.StringUtils
+  fullName: MinimalUtility.StringUtils
   nameWithType: StringUtils
-- uid: MinimalUtility.String.StringUtils.Create(System.IFormatProvider,System.Runtime.CompilerServices.DefaultInterpolatedStringHandler@)
+- uid: MinimalUtility.StringUtils.Create(System.IFormatProvider,System.Runtime.CompilerServices.DefaultInterpolatedStringHandler@)
   name: Create(IFormatProvider?, ref DefaultInterpolatedStringHandler)
-  href: api/MinimalUtility.String.StringUtils.html#MinimalUtility_String_StringUtils_Create_System_IFormatProvider_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler__
-  commentId: M:MinimalUtility.String.StringUtils.Create(System.IFormatProvider,System.Runtime.CompilerServices.DefaultInterpolatedStringHandler@)
+  href: api/MinimalUtility.StringUtils.html#MinimalUtility_StringUtils_Create_System_IFormatProvider_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler__
+  commentId: M:MinimalUtility.StringUtils.Create(System.IFormatProvider,System.Runtime.CompilerServices.DefaultInterpolatedStringHandler@)
   name.vb: Create(IFormatProvider, DefaultInterpolatedStringHandler)
-  fullName: MinimalUtility.String.StringUtils.Create(System.IFormatProvider?, ref System.Runtime.CompilerServices.DefaultInterpolatedStringHandler)
-  fullName.vb: MinimalUtility.String.StringUtils.Create(System.IFormatProvider, System.Runtime.CompilerServices.DefaultInterpolatedStringHandler)
+  fullName: MinimalUtility.StringUtils.Create(System.IFormatProvider?, ref System.Runtime.CompilerServices.DefaultInterpolatedStringHandler)
+  fullName.vb: MinimalUtility.StringUtils.Create(System.IFormatProvider, System.Runtime.CompilerServices.DefaultInterpolatedStringHandler)
   nameWithType: StringUtils.Create(IFormatProvider?, ref DefaultInterpolatedStringHandler)
   nameWithType.vb: StringUtils.Create(IFormatProvider, DefaultInterpolatedStringHandler)
-- uid: MinimalUtility.String.StringUtils.Create(System.IFormatProvider,System.Span{System.Char},System.Runtime.CompilerServices.DefaultInterpolatedStringHandler@)
+- uid: MinimalUtility.StringUtils.Create(System.IFormatProvider,System.Span{System.Char},System.Runtime.CompilerServices.DefaultInterpolatedStringHandler@)
   name: Create(IFormatProvider?, Span<char>, ref DefaultInterpolatedStringHandler)
-  href: api/MinimalUtility.String.StringUtils.html#MinimalUtility_String_StringUtils_Create_System_IFormatProvider_System_Span_System_Char__System_Runtime_CompilerServices_DefaultInterpolatedStringHandler__
-  commentId: M:MinimalUtility.String.StringUtils.Create(System.IFormatProvider,System.Span{System.Char},System.Runtime.CompilerServices.DefaultInterpolatedStringHandler@)
+  href: api/MinimalUtility.StringUtils.html#MinimalUtility_StringUtils_Create_System_IFormatProvider_System_Span_System_Char__System_Runtime_CompilerServices_DefaultInterpolatedStringHandler__
+  commentId: M:MinimalUtility.StringUtils.Create(System.IFormatProvider,System.Span{System.Char},System.Runtime.CompilerServices.DefaultInterpolatedStringHandler@)
   name.vb: Create(IFormatProvider, Span(Of Char), DefaultInterpolatedStringHandler)
-  fullName: MinimalUtility.String.StringUtils.Create(System.IFormatProvider?, System.Span<char>, ref System.Runtime.CompilerServices.DefaultInterpolatedStringHandler)
-  fullName.vb: MinimalUtility.String.StringUtils.Create(System.IFormatProvider, System.Span(Of Char), System.Runtime.CompilerServices.DefaultInterpolatedStringHandler)
+  fullName: MinimalUtility.StringUtils.Create(System.IFormatProvider?, System.Span<char>, ref System.Runtime.CompilerServices.DefaultInterpolatedStringHandler)
+  fullName.vb: MinimalUtility.StringUtils.Create(System.IFormatProvider, System.Span(Of Char), System.Runtime.CompilerServices.DefaultInterpolatedStringHandler)
   nameWithType: StringUtils.Create(IFormatProvider?, Span<char>, ref DefaultInterpolatedStringHandler)
   nameWithType.vb: StringUtils.Create(IFormatProvider, Span(Of Char), DefaultInterpolatedStringHandler)
-- uid: MinimalUtility.String.StringUtils.Create*
+- uid: MinimalUtility.StringUtils.Create*
   name: Create
-  href: api/MinimalUtility.String.StringUtils.html#MinimalUtility_String_StringUtils_Create_
-  commentId: Overload:MinimalUtility.String.StringUtils.Create
+  href: api/MinimalUtility.StringUtils.html#MinimalUtility_StringUtils_Create_
+  commentId: Overload:MinimalUtility.StringUtils.Create
   isSpec: "True"
-  fullName: MinimalUtility.String.StringUtils.Create
+  fullName: MinimalUtility.StringUtils.Create
   nameWithType: StringUtils.Create
-- uid: MinimalUtility.String.StringUtils.Join(System.Char,System.Collections.Generic.IEnumerable{System.String})
-  name: Join(char, IEnumerable<string?>)
-  href: api/MinimalUtility.String.StringUtils.html#MinimalUtility_String_StringUtils_Join_System_Char_System_Collections_Generic_IEnumerable_System_String__
-  commentId: M:MinimalUtility.String.StringUtils.Join(System.Char,System.Collections.Generic.IEnumerable{System.String})
+- uid: MinimalUtility.StringUtils.Join(System.Char@,System.Collections.Generic.IEnumerable{System.String})
+  name: Join(in char, IEnumerable<string?>)
+  href: api/MinimalUtility.StringUtils.html#MinimalUtility_StringUtils_Join_System_Char__System_Collections_Generic_IEnumerable_System_String__
+  commentId: M:MinimalUtility.StringUtils.Join(System.Char@,System.Collections.Generic.IEnumerable{System.String})
   name.vb: Join(Char, IEnumerable(Of String))
-  fullName: MinimalUtility.String.StringUtils.Join(char, System.Collections.Generic.IEnumerable<string?>)
-  fullName.vb: MinimalUtility.String.StringUtils.Join(Char, System.Collections.Generic.IEnumerable(Of String))
-  nameWithType: StringUtils.Join(char, IEnumerable<string?>)
+  fullName: MinimalUtility.StringUtils.Join(in char, System.Collections.Generic.IEnumerable<string?>)
+  fullName.vb: MinimalUtility.StringUtils.Join(Char, System.Collections.Generic.IEnumerable(Of String))
+  nameWithType: StringUtils.Join(in char, IEnumerable<string?>)
   nameWithType.vb: StringUtils.Join(Char, IEnumerable(Of String))
-- uid: MinimalUtility.String.StringUtils.Join(System.ReadOnlySpan{System.Char},System.Collections.Generic.IEnumerable{System.String})
-  name: Join(ReadOnlySpan<char>, IEnumerable<string?>)
-  href: api/MinimalUtility.String.StringUtils.html#MinimalUtility_String_StringUtils_Join_System_ReadOnlySpan_System_Char__System_Collections_Generic_IEnumerable_System_String__
-  commentId: M:MinimalUtility.String.StringUtils.Join(System.ReadOnlySpan{System.Char},System.Collections.Generic.IEnumerable{System.String})
+- uid: MinimalUtility.StringUtils.Join(System.ReadOnlySpan{System.Char}@,System.Collections.Generic.IEnumerable{System.String})
+  name: Join(in ReadOnlySpan<char>, IEnumerable<string?>)
+  href: api/MinimalUtility.StringUtils.html#MinimalUtility_StringUtils_Join_System_ReadOnlySpan_System_Char___System_Collections_Generic_IEnumerable_System_String__
+  commentId: M:MinimalUtility.StringUtils.Join(System.ReadOnlySpan{System.Char}@,System.Collections.Generic.IEnumerable{System.String})
   name.vb: Join(ReadOnlySpan(Of Char), IEnumerable(Of String))
-  fullName: MinimalUtility.String.StringUtils.Join(System.ReadOnlySpan<char>, System.Collections.Generic.IEnumerable<string?>)
-  fullName.vb: MinimalUtility.String.StringUtils.Join(System.ReadOnlySpan(Of Char), System.Collections.Generic.IEnumerable(Of String))
-  nameWithType: StringUtils.Join(ReadOnlySpan<char>, IEnumerable<string?>)
+  fullName: MinimalUtility.StringUtils.Join(in System.ReadOnlySpan<char>, System.Collections.Generic.IEnumerable<string?>)
+  fullName.vb: MinimalUtility.StringUtils.Join(System.ReadOnlySpan(Of Char), System.Collections.Generic.IEnumerable(Of String))
+  nameWithType: StringUtils.Join(in ReadOnlySpan<char>, IEnumerable<string?>)
   nameWithType.vb: StringUtils.Join(ReadOnlySpan(Of Char), IEnumerable(Of String))
-- uid: MinimalUtility.String.StringUtils.Join(System.String,System.Collections.Generic.IEnumerable{System.String})
-  name: Join(string?, IEnumerable<string?>)
-  href: api/MinimalUtility.String.StringUtils.html#MinimalUtility_String_StringUtils_Join_System_String_System_Collections_Generic_IEnumerable_System_String__
-  commentId: M:MinimalUtility.String.StringUtils.Join(System.String,System.Collections.Generic.IEnumerable{System.String})
+- uid: MinimalUtility.StringUtils.Join(System.String@,System.Collections.Generic.IEnumerable{System.String})
+  name: Join(in string?, IEnumerable<string?>)
+  href: api/MinimalUtility.StringUtils.html#MinimalUtility_StringUtils_Join_System_String__System_Collections_Generic_IEnumerable_System_String__
+  commentId: M:MinimalUtility.StringUtils.Join(System.String@,System.Collections.Generic.IEnumerable{System.String})
   name.vb: Join(String, IEnumerable(Of String))
-  fullName: MinimalUtility.String.StringUtils.Join(string?, System.Collections.Generic.IEnumerable<string?>)
-  fullName.vb: MinimalUtility.String.StringUtils.Join(String, System.Collections.Generic.IEnumerable(Of String))
-  nameWithType: StringUtils.Join(string?, IEnumerable<string?>)
+  fullName: MinimalUtility.StringUtils.Join(in string?, System.Collections.Generic.IEnumerable<string?>)
+  fullName.vb: MinimalUtility.StringUtils.Join(String, System.Collections.Generic.IEnumerable(Of String))
+  nameWithType: StringUtils.Join(in string?, IEnumerable<string?>)
   nameWithType.vb: StringUtils.Join(String, IEnumerable(Of String))
-- uid: MinimalUtility.String.StringUtils.Join*
+- uid: MinimalUtility.StringUtils.Join*
   name: Join
-  href: api/MinimalUtility.String.StringUtils.html#MinimalUtility_String_StringUtils_Join_
-  commentId: Overload:MinimalUtility.String.StringUtils.Join
+  href: api/MinimalUtility.StringUtils.html#MinimalUtility_StringUtils_Join_
+  commentId: Overload:MinimalUtility.StringUtils.Join
   isSpec: "True"
-  fullName: MinimalUtility.String.StringUtils.Join
+  fullName: MinimalUtility.StringUtils.Join
   nameWithType: StringUtils.Join
 - uid: MinimalUtility.Tasks
   name: MinimalUtility.Tasks
@@ -2859,6 +2853,78 @@ references:
   isSpec: "True"
   fullName: System.Runtime.CompilerServices.DefaultInterpolatedStringHandler.ToStringAndClear
   nameWithType: DefaultInterpolatedStringHandler.ToStringAndClear
+- uid: System.Runtime.CompilerServices.InterpolatedStringHandlerArgumentAttribute
+  name: InterpolatedStringHandlerArgumentAttribute
+  href: api/System.Runtime.CompilerServices.InterpolatedStringHandlerArgumentAttribute.html
+  commentId: T:System.Runtime.CompilerServices.InterpolatedStringHandlerArgumentAttribute
+  fullName: System.Runtime.CompilerServices.InterpolatedStringHandlerArgumentAttribute
+  nameWithType: InterpolatedStringHandlerArgumentAttribute
+- uid: System.Runtime.CompilerServices.InterpolatedStringHandlerArgumentAttribute.#ctor(System.String)
+  name: InterpolatedStringHandlerArgumentAttribute(string)
+  href: api/System.Runtime.CompilerServices.InterpolatedStringHandlerArgumentAttribute.html#System_Runtime_CompilerServices_InterpolatedStringHandlerArgumentAttribute__ctor_System_String_
+  commentId: M:System.Runtime.CompilerServices.InterpolatedStringHandlerArgumentAttribute.#ctor(System.String)
+  name.vb: New(String)
+  fullName: System.Runtime.CompilerServices.InterpolatedStringHandlerArgumentAttribute.InterpolatedStringHandlerArgumentAttribute(string)
+  fullName.vb: System.Runtime.CompilerServices.InterpolatedStringHandlerArgumentAttribute.New(String)
+  nameWithType: InterpolatedStringHandlerArgumentAttribute.InterpolatedStringHandlerArgumentAttribute(string)
+  nameWithType.vb: InterpolatedStringHandlerArgumentAttribute.New(String)
+- uid: System.Runtime.CompilerServices.InterpolatedStringHandlerArgumentAttribute.#ctor(System.String[])
+  name: InterpolatedStringHandlerArgumentAttribute(params string[])
+  href: api/System.Runtime.CompilerServices.InterpolatedStringHandlerArgumentAttribute.html#System_Runtime_CompilerServices_InterpolatedStringHandlerArgumentAttribute__ctor_System_String___
+  commentId: M:System.Runtime.CompilerServices.InterpolatedStringHandlerArgumentAttribute.#ctor(System.String[])
+  name.vb: New(ParamArray String())
+  fullName: System.Runtime.CompilerServices.InterpolatedStringHandlerArgumentAttribute.InterpolatedStringHandlerArgumentAttribute(params string[])
+  fullName.vb: System.Runtime.CompilerServices.InterpolatedStringHandlerArgumentAttribute.New(ParamArray String())
+  nameWithType: InterpolatedStringHandlerArgumentAttribute.InterpolatedStringHandlerArgumentAttribute(params string[])
+  nameWithType.vb: InterpolatedStringHandlerArgumentAttribute.New(ParamArray String())
+- uid: System.Runtime.CompilerServices.InterpolatedStringHandlerArgumentAttribute.#ctor*
+  name: InterpolatedStringHandlerArgumentAttribute
+  href: api/System.Runtime.CompilerServices.InterpolatedStringHandlerArgumentAttribute.html#System_Runtime_CompilerServices_InterpolatedStringHandlerArgumentAttribute__ctor_
+  commentId: Overload:System.Runtime.CompilerServices.InterpolatedStringHandlerArgumentAttribute.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: System.Runtime.CompilerServices.InterpolatedStringHandlerArgumentAttribute.InterpolatedStringHandlerArgumentAttribute
+  fullName.vb: System.Runtime.CompilerServices.InterpolatedStringHandlerArgumentAttribute.New
+  nameWithType: InterpolatedStringHandlerArgumentAttribute.InterpolatedStringHandlerArgumentAttribute
+  nameWithType.vb: InterpolatedStringHandlerArgumentAttribute.New
+- uid: System.Runtime.CompilerServices.InterpolatedStringHandlerArgumentAttribute.Arguments
+  name: Arguments
+  href: api/System.Runtime.CompilerServices.InterpolatedStringHandlerArgumentAttribute.html#System_Runtime_CompilerServices_InterpolatedStringHandlerArgumentAttribute_Arguments
+  commentId: P:System.Runtime.CompilerServices.InterpolatedStringHandlerArgumentAttribute.Arguments
+  fullName: System.Runtime.CompilerServices.InterpolatedStringHandlerArgumentAttribute.Arguments
+  nameWithType: InterpolatedStringHandlerArgumentAttribute.Arguments
+- uid: System.Runtime.CompilerServices.InterpolatedStringHandlerArgumentAttribute.Arguments*
+  name: Arguments
+  href: api/System.Runtime.CompilerServices.InterpolatedStringHandlerArgumentAttribute.html#System_Runtime_CompilerServices_InterpolatedStringHandlerArgumentAttribute_Arguments_
+  commentId: Overload:System.Runtime.CompilerServices.InterpolatedStringHandlerArgumentAttribute.Arguments
+  isSpec: "True"
+  fullName: System.Runtime.CompilerServices.InterpolatedStringHandlerArgumentAttribute.Arguments
+  nameWithType: InterpolatedStringHandlerArgumentAttribute.Arguments
+- uid: System.Runtime.CompilerServices.InterpolatedStringHandlerAttribute
+  name: InterpolatedStringHandlerAttribute
+  href: api/System.Runtime.CompilerServices.InterpolatedStringHandlerAttribute.html
+  commentId: T:System.Runtime.CompilerServices.InterpolatedStringHandlerAttribute
+  fullName: System.Runtime.CompilerServices.InterpolatedStringHandlerAttribute
+  nameWithType: InterpolatedStringHandlerAttribute
+- uid: System.Runtime.CompilerServices.InterpolatedStringHandlerAttribute.#ctor
+  name: InterpolatedStringHandlerAttribute()
+  href: api/System.Runtime.CompilerServices.InterpolatedStringHandlerAttribute.html#System_Runtime_CompilerServices_InterpolatedStringHandlerAttribute__ctor
+  commentId: M:System.Runtime.CompilerServices.InterpolatedStringHandlerAttribute.#ctor
+  name.vb: New()
+  fullName: System.Runtime.CompilerServices.InterpolatedStringHandlerAttribute.InterpolatedStringHandlerAttribute()
+  fullName.vb: System.Runtime.CompilerServices.InterpolatedStringHandlerAttribute.New()
+  nameWithType: InterpolatedStringHandlerAttribute.InterpolatedStringHandlerAttribute()
+  nameWithType.vb: InterpolatedStringHandlerAttribute.New()
+- uid: System.Runtime.CompilerServices.InterpolatedStringHandlerAttribute.#ctor*
+  name: InterpolatedStringHandlerAttribute
+  href: api/System.Runtime.CompilerServices.InterpolatedStringHandlerAttribute.html#System_Runtime_CompilerServices_InterpolatedStringHandlerAttribute__ctor_
+  commentId: Overload:System.Runtime.CompilerServices.InterpolatedStringHandlerAttribute.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: System.Runtime.CompilerServices.InterpolatedStringHandlerAttribute.InterpolatedStringHandlerAttribute
+  fullName.vb: System.Runtime.CompilerServices.InterpolatedStringHandlerAttribute.New
+  nameWithType: InterpolatedStringHandlerAttribute.InterpolatedStringHandlerAttribute
+  nameWithType.vb: InterpolatedStringHandlerAttribute.New
 - uid: System.Runtime.CompilerServices.IsExternalInit
   name: IsExternalInit
   href: api/System.Runtime.CompilerServices.IsExternalInit.html

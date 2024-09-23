@@ -285,20 +285,10 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/MinimalUtility.String.StringUtils.yml",
+      "source_relative_path": "api/MinimalUtility.StringUtils.yml",
       "output": {
         ".html": {
-          "relative_path": "api/MinimalUtility.String.StringUtils.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MinimalUtility.String.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MinimalUtility.String.html"
+          "relative_path": "api/MinimalUtility.StringUtils.html"
         }
       },
       "version": ""
@@ -529,6 +519,26 @@
       "output": {
         ".html": {
           "relative_path": "api/System.Runtime.CompilerServices.DefaultInterpolatedStringHandler.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Runtime.CompilerServices.InterpolatedStringHandlerArgumentAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Runtime.CompilerServices.InterpolatedStringHandlerArgumentAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Runtime.CompilerServices.InterpolatedStringHandlerAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Runtime.CompilerServices.InterpolatedStringHandlerAttribute.html"
         }
       },
       "version": ""
