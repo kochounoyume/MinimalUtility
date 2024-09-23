@@ -14,7 +14,6 @@ namespace MinimalUtility
         /// <summary>
         /// 総メモリ使用量表示の単位指定列挙体.
         /// </summary>
-        [GenerateStringConverter(true)]
         public enum MemoryUnit : int
         {
             [InspectorName("バイト")]
