@@ -22,7 +22,13 @@ internal sealed class XEnumGenerator : IIncrementalGenerator
                 token.ThrowIfCancellationRequested();
                 return method;
             })
-            .Where(static method => method.Name is "GetNames" or "GetValues" or "GetName" or "IsDefined" or "Parse" or "TryParse")
+            .Where(static method => method is
+            {
+                IsGenericMethod: true,
+                Name: "GetValues" or "GetNames" or "GetName" or "IsDefined" or "Parse" or "TryParse"
+                or "ToXEnumString" or "HasBitFlag" or "GetEnumMemberValue"
+            }
+            && method.ContainingType.ToDisplayString() != "MinimalUtility.XEnum.Cache<T>")
             .Collect();
         context.RegisterSourceOutput(methods, RegisterCoreImplementation);
     }
@@ -95,8 +101,6 @@ internal sealed class XEnumGenerator : IIncrementalGenerator
 
         foreach (var method in metaDataArray)
         {
-            if (method.ContainingType.ToDisplayString() == "MinimalUtility.XEnum.Cache<T>") continue;
-            if (!method.IsGenericMethod) continue;
             var genericSymbol = method.TypeArguments[0];
             if (genericSymbol.DeclaredAccessibility != Accessibility.Public)
             {
