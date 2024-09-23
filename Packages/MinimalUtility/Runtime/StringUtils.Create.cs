@@ -6,8 +6,11 @@
 using System;
 using System.Runtime.CompilerServices;
 
-namespace MinimalUtility.String
+namespace MinimalUtility
 {
+    /// <summary>
+    /// 文字列を扱うための静的メソッド群を提供します.
+    /// </summary>
     public static partial class StringUtils
     {
         /// <summary>Creates a new string by using the specified provider to control the formatting of the specified interpolated string.</summary>

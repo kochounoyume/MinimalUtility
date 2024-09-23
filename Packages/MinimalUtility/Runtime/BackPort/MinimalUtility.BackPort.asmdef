@@ -1,6 +1,6 @@
 {
-    "name": "MinimalUtility.String",
-    "rootNamespace": "MinimalUtility.String",
+    "name": "MinimalUtility.BackPort",
+    "rootNamespace": "",
     "references": [],
     "includePlatforms": [],
     "excludePlatforms": [],

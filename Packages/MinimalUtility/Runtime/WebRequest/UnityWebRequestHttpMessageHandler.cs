@@ -24,7 +24,7 @@ namespace MinimalUtility.WebRequest
 
             foreach (var (key, values) in requestMessage.Headers)
             {
-                webRequest.SetRequestHeader(key, String.StringUtils.Join(',', values));
+                webRequest.SetRequestHeader(key, StringUtils.Join(',', values));
             }
 
             await webRequest.SendWebRequest().WithCancellation(cancellationToken);
