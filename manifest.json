@@ -225,16 +225,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/MinimalUtility.GenerateStringConverterAttribute.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MinimalUtility.GenerateStringConverterAttribute.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/MinimalUtility.IObjectPool-1.yml",
       "output": {
         ".html": {

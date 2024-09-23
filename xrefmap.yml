@@ -769,31 +769,6 @@ references:
   commentId: F:MinimalUtility.FrameDataProvider.MemoryUnit.MB
   fullName: MinimalUtility.FrameDataProvider.MemoryUnit.MB
   nameWithType: FrameDataProvider.MemoryUnit.MB
-- uid: MinimalUtility.GenerateStringConverterAttribute
-  name: GenerateStringConverterAttribute
-  href: api/MinimalUtility.GenerateStringConverterAttribute.html
-  commentId: T:MinimalUtility.GenerateStringConverterAttribute
-  fullName: MinimalUtility.GenerateStringConverterAttribute
-  nameWithType: GenerateStringConverterAttribute
-- uid: MinimalUtility.GenerateStringConverterAttribute.#ctor(System.Boolean)
-  name: GenerateStringConverterAttribute(bool)
-  href: api/MinimalUtility.GenerateStringConverterAttribute.html#MinimalUtility_GenerateStringConverterAttribute__ctor_System_Boolean_
-  commentId: M:MinimalUtility.GenerateStringConverterAttribute.#ctor(System.Boolean)
-  name.vb: New(Boolean)
-  fullName: MinimalUtility.GenerateStringConverterAttribute.GenerateStringConverterAttribute(bool)
-  fullName.vb: MinimalUtility.GenerateStringConverterAttribute.New(Boolean)
-  nameWithType: GenerateStringConverterAttribute.GenerateStringConverterAttribute(bool)
-  nameWithType.vb: GenerateStringConverterAttribute.New(Boolean)
-- uid: MinimalUtility.GenerateStringConverterAttribute.#ctor*
-  name: GenerateStringConverterAttribute
-  href: api/MinimalUtility.GenerateStringConverterAttribute.html#MinimalUtility_GenerateStringConverterAttribute__ctor_
-  commentId: Overload:MinimalUtility.GenerateStringConverterAttribute.#ctor
-  isSpec: "True"
-  name.vb: New
-  fullName: MinimalUtility.GenerateStringConverterAttribute.GenerateStringConverterAttribute
-  fullName.vb: MinimalUtility.GenerateStringConverterAttribute.New
-  nameWithType: GenerateStringConverterAttribute.GenerateStringConverterAttribute
-  nameWithType.vb: GenerateStringConverterAttribute.New
 - uid: MinimalUtility.IObjectPool`1
   name: IObjectPool<T>
   href: api/MinimalUtility.IObjectPool-1.html
