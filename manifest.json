@@ -15,16 +15,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Cysharp.Threading.Tasks.UniTask.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Cysharp.Threading.Tasks.UniTask.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/Cysharp.Threading.Tasks.UniTaskInternalAccessor.yml",
       "output": {
         ".html": {
