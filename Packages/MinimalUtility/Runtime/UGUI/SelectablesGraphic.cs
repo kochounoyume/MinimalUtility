@@ -15,7 +15,7 @@ namespace MinimalUtility.UGUI
         /// <summary>
         /// 子オブジェクト以下のGraphicのキャッシュ.
         /// </summary>
-        private IEnumerable<Graphic> childGraphics;
+        private IReadOnlyList<Graphic> childGraphics;
 
         /// <inheritdoc>
         /// Selectableの押下時の色変化はここを呼び出しているみたいなので、ちょっと処理を上書き.
