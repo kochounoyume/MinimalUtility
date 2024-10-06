@@ -37,7 +37,7 @@ namespace MinimalUtility.Tasks
                     {
                         var (self, count) = args;
                         var results
-                            = await Object.InstantiateAsync(self.original, self.root).ToUniTask(cancellationToken: self.DisposeToken);
+                            = await Object.InstantiateAsync(self.original, self.root).WithCancellation(self.DisposeToken);
                         for (int i = 0; i < count; i++)
                         {
                             self.pool.Push(results[i]);
@@ -70,7 +70,7 @@ namespace MinimalUtility.Tasks
                 return v;
             }
 
-            var results = await Object.InstantiateAsync(original, root).ToUniTask(cancellationToken: cancellationToken);
+            var results = await Object.InstantiateAsync(original, root).WithCancellation(cancellationToken);
             return results[0];
         }
 
@@ -87,7 +87,7 @@ namespace MinimalUtility.Tasks
             if (!TryGetPool(pool, results, out var alreadyCount))
             {
                 var remains
-                    = await Object.InstantiateAsync(original, count - alreadyCount, root).ToUniTask(cancellationToken: cancellationToken);
+                    = await Object.InstantiateAsync(original, count - alreadyCount, root).WithCancellation(cancellationToken);
                 remains.AsSpan().CopyTo(results.AsSpan(alreadyCount));
             }
             return results;
