@@ -1,3 +1,4 @@
+using System;
 using System.Reflection;
 using UnityEditor;
 using UnityEditor.UIElements;
@@ -20,7 +21,7 @@ namespace MinimalUtility.Editor
             VisualElement root = new ();
             InspectorElement.FillDefaultInspector(root, serializedObject, this);
 
-            foreach (MethodInfo methodInfo in target.GetType().GetMethods(flags))
+            foreach (MethodInfo methodInfo in target.GetType().GetMethods(flags).AsSpan())
             {
                 foreach (ButtonAttribute attr in methodInfo.GetCustomAttributes<ButtonAttribute>())
                 {

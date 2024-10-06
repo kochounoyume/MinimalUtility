@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+﻿using System;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -15,7 +15,7 @@ namespace MinimalUtility.UGUI
         /// <summary>
         /// 子オブジェクト以下のGraphicのキャッシュ.
         /// </summary>
-        private IReadOnlyList<Graphic> childGraphics;
+        private ReadOnlyMemory<Graphic> childGraphics;
 
         /// <inheritdoc>
         /// Selectableの押下時の色変化はここを呼び出しているみたいなので、ちょっと処理を上書き.
@@ -32,11 +32,7 @@ namespace MinimalUtility.UGUI
         protected override void Start()
         {
             base.Start();
-            var childGraphicList = this.GetComponentsInOnlyChildren<Graphic>();
-            if (childGraphicList.Count > 0)
-            {
-                childGraphics = childGraphicList;
-            }
+            childGraphics = this.GetComponentsInOnlyChildren<Graphic>();
         }
     }
 }

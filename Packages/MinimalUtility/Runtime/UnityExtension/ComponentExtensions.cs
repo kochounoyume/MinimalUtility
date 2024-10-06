@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+﻿using System;
 using System.Runtime.CompilerServices;
 using UnityEngine;
 
@@ -10,51 +10,6 @@ namespace MinimalUtility
     public static class ComponentExtensions
     {
         /// <summary>
-        /// 子オブジェクトの<typeparamref name="T"/>コンポーネントを取得する.
-        /// <remarks>
-        /// <see cref="Component.GetComponentInChildren{T}()"/>と異なり、孫オブジェクト以降は検索しない.
-        /// </remarks>
-        /// </summary>
-        /// <param name="self">対象の<see cref="Component"/>.</param>
-        /// <typeparam name="T">取得したいコンポーネントの型.</typeparam>
-        /// <returns>取得したコンポーネントインスタンス.</returns>
-        [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static T GetComponentInOnlyChild<T>(this Component self) where T : Component
-        {
-            Transform transform = self.transform;
-            foreach (Transform child in transform)
-            {
-                if (child.gameObject.TryGetComponent(out T component))
-                {
-                    return component;
-                }
-            }
-            return null;
-        }
-
-        /// <summary>
-        /// 子オブジェクトの<typeparamref name="T"/>コンポーネントを取得する.
-        /// </summary>
-        /// <param name="self">対象の<see cref="Component"/>.</param>
-        /// <param name="component">取得したコンポーネントインスタンス.</param>
-        /// <typeparam name="T">取得したいコンポーネントの型.</typeparam>
-        /// <returns>コンポーネントが取得できた場合はtrue.</returns>
-        [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static bool TryGetComponentInOnlyChild<T>(this Component self, out T component) where T : Component
-        {
-            Transform transform = self.transform;
-            foreach (Transform child in transform)
-            {
-                if (child.gameObject.TryGetComponent(out component))
-                {
-                    return true;
-                }
-            }
-            component = null;
-            return false;
-        }
-
-        /// <summary>
         /// 子オブジェクトの<typeparamref name="T"/>コンポーネントを全て取得する.
         /// <remarks>
         /// <see cref="Component.GetComponentsInChildren{T}()"/>と異なり、孫オブジェクト以降は検索しない.
@@ -64,19 +19,23 @@ namespace MinimalUtility
         /// <typeparam name="T">取得したいコンポーネントの型.</typeparam>
         /// <returns>取得したコンポーネントインスタンスのコレクション.</returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static IReadOnlyList<T> GetComponentsInOnlyChildren<T>(this Component self) where T : Component
+        public static ReadOnlyMemory<T> GetComponentsInOnlyChildren<T>(this Component self) where T : Component
         {
             Transform transform = self.transform;
-            List<T> list = new List<T>(transform.childCount);
-            foreach (Transform child in transform)
+            int limit = transform.childCount;
+            if (limit == 0) return ReadOnlyMemory<T>.Empty;
+
+            T[] array = new T[limit];
+            Span<T> span = array.AsSpan();
+            int count = 0;
+            for (int i = 0; i < span.Length; i++)
             {
-                if (child.gameObject.TryGetComponent(out T component))
+                if (transform.GetChild(i).gameObject.TryGetComponent(out T component))
                 {
-                    list.Add(component);
+                    span[count++] = component;
                 }
             }
-            list.TrimExcess();
-            return list;
+            return new ReadOnlyMemory<T>(array, 0, count);
         }
 
         /// <summary>
@@ -88,11 +47,8 @@ namespace MinimalUtility
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static T SafeGetComponent<T>(this Component self) where T : Component
         {
-            if (self.TryGetComponent(out T component))
-            {
-                return component;
-            }
-            return null;
+            self.gameObject.TryGetComponent(out T component);
+            return component;
         }
     }
 }
