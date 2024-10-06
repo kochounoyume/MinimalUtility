@@ -99,175 +99,6 @@ references:
   commentId: F:MinimalUtility.ButtonAttribute.Parameters
   fullName: MinimalUtility.ButtonAttribute.Parameters
   nameWithType: ButtonAttribute.Parameters
-- uid: MinimalUtility.CommonObjectPool`1
-  name: CommonObjectPool<T>
-  href: api/MinimalUtility.CommonObjectPool-1.html
-  commentId: T:MinimalUtility.CommonObjectPool`1
-  name.vb: CommonObjectPool(Of T)
-  fullName: MinimalUtility.CommonObjectPool<T>
-  fullName.vb: MinimalUtility.CommonObjectPool(Of T)
-  nameWithType: CommonObjectPool<T>
-  nameWithType.vb: CommonObjectPool(Of T)
-- uid: MinimalUtility.CommonObjectPool`1.#ctor(`0,Transform,MinimalUtility.CommonObjectPool{`0}.PoolSizeSetting)
-  name: CommonObjectPool(T, Transform, PoolSizeSetting)
-  href: api/MinimalUtility.CommonObjectPool-1.html#MinimalUtility_CommonObjectPool_1__ctor__0_Transform_MinimalUtility_CommonObjectPool__0__PoolSizeSetting_
-  commentId: M:MinimalUtility.CommonObjectPool`1.#ctor(`0,Transform,MinimalUtility.CommonObjectPool{`0}.PoolSizeSetting)
-  name.vb: New(T, Transform, PoolSizeSetting)
-  fullName: MinimalUtility.CommonObjectPool<T>.CommonObjectPool(T, Transform, MinimalUtility.CommonObjectPool<T>.PoolSizeSetting)
-  fullName.vb: MinimalUtility.CommonObjectPool(Of T).New(T, Transform, MinimalUtility.CommonObjectPool(Of T).PoolSizeSetting)
-  nameWithType: CommonObjectPool<T>.CommonObjectPool(T, Transform, CommonObjectPool<T>.PoolSizeSetting)
-  nameWithType.vb: CommonObjectPool(Of T).New(T, Transform, CommonObjectPool(Of T).PoolSizeSetting)
-- uid: MinimalUtility.CommonObjectPool`1.#ctor*
-  name: CommonObjectPool
-  href: api/MinimalUtility.CommonObjectPool-1.html#MinimalUtility_CommonObjectPool_1__ctor_
-  commentId: Overload:MinimalUtility.CommonObjectPool`1.#ctor
-  isSpec: "True"
-  name.vb: New
-  fullName: MinimalUtility.CommonObjectPool<T>.CommonObjectPool
-  fullName.vb: MinimalUtility.CommonObjectPool(Of T).New
-  nameWithType: CommonObjectPool<T>.CommonObjectPool
-  nameWithType.vb: CommonObjectPool(Of T).New
-- uid: MinimalUtility.CommonObjectPool`1.Clear
-  name: Clear()
-  href: api/MinimalUtility.CommonObjectPool-1.html#MinimalUtility_CommonObjectPool_1_Clear
-  commentId: M:MinimalUtility.CommonObjectPool`1.Clear
-  fullName: MinimalUtility.CommonObjectPool<T>.Clear()
-  fullName.vb: MinimalUtility.CommonObjectPool(Of T).Clear()
-  nameWithType: CommonObjectPool<T>.Clear()
-  nameWithType.vb: CommonObjectPool(Of T).Clear()
-- uid: MinimalUtility.CommonObjectPool`1.Clear*
-  name: Clear
-  href: api/MinimalUtility.CommonObjectPool-1.html#MinimalUtility_CommonObjectPool_1_Clear_
-  commentId: Overload:MinimalUtility.CommonObjectPool`1.Clear
-  isSpec: "True"
-  fullName: MinimalUtility.CommonObjectPool<T>.Clear
-  fullName.vb: MinimalUtility.CommonObjectPool(Of T).Clear
-  nameWithType: CommonObjectPool<T>.Clear
-  nameWithType.vb: CommonObjectPool(Of T).Clear
-- uid: MinimalUtility.CommonObjectPool`1.CountInactive
-  name: CountInactive
-  href: api/MinimalUtility.CommonObjectPool-1.html#MinimalUtility_CommonObjectPool_1_CountInactive
-  commentId: P:MinimalUtility.CommonObjectPool`1.CountInactive
-  fullName: MinimalUtility.CommonObjectPool<T>.CountInactive
-  fullName.vb: MinimalUtility.CommonObjectPool(Of T).CountInactive
-  nameWithType: CommonObjectPool<T>.CountInactive
-  nameWithType.vb: CommonObjectPool(Of T).CountInactive
-- uid: MinimalUtility.CommonObjectPool`1.CountInactive*
-  name: CountInactive
-  href: api/MinimalUtility.CommonObjectPool-1.html#MinimalUtility_CommonObjectPool_1_CountInactive_
-  commentId: Overload:MinimalUtility.CommonObjectPool`1.CountInactive
-  isSpec: "True"
-  fullName: MinimalUtility.CommonObjectPool<T>.CountInactive
-  fullName.vb: MinimalUtility.CommonObjectPool(Of T).CountInactive
-  nameWithType: CommonObjectPool<T>.CountInactive
-  nameWithType.vb: CommonObjectPool(Of T).CountInactive
-- uid: MinimalUtility.CommonObjectPool`1.Get
-  name: Get()
-  href: api/MinimalUtility.CommonObjectPool-1.html#MinimalUtility_CommonObjectPool_1_Get
-  commentId: M:MinimalUtility.CommonObjectPool`1.Get
-  fullName: MinimalUtility.CommonObjectPool<T>.Get()
-  fullName.vb: MinimalUtility.CommonObjectPool(Of T).Get()
-  nameWithType: CommonObjectPool<T>.Get()
-  nameWithType.vb: CommonObjectPool(Of T).Get()
-- uid: MinimalUtility.CommonObjectPool`1.Get(`0@)
-  name: Get(out T)
-  href: api/MinimalUtility.CommonObjectPool-1.html#MinimalUtility_CommonObjectPool_1_Get__0__
-  commentId: M:MinimalUtility.CommonObjectPool`1.Get(`0@)
-  name.vb: Get(T)
-  fullName: MinimalUtility.CommonObjectPool<T>.Get(out T)
-  fullName.vb: MinimalUtility.CommonObjectPool(Of T).Get(T)
-  nameWithType: CommonObjectPool<T>.Get(out T)
-  nameWithType.vb: CommonObjectPool(Of T).Get(T)
-- uid: MinimalUtility.CommonObjectPool`1.Get*
-  name: Get
-  href: api/MinimalUtility.CommonObjectPool-1.html#MinimalUtility_CommonObjectPool_1_Get_
-  commentId: Overload:MinimalUtility.CommonObjectPool`1.Get
-  isSpec: "True"
-  fullName: MinimalUtility.CommonObjectPool<T>.Get
-  fullName.vb: MinimalUtility.CommonObjectPool(Of T).Get
-  nameWithType: CommonObjectPool<T>.Get
-  nameWithType.vb: CommonObjectPool(Of T).Get
-- uid: MinimalUtility.CommonObjectPool`1.GetWithToken(`0@)
-  name: GetWithToken(out T)
-  href: api/MinimalUtility.CommonObjectPool-1.html#MinimalUtility_CommonObjectPool_1_GetWithToken__0__
-  commentId: M:MinimalUtility.CommonObjectPool`1.GetWithToken(`0@)
-  name.vb: GetWithToken(T)
-  fullName: MinimalUtility.CommonObjectPool<T>.GetWithToken(out T)
-  fullName.vb: MinimalUtility.CommonObjectPool(Of T).GetWithToken(T)
-  nameWithType: CommonObjectPool<T>.GetWithToken(out T)
-  nameWithType.vb: CommonObjectPool(Of T).GetWithToken(T)
-- uid: MinimalUtility.CommonObjectPool`1.GetWithToken*
-  name: GetWithToken
-  href: api/MinimalUtility.CommonObjectPool-1.html#MinimalUtility_CommonObjectPool_1_GetWithToken_
-  commentId: Overload:MinimalUtility.CommonObjectPool`1.GetWithToken
-  isSpec: "True"
-  fullName: MinimalUtility.CommonObjectPool<T>.GetWithToken
-  fullName.vb: MinimalUtility.CommonObjectPool(Of T).GetWithToken
-  nameWithType: CommonObjectPool<T>.GetWithToken
-  nameWithType.vb: CommonObjectPool(Of T).GetWithToken
-- uid: MinimalUtility.CommonObjectPool`1.PoolSizeSetting
-  name: CommonObjectPool<T>.PoolSizeSetting
-  href: api/MinimalUtility.CommonObjectPool-1.PoolSizeSetting.html
-  commentId: T:MinimalUtility.CommonObjectPool`1.PoolSizeSetting
-  name.vb: CommonObjectPool(Of T).PoolSizeSetting
-  fullName: MinimalUtility.CommonObjectPool<T>.PoolSizeSetting
-  fullName.vb: MinimalUtility.CommonObjectPool(Of T).PoolSizeSetting
-  nameWithType: CommonObjectPool<T>.PoolSizeSetting
-  nameWithType.vb: CommonObjectPool(Of T).PoolSizeSetting
-- uid: MinimalUtility.CommonObjectPool`1.PoolSizeSetting.#ctor(System.Int32@,System.Int32@)
-  name: PoolSizeSetting(in int, in int)
-  href: api/MinimalUtility.CommonObjectPool-1.PoolSizeSetting.html#MinimalUtility_CommonObjectPool_1_PoolSizeSetting__ctor_System_Int32__System_Int32__
-  commentId: M:MinimalUtility.CommonObjectPool`1.PoolSizeSetting.#ctor(System.Int32@,System.Int32@)
-  name.vb: New(Integer, Integer)
-  fullName: MinimalUtility.CommonObjectPool<T>.PoolSizeSetting.PoolSizeSetting(in int, in int)
-  fullName.vb: MinimalUtility.CommonObjectPool(Of T).PoolSizeSetting.New(Integer, Integer)
-  nameWithType: CommonObjectPool<T>.PoolSizeSetting.PoolSizeSetting(in int, in int)
-  nameWithType.vb: CommonObjectPool(Of T).PoolSizeSetting.New(Integer, Integer)
-- uid: MinimalUtility.CommonObjectPool`1.PoolSizeSetting.#ctor*
-  name: PoolSizeSetting
-  href: api/MinimalUtility.CommonObjectPool-1.PoolSizeSetting.html#MinimalUtility_CommonObjectPool_1_PoolSizeSetting__ctor_
-  commentId: Overload:MinimalUtility.CommonObjectPool`1.PoolSizeSetting.#ctor
-  isSpec: "True"
-  name.vb: New
-  fullName: MinimalUtility.CommonObjectPool<T>.PoolSizeSetting.PoolSizeSetting
-  fullName.vb: MinimalUtility.CommonObjectPool(Of T).PoolSizeSetting.New
-  nameWithType: CommonObjectPool<T>.PoolSizeSetting.PoolSizeSetting
-  nameWithType.vb: CommonObjectPool(Of T).PoolSizeSetting.New
-- uid: MinimalUtility.CommonObjectPool`1.Release(`0)
-  name: Release(T)
-  href: api/MinimalUtility.CommonObjectPool-1.html#MinimalUtility_CommonObjectPool_1_Release__0_
-  commentId: M:MinimalUtility.CommonObjectPool`1.Release(`0)
-  fullName: MinimalUtility.CommonObjectPool<T>.Release(T)
-  fullName.vb: MinimalUtility.CommonObjectPool(Of T).Release(T)
-  nameWithType: CommonObjectPool<T>.Release(T)
-  nameWithType.vb: CommonObjectPool(Of T).Release(T)
-- uid: MinimalUtility.CommonObjectPool`1.Release*
-  name: Release
-  href: api/MinimalUtility.CommonObjectPool-1.html#MinimalUtility_CommonObjectPool_1_Release_
-  commentId: Overload:MinimalUtility.CommonObjectPool`1.Release
-  isSpec: "True"
-  fullName: MinimalUtility.CommonObjectPool<T>.Release
-  fullName.vb: MinimalUtility.CommonObjectPool(Of T).Release
-  nameWithType: CommonObjectPool<T>.Release
-  nameWithType.vb: CommonObjectPool(Of T).Release
-- uid: MinimalUtility.CommonObjectPool`1.ReleaseAll(System.Action{`0})
-  name: ReleaseAll(Action<T>)
-  href: api/MinimalUtility.CommonObjectPool-1.html#MinimalUtility_CommonObjectPool_1_ReleaseAll_System_Action__0__
-  commentId: M:MinimalUtility.CommonObjectPool`1.ReleaseAll(System.Action{`0})
-  name.vb: ReleaseAll(Action(Of T))
-  fullName: MinimalUtility.CommonObjectPool<T>.ReleaseAll(System.Action<T>)
-  fullName.vb: MinimalUtility.CommonObjectPool(Of T).ReleaseAll(System.Action(Of T))
-  nameWithType: CommonObjectPool<T>.ReleaseAll(Action<T>)
-  nameWithType.vb: CommonObjectPool(Of T).ReleaseAll(Action(Of T))
-- uid: MinimalUtility.CommonObjectPool`1.ReleaseAll*
-  name: ReleaseAll
-  href: api/MinimalUtility.CommonObjectPool-1.html#MinimalUtility_CommonObjectPool_1_ReleaseAll_
-  commentId: Overload:MinimalUtility.CommonObjectPool`1.ReleaseAll
-  isSpec: "True"
-  fullName: MinimalUtility.CommonObjectPool<T>.ReleaseAll
-  fullName.vb: MinimalUtility.CommonObjectPool(Of T).ReleaseAll
-  nameWithType: CommonObjectPool<T>.ReleaseAll
-  nameWithType.vb: CommonObjectPool(Of T).ReleaseAll
 - uid: MinimalUtility.ComponentExtensions
   name: ComponentExtensions
   href: api/MinimalUtility.ComponentExtensions.html
@@ -674,51 +505,204 @@ references:
   commentId: F:MinimalUtility.FrameDataProvider.MemoryUnit.MB
   fullName: MinimalUtility.FrameDataProvider.MemoryUnit.MB
   nameWithType: FrameDataProvider.MemoryUnit.MB
-- uid: MinimalUtility.IObjectPool`1
-  name: IObjectPool<T>
-  href: api/MinimalUtility.IObjectPool-1.html
-  commentId: T:MinimalUtility.IObjectPool`1
-  name.vb: IObjectPool(Of T)
-  fullName: MinimalUtility.IObjectPool<T>
-  fullName.vb: MinimalUtility.IObjectPool(Of T)
-  nameWithType: IObjectPool<T>
-  nameWithType.vb: IObjectPool(Of T)
-- uid: MinimalUtility.IObjectPool`1.GetWithToken(`0@)
-  name: GetWithToken(out T)
-  href: api/MinimalUtility.IObjectPool-1.html#MinimalUtility_IObjectPool_1_GetWithToken__0__
-  commentId: M:MinimalUtility.IObjectPool`1.GetWithToken(`0@)
-  name.vb: GetWithToken(T)
-  fullName: MinimalUtility.IObjectPool<T>.GetWithToken(out T)
-  fullName.vb: MinimalUtility.IObjectPool(Of T).GetWithToken(T)
-  nameWithType: IObjectPool<T>.GetWithToken(out T)
-  nameWithType.vb: IObjectPool(Of T).GetWithToken(T)
-- uid: MinimalUtility.IObjectPool`1.GetWithToken*
-  name: GetWithToken
-  href: api/MinimalUtility.IObjectPool-1.html#MinimalUtility_IObjectPool_1_GetWithToken_
-  commentId: Overload:MinimalUtility.IObjectPool`1.GetWithToken
+- uid: MinimalUtility.GameObjectPool`1
+  name: GameObjectPool<T>
+  href: api/MinimalUtility.GameObjectPool-1.html
+  commentId: T:MinimalUtility.GameObjectPool`1
+  name.vb: GameObjectPool(Of T)
+  fullName: MinimalUtility.GameObjectPool<T>
+  fullName.vb: MinimalUtility.GameObjectPool(Of T)
+  nameWithType: GameObjectPool<T>
+  nameWithType.vb: GameObjectPool(Of T)
+- uid: MinimalUtility.GameObjectPool`1.#ctor(`0,Transform,System.Int32)
+  name: GameObjectPool(T, Transform, int)
+  href: api/MinimalUtility.GameObjectPool-1.html#MinimalUtility_GameObjectPool_1__ctor__0_Transform_System_Int32_
+  commentId: M:MinimalUtility.GameObjectPool`1.#ctor(`0,Transform,System.Int32)
+  name.vb: New(T, Transform, Integer)
+  fullName: MinimalUtility.GameObjectPool<T>.GameObjectPool(T, Transform, int)
+  fullName.vb: MinimalUtility.GameObjectPool(Of T).New(T, Transform, Integer)
+  nameWithType: GameObjectPool<T>.GameObjectPool(T, Transform, int)
+  nameWithType.vb: GameObjectPool(Of T).New(T, Transform, Integer)
+- uid: MinimalUtility.GameObjectPool`1.#ctor*
+  name: GameObjectPool
+  href: api/MinimalUtility.GameObjectPool-1.html#MinimalUtility_GameObjectPool_1__ctor_
+  commentId: Overload:MinimalUtility.GameObjectPool`1.#ctor
   isSpec: "True"
-  fullName: MinimalUtility.IObjectPool<T>.GetWithToken
-  fullName.vb: MinimalUtility.IObjectPool(Of T).GetWithToken
-  nameWithType: IObjectPool<T>.GetWithToken
-  nameWithType.vb: IObjectPool(Of T).GetWithToken
-- uid: MinimalUtility.IObjectPool`1.ReleaseAll(System.Action{`0})
-  name: ReleaseAll(Action<T>)
-  href: api/MinimalUtility.IObjectPool-1.html#MinimalUtility_IObjectPool_1_ReleaseAll_System_Action__0__
-  commentId: M:MinimalUtility.IObjectPool`1.ReleaseAll(System.Action{`0})
-  name.vb: ReleaseAll(Action(Of T))
-  fullName: MinimalUtility.IObjectPool<T>.ReleaseAll(System.Action<T>)
-  fullName.vb: MinimalUtility.IObjectPool(Of T).ReleaseAll(System.Action(Of T))
-  nameWithType: IObjectPool<T>.ReleaseAll(Action<T>)
-  nameWithType.vb: IObjectPool(Of T).ReleaseAll(Action(Of T))
-- uid: MinimalUtility.IObjectPool`1.ReleaseAll*
-  name: ReleaseAll
-  href: api/MinimalUtility.IObjectPool-1.html#MinimalUtility_IObjectPool_1_ReleaseAll_
-  commentId: Overload:MinimalUtility.IObjectPool`1.ReleaseAll
+  name.vb: New
+  fullName: MinimalUtility.GameObjectPool<T>.GameObjectPool
+  fullName.vb: MinimalUtility.GameObjectPool(Of T).New
+  nameWithType: GameObjectPool<T>.GameObjectPool
+  nameWithType.vb: GameObjectPool(Of T).New
+- uid: MinimalUtility.GameObjectPool`1.Clear
+  name: Clear()
+  href: api/MinimalUtility.GameObjectPool-1.html#MinimalUtility_GameObjectPool_1_Clear
+  commentId: M:MinimalUtility.GameObjectPool`1.Clear
+  fullName: MinimalUtility.GameObjectPool<T>.Clear()
+  fullName.vb: MinimalUtility.GameObjectPool(Of T).Clear()
+  nameWithType: GameObjectPool<T>.Clear()
+  nameWithType.vb: GameObjectPool(Of T).Clear()
+- uid: MinimalUtility.GameObjectPool`1.Clear*
+  name: Clear
+  href: api/MinimalUtility.GameObjectPool-1.html#MinimalUtility_GameObjectPool_1_Clear_
+  commentId: Overload:MinimalUtility.GameObjectPool`1.Clear
   isSpec: "True"
-  fullName: MinimalUtility.IObjectPool<T>.ReleaseAll
-  fullName.vb: MinimalUtility.IObjectPool(Of T).ReleaseAll
-  nameWithType: IObjectPool<T>.ReleaseAll
-  nameWithType.vb: IObjectPool(Of T).ReleaseAll
+  fullName: MinimalUtility.GameObjectPool<T>.Clear
+  fullName.vb: MinimalUtility.GameObjectPool(Of T).Clear
+  nameWithType: GameObjectPool<T>.Clear
+  nameWithType.vb: GameObjectPool(Of T).Clear
+- uid: MinimalUtility.GameObjectPool`1.CountInactive
+  name: CountInactive
+  href: api/MinimalUtility.GameObjectPool-1.html#MinimalUtility_GameObjectPool_1_CountInactive
+  commentId: P:MinimalUtility.GameObjectPool`1.CountInactive
+  fullName: MinimalUtility.GameObjectPool<T>.CountInactive
+  fullName.vb: MinimalUtility.GameObjectPool(Of T).CountInactive
+  nameWithType: GameObjectPool<T>.CountInactive
+  nameWithType.vb: GameObjectPool(Of T).CountInactive
+- uid: MinimalUtility.GameObjectPool`1.CountInactive*
+  name: CountInactive
+  href: api/MinimalUtility.GameObjectPool-1.html#MinimalUtility_GameObjectPool_1_CountInactive_
+  commentId: Overload:MinimalUtility.GameObjectPool`1.CountInactive
+  isSpec: "True"
+  fullName: MinimalUtility.GameObjectPool<T>.CountInactive
+  fullName.vb: MinimalUtility.GameObjectPool(Of T).CountInactive
+  nameWithType: GameObjectPool<T>.CountInactive
+  nameWithType.vb: GameObjectPool(Of T).CountInactive
+- uid: MinimalUtility.GameObjectPool`1.CreatePooledObject(`0,MinimalUtility.GameObjectPool{`0})
+  name: CreatePooledObject(T, GameObjectPool<T>)
+  href: api/MinimalUtility.GameObjectPool-1.html#MinimalUtility_GameObjectPool_1_CreatePooledObject__0_MinimalUtility_GameObjectPool__0__
+  commentId: M:MinimalUtility.GameObjectPool`1.CreatePooledObject(`0,MinimalUtility.GameObjectPool{`0})
+  name.vb: CreatePooledObject(T, GameObjectPool(Of T))
+  fullName: MinimalUtility.GameObjectPool<T>.CreatePooledObject(T, MinimalUtility.GameObjectPool<T>)
+  fullName.vb: MinimalUtility.GameObjectPool(Of T).CreatePooledObject(T, MinimalUtility.GameObjectPool(Of T))
+  nameWithType: GameObjectPool<T>.CreatePooledObject(T, GameObjectPool<T>)
+  nameWithType.vb: GameObjectPool(Of T).CreatePooledObject(T, GameObjectPool(Of T))
+- uid: MinimalUtility.GameObjectPool`1.CreatePooledObject*
+  name: CreatePooledObject
+  href: api/MinimalUtility.GameObjectPool-1.html#MinimalUtility_GameObjectPool_1_CreatePooledObject_
+  commentId: Overload:MinimalUtility.GameObjectPool`1.CreatePooledObject
+  isSpec: "True"
+  fullName: MinimalUtility.GameObjectPool<T>.CreatePooledObject
+  fullName.vb: MinimalUtility.GameObjectPool(Of T).CreatePooledObject
+  nameWithType: GameObjectPool<T>.CreatePooledObject
+  nameWithType.vb: GameObjectPool(Of T).CreatePooledObject
+- uid: MinimalUtility.GameObjectPool`1.DisposeToken
+  name: DisposeToken
+  href: api/MinimalUtility.GameObjectPool-1.html#MinimalUtility_GameObjectPool_1_DisposeToken
+  commentId: P:MinimalUtility.GameObjectPool`1.DisposeToken
+  fullName: MinimalUtility.GameObjectPool<T>.DisposeToken
+  fullName.vb: MinimalUtility.GameObjectPool(Of T).DisposeToken
+  nameWithType: GameObjectPool<T>.DisposeToken
+  nameWithType.vb: GameObjectPool(Of T).DisposeToken
+- uid: MinimalUtility.GameObjectPool`1.DisposeToken*
+  name: DisposeToken
+  href: api/MinimalUtility.GameObjectPool-1.html#MinimalUtility_GameObjectPool_1_DisposeToken_
+  commentId: Overload:MinimalUtility.GameObjectPool`1.DisposeToken
+  isSpec: "True"
+  fullName: MinimalUtility.GameObjectPool<T>.DisposeToken
+  fullName.vb: MinimalUtility.GameObjectPool(Of T).DisposeToken
+  nameWithType: GameObjectPool<T>.DisposeToken
+  nameWithType.vb: GameObjectPool(Of T).DisposeToken
+- uid: MinimalUtility.GameObjectPool`1.Get
+  name: Get()
+  href: api/MinimalUtility.GameObjectPool-1.html#MinimalUtility_GameObjectPool_1_Get
+  commentId: M:MinimalUtility.GameObjectPool`1.Get
+  fullName: MinimalUtility.GameObjectPool<T>.Get()
+  fullName.vb: MinimalUtility.GameObjectPool(Of T).Get()
+  nameWithType: GameObjectPool<T>.Get()
+  nameWithType.vb: GameObjectPool(Of T).Get()
+- uid: MinimalUtility.GameObjectPool`1.Get*
+  name: Get
+  href: api/MinimalUtility.GameObjectPool-1.html#MinimalUtility_GameObjectPool_1_Get_
+  commentId: Overload:MinimalUtility.GameObjectPool`1.Get
+  isSpec: "True"
+  fullName: MinimalUtility.GameObjectPool<T>.Get
+  fullName.vb: MinimalUtility.GameObjectPool(Of T).Get
+  nameWithType: GameObjectPool<T>.Get
+  nameWithType.vb: GameObjectPool(Of T).Get
+- uid: MinimalUtility.GameObjectPool`1.GetScope
+  name: GetScope()
+  href: api/MinimalUtility.GameObjectPool-1.html#MinimalUtility_GameObjectPool_1_GetScope
+  commentId: M:MinimalUtility.GameObjectPool`1.GetScope
+  fullName: MinimalUtility.GameObjectPool<T>.GetScope()
+  fullName.vb: MinimalUtility.GameObjectPool(Of T).GetScope()
+  nameWithType: GameObjectPool<T>.GetScope()
+  nameWithType.vb: GameObjectPool(Of T).GetScope()
+- uid: MinimalUtility.GameObjectPool`1.GetScope(`0@)
+  name: GetScope(out T)
+  href: api/MinimalUtility.GameObjectPool-1.html#MinimalUtility_GameObjectPool_1_GetScope__0__
+  commentId: M:MinimalUtility.GameObjectPool`1.GetScope(`0@)
+  name.vb: GetScope(T)
+  fullName: MinimalUtility.GameObjectPool<T>.GetScope(out T)
+  fullName.vb: MinimalUtility.GameObjectPool(Of T).GetScope(T)
+  nameWithType: GameObjectPool<T>.GetScope(out T)
+  nameWithType.vb: GameObjectPool(Of T).GetScope(T)
+- uid: MinimalUtility.GameObjectPool`1.GetScope*
+  name: GetScope
+  href: api/MinimalUtility.GameObjectPool-1.html#MinimalUtility_GameObjectPool_1_GetScope_
+  commentId: Overload:MinimalUtility.GameObjectPool`1.GetScope
+  isSpec: "True"
+  fullName: MinimalUtility.GameObjectPool<T>.GetScope
+  fullName.vb: MinimalUtility.GameObjectPool(Of T).GetScope
+  nameWithType: GameObjectPool<T>.GetScope
+  nameWithType.vb: GameObjectPool(Of T).GetScope
+- uid: MinimalUtility.GameObjectPool`1.Release(`0)
+  name: Release(T)
+  href: api/MinimalUtility.GameObjectPool-1.html#MinimalUtility_GameObjectPool_1_Release__0_
+  commentId: M:MinimalUtility.GameObjectPool`1.Release(`0)
+  fullName: MinimalUtility.GameObjectPool<T>.Release(T)
+  fullName.vb: MinimalUtility.GameObjectPool(Of T).Release(T)
+  nameWithType: GameObjectPool<T>.Release(T)
+  nameWithType.vb: GameObjectPool(Of T).Release(T)
+- uid: MinimalUtility.GameObjectPool`1.Release*
+  name: Release
+  href: api/MinimalUtility.GameObjectPool-1.html#MinimalUtility_GameObjectPool_1_Release_
+  commentId: Overload:MinimalUtility.GameObjectPool`1.Release
+  isSpec: "True"
+  fullName: MinimalUtility.GameObjectPool<T>.Release
+  fullName.vb: MinimalUtility.GameObjectPool(Of T).Release
+  nameWithType: GameObjectPool<T>.Release
+  nameWithType.vb: GameObjectPool(Of T).Release
+- uid: MinimalUtility.GameObjectPool`1.ThrowIfDisposed
+  name: ThrowIfDisposed()
+  href: api/MinimalUtility.GameObjectPool-1.html#MinimalUtility_GameObjectPool_1_ThrowIfDisposed
+  commentId: M:MinimalUtility.GameObjectPool`1.ThrowIfDisposed
+  fullName: MinimalUtility.GameObjectPool<T>.ThrowIfDisposed()
+  fullName.vb: MinimalUtility.GameObjectPool(Of T).ThrowIfDisposed()
+  nameWithType: GameObjectPool<T>.ThrowIfDisposed()
+  nameWithType.vb: GameObjectPool(Of T).ThrowIfDisposed()
+- uid: MinimalUtility.GameObjectPool`1.ThrowIfDisposed*
+  name: ThrowIfDisposed
+  href: api/MinimalUtility.GameObjectPool-1.html#MinimalUtility_GameObjectPool_1_ThrowIfDisposed_
+  commentId: Overload:MinimalUtility.GameObjectPool`1.ThrowIfDisposed
+  isSpec: "True"
+  fullName: MinimalUtility.GameObjectPool<T>.ThrowIfDisposed
+  fullName.vb: MinimalUtility.GameObjectPool(Of T).ThrowIfDisposed
+  nameWithType: GameObjectPool<T>.ThrowIfDisposed
+  nameWithType.vb: GameObjectPool(Of T).ThrowIfDisposed
+- uid: MinimalUtility.GameObjectPool`1.original
+  name: original
+  href: api/MinimalUtility.GameObjectPool-1.html#MinimalUtility_GameObjectPool_1_original
+  commentId: F:MinimalUtility.GameObjectPool`1.original
+  fullName: MinimalUtility.GameObjectPool<T>.original
+  fullName.vb: MinimalUtility.GameObjectPool(Of T).original
+  nameWithType: GameObjectPool<T>.original
+  nameWithType.vb: GameObjectPool(Of T).original
+- uid: MinimalUtility.GameObjectPool`1.pool
+  name: pool
+  href: api/MinimalUtility.GameObjectPool-1.html#MinimalUtility_GameObjectPool_1_pool
+  commentId: F:MinimalUtility.GameObjectPool`1.pool
+  fullName: MinimalUtility.GameObjectPool<T>.pool
+  fullName.vb: MinimalUtility.GameObjectPool(Of T).pool
+  nameWithType: GameObjectPool<T>.pool
+  nameWithType.vb: GameObjectPool(Of T).pool
+- uid: MinimalUtility.GameObjectPool`1.root
+  name: root
+  href: api/MinimalUtility.GameObjectPool-1.html#MinimalUtility_GameObjectPool_1_root
+  commentId: F:MinimalUtility.GameObjectPool`1.root
+  fullName: MinimalUtility.GameObjectPool<T>.root
+  fullName.vb: MinimalUtility.GameObjectPool(Of T).root
+  nameWithType: GameObjectPool<T>.root
+  nameWithType.vb: GameObjectPool(Of T).root
 - uid: MinimalUtility.MemoryExtensions
   name: MemoryExtensions
   href: api/MinimalUtility.MemoryExtensions.html
@@ -750,6 +734,23 @@ references:
   fullName.vb: MinimalUtility.MemoryExtensions.GetEnumerator(Of T)(System.ReadOnlyMemory(Of T))
   nameWithType: MemoryExtensions.GetEnumerator<T>(in ReadOnlyMemory<T>)
   nameWithType.vb: MemoryExtensions.GetEnumerator(Of T)(ReadOnlyMemory(Of T))
+- uid: MinimalUtility.PooledObject`1
+  name: PooledObject<T>
+  href: api/MinimalUtility.PooledObject-1.html
+  commentId: T:MinimalUtility.PooledObject`1
+  name.vb: PooledObject(Of T)
+  fullName: MinimalUtility.PooledObject<T>
+  fullName.vb: MinimalUtility.PooledObject(Of T)
+  nameWithType: PooledObject<T>
+  nameWithType.vb: PooledObject(Of T)
+- uid: MinimalUtility.PooledObject`1.Instance
+  name: Instance
+  href: api/MinimalUtility.PooledObject-1.html#MinimalUtility_PooledObject_1_Instance
+  commentId: F:MinimalUtility.PooledObject`1.Instance
+  fullName: MinimalUtility.PooledObject<T>.Instance
+  fullName.vb: MinimalUtility.PooledObject(Of T).Instance
+  nameWithType: PooledObject<T>.Instance
+  nameWithType.vb: PooledObject(Of T).Instance
 - uid: MinimalUtility.R3
   name: MinimalUtility.R3
   href: api/MinimalUtility.R3.html
@@ -1010,6 +1011,94 @@ references:
   commentId: N:MinimalUtility.Tasks
   fullName: MinimalUtility.Tasks
   nameWithType: MinimalUtility.Tasks
+- uid: MinimalUtility.Tasks.AsyncGameObjectPool`1
+  name: AsyncGameObjectPool<T>
+  href: api/MinimalUtility.Tasks.AsyncGameObjectPool-1.html
+  commentId: T:MinimalUtility.Tasks.AsyncGameObjectPool`1
+  name.vb: AsyncGameObjectPool(Of T)
+  fullName: MinimalUtility.Tasks.AsyncGameObjectPool<T>
+  fullName.vb: MinimalUtility.Tasks.AsyncGameObjectPool(Of T)
+  nameWithType: AsyncGameObjectPool<T>
+  nameWithType.vb: AsyncGameObjectPool(Of T)
+- uid: MinimalUtility.Tasks.AsyncGameObjectPool`1.#ctor(`0,Transform,System.Int32)
+  name: AsyncGameObjectPool(T, Transform, int)
+  href: api/MinimalUtility.Tasks.AsyncGameObjectPool-1.html#MinimalUtility_Tasks_AsyncGameObjectPool_1__ctor__0_Transform_System_Int32_
+  commentId: M:MinimalUtility.Tasks.AsyncGameObjectPool`1.#ctor(`0,Transform,System.Int32)
+  name.vb: New(T, Transform, Integer)
+  fullName: MinimalUtility.Tasks.AsyncGameObjectPool<T>.AsyncGameObjectPool(T, Transform, int)
+  fullName.vb: MinimalUtility.Tasks.AsyncGameObjectPool(Of T).New(T, Transform, Integer)
+  nameWithType: AsyncGameObjectPool<T>.AsyncGameObjectPool(T, Transform, int)
+  nameWithType.vb: AsyncGameObjectPool(Of T).New(T, Transform, Integer)
+- uid: MinimalUtility.Tasks.AsyncGameObjectPool`1.#ctor*
+  name: AsyncGameObjectPool
+  href: api/MinimalUtility.Tasks.AsyncGameObjectPool-1.html#MinimalUtility_Tasks_AsyncGameObjectPool_1__ctor_
+  commentId: Overload:MinimalUtility.Tasks.AsyncGameObjectPool`1.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: MinimalUtility.Tasks.AsyncGameObjectPool<T>.AsyncGameObjectPool
+  fullName.vb: MinimalUtility.Tasks.AsyncGameObjectPool(Of T).New
+  nameWithType: AsyncGameObjectPool<T>.AsyncGameObjectPool
+  nameWithType.vb: AsyncGameObjectPool(Of T).New
+- uid: MinimalUtility.Tasks.AsyncGameObjectPool`1.CountInactive
+  name: CountInactive
+  href: api/MinimalUtility.Tasks.AsyncGameObjectPool-1.html#MinimalUtility_Tasks_AsyncGameObjectPool_1_CountInactive
+  commentId: P:MinimalUtility.Tasks.AsyncGameObjectPool`1.CountInactive
+  fullName: MinimalUtility.Tasks.AsyncGameObjectPool<T>.CountInactive
+  fullName.vb: MinimalUtility.Tasks.AsyncGameObjectPool(Of T).CountInactive
+  nameWithType: AsyncGameObjectPool<T>.CountInactive
+  nameWithType.vb: AsyncGameObjectPool(Of T).CountInactive
+- uid: MinimalUtility.Tasks.AsyncGameObjectPool`1.CountInactive*
+  name: CountInactive
+  href: api/MinimalUtility.Tasks.AsyncGameObjectPool-1.html#MinimalUtility_Tasks_AsyncGameObjectPool_1_CountInactive_
+  commentId: Overload:MinimalUtility.Tasks.AsyncGameObjectPool`1.CountInactive
+  isSpec: "True"
+  fullName: MinimalUtility.Tasks.AsyncGameObjectPool<T>.CountInactive
+  fullName.vb: MinimalUtility.Tasks.AsyncGameObjectPool(Of T).CountInactive
+  nameWithType: AsyncGameObjectPool<T>.CountInactive
+  nameWithType.vb: AsyncGameObjectPool(Of T).CountInactive
+- uid: MinimalUtility.Tasks.AsyncGameObjectPool`1.GetAsync(System.Int32,System.Threading.CancellationToken)
+  name: GetAsync(int, CancellationToken)
+  href: api/MinimalUtility.Tasks.AsyncGameObjectPool-1.html#MinimalUtility_Tasks_AsyncGameObjectPool_1_GetAsync_System_Int32_System_Threading_CancellationToken_
+  commentId: M:MinimalUtility.Tasks.AsyncGameObjectPool`1.GetAsync(System.Int32,System.Threading.CancellationToken)
+  name.vb: GetAsync(Integer, CancellationToken)
+  fullName: MinimalUtility.Tasks.AsyncGameObjectPool<T>.GetAsync(int, System.Threading.CancellationToken)
+  fullName.vb: MinimalUtility.Tasks.AsyncGameObjectPool(Of T).GetAsync(Integer, System.Threading.CancellationToken)
+  nameWithType: AsyncGameObjectPool<T>.GetAsync(int, CancellationToken)
+  nameWithType.vb: AsyncGameObjectPool(Of T).GetAsync(Integer, CancellationToken)
+- uid: MinimalUtility.Tasks.AsyncGameObjectPool`1.GetAsync(System.Threading.CancellationToken)
+  name: GetAsync(CancellationToken)
+  href: api/MinimalUtility.Tasks.AsyncGameObjectPool-1.html#MinimalUtility_Tasks_AsyncGameObjectPool_1_GetAsync_System_Threading_CancellationToken_
+  commentId: M:MinimalUtility.Tasks.AsyncGameObjectPool`1.GetAsync(System.Threading.CancellationToken)
+  fullName: MinimalUtility.Tasks.AsyncGameObjectPool<T>.GetAsync(System.Threading.CancellationToken)
+  fullName.vb: MinimalUtility.Tasks.AsyncGameObjectPool(Of T).GetAsync(System.Threading.CancellationToken)
+  nameWithType: AsyncGameObjectPool<T>.GetAsync(CancellationToken)
+  nameWithType.vb: AsyncGameObjectPool(Of T).GetAsync(CancellationToken)
+- uid: MinimalUtility.Tasks.AsyncGameObjectPool`1.GetAsync*
+  name: GetAsync
+  href: api/MinimalUtility.Tasks.AsyncGameObjectPool-1.html#MinimalUtility_Tasks_AsyncGameObjectPool_1_GetAsync_
+  commentId: Overload:MinimalUtility.Tasks.AsyncGameObjectPool`1.GetAsync
+  isSpec: "True"
+  fullName: MinimalUtility.Tasks.AsyncGameObjectPool<T>.GetAsync
+  fullName.vb: MinimalUtility.Tasks.AsyncGameObjectPool(Of T).GetAsync
+  nameWithType: AsyncGameObjectPool<T>.GetAsync
+  nameWithType.vb: AsyncGameObjectPool(Of T).GetAsync
+- uid: MinimalUtility.Tasks.AsyncGameObjectPool`1.GetScopeAsync(System.Threading.CancellationToken)
+  name: GetScopeAsync(CancellationToken)
+  href: api/MinimalUtility.Tasks.AsyncGameObjectPool-1.html#MinimalUtility_Tasks_AsyncGameObjectPool_1_GetScopeAsync_System_Threading_CancellationToken_
+  commentId: M:MinimalUtility.Tasks.AsyncGameObjectPool`1.GetScopeAsync(System.Threading.CancellationToken)
+  fullName: MinimalUtility.Tasks.AsyncGameObjectPool<T>.GetScopeAsync(System.Threading.CancellationToken)
+  fullName.vb: MinimalUtility.Tasks.AsyncGameObjectPool(Of T).GetScopeAsync(System.Threading.CancellationToken)
+  nameWithType: AsyncGameObjectPool<T>.GetScopeAsync(CancellationToken)
+  nameWithType.vb: AsyncGameObjectPool(Of T).GetScopeAsync(CancellationToken)
+- uid: MinimalUtility.Tasks.AsyncGameObjectPool`1.GetScopeAsync*
+  name: GetScopeAsync
+  href: api/MinimalUtility.Tasks.AsyncGameObjectPool-1.html#MinimalUtility_Tasks_AsyncGameObjectPool_1_GetScopeAsync_
+  commentId: Overload:MinimalUtility.Tasks.AsyncGameObjectPool`1.GetScopeAsync
+  isSpec: "True"
+  fullName: MinimalUtility.Tasks.AsyncGameObjectPool<T>.GetScopeAsync
+  fullName.vb: MinimalUtility.Tasks.AsyncGameObjectPool(Of T).GetScopeAsync
+  nameWithType: AsyncGameObjectPool<T>.GetScopeAsync
+  nameWithType.vb: AsyncGameObjectPool(Of T).GetScopeAsync
 - uid: MinimalUtility.Tasks.Progress
   name: Progress
   href: api/MinimalUtility.Tasks.Progress.html

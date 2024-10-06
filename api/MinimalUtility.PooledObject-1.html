@@ -2,11 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Interface IObjectPool&lt;T&gt; |  |  </title>
+      <title>Struct PooledObject&lt;T&gt; |  |  </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Interface IObjectPool&lt;T&gt; |  |  ">
+      <meta name="title" content="Struct PooledObject&lt;T&gt; |  |  ">
       
-      <meta name="description" content="ObjectPoolを提供するインターフェイス.">
+      <meta name="description" content="usingステートメントスコープを抜けた際にインスタンスをプールに返却する構造体.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       <meta name="docfx:disablenewtab" content="true">
       
-      <meta name="docfx:docurl" content="https://github.com/kochounoyume/MinimalUtility/new/main/apiSpec/new?filename=MinimalUtility_IObjectPool_1.md&amp;value=---%0Auid%3A%20MinimalUtility.IObjectPool%601%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/kochounoyume/MinimalUtility/new/main/apiSpec/new?filename=MinimalUtility_PooledObject_1.md&amp;value=---%0Auid%3A%20MinimalUtility.PooledObject%601%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -84,12 +84,12 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="MinimalUtility.IObjectPool`1">
+        <article data-uid="MinimalUtility.PooledObject`1">
 
 
 
-  <h1 id="MinimalUtility_IObjectPool_1" data-uid="MinimalUtility.IObjectPool`1" class="text-break">
-Interface IObjectPool&lt;T&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/CommonObjectPool.cs/#L15"><i class="bi bi-code-slash"></i></a>
+  <h1 id="MinimalUtility_PooledObject_1" data-uid="MinimalUtility.PooledObject`1" class="text-break">
+Struct PooledObject&lt;T&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/GameObjectPool/PooledObject.cs/#L10"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,12 +97,12 @@ Interface IObjectPool&lt;T&gt;  <a class="header-action link-secondary" title="V
   
   </div>
 
-  <div class="markdown summary"><p>ObjectPoolを提供するインターフェイス.</p>
+  <div class="markdown summary"><p>usingステートメントスコープを抜けた際にインスタンスをプールに返却する構造体.</p>
 </div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public interface IObjectPool&lt;T&gt; : UnityEngine.Pool.IObjectPool&lt;T&gt; where T : MonoBehaviour</code></pre>
+    <pre><code class="lang-csharp hljs">public readonly struct PooledObject&lt;T&gt; : IDisposable where T : MonoBehaviour</code></pre>
   </div>
 
 
@@ -110,86 +110,73 @@ Interface IObjectPool&lt;T&gt;  <a class="header-action link-secondary" title="V
   <h4 class="section">Type Parameters</h4>
   <dl class="parameters">
     <dt><code>T</code></dt>
-    <dd><p>プールするオブジェクトの型.</p>
+    <dd><p>プールするMonoBehaviourの型.</p>
 </dd>
   </dl>
 
 
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetype.equals">ValueType.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode">ValueType.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetype.tostring">ValueType.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
 
 
 
 
 
 
-
-
-  <h2 class="section" id="methods">Methods
+  <h2 class="section" id="fields">Fields
 </h2>
 
 
-  <a id="MinimalUtility_IObjectPool_1_GetWithToken_" data-uid="MinimalUtility.IObjectPool`1.GetWithToken*"></a>
 
-  <h3 id="MinimalUtility_IObjectPool_1_GetWithToken__0__" data-uid="MinimalUtility.IObjectPool`1.GetWithToken(`0@)">
-  GetWithToken(out T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/CommonObjectPool.cs/#L23"><i class="bi bi-code-slash"></i></a>
+  <h3 id="MinimalUtility_PooledObject_1_Instance" data-uid="MinimalUtility.PooledObject`1.Instance">
+  Instance
+  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/GameObjectPool/PooledObject.cs/#L15"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>プールからインスタンスとキャンセルトークンを取得する.プールが空の場合は、新しいインスタンスが作成される.</p>
+  <div class="markdown level1 summary"><p>生成済みのインスタンス.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">CancellationToken GetWithToken(out T v)</code></pre>
+    <pre><code class="lang-csharp hljs">public readonly T Instance</code></pre>
   </div>
 
-  <h4 class="section">Parameters</h4>
+
+
+
+  <h4 class="section">Field Value</h4>
   <dl class="parameters">
-    <dt><code>v</code> <span class="xref">T</span></dt>
-    <dd><p>取得したインスタンス.</p>
-</dd>
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
   </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
-    <dd><p>インスタンスがプールに戻ったときにキャンセルされるトークン.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-  <a id="MinimalUtility_IObjectPool_1_ReleaseAll_" data-uid="MinimalUtility.IObjectPool`1.ReleaseAll*"></a>
-
-  <h3 id="MinimalUtility_IObjectPool_1_ReleaseAll_System_Action__0__" data-uid="MinimalUtility.IObjectPool`1.ReleaseAll(System.Action{`0})">
-  ReleaseAll(Action&lt;T&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/CommonObjectPool.cs/#L29"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>取得済みの全てのオブジェクトを解放する.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ReleaseAll(Action&lt;T&gt; preReleaseCallback = null)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>preReleaseCallback</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;T&gt;</dt>
-    <dd><p>解放前に呼び出すコールバック.</p>
-</dd>
-  </dl>
-
-
-
 
 
 

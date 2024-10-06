@@ -100,11 +100,6 @@ Classes
 </dd>
     </dl>
     <dl class="jumplist">
-      <dt><a class="xref" href="MinimalUtility.CommonObjectPool-1.html">CommonObjectPool&lt;T&gt;</a></dt>
-      <dd><p>汎用オブジェクトプール実装.</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
       <dt><a class="xref" href="MinimalUtility.ComponentExtensions.html">ComponentExtensions</a></dt>
       <dd><p>Componentの拡張メソッド.</p>
 </dd>
@@ -140,6 +135,14 @@ Classes
 </dd>
     </dl>
     <dl class="jumplist">
+      <dt><a class="xref" href="MinimalUtility.GameObjectPool-1.html">GameObjectPool&lt;T&gt;</a></dt>
+      <dd><p>ゲームオブジェクトのプール.
+<remarks>
+単一のルートオブジェクト下でのプーリングを想定.
+</remarks></p>
+</dd>
+    </dl>
+    <dl class="jumplist">
       <dt><a class="xref" href="MinimalUtility.MemoryExtensions.html">MemoryExtensions</a></dt>
       <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.memory-1">Memory&lt;T&gt;</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlymemory-1">ReadOnlyMemory&lt;T&gt;</a>の拡張メソッド.</p>
 </dd>
@@ -172,8 +175,8 @@ usingステートメントでの仕様を想定しており、<a class="xref" hr
 Structs
 </h3>
     <dl class="jumplist">
-      <dt><a class="xref" href="MinimalUtility.CommonObjectPool-1.PoolSizeSetting.html">CommonObjectPool&lt;T&gt;.PoolSizeSetting</a></dt>
-      <dd><p>プールの初期容量と最大サイズを指定する構造体.</p>
+      <dt><a class="xref" href="MinimalUtility.PooledObject-1.html">PooledObject&lt;T&gt;</a></dt>
+      <dd><p>usingステートメントスコープを抜けた際にインスタンスをプールに返却する構造体.</p>
 </dd>
     </dl>
     <dl class="jumplist">
@@ -194,14 +197,6 @@ Structs
     <dl class="jumplist">
       <dt><a class="xref" href="MinimalUtility.ValueDisposable.Disposable-3.html">ValueDisposable.Disposable&lt;T1, T2, T3&gt;</a></dt>
       <dd><p>usingステートメントスコープを抜けた際にコールバックを呼び出すための構造体.</p>
-</dd>
-    </dl>
-    <h3 id="interfaces">
-Interfaces
-</h3>
-    <dl class="jumplist">
-      <dt><a class="xref" href="MinimalUtility.IObjectPool-1.html">IObjectPool&lt;T&gt;</a></dt>
-      <dd><p>ObjectPoolを提供するインターフェイス.</p>
 </dd>
     </dl>
     <h3 id="enums">

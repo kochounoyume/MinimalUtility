@@ -65,26 +65,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/MinimalUtility.CommonObjectPool-1.PoolSizeSetting.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MinimalUtility.CommonObjectPool-1.PoolSizeSetting.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MinimalUtility.CommonObjectPool-1.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MinimalUtility.CommonObjectPool-1.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/MinimalUtility.ComponentExtensions.yml",
       "output": {
         ".html": {
@@ -215,10 +195,10 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/MinimalUtility.IObjectPool-1.yml",
+      "source_relative_path": "api/MinimalUtility.GameObjectPool-1.yml",
       "output": {
         ".html": {
-          "relative_path": "api/MinimalUtility.IObjectPool-1.html"
+          "relative_path": "api/MinimalUtility.GameObjectPool-1.html"
         }
       },
       "version": ""
@@ -229,6 +209,16 @@
       "output": {
         ".html": {
           "relative_path": "api/MinimalUtility.MemoryExtensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MinimalUtility.PooledObject-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MinimalUtility.PooledObject-1.html"
         }
       },
       "version": ""
@@ -279,6 +269,16 @@
       "output": {
         ".html": {
           "relative_path": "api/MinimalUtility.StringUtils.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MinimalUtility.Tasks.AsyncGameObjectPool-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MinimalUtility.Tasks.AsyncGameObjectPool-1.html"
         }
       },
       "version": ""
