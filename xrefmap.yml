@@ -274,22 +274,6 @@ references:
   commentId: T:MinimalUtility.ComponentExtensions
   fullName: MinimalUtility.ComponentExtensions
   nameWithType: ComponentExtensions
-- uid: MinimalUtility.ComponentExtensions.GetComponentInOnlyChild*
-  name: GetComponentInOnlyChild
-  href: api/MinimalUtility.ComponentExtensions.html#MinimalUtility_ComponentExtensions_GetComponentInOnlyChild_
-  commentId: Overload:MinimalUtility.ComponentExtensions.GetComponentInOnlyChild
-  isSpec: "True"
-  fullName: MinimalUtility.ComponentExtensions.GetComponentInOnlyChild
-  nameWithType: ComponentExtensions.GetComponentInOnlyChild
-- uid: MinimalUtility.ComponentExtensions.GetComponentInOnlyChild``1(Component)
-  name: GetComponentInOnlyChild<T>(Component)
-  href: api/MinimalUtility.ComponentExtensions.html#MinimalUtility_ComponentExtensions_GetComponentInOnlyChild__1_Component_
-  commentId: M:MinimalUtility.ComponentExtensions.GetComponentInOnlyChild``1(Component)
-  name.vb: GetComponentInOnlyChild(Of T)(Component)
-  fullName: MinimalUtility.ComponentExtensions.GetComponentInOnlyChild<T>(Component)
-  fullName.vb: MinimalUtility.ComponentExtensions.GetComponentInOnlyChild(Of T)(Component)
-  nameWithType: ComponentExtensions.GetComponentInOnlyChild<T>(Component)
-  nameWithType.vb: ComponentExtensions.GetComponentInOnlyChild(Of T)(Component)
 - uid: MinimalUtility.ComponentExtensions.GetComponentsInOnlyChildren*
   name: GetComponentsInOnlyChildren
   href: api/MinimalUtility.ComponentExtensions.html#MinimalUtility_ComponentExtensions_GetComponentsInOnlyChildren_
@@ -322,22 +306,6 @@ references:
   fullName.vb: MinimalUtility.ComponentExtensions.SafeGetComponent(Of T)(Component)
   nameWithType: ComponentExtensions.SafeGetComponent<T>(Component)
   nameWithType.vb: ComponentExtensions.SafeGetComponent(Of T)(Component)
-- uid: MinimalUtility.ComponentExtensions.TryGetComponentInOnlyChild*
-  name: TryGetComponentInOnlyChild
-  href: api/MinimalUtility.ComponentExtensions.html#MinimalUtility_ComponentExtensions_TryGetComponentInOnlyChild_
-  commentId: Overload:MinimalUtility.ComponentExtensions.TryGetComponentInOnlyChild
-  isSpec: "True"
-  fullName: MinimalUtility.ComponentExtensions.TryGetComponentInOnlyChild
-  nameWithType: ComponentExtensions.TryGetComponentInOnlyChild
-- uid: MinimalUtility.ComponentExtensions.TryGetComponentInOnlyChild``1(Component,``0@)
-  name: TryGetComponentInOnlyChild<T>(Component, out T)
-  href: api/MinimalUtility.ComponentExtensions.html#MinimalUtility_ComponentExtensions_TryGetComponentInOnlyChild__1_Component___0__
-  commentId: M:MinimalUtility.ComponentExtensions.TryGetComponentInOnlyChild``1(Component,``0@)
-  name.vb: TryGetComponentInOnlyChild(Of T)(Component, T)
-  fullName: MinimalUtility.ComponentExtensions.TryGetComponentInOnlyChild<T>(Component, out T)
-  fullName.vb: MinimalUtility.ComponentExtensions.TryGetComponentInOnlyChild(Of T)(Component, T)
-  nameWithType: ComponentExtensions.TryGetComponentInOnlyChild<T>(Component, out T)
-  nameWithType.vb: ComponentExtensions.TryGetComponentInOnlyChild(Of T)(Component, T)
 - uid: MinimalUtility.DebugProfileViewer
   name: DebugProfileViewer
   href: api/MinimalUtility.DebugProfileViewer.html
@@ -751,6 +719,37 @@ references:
   fullName.vb: MinimalUtility.IObjectPool(Of T).ReleaseAll
   nameWithType: IObjectPool<T>.ReleaseAll
   nameWithType.vb: IObjectPool(Of T).ReleaseAll
+- uid: MinimalUtility.MemoryExtensions
+  name: MemoryExtensions
+  href: api/MinimalUtility.MemoryExtensions.html
+  commentId: T:MinimalUtility.MemoryExtensions
+  fullName: MinimalUtility.MemoryExtensions
+  nameWithType: MemoryExtensions
+- uid: MinimalUtility.MemoryExtensions.GetEnumerator*
+  name: GetEnumerator
+  href: api/MinimalUtility.MemoryExtensions.html#MinimalUtility_MemoryExtensions_GetEnumerator_
+  commentId: Overload:MinimalUtility.MemoryExtensions.GetEnumerator
+  isSpec: "True"
+  fullName: MinimalUtility.MemoryExtensions.GetEnumerator
+  nameWithType: MemoryExtensions.GetEnumerator
+- uid: MinimalUtility.MemoryExtensions.GetEnumerator``1(System.Memory{``0}@)
+  name: GetEnumerator<T>(in Memory<T>)
+  href: api/MinimalUtility.MemoryExtensions.html#MinimalUtility_MemoryExtensions_GetEnumerator__1_System_Memory___0___
+  commentId: M:MinimalUtility.MemoryExtensions.GetEnumerator``1(System.Memory{``0}@)
+  name.vb: GetEnumerator(Of T)(Memory(Of T))
+  fullName: MinimalUtility.MemoryExtensions.GetEnumerator<T>(in System.Memory<T>)
+  fullName.vb: MinimalUtility.MemoryExtensions.GetEnumerator(Of T)(System.Memory(Of T))
+  nameWithType: MemoryExtensions.GetEnumerator<T>(in Memory<T>)
+  nameWithType.vb: MemoryExtensions.GetEnumerator(Of T)(Memory(Of T))
+- uid: MinimalUtility.MemoryExtensions.GetEnumerator``1(System.ReadOnlyMemory{``0}@)
+  name: GetEnumerator<T>(in ReadOnlyMemory<T>)
+  href: api/MinimalUtility.MemoryExtensions.html#MinimalUtility_MemoryExtensions_GetEnumerator__1_System_ReadOnlyMemory___0___
+  commentId: M:MinimalUtility.MemoryExtensions.GetEnumerator``1(System.ReadOnlyMemory{``0}@)
+  name.vb: GetEnumerator(Of T)(ReadOnlyMemory(Of T))
+  fullName: MinimalUtility.MemoryExtensions.GetEnumerator<T>(in System.ReadOnlyMemory<T>)
+  fullName.vb: MinimalUtility.MemoryExtensions.GetEnumerator(Of T)(System.ReadOnlyMemory(Of T))
+  nameWithType: MemoryExtensions.GetEnumerator<T>(in ReadOnlyMemory<T>)
+  nameWithType.vb: MemoryExtensions.GetEnumerator(Of T)(ReadOnlyMemory(Of T))
 - uid: MinimalUtility.R3
   name: MinimalUtility.R3
   href: api/MinimalUtility.R3.html
