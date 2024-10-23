@@ -851,19 +851,51 @@ references:
   commentId: T:MinimalUtility.RectTransformExtensions
   fullName: MinimalUtility.RectTransformExtensions
   nameWithType: RectTransformExtensions
-- uid: MinimalUtility.RectTransformExtensions.GetSizeDelta(RectTransform)
-  name: GetSizeDelta(RectTransform)
-  href: api/MinimalUtility.RectTransformExtensions.html#MinimalUtility_RectTransformExtensions_GetSizeDelta_RectTransform_
-  commentId: M:MinimalUtility.RectTransformExtensions.GetSizeDelta(RectTransform)
-  fullName: MinimalUtility.RectTransformExtensions.GetSizeDelta(RectTransform)
-  nameWithType: RectTransformExtensions.GetSizeDelta(RectTransform)
-- uid: MinimalUtility.RectTransformExtensions.GetSizeDelta*
-  name: GetSizeDelta
-  href: api/MinimalUtility.RectTransformExtensions.html#MinimalUtility_RectTransformExtensions_GetSizeDelta_
-  commentId: Overload:MinimalUtility.RectTransformExtensions.GetSizeDelta
+- uid: MinimalUtility.RectTransformExtensions.GetLocalCorners(RectTransform,System.Span{Vector3}@)
+  name: GetLocalCorners(RectTransform, in Span<Vector3>)
+  href: api/MinimalUtility.RectTransformExtensions.html#MinimalUtility_RectTransformExtensions_GetLocalCorners_RectTransform_System_Span_Vector3___
+  commentId: M:MinimalUtility.RectTransformExtensions.GetLocalCorners(RectTransform,System.Span{Vector3}@)
+  name.vb: GetLocalCorners(RectTransform, Span(Of Vector3))
+  fullName: MinimalUtility.RectTransformExtensions.GetLocalCorners(RectTransform, in System.Span<Vector3>)
+  fullName.vb: MinimalUtility.RectTransformExtensions.GetLocalCorners(RectTransform, System.Span(Of Vector3))
+  nameWithType: RectTransformExtensions.GetLocalCorners(RectTransform, in Span<Vector3>)
+  nameWithType.vb: RectTransformExtensions.GetLocalCorners(RectTransform, Span(Of Vector3))
+- uid: MinimalUtility.RectTransformExtensions.GetLocalCorners*
+  name: GetLocalCorners
+  href: api/MinimalUtility.RectTransformExtensions.html#MinimalUtility_RectTransformExtensions_GetLocalCorners_
+  commentId: Overload:MinimalUtility.RectTransformExtensions.GetLocalCorners
   isSpec: "True"
-  fullName: MinimalUtility.RectTransformExtensions.GetSizeDelta
-  nameWithType: RectTransformExtensions.GetSizeDelta
+  fullName: MinimalUtility.RectTransformExtensions.GetLocalCorners
+  nameWithType: RectTransformExtensions.GetLocalCorners
+- uid: MinimalUtility.RectTransformExtensions.GetSize(RectTransform)
+  name: GetSize(RectTransform)
+  href: api/MinimalUtility.RectTransformExtensions.html#MinimalUtility_RectTransformExtensions_GetSize_RectTransform_
+  commentId: M:MinimalUtility.RectTransformExtensions.GetSize(RectTransform)
+  fullName: MinimalUtility.RectTransformExtensions.GetSize(RectTransform)
+  nameWithType: RectTransformExtensions.GetSize(RectTransform)
+- uid: MinimalUtility.RectTransformExtensions.GetSize*
+  name: GetSize
+  href: api/MinimalUtility.RectTransformExtensions.html#MinimalUtility_RectTransformExtensions_GetSize_
+  commentId: Overload:MinimalUtility.RectTransformExtensions.GetSize
+  isSpec: "True"
+  fullName: MinimalUtility.RectTransformExtensions.GetSize
+  nameWithType: RectTransformExtensions.GetSize
+- uid: MinimalUtility.RectTransformExtensions.GetWorldCorners(RectTransform,System.Span{Vector3}@)
+  name: GetWorldCorners(RectTransform, in Span<Vector3>)
+  href: api/MinimalUtility.RectTransformExtensions.html#MinimalUtility_RectTransformExtensions_GetWorldCorners_RectTransform_System_Span_Vector3___
+  commentId: M:MinimalUtility.RectTransformExtensions.GetWorldCorners(RectTransform,System.Span{Vector3}@)
+  name.vb: GetWorldCorners(RectTransform, Span(Of Vector3))
+  fullName: MinimalUtility.RectTransformExtensions.GetWorldCorners(RectTransform, in System.Span<Vector3>)
+  fullName.vb: MinimalUtility.RectTransformExtensions.GetWorldCorners(RectTransform, System.Span(Of Vector3))
+  nameWithType: RectTransformExtensions.GetWorldCorners(RectTransform, in Span<Vector3>)
+  nameWithType.vb: RectTransformExtensions.GetWorldCorners(RectTransform, Span(Of Vector3))
+- uid: MinimalUtility.RectTransformExtensions.GetWorldCorners*
+  name: GetWorldCorners
+  href: api/MinimalUtility.RectTransformExtensions.html#MinimalUtility_RectTransformExtensions_GetWorldCorners_
+  commentId: Overload:MinimalUtility.RectTransformExtensions.GetWorldCorners
+  isSpec: "True"
+  fullName: MinimalUtility.RectTransformExtensions.GetWorldCorners
+  nameWithType: RectTransformExtensions.GetWorldCorners
 - uid: MinimalUtility.RectTransformExtensions.SetFullStretch(RectTransform,System.Single@,System.Single@,System.Single@,System.Single@)
   name: SetFullStretch(RectTransform, in float, in float, in float, in float)
   href: api/MinimalUtility.RectTransformExtensions.html#MinimalUtility_RectTransformExtensions_SetFullStretch_RectTransform_System_Single__System_Single__System_Single__System_Single__
