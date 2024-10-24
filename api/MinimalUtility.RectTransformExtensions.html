@@ -157,7 +157,7 @@ Class RectTransformExtensions  <a class="header-action link-secondary" title="Vi
 
   <h3 id="MinimalUtility_RectTransformExtensions_GetLocalCorners_RectTransform_System_Span_Vector3___" data-uid="MinimalUtility.RectTransformExtensions.GetLocalCorners(RectTransform,System.Span{Vector3}@)">
   GetLocalCorners(RectTransform, in Span&lt;Vector3&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/UnityExtension/RectTransformExtensions.cs/#L123"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/UnityExtension/RectTransformExtensions.cs/#L126"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>RectTransformのローカル空間で計算された長方形の角を取得する.
@@ -167,7 +167,7 @@ Class RectTransformExtensions  <a class="header-action link-secondary" title="Vi
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void GetLocalCorners(this RectTransform target, in Span&lt;Vector3&gt; fourCornersSpan)</code></pre>
+    <pre><code class="lang-csharp hljs">public static ReadOnlySpan&lt;Vector3&gt; GetLocalCorners(this RectTransform target, in Span&lt;Vector3&gt; fourCornersSpan)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -180,6 +180,12 @@ Class RectTransformExtensions  <a class="header-action link-secondary" title="Vi
 </dd>
   </dl>
 
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<span class="xref">Vector3</span>&gt;</dt>
+    <dd><p>取得した角の座標を格納した<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan&lt;T&gt;</a>.</p>
+</dd>
+  </dl>
 
 
 
@@ -234,7 +240,7 @@ Class RectTransformExtensions  <a class="header-action link-secondary" title="Vi
 
   <h3 id="MinimalUtility_RectTransformExtensions_GetWorldCorners_RectTransform_System_Span_Vector3___" data-uid="MinimalUtility.RectTransformExtensions.GetWorldCorners(RectTransform,System.Span{Vector3}@)">
   GetWorldCorners(RectTransform, in Span&lt;Vector3&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/UnityExtension/RectTransformExtensions.cs/#L97"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/UnityExtension/RectTransformExtensions.cs/#L98"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>ワールドスペースで計算された長方形の角を取得する.
@@ -244,7 +250,7 @@ Class RectTransformExtensions  <a class="header-action link-secondary" title="Vi
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void GetWorldCorners(this RectTransform target, in Span&lt;Vector3&gt; fourCornersSpan)</code></pre>
+    <pre><code class="lang-csharp hljs">public static ReadOnlySpan&lt;Vector3&gt; GetWorldCorners(this RectTransform target, in Span&lt;Vector3&gt; fourCornersSpan)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -257,6 +263,12 @@ Class RectTransformExtensions  <a class="header-action link-secondary" title="Vi
 </dd>
   </dl>
 
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<span class="xref">Vector3</span>&gt;</dt>
+    <dd><p>取得した角の座標を格納した<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan&lt;T&gt;</a>.</p>
+</dd>
+  </dl>
 
 
 
