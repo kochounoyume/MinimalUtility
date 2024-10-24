@@ -94,8 +94,9 @@ namespace MinimalUtility
         /// </summary>
         /// <param name="target">対象の<see cref="RectTransform"/>.</param>
         /// <param name="fourCornersSpan">取得した角の座標を格納する<see cref="Span{T}"/>.</param>
+        /// <returns>取得した角の座標を格納した<see cref="ReadOnlySpan{T}"/>.</returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static void GetWorldCorners(this RectTransform target, in Span<Vector3> fourCornersSpan)
+        public static ReadOnlySpan<Vector3> GetWorldCorners(this RectTransform target, in Span<Vector3> fourCornersSpan)
         {
             if (fourCornersSpan.IsEmpty || fourCornersSpan.Length < 4)
             {
@@ -110,6 +111,7 @@ namespace MinimalUtility
                     fourCornersSpan[i] = localToWorldMatrix.MultiplyPoint(fourCornersSpan[i]);
                 }
             }
+            return fourCornersSpan;
         }
 
         /// <summary>
@@ -120,8 +122,9 @@ namespace MinimalUtility
         /// </summary>
         /// <param name="target">対象の<see cref="RectTransform"/>.</param>
         /// <param name="fourCornersSpan">取得した角の座標を格納する<see cref="Span{T}"/>.</param>
+        /// <returns>取得した角の座標を格納した<see cref="ReadOnlySpan{T}"/>.</returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static void GetLocalCorners(this RectTransform target, in Span<Vector3> fourCornersSpan)
+        public static ReadOnlySpan<Vector3> GetLocalCorners(this RectTransform target, in Span<Vector3> fourCornersSpan)
         {
             if (fourCornersSpan.IsEmpty || fourCornersSpan.Length < 4)
             {
@@ -131,6 +134,7 @@ namespace MinimalUtility
             {
                 target.GetCalculateLocalCorners(fourCornersSpan);
             }
+            return fourCornersSpan;
         }
 
         /// <summary>
@@ -141,8 +145,9 @@ namespace MinimalUtility
         /// </summary>
         /// <param name="target">対象の<see cref="RectTransform"/>.</param>
         /// <param name="fourCornersSpan">取得した角の座標を格納する<see cref="Span{T}"/>.</param>
+        /// <returns>取得した角の座標を格納した<see cref="ReadOnlySpan{T}"/>.</returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        internal static void GetCalculateLocalCorners(this RectTransform target, in Span<Vector3> fourCornersSpan)
+        internal static ReadOnlySpan<Vector3> GetCalculateLocalCorners(this RectTransform target, in Span<Vector3> fourCornersSpan)
         {
             Rect rect = target.rect;
             (float x, float y, float xMax, float yMax) = (rect.x, rect.y, rect.xMax, rect.yMax);
@@ -150,6 +155,7 @@ namespace MinimalUtility
             fourCornersSpan[1] = new Vector3(x, yMax);
             fourCornersSpan[2] = new Vector3(xMax, yMax);
             fourCornersSpan[3] = new Vector3(xMax, y);
+            return fourCornersSpan;
         }
     }
 }
