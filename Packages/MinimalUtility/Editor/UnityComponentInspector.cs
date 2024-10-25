@@ -19,7 +19,6 @@ namespace MinimalUtility.Editor
         {
             VisualElement root = new ();
             System.Type customEditorType = typeof(EditorApplication).Assembly.GetType(InspectorTypeName);
-            var editor = CreateEditor(target, customEditorType);
             root.Add(new IMGUIContainer(() => CreateEditor(target, customEditorType).OnInspectorGUI()));
             return root;
         }
