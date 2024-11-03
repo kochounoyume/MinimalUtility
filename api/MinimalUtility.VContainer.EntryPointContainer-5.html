@@ -2,11 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class DebugProfileViewer.OnGUITrigger |  |  </title>
+      <title>Class EntryPointContainer&lt;T1, T2, T3, T4, T5&gt; |  |  </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class DebugProfileViewer.OnGUITrigger |  |  ">
+      <meta name="title" content="Class EntryPointContainer&lt;T1, T2, T3, T4, T5&gt; |  |  ">
       
-      <meta name="description" content="OnGUIイベントを取得するトリガークラス.">
+      <meta name="description" content="エントリーポイントを一括管理するコンテナクラス.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       <meta name="docfx:disablenewtab" content="true">
       
-      <meta name="docfx:docurl" content="https://github.com/kochounoyume/MinimalUtility/new/main/apiSpec/new?filename=MinimalUtility_DebugProfileViewer_OnGUITrigger.md&amp;value=---%0Auid%3A%20MinimalUtility.DebugProfileViewer.OnGUITrigger%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/kochounoyume/MinimalUtility/new/main/apiSpec/new?filename=MinimalUtility_VContainer_EntryPointContainer_5.md&amp;value=---%0Auid%3A%20MinimalUtility.VContainer.EntryPointContainer%605%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -84,35 +84,53 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="MinimalUtility.DebugProfileViewer.OnGUITrigger">
+        <article data-uid="MinimalUtility.VContainer.EntryPointContainer`5">
 
 
 
-  <h1 id="MinimalUtility_DebugProfileViewer_OnGUITrigger" data-uid="MinimalUtility.DebugProfileViewer.OnGUITrigger" class="text-break">
-Class DebugProfileViewer.OnGUITrigger  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/DebugProfileViewer.cs/#L18"><i class="bi bi-code-slash"></i></a>
+  <h1 id="MinimalUtility_VContainer_EntryPointContainer_5" data-uid="MinimalUtility.VContainer.EntryPointContainer`5" class="text-break">
+Class EntryPointContainer&lt;T1, T2, T3, T4, T5&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/VContainer/EntryPointContainer.cs/#L166"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="MinimalUtility.html">MinimalUtility</a></dd></dl>
+    <dl><dt>Namespace</dt><dd><a class="xref" href="MinimalUtility.html">MinimalUtility</a>.<a class="xref" href="MinimalUtility.VContainer.html">VContainer</a></dd></dl>
   
   </div>
 
-  <div class="markdown summary"><p>OnGUIイベントを取得するトリガークラス.</p>
+  <div class="markdown summary"><p>エントリーポイントを一括管理するコンテナクラス.</p>
 </div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected class DebugProfileViewer.OnGUITrigger : MonoBehaviour</code></pre>
+    <pre><code class="lang-csharp hljs">public sealed class EntryPointContainer&lt;T1, T2, T3, T4, T5&gt; : IStartable where T1 : class where T2 : class where T3 : class where T4 : class where T5 : class</code></pre>
   </div>
 
 
 
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T1</code></dt>
+    <dd><p>発火する1番目のインスタンスの型.</p>
+</dd>
+    <dt><code>T2</code></dt>
+    <dd><p>発火する2番目のインスタンスの型.</p>
+</dd>
+    <dt><code>T3</code></dt>
+    <dd><p>発火する3番目のインスタンスの型.</p>
+</dd>
+    <dt><code>T4</code></dt>
+    <dd><p>発火する4番目のインスタンスの型.</p>
+</dd>
+    <dt><code>T5</code></dt>
+    <dd><p>発火する5番目のインスタンスの型.</p>
+</dd>
+  </dl>
 
   <dl class="typelist inheritance">
     <dt>Inheritance</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-      <div><span class="xref">DebugProfileViewer.OnGUITrigger</span></div>
+      <div><span class="xref">EntryPointContainer&lt;T1, T2, T3, T4, T5&gt;</span></div>
     </dd>
   </dl>
 
@@ -124,70 +142,51 @@ Class DebugProfileViewer.OnGUITrigger  <a class="header-action link-secondary" t
 
 
 
-  <h2 class="section" id="properties">Properties
+  <h2 class="section" id="constructors">Constructors
 </h2>
 
 
-  <a id="MinimalUtility_DebugProfileViewer_OnGUITrigger_State_" data-uid="MinimalUtility.DebugProfileViewer.OnGUITrigger.State*"></a>
+  <a id="MinimalUtility_VContainer_EntryPointContainer_5__ctor_" data-uid="MinimalUtility.VContainer.EntryPointContainer`5.#ctor*"></a>
 
-  <h3 id="MinimalUtility_DebugProfileViewer_OnGUITrigger_State" data-uid="MinimalUtility.DebugProfileViewer.OnGUITrigger.State">
-  State
-  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/DebugProfileViewer.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  <h3 id="MinimalUtility_VContainer_EntryPointContainer_5__ctor__0__1__2__3__4_System_Action__0__1__2__3__4__" data-uid="MinimalUtility.VContainer.EntryPointContainer`5.#ctor(`0,`1,`2,`3,`4,System.Action{`0,`1,`2,`3,`4})">
+  EntryPointContainer(T1, T2, T3, T4, T5, Action&lt;T1, T2, T3, T4, T5&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/VContainer/EntryPointContainer.cs/#L185"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>イベントの引数として渡される、フレームタイミング情報.</p>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="MinimalUtility.VContainer.EntryPointContainer-5.html">EntryPointContainer&lt;T1, T2, T3, T4, T5&gt;</a> class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public FrameTiming State { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public EntryPointContainer(T1 instance1, T2 instance2, T3 instance3, T4 instance4, T5 instance5, Action&lt;T1, T2, T3, T4, T5&gt; start)</code></pre>
   </div>
 
-
-
-
-
-  <h4 class="section">Property Value</h4>
+  <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><span class="xref">FrameTiming</span></dt>
-    <dd></dd>
+    <dt><code>instance1</code> <span class="xref">T1</span></dt>
+    <dd><p>発火する1番目のインスタンス.</p>
+</dd>
+    <dt><code>instance2</code> <span class="xref">T2</span></dt>
+    <dd><p>発火する2番目のインスタンス.</p>
+</dd>
+    <dt><code>instance3</code> <span class="xref">T3</span></dt>
+    <dd><p>発火する3番目のインスタンス.</p>
+</dd>
+    <dt><code>instance4</code> <span class="xref">T4</span></dt>
+    <dd><p>発火する4番目のインスタンス.</p>
+</dd>
+    <dt><code>instance5</code> <span class="xref">T5</span></dt>
+    <dd><p>発火する5番目のインスタンス.</p>
+</dd>
+    <dt><code>start</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-5">Action</a>&lt;T1, T2, T3, T4, T5&gt;</dt>
+    <dd><p>発火する処理.</p>
+</dd>
   </dl>
 
 
 
 
 
-
-
-
-  <h2 class="section" id="events">Events
-</h2>
-
-
-
-  <h3 id="MinimalUtility_DebugProfileViewer_OnGUITrigger_OnGUIEvent" data-uid="MinimalUtility.DebugProfileViewer.OnGUITrigger.OnGUIEvent">
-  OnGUIEvent
-  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/DebugProfileViewer.cs/#L24"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>OnGUIのタイミングで呼ばれるイベント.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public event Action&lt;FrameTiming&gt; OnGUIEvent</code></pre>
-  </div>
-
-
-
-
-
-
-  <h4 class="section">Event Type</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<span class="xref">FrameTiming</span>&gt;</dt>
-    <dd></dd>
-  </dl>
 
 
 

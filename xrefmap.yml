@@ -1,34 +1,6 @@
 ### YamlMime:XRefMap
 sorted: true
 references:
-- uid: Cysharp.Threading.Tasks
-  name: Cysharp.Threading.Tasks
-  href: api/Cysharp.Threading.Tasks.html
-  commentId: N:Cysharp.Threading.Tasks
-  fullName: Cysharp.Threading.Tasks
-  nameWithType: Cysharp.Threading.Tasks
-- uid: Cysharp.Threading.Tasks.UniTaskInternalAccessor
-  name: UniTaskInternalAccessor
-  href: api/Cysharp.Threading.Tasks.UniTaskInternalAccessor.html
-  commentId: T:Cysharp.Threading.Tasks.UniTaskInternalAccessor
-  fullName: Cysharp.Threading.Tasks.UniTaskInternalAccessor
-  nameWithType: UniTaskInternalAccessor
-- uid: Cysharp.Threading.Tasks.UniTaskInternalAccessor.GetEqualityComparer*
-  name: GetEqualityComparer
-  href: api/Cysharp.Threading.Tasks.UniTaskInternalAccessor.html#Cysharp_Threading_Tasks_UniTaskInternalAccessor_GetEqualityComparer_
-  commentId: Overload:Cysharp.Threading.Tasks.UniTaskInternalAccessor.GetEqualityComparer
-  isSpec: "True"
-  fullName: Cysharp.Threading.Tasks.UniTaskInternalAccessor.GetEqualityComparer
-  nameWithType: UniTaskInternalAccessor.GetEqualityComparer
-- uid: Cysharp.Threading.Tasks.UniTaskInternalAccessor.GetEqualityComparer``1
-  name: GetEqualityComparer<T>()
-  href: api/Cysharp.Threading.Tasks.UniTaskInternalAccessor.html#Cysharp_Threading_Tasks_UniTaskInternalAccessor_GetEqualityComparer__1
-  commentId: M:Cysharp.Threading.Tasks.UniTaskInternalAccessor.GetEqualityComparer``1
-  name.vb: GetEqualityComparer(Of T)()
-  fullName: Cysharp.Threading.Tasks.UniTaskInternalAccessor.GetEqualityComparer<T>()
-  fullName.vb: Cysharp.Threading.Tasks.UniTaskInternalAccessor.GetEqualityComparer(Of T)()
-  nameWithType: UniTaskInternalAccessor.GetEqualityComparer<T>()
-  nameWithType.vb: UniTaskInternalAccessor.GetEqualityComparer(Of T)()
 - uid: Global
   name: ''
   href: api/Global.html
@@ -137,82 +109,106 @@ references:
   fullName.vb: MinimalUtility.ComponentExtensions.SafeGetComponent(Of T)(Component)
   nameWithType: ComponentExtensions.SafeGetComponent<T>(Component)
   nameWithType.vb: ComponentExtensions.SafeGetComponent(Of T)(Component)
-- uid: MinimalUtility.DebugProfileViewer
-  name: DebugProfileViewer
-  href: api/MinimalUtility.DebugProfileViewer.html
-  commentId: T:MinimalUtility.DebugProfileViewer
-  fullName: MinimalUtility.DebugProfileViewer
-  nameWithType: DebugProfileViewer
-- uid: MinimalUtility.DebugProfileViewer.#ctor
-  name: DebugProfileViewer()
-  href: api/MinimalUtility.DebugProfileViewer.html#MinimalUtility_DebugProfileViewer__ctor
-  commentId: M:MinimalUtility.DebugProfileViewer.#ctor
-  name.vb: New()
-  fullName: MinimalUtility.DebugProfileViewer.DebugProfileViewer()
-  fullName.vb: MinimalUtility.DebugProfileViewer.New()
-  nameWithType: DebugProfileViewer.DebugProfileViewer()
-  nameWithType.vb: DebugProfileViewer.New()
-- uid: MinimalUtility.DebugProfileViewer.#ctor*
-  name: DebugProfileViewer
-  href: api/MinimalUtility.DebugProfileViewer.html#MinimalUtility_DebugProfileViewer__ctor_
-  commentId: Overload:MinimalUtility.DebugProfileViewer.#ctor
+- uid: MinimalUtility.Debugging
+  name: MinimalUtility.Debugging
+  href: api/MinimalUtility.Debugging.html
+  commentId: N:MinimalUtility.Debugging
+  fullName: MinimalUtility.Debugging
+  nameWithType: MinimalUtility.Debugging
+- uid: MinimalUtility.Debugging.DebugViewerBase
+  name: DebugViewerBase
+  href: api/MinimalUtility.Debugging.DebugViewerBase.html
+  commentId: T:MinimalUtility.Debugging.DebugViewerBase
+  fullName: MinimalUtility.Debugging.DebugViewerBase
+  nameWithType: DebugViewerBase
+- uid: MinimalUtility.Debugging.DebugViewerBase.Start
+  name: Start()
+  href: api/MinimalUtility.Debugging.DebugViewerBase.html#MinimalUtility_Debugging_DebugViewerBase_Start
+  commentId: M:MinimalUtility.Debugging.DebugViewerBase.Start
+  fullName: MinimalUtility.Debugging.DebugViewerBase.Start()
+  nameWithType: DebugViewerBase.Start()
+- uid: MinimalUtility.Debugging.DebugViewerBase.Start*
+  name: Start
+  href: api/MinimalUtility.Debugging.DebugViewerBase.html#MinimalUtility_Debugging_DebugViewerBase_Start_
+  commentId: Overload:MinimalUtility.Debugging.DebugViewerBase.Start
   isSpec: "True"
-  name.vb: New
-  fullName: MinimalUtility.DebugProfileViewer.DebugProfileViewer
-  fullName.vb: MinimalUtility.DebugProfileViewer.New
-  nameWithType: DebugProfileViewer.DebugProfileViewer
-  nameWithType.vb: DebugProfileViewer.New
-- uid: MinimalUtility.DebugProfileViewer.IsGUIVisible
-  name: IsGUIVisible
-  href: api/MinimalUtility.DebugProfileViewer.html#MinimalUtility_DebugProfileViewer_IsGUIVisible
-  commentId: P:MinimalUtility.DebugProfileViewer.IsGUIVisible
-  fullName: MinimalUtility.DebugProfileViewer.IsGUIVisible
-  nameWithType: DebugProfileViewer.IsGUIVisible
-- uid: MinimalUtility.DebugProfileViewer.IsGUIVisible*
-  name: IsGUIVisible
-  href: api/MinimalUtility.DebugProfileViewer.html#MinimalUtility_DebugProfileViewer_IsGUIVisible_
-  commentId: Overload:MinimalUtility.DebugProfileViewer.IsGUIVisible
+  fullName: MinimalUtility.Debugging.DebugViewerBase.Start
+  nameWithType: DebugViewerBase.Start
+- uid: MinimalUtility.Debugging.ProfileUtils
+  name: ProfileUtils
+  href: api/MinimalUtility.Debugging.ProfileUtils.html
+  commentId: T:MinimalUtility.Debugging.ProfileUtils
+  fullName: MinimalUtility.Debugging.ProfileUtils
+  nameWithType: ProfileUtils
+- uid: MinimalUtility.Debugging.ProfileUtils.GetLatestFrameTiming
+  name: GetLatestFrameTiming()
+  href: api/MinimalUtility.Debugging.ProfileUtils.html#MinimalUtility_Debugging_ProfileUtils_GetLatestFrameTiming
+  commentId: M:MinimalUtility.Debugging.ProfileUtils.GetLatestFrameTiming
+  fullName: MinimalUtility.Debugging.ProfileUtils.GetLatestFrameTiming()
+  nameWithType: ProfileUtils.GetLatestFrameTiming()
+- uid: MinimalUtility.Debugging.ProfileUtils.GetLatestFrameTiming*
+  name: GetLatestFrameTiming
+  href: api/MinimalUtility.Debugging.ProfileUtils.html#MinimalUtility_Debugging_ProfileUtils_GetLatestFrameTiming_
+  commentId: Overload:MinimalUtility.Debugging.ProfileUtils.GetLatestFrameTiming
   isSpec: "True"
-  fullName: MinimalUtility.DebugProfileViewer.IsGUIVisible
-  nameWithType: DebugProfileViewer.IsGUIVisible
-- uid: MinimalUtility.DebugProfileViewer.OnGUITrigger
-  name: DebugProfileViewer.OnGUITrigger
-  href: api/MinimalUtility.DebugProfileViewer.OnGUITrigger.html
-  commentId: T:MinimalUtility.DebugProfileViewer.OnGUITrigger
-  fullName: MinimalUtility.DebugProfileViewer.OnGUITrigger
-  nameWithType: DebugProfileViewer.OnGUITrigger
-- uid: MinimalUtility.DebugProfileViewer.OnGUITrigger.OnGUIEvent
-  name: OnGUIEvent
-  href: api/MinimalUtility.DebugProfileViewer.OnGUITrigger.html#MinimalUtility_DebugProfileViewer_OnGUITrigger_OnGUIEvent
-  commentId: E:MinimalUtility.DebugProfileViewer.OnGUITrigger.OnGUIEvent
-  fullName: MinimalUtility.DebugProfileViewer.OnGUITrigger.OnGUIEvent
-  nameWithType: DebugProfileViewer.OnGUITrigger.OnGUIEvent
-- uid: MinimalUtility.DebugProfileViewer.OnGUITrigger.State
-  name: State
-  href: api/MinimalUtility.DebugProfileViewer.OnGUITrigger.html#MinimalUtility_DebugProfileViewer_OnGUITrigger_State
-  commentId: P:MinimalUtility.DebugProfileViewer.OnGUITrigger.State
-  fullName: MinimalUtility.DebugProfileViewer.OnGUITrigger.State
-  nameWithType: DebugProfileViewer.OnGUITrigger.State
-- uid: MinimalUtility.DebugProfileViewer.OnGUITrigger.State*
-  name: State
-  href: api/MinimalUtility.DebugProfileViewer.OnGUITrigger.html#MinimalUtility_DebugProfileViewer_OnGUITrigger_State_
-  commentId: Overload:MinimalUtility.DebugProfileViewer.OnGUITrigger.State
+  fullName: MinimalUtility.Debugging.ProfileUtils.GetLatestFrameTiming
+  nameWithType: ProfileUtils.GetLatestFrameTiming
+- uid: MinimalUtility.Debugging.ProfileUtils.GetProfileInfo(MinimalUtility.Debugging.ProfileUtils.MemoryUnit)
+  name: GetProfileInfo(MemoryUnit)
+  href: api/MinimalUtility.Debugging.ProfileUtils.html#MinimalUtility_Debugging_ProfileUtils_GetProfileInfo_MinimalUtility_Debugging_ProfileUtils_MemoryUnit_
+  commentId: M:MinimalUtility.Debugging.ProfileUtils.GetProfileInfo(MinimalUtility.Debugging.ProfileUtils.MemoryUnit)
+  fullName: MinimalUtility.Debugging.ProfileUtils.GetProfileInfo(MinimalUtility.Debugging.ProfileUtils.MemoryUnit)
+  nameWithType: ProfileUtils.GetProfileInfo(ProfileUtils.MemoryUnit)
+- uid: MinimalUtility.Debugging.ProfileUtils.GetProfileInfo*
+  name: GetProfileInfo
+  href: api/MinimalUtility.Debugging.ProfileUtils.html#MinimalUtility_Debugging_ProfileUtils_GetProfileInfo_
+  commentId: Overload:MinimalUtility.Debugging.ProfileUtils.GetProfileInfo
   isSpec: "True"
-  fullName: MinimalUtility.DebugProfileViewer.OnGUITrigger.State
-  nameWithType: DebugProfileViewer.OnGUITrigger.State
-- uid: MinimalUtility.DebugProfileViewer.Unit
-  name: Unit
-  href: api/MinimalUtility.DebugProfileViewer.html#MinimalUtility_DebugProfileViewer_Unit
-  commentId: P:MinimalUtility.DebugProfileViewer.Unit
-  fullName: MinimalUtility.DebugProfileViewer.Unit
-  nameWithType: DebugProfileViewer.Unit
-- uid: MinimalUtility.DebugProfileViewer.Unit*
-  name: Unit
-  href: api/MinimalUtility.DebugProfileViewer.html#MinimalUtility_DebugProfileViewer_Unit_
-  commentId: Overload:MinimalUtility.DebugProfileViewer.Unit
+  fullName: MinimalUtility.Debugging.ProfileUtils.GetProfileInfo
+  nameWithType: ProfileUtils.GetProfileInfo
+- uid: MinimalUtility.Debugging.ProfileUtils.GetTotalMemory(MinimalUtility.Debugging.ProfileUtils.MemoryUnit)
+  name: GetTotalMemory(MemoryUnit)
+  href: api/MinimalUtility.Debugging.ProfileUtils.html#MinimalUtility_Debugging_ProfileUtils_GetTotalMemory_MinimalUtility_Debugging_ProfileUtils_MemoryUnit_
+  commentId: M:MinimalUtility.Debugging.ProfileUtils.GetTotalMemory(MinimalUtility.Debugging.ProfileUtils.MemoryUnit)
+  fullName: MinimalUtility.Debugging.ProfileUtils.GetTotalMemory(MinimalUtility.Debugging.ProfileUtils.MemoryUnit)
+  nameWithType: ProfileUtils.GetTotalMemory(ProfileUtils.MemoryUnit)
+- uid: MinimalUtility.Debugging.ProfileUtils.GetTotalMemory*
+  name: GetTotalMemory
+  href: api/MinimalUtility.Debugging.ProfileUtils.html#MinimalUtility_Debugging_ProfileUtils_GetTotalMemory_
+  commentId: Overload:MinimalUtility.Debugging.ProfileUtils.GetTotalMemory
   isSpec: "True"
-  fullName: MinimalUtility.DebugProfileViewer.Unit
-  nameWithType: DebugProfileViewer.Unit
+  fullName: MinimalUtility.Debugging.ProfileUtils.GetTotalMemory
+  nameWithType: ProfileUtils.GetTotalMemory
+- uid: MinimalUtility.Debugging.ProfileUtils.MemoryUnit
+  name: ProfileUtils.MemoryUnit
+  href: api/MinimalUtility.Debugging.ProfileUtils.MemoryUnit.html
+  commentId: T:MinimalUtility.Debugging.ProfileUtils.MemoryUnit
+  fullName: MinimalUtility.Debugging.ProfileUtils.MemoryUnit
+  nameWithType: ProfileUtils.MemoryUnit
+- uid: MinimalUtility.Debugging.ProfileUtils.MemoryUnit.B
+  name: B
+  href: api/MinimalUtility.Debugging.ProfileUtils.MemoryUnit.html#MinimalUtility_Debugging_ProfileUtils_MemoryUnit_B
+  commentId: F:MinimalUtility.Debugging.ProfileUtils.MemoryUnit.B
+  fullName: MinimalUtility.Debugging.ProfileUtils.MemoryUnit.B
+  nameWithType: ProfileUtils.MemoryUnit.B
+- uid: MinimalUtility.Debugging.ProfileUtils.MemoryUnit.GB
+  name: GB
+  href: api/MinimalUtility.Debugging.ProfileUtils.MemoryUnit.html#MinimalUtility_Debugging_ProfileUtils_MemoryUnit_GB
+  commentId: F:MinimalUtility.Debugging.ProfileUtils.MemoryUnit.GB
+  fullName: MinimalUtility.Debugging.ProfileUtils.MemoryUnit.GB
+  nameWithType: ProfileUtils.MemoryUnit.GB
+- uid: MinimalUtility.Debugging.ProfileUtils.MemoryUnit.KB
+  name: KB
+  href: api/MinimalUtility.Debugging.ProfileUtils.MemoryUnit.html#MinimalUtility_Debugging_ProfileUtils_MemoryUnit_KB
+  commentId: F:MinimalUtility.Debugging.ProfileUtils.MemoryUnit.KB
+  fullName: MinimalUtility.Debugging.ProfileUtils.MemoryUnit.KB
+  nameWithType: ProfileUtils.MemoryUnit.KB
+- uid: MinimalUtility.Debugging.ProfileUtils.MemoryUnit.MB
+  name: MB
+  href: api/MinimalUtility.Debugging.ProfileUtils.MemoryUnit.html#MinimalUtility_Debugging_ProfileUtils_MemoryUnit_MB
+  commentId: F:MinimalUtility.Debugging.ProfileUtils.MemoryUnit.MB
+  fullName: MinimalUtility.Debugging.ProfileUtils.MemoryUnit.MB
+  nameWithType: ProfileUtils.MemoryUnit.MB
 - uid: MinimalUtility.DisposableExtensions
   name: DisposableExtensions
   href: api/MinimalUtility.DisposableExtensions.html
@@ -389,122 +385,6 @@ references:
   fullName.vb: MinimalUtility.EqualityComparer.Create(Of T)(System.Func(Of T, T, Boolean), System.Func(Of T, Integer))
   nameWithType: EqualityComparer.Create<T>(Func<T, T, bool>, Func<T, int>)
   nameWithType.vb: EqualityComparer.Create(Of T)(Func(Of T, T, Boolean), Func(Of T, Integer))
-- uid: MinimalUtility.FrameDataProvider
-  name: FrameDataProvider
-  href: api/MinimalUtility.FrameDataProvider.html
-  commentId: T:MinimalUtility.FrameDataProvider
-  fullName: MinimalUtility.FrameDataProvider
-  nameWithType: FrameDataProvider
-- uid: MinimalUtility.FrameDataProvider.#ctor
-  name: FrameDataProvider()
-  href: api/MinimalUtility.FrameDataProvider.html#MinimalUtility_FrameDataProvider__ctor
-  commentId: M:MinimalUtility.FrameDataProvider.#ctor
-  name.vb: New()
-  fullName: MinimalUtility.FrameDataProvider.FrameDataProvider()
-  fullName.vb: MinimalUtility.FrameDataProvider.New()
-  nameWithType: FrameDataProvider.FrameDataProvider()
-  nameWithType.vb: FrameDataProvider.New()
-- uid: MinimalUtility.FrameDataProvider.#ctor*
-  name: FrameDataProvider
-  href: api/MinimalUtility.FrameDataProvider.html#MinimalUtility_FrameDataProvider__ctor_
-  commentId: Overload:MinimalUtility.FrameDataProvider.#ctor
-  isSpec: "True"
-  name.vb: New
-  fullName: MinimalUtility.FrameDataProvider.FrameDataProvider
-  fullName.vb: MinimalUtility.FrameDataProvider.New
-  nameWithType: FrameDataProvider.FrameDataProvider
-  nameWithType.vb: FrameDataProvider.New
-- uid: MinimalUtility.FrameDataProvider.CoroutineRunner
-  name: CoroutineRunner
-  href: api/MinimalUtility.FrameDataProvider.html#MinimalUtility_FrameDataProvider_CoroutineRunner
-  commentId: P:MinimalUtility.FrameDataProvider.CoroutineRunner
-  fullName: MinimalUtility.FrameDataProvider.CoroutineRunner
-  nameWithType: FrameDataProvider.CoroutineRunner
-- uid: MinimalUtility.FrameDataProvider.CoroutineRunner*
-  name: CoroutineRunner
-  href: api/MinimalUtility.FrameDataProvider.html#MinimalUtility_FrameDataProvider_CoroutineRunner_
-  commentId: Overload:MinimalUtility.FrameDataProvider.CoroutineRunner
-  isSpec: "True"
-  fullName: MinimalUtility.FrameDataProvider.CoroutineRunner
-  nameWithType: FrameDataProvider.CoroutineRunner
-- uid: MinimalUtility.FrameDataProvider.CreateCoroutineRunner*
-  name: CreateCoroutineRunner
-  href: api/MinimalUtility.FrameDataProvider.html#MinimalUtility_FrameDataProvider_CreateCoroutineRunner_
-  commentId: Overload:MinimalUtility.FrameDataProvider.CreateCoroutineRunner
-  isSpec: "True"
-  fullName: MinimalUtility.FrameDataProvider.CreateCoroutineRunner
-  nameWithType: FrameDataProvider.CreateCoroutineRunner
-- uid: MinimalUtility.FrameDataProvider.CreateCoroutineRunner``1
-  name: CreateCoroutineRunner<T>()
-  href: api/MinimalUtility.FrameDataProvider.html#MinimalUtility_FrameDataProvider_CreateCoroutineRunner__1
-  commentId: M:MinimalUtility.FrameDataProvider.CreateCoroutineRunner``1
-  name.vb: CreateCoroutineRunner(Of T)()
-  fullName: MinimalUtility.FrameDataProvider.CreateCoroutineRunner<T>()
-  fullName.vb: MinimalUtility.FrameDataProvider.CreateCoroutineRunner(Of T)()
-  nameWithType: FrameDataProvider.CreateCoroutineRunner<T>()
-  nameWithType.vb: FrameDataProvider.CreateCoroutineRunner(Of T)()
-- uid: MinimalUtility.FrameDataProvider.EmptyMonoBehaviour
-  name: FrameDataProvider.EmptyMonoBehaviour
-  href: api/MinimalUtility.FrameDataProvider.EmptyMonoBehaviour.html
-  commentId: T:MinimalUtility.FrameDataProvider.EmptyMonoBehaviour
-  fullName: MinimalUtility.FrameDataProvider.EmptyMonoBehaviour
-  nameWithType: FrameDataProvider.EmptyMonoBehaviour
-- uid: MinimalUtility.FrameDataProvider.GetTotalMemory(MinimalUtility.FrameDataProvider.MemoryUnit)
-  name: GetTotalMemory(MemoryUnit)
-  href: api/MinimalUtility.FrameDataProvider.html#MinimalUtility_FrameDataProvider_GetTotalMemory_MinimalUtility_FrameDataProvider_MemoryUnit_
-  commentId: M:MinimalUtility.FrameDataProvider.GetTotalMemory(MinimalUtility.FrameDataProvider.MemoryUnit)
-  fullName: MinimalUtility.FrameDataProvider.GetTotalMemory(MinimalUtility.FrameDataProvider.MemoryUnit)
-  nameWithType: FrameDataProvider.GetTotalMemory(FrameDataProvider.MemoryUnit)
-- uid: MinimalUtility.FrameDataProvider.GetTotalMemory*
-  name: GetTotalMemory
-  href: api/MinimalUtility.FrameDataProvider.html#MinimalUtility_FrameDataProvider_GetTotalMemory_
-  commentId: Overload:MinimalUtility.FrameDataProvider.GetTotalMemory
-  isSpec: "True"
-  fullName: MinimalUtility.FrameDataProvider.GetTotalMemory
-  nameWithType: FrameDataProvider.GetTotalMemory
-- uid: MinimalUtility.FrameDataProvider.LatestFrameData
-  name: LatestFrameData
-  href: api/MinimalUtility.FrameDataProvider.html#MinimalUtility_FrameDataProvider_LatestFrameData
-  commentId: P:MinimalUtility.FrameDataProvider.LatestFrameData
-  fullName: MinimalUtility.FrameDataProvider.LatestFrameData
-  nameWithType: FrameDataProvider.LatestFrameData
-- uid: MinimalUtility.FrameDataProvider.LatestFrameData*
-  name: LatestFrameData
-  href: api/MinimalUtility.FrameDataProvider.html#MinimalUtility_FrameDataProvider_LatestFrameData_
-  commentId: Overload:MinimalUtility.FrameDataProvider.LatestFrameData
-  isSpec: "True"
-  fullName: MinimalUtility.FrameDataProvider.LatestFrameData
-  nameWithType: FrameDataProvider.LatestFrameData
-- uid: MinimalUtility.FrameDataProvider.MemoryUnit
-  name: FrameDataProvider.MemoryUnit
-  href: api/MinimalUtility.FrameDataProvider.MemoryUnit.html
-  commentId: T:MinimalUtility.FrameDataProvider.MemoryUnit
-  fullName: MinimalUtility.FrameDataProvider.MemoryUnit
-  nameWithType: FrameDataProvider.MemoryUnit
-- uid: MinimalUtility.FrameDataProvider.MemoryUnit.B
-  name: B
-  href: api/MinimalUtility.FrameDataProvider.MemoryUnit.html#MinimalUtility_FrameDataProvider_MemoryUnit_B
-  commentId: F:MinimalUtility.FrameDataProvider.MemoryUnit.B
-  fullName: MinimalUtility.FrameDataProvider.MemoryUnit.B
-  nameWithType: FrameDataProvider.MemoryUnit.B
-- uid: MinimalUtility.FrameDataProvider.MemoryUnit.GB
-  name: GB
-  href: api/MinimalUtility.FrameDataProvider.MemoryUnit.html#MinimalUtility_FrameDataProvider_MemoryUnit_GB
-  commentId: F:MinimalUtility.FrameDataProvider.MemoryUnit.GB
-  fullName: MinimalUtility.FrameDataProvider.MemoryUnit.GB
-  nameWithType: FrameDataProvider.MemoryUnit.GB
-- uid: MinimalUtility.FrameDataProvider.MemoryUnit.KB
-  name: KB
-  href: api/MinimalUtility.FrameDataProvider.MemoryUnit.html#MinimalUtility_FrameDataProvider_MemoryUnit_KB
-  commentId: F:MinimalUtility.FrameDataProvider.MemoryUnit.KB
-  fullName: MinimalUtility.FrameDataProvider.MemoryUnit.KB
-  nameWithType: FrameDataProvider.MemoryUnit.KB
-- uid: MinimalUtility.FrameDataProvider.MemoryUnit.MB
-  name: MB
-  href: api/MinimalUtility.FrameDataProvider.MemoryUnit.html#MinimalUtility_FrameDataProvider_MemoryUnit_MB
-  commentId: F:MinimalUtility.FrameDataProvider.MemoryUnit.MB
-  fullName: MinimalUtility.FrameDataProvider.MemoryUnit.MB
-  nameWithType: FrameDataProvider.MemoryUnit.MB
 - uid: MinimalUtility.GameObjectPool`1
   name: GameObjectPool<T>
   href: api/MinimalUtility.GameObjectPool-1.html
@@ -978,31 +858,6 @@ references:
   commentId: T:MinimalUtility.StringUtils
   fullName: MinimalUtility.StringUtils
   nameWithType: StringUtils
-- uid: MinimalUtility.StringUtils.Create(System.IFormatProvider,System.Runtime.CompilerServices.DefaultInterpolatedStringHandler@)
-  name: Create(IFormatProvider?, ref DefaultInterpolatedStringHandler)
-  href: api/MinimalUtility.StringUtils.html#MinimalUtility_StringUtils_Create_System_IFormatProvider_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler__
-  commentId: M:MinimalUtility.StringUtils.Create(System.IFormatProvider,System.Runtime.CompilerServices.DefaultInterpolatedStringHandler@)
-  name.vb: Create(IFormatProvider, DefaultInterpolatedStringHandler)
-  fullName: MinimalUtility.StringUtils.Create(System.IFormatProvider?, ref System.Runtime.CompilerServices.DefaultInterpolatedStringHandler)
-  fullName.vb: MinimalUtility.StringUtils.Create(System.IFormatProvider, System.Runtime.CompilerServices.DefaultInterpolatedStringHandler)
-  nameWithType: StringUtils.Create(IFormatProvider?, ref DefaultInterpolatedStringHandler)
-  nameWithType.vb: StringUtils.Create(IFormatProvider, DefaultInterpolatedStringHandler)
-- uid: MinimalUtility.StringUtils.Create(System.IFormatProvider,System.Span{System.Char},System.Runtime.CompilerServices.DefaultInterpolatedStringHandler@)
-  name: Create(IFormatProvider?, Span<char>, ref DefaultInterpolatedStringHandler)
-  href: api/MinimalUtility.StringUtils.html#MinimalUtility_StringUtils_Create_System_IFormatProvider_System_Span_System_Char__System_Runtime_CompilerServices_DefaultInterpolatedStringHandler__
-  commentId: M:MinimalUtility.StringUtils.Create(System.IFormatProvider,System.Span{System.Char},System.Runtime.CompilerServices.DefaultInterpolatedStringHandler@)
-  name.vb: Create(IFormatProvider, Span(Of Char), DefaultInterpolatedStringHandler)
-  fullName: MinimalUtility.StringUtils.Create(System.IFormatProvider?, System.Span<char>, ref System.Runtime.CompilerServices.DefaultInterpolatedStringHandler)
-  fullName.vb: MinimalUtility.StringUtils.Create(System.IFormatProvider, System.Span(Of Char), System.Runtime.CompilerServices.DefaultInterpolatedStringHandler)
-  nameWithType: StringUtils.Create(IFormatProvider?, Span<char>, ref DefaultInterpolatedStringHandler)
-  nameWithType.vb: StringUtils.Create(IFormatProvider, Span(Of Char), DefaultInterpolatedStringHandler)
-- uid: MinimalUtility.StringUtils.Create*
-  name: Create
-  href: api/MinimalUtility.StringUtils.html#MinimalUtility_StringUtils_Create_
-  commentId: Overload:MinimalUtility.StringUtils.Create
-  isSpec: "True"
-  fullName: MinimalUtility.StringUtils.Create
-  nameWithType: StringUtils.Create
 - uid: MinimalUtility.StringUtils.Join(System.Char@,System.Collections.Generic.IEnumerable{System.String})
   name: Join(in char, IEnumerable<string?>)
   href: api/MinimalUtility.StringUtils.html#MinimalUtility_StringUtils_Join_System_Char__System_Collections_Generic_IEnumerable_System_String__
@@ -1131,62 +986,6 @@ references:
   fullName.vb: MinimalUtility.Tasks.AsyncGameObjectPool(Of T).GetScopeAsync
   nameWithType: AsyncGameObjectPool<T>.GetScopeAsync
   nameWithType.vb: AsyncGameObjectPool(Of T).GetScopeAsync
-- uid: MinimalUtility.Tasks.Progress
-  name: Progress
-  href: api/MinimalUtility.Tasks.Progress.html
-  commentId: T:MinimalUtility.Tasks.Progress
-  fullName: MinimalUtility.Tasks.Progress
-  nameWithType: Progress
-- uid: MinimalUtility.Tasks.Progress.Create*
-  name: Create
-  href: api/MinimalUtility.Tasks.Progress.html#MinimalUtility_Tasks_Progress_Create_
-  commentId: Overload:MinimalUtility.Tasks.Progress.Create
-  isSpec: "True"
-  fullName: MinimalUtility.Tasks.Progress.Create
-  nameWithType: Progress.Create
-- uid: MinimalUtility.Tasks.Progress.CreateOnlyValueChanged*
-  name: CreateOnlyValueChanged
-  href: api/MinimalUtility.Tasks.Progress.html#MinimalUtility_Tasks_Progress_CreateOnlyValueChanged_
-  commentId: Overload:MinimalUtility.Tasks.Progress.CreateOnlyValueChanged
-  isSpec: "True"
-  fullName: MinimalUtility.Tasks.Progress.CreateOnlyValueChanged
-  nameWithType: Progress.CreateOnlyValueChanged
-- uid: MinimalUtility.Tasks.Progress.CreateOnlyValueChanged``1(System.Action{``0})
-  name: CreateOnlyValueChanged<T>(Action<T>)
-  href: api/MinimalUtility.Tasks.Progress.html#MinimalUtility_Tasks_Progress_CreateOnlyValueChanged__1_System_Action___0__
-  commentId: M:MinimalUtility.Tasks.Progress.CreateOnlyValueChanged``1(System.Action{``0})
-  name.vb: CreateOnlyValueChanged(Of T)(Action(Of T))
-  fullName: MinimalUtility.Tasks.Progress.CreateOnlyValueChanged<T>(System.Action<T>)
-  fullName.vb: MinimalUtility.Tasks.Progress.CreateOnlyValueChanged(Of T)(System.Action(Of T))
-  nameWithType: Progress.CreateOnlyValueChanged<T>(Action<T>)
-  nameWithType.vb: Progress.CreateOnlyValueChanged(Of T)(Action(Of T))
-- uid: MinimalUtility.Tasks.Progress.CreateOnlyValueChanged``2(``1,System.Action{``0,``1},System.Collections.Generic.IEqualityComparer{``0})
-  name: CreateOnlyValueChanged<T, TState>(TState, Action<T, TState>, IEqualityComparer<T>)
-  href: api/MinimalUtility.Tasks.Progress.html#MinimalUtility_Tasks_Progress_CreateOnlyValueChanged__2___1_System_Action___0___1__System_Collections_Generic_IEqualityComparer___0__
-  commentId: M:MinimalUtility.Tasks.Progress.CreateOnlyValueChanged``2(``1,System.Action{``0,``1},System.Collections.Generic.IEqualityComparer{``0})
-  name.vb: CreateOnlyValueChanged(Of T, TState)(TState, Action(Of T, TState), IEqualityComparer(Of T))
-  fullName: MinimalUtility.Tasks.Progress.CreateOnlyValueChanged<T, TState>(TState, System.Action<T, TState>, System.Collections.Generic.IEqualityComparer<T>)
-  fullName.vb: MinimalUtility.Tasks.Progress.CreateOnlyValueChanged(Of T, TState)(TState, System.Action(Of T, TState), System.Collections.Generic.IEqualityComparer(Of T))
-  nameWithType: Progress.CreateOnlyValueChanged<T, TState>(TState, Action<T, TState>, IEqualityComparer<T>)
-  nameWithType.vb: Progress.CreateOnlyValueChanged(Of T, TState)(TState, Action(Of T, TState), IEqualityComparer(Of T))
-- uid: MinimalUtility.Tasks.Progress.Create``1(System.Action{``0})
-  name: Create<T>(Action<T>)
-  href: api/MinimalUtility.Tasks.Progress.html#MinimalUtility_Tasks_Progress_Create__1_System_Action___0__
-  commentId: M:MinimalUtility.Tasks.Progress.Create``1(System.Action{``0})
-  name.vb: Create(Of T)(Action(Of T))
-  fullName: MinimalUtility.Tasks.Progress.Create<T>(System.Action<T>)
-  fullName.vb: MinimalUtility.Tasks.Progress.Create(Of T)(System.Action(Of T))
-  nameWithType: Progress.Create<T>(Action<T>)
-  nameWithType.vb: Progress.Create(Of T)(Action(Of T))
-- uid: MinimalUtility.Tasks.Progress.Create``2(``1,System.Action{``0,``1})
-  name: Create<T, TState>(TState, Action<T, TState>)
-  href: api/MinimalUtility.Tasks.Progress.html#MinimalUtility_Tasks_Progress_Create__2___1_System_Action___0___1__
-  commentId: M:MinimalUtility.Tasks.Progress.Create``2(``1,System.Action{``0,``1})
-  name.vb: Create(Of T, TState)(TState, Action(Of T, TState))
-  fullName: MinimalUtility.Tasks.Progress.Create<T, TState>(TState, System.Action<T, TState>)
-  fullName.vb: MinimalUtility.Tasks.Progress.Create(Of T, TState)(TState, System.Action(Of T, TState))
-  nameWithType: Progress.Create<T, TState>(TState, Action<T, TState>)
-  nameWithType.vb: Progress.Create(Of T, TState)(TState, Action(Of T, TState))
 - uid: MinimalUtility.Tasks.UniTaskExtensions
   name: UniTaskExtensions
   href: api/MinimalUtility.Tasks.UniTaskExtensions.html
@@ -1392,6 +1191,454 @@ references:
   commentId: N:MinimalUtility.VContainer
   fullName: MinimalUtility.VContainer
   nameWithType: MinimalUtility.VContainer
+- uid: MinimalUtility.VContainer.EntryPointContainer`1
+  name: EntryPointContainer<T1>
+  href: api/MinimalUtility.VContainer.EntryPointContainer-1.html
+  commentId: T:MinimalUtility.VContainer.EntryPointContainer`1
+  name.vb: EntryPointContainer(Of T1)
+  fullName: MinimalUtility.VContainer.EntryPointContainer<T1>
+  fullName.vb: MinimalUtility.VContainer.EntryPointContainer(Of T1)
+  nameWithType: EntryPointContainer<T1>
+  nameWithType.vb: EntryPointContainer(Of T1)
+- uid: MinimalUtility.VContainer.EntryPointContainer`1.#ctor(`0,System.Action{`0})
+  name: EntryPointContainer(T1, Action<T1>)
+  href: api/MinimalUtility.VContainer.EntryPointContainer-1.html#MinimalUtility_VContainer_EntryPointContainer_1__ctor__0_System_Action__0__
+  commentId: M:MinimalUtility.VContainer.EntryPointContainer`1.#ctor(`0,System.Action{`0})
+  name.vb: New(T1, Action(Of T1))
+  fullName: MinimalUtility.VContainer.EntryPointContainer<T1>.EntryPointContainer(T1, System.Action<T1>)
+  fullName.vb: MinimalUtility.VContainer.EntryPointContainer(Of T1).New(T1, System.Action(Of T1))
+  nameWithType: EntryPointContainer<T1>.EntryPointContainer(T1, Action<T1>)
+  nameWithType.vb: EntryPointContainer(Of T1).New(T1, Action(Of T1))
+- uid: MinimalUtility.VContainer.EntryPointContainer`1.#ctor*
+  name: EntryPointContainer
+  href: api/MinimalUtility.VContainer.EntryPointContainer-1.html#MinimalUtility_VContainer_EntryPointContainer_1__ctor_
+  commentId: Overload:MinimalUtility.VContainer.EntryPointContainer`1.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: MinimalUtility.VContainer.EntryPointContainer<T1>.EntryPointContainer
+  fullName.vb: MinimalUtility.VContainer.EntryPointContainer(Of T1).New
+  nameWithType: EntryPointContainer<T1>.EntryPointContainer
+  nameWithType.vb: EntryPointContainer(Of T1).New
+- uid: MinimalUtility.VContainer.EntryPointContainer`10
+  name: EntryPointContainer<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10>
+  href: api/MinimalUtility.VContainer.EntryPointContainer-10.html
+  commentId: T:MinimalUtility.VContainer.EntryPointContainer`10
+  name.vb: EntryPointContainer(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10)
+  fullName: MinimalUtility.VContainer.EntryPointContainer<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10>
+  fullName.vb: MinimalUtility.VContainer.EntryPointContainer(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10)
+  nameWithType: EntryPointContainer<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10>
+  nameWithType.vb: EntryPointContainer(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10)
+- uid: MinimalUtility.VContainer.EntryPointContainer`10.#ctor(`0,`1,`2,`3,`4,`5,`6,`7,`8,`9,System.Action{`0,`1,`2,`3,`4,`5,`6,`7,`8,`9})
+  name: EntryPointContainer(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, Action<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10>)
+  href: api/MinimalUtility.VContainer.EntryPointContainer-10.html#MinimalUtility_VContainer_EntryPointContainer_10__ctor__0__1__2__3__4__5__6__7__8__9_System_Action__0__1__2__3__4__5__6__7__8__9__
+  commentId: M:MinimalUtility.VContainer.EntryPointContainer`10.#ctor(`0,`1,`2,`3,`4,`5,`6,`7,`8,`9,System.Action{`0,`1,`2,`3,`4,`5,`6,`7,`8,`9})
+  name.vb: New(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, Action(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10))
+  fullName: MinimalUtility.VContainer.EntryPointContainer<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10>.EntryPointContainer(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, System.Action<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10>)
+  fullName.vb: MinimalUtility.VContainer.EntryPointContainer(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10).New(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, System.Action(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10))
+  nameWithType: EntryPointContainer<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10>.EntryPointContainer(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, Action<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10>)
+  nameWithType.vb: EntryPointContainer(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10).New(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, Action(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10))
+- uid: MinimalUtility.VContainer.EntryPointContainer`10.#ctor*
+  name: EntryPointContainer
+  href: api/MinimalUtility.VContainer.EntryPointContainer-10.html#MinimalUtility_VContainer_EntryPointContainer_10__ctor_
+  commentId: Overload:MinimalUtility.VContainer.EntryPointContainer`10.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: MinimalUtility.VContainer.EntryPointContainer<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10>.EntryPointContainer
+  fullName.vb: MinimalUtility.VContainer.EntryPointContainer(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10).New
+  nameWithType: EntryPointContainer<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10>.EntryPointContainer
+  nameWithType.vb: EntryPointContainer(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10).New
+- uid: MinimalUtility.VContainer.EntryPointContainer`11
+  name: EntryPointContainer<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11>
+  href: api/MinimalUtility.VContainer.EntryPointContainer-11.html
+  commentId: T:MinimalUtility.VContainer.EntryPointContainer`11
+  name.vb: EntryPointContainer(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11)
+  fullName: MinimalUtility.VContainer.EntryPointContainer<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11>
+  fullName.vb: MinimalUtility.VContainer.EntryPointContainer(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11)
+  nameWithType: EntryPointContainer<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11>
+  nameWithType.vb: EntryPointContainer(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11)
+- uid: MinimalUtility.VContainer.EntryPointContainer`11.#ctor(`0,`1,`2,`3,`4,`5,`6,`7,`8,`9,`10,System.Action{`0,`1,`2,`3,`4,`5,`6,`7,`8,`9,`10})
+  name: EntryPointContainer(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, Action<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11>)
+  href: api/MinimalUtility.VContainer.EntryPointContainer-11.html#MinimalUtility_VContainer_EntryPointContainer_11__ctor__0__1__2__3__4__5__6__7__8__9__10_System_Action__0__1__2__3__4__5__6__7__8__9__10__
+  commentId: M:MinimalUtility.VContainer.EntryPointContainer`11.#ctor(`0,`1,`2,`3,`4,`5,`6,`7,`8,`9,`10,System.Action{`0,`1,`2,`3,`4,`5,`6,`7,`8,`9,`10})
+  name.vb: New(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, Action(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11))
+  fullName: MinimalUtility.VContainer.EntryPointContainer<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11>.EntryPointContainer(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, System.Action<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11>)
+  fullName.vb: MinimalUtility.VContainer.EntryPointContainer(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11).New(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, System.Action(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11))
+  nameWithType: EntryPointContainer<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11>.EntryPointContainer(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, Action<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11>)
+  nameWithType.vb: EntryPointContainer(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11).New(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, Action(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11))
+- uid: MinimalUtility.VContainer.EntryPointContainer`11.#ctor*
+  name: EntryPointContainer
+  href: api/MinimalUtility.VContainer.EntryPointContainer-11.html#MinimalUtility_VContainer_EntryPointContainer_11__ctor_
+  commentId: Overload:MinimalUtility.VContainer.EntryPointContainer`11.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: MinimalUtility.VContainer.EntryPointContainer<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11>.EntryPointContainer
+  fullName.vb: MinimalUtility.VContainer.EntryPointContainer(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11).New
+  nameWithType: EntryPointContainer<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11>.EntryPointContainer
+  nameWithType.vb: EntryPointContainer(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11).New
+- uid: MinimalUtility.VContainer.EntryPointContainer`12
+  name: EntryPointContainer<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12>
+  href: api/MinimalUtility.VContainer.EntryPointContainer-12.html
+  commentId: T:MinimalUtility.VContainer.EntryPointContainer`12
+  name.vb: EntryPointContainer(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12)
+  fullName: MinimalUtility.VContainer.EntryPointContainer<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12>
+  fullName.vb: MinimalUtility.VContainer.EntryPointContainer(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12)
+  nameWithType: EntryPointContainer<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12>
+  nameWithType.vb: EntryPointContainer(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12)
+- uid: MinimalUtility.VContainer.EntryPointContainer`12.#ctor(`0,`1,`2,`3,`4,`5,`6,`7,`8,`9,`10,`11,System.Action{`0,`1,`2,`3,`4,`5,`6,`7,`8,`9,`10,`11})
+  name: EntryPointContainer(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, Action<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12>)
+  href: api/MinimalUtility.VContainer.EntryPointContainer-12.html#MinimalUtility_VContainer_EntryPointContainer_12__ctor__0__1__2__3__4__5__6__7__8__9__10__11_System_Action__0__1__2__3__4__5__6__7__8__9__10__11__
+  commentId: M:MinimalUtility.VContainer.EntryPointContainer`12.#ctor(`0,`1,`2,`3,`4,`5,`6,`7,`8,`9,`10,`11,System.Action{`0,`1,`2,`3,`4,`5,`6,`7,`8,`9,`10,`11})
+  name.vb: New(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, Action(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12))
+  fullName: MinimalUtility.VContainer.EntryPointContainer<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12>.EntryPointContainer(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, System.Action<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12>)
+  fullName.vb: MinimalUtility.VContainer.EntryPointContainer(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12).New(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, System.Action(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12))
+  nameWithType: EntryPointContainer<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12>.EntryPointContainer(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, Action<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12>)
+  nameWithType.vb: EntryPointContainer(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12).New(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, Action(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12))
+- uid: MinimalUtility.VContainer.EntryPointContainer`12.#ctor*
+  name: EntryPointContainer
+  href: api/MinimalUtility.VContainer.EntryPointContainer-12.html#MinimalUtility_VContainer_EntryPointContainer_12__ctor_
+  commentId: Overload:MinimalUtility.VContainer.EntryPointContainer`12.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: MinimalUtility.VContainer.EntryPointContainer<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12>.EntryPointContainer
+  fullName.vb: MinimalUtility.VContainer.EntryPointContainer(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12).New
+  nameWithType: EntryPointContainer<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12>.EntryPointContainer
+  nameWithType.vb: EntryPointContainer(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12).New
+- uid: MinimalUtility.VContainer.EntryPointContainer`13
+  name: EntryPointContainer<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13>
+  href: api/MinimalUtility.VContainer.EntryPointContainer-13.html
+  commentId: T:MinimalUtility.VContainer.EntryPointContainer`13
+  name.vb: EntryPointContainer(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13)
+  fullName: MinimalUtility.VContainer.EntryPointContainer<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13>
+  fullName.vb: MinimalUtility.VContainer.EntryPointContainer(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13)
+  nameWithType: EntryPointContainer<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13>
+  nameWithType.vb: EntryPointContainer(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13)
+- uid: MinimalUtility.VContainer.EntryPointContainer`13.#ctor(`0,`1,`2,`3,`4,`5,`6,`7,`8,`9,`10,`11,`12,System.Action{`0,`1,`2,`3,`4,`5,`6,`7,`8,`9,`10,`11,`12})
+  name: EntryPointContainer(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, Action<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13>)
+  href: api/MinimalUtility.VContainer.EntryPointContainer-13.html#MinimalUtility_VContainer_EntryPointContainer_13__ctor__0__1__2__3__4__5__6__7__8__9__10__11__12_System_Action__0__1__2__3__4__5__6__7__8__9__10__11__12__
+  commentId: M:MinimalUtility.VContainer.EntryPointContainer`13.#ctor(`0,`1,`2,`3,`4,`5,`6,`7,`8,`9,`10,`11,`12,System.Action{`0,`1,`2,`3,`4,`5,`6,`7,`8,`9,`10,`11,`12})
+  name.vb: New(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, Action(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13))
+  fullName: MinimalUtility.VContainer.EntryPointContainer<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13>.EntryPointContainer(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, System.Action<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13>)
+  fullName.vb: MinimalUtility.VContainer.EntryPointContainer(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13).New(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, System.Action(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13))
+  nameWithType: EntryPointContainer<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13>.EntryPointContainer(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, Action<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13>)
+  nameWithType.vb: EntryPointContainer(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13).New(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, Action(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13))
+- uid: MinimalUtility.VContainer.EntryPointContainer`13.#ctor*
+  name: EntryPointContainer
+  href: api/MinimalUtility.VContainer.EntryPointContainer-13.html#MinimalUtility_VContainer_EntryPointContainer_13__ctor_
+  commentId: Overload:MinimalUtility.VContainer.EntryPointContainer`13.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: MinimalUtility.VContainer.EntryPointContainer<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13>.EntryPointContainer
+  fullName.vb: MinimalUtility.VContainer.EntryPointContainer(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13).New
+  nameWithType: EntryPointContainer<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13>.EntryPointContainer
+  nameWithType.vb: EntryPointContainer(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13).New
+- uid: MinimalUtility.VContainer.EntryPointContainer`14
+  name: EntryPointContainer<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14>
+  href: api/MinimalUtility.VContainer.EntryPointContainer-14.html
+  commentId: T:MinimalUtility.VContainer.EntryPointContainer`14
+  name.vb: EntryPointContainer(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14)
+  fullName: MinimalUtility.VContainer.EntryPointContainer<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14>
+  fullName.vb: MinimalUtility.VContainer.EntryPointContainer(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14)
+  nameWithType: EntryPointContainer<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14>
+  nameWithType.vb: EntryPointContainer(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14)
+- uid: MinimalUtility.VContainer.EntryPointContainer`14.#ctor(`0,`1,`2,`3,`4,`5,`6,`7,`8,`9,`10,`11,`12,`13,System.Action{`0,`1,`2,`3,`4,`5,`6,`7,`8,`9,`10,`11,`12,`13})
+  name: EntryPointContainer(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, Action<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14>)
+  href: api/MinimalUtility.VContainer.EntryPointContainer-14.html#MinimalUtility_VContainer_EntryPointContainer_14__ctor__0__1__2__3__4__5__6__7__8__9__10__11__12__13_System_Action__0__1__2__3__4__5__6__7__8__9__10__11__12__13__
+  commentId: M:MinimalUtility.VContainer.EntryPointContainer`14.#ctor(`0,`1,`2,`3,`4,`5,`6,`7,`8,`9,`10,`11,`12,`13,System.Action{`0,`1,`2,`3,`4,`5,`6,`7,`8,`9,`10,`11,`12,`13})
+  name.vb: New(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, Action(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14))
+  fullName: MinimalUtility.VContainer.EntryPointContainer<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14>.EntryPointContainer(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, System.Action<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14>)
+  fullName.vb: MinimalUtility.VContainer.EntryPointContainer(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14).New(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, System.Action(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14))
+  nameWithType: EntryPointContainer<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14>.EntryPointContainer(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, Action<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14>)
+  nameWithType.vb: EntryPointContainer(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14).New(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, Action(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14))
+- uid: MinimalUtility.VContainer.EntryPointContainer`14.#ctor*
+  name: EntryPointContainer
+  href: api/MinimalUtility.VContainer.EntryPointContainer-14.html#MinimalUtility_VContainer_EntryPointContainer_14__ctor_
+  commentId: Overload:MinimalUtility.VContainer.EntryPointContainer`14.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: MinimalUtility.VContainer.EntryPointContainer<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14>.EntryPointContainer
+  fullName.vb: MinimalUtility.VContainer.EntryPointContainer(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14).New
+  nameWithType: EntryPointContainer<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14>.EntryPointContainer
+  nameWithType.vb: EntryPointContainer(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14).New
+- uid: MinimalUtility.VContainer.EntryPointContainer`15
+  name: EntryPointContainer<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15>
+  href: api/MinimalUtility.VContainer.EntryPointContainer-15.html
+  commentId: T:MinimalUtility.VContainer.EntryPointContainer`15
+  name.vb: EntryPointContainer(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15)
+  fullName: MinimalUtility.VContainer.EntryPointContainer<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15>
+  fullName.vb: MinimalUtility.VContainer.EntryPointContainer(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15)
+  nameWithType: EntryPointContainer<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15>
+  nameWithType.vb: EntryPointContainer(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15)
+- uid: MinimalUtility.VContainer.EntryPointContainer`15.#ctor(`0,`1,`2,`3,`4,`5,`6,`7,`8,`9,`10,`11,`12,`13,`14,System.Action{`0,`1,`2,`3,`4,`5,`6,`7,`8,`9,`10,`11,`12,`13,`14})
+  name: EntryPointContainer(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, Action<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15>)
+  href: api/MinimalUtility.VContainer.EntryPointContainer-15.html#MinimalUtility_VContainer_EntryPointContainer_15__ctor__0__1__2__3__4__5__6__7__8__9__10__11__12__13__14_System_Action__0__1__2__3__4__5__6__7__8__9__10__11__12__13__14__
+  commentId: M:MinimalUtility.VContainer.EntryPointContainer`15.#ctor(`0,`1,`2,`3,`4,`5,`6,`7,`8,`9,`10,`11,`12,`13,`14,System.Action{`0,`1,`2,`3,`4,`5,`6,`7,`8,`9,`10,`11,`12,`13,`14})
+  name.vb: New(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, Action(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15))
+  fullName: MinimalUtility.VContainer.EntryPointContainer<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15>.EntryPointContainer(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, System.Action<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15>)
+  fullName.vb: MinimalUtility.VContainer.EntryPointContainer(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15).New(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, System.Action(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15))
+  nameWithType: EntryPointContainer<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15>.EntryPointContainer(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, Action<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15>)
+  nameWithType.vb: EntryPointContainer(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15).New(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, Action(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15))
+- uid: MinimalUtility.VContainer.EntryPointContainer`15.#ctor*
+  name: EntryPointContainer
+  href: api/MinimalUtility.VContainer.EntryPointContainer-15.html#MinimalUtility_VContainer_EntryPointContainer_15__ctor_
+  commentId: Overload:MinimalUtility.VContainer.EntryPointContainer`15.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: MinimalUtility.VContainer.EntryPointContainer<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15>.EntryPointContainer
+  fullName.vb: MinimalUtility.VContainer.EntryPointContainer(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15).New
+  nameWithType: EntryPointContainer<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15>.EntryPointContainer
+  nameWithType.vb: EntryPointContainer(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15).New
+- uid: MinimalUtility.VContainer.EntryPointContainer`16
+  name: EntryPointContainer<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16>
+  href: api/MinimalUtility.VContainer.EntryPointContainer-16.html
+  commentId: T:MinimalUtility.VContainer.EntryPointContainer`16
+  name.vb: EntryPointContainer(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16)
+  fullName: MinimalUtility.VContainer.EntryPointContainer<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16>
+  fullName.vb: MinimalUtility.VContainer.EntryPointContainer(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16)
+  nameWithType: EntryPointContainer<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16>
+  nameWithType.vb: EntryPointContainer(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16)
+- uid: MinimalUtility.VContainer.EntryPointContainer`16.#ctor(`0,`1,`2,`3,`4,`5,`6,`7,`8,`9,`10,`11,`12,`13,`14,`15,System.Action{`0,`1,`2,`3,`4,`5,`6,`7,`8,`9,`10,`11,`12,`13,`14,`15})
+  name: EntryPointContainer(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, Action<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16>)
+  href: api/MinimalUtility.VContainer.EntryPointContainer-16.html#MinimalUtility_VContainer_EntryPointContainer_16__ctor__0__1__2__3__4__5__6__7__8__9__10__11__12__13__14__15_System_Action__0__1__2__3__4__5__6__7__8__9__10__11__12__13__14__15__
+  commentId: M:MinimalUtility.VContainer.EntryPointContainer`16.#ctor(`0,`1,`2,`3,`4,`5,`6,`7,`8,`9,`10,`11,`12,`13,`14,`15,System.Action{`0,`1,`2,`3,`4,`5,`6,`7,`8,`9,`10,`11,`12,`13,`14,`15})
+  name.vb: New(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, Action(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16))
+  fullName: MinimalUtility.VContainer.EntryPointContainer<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16>.EntryPointContainer(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, System.Action<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16>)
+  fullName.vb: MinimalUtility.VContainer.EntryPointContainer(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16).New(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, System.Action(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16))
+  nameWithType: EntryPointContainer<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16>.EntryPointContainer(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, Action<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16>)
+  nameWithType.vb: EntryPointContainer(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16).New(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, Action(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16))
+- uid: MinimalUtility.VContainer.EntryPointContainer`16.#ctor*
+  name: EntryPointContainer
+  href: api/MinimalUtility.VContainer.EntryPointContainer-16.html#MinimalUtility_VContainer_EntryPointContainer_16__ctor_
+  commentId: Overload:MinimalUtility.VContainer.EntryPointContainer`16.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: MinimalUtility.VContainer.EntryPointContainer<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16>.EntryPointContainer
+  fullName.vb: MinimalUtility.VContainer.EntryPointContainer(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16).New
+  nameWithType: EntryPointContainer<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16>.EntryPointContainer
+  nameWithType.vb: EntryPointContainer(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16).New
+- uid: MinimalUtility.VContainer.EntryPointContainer`2
+  name: EntryPointContainer<T1, T2>
+  href: api/MinimalUtility.VContainer.EntryPointContainer-2.html
+  commentId: T:MinimalUtility.VContainer.EntryPointContainer`2
+  name.vb: EntryPointContainer(Of T1, T2)
+  fullName: MinimalUtility.VContainer.EntryPointContainer<T1, T2>
+  fullName.vb: MinimalUtility.VContainer.EntryPointContainer(Of T1, T2)
+  nameWithType: EntryPointContainer<T1, T2>
+  nameWithType.vb: EntryPointContainer(Of T1, T2)
+- uid: MinimalUtility.VContainer.EntryPointContainer`2.#ctor(`0,`1,System.Action{`0,`1})
+  name: EntryPointContainer(T1, T2, Action<T1, T2>)
+  href: api/MinimalUtility.VContainer.EntryPointContainer-2.html#MinimalUtility_VContainer_EntryPointContainer_2__ctor__0__1_System_Action__0__1__
+  commentId: M:MinimalUtility.VContainer.EntryPointContainer`2.#ctor(`0,`1,System.Action{`0,`1})
+  name.vb: New(T1, T2, Action(Of T1, T2))
+  fullName: MinimalUtility.VContainer.EntryPointContainer<T1, T2>.EntryPointContainer(T1, T2, System.Action<T1, T2>)
+  fullName.vb: MinimalUtility.VContainer.EntryPointContainer(Of T1, T2).New(T1, T2, System.Action(Of T1, T2))
+  nameWithType: EntryPointContainer<T1, T2>.EntryPointContainer(T1, T2, Action<T1, T2>)
+  nameWithType.vb: EntryPointContainer(Of T1, T2).New(T1, T2, Action(Of T1, T2))
+- uid: MinimalUtility.VContainer.EntryPointContainer`2.#ctor*
+  name: EntryPointContainer
+  href: api/MinimalUtility.VContainer.EntryPointContainer-2.html#MinimalUtility_VContainer_EntryPointContainer_2__ctor_
+  commentId: Overload:MinimalUtility.VContainer.EntryPointContainer`2.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: MinimalUtility.VContainer.EntryPointContainer<T1, T2>.EntryPointContainer
+  fullName.vb: MinimalUtility.VContainer.EntryPointContainer(Of T1, T2).New
+  nameWithType: EntryPointContainer<T1, T2>.EntryPointContainer
+  nameWithType.vb: EntryPointContainer(Of T1, T2).New
+- uid: MinimalUtility.VContainer.EntryPointContainer`3
+  name: EntryPointContainer<T1, T2, T3>
+  href: api/MinimalUtility.VContainer.EntryPointContainer-3.html
+  commentId: T:MinimalUtility.VContainer.EntryPointContainer`3
+  name.vb: EntryPointContainer(Of T1, T2, T3)
+  fullName: MinimalUtility.VContainer.EntryPointContainer<T1, T2, T3>
+  fullName.vb: MinimalUtility.VContainer.EntryPointContainer(Of T1, T2, T3)
+  nameWithType: EntryPointContainer<T1, T2, T3>
+  nameWithType.vb: EntryPointContainer(Of T1, T2, T3)
+- uid: MinimalUtility.VContainer.EntryPointContainer`3.#ctor(`0,`1,`2,System.Action{`0,`1,`2})
+  name: EntryPointContainer(T1, T2, T3, Action<T1, T2, T3>)
+  href: api/MinimalUtility.VContainer.EntryPointContainer-3.html#MinimalUtility_VContainer_EntryPointContainer_3__ctor__0__1__2_System_Action__0__1__2__
+  commentId: M:MinimalUtility.VContainer.EntryPointContainer`3.#ctor(`0,`1,`2,System.Action{`0,`1,`2})
+  name.vb: New(T1, T2, T3, Action(Of T1, T2, T3))
+  fullName: MinimalUtility.VContainer.EntryPointContainer<T1, T2, T3>.EntryPointContainer(T1, T2, T3, System.Action<T1, T2, T3>)
+  fullName.vb: MinimalUtility.VContainer.EntryPointContainer(Of T1, T2, T3).New(T1, T2, T3, System.Action(Of T1, T2, T3))
+  nameWithType: EntryPointContainer<T1, T2, T3>.EntryPointContainer(T1, T2, T3, Action<T1, T2, T3>)
+  nameWithType.vb: EntryPointContainer(Of T1, T2, T3).New(T1, T2, T3, Action(Of T1, T2, T3))
+- uid: MinimalUtility.VContainer.EntryPointContainer`3.#ctor*
+  name: EntryPointContainer
+  href: api/MinimalUtility.VContainer.EntryPointContainer-3.html#MinimalUtility_VContainer_EntryPointContainer_3__ctor_
+  commentId: Overload:MinimalUtility.VContainer.EntryPointContainer`3.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: MinimalUtility.VContainer.EntryPointContainer<T1, T2, T3>.EntryPointContainer
+  fullName.vb: MinimalUtility.VContainer.EntryPointContainer(Of T1, T2, T3).New
+  nameWithType: EntryPointContainer<T1, T2, T3>.EntryPointContainer
+  nameWithType.vb: EntryPointContainer(Of T1, T2, T3).New
+- uid: MinimalUtility.VContainer.EntryPointContainer`4
+  name: EntryPointContainer<T1, T2, T3, T4>
+  href: api/MinimalUtility.VContainer.EntryPointContainer-4.html
+  commentId: T:MinimalUtility.VContainer.EntryPointContainer`4
+  name.vb: EntryPointContainer(Of T1, T2, T3, T4)
+  fullName: MinimalUtility.VContainer.EntryPointContainer<T1, T2, T3, T4>
+  fullName.vb: MinimalUtility.VContainer.EntryPointContainer(Of T1, T2, T3, T4)
+  nameWithType: EntryPointContainer<T1, T2, T3, T4>
+  nameWithType.vb: EntryPointContainer(Of T1, T2, T3, T4)
+- uid: MinimalUtility.VContainer.EntryPointContainer`4.#ctor(`0,`1,`2,`3,System.Action{`0,`1,`2,`3})
+  name: EntryPointContainer(T1, T2, T3, T4, Action<T1, T2, T3, T4>)
+  href: api/MinimalUtility.VContainer.EntryPointContainer-4.html#MinimalUtility_VContainer_EntryPointContainer_4__ctor__0__1__2__3_System_Action__0__1__2__3__
+  commentId: M:MinimalUtility.VContainer.EntryPointContainer`4.#ctor(`0,`1,`2,`3,System.Action{`0,`1,`2,`3})
+  name.vb: New(T1, T2, T3, T4, Action(Of T1, T2, T3, T4))
+  fullName: MinimalUtility.VContainer.EntryPointContainer<T1, T2, T3, T4>.EntryPointContainer(T1, T2, T3, T4, System.Action<T1, T2, T3, T4>)
+  fullName.vb: MinimalUtility.VContainer.EntryPointContainer(Of T1, T2, T3, T4).New(T1, T2, T3, T4, System.Action(Of T1, T2, T3, T4))
+  nameWithType: EntryPointContainer<T1, T2, T3, T4>.EntryPointContainer(T1, T2, T3, T4, Action<T1, T2, T3, T4>)
+  nameWithType.vb: EntryPointContainer(Of T1, T2, T3, T4).New(T1, T2, T3, T4, Action(Of T1, T2, T3, T4))
+- uid: MinimalUtility.VContainer.EntryPointContainer`4.#ctor*
+  name: EntryPointContainer
+  href: api/MinimalUtility.VContainer.EntryPointContainer-4.html#MinimalUtility_VContainer_EntryPointContainer_4__ctor_
+  commentId: Overload:MinimalUtility.VContainer.EntryPointContainer`4.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: MinimalUtility.VContainer.EntryPointContainer<T1, T2, T3, T4>.EntryPointContainer
+  fullName.vb: MinimalUtility.VContainer.EntryPointContainer(Of T1, T2, T3, T4).New
+  nameWithType: EntryPointContainer<T1, T2, T3, T4>.EntryPointContainer
+  nameWithType.vb: EntryPointContainer(Of T1, T2, T3, T4).New
+- uid: MinimalUtility.VContainer.EntryPointContainer`5
+  name: EntryPointContainer<T1, T2, T3, T4, T5>
+  href: api/MinimalUtility.VContainer.EntryPointContainer-5.html
+  commentId: T:MinimalUtility.VContainer.EntryPointContainer`5
+  name.vb: EntryPointContainer(Of T1, T2, T3, T4, T5)
+  fullName: MinimalUtility.VContainer.EntryPointContainer<T1, T2, T3, T4, T5>
+  fullName.vb: MinimalUtility.VContainer.EntryPointContainer(Of T1, T2, T3, T4, T5)
+  nameWithType: EntryPointContainer<T1, T2, T3, T4, T5>
+  nameWithType.vb: EntryPointContainer(Of T1, T2, T3, T4, T5)
+- uid: MinimalUtility.VContainer.EntryPointContainer`5.#ctor(`0,`1,`2,`3,`4,System.Action{`0,`1,`2,`3,`4})
+  name: EntryPointContainer(T1, T2, T3, T4, T5, Action<T1, T2, T3, T4, T5>)
+  href: api/MinimalUtility.VContainer.EntryPointContainer-5.html#MinimalUtility_VContainer_EntryPointContainer_5__ctor__0__1__2__3__4_System_Action__0__1__2__3__4__
+  commentId: M:MinimalUtility.VContainer.EntryPointContainer`5.#ctor(`0,`1,`2,`3,`4,System.Action{`0,`1,`2,`3,`4})
+  name.vb: New(T1, T2, T3, T4, T5, Action(Of T1, T2, T3, T4, T5))
+  fullName: MinimalUtility.VContainer.EntryPointContainer<T1, T2, T3, T4, T5>.EntryPointContainer(T1, T2, T3, T4, T5, System.Action<T1, T2, T3, T4, T5>)
+  fullName.vb: MinimalUtility.VContainer.EntryPointContainer(Of T1, T2, T3, T4, T5).New(T1, T2, T3, T4, T5, System.Action(Of T1, T2, T3, T4, T5))
+  nameWithType: EntryPointContainer<T1, T2, T3, T4, T5>.EntryPointContainer(T1, T2, T3, T4, T5, Action<T1, T2, T3, T4, T5>)
+  nameWithType.vb: EntryPointContainer(Of T1, T2, T3, T4, T5).New(T1, T2, T3, T4, T5, Action(Of T1, T2, T3, T4, T5))
+- uid: MinimalUtility.VContainer.EntryPointContainer`5.#ctor*
+  name: EntryPointContainer
+  href: api/MinimalUtility.VContainer.EntryPointContainer-5.html#MinimalUtility_VContainer_EntryPointContainer_5__ctor_
+  commentId: Overload:MinimalUtility.VContainer.EntryPointContainer`5.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: MinimalUtility.VContainer.EntryPointContainer<T1, T2, T3, T4, T5>.EntryPointContainer
+  fullName.vb: MinimalUtility.VContainer.EntryPointContainer(Of T1, T2, T3, T4, T5).New
+  nameWithType: EntryPointContainer<T1, T2, T3, T4, T5>.EntryPointContainer
+  nameWithType.vb: EntryPointContainer(Of T1, T2, T3, T4, T5).New
+- uid: MinimalUtility.VContainer.EntryPointContainer`6
+  name: EntryPointContainer<T1, T2, T3, T4, T5, T6>
+  href: api/MinimalUtility.VContainer.EntryPointContainer-6.html
+  commentId: T:MinimalUtility.VContainer.EntryPointContainer`6
+  name.vb: EntryPointContainer(Of T1, T2, T3, T4, T5, T6)
+  fullName: MinimalUtility.VContainer.EntryPointContainer<T1, T2, T3, T4, T5, T6>
+  fullName.vb: MinimalUtility.VContainer.EntryPointContainer(Of T1, T2, T3, T4, T5, T6)
+  nameWithType: EntryPointContainer<T1, T2, T3, T4, T5, T6>
+  nameWithType.vb: EntryPointContainer(Of T1, T2, T3, T4, T5, T6)
+- uid: MinimalUtility.VContainer.EntryPointContainer`6.#ctor(`0,`1,`2,`3,`4,`5,System.Action{`0,`1,`2,`3,`4,`5})
+  name: EntryPointContainer(T1, T2, T3, T4, T5, T6, Action<T1, T2, T3, T4, T5, T6>)
+  href: api/MinimalUtility.VContainer.EntryPointContainer-6.html#MinimalUtility_VContainer_EntryPointContainer_6__ctor__0__1__2__3__4__5_System_Action__0__1__2__3__4__5__
+  commentId: M:MinimalUtility.VContainer.EntryPointContainer`6.#ctor(`0,`1,`2,`3,`4,`5,System.Action{`0,`1,`2,`3,`4,`5})
+  name.vb: New(T1, T2, T3, T4, T5, T6, Action(Of T1, T2, T3, T4, T5, T6))
+  fullName: MinimalUtility.VContainer.EntryPointContainer<T1, T2, T3, T4, T5, T6>.EntryPointContainer(T1, T2, T3, T4, T5, T6, System.Action<T1, T2, T3, T4, T5, T6>)
+  fullName.vb: MinimalUtility.VContainer.EntryPointContainer(Of T1, T2, T3, T4, T5, T6).New(T1, T2, T3, T4, T5, T6, System.Action(Of T1, T2, T3, T4, T5, T6))
+  nameWithType: EntryPointContainer<T1, T2, T3, T4, T5, T6>.EntryPointContainer(T1, T2, T3, T4, T5, T6, Action<T1, T2, T3, T4, T5, T6>)
+  nameWithType.vb: EntryPointContainer(Of T1, T2, T3, T4, T5, T6).New(T1, T2, T3, T4, T5, T6, Action(Of T1, T2, T3, T4, T5, T6))
+- uid: MinimalUtility.VContainer.EntryPointContainer`6.#ctor*
+  name: EntryPointContainer
+  href: api/MinimalUtility.VContainer.EntryPointContainer-6.html#MinimalUtility_VContainer_EntryPointContainer_6__ctor_
+  commentId: Overload:MinimalUtility.VContainer.EntryPointContainer`6.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: MinimalUtility.VContainer.EntryPointContainer<T1, T2, T3, T4, T5, T6>.EntryPointContainer
+  fullName.vb: MinimalUtility.VContainer.EntryPointContainer(Of T1, T2, T3, T4, T5, T6).New
+  nameWithType: EntryPointContainer<T1, T2, T3, T4, T5, T6>.EntryPointContainer
+  nameWithType.vb: EntryPointContainer(Of T1, T2, T3, T4, T5, T6).New
+- uid: MinimalUtility.VContainer.EntryPointContainer`7
+  name: EntryPointContainer<T1, T2, T3, T4, T5, T6, T7>
+  href: api/MinimalUtility.VContainer.EntryPointContainer-7.html
+  commentId: T:MinimalUtility.VContainer.EntryPointContainer`7
+  name.vb: EntryPointContainer(Of T1, T2, T3, T4, T5, T6, T7)
+  fullName: MinimalUtility.VContainer.EntryPointContainer<T1, T2, T3, T4, T5, T6, T7>
+  fullName.vb: MinimalUtility.VContainer.EntryPointContainer(Of T1, T2, T3, T4, T5, T6, T7)
+  nameWithType: EntryPointContainer<T1, T2, T3, T4, T5, T6, T7>
+  nameWithType.vb: EntryPointContainer(Of T1, T2, T3, T4, T5, T6, T7)
+- uid: MinimalUtility.VContainer.EntryPointContainer`7.#ctor(`0,`1,`2,`3,`4,`5,`6,System.Action{`0,`1,`2,`3,`4,`5,`6})
+  name: EntryPointContainer(T1, T2, T3, T4, T5, T6, T7, Action<T1, T2, T3, T4, T5, T6, T7>)
+  href: api/MinimalUtility.VContainer.EntryPointContainer-7.html#MinimalUtility_VContainer_EntryPointContainer_7__ctor__0__1__2__3__4__5__6_System_Action__0__1__2__3__4__5__6__
+  commentId: M:MinimalUtility.VContainer.EntryPointContainer`7.#ctor(`0,`1,`2,`3,`4,`5,`6,System.Action{`0,`1,`2,`3,`4,`5,`6})
+  name.vb: New(T1, T2, T3, T4, T5, T6, T7, Action(Of T1, T2, T3, T4, T5, T6, T7))
+  fullName: MinimalUtility.VContainer.EntryPointContainer<T1, T2, T3, T4, T5, T6, T7>.EntryPointContainer(T1, T2, T3, T4, T5, T6, T7, System.Action<T1, T2, T3, T4, T5, T6, T7>)
+  fullName.vb: MinimalUtility.VContainer.EntryPointContainer(Of T1, T2, T3, T4, T5, T6, T7).New(T1, T2, T3, T4, T5, T6, T7, System.Action(Of T1, T2, T3, T4, T5, T6, T7))
+  nameWithType: EntryPointContainer<T1, T2, T3, T4, T5, T6, T7>.EntryPointContainer(T1, T2, T3, T4, T5, T6, T7, Action<T1, T2, T3, T4, T5, T6, T7>)
+  nameWithType.vb: EntryPointContainer(Of T1, T2, T3, T4, T5, T6, T7).New(T1, T2, T3, T4, T5, T6, T7, Action(Of T1, T2, T3, T4, T5, T6, T7))
+- uid: MinimalUtility.VContainer.EntryPointContainer`7.#ctor*
+  name: EntryPointContainer
+  href: api/MinimalUtility.VContainer.EntryPointContainer-7.html#MinimalUtility_VContainer_EntryPointContainer_7__ctor_
+  commentId: Overload:MinimalUtility.VContainer.EntryPointContainer`7.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: MinimalUtility.VContainer.EntryPointContainer<T1, T2, T3, T4, T5, T6, T7>.EntryPointContainer
+  fullName.vb: MinimalUtility.VContainer.EntryPointContainer(Of T1, T2, T3, T4, T5, T6, T7).New
+  nameWithType: EntryPointContainer<T1, T2, T3, T4, T5, T6, T7>.EntryPointContainer
+  nameWithType.vb: EntryPointContainer(Of T1, T2, T3, T4, T5, T6, T7).New
+- uid: MinimalUtility.VContainer.EntryPointContainer`8
+  name: EntryPointContainer<T1, T2, T3, T4, T5, T6, T7, T8>
+  href: api/MinimalUtility.VContainer.EntryPointContainer-8.html
+  commentId: T:MinimalUtility.VContainer.EntryPointContainer`8
+  name.vb: EntryPointContainer(Of T1, T2, T3, T4, T5, T6, T7, T8)
+  fullName: MinimalUtility.VContainer.EntryPointContainer<T1, T2, T3, T4, T5, T6, T7, T8>
+  fullName.vb: MinimalUtility.VContainer.EntryPointContainer(Of T1, T2, T3, T4, T5, T6, T7, T8)
+  nameWithType: EntryPointContainer<T1, T2, T3, T4, T5, T6, T7, T8>
+  nameWithType.vb: EntryPointContainer(Of T1, T2, T3, T4, T5, T6, T7, T8)
+- uid: MinimalUtility.VContainer.EntryPointContainer`8.#ctor(`0,`1,`2,`3,`4,`5,`6,`7,System.Action{`0,`1,`2,`3,`4,`5,`6,`7})
+  name: EntryPointContainer(T1, T2, T3, T4, T5, T6, T7, T8, Action<T1, T2, T3, T4, T5, T6, T7, T8>)
+  href: api/MinimalUtility.VContainer.EntryPointContainer-8.html#MinimalUtility_VContainer_EntryPointContainer_8__ctor__0__1__2__3__4__5__6__7_System_Action__0__1__2__3__4__5__6__7__
+  commentId: M:MinimalUtility.VContainer.EntryPointContainer`8.#ctor(`0,`1,`2,`3,`4,`5,`6,`7,System.Action{`0,`1,`2,`3,`4,`5,`6,`7})
+  name.vb: New(T1, T2, T3, T4, T5, T6, T7, T8, Action(Of T1, T2, T3, T4, T5, T6, T7, T8))
+  fullName: MinimalUtility.VContainer.EntryPointContainer<T1, T2, T3, T4, T5, T6, T7, T8>.EntryPointContainer(T1, T2, T3, T4, T5, T6, T7, T8, System.Action<T1, T2, T3, T4, T5, T6, T7, T8>)
+  fullName.vb: MinimalUtility.VContainer.EntryPointContainer(Of T1, T2, T3, T4, T5, T6, T7, T8).New(T1, T2, T3, T4, T5, T6, T7, T8, System.Action(Of T1, T2, T3, T4, T5, T6, T7, T8))
+  nameWithType: EntryPointContainer<T1, T2, T3, T4, T5, T6, T7, T8>.EntryPointContainer(T1, T2, T3, T4, T5, T6, T7, T8, Action<T1, T2, T3, T4, T5, T6, T7, T8>)
+  nameWithType.vb: EntryPointContainer(Of T1, T2, T3, T4, T5, T6, T7, T8).New(T1, T2, T3, T4, T5, T6, T7, T8, Action(Of T1, T2, T3, T4, T5, T6, T7, T8))
+- uid: MinimalUtility.VContainer.EntryPointContainer`8.#ctor*
+  name: EntryPointContainer
+  href: api/MinimalUtility.VContainer.EntryPointContainer-8.html#MinimalUtility_VContainer_EntryPointContainer_8__ctor_
+  commentId: Overload:MinimalUtility.VContainer.EntryPointContainer`8.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: MinimalUtility.VContainer.EntryPointContainer<T1, T2, T3, T4, T5, T6, T7, T8>.EntryPointContainer
+  fullName.vb: MinimalUtility.VContainer.EntryPointContainer(Of T1, T2, T3, T4, T5, T6, T7, T8).New
+  nameWithType: EntryPointContainer<T1, T2, T3, T4, T5, T6, T7, T8>.EntryPointContainer
+  nameWithType.vb: EntryPointContainer(Of T1, T2, T3, T4, T5, T6, T7, T8).New
+- uid: MinimalUtility.VContainer.EntryPointContainer`9
+  name: EntryPointContainer<T1, T2, T3, T4, T5, T6, T7, T8, T9>
+  href: api/MinimalUtility.VContainer.EntryPointContainer-9.html
+  commentId: T:MinimalUtility.VContainer.EntryPointContainer`9
+  name.vb: EntryPointContainer(Of T1, T2, T3, T4, T5, T6, T7, T8, T9)
+  fullName: MinimalUtility.VContainer.EntryPointContainer<T1, T2, T3, T4, T5, T6, T7, T8, T9>
+  fullName.vb: MinimalUtility.VContainer.EntryPointContainer(Of T1, T2, T3, T4, T5, T6, T7, T8, T9)
+  nameWithType: EntryPointContainer<T1, T2, T3, T4, T5, T6, T7, T8, T9>
+  nameWithType.vb: EntryPointContainer(Of T1, T2, T3, T4, T5, T6, T7, T8, T9)
+- uid: MinimalUtility.VContainer.EntryPointContainer`9.#ctor(`0,`1,`2,`3,`4,`5,`6,`7,`8,System.Action{`0,`1,`2,`3,`4,`5,`6,`7,`8})
+  name: EntryPointContainer(T1, T2, T3, T4, T5, T6, T7, T8, T9, Action<T1, T2, T3, T4, T5, T6, T7, T8, T9>)
+  href: api/MinimalUtility.VContainer.EntryPointContainer-9.html#MinimalUtility_VContainer_EntryPointContainer_9__ctor__0__1__2__3__4__5__6__7__8_System_Action__0__1__2__3__4__5__6__7__8__
+  commentId: M:MinimalUtility.VContainer.EntryPointContainer`9.#ctor(`0,`1,`2,`3,`4,`5,`6,`7,`8,System.Action{`0,`1,`2,`3,`4,`5,`6,`7,`8})
+  name.vb: New(T1, T2, T3, T4, T5, T6, T7, T8, T9, Action(Of T1, T2, T3, T4, T5, T6, T7, T8, T9))
+  fullName: MinimalUtility.VContainer.EntryPointContainer<T1, T2, T3, T4, T5, T6, T7, T8, T9>.EntryPointContainer(T1, T2, T3, T4, T5, T6, T7, T8, T9, System.Action<T1, T2, T3, T4, T5, T6, T7, T8, T9>)
+  fullName.vb: MinimalUtility.VContainer.EntryPointContainer(Of T1, T2, T3, T4, T5, T6, T7, T8, T9).New(T1, T2, T3, T4, T5, T6, T7, T8, T9, System.Action(Of T1, T2, T3, T4, T5, T6, T7, T8, T9))
+  nameWithType: EntryPointContainer<T1, T2, T3, T4, T5, T6, T7, T8, T9>.EntryPointContainer(T1, T2, T3, T4, T5, T6, T7, T8, T9, Action<T1, T2, T3, T4, T5, T6, T7, T8, T9>)
+  nameWithType.vb: EntryPointContainer(Of T1, T2, T3, T4, T5, T6, T7, T8, T9).New(T1, T2, T3, T4, T5, T6, T7, T8, T9, Action(Of T1, T2, T3, T4, T5, T6, T7, T8, T9))
+- uid: MinimalUtility.VContainer.EntryPointContainer`9.#ctor*
+  name: EntryPointContainer
+  href: api/MinimalUtility.VContainer.EntryPointContainer-9.html#MinimalUtility_VContainer_EntryPointContainer_9__ctor_
+  commentId: Overload:MinimalUtility.VContainer.EntryPointContainer`9.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: MinimalUtility.VContainer.EntryPointContainer<T1, T2, T3, T4, T5, T6, T7, T8, T9>.EntryPointContainer
+  fullName.vb: MinimalUtility.VContainer.EntryPointContainer(Of T1, T2, T3, T4, T5, T6, T7, T8, T9).New
+  nameWithType: EntryPointContainer<T1, T2, T3, T4, T5, T6, T7, T8, T9>.EntryPointContainer
+  nameWithType.vb: EntryPointContainer(Of T1, T2, T3, T4, T5, T6, T7, T8, T9).New
 - uid: MinimalUtility.VContainer.LifetimeScopeBase
   name: LifetimeScopeBase
   href: api/MinimalUtility.VContainer.LifetimeScopeBase.html
@@ -1411,31 +1658,6 @@ references:
   isSpec: "True"
   fullName: MinimalUtility.VContainer.LifetimeScopeBase.Configure
   nameWithType: LifetimeScopeBase.Configure
-- uid: MinimalUtility.VContainer.VContainerDebugProfileViewer
-  name: VContainerDebugProfileViewer
-  href: api/MinimalUtility.VContainer.VContainerDebugProfileViewer.html
-  commentId: T:MinimalUtility.VContainer.VContainerDebugProfileViewer
-  fullName: MinimalUtility.VContainer.VContainerDebugProfileViewer
-  nameWithType: VContainerDebugProfileViewer
-- uid: MinimalUtility.VContainer.VContainerDebugProfileViewer.#ctor
-  name: VContainerDebugProfileViewer()
-  href: api/MinimalUtility.VContainer.VContainerDebugProfileViewer.html#MinimalUtility_VContainer_VContainerDebugProfileViewer__ctor
-  commentId: M:MinimalUtility.VContainer.VContainerDebugProfileViewer.#ctor
-  name.vb: New()
-  fullName: MinimalUtility.VContainer.VContainerDebugProfileViewer.VContainerDebugProfileViewer()
-  fullName.vb: MinimalUtility.VContainer.VContainerDebugProfileViewer.New()
-  nameWithType: VContainerDebugProfileViewer.VContainerDebugProfileViewer()
-  nameWithType.vb: VContainerDebugProfileViewer.New()
-- uid: MinimalUtility.VContainer.VContainerDebugProfileViewer.#ctor*
-  name: VContainerDebugProfileViewer
-  href: api/MinimalUtility.VContainer.VContainerDebugProfileViewer.html#MinimalUtility_VContainer_VContainerDebugProfileViewer__ctor_
-  commentId: Overload:MinimalUtility.VContainer.VContainerDebugProfileViewer.#ctor
-  isSpec: "True"
-  name.vb: New
-  fullName: MinimalUtility.VContainer.VContainerDebugProfileViewer.VContainerDebugProfileViewer
-  fullName.vb: MinimalUtility.VContainer.VContainerDebugProfileViewer.New
-  nameWithType: VContainerDebugProfileViewer.VContainerDebugProfileViewer
-  nameWithType.vb: VContainerDebugProfileViewer.New
 - uid: MinimalUtility.ValueDisposable
   name: ValueDisposable
   href: api/MinimalUtility.ValueDisposable.html

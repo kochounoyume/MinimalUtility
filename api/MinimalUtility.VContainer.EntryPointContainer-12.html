@@ -1,0 +1,261 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class EntryPointContainer&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12&gt; |  |  </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class EntryPointContainer&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12&gt; |  |  ">
+      
+      <meta name="description" content="エントリーポイントを一括管理するコンテナクラス.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      <meta name="docfx:disablenewtab" content="true">
+      
+      <meta name="docfx:docurl" content="https://github.com/kochounoyume/MinimalUtility/new/main/apiSpec/new?filename=MinimalUtility_VContainer_EntryPointContainer_12.md&amp;value=---%0Auid%3A%20MinimalUtility.VContainer.EntryPointContainer%6012%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="MinimalUtility.VContainer.EntryPointContainer`12">
+
+
+
+  <h1 id="MinimalUtility_VContainer_EntryPointContainer_12" data-uid="MinimalUtility.VContainer.EntryPointContainer`12" class="text-break">
+Class EntryPointContainer&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/VContainer/EntryPointContainer.cs/#L628"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="MinimalUtility.html">MinimalUtility</a>.<a class="xref" href="MinimalUtility.VContainer.html">VContainer</a></dd></dl>
+  
+  </div>
+
+  <div class="markdown summary"><p>エントリーポイントを一括管理するコンテナクラス.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class EntryPointContainer&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12&gt; : IStartable where T1 : class where T2 : class where T3 : class where T4 : class where T5 : class where T6 : class where T7 : class where T8 : class where T9 : class where T10 : class where T11 : class where T12 : class</code></pre>
+  </div>
+
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T1</code></dt>
+    <dd><p>発火する1番目のインスタンスの型.</p>
+</dd>
+    <dt><code>T2</code></dt>
+    <dd><p>発火する2番目のインスタンスの型.</p>
+</dd>
+    <dt><code>T3</code></dt>
+    <dd><p>発火する3番目のインスタンスの型.</p>
+</dd>
+    <dt><code>T4</code></dt>
+    <dd><p>発火する4番目のインスタンスの型.</p>
+</dd>
+    <dt><code>T5</code></dt>
+    <dd><p>発火する5番目のインスタンスの型.</p>
+</dd>
+    <dt><code>T6</code></dt>
+    <dd><p>発火する6番目のインスタンスの型.</p>
+</dd>
+    <dt><code>T7</code></dt>
+    <dd><p>発火する7番目のインスタンスの型.</p>
+</dd>
+    <dt><code>T8</code></dt>
+    <dd><p>発火する8番目のインスタンスの型.</p>
+</dd>
+    <dt><code>T9</code></dt>
+    <dd><p>発火する9番目のインスタンスの型.</p>
+</dd>
+    <dt><code>T10</code></dt>
+    <dd><p>発火する10番目のインスタンスの型.</p>
+</dd>
+    <dt><code>T11</code></dt>
+    <dd><p>発火する11番目のインスタンスの型.</p>
+</dd>
+    <dt><code>T12</code></dt>
+    <dd><p>発火する12番目のインスタンスの型.</p>
+</dd>
+  </dl>
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">EntryPointContainer&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12&gt;</span></div>
+    </dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="MinimalUtility_VContainer_EntryPointContainer_12__ctor_" data-uid="MinimalUtility.VContainer.EntryPointContainer`12.#ctor*"></a>
+
+  <h3 id="MinimalUtility_VContainer_EntryPointContainer_12__ctor__0__1__2__3__4__5__6__7__8__9__10__11_System_Action__0__1__2__3__4__5__6__7__8__9__10__11__" data-uid="MinimalUtility.VContainer.EntryPointContainer`12.#ctor(`0,`1,`2,`3,`4,`5,`6,`7,`8,`9,`10,`11,System.Action{`0,`1,`2,`3,`4,`5,`6,`7,`8,`9,`10,`11})">
+  EntryPointContainer(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, Action&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/VContainer/EntryPointContainer.cs/#L661"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="MinimalUtility.VContainer.EntryPointContainer-12.html">EntryPointContainer&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12&gt;</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EntryPointContainer(T1 instance1, T2 instance2, T3 instance3, T4 instance4, T5 instance5, T6 instance6, T7 instance7, T8 instance8, T9 instance9, T10 instance10, T11 instance11, T12 instance12, Action&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12&gt; start)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instance1</code> <span class="xref">T1</span></dt>
+    <dd><p>発火する1番目のインスタンス.</p>
+</dd>
+    <dt><code>instance2</code> <span class="xref">T2</span></dt>
+    <dd><p>発火する2番目のインスタンス.</p>
+</dd>
+    <dt><code>instance3</code> <span class="xref">T3</span></dt>
+    <dd><p>発火する3番目のインスタンス.</p>
+</dd>
+    <dt><code>instance4</code> <span class="xref">T4</span></dt>
+    <dd><p>発火する4番目のインスタンス.</p>
+</dd>
+    <dt><code>instance5</code> <span class="xref">T5</span></dt>
+    <dd><p>発火する5番目のインスタンス.</p>
+</dd>
+    <dt><code>instance6</code> <span class="xref">T6</span></dt>
+    <dd><p>発火する6番目のインスタンス.</p>
+</dd>
+    <dt><code>instance7</code> <span class="xref">T7</span></dt>
+    <dd><p>発火する7番目のインスタンス.</p>
+</dd>
+    <dt><code>instance8</code> <span class="xref">T8</span></dt>
+    <dd><p>発火する8番目のインスタンス.</p>
+</dd>
+    <dt><code>instance9</code> <span class="xref">T9</span></dt>
+    <dd><p>発火する9番目のインスタンス.</p>
+</dd>
+    <dt><code>instance10</code> <span class="xref">T10</span></dt>
+    <dd><p>発火する10番目のインスタンス.</p>
+</dd>
+    <dt><code>instance11</code> <span class="xref">T11</span></dt>
+    <dd><p>発火する11番目のインスタンス.</p>
+</dd>
+    <dt><code>instance12</code> <span class="xref">T12</span></dt>
+    <dd><p>発火する12番目のインスタンス.</p>
+</dd>
+    <dt><code>start</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-12">Action</a>&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12&gt;</dt>
+    <dd><p>発火する処理.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made by <a href="https://github.com/kochounoyume" target="_blank">kochounoyume</a> using <a href="https://dotnet.github.io/docfx" target="_blank">DocFX</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -2,11 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class UniTaskInternalAccessor |  |  </title>
+      <title>Class ProfileUtils |  |  </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class UniTaskInternalAccessor |  |  ">
+      <meta name="title" content="Class ProfileUtils |  |  ">
       
-      
+      <meta name="description" content="フレームデータを提供する.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       <meta name="docfx:disablenewtab" content="true">
       
-      <meta name="docfx:docurl" content="https://github.com/kochounoyume/MinimalUtility/new/main/apiSpec/new?filename=Cysharp_Threading_Tasks_UniTaskInternalAccessor.md&amp;value=---%0Auid%3A%20Cysharp.Threading.Tasks.UniTaskInternalAccessor%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/kochounoyume/MinimalUtility/new/main/apiSpec/new?filename=MinimalUtility_Debugging_ProfileUtils.md&amp;value=---%0Auid%3A%20MinimalUtility.Debugging.ProfileUtils%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -84,24 +84,25 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="Cysharp.Threading.Tasks.UniTaskInternalAccessor">
+        <article data-uid="MinimalUtility.Debugging.ProfileUtils">
 
 
 
-  <h1 id="Cysharp_Threading_Tasks_UniTaskInternalAccessor" data-uid="Cysharp.Threading.Tasks.UniTaskInternalAccessor" class="text-break">
-Class UniTaskInternalAccessor  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/Tasks/References/UniTaskInternalAccessor.cs/#L8"><i class="bi bi-code-slash"></i></a>
+  <h1 id="MinimalUtility_Debugging_ProfileUtils" data-uid="MinimalUtility.Debugging.ProfileUtils" class="text-break">
+Class ProfileUtils  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/Debugging/ProfileUtils.cs/#L11"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="Cysharp.html">Cysharp</a>.<a class="xref" href="Cysharp.Threading.html">Threading</a>.<a class="xref" href="Cysharp.Threading.Tasks.html">Tasks</a></dd></dl>
+    <dl><dt>Namespace</dt><dd><a class="xref" href="MinimalUtility.html">MinimalUtility</a>.<a class="xref" href="MinimalUtility.Debugging.html">Debugging</a></dd></dl>
   
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>フレームデータを提供する.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static class UniTaskInternalAccessor</code></pre>
+    <pre><code class="lang-csharp hljs">public static class ProfileUtils</code></pre>
   </div>
 
 
@@ -111,7 +112,7 @@ Class UniTaskInternalAccessor  <a class="header-action link-secondary" title="Vi
     <dt>Inheritance</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-      <div><span class="xref">UniTaskInternalAccessor</span></div>
+      <div><span class="xref">ProfileUtils</span></div>
     </dd>
   </dl>
 
@@ -152,35 +153,107 @@ Class UniTaskInternalAccessor  <a class="header-action link-secondary" title="Vi
 </h2>
 
 
-  <a id="Cysharp_Threading_Tasks_UniTaskInternalAccessor_GetEqualityComparer_" data-uid="Cysharp.Threading.Tasks.UniTaskInternalAccessor.GetEqualityComparer*"></a>
+  <a id="MinimalUtility_Debugging_ProfileUtils_GetLatestFrameTiming_" data-uid="MinimalUtility.Debugging.ProfileUtils.GetLatestFrameTiming*"></a>
 
-  <h3 id="Cysharp_Threading_Tasks_UniTaskInternalAccessor_GetEqualityComparer__1" data-uid="Cysharp.Threading.Tasks.UniTaskInternalAccessor.GetEqualityComparer``1">
-  GetEqualityComparer&lt;T&gt;()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/Tasks/References/UniTaskInternalAccessor.cs/#L15"><i class="bi bi-code-slash"></i></a>
+  <h3 id="MinimalUtility_Debugging_ProfileUtils_GetLatestFrameTiming" data-uid="MinimalUtility.Debugging.ProfileUtils.GetLatestFrameTiming">
+  GetLatestFrameTiming()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/Debugging/ProfileUtils.cs/#L36"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Get default equality comparer for T.</p>
+  <div class="markdown level1 summary"><p>最新のフレームタイミング情報を取得します.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static IEqualityComparer&lt;T&gt; GetEqualityComparer&lt;T&gt;()</code></pre>
+    <pre><code class="lang-csharp hljs">public static FrameTiming GetLatestFrameTiming()</code></pre>
   </div>
 
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1">IEqualityComparer</a>&lt;T&gt;</dt>
-    <dd><p>Default equality comparer for T.</p>
+    <dt><span class="xref">FrameTiming</span></dt>
+    <dd><p>最新のフレームタイミング情報.</p>
 </dd>
   </dl>
 
-  <h4 class="section">Type Parameters</h4>
+
+
+
+
+
+
+
+
+
+
+  <a id="MinimalUtility_Debugging_ProfileUtils_GetProfileInfo_" data-uid="MinimalUtility.Debugging.ProfileUtils.GetProfileInfo*"></a>
+
+  <h3 id="MinimalUtility_Debugging_ProfileUtils_GetProfileInfo_MinimalUtility_Debugging_ProfileUtils_MemoryUnit_" data-uid="MinimalUtility.Debugging.ProfileUtils.GetProfileInfo(MinimalUtility.Debugging.ProfileUtils.MemoryUnit)">
+  GetProfileInfo(MemoryUnit)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/Debugging/ProfileUtils.cs/#L60"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>プロファイル情報文字列を取得します.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetProfileInfo(ProfileUtils.MemoryUnit unit = MemoryUnit.GB)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>T</code></dt>
-    <dd><p>Type of T.</p>
+    <dt><code>unit</code> <a class="xref" href="MinimalUtility.Debugging.ProfileUtils.html">ProfileUtils</a>.<a class="xref" href="MinimalUtility.Debugging.ProfileUtils.MemoryUnit.html">MemoryUnit</a></dt>
+    <dd><p>メモリ単位.</p>
 </dd>
   </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>プロファイル情報文字列.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MinimalUtility_Debugging_ProfileUtils_GetTotalMemory_" data-uid="MinimalUtility.Debugging.ProfileUtils.GetTotalMemory*"></a>
+
+  <h3 id="MinimalUtility_Debugging_ProfileUtils_GetTotalMemory_MinimalUtility_Debugging_ProfileUtils_MemoryUnit_" data-uid="MinimalUtility.Debugging.ProfileUtils.GetTotalMemory(MinimalUtility.Debugging.ProfileUtils.MemoryUnit)">
+  GetTotalMemory(MemoryUnit)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/Debugging/ProfileUtils.cs/#L51"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Unityによって予約されたメモリの合計を単位指定して取得します.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float GetTotalMemory(ProfileUtils.MemoryUnit unit)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>unit</code> <a class="xref" href="MinimalUtility.Debugging.ProfileUtils.html">ProfileUtils</a>.<a class="xref" href="MinimalUtility.Debugging.ProfileUtils.MemoryUnit.html">MemoryUnit</a></dt>
+    <dd><p>メモリ単位.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>指定した単位でのメモリ合計.</p>
+</dd>
+  </dl>
+
 
 
 

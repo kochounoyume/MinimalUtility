@@ -2,11 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Enum FrameDataProvider.MemoryUnit |  |  </title>
+      <title>Class EntryPointContainer&lt;T1&gt; |  |  </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Enum FrameDataProvider.MemoryUnit |  |  ">
+      <meta name="title" content="Class EntryPointContainer&lt;T1&gt; |  |  ">
       
-      <meta name="description" content="総メモリ使用量表示の単位指定列挙体.">
+      <meta name="description" content="エントリーポイントを一括管理するコンテナクラス.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       <meta name="docfx:disablenewtab" content="true">
       
-      <meta name="docfx:docurl" content="https://github.com/kochounoyume/MinimalUtility/new/main/apiSpec/new?filename=MinimalUtility_FrameDataProvider_MemoryUnit.md&amp;value=---%0Auid%3A%20MinimalUtility.FrameDataProvider.MemoryUnit%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/kochounoyume/MinimalUtility/new/main/apiSpec/new?filename=MinimalUtility_VContainer_EntryPointContainer_1.md&amp;value=---%0Auid%3A%20MinimalUtility.VContainer.EntryPointContainer%601%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -84,48 +84,90 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="MinimalUtility.FrameDataProvider.MemoryUnit">
+        <article data-uid="MinimalUtility.VContainer.EntryPointContainer`1">
 
 
 
-
-  <h1 id="MinimalUtility_FrameDataProvider_MemoryUnit" data-uid="MinimalUtility.FrameDataProvider.MemoryUnit" class="text-break">
-Enum FrameDataProvider.MemoryUnit  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/FrameDataProvider.cs/#L17"><i class="bi bi-code-slash"></i></a>
+  <h1 id="MinimalUtility_VContainer_EntryPointContainer_1" data-uid="MinimalUtility.VContainer.EntryPointContainer`1" class="text-break">
+Class EntryPointContainer&lt;T1&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/VContainer/EntryPointContainer.cs/#L12"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="MinimalUtility.html">MinimalUtility</a></dd></dl>
+    <dl><dt>Namespace</dt><dd><a class="xref" href="MinimalUtility.html">MinimalUtility</a>.<a class="xref" href="MinimalUtility.VContainer.html">VContainer</a></dd></dl>
   
   </div>
 
-  <div class="markdown summary"><p>総メモリ使用量表示の単位指定列挙体.</p>
+  <div class="markdown summary"><p>エントリーポイントを一括管理するコンテナクラス.</p>
 </div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public enum FrameDataProvider.MemoryUnit</code></pre>
+    <pre><code class="lang-csharp hljs">public sealed class EntryPointContainer&lt;T1&gt; : IStartable where T1 : class</code></pre>
   </div>
 
 
 
-
-
-
-
-
-
-  <h2 id="fields">Fields
-</h2>
+  <h4 class="section">Type Parameters</h4>
   <dl class="parameters">
-    <dt id="MinimalUtility_FrameDataProvider_MemoryUnit_B"><code>B = 0</code></dt>
-    <dd></dd>
-    <dt id="MinimalUtility_FrameDataProvider_MemoryUnit_GB"><code>GB = 3</code></dt>
-    <dd></dd>
-    <dt id="MinimalUtility_FrameDataProvider_MemoryUnit_KB"><code>KB = 1</code></dt>
-    <dd></dd>
-    <dt id="MinimalUtility_FrameDataProvider_MemoryUnit_MB"><code>MB = 2</code></dt>
-    <dd></dd>
+    <dt><code>T1</code></dt>
+    <dd><p>発火する1番目のインスタンスの型.</p>
+</dd>
   </dl>
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">EntryPointContainer&lt;T1&gt;</span></div>
+    </dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="MinimalUtility_VContainer_EntryPointContainer_1__ctor_" data-uid="MinimalUtility.VContainer.EntryPointContainer`1.#ctor*"></a>
+
+  <h3 id="MinimalUtility_VContainer_EntryPointContainer_1__ctor__0_System_Action__0__" data-uid="MinimalUtility.VContainer.EntryPointContainer`1.#ctor(`0,System.Action{`0})">
+  EntryPointContainer(T1, Action&lt;T1&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/VContainer/EntryPointContainer.cs/#L23"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="MinimalUtility.VContainer.EntryPointContainer-1.html">EntryPointContainer&lt;T1&gt;</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EntryPointContainer(T1 instance1, Action&lt;T1&gt; start)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instance1</code> <span class="xref">T1</span></dt>
+    <dd><p>発火する1番目のインスタンス.</p>
+</dd>
+    <dt><code>start</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;T1&gt;</dt>
+    <dd><p>発火する処理.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
 
 
 

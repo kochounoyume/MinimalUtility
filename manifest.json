@@ -15,26 +15,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Cysharp.Threading.Tasks.UniTaskInternalAccessor.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Cysharp.Threading.Tasks.UniTaskInternalAccessor.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Cysharp.Threading.Tasks.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Cysharp.Threading.Tasks.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/Global.Fruits.yml",
       "output": {
         ".html": {
@@ -75,20 +55,40 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/MinimalUtility.DebugProfileViewer.OnGUITrigger.yml",
+      "source_relative_path": "api/MinimalUtility.Debugging.DebugViewerBase.yml",
       "output": {
         ".html": {
-          "relative_path": "api/MinimalUtility.DebugProfileViewer.OnGUITrigger.html"
+          "relative_path": "api/MinimalUtility.Debugging.DebugViewerBase.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/MinimalUtility.DebugProfileViewer.yml",
+      "source_relative_path": "api/MinimalUtility.Debugging.ProfileUtils.MemoryUnit.yml",
       "output": {
         ".html": {
-          "relative_path": "api/MinimalUtility.DebugProfileViewer.html"
+          "relative_path": "api/MinimalUtility.Debugging.ProfileUtils.MemoryUnit.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MinimalUtility.Debugging.ProfileUtils.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MinimalUtility.Debugging.ProfileUtils.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MinimalUtility.Debugging.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MinimalUtility.Debugging.html"
         }
       },
       "version": ""
@@ -159,36 +159,6 @@
       "output": {
         ".html": {
           "relative_path": "api/MinimalUtility.EqualityComparer.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MinimalUtility.FrameDataProvider.EmptyMonoBehaviour.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MinimalUtility.FrameDataProvider.EmptyMonoBehaviour.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MinimalUtility.FrameDataProvider.MemoryUnit.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MinimalUtility.FrameDataProvider.MemoryUnit.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MinimalUtility.FrameDataProvider.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MinimalUtility.FrameDataProvider.html"
         }
       },
       "version": ""
@@ -285,16 +255,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/MinimalUtility.Tasks.Progress.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MinimalUtility.Tasks.Progress.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/MinimalUtility.Tasks.UniTaskExtensions.yml",
       "output": {
         ".html": {
@@ -385,20 +345,170 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/MinimalUtility.VContainer.LifetimeScopeBase.yml",
+      "source_relative_path": "api/MinimalUtility.VContainer.EntryPointContainer-1.yml",
       "output": {
         ".html": {
-          "relative_path": "api/MinimalUtility.VContainer.LifetimeScopeBase.html"
+          "relative_path": "api/MinimalUtility.VContainer.EntryPointContainer-1.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/MinimalUtility.VContainer.VContainerDebugProfileViewer.yml",
+      "source_relative_path": "api/MinimalUtility.VContainer.EntryPointContainer-10.yml",
       "output": {
         ".html": {
-          "relative_path": "api/MinimalUtility.VContainer.VContainerDebugProfileViewer.html"
+          "relative_path": "api/MinimalUtility.VContainer.EntryPointContainer-10.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MinimalUtility.VContainer.EntryPointContainer-11.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MinimalUtility.VContainer.EntryPointContainer-11.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MinimalUtility.VContainer.EntryPointContainer-12.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MinimalUtility.VContainer.EntryPointContainer-12.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MinimalUtility.VContainer.EntryPointContainer-13.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MinimalUtility.VContainer.EntryPointContainer-13.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MinimalUtility.VContainer.EntryPointContainer-14.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MinimalUtility.VContainer.EntryPointContainer-14.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MinimalUtility.VContainer.EntryPointContainer-15.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MinimalUtility.VContainer.EntryPointContainer-15.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MinimalUtility.VContainer.EntryPointContainer-16.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MinimalUtility.VContainer.EntryPointContainer-16.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MinimalUtility.VContainer.EntryPointContainer-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MinimalUtility.VContainer.EntryPointContainer-2.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MinimalUtility.VContainer.EntryPointContainer-3.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MinimalUtility.VContainer.EntryPointContainer-3.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MinimalUtility.VContainer.EntryPointContainer-4.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MinimalUtility.VContainer.EntryPointContainer-4.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MinimalUtility.VContainer.EntryPointContainer-5.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MinimalUtility.VContainer.EntryPointContainer-5.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MinimalUtility.VContainer.EntryPointContainer-6.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MinimalUtility.VContainer.EntryPointContainer-6.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MinimalUtility.VContainer.EntryPointContainer-7.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MinimalUtility.VContainer.EntryPointContainer-7.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MinimalUtility.VContainer.EntryPointContainer-8.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MinimalUtility.VContainer.EntryPointContainer-8.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MinimalUtility.VContainer.EntryPointContainer-9.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MinimalUtility.VContainer.EntryPointContainer-9.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MinimalUtility.VContainer.LifetimeScopeBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MinimalUtility.VContainer.LifetimeScopeBase.html"
         }
       },
       "version": ""
