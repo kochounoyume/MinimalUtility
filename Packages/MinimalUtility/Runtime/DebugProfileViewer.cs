@@ -16,7 +16,7 @@ namespace MinimalUtility
         /// OnGUIイベントを取得するトリガークラス.
         /// </summary>
         [DisallowMultipleComponent]
-        protected class OnGUITrigger : EmptyMonoBehaviour
+        protected class OnGUITrigger : MonoBehaviour
         {
             /// <summary>
             /// OnGUIのタイミングで呼ばれるイベント.

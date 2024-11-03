@@ -66,7 +66,7 @@ namespace MinimalUtility
         /// </summary>
         public FrameDataProvider()
         {
-            coroutineRunner = new Lazy<MonoBehaviour>(CreateCoroutineRunner<MonoBehaviour>());
+            coroutineRunner = new Lazy<MonoBehaviour>(CreateCoroutineRunner<EmptyMonoBehaviour>);
         }
 
         /// <summary>
@@ -95,9 +95,9 @@ namespace MinimalUtility
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static T CreateCoroutineRunner<T>() where T : MonoBehaviour
         {
-            var go = new GameObject("Debug Profiler", typeof(T));
+            var go = new GameObject("Debug Profiler");
             UnityEngine.Object.DontDestroyOnLoad(go);
-            return go.GetComponent<T>();
+            return go.AddComponent<T>();
         }
 
         private IEnumerator UpdateFrameTiming()
