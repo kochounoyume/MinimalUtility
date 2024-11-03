@@ -32,7 +32,7 @@
   "api/MinimalUtility.DebugProfileViewer.OnGUITrigger.html": {
     "href": "api/MinimalUtility.DebugProfileViewer.OnGUITrigger.html",
     "title": "Class DebugProfileViewer.OnGUITrigger | |",
-    "keywords": "Class DebugProfileViewer.OnGUITrigger Namespace MinimalUtility OnGUIイベントを取得するトリガークラス. protected class DebugProfileViewer.OnGUITrigger : FrameDataProvider.EmptyMonoBehaviour Inheritance object FrameDataProvider.EmptyMonoBehaviour DebugProfileViewer.OnGUITrigger Properties State イベントの引数として渡される、フレームタイミング情報. public FrameTiming State { get; set; } Property Value FrameTiming Events OnGUIEvent OnGUIのタイミングで呼ばれるイベント. public event Action<FrameTiming> OnGUIEvent Event Type Action<FrameTiming>"
+    "keywords": "Class DebugProfileViewer.OnGUITrigger Namespace MinimalUtility OnGUIイベントを取得するトリガークラス. protected class DebugProfileViewer.OnGUITrigger : MonoBehaviour Inheritance object DebugProfileViewer.OnGUITrigger Properties State イベントの引数として渡される、フレームタイミング情報. public FrameTiming State { get; set; } Property Value FrameTiming Events OnGUIEvent OnGUIのタイミングで呼ばれるイベント. public event Action<FrameTiming> OnGUIEvent Event Type Action<FrameTiming>"
   },
   "api/MinimalUtility.DebugProfileViewer.html": {
     "href": "api/MinimalUtility.DebugProfileViewer.html",
@@ -77,7 +77,7 @@
   "api/MinimalUtility.FrameDataProvider.EmptyMonoBehaviour.html": {
     "href": "api/MinimalUtility.FrameDataProvider.EmptyMonoBehaviour.html",
     "title": "Class FrameDataProvider.EmptyMonoBehaviour | |",
-    "keywords": "Class FrameDataProvider.EmptyMonoBehaviour Namespace MinimalUtility 空のMonoBehaviour. public class FrameDataProvider.EmptyMonoBehaviour : MonoBehaviour Inheritance object FrameDataProvider.EmptyMonoBehaviour Derived DebugProfileViewer.OnGUITrigger"
+    "keywords": "Class FrameDataProvider.EmptyMonoBehaviour Namespace MinimalUtility 空のMonoBehaviour. public class FrameDataProvider.EmptyMonoBehaviour : MonoBehaviour Inheritance object FrameDataProvider.EmptyMonoBehaviour"
   },
   "api/MinimalUtility.FrameDataProvider.MemoryUnit.html": {
     "href": "api/MinimalUtility.FrameDataProvider.MemoryUnit.html",
