@@ -1,0 +1,55 @@
+﻿<#@ template language="C#" linePragmas="false"#>
+<#@ assembly name="System.Core" #>
+<#@ output extension=".cs" #>
+<#@ import namespace="System.Linq" #>
+#pragma warning disable SA1402
+
+using System;
+using VContainer.Unity;
+
+namespace MinimalUtility.VContainer
+{
+<# for (int i = 1; i < 17; i++) { var genericStr = "T" + string.Join(", T", Enumerable.Range(1, i)); #>
+    /// <summary>
+    /// エントリーポイントを一括管理するコンテナクラス.
+    /// </summary>
+<# for (int j = 1; j < i + 1; j++) { #>
+    /// <typeparam name="T<#= j #>">発火する<#= j #>番目のインスタンスの型.</typeparam>
+<# } #>
+    public sealed class EntryPointContainer<<#= genericStr #>> : IStartable
+        where T<#= string.Join(" : class where T", Enumerable.Range(1, i)) #> : class
+    {
+<# for (int j = 1; j < i + 1; j++) { #>
+        private readonly T<#= j #> instance<#= j #>;
+<# } #>
+        private readonly Action<<#= genericStr #>> start;
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="EntryPointContainer{<#= genericStr #>}"/> class.
+        /// </summary>
+<# for (int j = 1; j < i + 1; j++) { #>
+        /// <param name="instance<#= j #>">発火する<#= j #>番目のインスタンス.</param>
+<# } #>
+        /// <param name="start">発火する処理.</param>
+        public EntryPointContainer(
+<# for (int j = 1; j < i + 1; j++) { #>
+            T<#= j #> instance<#= j #>,
+<# } #>
+            Action<<#= genericStr #>> start)
+        {
+<# for (int j = 1; j < i + 1; j++) { #>
+            this.instance<#= j #> = instance<#= j #>;
+<# } #>
+            this.start = start;
+        }
+
+        /// <inheritdoc />
+        void IStartable.Start()
+        {
+            start(instance<#= string.Join(", instance", Enumerable.Range(1, i)) #>);
+        }
+    }
+<#= i == 16 ? "}" : "" #>
+<# } #>
+
+#pragma warning restore SA1402
