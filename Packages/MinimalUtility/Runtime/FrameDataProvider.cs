@@ -53,7 +53,7 @@ namespace MinimalUtility
         {
             get
             {
-                if (coroutineRunner.IsValueCreated)
+                if (!coroutineRunner.IsValueCreated)
                 {
                     coroutineRunner.Value.StartCoroutine(UpdateFrameTiming());
                 }
