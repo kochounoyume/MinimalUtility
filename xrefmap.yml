@@ -192,6 +192,19 @@ references:
   isSpec: "True"
   fullName: MinimalUtility.Debugging.ProfileUtils.GetProfileInfo
   nameWithType: ProfileUtils.GetProfileInfo
+- uid: MinimalUtility.Debugging.ProfileUtils.GetProfileInfoLabel
+  name: GetProfileInfoLabel()
+  href: api/MinimalUtility.Debugging.ProfileUtils.html#MinimalUtility_Debugging_ProfileUtils_GetProfileInfoLabel
+  commentId: M:MinimalUtility.Debugging.ProfileUtils.GetProfileInfoLabel
+  fullName: MinimalUtility.Debugging.ProfileUtils.GetProfileInfoLabel()
+  nameWithType: ProfileUtils.GetProfileInfoLabel()
+- uid: MinimalUtility.Debugging.ProfileUtils.GetProfileInfoLabel*
+  name: GetProfileInfoLabel
+  href: api/MinimalUtility.Debugging.ProfileUtils.html#MinimalUtility_Debugging_ProfileUtils_GetProfileInfoLabel_
+  commentId: Overload:MinimalUtility.Debugging.ProfileUtils.GetProfileInfoLabel
+  isSpec: "True"
+  fullName: MinimalUtility.Debugging.ProfileUtils.GetProfileInfoLabel
+  nameWithType: ProfileUtils.GetProfileInfoLabel
 - uid: MinimalUtility.Debugging.ProfileUtils.GetTotalMemory(MinimalUtility.Debugging.ProfileUtils.MemoryUnit)
   name: GetTotalMemory(MemoryUnit)
   href: api/MinimalUtility.Debugging.ProfileUtils.html#MinimalUtility_Debugging_ProfileUtils_GetTotalMemory_MinimalUtility_Debugging_ProfileUtils_MemoryUnit_
