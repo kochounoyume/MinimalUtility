@@ -2,6 +2,7 @@
 using System.Buffers;
 using System.Runtime.CompilerServices;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 namespace MinimalUtility.Debugging
 {
@@ -62,6 +63,39 @@ namespace MinimalUtility.Debugging
         {
             var latest = GetLatestFrameTiming();
             return $"CPU: {1000 / latest.cpuFrameTime:F0}fps ({latest.cpuFrameTime:F1}ms){Environment.NewLine}Memory: {GetTotalMemory(unit):F}{unit.ToXEnumString()}";
+        }
+
+        /// <summary>
+        /// プロファイル情報ラベルを取得します.
+        /// </summary>
+        /// <returns>プロファイル情報ラベル.</returns>
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        public static Label GetProfileInfoLabel()
+        {
+            const string title = "<b>Performance</b>";
+            var label = new Label(title)
+            {
+                enableRichText = true
+            };
+            label.schedule.Execute(() =>
+            {
+                var latest = GetLatestFrameTiming();
+                var sb = new DefaultInterpolatedStringHandler(0, 0);
+                sb.AppendLiteral(title);
+                sb.AppendLiteral(Environment.NewLine);
+                sb.AppendLiteral("CPU: ");
+                sb.AppendFormatted(1000 / latest.cpuFrameTime, "F0");
+                sb.AppendLiteral("fps (");
+                sb.AppendFormatted(latest.cpuFrameTime, "F1");
+                sb.AppendLiteral("ms)");
+                sb.AppendLiteral(Environment.NewLine);
+                sb.AppendLiteral("Memory: ");
+                sb.AppendFormatted(GetTotalMemory(MemoryUnit.GB), "F");
+                sb.AppendFormatted("GB");
+                label.text = sb.ToString();
+            })
+            .Every(500);
+            return label;
         }
     }
 }
