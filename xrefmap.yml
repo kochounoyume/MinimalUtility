@@ -179,19 +179,6 @@ references:
   isSpec: "True"
   fullName: MinimalUtility.Debugging.ProfileUtils.GetLatestFrameTiming
   nameWithType: ProfileUtils.GetLatestFrameTiming
-- uid: MinimalUtility.Debugging.ProfileUtils.GetProfileInfo(MinimalUtility.Debugging.ProfileUtils.MemoryUnit)
-  name: GetProfileInfo(MemoryUnit)
-  href: api/MinimalUtility.Debugging.ProfileUtils.html#MinimalUtility_Debugging_ProfileUtils_GetProfileInfo_MinimalUtility_Debugging_ProfileUtils_MemoryUnit_
-  commentId: M:MinimalUtility.Debugging.ProfileUtils.GetProfileInfo(MinimalUtility.Debugging.ProfileUtils.MemoryUnit)
-  fullName: MinimalUtility.Debugging.ProfileUtils.GetProfileInfo(MinimalUtility.Debugging.ProfileUtils.MemoryUnit)
-  nameWithType: ProfileUtils.GetProfileInfo(ProfileUtils.MemoryUnit)
-- uid: MinimalUtility.Debugging.ProfileUtils.GetProfileInfo*
-  name: GetProfileInfo
-  href: api/MinimalUtility.Debugging.ProfileUtils.html#MinimalUtility_Debugging_ProfileUtils_GetProfileInfo_
-  commentId: Overload:MinimalUtility.Debugging.ProfileUtils.GetProfileInfo
-  isSpec: "True"
-  fullName: MinimalUtility.Debugging.ProfileUtils.GetProfileInfo
-  nameWithType: ProfileUtils.GetProfileInfo
 - uid: MinimalUtility.Debugging.ProfileUtils.GetProfileInfoLabel
   name: GetProfileInfoLabel()
   href: api/MinimalUtility.Debugging.ProfileUtils.html#MinimalUtility_Debugging_ProfileUtils_GetProfileInfoLabel
