@@ -1,5 +1,4 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UIElements;
 using Object = UnityEngine.Object;
 
@@ -10,14 +9,17 @@ namespace MinimalUtility.Debugging
     /// <summary>
     /// 実機デバッグメニューの実装をするための基底クラス.
     /// </summary>
-    public class DebugViewerBase
+    public abstract class DebugViewerBase
     {
-        private readonly Lazy<UIDocument> uiDocument = new (static () =>
-        {
-            var go = new GameObject("DebugViewer");
-            Object.DontDestroyOnLoad(go);
-            return go.AddComponent<UIDocument>();
-        });
+        /// <summary>
+        /// パネル設定.
+        /// </summary>
+        public PanelSettings PanelSettings { get; set; }
+
+        /// <summary>
+        /// tss.
+        /// </summary>
+        public ThemeStyleSheet ThemeStyleSheet { get; set; }
 
         /// <summary>
         /// エントリーポイント.
@@ -25,7 +27,21 @@ namespace MinimalUtility.Debugging
         /// <returns>ルート要素.</returns>
         public virtual VisualElement Start()
         {
-            var root = uiDocument.Value.rootVisualElement;
+            var uiDocument = new GameObject("DebugViewer").AddComponent<UIDocument>();
+            Object.DontDestroyOnLoad(uiDocument);
+            if (PanelSettings == null)
+            {
+                PanelSettings = ScriptableObject.CreateInstance<PanelSettings>();
+                if (ThemeStyleSheet == null)
+                {
+                    ThemeStyleSheet = Resources.Load<ThemeStyleSheet>("DefaultRuntimeTheme");
+                }
+                PanelSettings.themeStyleSheet = ThemeStyleSheet;
+                PanelSettings.scaleMode = PanelScaleMode.ScaleWithScreenSize;
+            }
+            uiDocument.panelSettings = PanelSettings;
+
+            var root = uiDocument.rootVisualElement;
             var safeAreaContainer = new SafeAreaContainer();
             root.Add(safeAreaContainer);
             return safeAreaContainer;
