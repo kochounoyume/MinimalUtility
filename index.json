@@ -22,7 +22,7 @@
   "api/MinimalUtility.Debugging.DebugViewerBase.html": {
     "href": "api/MinimalUtility.Debugging.DebugViewerBase.html",
     "title": "Class DebugViewerBase | |",
-    "keywords": "Class DebugViewerBase Namespace MinimalUtility.Debugging 実機デバッグメニューの実装をするための基底クラス. public class DebugViewerBase Inheritance object DebugViewerBase Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Methods Start() エントリーポイント. public virtual VisualElement Start() Returns VisualElement ルート要素."
+    "keywords": "Class DebugViewerBase Namespace MinimalUtility.Debugging 実機デバッグメニューの実装をするための基底クラス. public abstract class DebugViewerBase Inheritance object DebugViewerBase Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Properties PanelSettings パネル設定. public PanelSettings PanelSettings { get; set; } Property Value PanelSettings ThemeStyleSheet tss. public ThemeStyleSheet ThemeStyleSheet { get; set; } Property Value ThemeStyleSheet Methods Start() エントリーポイント. public virtual VisualElement Start() Returns VisualElement ルート要素."
   },
   "api/MinimalUtility.Debugging.ProfileUtils.MemoryUnit.html": {
     "href": "api/MinimalUtility.Debugging.ProfileUtils.MemoryUnit.html",

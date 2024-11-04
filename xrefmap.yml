@@ -121,6 +121,19 @@ references:
   commentId: T:MinimalUtility.Debugging.DebugViewerBase
   fullName: MinimalUtility.Debugging.DebugViewerBase
   nameWithType: DebugViewerBase
+- uid: MinimalUtility.Debugging.DebugViewerBase.PanelSettings
+  name: PanelSettings
+  href: api/MinimalUtility.Debugging.DebugViewerBase.html#MinimalUtility_Debugging_DebugViewerBase_PanelSettings
+  commentId: P:MinimalUtility.Debugging.DebugViewerBase.PanelSettings
+  fullName: MinimalUtility.Debugging.DebugViewerBase.PanelSettings
+  nameWithType: DebugViewerBase.PanelSettings
+- uid: MinimalUtility.Debugging.DebugViewerBase.PanelSettings*
+  name: PanelSettings
+  href: api/MinimalUtility.Debugging.DebugViewerBase.html#MinimalUtility_Debugging_DebugViewerBase_PanelSettings_
+  commentId: Overload:MinimalUtility.Debugging.DebugViewerBase.PanelSettings
+  isSpec: "True"
+  fullName: MinimalUtility.Debugging.DebugViewerBase.PanelSettings
+  nameWithType: DebugViewerBase.PanelSettings
 - uid: MinimalUtility.Debugging.DebugViewerBase.Start
   name: Start()
   href: api/MinimalUtility.Debugging.DebugViewerBase.html#MinimalUtility_Debugging_DebugViewerBase_Start
@@ -134,6 +147,19 @@ references:
   isSpec: "True"
   fullName: MinimalUtility.Debugging.DebugViewerBase.Start
   nameWithType: DebugViewerBase.Start
+- uid: MinimalUtility.Debugging.DebugViewerBase.ThemeStyleSheet
+  name: ThemeStyleSheet
+  href: api/MinimalUtility.Debugging.DebugViewerBase.html#MinimalUtility_Debugging_DebugViewerBase_ThemeStyleSheet
+  commentId: P:MinimalUtility.Debugging.DebugViewerBase.ThemeStyleSheet
+  fullName: MinimalUtility.Debugging.DebugViewerBase.ThemeStyleSheet
+  nameWithType: DebugViewerBase.ThemeStyleSheet
+- uid: MinimalUtility.Debugging.DebugViewerBase.ThemeStyleSheet*
+  name: ThemeStyleSheet
+  href: api/MinimalUtility.Debugging.DebugViewerBase.html#MinimalUtility_Debugging_DebugViewerBase_ThemeStyleSheet_
+  commentId: Overload:MinimalUtility.Debugging.DebugViewerBase.ThemeStyleSheet
+  isSpec: "True"
+  fullName: MinimalUtility.Debugging.DebugViewerBase.ThemeStyleSheet
+  nameWithType: DebugViewerBase.ThemeStyleSheet
 - uid: MinimalUtility.Debugging.ProfileUtils
   name: ProfileUtils
   href: api/MinimalUtility.Debugging.ProfileUtils.html
