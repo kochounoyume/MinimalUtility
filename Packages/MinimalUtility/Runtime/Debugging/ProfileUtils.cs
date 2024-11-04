@@ -54,18 +54,6 @@ namespace MinimalUtility.Debugging
             => UnityEngine.Profiling.Profiler.GetTotalReservedMemoryLong() / Mathf.Pow(1024f, (int)unit);
 
         /// <summary>
-        /// プロファイル情報文字列を取得します.
-        /// </summary>
-        /// <param name="unit">メモリ単位.</param>
-        /// <returns>プロファイル情報文字列.</returns>
-        [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static string GetProfileInfo(MemoryUnit unit = MemoryUnit.GB)
-        {
-            var latest = GetLatestFrameTiming();
-            return $"CPU: {1000 / latest.cpuFrameTime:F0}fps ({latest.cpuFrameTime:F1}ms){Environment.NewLine}Memory: {GetTotalMemory(unit):F}{unit.ToXEnumString()}";
-        }
-
-        /// <summary>
         /// プロファイル情報ラベルを取得します.
         /// </summary>
         /// <returns>プロファイル情報ラベル.</returns>
