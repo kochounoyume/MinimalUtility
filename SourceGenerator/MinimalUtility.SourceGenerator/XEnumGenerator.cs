@@ -44,6 +44,8 @@ internal sealed class XEnumGenerator : IIncrementalGenerator
             internal static partial class XEnum
             {
                 public static T[] GetValues<T>() where T : struct, Enum => Cache<T>.Default.GetValues();
+                public static ReadOnlySpan<T> GetValues<T>(in Span<T> span) where T : struct, Enum => Cache<T>.Default.GetValues(span);
+                public static int GetLength<T>() where T : struct, Enum => Cache<T>.Default.GetLength();
                 public static string[] GetNames<T>() where T : struct, Enum => Cache<T>.Default.GetNames();
                 public static string GetName<T>(in T value) where T : struct, Enum => Cache<T>.Default.GetName(value);
                 public static bool IsDefined<T, TValue>(in TValue value) where T : struct, Enum where TValue : struct => Cache<T>.Default.IsDefined(value);
@@ -58,6 +60,8 @@ internal sealed class XEnumGenerator : IIncrementalGenerator
                 {
                     public static readonly Cache<T> Default;
                     public abstract T[] GetValues();
+                    public abstract ReadOnlySpan<T> GetValues(in Span<T> span);
+                    public abstract int GetLength();
                     public abstract string[] GetNames();
                     public abstract string GetName(in T value);
                     public abstract bool IsDefined<TValue>(in TValue value) where TValue : struct;
@@ -142,6 +146,15 @@ internal sealed class XEnumGenerator : IIncrementalGenerator
             // private sealed class HogeCache : Cache<Hoge>
             // {
             //     public override Hoge[] GetValues() => new [] { Hoge.A, Hoge.B, Hoge.C };
+            //     public override ReadOnlySpan<Hoge> GetValues(in Span<Hoge> span)
+            //     {
+            //         if (stackalloc Hoge[] { Hoge.A, Hoge.B, Hoge.C }.TryCopyTo(span))
+            //         {
+            //             return span;
+            //         }
+            //         throw new ArgumentException("Span is too small.", nameof(span));
+            //     }
+            //     public override int GetLength() => 3;
             //     public override string[] GetNames() => new [] { nameof(Hoge.A), nameof(Hoge.B), nameof(Hoge.C) };
             //     public override string GetName(in Hoge value) => (int)value switch
             //     {
@@ -193,11 +206,14 @@ internal sealed class XEnumGenerator : IIncrementalGenerator
             var tryParseSb = new StringBuilder();
             var getEnumMemberValueSb = new StringBuilder();
 
+            var length = 0;
+
             foreach (var member in genericSymbol.GetMembers())
             {
                 if (member.Kind != SymbolKind.Field) continue;
                 var current = member as IFieldSymbol;
                 if (!current.TryGetNameAndValue(out var name, out var value)) continue;
+                length++;
                 var fieldName = typeFullName + "." + name;
 
                 valuesSb.Append(fieldName).Append(", ");
@@ -245,8 +261,28 @@ internal sealed class XEnumGenerator : IIncrementalGenerator
             cacheSb.Append(valuesSb.Remove(valuesSb.Length - 2, 2));
             cacheSb.Append("""
                             };
-                                       public override string[] GetNames() => new [] { 
+                                       public override ReadOnlySpan<
                            """);
+            cacheSb.Append(typeFullName);
+            cacheSb.Append("> GetValues(in Span<");
+            cacheSb.Append(typeFullName);
+            cacheSb.Append("""
+                           > span)
+                                       {
+                                           if (stackalloc [] { 
+                           """);
+            cacheSb.Append(valuesSb);
+            cacheSb.Append("""
+                            }.TryCopyTo(span))
+                                           {
+                                               return span;
+                                           }
+                                           throw new ArgumentException("Span is too small.", nameof(span));
+                                       }
+                                       public override int GetLength() => 
+                           """);
+            cacheSb.Append(length).AppendLine(";");
+            cacheSb.Append("            public override string[] GetNames() => new [] { ");
             cacheSb.Append(namesSb.Remove(namesSb.Length - 2, 2));
             cacheSb.Append("""
                             };
