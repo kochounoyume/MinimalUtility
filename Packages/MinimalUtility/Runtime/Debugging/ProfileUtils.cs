@@ -69,20 +69,20 @@ namespace MinimalUtility.Debugging
             {
                 var latest = GetLatestFrameTiming();
                 var sb = new DefaultInterpolatedStringHandler(0, 0);
+                var newlineSpan = Environment.NewLine.AsSpan();
                 sb.AppendLiteral(title);
-                sb.AppendLiteral(Environment.NewLine);
+                sb.AppendFormatted(newlineSpan);
                 sb.AppendLiteral("CPU: ");
                 sb.AppendFormatted(1000 / latest.cpuFrameTime, "F0");
                 sb.AppendLiteral("fps (");
                 sb.AppendFormatted(latest.cpuFrameTime, "F1");
                 sb.AppendLiteral("ms)");
-                sb.AppendLiteral(Environment.NewLine);
+                sb.AppendFormatted(newlineSpan);
                 sb.AppendLiteral("Memory: ");
                 sb.AppendFormatted(GetTotalMemory(MemoryUnit.GB), "F");
                 sb.AppendFormatted("GB");
                 label.text = sb.ToString();
-            })
-            .Every(500);
+            }).Every(500);
             return label;
         }
     }
