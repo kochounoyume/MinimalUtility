@@ -275,7 +275,11 @@ internal sealed class XEnumGenerator : IIncrementalGenerator
             cacheSb.Append("""
                             }.TryCopyTo(span))
                                            {
-                                               return span;
+                                               return span.Slice(0, 
+                           """);
+            cacheSb.Append(length);
+            cacheSb.Append("""
+                           );
                                            }
                                            throw new ArgumentException("Span is too small.", nameof(span));
                                        }
