@@ -38,22 +38,34 @@ internal sealed class XEnumGenerator : IIncrementalGenerator
         context.CancellationToken.ThrowIfCancellationRequested();
         context.AddSource("XEnum.g.cs", """
         using System;
+        using System.Runtime.CompilerServices;
         
         namespace MinimalUtility
         {
             internal static partial class XEnum
             {
+                [MethodImpl(MethodImplOptions.AggressiveInlining)]
                 public static T[] GetValues<T>() where T : struct, Enum => Cache<T>.Default.GetValues();
+                [MethodImpl(MethodImplOptions.AggressiveInlining)]
                 public static ReadOnlySpan<T> GetValues<T>(in Span<T> span) where T : struct, Enum => Cache<T>.Default.GetValues(span);
+                [MethodImpl(MethodImplOptions.AggressiveInlining)]
                 public static int GetLength<T>() where T : struct, Enum => Cache<T>.Default.GetLength();
+                [MethodImpl(MethodImplOptions.AggressiveInlining)]
                 public static string[] GetNames<T>() where T : struct, Enum => Cache<T>.Default.GetNames();
+                [MethodImpl(MethodImplOptions.AggressiveInlining)]
                 public static string GetName<T>(in T value) where T : struct, Enum => Cache<T>.Default.GetName(value);
+                [MethodImpl(MethodImplOptions.AggressiveInlining)]
                 public static bool IsDefined<T, TValue>(in TValue value) where T : struct, Enum where TValue : struct => Cache<T>.Default.IsDefined(value);
+                [MethodImpl(MethodImplOptions.AggressiveInlining)]
                 public static T Parse<T>(in string value) where T : struct, Enum => Cache<T>.Default.Parse(value);
+                [MethodImpl(MethodImplOptions.AggressiveInlining)]
                 public static bool TryParse<T>(in string value, out T result) where T : struct, Enum => Cache<T>.Default.TryParse(value, out result);
 
+                [MethodImpl(MethodImplOptions.AggressiveInlining)]
                 public static string ToXEnumString<T>(this T value) where T : struct, Enum => Cache<T>.Default.GetName(value);
+                [MethodImpl(MethodImplOptions.AggressiveInlining)]
                 public static bool HasBitFlag<T>(this T value, in T flag) where T : struct, Enum => Cache<T>.Default.HasBitFlag(value, flag);
+                [MethodImpl(MethodImplOptions.AggressiveInlining)]
                 public static string GetEnumMemberValue<T>(this T value) where T : struct, Enum => Cache<T>.Default.GetEnumMemberValue(value);
 
                 private abstract partial class Cache<T> where T : struct, Enum
