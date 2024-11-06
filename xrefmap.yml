@@ -398,15 +398,24 @@ references:
   fullName.vb: MinimalUtility.Enumerator(Of T)
   nameWithType: Enumerator<T>
   nameWithType.vb: Enumerator(Of T)
-- uid: MinimalUtility.Enumerator`1.#ctor(MinimalUtility.Enumerator{`0}.RefFunc,`0@)
-  name: Enumerator(RefFunc, in T)
-  href: api/MinimalUtility.Enumerator-1.html#MinimalUtility_Enumerator_1__ctor_MinimalUtility_Enumerator__0__RefFunc__0__
-  commentId: M:MinimalUtility.Enumerator`1.#ctor(MinimalUtility.Enumerator{`0}.RefFunc,`0@)
-  name.vb: New(RefFunc, T)
-  fullName: MinimalUtility.Enumerator<T>.Enumerator(MinimalUtility.Enumerator<T>.RefFunc, in T)
-  fullName.vb: MinimalUtility.Enumerator(Of T).New(MinimalUtility.Enumerator(Of T).RefFunc, T)
-  nameWithType: Enumerator<T>.Enumerator(Enumerator<T>.RefFunc, in T)
-  nameWithType.vb: Enumerator(Of T).New(Enumerator(Of T).RefFunc, T)
+- uid: MinimalUtility.Enumerator`1.#ctor(MinimalUtility.Enumerator{`0}.RefFunc)
+  name: Enumerator(RefFunc)
+  href: api/MinimalUtility.Enumerator-1.html#MinimalUtility_Enumerator_1__ctor_MinimalUtility_Enumerator__0__RefFunc_
+  commentId: M:MinimalUtility.Enumerator`1.#ctor(MinimalUtility.Enumerator{`0}.RefFunc)
+  name.vb: New(RefFunc)
+  fullName: MinimalUtility.Enumerator<T>.Enumerator(MinimalUtility.Enumerator<T>.RefFunc)
+  fullName.vb: MinimalUtility.Enumerator(Of T).New(MinimalUtility.Enumerator(Of T).RefFunc)
+  nameWithType: Enumerator<T>.Enumerator(Enumerator<T>.RefFunc)
+  nameWithType.vb: Enumerator(Of T).New(Enumerator(Of T).RefFunc)
+- uid: MinimalUtility.Enumerator`1.#ctor(`0@,MinimalUtility.Enumerator{`0}.RefFunc)
+  name: Enumerator(in T, RefFunc)
+  href: api/MinimalUtility.Enumerator-1.html#MinimalUtility_Enumerator_1__ctor__0__MinimalUtility_Enumerator__0__RefFunc_
+  commentId: M:MinimalUtility.Enumerator`1.#ctor(`0@,MinimalUtility.Enumerator{`0}.RefFunc)
+  name.vb: New(T, RefFunc)
+  fullName: MinimalUtility.Enumerator<T>.Enumerator(in T, MinimalUtility.Enumerator<T>.RefFunc)
+  fullName.vb: MinimalUtility.Enumerator(Of T).New(T, MinimalUtility.Enumerator(Of T).RefFunc)
+  nameWithType: Enumerator<T>.Enumerator(in T, Enumerator<T>.RefFunc)
+  nameWithType.vb: Enumerator(Of T).New(T, Enumerator(Of T).RefFunc)
 - uid: MinimalUtility.Enumerator`1.#ctor*
   name: Enumerator
   href: api/MinimalUtility.Enumerator-1.html#MinimalUtility_Enumerator_1__ctor_

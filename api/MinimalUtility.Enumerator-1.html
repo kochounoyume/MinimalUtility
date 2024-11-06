@@ -159,8 +159,41 @@ Struct Enumerator&lt;T&gt;  <a class="header-action link-secondary" title="View 
 
   <a id="MinimalUtility_Enumerator_1__ctor_" data-uid="MinimalUtility.Enumerator`1.#ctor*"></a>
 
-  <h3 id="MinimalUtility_Enumerator_1__ctor_MinimalUtility_Enumerator__0__RefFunc__0__" data-uid="MinimalUtility.Enumerator`1.#ctor(MinimalUtility.Enumerator{`0}.RefFunc,`0@)">
-  Enumerator(RefFunc, in T)
+  <h3 id="MinimalUtility_Enumerator_1__ctor_MinimalUtility_Enumerator__0__RefFunc_" data-uid="MinimalUtility.Enumerator`1.#ctor(MinimalUtility.Enumerator{`0}.RefFunc)">
+  Enumerator(RefFunc)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/Enumerator.cs/#L44"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="MinimalUtility.Enumerator-1.html">Enumerator&lt;T&gt;</a> struct.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Enumerator(Enumerator&lt;T&gt;.RefFunc moveNext)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>moveNext</code> <a class="xref" href="MinimalUtility.Enumerator-1.html">Enumerator</a>&lt;T&gt;.<a class="xref" href="MinimalUtility.Enumerator-1.RefFunc.html">RefFunc</a></dt>
+    <dd><p>IEnumerator&lt;T&gt;.MoveNext.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MinimalUtility_Enumerator_1__ctor_" data-uid="MinimalUtility.Enumerator`1.#ctor*"></a>
+
+  <h3 id="MinimalUtility_Enumerator_1__ctor__0__MinimalUtility_Enumerator__0__RefFunc_" data-uid="MinimalUtility.Enumerator`1.#ctor(`0@,MinimalUtility.Enumerator{`0}.RefFunc)">
+  Enumerator(in T, RefFunc)
   <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/Enumerator.cs/#L34"><i class="bi bi-code-slash"></i></a>
   </h3>
 
@@ -169,16 +202,16 @@ Struct Enumerator&lt;T&gt;  <a class="header-action link-secondary" title="View 
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Enumerator(Enumerator&lt;T&gt;.RefFunc moveNext, in T current = default)</code></pre>
+    <pre><code class="lang-csharp hljs">public Enumerator(in T current, Enumerator&lt;T&gt;.RefFunc moveNext)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>moveNext</code> <a class="xref" href="MinimalUtility.Enumerator-1.html">Enumerator</a>&lt;T&gt;.<a class="xref" href="MinimalUtility.Enumerator-1.RefFunc.html">RefFunc</a></dt>
-    <dd><p>IEnumerator&lt;T&gt;.MoveNext.</p>
-</dd>
     <dt><code>current</code> <span class="xref">T</span></dt>
     <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1.current">Current</a>.</p>
+</dd>
+    <dt><code>moveNext</code> <a class="xref" href="MinimalUtility.Enumerator-1.html">Enumerator</a>&lt;T&gt;.<a class="xref" href="MinimalUtility.Enumerator-1.RefFunc.html">RefFunc</a></dt>
+    <dd><p>IEnumerator&lt;T&gt;.MoveNext.</p>
 </dd>
   </dl>
 
@@ -238,7 +271,7 @@ Struct Enumerator&lt;T&gt;  <a class="header-action link-secondary" title="View 
 
   <h3 id="MinimalUtility_Enumerator_1_MoveNext" data-uid="MinimalUtility.Enumerator`1.MoveNext">
   MoveNext()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/Enumerator.cs/#L41"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/Enumerator.cs/#L49"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Advances the enumerator to the next element of the collection.</p>
