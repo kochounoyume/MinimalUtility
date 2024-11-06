@@ -69,16 +69,6 @@
     "title": "Namespace MinimalUtility.Editor | |",
     "keywords": "Namespace MinimalUtility.Editor Classes AnimatorInspector Animator.keepAnimatorStateOnDisableやAnimator.writeDefaultValuesOnDisableも編集できる Animatorカスタムエディタ. DefaultInspector デフォルトのインスペクタービュー. TransformInspector ワールドの座標・回転・大きさも表示するTransformカスタムエディタ. UnityComponentInspector<T> 既存のUnityコンポーネントのカスタムエディタを作成するための基底クラスです."
   },
-  "api/MinimalUtility.Enumerator-1.RefFunc.html": {
-    "href": "api/MinimalUtility.Enumerator-1.RefFunc.html",
-    "title": "Delegate Enumerator<T>.RefFunc | |",
-    "keywords": "Delegate Enumerator<T>.RefFunc Namespace MinimalUtility IEnumerator<T>.MoveNext登録用デリゲート. public delegate bool Enumerator<T>.RefFunc(ref T current) Parameters current T 参照渡し引数. Returns bool 戻り値(bool)."
-  },
-  "api/MinimalUtility.Enumerator-1.html": {
-    "href": "api/MinimalUtility.Enumerator-1.html",
-    "title": "Struct Enumerator<T> | |",
-    "keywords": "Struct Enumerator<T> Namespace MinimalUtility 汎用IEnumerator<T>構造体. public struct Enumerator<T> : IEnumerator<T>, IEnumerator, IDisposable Type Parameters T 要素の型. Implements IEnumerator<T> IEnumerator IDisposable Inherited Members ValueType.Equals(object) ValueType.GetHashCode() ValueType.ToString() object.Equals(object, object) object.GetType() object.ReferenceEquals(object, object) Constructors Enumerator(RefFunc) Initializes a new instance of the Enumerator<T> struct. public Enumerator(Enumerator<T>.RefFunc moveNext) Parameters moveNext Enumerator<T>.RefFunc IEnumerator<T>.MoveNext. Enumerator(in T, RefFunc) Initializes a new instance of the Enumerator<T> struct. public Enumerator(in T current, Enumerator<T>.RefFunc moveNext) Parameters current T Current. moveNext Enumerator<T>.RefFunc IEnumerator<T>.MoveNext. Properties Current Gets the element in the collection at the current position of the enumerator. public T Current { get; } Property Value T The element in the collection at the current position of the enumerator. Methods MoveNext() Advances the enumerator to the next element of the collection. public bool MoveNext() Returns bool true if the enumerator was successfully advanced to the next element; false if the enumerator has passed the end of the collection. Exceptions InvalidOperationException The collection was modified after the enumerator was created."
-  },
   "api/MinimalUtility.EqualityComparer.html": {
     "href": "api/MinimalUtility.EqualityComparer.html",
     "title": "Class EqualityComparer | |",
@@ -292,7 +282,7 @@
   "api/MinimalUtility.html": {
     "href": "api/MinimalUtility.html",
     "title": "Namespace MinimalUtility | |",
-    "keywords": "Namespace MinimalUtility Classes ButtonAttribute 指定したメソッドをUnityのInspector上に表示したボタンでテスト実行できるようになる属性. ComponentExtensions Componentの拡張メソッド. DisposableExtensions IDisposableの拡張メソッド. EqualityComparer EqualityComparer<T>の拡張クラス. GameObjectPool<T> ゲームオブジェクトのプール. 単一のルートオブジェクト下でのプーリングを想定. MemoryExtensions Memory<T>, ReadOnlyMemory<T>の拡張メソッド. RectTransformExtensions RectTransformの拡張メソッド. SafeAreaAdjuster セーフエリア調整スクリプト. StringUtils 文字列を扱うための静的メソッド群を提供します. ValueDisposable 値型で軽量なIDisposableのファクトリ. usingステートメントでの仕様を想定しており、IDisposableにキャストするとアロケーションが発生する. IDisposableにキャストして使用したい場合は素直に専用クラス実装するか、RxライブラリのIDisposableファクトリを使用する. Structs Enumerator<T> 汎用IEnumerator<T>構造体. PooledObject<T> usingステートメントスコープを抜けた際にインスタンスをプールに返却する構造体. ValueDisposable.Disposable usingステートメントスコープを抜けた際にコールバックを呼び出すための構造体. ValueDisposable.Disposable<T> usingステートメントスコープを抜けた際にコールバックを呼び出すための構造体. Delegates Enumerator<T>.RefFunc IEnumerator<T>.MoveNext登録用デリゲート."
+    "keywords": "Namespace MinimalUtility Classes ButtonAttribute 指定したメソッドをUnityのInspector上に表示したボタンでテスト実行できるようになる属性. ComponentExtensions Componentの拡張メソッド. DisposableExtensions IDisposableの拡張メソッド. EqualityComparer EqualityComparer<T>の拡張クラス. GameObjectPool<T> ゲームオブジェクトのプール. 単一のルートオブジェクト下でのプーリングを想定. MemoryExtensions Memory<T>, ReadOnlyMemory<T>の拡張メソッド. RectTransformExtensions RectTransformの拡張メソッド. SafeAreaAdjuster セーフエリア調整スクリプト. StringUtils 文字列を扱うための静的メソッド群を提供します. ValueDisposable 値型で軽量なIDisposableのファクトリ. usingステートメントでの仕様を想定しており、IDisposableにキャストするとアロケーションが発生する. IDisposableにキャストして使用したい場合は素直に専用クラス実装するか、RxライブラリのIDisposableファクトリを使用する. Structs PooledObject<T> usingステートメントスコープを抜けた際にインスタンスをプールに返却する構造体. ValueDisposable.Disposable usingステートメントスコープを抜けた際にコールバックを呼び出すための構造体. ValueDisposable.Disposable<T> usingステートメントスコープを抜けた際にコールバックを呼び出すための構造体."
   },
   "api/System.Runtime.CompilerServices.CallerArgumentExpressionAttribute.html": {
     "href": "api/System.Runtime.CompilerServices.CallerArgumentExpressionAttribute.html",
