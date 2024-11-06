@@ -29,12 +29,20 @@ namespace MinimalUtility
         /// <summary>
         /// Initializes a new instance of the <see cref="Enumerator{T}"/> struct.
         /// </summary>
-        /// <param name="moveNext"><see cref="IEnumerator{T}.MoveNext"/>.</param>
         /// <param name="current"><see cref="IEnumerator{T}.Current"/>.</param>
-        public Enumerator(RefFunc moveNext, in T current = default)
+        /// <param name="moveNext"><see cref="IEnumerator{T}.MoveNext"/>.</param>
+        public Enumerator(in T current, RefFunc moveNext)
         {
-            this.moveNext = moveNext;
             this.current = current;
+            this.moveNext = moveNext;
+        }
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="Enumerator{T}"/> struct.
+        /// </summary>
+        /// <param name="moveNext"><see cref="IEnumerator{T}.MoveNext"/>.</param>
+        public Enumerator(RefFunc moveNext) : this(default, moveNext)
+        {
         }
 
         /// <inheritdoc/>
