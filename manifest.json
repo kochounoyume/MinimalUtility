@@ -155,6 +155,26 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/MinimalUtility.Enumerator-1.RefFunc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MinimalUtility.Enumerator-1.RefFunc.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MinimalUtility.Enumerator-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MinimalUtility.Enumerator-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/MinimalUtility.EqualityComparer.yml",
       "output": {
         ".html": {
@@ -529,26 +549,6 @@
       "output": {
         ".html": {
           "relative_path": "api/MinimalUtility.ValueDisposable.Disposable-1.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MinimalUtility.ValueDisposable.Disposable-2.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MinimalUtility.ValueDisposable.Disposable-2.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MinimalUtility.ValueDisposable.Disposable-3.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MinimalUtility.ValueDisposable.Disposable-3.html"
         }
       },
       "version": ""

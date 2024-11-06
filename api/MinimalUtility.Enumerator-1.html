@@ -2,11 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Struct ValueDisposable.Disposable&lt;T1, T2&gt; |  |  </title>
+      <title>Struct Enumerator&lt;T&gt; |  |  </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Struct ValueDisposable.Disposable&lt;T1, T2&gt; |  |  ">
+      <meta name="title" content="Struct Enumerator&lt;T&gt; |  |  ">
       
-      <meta name="description" content="usingステートメントスコープを抜けた際にコールバックを呼び出すための構造体.">
+      <meta name="description" content="汎用構造体.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       <meta name="docfx:disablenewtab" content="true">
       
-      <meta name="docfx:docurl" content="https://github.com/kochounoyume/MinimalUtility/new/main/apiSpec/new?filename=MinimalUtility_ValueDisposable_Disposable_2.md&amp;value=---%0Auid%3A%20MinimalUtility.ValueDisposable.Disposable%602%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/kochounoyume/MinimalUtility/new/main/apiSpec/new?filename=MinimalUtility_Enumerator_1.md&amp;value=---%0Auid%3A%20MinimalUtility.Enumerator%601%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -84,12 +84,12 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="MinimalUtility.ValueDisposable.Disposable`2">
+        <article data-uid="MinimalUtility.Enumerator`1">
 
 
 
-  <h1 id="MinimalUtility_ValueDisposable_Disposable_2" data-uid="MinimalUtility.ValueDisposable.Disposable`2" class="text-break">
-Struct ValueDisposable.Disposable&lt;T1, T2&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/ValueDisposable.cs/#L120"><i class="bi bi-code-slash"></i></a>
+  <h1 id="MinimalUtility_Enumerator_1" data-uid="MinimalUtility.Enumerator`1" class="text-break">
+Struct Enumerator&lt;T&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/Enumerator.cs/#L11"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,23 +97,20 @@ Struct ValueDisposable.Disposable&lt;T1, T2&gt;  <a class="header-action link-se
   
   </div>
 
-  <div class="markdown summary"><p>usingステートメントスコープを抜けた際にコールバックを呼び出すための構造体.</p>
+  <div class="markdown summary"><p>汎用<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1">IEnumerator&lt;T&gt;</a>構造体.</p>
 </div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public readonly struct ValueDisposable.Disposable&lt;T1, T2&gt; : IDisposable</code></pre>
+    <pre><code class="lang-csharp hljs">public struct Enumerator&lt;T&gt; : IEnumerator&lt;T&gt;, IEnumerator, IDisposable</code></pre>
   </div>
 
 
 
   <h4 class="section">Type Parameters</h4>
   <dl class="parameters">
-    <dt><code>T1</code></dt>
-    <dd><p>破棄時に呼び出す処理の第一引数の型.</p>
-</dd>
-    <dt><code>T2</code></dt>
-    <dd><p>破棄時に呼び出す処理の第二引数の型.</p>
+    <dt><code>T</code></dt>
+    <dd><p>要素の型.</p>
 </dd>
   </dl>
 
@@ -121,6 +118,8 @@ Struct ValueDisposable.Disposable&lt;T1, T2&gt;  <a class="header-action link-se
   <dl class="typelist implements">
     <dt>Implements</dt>
     <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1">IEnumerator</a>&lt;T&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerator">IEnumerator</a></div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
     </dd>
   </dl>
@@ -151,6 +150,126 @@ Struct ValueDisposable.Disposable&lt;T1, T2&gt;  <a class="header-action link-se
 
 
 
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="MinimalUtility_Enumerator_1__ctor_" data-uid="MinimalUtility.Enumerator`1.#ctor*"></a>
+
+  <h3 id="MinimalUtility_Enumerator_1__ctor_MinimalUtility_Enumerator__0__RefFunc__0__" data-uid="MinimalUtility.Enumerator`1.#ctor(MinimalUtility.Enumerator{`0}.RefFunc,`0@)">
+  Enumerator(RefFunc, in T)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/Enumerator.cs/#L34"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="MinimalUtility.Enumerator-1.html">Enumerator&lt;T&gt;</a> struct.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Enumerator(Enumerator&lt;T&gt;.RefFunc moveNext, in T current = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>moveNext</code> <a class="xref" href="MinimalUtility.Enumerator-1.html">Enumerator</a>&lt;T&gt;.<a class="xref" href="MinimalUtility.Enumerator-1.RefFunc.html">RefFunc</a></dt>
+    <dd><p>IEnumerator&lt;T&gt;.MoveNext.</p>
+</dd>
+    <dt><code>current</code> <span class="xref">T</span></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1.current">Current</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="MinimalUtility_Enumerator_1_Current_" data-uid="MinimalUtility.Enumerator`1.Current*"></a>
+
+  <h3 id="MinimalUtility_Enumerator_1_Current" data-uid="MinimalUtility.Enumerator`1.Current">
+  Current
+  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/Enumerator.cs/#L24"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the element in the collection at the current position of the enumerator.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T Current { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd><p>The element in the collection at the current position of the enumerator.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="MinimalUtility_Enumerator_1_MoveNext_" data-uid="MinimalUtility.Enumerator`1.MoveNext*"></a>
+
+  <h3 id="MinimalUtility_Enumerator_1_MoveNext" data-uid="MinimalUtility.Enumerator`1.MoveNext">
+  MoveNext()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/Enumerator.cs/#L41"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Advances the enumerator to the next element of the collection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool MoveNext()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the enumerator was successfully advanced to the next element; <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a> if the enumerator has passed the end of the collection.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></dt>
+    <dd><p>The collection was modified after the enumerator was created.</p>
+</dd>
+  </dl>
 
 
 

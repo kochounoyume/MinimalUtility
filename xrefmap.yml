@@ -389,6 +389,77 @@ references:
   fullName.vb: MinimalUtility.Editor.UnityComponentInspector(Of T).InspectorTypeName
   nameWithType: UnityComponentInspector<T>.InspectorTypeName
   nameWithType.vb: UnityComponentInspector(Of T).InspectorTypeName
+- uid: MinimalUtility.Enumerator`1
+  name: Enumerator<T>
+  href: api/MinimalUtility.Enumerator-1.html
+  commentId: T:MinimalUtility.Enumerator`1
+  name.vb: Enumerator(Of T)
+  fullName: MinimalUtility.Enumerator<T>
+  fullName.vb: MinimalUtility.Enumerator(Of T)
+  nameWithType: Enumerator<T>
+  nameWithType.vb: Enumerator(Of T)
+- uid: MinimalUtility.Enumerator`1.#ctor(MinimalUtility.Enumerator{`0}.RefFunc,`0@)
+  name: Enumerator(RefFunc, in T)
+  href: api/MinimalUtility.Enumerator-1.html#MinimalUtility_Enumerator_1__ctor_MinimalUtility_Enumerator__0__RefFunc__0__
+  commentId: M:MinimalUtility.Enumerator`1.#ctor(MinimalUtility.Enumerator{`0}.RefFunc,`0@)
+  name.vb: New(RefFunc, T)
+  fullName: MinimalUtility.Enumerator<T>.Enumerator(MinimalUtility.Enumerator<T>.RefFunc, in T)
+  fullName.vb: MinimalUtility.Enumerator(Of T).New(MinimalUtility.Enumerator(Of T).RefFunc, T)
+  nameWithType: Enumerator<T>.Enumerator(Enumerator<T>.RefFunc, in T)
+  nameWithType.vb: Enumerator(Of T).New(Enumerator(Of T).RefFunc, T)
+- uid: MinimalUtility.Enumerator`1.#ctor*
+  name: Enumerator
+  href: api/MinimalUtility.Enumerator-1.html#MinimalUtility_Enumerator_1__ctor_
+  commentId: Overload:MinimalUtility.Enumerator`1.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: MinimalUtility.Enumerator<T>.Enumerator
+  fullName.vb: MinimalUtility.Enumerator(Of T).New
+  nameWithType: Enumerator<T>.Enumerator
+  nameWithType.vb: Enumerator(Of T).New
+- uid: MinimalUtility.Enumerator`1.Current
+  name: Current
+  href: api/MinimalUtility.Enumerator-1.html#MinimalUtility_Enumerator_1_Current
+  commentId: P:MinimalUtility.Enumerator`1.Current
+  fullName: MinimalUtility.Enumerator<T>.Current
+  fullName.vb: MinimalUtility.Enumerator(Of T).Current
+  nameWithType: Enumerator<T>.Current
+  nameWithType.vb: Enumerator(Of T).Current
+- uid: MinimalUtility.Enumerator`1.Current*
+  name: Current
+  href: api/MinimalUtility.Enumerator-1.html#MinimalUtility_Enumerator_1_Current_
+  commentId: Overload:MinimalUtility.Enumerator`1.Current
+  isSpec: "True"
+  fullName: MinimalUtility.Enumerator<T>.Current
+  fullName.vb: MinimalUtility.Enumerator(Of T).Current
+  nameWithType: Enumerator<T>.Current
+  nameWithType.vb: Enumerator(Of T).Current
+- uid: MinimalUtility.Enumerator`1.MoveNext
+  name: MoveNext()
+  href: api/MinimalUtility.Enumerator-1.html#MinimalUtility_Enumerator_1_MoveNext
+  commentId: M:MinimalUtility.Enumerator`1.MoveNext
+  fullName: MinimalUtility.Enumerator<T>.MoveNext()
+  fullName.vb: MinimalUtility.Enumerator(Of T).MoveNext()
+  nameWithType: Enumerator<T>.MoveNext()
+  nameWithType.vb: Enumerator(Of T).MoveNext()
+- uid: MinimalUtility.Enumerator`1.MoveNext*
+  name: MoveNext
+  href: api/MinimalUtility.Enumerator-1.html#MinimalUtility_Enumerator_1_MoveNext_
+  commentId: Overload:MinimalUtility.Enumerator`1.MoveNext
+  isSpec: "True"
+  fullName: MinimalUtility.Enumerator<T>.MoveNext
+  fullName.vb: MinimalUtility.Enumerator(Of T).MoveNext
+  nameWithType: Enumerator<T>.MoveNext
+  nameWithType.vb: Enumerator(Of T).MoveNext
+- uid: MinimalUtility.Enumerator`1.RefFunc
+  name: Enumerator<T>.RefFunc
+  href: api/MinimalUtility.Enumerator-1.RefFunc.html
+  commentId: T:MinimalUtility.Enumerator`1.RefFunc
+  name.vb: Enumerator(Of T).RefFunc
+  fullName: MinimalUtility.Enumerator<T>.RefFunc
+  fullName.vb: MinimalUtility.Enumerator(Of T).RefFunc
+  nameWithType: Enumerator<T>.RefFunc
+  nameWithType.vb: Enumerator(Of T).RefFunc
 - uid: MinimalUtility.EqualityComparer
   name: EqualityComparer
   href: api/MinimalUtility.EqualityComparer.html
@@ -1704,32 +1775,14 @@ references:
   fullName: MinimalUtility.ValueDisposable.Create
   nameWithType: ValueDisposable.Create
 - uid: MinimalUtility.ValueDisposable.Create``1(``0,System.Action{``0})
-  name: Create<T1>(T1, Action<T1>)
+  name: Create<T>(T, Action<T>)
   href: api/MinimalUtility.ValueDisposable.html#MinimalUtility_ValueDisposable_Create__1___0_System_Action___0__
   commentId: M:MinimalUtility.ValueDisposable.Create``1(``0,System.Action{``0})
-  name.vb: Create(Of T1)(T1, Action(Of T1))
-  fullName: MinimalUtility.ValueDisposable.Create<T1>(T1, System.Action<T1>)
-  fullName.vb: MinimalUtility.ValueDisposable.Create(Of T1)(T1, System.Action(Of T1))
-  nameWithType: ValueDisposable.Create<T1>(T1, Action<T1>)
-  nameWithType.vb: ValueDisposable.Create(Of T1)(T1, Action(Of T1))
-- uid: MinimalUtility.ValueDisposable.Create``2(``0,``1,System.Action{``0,``1})
-  name: Create<T1, T2>(T1, T2, Action<T1, T2>)
-  href: api/MinimalUtility.ValueDisposable.html#MinimalUtility_ValueDisposable_Create__2___0___1_System_Action___0___1__
-  commentId: M:MinimalUtility.ValueDisposable.Create``2(``0,``1,System.Action{``0,``1})
-  name.vb: Create(Of T1, T2)(T1, T2, Action(Of T1, T2))
-  fullName: MinimalUtility.ValueDisposable.Create<T1, T2>(T1, T2, System.Action<T1, T2>)
-  fullName.vb: MinimalUtility.ValueDisposable.Create(Of T1, T2)(T1, T2, System.Action(Of T1, T2))
-  nameWithType: ValueDisposable.Create<T1, T2>(T1, T2, Action<T1, T2>)
-  nameWithType.vb: ValueDisposable.Create(Of T1, T2)(T1, T2, Action(Of T1, T2))
-- uid: MinimalUtility.ValueDisposable.Create``3(``0,``1,``2,System.Action{``0,``1,``2})
-  name: Create<T1, T2, T3>(T1, T2, T3, Action<T1, T2, T3>)
-  href: api/MinimalUtility.ValueDisposable.html#MinimalUtility_ValueDisposable_Create__3___0___1___2_System_Action___0___1___2__
-  commentId: M:MinimalUtility.ValueDisposable.Create``3(``0,``1,``2,System.Action{``0,``1,``2})
-  name.vb: Create(Of T1, T2, T3)(T1, T2, T3, Action(Of T1, T2, T3))
-  fullName: MinimalUtility.ValueDisposable.Create<T1, T2, T3>(T1, T2, T3, System.Action<T1, T2, T3>)
-  fullName.vb: MinimalUtility.ValueDisposable.Create(Of T1, T2, T3)(T1, T2, T3, System.Action(Of T1, T2, T3))
-  nameWithType: ValueDisposable.Create<T1, T2, T3>(T1, T2, T3, Action<T1, T2, T3>)
-  nameWithType.vb: ValueDisposable.Create(Of T1, T2, T3)(T1, T2, T3, Action(Of T1, T2, T3))
+  name.vb: Create(Of T)(T, Action(Of T))
+  fullName: MinimalUtility.ValueDisposable.Create<T>(T, System.Action<T>)
+  fullName.vb: MinimalUtility.ValueDisposable.Create(Of T)(T, System.Action(Of T))
+  nameWithType: ValueDisposable.Create<T>(T, Action<T>)
+  nameWithType.vb: ValueDisposable.Create(Of T)(T, Action(Of T))
 - uid: MinimalUtility.ValueDisposable.Disposable
   name: ValueDisposable.Disposable
   href: api/MinimalUtility.ValueDisposable.Disposable.html
@@ -1737,32 +1790,14 @@ references:
   fullName: MinimalUtility.ValueDisposable.Disposable
   nameWithType: ValueDisposable.Disposable
 - uid: MinimalUtility.ValueDisposable.Disposable`1
-  name: ValueDisposable.Disposable<T1>
+  name: ValueDisposable.Disposable<T>
   href: api/MinimalUtility.ValueDisposable.Disposable-1.html
   commentId: T:MinimalUtility.ValueDisposable.Disposable`1
-  name.vb: ValueDisposable.Disposable(Of T1)
-  fullName: MinimalUtility.ValueDisposable.Disposable<T1>
-  fullName.vb: MinimalUtility.ValueDisposable.Disposable(Of T1)
-  nameWithType: ValueDisposable.Disposable<T1>
-  nameWithType.vb: ValueDisposable.Disposable(Of T1)
-- uid: MinimalUtility.ValueDisposable.Disposable`2
-  name: ValueDisposable.Disposable<T1, T2>
-  href: api/MinimalUtility.ValueDisposable.Disposable-2.html
-  commentId: T:MinimalUtility.ValueDisposable.Disposable`2
-  name.vb: ValueDisposable.Disposable(Of T1, T2)
-  fullName: MinimalUtility.ValueDisposable.Disposable<T1, T2>
-  fullName.vb: MinimalUtility.ValueDisposable.Disposable(Of T1, T2)
-  nameWithType: ValueDisposable.Disposable<T1, T2>
-  nameWithType.vb: ValueDisposable.Disposable(Of T1, T2)
-- uid: MinimalUtility.ValueDisposable.Disposable`3
-  name: ValueDisposable.Disposable<T1, T2, T3>
-  href: api/MinimalUtility.ValueDisposable.Disposable-3.html
-  commentId: T:MinimalUtility.ValueDisposable.Disposable`3
-  name.vb: ValueDisposable.Disposable(Of T1, T2, T3)
-  fullName: MinimalUtility.ValueDisposable.Disposable<T1, T2, T3>
-  fullName.vb: MinimalUtility.ValueDisposable.Disposable(Of T1, T2, T3)
-  nameWithType: ValueDisposable.Disposable<T1, T2, T3>
-  nameWithType.vb: ValueDisposable.Disposable(Of T1, T2, T3)
+  name.vb: ValueDisposable.Disposable(Of T)
+  fullName: MinimalUtility.ValueDisposable.Disposable<T>
+  fullName.vb: MinimalUtility.ValueDisposable.Disposable(Of T)
+  nameWithType: ValueDisposable.Disposable<T>
+  nameWithType.vb: ValueDisposable.Disposable(Of T)
 - uid: MinimalUtility.WebRequest
   name: MinimalUtility.WebRequest
   href: api/MinimalUtility.WebRequest.html
