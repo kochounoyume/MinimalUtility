@@ -615,6 +615,66 @@ references:
   commentId: T:MinimalUtility.MemoryExtensions
   fullName: MinimalUtility.MemoryExtensions
   nameWithType: MemoryExtensions
+- uid: MinimalUtility.MemoryExtensions.Enumerator`1
+  name: MemoryExtensions.Enumerator<T>
+  href: api/MinimalUtility.MemoryExtensions.Enumerator-1.html
+  commentId: T:MinimalUtility.MemoryExtensions.Enumerator`1
+  name.vb: MemoryExtensions.Enumerator(Of T)
+  fullName: MinimalUtility.MemoryExtensions.Enumerator<T>
+  fullName.vb: MinimalUtility.MemoryExtensions.Enumerator(Of T)
+  nameWithType: MemoryExtensions.Enumerator<T>
+  nameWithType.vb: MemoryExtensions.Enumerator(Of T)
+- uid: MinimalUtility.MemoryExtensions.Enumerator`1.Current
+  name: Current
+  href: api/MinimalUtility.MemoryExtensions.Enumerator-1.html#MinimalUtility_MemoryExtensions_Enumerator_1_Current
+  commentId: P:MinimalUtility.MemoryExtensions.Enumerator`1.Current
+  fullName: MinimalUtility.MemoryExtensions.Enumerator<T>.Current
+  fullName.vb: MinimalUtility.MemoryExtensions.Enumerator(Of T).Current
+  nameWithType: MemoryExtensions.Enumerator<T>.Current
+  nameWithType.vb: MemoryExtensions.Enumerator(Of T).Current
+- uid: MinimalUtility.MemoryExtensions.Enumerator`1.Current*
+  name: Current
+  href: api/MinimalUtility.MemoryExtensions.Enumerator-1.html#MinimalUtility_MemoryExtensions_Enumerator_1_Current_
+  commentId: Overload:MinimalUtility.MemoryExtensions.Enumerator`1.Current
+  isSpec: "True"
+  fullName: MinimalUtility.MemoryExtensions.Enumerator<T>.Current
+  fullName.vb: MinimalUtility.MemoryExtensions.Enumerator(Of T).Current
+  nameWithType: MemoryExtensions.Enumerator<T>.Current
+  nameWithType.vb: MemoryExtensions.Enumerator(Of T).Current
+- uid: MinimalUtility.MemoryExtensions.Enumerator`1.MoveNext
+  name: MoveNext()
+  href: api/MinimalUtility.MemoryExtensions.Enumerator-1.html#MinimalUtility_MemoryExtensions_Enumerator_1_MoveNext
+  commentId: M:MinimalUtility.MemoryExtensions.Enumerator`1.MoveNext
+  fullName: MinimalUtility.MemoryExtensions.Enumerator<T>.MoveNext()
+  fullName.vb: MinimalUtility.MemoryExtensions.Enumerator(Of T).MoveNext()
+  nameWithType: MemoryExtensions.Enumerator<T>.MoveNext()
+  nameWithType.vb: MemoryExtensions.Enumerator(Of T).MoveNext()
+- uid: MinimalUtility.MemoryExtensions.Enumerator`1.MoveNext*
+  name: MoveNext
+  href: api/MinimalUtility.MemoryExtensions.Enumerator-1.html#MinimalUtility_MemoryExtensions_Enumerator_1_MoveNext_
+  commentId: Overload:MinimalUtility.MemoryExtensions.Enumerator`1.MoveNext
+  isSpec: "True"
+  fullName: MinimalUtility.MemoryExtensions.Enumerator<T>.MoveNext
+  fullName.vb: MinimalUtility.MemoryExtensions.Enumerator(Of T).MoveNext
+  nameWithType: MemoryExtensions.Enumerator<T>.MoveNext
+  nameWithType.vb: MemoryExtensions.Enumerator(Of T).MoveNext
+- uid: MinimalUtility.MemoryExtensions.Enumerator`1.Reset
+  name: Reset()
+  href: api/MinimalUtility.MemoryExtensions.Enumerator-1.html#MinimalUtility_MemoryExtensions_Enumerator_1_Reset
+  commentId: M:MinimalUtility.MemoryExtensions.Enumerator`1.Reset
+  fullName: MinimalUtility.MemoryExtensions.Enumerator<T>.Reset()
+  fullName.vb: MinimalUtility.MemoryExtensions.Enumerator(Of T).Reset()
+  nameWithType: MemoryExtensions.Enumerator<T>.Reset()
+  nameWithType.vb: MemoryExtensions.Enumerator(Of T).Reset()
+- uid: MinimalUtility.MemoryExtensions.Enumerator`1.Reset*
+  name: Reset
+  href: api/MinimalUtility.MemoryExtensions.Enumerator-1.html#MinimalUtility_MemoryExtensions_Enumerator_1_Reset_
+  commentId: Overload:MinimalUtility.MemoryExtensions.Enumerator`1.Reset
+  isSpec: "True"
+  fullName: MinimalUtility.MemoryExtensions.Enumerator<T>.Reset
+  fullName.vb: MinimalUtility.MemoryExtensions.Enumerator(Of T).Reset
+  nameWithType: MemoryExtensions.Enumerator<T>.Reset
+  nameWithType.vb: MemoryExtensions.Enumerator(Of T).Reset
 - uid: MinimalUtility.MemoryExtensions.GetEnumerator*
   name: GetEnumerator
   href: api/MinimalUtility.MemoryExtensions.html#MinimalUtility_MemoryExtensions_GetEnumerator_
