@@ -23,7 +23,7 @@ namespace MinimalUtility.Editor
             root.Add(new IMGUIContainer(() =>
             {
                 editor?.OnInspectorGUI();
-            }));
+            }) { style = { paddingBottom = 2 } });
             return root;
         }
 
