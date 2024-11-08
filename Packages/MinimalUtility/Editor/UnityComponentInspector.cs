@@ -9,6 +9,8 @@ namespace MinimalUtility.Editor
     /// <typeparam name="T">カスタムエディタを作成するコンポーネントの型.</typeparam>
     public abstract class UnityComponentInspector<T> : UnityEditor.Editor where T : UnityEngine.Component
     {
+        private UnityEditor.Editor editor;
+
         /// <summary>
         /// 対象となるコンポーネントのインスペクター拡張既存クラスの名前.
         /// </summary>
@@ -18,9 +20,21 @@ namespace MinimalUtility.Editor
         public override VisualElement CreateInspectorGUI()
         {
             VisualElement root = new ();
-            System.Type customEditorType = typeof(EditorApplication).Assembly.GetType(InspectorTypeName);
-            root.Add(new IMGUIContainer(() => CreateEditor(target, customEditorType).OnInspectorGUI()));
+            root.Add(new IMGUIContainer(() =>
+            {
+                editor?.OnInspectorGUI();
+            }));
             return root;
+        }
+
+        private void OnEnable()
+        {
+            CreateCachedEditor(target, typeof(EditorApplication).Assembly.GetType(InspectorTypeName), ref editor);
+        }
+
+        private void OnDisable()
+        {
+            DestroyImmediate(editor);
         }
     }
 }
