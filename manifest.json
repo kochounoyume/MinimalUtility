@@ -425,16 +425,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/MinimalUtility.VContainer.EntryPointContainer-16.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MinimalUtility.VContainer.EntryPointContainer-16.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/MinimalUtility.VContainer.EntryPointContainer-2.yml",
       "output": {
         ".html": {

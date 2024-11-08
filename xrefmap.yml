@@ -1286,15 +1286,15 @@ references:
   fullName.vb: MinimalUtility.VContainer.EntryPointContainer(Of T1)
   nameWithType: EntryPointContainer<T1>
   nameWithType.vb: EntryPointContainer(Of T1)
-- uid: MinimalUtility.VContainer.EntryPointContainer`1.#ctor(`0,System.Action{`0})
-  name: EntryPointContainer(T1, Action<T1>)
-  href: api/MinimalUtility.VContainer.EntryPointContainer-1.html#MinimalUtility_VContainer_EntryPointContainer_1__ctor__0_System_Action__0__
-  commentId: M:MinimalUtility.VContainer.EntryPointContainer`1.#ctor(`0,System.Action{`0})
-  name.vb: New(T1, Action(Of T1))
-  fullName: MinimalUtility.VContainer.EntryPointContainer<T1>.EntryPointContainer(T1, System.Action<T1>)
-  fullName.vb: MinimalUtility.VContainer.EntryPointContainer(Of T1).New(T1, System.Action(Of T1))
-  nameWithType: EntryPointContainer<T1>.EntryPointContainer(T1, Action<T1>)
-  nameWithType.vb: EntryPointContainer(Of T1).New(T1, Action(Of T1))
+- uid: MinimalUtility.VContainer.EntryPointContainer`1.#ctor(`0,System.Threading.CancellationToken,System.Action{`0,System.Threading.CancellationToken})
+  name: EntryPointContainer(T1, CancellationToken, Action<T1, CancellationToken>)
+  href: api/MinimalUtility.VContainer.EntryPointContainer-1.html#MinimalUtility_VContainer_EntryPointContainer_1__ctor__0_System_Threading_CancellationToken_System_Action__0_System_Threading_CancellationToken__
+  commentId: M:MinimalUtility.VContainer.EntryPointContainer`1.#ctor(`0,System.Threading.CancellationToken,System.Action{`0,System.Threading.CancellationToken})
+  name.vb: New(T1, CancellationToken, Action(Of T1, CancellationToken))
+  fullName: MinimalUtility.VContainer.EntryPointContainer<T1>.EntryPointContainer(T1, System.Threading.CancellationToken, System.Action<T1, System.Threading.CancellationToken>)
+  fullName.vb: MinimalUtility.VContainer.EntryPointContainer(Of T1).New(T1, System.Threading.CancellationToken, System.Action(Of T1, System.Threading.CancellationToken))
+  nameWithType: EntryPointContainer<T1>.EntryPointContainer(T1, CancellationToken, Action<T1, CancellationToken>)
+  nameWithType.vb: EntryPointContainer(Of T1).New(T1, CancellationToken, Action(Of T1, CancellationToken))
 - uid: MinimalUtility.VContainer.EntryPointContainer`1.#ctor*
   name: EntryPointContainer
   href: api/MinimalUtility.VContainer.EntryPointContainer-1.html#MinimalUtility_VContainer_EntryPointContainer_1__ctor_
@@ -1314,15 +1314,15 @@ references:
   fullName.vb: MinimalUtility.VContainer.EntryPointContainer(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10)
   nameWithType: EntryPointContainer<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10>
   nameWithType.vb: EntryPointContainer(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10)
-- uid: MinimalUtility.VContainer.EntryPointContainer`10.#ctor(`0,`1,`2,`3,`4,`5,`6,`7,`8,`9,System.Action{`0,`1,`2,`3,`4,`5,`6,`7,`8,`9})
-  name: EntryPointContainer(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, Action<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10>)
-  href: api/MinimalUtility.VContainer.EntryPointContainer-10.html#MinimalUtility_VContainer_EntryPointContainer_10__ctor__0__1__2__3__4__5__6__7__8__9_System_Action__0__1__2__3__4__5__6__7__8__9__
-  commentId: M:MinimalUtility.VContainer.EntryPointContainer`10.#ctor(`0,`1,`2,`3,`4,`5,`6,`7,`8,`9,System.Action{`0,`1,`2,`3,`4,`5,`6,`7,`8,`9})
-  name.vb: New(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, Action(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10))
-  fullName: MinimalUtility.VContainer.EntryPointContainer<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10>.EntryPointContainer(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, System.Action<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10>)
-  fullName.vb: MinimalUtility.VContainer.EntryPointContainer(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10).New(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, System.Action(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10))
-  nameWithType: EntryPointContainer<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10>.EntryPointContainer(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, Action<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10>)
-  nameWithType.vb: EntryPointContainer(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10).New(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, Action(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10))
+- uid: MinimalUtility.VContainer.EntryPointContainer`10.#ctor(`0,`1,`2,`3,`4,`5,`6,`7,`8,`9,System.Threading.CancellationToken,System.Action{`0,`1,`2,`3,`4,`5,`6,`7,`8,`9,System.Threading.CancellationToken})
+  name: EntryPointContainer(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, CancellationToken, Action<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, CancellationToken>)
+  href: api/MinimalUtility.VContainer.EntryPointContainer-10.html#MinimalUtility_VContainer_EntryPointContainer_10__ctor__0__1__2__3__4__5__6__7__8__9_System_Threading_CancellationToken_System_Action__0__1__2__3__4__5__6__7__8__9_System_Threading_CancellationToken__
+  commentId: M:MinimalUtility.VContainer.EntryPointContainer`10.#ctor(`0,`1,`2,`3,`4,`5,`6,`7,`8,`9,System.Threading.CancellationToken,System.Action{`0,`1,`2,`3,`4,`5,`6,`7,`8,`9,System.Threading.CancellationToken})
+  name.vb: New(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, CancellationToken, Action(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, CancellationToken))
+  fullName: MinimalUtility.VContainer.EntryPointContainer<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10>.EntryPointContainer(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, System.Threading.CancellationToken, System.Action<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, System.Threading.CancellationToken>)
+  fullName.vb: MinimalUtility.VContainer.EntryPointContainer(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10).New(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, System.Threading.CancellationToken, System.Action(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, System.Threading.CancellationToken))
+  nameWithType: EntryPointContainer<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10>.EntryPointContainer(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, CancellationToken, Action<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, CancellationToken>)
+  nameWithType.vb: EntryPointContainer(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10).New(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, CancellationToken, Action(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, CancellationToken))
 - uid: MinimalUtility.VContainer.EntryPointContainer`10.#ctor*
   name: EntryPointContainer
   href: api/MinimalUtility.VContainer.EntryPointContainer-10.html#MinimalUtility_VContainer_EntryPointContainer_10__ctor_
@@ -1342,15 +1342,15 @@ references:
   fullName.vb: MinimalUtility.VContainer.EntryPointContainer(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11)
   nameWithType: EntryPointContainer<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11>
   nameWithType.vb: EntryPointContainer(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11)
-- uid: MinimalUtility.VContainer.EntryPointContainer`11.#ctor(`0,`1,`2,`3,`4,`5,`6,`7,`8,`9,`10,System.Action{`0,`1,`2,`3,`4,`5,`6,`7,`8,`9,`10})
-  name: EntryPointContainer(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, Action<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11>)
-  href: api/MinimalUtility.VContainer.EntryPointContainer-11.html#MinimalUtility_VContainer_EntryPointContainer_11__ctor__0__1__2__3__4__5__6__7__8__9__10_System_Action__0__1__2__3__4__5__6__7__8__9__10__
-  commentId: M:MinimalUtility.VContainer.EntryPointContainer`11.#ctor(`0,`1,`2,`3,`4,`5,`6,`7,`8,`9,`10,System.Action{`0,`1,`2,`3,`4,`5,`6,`7,`8,`9,`10})
-  name.vb: New(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, Action(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11))
-  fullName: MinimalUtility.VContainer.EntryPointContainer<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11>.EntryPointContainer(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, System.Action<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11>)
-  fullName.vb: MinimalUtility.VContainer.EntryPointContainer(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11).New(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, System.Action(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11))
-  nameWithType: EntryPointContainer<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11>.EntryPointContainer(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, Action<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11>)
-  nameWithType.vb: EntryPointContainer(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11).New(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, Action(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11))
+- uid: MinimalUtility.VContainer.EntryPointContainer`11.#ctor(`0,`1,`2,`3,`4,`5,`6,`7,`8,`9,`10,System.Threading.CancellationToken,System.Action{`0,`1,`2,`3,`4,`5,`6,`7,`8,`9,`10,System.Threading.CancellationToken})
+  name: EntryPointContainer(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, CancellationToken, Action<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, CancellationToken>)
+  href: api/MinimalUtility.VContainer.EntryPointContainer-11.html#MinimalUtility_VContainer_EntryPointContainer_11__ctor__0__1__2__3__4__5__6__7__8__9__10_System_Threading_CancellationToken_System_Action__0__1__2__3__4__5__6__7__8__9__10_System_Threading_CancellationToken__
+  commentId: M:MinimalUtility.VContainer.EntryPointContainer`11.#ctor(`0,`1,`2,`3,`4,`5,`6,`7,`8,`9,`10,System.Threading.CancellationToken,System.Action{`0,`1,`2,`3,`4,`5,`6,`7,`8,`9,`10,System.Threading.CancellationToken})
+  name.vb: New(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, CancellationToken, Action(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, CancellationToken))
+  fullName: MinimalUtility.VContainer.EntryPointContainer<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11>.EntryPointContainer(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, System.Threading.CancellationToken, System.Action<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, System.Threading.CancellationToken>)
+  fullName.vb: MinimalUtility.VContainer.EntryPointContainer(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11).New(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, System.Threading.CancellationToken, System.Action(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, System.Threading.CancellationToken))
+  nameWithType: EntryPointContainer<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11>.EntryPointContainer(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, CancellationToken, Action<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, CancellationToken>)
+  nameWithType.vb: EntryPointContainer(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11).New(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, CancellationToken, Action(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, CancellationToken))
 - uid: MinimalUtility.VContainer.EntryPointContainer`11.#ctor*
   name: EntryPointContainer
   href: api/MinimalUtility.VContainer.EntryPointContainer-11.html#MinimalUtility_VContainer_EntryPointContainer_11__ctor_
@@ -1370,15 +1370,15 @@ references:
   fullName.vb: MinimalUtility.VContainer.EntryPointContainer(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12)
   nameWithType: EntryPointContainer<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12>
   nameWithType.vb: EntryPointContainer(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12)
-- uid: MinimalUtility.VContainer.EntryPointContainer`12.#ctor(`0,`1,`2,`3,`4,`5,`6,`7,`8,`9,`10,`11,System.Action{`0,`1,`2,`3,`4,`5,`6,`7,`8,`9,`10,`11})
-  name: EntryPointContainer(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, Action<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12>)
-  href: api/MinimalUtility.VContainer.EntryPointContainer-12.html#MinimalUtility_VContainer_EntryPointContainer_12__ctor__0__1__2__3__4__5__6__7__8__9__10__11_System_Action__0__1__2__3__4__5__6__7__8__9__10__11__
-  commentId: M:MinimalUtility.VContainer.EntryPointContainer`12.#ctor(`0,`1,`2,`3,`4,`5,`6,`7,`8,`9,`10,`11,System.Action{`0,`1,`2,`3,`4,`5,`6,`7,`8,`9,`10,`11})
-  name.vb: New(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, Action(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12))
-  fullName: MinimalUtility.VContainer.EntryPointContainer<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12>.EntryPointContainer(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, System.Action<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12>)
-  fullName.vb: MinimalUtility.VContainer.EntryPointContainer(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12).New(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, System.Action(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12))
-  nameWithType: EntryPointContainer<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12>.EntryPointContainer(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, Action<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12>)
-  nameWithType.vb: EntryPointContainer(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12).New(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, Action(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12))
+- uid: MinimalUtility.VContainer.EntryPointContainer`12.#ctor(`0,`1,`2,`3,`4,`5,`6,`7,`8,`9,`10,`11,System.Threading.CancellationToken,System.Action{`0,`1,`2,`3,`4,`5,`6,`7,`8,`9,`10,`11,System.Threading.CancellationToken})
+  name: EntryPointContainer(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, CancellationToken, Action<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, CancellationToken>)
+  href: api/MinimalUtility.VContainer.EntryPointContainer-12.html#MinimalUtility_VContainer_EntryPointContainer_12__ctor__0__1__2__3__4__5__6__7__8__9__10__11_System_Threading_CancellationToken_System_Action__0__1__2__3__4__5__6__7__8__9__10__11_System_Threading_CancellationToken__
+  commentId: M:MinimalUtility.VContainer.EntryPointContainer`12.#ctor(`0,`1,`2,`3,`4,`5,`6,`7,`8,`9,`10,`11,System.Threading.CancellationToken,System.Action{`0,`1,`2,`3,`4,`5,`6,`7,`8,`9,`10,`11,System.Threading.CancellationToken})
+  name.vb: New(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, CancellationToken, Action(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, CancellationToken))
+  fullName: MinimalUtility.VContainer.EntryPointContainer<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12>.EntryPointContainer(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, System.Threading.CancellationToken, System.Action<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, System.Threading.CancellationToken>)
+  fullName.vb: MinimalUtility.VContainer.EntryPointContainer(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12).New(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, System.Threading.CancellationToken, System.Action(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, System.Threading.CancellationToken))
+  nameWithType: EntryPointContainer<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12>.EntryPointContainer(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, CancellationToken, Action<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, CancellationToken>)
+  nameWithType.vb: EntryPointContainer(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12).New(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, CancellationToken, Action(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, CancellationToken))
 - uid: MinimalUtility.VContainer.EntryPointContainer`12.#ctor*
   name: EntryPointContainer
   href: api/MinimalUtility.VContainer.EntryPointContainer-12.html#MinimalUtility_VContainer_EntryPointContainer_12__ctor_
@@ -1398,15 +1398,15 @@ references:
   fullName.vb: MinimalUtility.VContainer.EntryPointContainer(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13)
   nameWithType: EntryPointContainer<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13>
   nameWithType.vb: EntryPointContainer(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13)
-- uid: MinimalUtility.VContainer.EntryPointContainer`13.#ctor(`0,`1,`2,`3,`4,`5,`6,`7,`8,`9,`10,`11,`12,System.Action{`0,`1,`2,`3,`4,`5,`6,`7,`8,`9,`10,`11,`12})
-  name: EntryPointContainer(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, Action<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13>)
-  href: api/MinimalUtility.VContainer.EntryPointContainer-13.html#MinimalUtility_VContainer_EntryPointContainer_13__ctor__0__1__2__3__4__5__6__7__8__9__10__11__12_System_Action__0__1__2__3__4__5__6__7__8__9__10__11__12__
-  commentId: M:MinimalUtility.VContainer.EntryPointContainer`13.#ctor(`0,`1,`2,`3,`4,`5,`6,`7,`8,`9,`10,`11,`12,System.Action{`0,`1,`2,`3,`4,`5,`6,`7,`8,`9,`10,`11,`12})
-  name.vb: New(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, Action(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13))
-  fullName: MinimalUtility.VContainer.EntryPointContainer<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13>.EntryPointContainer(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, System.Action<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13>)
-  fullName.vb: MinimalUtility.VContainer.EntryPointContainer(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13).New(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, System.Action(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13))
-  nameWithType: EntryPointContainer<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13>.EntryPointContainer(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, Action<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13>)
-  nameWithType.vb: EntryPointContainer(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13).New(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, Action(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13))
+- uid: MinimalUtility.VContainer.EntryPointContainer`13.#ctor(`0,`1,`2,`3,`4,`5,`6,`7,`8,`9,`10,`11,`12,System.Threading.CancellationToken,System.Action{`0,`1,`2,`3,`4,`5,`6,`7,`8,`9,`10,`11,`12,System.Threading.CancellationToken})
+  name: EntryPointContainer(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, CancellationToken, Action<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, CancellationToken>)
+  href: api/MinimalUtility.VContainer.EntryPointContainer-13.html#MinimalUtility_VContainer_EntryPointContainer_13__ctor__0__1__2__3__4__5__6__7__8__9__10__11__12_System_Threading_CancellationToken_System_Action__0__1__2__3__4__5__6__7__8__9__10__11__12_System_Threading_CancellationToken__
+  commentId: M:MinimalUtility.VContainer.EntryPointContainer`13.#ctor(`0,`1,`2,`3,`4,`5,`6,`7,`8,`9,`10,`11,`12,System.Threading.CancellationToken,System.Action{`0,`1,`2,`3,`4,`5,`6,`7,`8,`9,`10,`11,`12,System.Threading.CancellationToken})
+  name.vb: New(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, CancellationToken, Action(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, CancellationToken))
+  fullName: MinimalUtility.VContainer.EntryPointContainer<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13>.EntryPointContainer(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, System.Threading.CancellationToken, System.Action<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, System.Threading.CancellationToken>)
+  fullName.vb: MinimalUtility.VContainer.EntryPointContainer(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13).New(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, System.Threading.CancellationToken, System.Action(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, System.Threading.CancellationToken))
+  nameWithType: EntryPointContainer<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13>.EntryPointContainer(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, CancellationToken, Action<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, CancellationToken>)
+  nameWithType.vb: EntryPointContainer(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13).New(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, CancellationToken, Action(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, CancellationToken))
 - uid: MinimalUtility.VContainer.EntryPointContainer`13.#ctor*
   name: EntryPointContainer
   href: api/MinimalUtility.VContainer.EntryPointContainer-13.html#MinimalUtility_VContainer_EntryPointContainer_13__ctor_
@@ -1426,15 +1426,15 @@ references:
   fullName.vb: MinimalUtility.VContainer.EntryPointContainer(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14)
   nameWithType: EntryPointContainer<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14>
   nameWithType.vb: EntryPointContainer(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14)
-- uid: MinimalUtility.VContainer.EntryPointContainer`14.#ctor(`0,`1,`2,`3,`4,`5,`6,`7,`8,`9,`10,`11,`12,`13,System.Action{`0,`1,`2,`3,`4,`5,`6,`7,`8,`9,`10,`11,`12,`13})
-  name: EntryPointContainer(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, Action<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14>)
-  href: api/MinimalUtility.VContainer.EntryPointContainer-14.html#MinimalUtility_VContainer_EntryPointContainer_14__ctor__0__1__2__3__4__5__6__7__8__9__10__11__12__13_System_Action__0__1__2__3__4__5__6__7__8__9__10__11__12__13__
-  commentId: M:MinimalUtility.VContainer.EntryPointContainer`14.#ctor(`0,`1,`2,`3,`4,`5,`6,`7,`8,`9,`10,`11,`12,`13,System.Action{`0,`1,`2,`3,`4,`5,`6,`7,`8,`9,`10,`11,`12,`13})
-  name.vb: New(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, Action(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14))
-  fullName: MinimalUtility.VContainer.EntryPointContainer<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14>.EntryPointContainer(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, System.Action<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14>)
-  fullName.vb: MinimalUtility.VContainer.EntryPointContainer(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14).New(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, System.Action(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14))
-  nameWithType: EntryPointContainer<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14>.EntryPointContainer(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, Action<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14>)
-  nameWithType.vb: EntryPointContainer(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14).New(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, Action(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14))
+- uid: MinimalUtility.VContainer.EntryPointContainer`14.#ctor(`0,`1,`2,`3,`4,`5,`6,`7,`8,`9,`10,`11,`12,`13,System.Threading.CancellationToken,System.Action{`0,`1,`2,`3,`4,`5,`6,`7,`8,`9,`10,`11,`12,`13,System.Threading.CancellationToken})
+  name: EntryPointContainer(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, CancellationToken, Action<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, CancellationToken>)
+  href: api/MinimalUtility.VContainer.EntryPointContainer-14.html#MinimalUtility_VContainer_EntryPointContainer_14__ctor__0__1__2__3__4__5__6__7__8__9__10__11__12__13_System_Threading_CancellationToken_System_Action__0__1__2__3__4__5__6__7__8__9__10__11__12__13_System_Threading_CancellationToken__
+  commentId: M:MinimalUtility.VContainer.EntryPointContainer`14.#ctor(`0,`1,`2,`3,`4,`5,`6,`7,`8,`9,`10,`11,`12,`13,System.Threading.CancellationToken,System.Action{`0,`1,`2,`3,`4,`5,`6,`7,`8,`9,`10,`11,`12,`13,System.Threading.CancellationToken})
+  name.vb: New(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, CancellationToken, Action(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, CancellationToken))
+  fullName: MinimalUtility.VContainer.EntryPointContainer<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14>.EntryPointContainer(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, System.Threading.CancellationToken, System.Action<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, System.Threading.CancellationToken>)
+  fullName.vb: MinimalUtility.VContainer.EntryPointContainer(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14).New(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, System.Threading.CancellationToken, System.Action(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, System.Threading.CancellationToken))
+  nameWithType: EntryPointContainer<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14>.EntryPointContainer(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, CancellationToken, Action<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, CancellationToken>)
+  nameWithType.vb: EntryPointContainer(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14).New(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, CancellationToken, Action(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, CancellationToken))
 - uid: MinimalUtility.VContainer.EntryPointContainer`14.#ctor*
   name: EntryPointContainer
   href: api/MinimalUtility.VContainer.EntryPointContainer-14.html#MinimalUtility_VContainer_EntryPointContainer_14__ctor_
@@ -1454,15 +1454,15 @@ references:
   fullName.vb: MinimalUtility.VContainer.EntryPointContainer(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15)
   nameWithType: EntryPointContainer<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15>
   nameWithType.vb: EntryPointContainer(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15)
-- uid: MinimalUtility.VContainer.EntryPointContainer`15.#ctor(`0,`1,`2,`3,`4,`5,`6,`7,`8,`9,`10,`11,`12,`13,`14,System.Action{`0,`1,`2,`3,`4,`5,`6,`7,`8,`9,`10,`11,`12,`13,`14})
-  name: EntryPointContainer(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, Action<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15>)
-  href: api/MinimalUtility.VContainer.EntryPointContainer-15.html#MinimalUtility_VContainer_EntryPointContainer_15__ctor__0__1__2__3__4__5__6__7__8__9__10__11__12__13__14_System_Action__0__1__2__3__4__5__6__7__8__9__10__11__12__13__14__
-  commentId: M:MinimalUtility.VContainer.EntryPointContainer`15.#ctor(`0,`1,`2,`3,`4,`5,`6,`7,`8,`9,`10,`11,`12,`13,`14,System.Action{`0,`1,`2,`3,`4,`5,`6,`7,`8,`9,`10,`11,`12,`13,`14})
-  name.vb: New(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, Action(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15))
-  fullName: MinimalUtility.VContainer.EntryPointContainer<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15>.EntryPointContainer(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, System.Action<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15>)
-  fullName.vb: MinimalUtility.VContainer.EntryPointContainer(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15).New(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, System.Action(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15))
-  nameWithType: EntryPointContainer<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15>.EntryPointContainer(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, Action<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15>)
-  nameWithType.vb: EntryPointContainer(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15).New(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, Action(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15))
+- uid: MinimalUtility.VContainer.EntryPointContainer`15.#ctor(`0,`1,`2,`3,`4,`5,`6,`7,`8,`9,`10,`11,`12,`13,`14,System.Threading.CancellationToken,System.Action{`0,`1,`2,`3,`4,`5,`6,`7,`8,`9,`10,`11,`12,`13,`14,System.Threading.CancellationToken})
+  name: EntryPointContainer(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, CancellationToken, Action<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, CancellationToken>)
+  href: api/MinimalUtility.VContainer.EntryPointContainer-15.html#MinimalUtility_VContainer_EntryPointContainer_15__ctor__0__1__2__3__4__5__6__7__8__9__10__11__12__13__14_System_Threading_CancellationToken_System_Action__0__1__2__3__4__5__6__7__8__9__10__11__12__13__14_System_Threading_CancellationToken__
+  commentId: M:MinimalUtility.VContainer.EntryPointContainer`15.#ctor(`0,`1,`2,`3,`4,`5,`6,`7,`8,`9,`10,`11,`12,`13,`14,System.Threading.CancellationToken,System.Action{`0,`1,`2,`3,`4,`5,`6,`7,`8,`9,`10,`11,`12,`13,`14,System.Threading.CancellationToken})
+  name.vb: New(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, CancellationToken, Action(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, CancellationToken))
+  fullName: MinimalUtility.VContainer.EntryPointContainer<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15>.EntryPointContainer(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, System.Threading.CancellationToken, System.Action<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, System.Threading.CancellationToken>)
+  fullName.vb: MinimalUtility.VContainer.EntryPointContainer(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15).New(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, System.Threading.CancellationToken, System.Action(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, System.Threading.CancellationToken))
+  nameWithType: EntryPointContainer<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15>.EntryPointContainer(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, CancellationToken, Action<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, CancellationToken>)
+  nameWithType.vb: EntryPointContainer(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15).New(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, CancellationToken, Action(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, CancellationToken))
 - uid: MinimalUtility.VContainer.EntryPointContainer`15.#ctor*
   name: EntryPointContainer
   href: api/MinimalUtility.VContainer.EntryPointContainer-15.html#MinimalUtility_VContainer_EntryPointContainer_15__ctor_
@@ -1473,34 +1473,6 @@ references:
   fullName.vb: MinimalUtility.VContainer.EntryPointContainer(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15).New
   nameWithType: EntryPointContainer<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15>.EntryPointContainer
   nameWithType.vb: EntryPointContainer(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15).New
-- uid: MinimalUtility.VContainer.EntryPointContainer`16
-  name: EntryPointContainer<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16>
-  href: api/MinimalUtility.VContainer.EntryPointContainer-16.html
-  commentId: T:MinimalUtility.VContainer.EntryPointContainer`16
-  name.vb: EntryPointContainer(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16)
-  fullName: MinimalUtility.VContainer.EntryPointContainer<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16>
-  fullName.vb: MinimalUtility.VContainer.EntryPointContainer(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16)
-  nameWithType: EntryPointContainer<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16>
-  nameWithType.vb: EntryPointContainer(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16)
-- uid: MinimalUtility.VContainer.EntryPointContainer`16.#ctor(`0,`1,`2,`3,`4,`5,`6,`7,`8,`9,`10,`11,`12,`13,`14,`15,System.Action{`0,`1,`2,`3,`4,`5,`6,`7,`8,`9,`10,`11,`12,`13,`14,`15})
-  name: EntryPointContainer(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, Action<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16>)
-  href: api/MinimalUtility.VContainer.EntryPointContainer-16.html#MinimalUtility_VContainer_EntryPointContainer_16__ctor__0__1__2__3__4__5__6__7__8__9__10__11__12__13__14__15_System_Action__0__1__2__3__4__5__6__7__8__9__10__11__12__13__14__15__
-  commentId: M:MinimalUtility.VContainer.EntryPointContainer`16.#ctor(`0,`1,`2,`3,`4,`5,`6,`7,`8,`9,`10,`11,`12,`13,`14,`15,System.Action{`0,`1,`2,`3,`4,`5,`6,`7,`8,`9,`10,`11,`12,`13,`14,`15})
-  name.vb: New(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, Action(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16))
-  fullName: MinimalUtility.VContainer.EntryPointContainer<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16>.EntryPointContainer(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, System.Action<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16>)
-  fullName.vb: MinimalUtility.VContainer.EntryPointContainer(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16).New(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, System.Action(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16))
-  nameWithType: EntryPointContainer<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16>.EntryPointContainer(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, Action<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16>)
-  nameWithType.vb: EntryPointContainer(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16).New(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, Action(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16))
-- uid: MinimalUtility.VContainer.EntryPointContainer`16.#ctor*
-  name: EntryPointContainer
-  href: api/MinimalUtility.VContainer.EntryPointContainer-16.html#MinimalUtility_VContainer_EntryPointContainer_16__ctor_
-  commentId: Overload:MinimalUtility.VContainer.EntryPointContainer`16.#ctor
-  isSpec: "True"
-  name.vb: New
-  fullName: MinimalUtility.VContainer.EntryPointContainer<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16>.EntryPointContainer
-  fullName.vb: MinimalUtility.VContainer.EntryPointContainer(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16).New
-  nameWithType: EntryPointContainer<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16>.EntryPointContainer
-  nameWithType.vb: EntryPointContainer(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16).New
 - uid: MinimalUtility.VContainer.EntryPointContainer`2
   name: EntryPointContainer<T1, T2>
   href: api/MinimalUtility.VContainer.EntryPointContainer-2.html
@@ -1510,15 +1482,15 @@ references:
   fullName.vb: MinimalUtility.VContainer.EntryPointContainer(Of T1, T2)
   nameWithType: EntryPointContainer<T1, T2>
   nameWithType.vb: EntryPointContainer(Of T1, T2)
-- uid: MinimalUtility.VContainer.EntryPointContainer`2.#ctor(`0,`1,System.Action{`0,`1})
-  name: EntryPointContainer(T1, T2, Action<T1, T2>)
-  href: api/MinimalUtility.VContainer.EntryPointContainer-2.html#MinimalUtility_VContainer_EntryPointContainer_2__ctor__0__1_System_Action__0__1__
-  commentId: M:MinimalUtility.VContainer.EntryPointContainer`2.#ctor(`0,`1,System.Action{`0,`1})
-  name.vb: New(T1, T2, Action(Of T1, T2))
-  fullName: MinimalUtility.VContainer.EntryPointContainer<T1, T2>.EntryPointContainer(T1, T2, System.Action<T1, T2>)
-  fullName.vb: MinimalUtility.VContainer.EntryPointContainer(Of T1, T2).New(T1, T2, System.Action(Of T1, T2))
-  nameWithType: EntryPointContainer<T1, T2>.EntryPointContainer(T1, T2, Action<T1, T2>)
-  nameWithType.vb: EntryPointContainer(Of T1, T2).New(T1, T2, Action(Of T1, T2))
+- uid: MinimalUtility.VContainer.EntryPointContainer`2.#ctor(`0,`1,System.Threading.CancellationToken,System.Action{`0,`1,System.Threading.CancellationToken})
+  name: EntryPointContainer(T1, T2, CancellationToken, Action<T1, T2, CancellationToken>)
+  href: api/MinimalUtility.VContainer.EntryPointContainer-2.html#MinimalUtility_VContainer_EntryPointContainer_2__ctor__0__1_System_Threading_CancellationToken_System_Action__0__1_System_Threading_CancellationToken__
+  commentId: M:MinimalUtility.VContainer.EntryPointContainer`2.#ctor(`0,`1,System.Threading.CancellationToken,System.Action{`0,`1,System.Threading.CancellationToken})
+  name.vb: New(T1, T2, CancellationToken, Action(Of T1, T2, CancellationToken))
+  fullName: MinimalUtility.VContainer.EntryPointContainer<T1, T2>.EntryPointContainer(T1, T2, System.Threading.CancellationToken, System.Action<T1, T2, System.Threading.CancellationToken>)
+  fullName.vb: MinimalUtility.VContainer.EntryPointContainer(Of T1, T2).New(T1, T2, System.Threading.CancellationToken, System.Action(Of T1, T2, System.Threading.CancellationToken))
+  nameWithType: EntryPointContainer<T1, T2>.EntryPointContainer(T1, T2, CancellationToken, Action<T1, T2, CancellationToken>)
+  nameWithType.vb: EntryPointContainer(Of T1, T2).New(T1, T2, CancellationToken, Action(Of T1, T2, CancellationToken))
 - uid: MinimalUtility.VContainer.EntryPointContainer`2.#ctor*
   name: EntryPointContainer
   href: api/MinimalUtility.VContainer.EntryPointContainer-2.html#MinimalUtility_VContainer_EntryPointContainer_2__ctor_
@@ -1538,15 +1510,15 @@ references:
   fullName.vb: MinimalUtility.VContainer.EntryPointContainer(Of T1, T2, T3)
   nameWithType: EntryPointContainer<T1, T2, T3>
   nameWithType.vb: EntryPointContainer(Of T1, T2, T3)
-- uid: MinimalUtility.VContainer.EntryPointContainer`3.#ctor(`0,`1,`2,System.Action{`0,`1,`2})
-  name: EntryPointContainer(T1, T2, T3, Action<T1, T2, T3>)
-  href: api/MinimalUtility.VContainer.EntryPointContainer-3.html#MinimalUtility_VContainer_EntryPointContainer_3__ctor__0__1__2_System_Action__0__1__2__
-  commentId: M:MinimalUtility.VContainer.EntryPointContainer`3.#ctor(`0,`1,`2,System.Action{`0,`1,`2})
-  name.vb: New(T1, T2, T3, Action(Of T1, T2, T3))
-  fullName: MinimalUtility.VContainer.EntryPointContainer<T1, T2, T3>.EntryPointContainer(T1, T2, T3, System.Action<T1, T2, T3>)
-  fullName.vb: MinimalUtility.VContainer.EntryPointContainer(Of T1, T2, T3).New(T1, T2, T3, System.Action(Of T1, T2, T3))
-  nameWithType: EntryPointContainer<T1, T2, T3>.EntryPointContainer(T1, T2, T3, Action<T1, T2, T3>)
-  nameWithType.vb: EntryPointContainer(Of T1, T2, T3).New(T1, T2, T3, Action(Of T1, T2, T3))
+- uid: MinimalUtility.VContainer.EntryPointContainer`3.#ctor(`0,`1,`2,System.Threading.CancellationToken,System.Action{`0,`1,`2,System.Threading.CancellationToken})
+  name: EntryPointContainer(T1, T2, T3, CancellationToken, Action<T1, T2, T3, CancellationToken>)
+  href: api/MinimalUtility.VContainer.EntryPointContainer-3.html#MinimalUtility_VContainer_EntryPointContainer_3__ctor__0__1__2_System_Threading_CancellationToken_System_Action__0__1__2_System_Threading_CancellationToken__
+  commentId: M:MinimalUtility.VContainer.EntryPointContainer`3.#ctor(`0,`1,`2,System.Threading.CancellationToken,System.Action{`0,`1,`2,System.Threading.CancellationToken})
+  name.vb: New(T1, T2, T3, CancellationToken, Action(Of T1, T2, T3, CancellationToken))
+  fullName: MinimalUtility.VContainer.EntryPointContainer<T1, T2, T3>.EntryPointContainer(T1, T2, T3, System.Threading.CancellationToken, System.Action<T1, T2, T3, System.Threading.CancellationToken>)
+  fullName.vb: MinimalUtility.VContainer.EntryPointContainer(Of T1, T2, T3).New(T1, T2, T3, System.Threading.CancellationToken, System.Action(Of T1, T2, T3, System.Threading.CancellationToken))
+  nameWithType: EntryPointContainer<T1, T2, T3>.EntryPointContainer(T1, T2, T3, CancellationToken, Action<T1, T2, T3, CancellationToken>)
+  nameWithType.vb: EntryPointContainer(Of T1, T2, T3).New(T1, T2, T3, CancellationToken, Action(Of T1, T2, T3, CancellationToken))
 - uid: MinimalUtility.VContainer.EntryPointContainer`3.#ctor*
   name: EntryPointContainer
   href: api/MinimalUtility.VContainer.EntryPointContainer-3.html#MinimalUtility_VContainer_EntryPointContainer_3__ctor_
@@ -1566,15 +1538,15 @@ references:
   fullName.vb: MinimalUtility.VContainer.EntryPointContainer(Of T1, T2, T3, T4)
   nameWithType: EntryPointContainer<T1, T2, T3, T4>
   nameWithType.vb: EntryPointContainer(Of T1, T2, T3, T4)
-- uid: MinimalUtility.VContainer.EntryPointContainer`4.#ctor(`0,`1,`2,`3,System.Action{`0,`1,`2,`3})
-  name: EntryPointContainer(T1, T2, T3, T4, Action<T1, T2, T3, T4>)
-  href: api/MinimalUtility.VContainer.EntryPointContainer-4.html#MinimalUtility_VContainer_EntryPointContainer_4__ctor__0__1__2__3_System_Action__0__1__2__3__
-  commentId: M:MinimalUtility.VContainer.EntryPointContainer`4.#ctor(`0,`1,`2,`3,System.Action{`0,`1,`2,`3})
-  name.vb: New(T1, T2, T3, T4, Action(Of T1, T2, T3, T4))
-  fullName: MinimalUtility.VContainer.EntryPointContainer<T1, T2, T3, T4>.EntryPointContainer(T1, T2, T3, T4, System.Action<T1, T2, T3, T4>)
-  fullName.vb: MinimalUtility.VContainer.EntryPointContainer(Of T1, T2, T3, T4).New(T1, T2, T3, T4, System.Action(Of T1, T2, T3, T4))
-  nameWithType: EntryPointContainer<T1, T2, T3, T4>.EntryPointContainer(T1, T2, T3, T4, Action<T1, T2, T3, T4>)
-  nameWithType.vb: EntryPointContainer(Of T1, T2, T3, T4).New(T1, T2, T3, T4, Action(Of T1, T2, T3, T4))
+- uid: MinimalUtility.VContainer.EntryPointContainer`4.#ctor(`0,`1,`2,`3,System.Threading.CancellationToken,System.Action{`0,`1,`2,`3,System.Threading.CancellationToken})
+  name: EntryPointContainer(T1, T2, T3, T4, CancellationToken, Action<T1, T2, T3, T4, CancellationToken>)
+  href: api/MinimalUtility.VContainer.EntryPointContainer-4.html#MinimalUtility_VContainer_EntryPointContainer_4__ctor__0__1__2__3_System_Threading_CancellationToken_System_Action__0__1__2__3_System_Threading_CancellationToken__
+  commentId: M:MinimalUtility.VContainer.EntryPointContainer`4.#ctor(`0,`1,`2,`3,System.Threading.CancellationToken,System.Action{`0,`1,`2,`3,System.Threading.CancellationToken})
+  name.vb: New(T1, T2, T3, T4, CancellationToken, Action(Of T1, T2, T3, T4, CancellationToken))
+  fullName: MinimalUtility.VContainer.EntryPointContainer<T1, T2, T3, T4>.EntryPointContainer(T1, T2, T3, T4, System.Threading.CancellationToken, System.Action<T1, T2, T3, T4, System.Threading.CancellationToken>)
+  fullName.vb: MinimalUtility.VContainer.EntryPointContainer(Of T1, T2, T3, T4).New(T1, T2, T3, T4, System.Threading.CancellationToken, System.Action(Of T1, T2, T3, T4, System.Threading.CancellationToken))
+  nameWithType: EntryPointContainer<T1, T2, T3, T4>.EntryPointContainer(T1, T2, T3, T4, CancellationToken, Action<T1, T2, T3, T4, CancellationToken>)
+  nameWithType.vb: EntryPointContainer(Of T1, T2, T3, T4).New(T1, T2, T3, T4, CancellationToken, Action(Of T1, T2, T3, T4, CancellationToken))
 - uid: MinimalUtility.VContainer.EntryPointContainer`4.#ctor*
   name: EntryPointContainer
   href: api/MinimalUtility.VContainer.EntryPointContainer-4.html#MinimalUtility_VContainer_EntryPointContainer_4__ctor_
@@ -1594,15 +1566,15 @@ references:
   fullName.vb: MinimalUtility.VContainer.EntryPointContainer(Of T1, T2, T3, T4, T5)
   nameWithType: EntryPointContainer<T1, T2, T3, T4, T5>
   nameWithType.vb: EntryPointContainer(Of T1, T2, T3, T4, T5)
-- uid: MinimalUtility.VContainer.EntryPointContainer`5.#ctor(`0,`1,`2,`3,`4,System.Action{`0,`1,`2,`3,`4})
-  name: EntryPointContainer(T1, T2, T3, T4, T5, Action<T1, T2, T3, T4, T5>)
-  href: api/MinimalUtility.VContainer.EntryPointContainer-5.html#MinimalUtility_VContainer_EntryPointContainer_5__ctor__0__1__2__3__4_System_Action__0__1__2__3__4__
-  commentId: M:MinimalUtility.VContainer.EntryPointContainer`5.#ctor(`0,`1,`2,`3,`4,System.Action{`0,`1,`2,`3,`4})
-  name.vb: New(T1, T2, T3, T4, T5, Action(Of T1, T2, T3, T4, T5))
-  fullName: MinimalUtility.VContainer.EntryPointContainer<T1, T2, T3, T4, T5>.EntryPointContainer(T1, T2, T3, T4, T5, System.Action<T1, T2, T3, T4, T5>)
-  fullName.vb: MinimalUtility.VContainer.EntryPointContainer(Of T1, T2, T3, T4, T5).New(T1, T2, T3, T4, T5, System.Action(Of T1, T2, T3, T4, T5))
-  nameWithType: EntryPointContainer<T1, T2, T3, T4, T5>.EntryPointContainer(T1, T2, T3, T4, T5, Action<T1, T2, T3, T4, T5>)
-  nameWithType.vb: EntryPointContainer(Of T1, T2, T3, T4, T5).New(T1, T2, T3, T4, T5, Action(Of T1, T2, T3, T4, T5))
+- uid: MinimalUtility.VContainer.EntryPointContainer`5.#ctor(`0,`1,`2,`3,`4,System.Threading.CancellationToken,System.Action{`0,`1,`2,`3,`4,System.Threading.CancellationToken})
+  name: EntryPointContainer(T1, T2, T3, T4, T5, CancellationToken, Action<T1, T2, T3, T4, T5, CancellationToken>)
+  href: api/MinimalUtility.VContainer.EntryPointContainer-5.html#MinimalUtility_VContainer_EntryPointContainer_5__ctor__0__1__2__3__4_System_Threading_CancellationToken_System_Action__0__1__2__3__4_System_Threading_CancellationToken__
+  commentId: M:MinimalUtility.VContainer.EntryPointContainer`5.#ctor(`0,`1,`2,`3,`4,System.Threading.CancellationToken,System.Action{`0,`1,`2,`3,`4,System.Threading.CancellationToken})
+  name.vb: New(T1, T2, T3, T4, T5, CancellationToken, Action(Of T1, T2, T3, T4, T5, CancellationToken))
+  fullName: MinimalUtility.VContainer.EntryPointContainer<T1, T2, T3, T4, T5>.EntryPointContainer(T1, T2, T3, T4, T5, System.Threading.CancellationToken, System.Action<T1, T2, T3, T4, T5, System.Threading.CancellationToken>)
+  fullName.vb: MinimalUtility.VContainer.EntryPointContainer(Of T1, T2, T3, T4, T5).New(T1, T2, T3, T4, T5, System.Threading.CancellationToken, System.Action(Of T1, T2, T3, T4, T5, System.Threading.CancellationToken))
+  nameWithType: EntryPointContainer<T1, T2, T3, T4, T5>.EntryPointContainer(T1, T2, T3, T4, T5, CancellationToken, Action<T1, T2, T3, T4, T5, CancellationToken>)
+  nameWithType.vb: EntryPointContainer(Of T1, T2, T3, T4, T5).New(T1, T2, T3, T4, T5, CancellationToken, Action(Of T1, T2, T3, T4, T5, CancellationToken))
 - uid: MinimalUtility.VContainer.EntryPointContainer`5.#ctor*
   name: EntryPointContainer
   href: api/MinimalUtility.VContainer.EntryPointContainer-5.html#MinimalUtility_VContainer_EntryPointContainer_5__ctor_
@@ -1622,15 +1594,15 @@ references:
   fullName.vb: MinimalUtility.VContainer.EntryPointContainer(Of T1, T2, T3, T4, T5, T6)
   nameWithType: EntryPointContainer<T1, T2, T3, T4, T5, T6>
   nameWithType.vb: EntryPointContainer(Of T1, T2, T3, T4, T5, T6)
-- uid: MinimalUtility.VContainer.EntryPointContainer`6.#ctor(`0,`1,`2,`3,`4,`5,System.Action{`0,`1,`2,`3,`4,`5})
-  name: EntryPointContainer(T1, T2, T3, T4, T5, T6, Action<T1, T2, T3, T4, T5, T6>)
-  href: api/MinimalUtility.VContainer.EntryPointContainer-6.html#MinimalUtility_VContainer_EntryPointContainer_6__ctor__0__1__2__3__4__5_System_Action__0__1__2__3__4__5__
-  commentId: M:MinimalUtility.VContainer.EntryPointContainer`6.#ctor(`0,`1,`2,`3,`4,`5,System.Action{`0,`1,`2,`3,`4,`5})
-  name.vb: New(T1, T2, T3, T4, T5, T6, Action(Of T1, T2, T3, T4, T5, T6))
-  fullName: MinimalUtility.VContainer.EntryPointContainer<T1, T2, T3, T4, T5, T6>.EntryPointContainer(T1, T2, T3, T4, T5, T6, System.Action<T1, T2, T3, T4, T5, T6>)
-  fullName.vb: MinimalUtility.VContainer.EntryPointContainer(Of T1, T2, T3, T4, T5, T6).New(T1, T2, T3, T4, T5, T6, System.Action(Of T1, T2, T3, T4, T5, T6))
-  nameWithType: EntryPointContainer<T1, T2, T3, T4, T5, T6>.EntryPointContainer(T1, T2, T3, T4, T5, T6, Action<T1, T2, T3, T4, T5, T6>)
-  nameWithType.vb: EntryPointContainer(Of T1, T2, T3, T4, T5, T6).New(T1, T2, T3, T4, T5, T6, Action(Of T1, T2, T3, T4, T5, T6))
+- uid: MinimalUtility.VContainer.EntryPointContainer`6.#ctor(`0,`1,`2,`3,`4,`5,System.Threading.CancellationToken,System.Action{`0,`1,`2,`3,`4,`5,System.Threading.CancellationToken})
+  name: EntryPointContainer(T1, T2, T3, T4, T5, T6, CancellationToken, Action<T1, T2, T3, T4, T5, T6, CancellationToken>)
+  href: api/MinimalUtility.VContainer.EntryPointContainer-6.html#MinimalUtility_VContainer_EntryPointContainer_6__ctor__0__1__2__3__4__5_System_Threading_CancellationToken_System_Action__0__1__2__3__4__5_System_Threading_CancellationToken__
+  commentId: M:MinimalUtility.VContainer.EntryPointContainer`6.#ctor(`0,`1,`2,`3,`4,`5,System.Threading.CancellationToken,System.Action{`0,`1,`2,`3,`4,`5,System.Threading.CancellationToken})
+  name.vb: New(T1, T2, T3, T4, T5, T6, CancellationToken, Action(Of T1, T2, T3, T4, T5, T6, CancellationToken))
+  fullName: MinimalUtility.VContainer.EntryPointContainer<T1, T2, T3, T4, T5, T6>.EntryPointContainer(T1, T2, T3, T4, T5, T6, System.Threading.CancellationToken, System.Action<T1, T2, T3, T4, T5, T6, System.Threading.CancellationToken>)
+  fullName.vb: MinimalUtility.VContainer.EntryPointContainer(Of T1, T2, T3, T4, T5, T6).New(T1, T2, T3, T4, T5, T6, System.Threading.CancellationToken, System.Action(Of T1, T2, T3, T4, T5, T6, System.Threading.CancellationToken))
+  nameWithType: EntryPointContainer<T1, T2, T3, T4, T5, T6>.EntryPointContainer(T1, T2, T3, T4, T5, T6, CancellationToken, Action<T1, T2, T3, T4, T5, T6, CancellationToken>)
+  nameWithType.vb: EntryPointContainer(Of T1, T2, T3, T4, T5, T6).New(T1, T2, T3, T4, T5, T6, CancellationToken, Action(Of T1, T2, T3, T4, T5, T6, CancellationToken))
 - uid: MinimalUtility.VContainer.EntryPointContainer`6.#ctor*
   name: EntryPointContainer
   href: api/MinimalUtility.VContainer.EntryPointContainer-6.html#MinimalUtility_VContainer_EntryPointContainer_6__ctor_
@@ -1650,15 +1622,15 @@ references:
   fullName.vb: MinimalUtility.VContainer.EntryPointContainer(Of T1, T2, T3, T4, T5, T6, T7)
   nameWithType: EntryPointContainer<T1, T2, T3, T4, T5, T6, T7>
   nameWithType.vb: EntryPointContainer(Of T1, T2, T3, T4, T5, T6, T7)
-- uid: MinimalUtility.VContainer.EntryPointContainer`7.#ctor(`0,`1,`2,`3,`4,`5,`6,System.Action{`0,`1,`2,`3,`4,`5,`6})
-  name: EntryPointContainer(T1, T2, T3, T4, T5, T6, T7, Action<T1, T2, T3, T4, T5, T6, T7>)
-  href: api/MinimalUtility.VContainer.EntryPointContainer-7.html#MinimalUtility_VContainer_EntryPointContainer_7__ctor__0__1__2__3__4__5__6_System_Action__0__1__2__3__4__5__6__
-  commentId: M:MinimalUtility.VContainer.EntryPointContainer`7.#ctor(`0,`1,`2,`3,`4,`5,`6,System.Action{`0,`1,`2,`3,`4,`5,`6})
-  name.vb: New(T1, T2, T3, T4, T5, T6, T7, Action(Of T1, T2, T3, T4, T5, T6, T7))
-  fullName: MinimalUtility.VContainer.EntryPointContainer<T1, T2, T3, T4, T5, T6, T7>.EntryPointContainer(T1, T2, T3, T4, T5, T6, T7, System.Action<T1, T2, T3, T4, T5, T6, T7>)
-  fullName.vb: MinimalUtility.VContainer.EntryPointContainer(Of T1, T2, T3, T4, T5, T6, T7).New(T1, T2, T3, T4, T5, T6, T7, System.Action(Of T1, T2, T3, T4, T5, T6, T7))
-  nameWithType: EntryPointContainer<T1, T2, T3, T4, T5, T6, T7>.EntryPointContainer(T1, T2, T3, T4, T5, T6, T7, Action<T1, T2, T3, T4, T5, T6, T7>)
-  nameWithType.vb: EntryPointContainer(Of T1, T2, T3, T4, T5, T6, T7).New(T1, T2, T3, T4, T5, T6, T7, Action(Of T1, T2, T3, T4, T5, T6, T7))
+- uid: MinimalUtility.VContainer.EntryPointContainer`7.#ctor(`0,`1,`2,`3,`4,`5,`6,System.Threading.CancellationToken,System.Action{`0,`1,`2,`3,`4,`5,`6,System.Threading.CancellationToken})
+  name: EntryPointContainer(T1, T2, T3, T4, T5, T6, T7, CancellationToken, Action<T1, T2, T3, T4, T5, T6, T7, CancellationToken>)
+  href: api/MinimalUtility.VContainer.EntryPointContainer-7.html#MinimalUtility_VContainer_EntryPointContainer_7__ctor__0__1__2__3__4__5__6_System_Threading_CancellationToken_System_Action__0__1__2__3__4__5__6_System_Threading_CancellationToken__
+  commentId: M:MinimalUtility.VContainer.EntryPointContainer`7.#ctor(`0,`1,`2,`3,`4,`5,`6,System.Threading.CancellationToken,System.Action{`0,`1,`2,`3,`4,`5,`6,System.Threading.CancellationToken})
+  name.vb: New(T1, T2, T3, T4, T5, T6, T7, CancellationToken, Action(Of T1, T2, T3, T4, T5, T6, T7, CancellationToken))
+  fullName: MinimalUtility.VContainer.EntryPointContainer<T1, T2, T3, T4, T5, T6, T7>.EntryPointContainer(T1, T2, T3, T4, T5, T6, T7, System.Threading.CancellationToken, System.Action<T1, T2, T3, T4, T5, T6, T7, System.Threading.CancellationToken>)
+  fullName.vb: MinimalUtility.VContainer.EntryPointContainer(Of T1, T2, T3, T4, T5, T6, T7).New(T1, T2, T3, T4, T5, T6, T7, System.Threading.CancellationToken, System.Action(Of T1, T2, T3, T4, T5, T6, T7, System.Threading.CancellationToken))
+  nameWithType: EntryPointContainer<T1, T2, T3, T4, T5, T6, T7>.EntryPointContainer(T1, T2, T3, T4, T5, T6, T7, CancellationToken, Action<T1, T2, T3, T4, T5, T6, T7, CancellationToken>)
+  nameWithType.vb: EntryPointContainer(Of T1, T2, T3, T4, T5, T6, T7).New(T1, T2, T3, T4, T5, T6, T7, CancellationToken, Action(Of T1, T2, T3, T4, T5, T6, T7, CancellationToken))
 - uid: MinimalUtility.VContainer.EntryPointContainer`7.#ctor*
   name: EntryPointContainer
   href: api/MinimalUtility.VContainer.EntryPointContainer-7.html#MinimalUtility_VContainer_EntryPointContainer_7__ctor_
@@ -1678,15 +1650,15 @@ references:
   fullName.vb: MinimalUtility.VContainer.EntryPointContainer(Of T1, T2, T3, T4, T5, T6, T7, T8)
   nameWithType: EntryPointContainer<T1, T2, T3, T4, T5, T6, T7, T8>
   nameWithType.vb: EntryPointContainer(Of T1, T2, T3, T4, T5, T6, T7, T8)
-- uid: MinimalUtility.VContainer.EntryPointContainer`8.#ctor(`0,`1,`2,`3,`4,`5,`6,`7,System.Action{`0,`1,`2,`3,`4,`5,`6,`7})
-  name: EntryPointContainer(T1, T2, T3, T4, T5, T6, T7, T8, Action<T1, T2, T3, T4, T5, T6, T7, T8>)
-  href: api/MinimalUtility.VContainer.EntryPointContainer-8.html#MinimalUtility_VContainer_EntryPointContainer_8__ctor__0__1__2__3__4__5__6__7_System_Action__0__1__2__3__4__5__6__7__
-  commentId: M:MinimalUtility.VContainer.EntryPointContainer`8.#ctor(`0,`1,`2,`3,`4,`5,`6,`7,System.Action{`0,`1,`2,`3,`4,`5,`6,`7})
-  name.vb: New(T1, T2, T3, T4, T5, T6, T7, T8, Action(Of T1, T2, T3, T4, T5, T6, T7, T8))
-  fullName: MinimalUtility.VContainer.EntryPointContainer<T1, T2, T3, T4, T5, T6, T7, T8>.EntryPointContainer(T1, T2, T3, T4, T5, T6, T7, T8, System.Action<T1, T2, T3, T4, T5, T6, T7, T8>)
-  fullName.vb: MinimalUtility.VContainer.EntryPointContainer(Of T1, T2, T3, T4, T5, T6, T7, T8).New(T1, T2, T3, T4, T5, T6, T7, T8, System.Action(Of T1, T2, T3, T4, T5, T6, T7, T8))
-  nameWithType: EntryPointContainer<T1, T2, T3, T4, T5, T6, T7, T8>.EntryPointContainer(T1, T2, T3, T4, T5, T6, T7, T8, Action<T1, T2, T3, T4, T5, T6, T7, T8>)
-  nameWithType.vb: EntryPointContainer(Of T1, T2, T3, T4, T5, T6, T7, T8).New(T1, T2, T3, T4, T5, T6, T7, T8, Action(Of T1, T2, T3, T4, T5, T6, T7, T8))
+- uid: MinimalUtility.VContainer.EntryPointContainer`8.#ctor(`0,`1,`2,`3,`4,`5,`6,`7,System.Threading.CancellationToken,System.Action{`0,`1,`2,`3,`4,`5,`6,`7,System.Threading.CancellationToken})
+  name: EntryPointContainer(T1, T2, T3, T4, T5, T6, T7, T8, CancellationToken, Action<T1, T2, T3, T4, T5, T6, T7, T8, CancellationToken>)
+  href: api/MinimalUtility.VContainer.EntryPointContainer-8.html#MinimalUtility_VContainer_EntryPointContainer_8__ctor__0__1__2__3__4__5__6__7_System_Threading_CancellationToken_System_Action__0__1__2__3__4__5__6__7_System_Threading_CancellationToken__
+  commentId: M:MinimalUtility.VContainer.EntryPointContainer`8.#ctor(`0,`1,`2,`3,`4,`5,`6,`7,System.Threading.CancellationToken,System.Action{`0,`1,`2,`3,`4,`5,`6,`7,System.Threading.CancellationToken})
+  name.vb: New(T1, T2, T3, T4, T5, T6, T7, T8, CancellationToken, Action(Of T1, T2, T3, T4, T5, T6, T7, T8, CancellationToken))
+  fullName: MinimalUtility.VContainer.EntryPointContainer<T1, T2, T3, T4, T5, T6, T7, T8>.EntryPointContainer(T1, T2, T3, T4, T5, T6, T7, T8, System.Threading.CancellationToken, System.Action<T1, T2, T3, T4, T5, T6, T7, T8, System.Threading.CancellationToken>)
+  fullName.vb: MinimalUtility.VContainer.EntryPointContainer(Of T1, T2, T3, T4, T5, T6, T7, T8).New(T1, T2, T3, T4, T5, T6, T7, T8, System.Threading.CancellationToken, System.Action(Of T1, T2, T3, T4, T5, T6, T7, T8, System.Threading.CancellationToken))
+  nameWithType: EntryPointContainer<T1, T2, T3, T4, T5, T6, T7, T8>.EntryPointContainer(T1, T2, T3, T4, T5, T6, T7, T8, CancellationToken, Action<T1, T2, T3, T4, T5, T6, T7, T8, CancellationToken>)
+  nameWithType.vb: EntryPointContainer(Of T1, T2, T3, T4, T5, T6, T7, T8).New(T1, T2, T3, T4, T5, T6, T7, T8, CancellationToken, Action(Of T1, T2, T3, T4, T5, T6, T7, T8, CancellationToken))
 - uid: MinimalUtility.VContainer.EntryPointContainer`8.#ctor*
   name: EntryPointContainer
   href: api/MinimalUtility.VContainer.EntryPointContainer-8.html#MinimalUtility_VContainer_EntryPointContainer_8__ctor_
@@ -1706,15 +1678,15 @@ references:
   fullName.vb: MinimalUtility.VContainer.EntryPointContainer(Of T1, T2, T3, T4, T5, T6, T7, T8, T9)
   nameWithType: EntryPointContainer<T1, T2, T3, T4, T5, T6, T7, T8, T9>
   nameWithType.vb: EntryPointContainer(Of T1, T2, T3, T4, T5, T6, T7, T8, T9)
-- uid: MinimalUtility.VContainer.EntryPointContainer`9.#ctor(`0,`1,`2,`3,`4,`5,`6,`7,`8,System.Action{`0,`1,`2,`3,`4,`5,`6,`7,`8})
-  name: EntryPointContainer(T1, T2, T3, T4, T5, T6, T7, T8, T9, Action<T1, T2, T3, T4, T5, T6, T7, T8, T9>)
-  href: api/MinimalUtility.VContainer.EntryPointContainer-9.html#MinimalUtility_VContainer_EntryPointContainer_9__ctor__0__1__2__3__4__5__6__7__8_System_Action__0__1__2__3__4__5__6__7__8__
-  commentId: M:MinimalUtility.VContainer.EntryPointContainer`9.#ctor(`0,`1,`2,`3,`4,`5,`6,`7,`8,System.Action{`0,`1,`2,`3,`4,`5,`6,`7,`8})
-  name.vb: New(T1, T2, T3, T4, T5, T6, T7, T8, T9, Action(Of T1, T2, T3, T4, T5, T6, T7, T8, T9))
-  fullName: MinimalUtility.VContainer.EntryPointContainer<T1, T2, T3, T4, T5, T6, T7, T8, T9>.EntryPointContainer(T1, T2, T3, T4, T5, T6, T7, T8, T9, System.Action<T1, T2, T3, T4, T5, T6, T7, T8, T9>)
-  fullName.vb: MinimalUtility.VContainer.EntryPointContainer(Of T1, T2, T3, T4, T5, T6, T7, T8, T9).New(T1, T2, T3, T4, T5, T6, T7, T8, T9, System.Action(Of T1, T2, T3, T4, T5, T6, T7, T8, T9))
-  nameWithType: EntryPointContainer<T1, T2, T3, T4, T5, T6, T7, T8, T9>.EntryPointContainer(T1, T2, T3, T4, T5, T6, T7, T8, T9, Action<T1, T2, T3, T4, T5, T6, T7, T8, T9>)
-  nameWithType.vb: EntryPointContainer(Of T1, T2, T3, T4, T5, T6, T7, T8, T9).New(T1, T2, T3, T4, T5, T6, T7, T8, T9, Action(Of T1, T2, T3, T4, T5, T6, T7, T8, T9))
+- uid: MinimalUtility.VContainer.EntryPointContainer`9.#ctor(`0,`1,`2,`3,`4,`5,`6,`7,`8,System.Threading.CancellationToken,System.Action{`0,`1,`2,`3,`4,`5,`6,`7,`8,System.Threading.CancellationToken})
+  name: EntryPointContainer(T1, T2, T3, T4, T5, T6, T7, T8, T9, CancellationToken, Action<T1, T2, T3, T4, T5, T6, T7, T8, T9, CancellationToken>)
+  href: api/MinimalUtility.VContainer.EntryPointContainer-9.html#MinimalUtility_VContainer_EntryPointContainer_9__ctor__0__1__2__3__4__5__6__7__8_System_Threading_CancellationToken_System_Action__0__1__2__3__4__5__6__7__8_System_Threading_CancellationToken__
+  commentId: M:MinimalUtility.VContainer.EntryPointContainer`9.#ctor(`0,`1,`2,`3,`4,`5,`6,`7,`8,System.Threading.CancellationToken,System.Action{`0,`1,`2,`3,`4,`5,`6,`7,`8,System.Threading.CancellationToken})
+  name.vb: New(T1, T2, T3, T4, T5, T6, T7, T8, T9, CancellationToken, Action(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, CancellationToken))
+  fullName: MinimalUtility.VContainer.EntryPointContainer<T1, T2, T3, T4, T5, T6, T7, T8, T9>.EntryPointContainer(T1, T2, T3, T4, T5, T6, T7, T8, T9, System.Threading.CancellationToken, System.Action<T1, T2, T3, T4, T5, T6, T7, T8, T9, System.Threading.CancellationToken>)
+  fullName.vb: MinimalUtility.VContainer.EntryPointContainer(Of T1, T2, T3, T4, T5, T6, T7, T8, T9).New(T1, T2, T3, T4, T5, T6, T7, T8, T9, System.Threading.CancellationToken, System.Action(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, System.Threading.CancellationToken))
+  nameWithType: EntryPointContainer<T1, T2, T3, T4, T5, T6, T7, T8, T9>.EntryPointContainer(T1, T2, T3, T4, T5, T6, T7, T8, T9, CancellationToken, Action<T1, T2, T3, T4, T5, T6, T7, T8, T9, CancellationToken>)
+  nameWithType.vb: EntryPointContainer(Of T1, T2, T3, T4, T5, T6, T7, T8, T9).New(T1, T2, T3, T4, T5, T6, T7, T8, T9, CancellationToken, Action(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, CancellationToken))
 - uid: MinimalUtility.VContainer.EntryPointContainer`9.#ctor*
   name: EntryPointContainer
   href: api/MinimalUtility.VContainer.EntryPointContainer-9.html#MinimalUtility_VContainer_EntryPointContainer_9__ctor_

@@ -89,7 +89,7 @@
 
 
   <h1 id="MinimalUtility_VContainer_EntryPointContainer_13" data-uid="MinimalUtility.VContainer.EntryPointContainer`13" class="text-break">
-Class EntryPointContainer&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/VContainer/EntryPointContainer.cs/#L714"><i class="bi bi-code-slash"></i></a>
+Class EntryPointContainer&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/VContainer/EntryPointContainer.cs/#L763"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -172,9 +172,9 @@ Class EntryPointContainer&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, 
 
   <a id="MinimalUtility_VContainer_EntryPointContainer_13__ctor_" data-uid="MinimalUtility.VContainer.EntryPointContainer`13.#ctor*"></a>
 
-  <h3 id="MinimalUtility_VContainer_EntryPointContainer_13__ctor__0__1__2__3__4__5__6__7__8__9__10__11__12_System_Action__0__1__2__3__4__5__6__7__8__9__10__11__12__" data-uid="MinimalUtility.VContainer.EntryPointContainer`13.#ctor(`0,`1,`2,`3,`4,`5,`6,`7,`8,`9,`10,`11,`12,System.Action{`0,`1,`2,`3,`4,`5,`6,`7,`8,`9,`10,`11,`12})">
-  EntryPointContainer(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, Action&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/VContainer/EntryPointContainer.cs/#L749"><i class="bi bi-code-slash"></i></a>
+  <h3 id="MinimalUtility_VContainer_EntryPointContainer_13__ctor__0__1__2__3__4__5__6__7__8__9__10__11__12_System_Threading_CancellationToken_System_Action__0__1__2__3__4__5__6__7__8__9__10__11__12_System_Threading_CancellationToken__" data-uid="MinimalUtility.VContainer.EntryPointContainer`13.#ctor(`0,`1,`2,`3,`4,`5,`6,`7,`8,`9,`10,`11,`12,System.Threading.CancellationToken,System.Action{`0,`1,`2,`3,`4,`5,`6,`7,`8,`9,`10,`11,`12,System.Threading.CancellationToken})">
+  EntryPointContainer(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, CancellationToken, Action&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, CancellationToken&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/VContainer/EntryPointContainer.cs/#L800"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="MinimalUtility.VContainer.EntryPointContainer-13.html">EntryPointContainer&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13&gt;</a> class.</p>
@@ -182,7 +182,7 @@ Class EntryPointContainer&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, 
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public EntryPointContainer(T1 instance1, T2 instance2, T3 instance3, T4 instance4, T5 instance5, T6 instance6, T7 instance7, T8 instance8, T9 instance9, T10 instance10, T11 instance11, T12 instance12, T13 instance13, Action&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13&gt; start)</code></pre>
+    <pre><code class="lang-csharp hljs">public EntryPointContainer(T1 instance1, T2 instance2, T3 instance3, T4 instance4, T5 instance5, T6 instance6, T7 instance7, T8 instance8, T9 instance9, T10 instance10, T11 instance11, T12 instance12, T13 instance13, CancellationToken cancellationToken, Action&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, CancellationToken&gt; start)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -226,7 +226,10 @@ Class EntryPointContainer&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, 
     <dt><code>instance13</code> <span class="xref">T13</span></dt>
     <dd><p>発火する13番目のインスタンス.</p>
 </dd>
-    <dt><code>start</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-13">Action</a>&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13&gt;</dt>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>キャンセルトークン.</p>
+</dd>
+    <dt><code>start</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-14">Action</a>&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a>&gt;</dt>
     <dd><p>発火する処理.</p>
 </dd>
   </dl>
