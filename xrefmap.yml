@@ -1716,6 +1716,154 @@ references:
   isSpec: "True"
   fullName: MinimalUtility.VContainer.LifetimeScopeBase.Configure
   nameWithType: LifetimeScopeBase.Configure
+- uid: MinimalUtility.VContainer.VContainerEntryPointExtensions
+  name: VContainerEntryPointExtensions
+  href: api/MinimalUtility.VContainer.VContainerEntryPointExtensions.html
+  commentId: T:MinimalUtility.VContainer.VContainerEntryPointExtensions
+  fullName: MinimalUtility.VContainer.VContainerEntryPointExtensions
+  nameWithType: VContainerEntryPointExtensions
+- uid: MinimalUtility.VContainer.VContainerEntryPointExtensions.WithEntryParameter*
+  name: WithEntryParameter
+  href: api/MinimalUtility.VContainer.VContainerEntryPointExtensions.html#MinimalUtility_VContainer_VContainerEntryPointExtensions_WithEntryParameter_
+  commentId: Overload:MinimalUtility.VContainer.VContainerEntryPointExtensions.WithEntryParameter
+  isSpec: "True"
+  fullName: MinimalUtility.VContainer.VContainerEntryPointExtensions.WithEntryParameter
+  nameWithType: VContainerEntryPointExtensions.WithEntryParameter
+- uid: MinimalUtility.VContainer.VContainerEntryPointExtensions.WithEntryParameter``1(RegistrationBuilder,System.Action{``0,System.Threading.CancellationToken})
+  name: WithEntryParameter<T1>(RegistrationBuilder, Action<T1, CancellationToken>)
+  href: api/MinimalUtility.VContainer.VContainerEntryPointExtensions.html#MinimalUtility_VContainer_VContainerEntryPointExtensions_WithEntryParameter__1_RegistrationBuilder_System_Action___0_System_Threading_CancellationToken__
+  commentId: M:MinimalUtility.VContainer.VContainerEntryPointExtensions.WithEntryParameter``1(RegistrationBuilder,System.Action{``0,System.Threading.CancellationToken})
+  name.vb: WithEntryParameter(Of T1)(RegistrationBuilder, Action(Of T1, CancellationToken))
+  fullName: MinimalUtility.VContainer.VContainerEntryPointExtensions.WithEntryParameter<T1>(RegistrationBuilder, System.Action<T1, System.Threading.CancellationToken>)
+  fullName.vb: MinimalUtility.VContainer.VContainerEntryPointExtensions.WithEntryParameter(Of T1)(RegistrationBuilder, System.Action(Of T1, System.Threading.CancellationToken))
+  nameWithType: VContainerEntryPointExtensions.WithEntryParameter<T1>(RegistrationBuilder, Action<T1, CancellationToken>)
+  nameWithType.vb: VContainerEntryPointExtensions.WithEntryParameter(Of T1)(RegistrationBuilder, Action(Of T1, CancellationToken))
+- uid: MinimalUtility.VContainer.VContainerEntryPointExtensions.WithEntryParameter``10(RegistrationBuilder,System.Action{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,System.Threading.CancellationToken})
+  name: WithEntryParameter<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10>(RegistrationBuilder, Action<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, CancellationToken>)
+  href: api/MinimalUtility.VContainer.VContainerEntryPointExtensions.html#MinimalUtility_VContainer_VContainerEntryPointExtensions_WithEntryParameter__10_RegistrationBuilder_System_Action___0___1___2___3___4___5___6___7___8___9_System_Threading_CancellationToken__
+  commentId: M:MinimalUtility.VContainer.VContainerEntryPointExtensions.WithEntryParameter``10(RegistrationBuilder,System.Action{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,System.Threading.CancellationToken})
+  name.vb: WithEntryParameter(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10)(RegistrationBuilder, Action(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, CancellationToken))
+  fullName: MinimalUtility.VContainer.VContainerEntryPointExtensions.WithEntryParameter<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10>(RegistrationBuilder, System.Action<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, System.Threading.CancellationToken>)
+  fullName.vb: MinimalUtility.VContainer.VContainerEntryPointExtensions.WithEntryParameter(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10)(RegistrationBuilder, System.Action(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, System.Threading.CancellationToken))
+  nameWithType: VContainerEntryPointExtensions.WithEntryParameter<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10>(RegistrationBuilder, Action<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, CancellationToken>)
+  nameWithType.vb: VContainerEntryPointExtensions.WithEntryParameter(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10)(RegistrationBuilder, Action(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, CancellationToken))
+- uid: MinimalUtility.VContainer.VContainerEntryPointExtensions.WithEntryParameter``11(RegistrationBuilder,System.Action{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,System.Threading.CancellationToken})
+  name: WithEntryParameter<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11>(RegistrationBuilder, Action<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, CancellationToken>)
+  href: api/MinimalUtility.VContainer.VContainerEntryPointExtensions.html#MinimalUtility_VContainer_VContainerEntryPointExtensions_WithEntryParameter__11_RegistrationBuilder_System_Action___0___1___2___3___4___5___6___7___8___9___10_System_Threading_CancellationToken__
+  commentId: M:MinimalUtility.VContainer.VContainerEntryPointExtensions.WithEntryParameter``11(RegistrationBuilder,System.Action{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,System.Threading.CancellationToken})
+  name.vb: WithEntryParameter(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11)(RegistrationBuilder, Action(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, CancellationToken))
+  fullName: MinimalUtility.VContainer.VContainerEntryPointExtensions.WithEntryParameter<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11>(RegistrationBuilder, System.Action<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, System.Threading.CancellationToken>)
+  fullName.vb: MinimalUtility.VContainer.VContainerEntryPointExtensions.WithEntryParameter(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11)(RegistrationBuilder, System.Action(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, System.Threading.CancellationToken))
+  nameWithType: VContainerEntryPointExtensions.WithEntryParameter<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11>(RegistrationBuilder, Action<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, CancellationToken>)
+  nameWithType.vb: VContainerEntryPointExtensions.WithEntryParameter(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11)(RegistrationBuilder, Action(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, CancellationToken))
+- uid: MinimalUtility.VContainer.VContainerEntryPointExtensions.WithEntryParameter``12(RegistrationBuilder,System.Action{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,``11,System.Threading.CancellationToken})
+  name: WithEntryParameter<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12>(RegistrationBuilder, Action<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, CancellationToken>)
+  href: api/MinimalUtility.VContainer.VContainerEntryPointExtensions.html#MinimalUtility_VContainer_VContainerEntryPointExtensions_WithEntryParameter__12_RegistrationBuilder_System_Action___0___1___2___3___4___5___6___7___8___9___10___11_System_Threading_CancellationToken__
+  commentId: M:MinimalUtility.VContainer.VContainerEntryPointExtensions.WithEntryParameter``12(RegistrationBuilder,System.Action{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,``11,System.Threading.CancellationToken})
+  name.vb: WithEntryParameter(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12)(RegistrationBuilder, Action(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, CancellationToken))
+  fullName: MinimalUtility.VContainer.VContainerEntryPointExtensions.WithEntryParameter<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12>(RegistrationBuilder, System.Action<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, System.Threading.CancellationToken>)
+  fullName.vb: MinimalUtility.VContainer.VContainerEntryPointExtensions.WithEntryParameter(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12)(RegistrationBuilder, System.Action(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, System.Threading.CancellationToken))
+  nameWithType: VContainerEntryPointExtensions.WithEntryParameter<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12>(RegistrationBuilder, Action<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, CancellationToken>)
+  nameWithType.vb: VContainerEntryPointExtensions.WithEntryParameter(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12)(RegistrationBuilder, Action(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, CancellationToken))
+- uid: MinimalUtility.VContainer.VContainerEntryPointExtensions.WithEntryParameter``13(RegistrationBuilder,System.Action{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,``11,``12,System.Threading.CancellationToken})
+  name: WithEntryParameter<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13>(RegistrationBuilder, Action<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, CancellationToken>)
+  href: api/MinimalUtility.VContainer.VContainerEntryPointExtensions.html#MinimalUtility_VContainer_VContainerEntryPointExtensions_WithEntryParameter__13_RegistrationBuilder_System_Action___0___1___2___3___4___5___6___7___8___9___10___11___12_System_Threading_CancellationToken__
+  commentId: M:MinimalUtility.VContainer.VContainerEntryPointExtensions.WithEntryParameter``13(RegistrationBuilder,System.Action{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,``11,``12,System.Threading.CancellationToken})
+  name.vb: WithEntryParameter(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13)(RegistrationBuilder, Action(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, CancellationToken))
+  fullName: MinimalUtility.VContainer.VContainerEntryPointExtensions.WithEntryParameter<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13>(RegistrationBuilder, System.Action<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, System.Threading.CancellationToken>)
+  fullName.vb: MinimalUtility.VContainer.VContainerEntryPointExtensions.WithEntryParameter(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13)(RegistrationBuilder, System.Action(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, System.Threading.CancellationToken))
+  nameWithType: VContainerEntryPointExtensions.WithEntryParameter<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13>(RegistrationBuilder, Action<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, CancellationToken>)
+  nameWithType.vb: VContainerEntryPointExtensions.WithEntryParameter(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13)(RegistrationBuilder, Action(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, CancellationToken))
+- uid: MinimalUtility.VContainer.VContainerEntryPointExtensions.WithEntryParameter``14(RegistrationBuilder,System.Action{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,``11,``12,``13,System.Threading.CancellationToken})
+  name: WithEntryParameter<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14>(RegistrationBuilder, Action<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, CancellationToken>)
+  href: api/MinimalUtility.VContainer.VContainerEntryPointExtensions.html#MinimalUtility_VContainer_VContainerEntryPointExtensions_WithEntryParameter__14_RegistrationBuilder_System_Action___0___1___2___3___4___5___6___7___8___9___10___11___12___13_System_Threading_CancellationToken__
+  commentId: M:MinimalUtility.VContainer.VContainerEntryPointExtensions.WithEntryParameter``14(RegistrationBuilder,System.Action{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,``11,``12,``13,System.Threading.CancellationToken})
+  name.vb: WithEntryParameter(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14)(RegistrationBuilder, Action(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, CancellationToken))
+  fullName: MinimalUtility.VContainer.VContainerEntryPointExtensions.WithEntryParameter<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14>(RegistrationBuilder, System.Action<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, System.Threading.CancellationToken>)
+  fullName.vb: MinimalUtility.VContainer.VContainerEntryPointExtensions.WithEntryParameter(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14)(RegistrationBuilder, System.Action(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, System.Threading.CancellationToken))
+  nameWithType: VContainerEntryPointExtensions.WithEntryParameter<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14>(RegistrationBuilder, Action<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, CancellationToken>)
+  nameWithType.vb: VContainerEntryPointExtensions.WithEntryParameter(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14)(RegistrationBuilder, Action(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, CancellationToken))
+- uid: MinimalUtility.VContainer.VContainerEntryPointExtensions.WithEntryParameter``15(RegistrationBuilder,System.Action{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,``11,``12,``13,``14,System.Threading.CancellationToken})
+  name: WithEntryParameter<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15>(RegistrationBuilder, Action<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, CancellationToken>)
+  href: api/MinimalUtility.VContainer.VContainerEntryPointExtensions.html#MinimalUtility_VContainer_VContainerEntryPointExtensions_WithEntryParameter__15_RegistrationBuilder_System_Action___0___1___2___3___4___5___6___7___8___9___10___11___12___13___14_System_Threading_CancellationToken__
+  commentId: M:MinimalUtility.VContainer.VContainerEntryPointExtensions.WithEntryParameter``15(RegistrationBuilder,System.Action{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,``11,``12,``13,``14,System.Threading.CancellationToken})
+  name.vb: WithEntryParameter(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15)(RegistrationBuilder, Action(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, CancellationToken))
+  fullName: MinimalUtility.VContainer.VContainerEntryPointExtensions.WithEntryParameter<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15>(RegistrationBuilder, System.Action<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, System.Threading.CancellationToken>)
+  fullName.vb: MinimalUtility.VContainer.VContainerEntryPointExtensions.WithEntryParameter(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15)(RegistrationBuilder, System.Action(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, System.Threading.CancellationToken))
+  nameWithType: VContainerEntryPointExtensions.WithEntryParameter<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15>(RegistrationBuilder, Action<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, CancellationToken>)
+  nameWithType.vb: VContainerEntryPointExtensions.WithEntryParameter(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15)(RegistrationBuilder, Action(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, CancellationToken))
+- uid: MinimalUtility.VContainer.VContainerEntryPointExtensions.WithEntryParameter``2(RegistrationBuilder,System.Action{``0,``1,System.Threading.CancellationToken})
+  name: WithEntryParameter<T1, T2>(RegistrationBuilder, Action<T1, T2, CancellationToken>)
+  href: api/MinimalUtility.VContainer.VContainerEntryPointExtensions.html#MinimalUtility_VContainer_VContainerEntryPointExtensions_WithEntryParameter__2_RegistrationBuilder_System_Action___0___1_System_Threading_CancellationToken__
+  commentId: M:MinimalUtility.VContainer.VContainerEntryPointExtensions.WithEntryParameter``2(RegistrationBuilder,System.Action{``0,``1,System.Threading.CancellationToken})
+  name.vb: WithEntryParameter(Of T1, T2)(RegistrationBuilder, Action(Of T1, T2, CancellationToken))
+  fullName: MinimalUtility.VContainer.VContainerEntryPointExtensions.WithEntryParameter<T1, T2>(RegistrationBuilder, System.Action<T1, T2, System.Threading.CancellationToken>)
+  fullName.vb: MinimalUtility.VContainer.VContainerEntryPointExtensions.WithEntryParameter(Of T1, T2)(RegistrationBuilder, System.Action(Of T1, T2, System.Threading.CancellationToken))
+  nameWithType: VContainerEntryPointExtensions.WithEntryParameter<T1, T2>(RegistrationBuilder, Action<T1, T2, CancellationToken>)
+  nameWithType.vb: VContainerEntryPointExtensions.WithEntryParameter(Of T1, T2)(RegistrationBuilder, Action(Of T1, T2, CancellationToken))
+- uid: MinimalUtility.VContainer.VContainerEntryPointExtensions.WithEntryParameter``3(RegistrationBuilder,System.Action{``0,``1,``2,System.Threading.CancellationToken})
+  name: WithEntryParameter<T1, T2, T3>(RegistrationBuilder, Action<T1, T2, T3, CancellationToken>)
+  href: api/MinimalUtility.VContainer.VContainerEntryPointExtensions.html#MinimalUtility_VContainer_VContainerEntryPointExtensions_WithEntryParameter__3_RegistrationBuilder_System_Action___0___1___2_System_Threading_CancellationToken__
+  commentId: M:MinimalUtility.VContainer.VContainerEntryPointExtensions.WithEntryParameter``3(RegistrationBuilder,System.Action{``0,``1,``2,System.Threading.CancellationToken})
+  name.vb: WithEntryParameter(Of T1, T2, T3)(RegistrationBuilder, Action(Of T1, T2, T3, CancellationToken))
+  fullName: MinimalUtility.VContainer.VContainerEntryPointExtensions.WithEntryParameter<T1, T2, T3>(RegistrationBuilder, System.Action<T1, T2, T3, System.Threading.CancellationToken>)
+  fullName.vb: MinimalUtility.VContainer.VContainerEntryPointExtensions.WithEntryParameter(Of T1, T2, T3)(RegistrationBuilder, System.Action(Of T1, T2, T3, System.Threading.CancellationToken))
+  nameWithType: VContainerEntryPointExtensions.WithEntryParameter<T1, T2, T3>(RegistrationBuilder, Action<T1, T2, T3, CancellationToken>)
+  nameWithType.vb: VContainerEntryPointExtensions.WithEntryParameter(Of T1, T2, T3)(RegistrationBuilder, Action(Of T1, T2, T3, CancellationToken))
+- uid: MinimalUtility.VContainer.VContainerEntryPointExtensions.WithEntryParameter``4(RegistrationBuilder,System.Action{``0,``1,``2,``3,System.Threading.CancellationToken})
+  name: WithEntryParameter<T1, T2, T3, T4>(RegistrationBuilder, Action<T1, T2, T3, T4, CancellationToken>)
+  href: api/MinimalUtility.VContainer.VContainerEntryPointExtensions.html#MinimalUtility_VContainer_VContainerEntryPointExtensions_WithEntryParameter__4_RegistrationBuilder_System_Action___0___1___2___3_System_Threading_CancellationToken__
+  commentId: M:MinimalUtility.VContainer.VContainerEntryPointExtensions.WithEntryParameter``4(RegistrationBuilder,System.Action{``0,``1,``2,``3,System.Threading.CancellationToken})
+  name.vb: WithEntryParameter(Of T1, T2, T3, T4)(RegistrationBuilder, Action(Of T1, T2, T3, T4, CancellationToken))
+  fullName: MinimalUtility.VContainer.VContainerEntryPointExtensions.WithEntryParameter<T1, T2, T3, T4>(RegistrationBuilder, System.Action<T1, T2, T3, T4, System.Threading.CancellationToken>)
+  fullName.vb: MinimalUtility.VContainer.VContainerEntryPointExtensions.WithEntryParameter(Of T1, T2, T3, T4)(RegistrationBuilder, System.Action(Of T1, T2, T3, T4, System.Threading.CancellationToken))
+  nameWithType: VContainerEntryPointExtensions.WithEntryParameter<T1, T2, T3, T4>(RegistrationBuilder, Action<T1, T2, T3, T4, CancellationToken>)
+  nameWithType.vb: VContainerEntryPointExtensions.WithEntryParameter(Of T1, T2, T3, T4)(RegistrationBuilder, Action(Of T1, T2, T3, T4, CancellationToken))
+- uid: MinimalUtility.VContainer.VContainerEntryPointExtensions.WithEntryParameter``5(RegistrationBuilder,System.Action{``0,``1,``2,``3,``4,System.Threading.CancellationToken})
+  name: WithEntryParameter<T1, T2, T3, T4, T5>(RegistrationBuilder, Action<T1, T2, T3, T4, T5, CancellationToken>)
+  href: api/MinimalUtility.VContainer.VContainerEntryPointExtensions.html#MinimalUtility_VContainer_VContainerEntryPointExtensions_WithEntryParameter__5_RegistrationBuilder_System_Action___0___1___2___3___4_System_Threading_CancellationToken__
+  commentId: M:MinimalUtility.VContainer.VContainerEntryPointExtensions.WithEntryParameter``5(RegistrationBuilder,System.Action{``0,``1,``2,``3,``4,System.Threading.CancellationToken})
+  name.vb: WithEntryParameter(Of T1, T2, T3, T4, T5)(RegistrationBuilder, Action(Of T1, T2, T3, T4, T5, CancellationToken))
+  fullName: MinimalUtility.VContainer.VContainerEntryPointExtensions.WithEntryParameter<T1, T2, T3, T4, T5>(RegistrationBuilder, System.Action<T1, T2, T3, T4, T5, System.Threading.CancellationToken>)
+  fullName.vb: MinimalUtility.VContainer.VContainerEntryPointExtensions.WithEntryParameter(Of T1, T2, T3, T4, T5)(RegistrationBuilder, System.Action(Of T1, T2, T3, T4, T5, System.Threading.CancellationToken))
+  nameWithType: VContainerEntryPointExtensions.WithEntryParameter<T1, T2, T3, T4, T5>(RegistrationBuilder, Action<T1, T2, T3, T4, T5, CancellationToken>)
+  nameWithType.vb: VContainerEntryPointExtensions.WithEntryParameter(Of T1, T2, T3, T4, T5)(RegistrationBuilder, Action(Of T1, T2, T3, T4, T5, CancellationToken))
+- uid: MinimalUtility.VContainer.VContainerEntryPointExtensions.WithEntryParameter``6(RegistrationBuilder,System.Action{``0,``1,``2,``3,``4,``5,System.Threading.CancellationToken})
+  name: WithEntryParameter<T1, T2, T3, T4, T5, T6>(RegistrationBuilder, Action<T1, T2, T3, T4, T5, T6, CancellationToken>)
+  href: api/MinimalUtility.VContainer.VContainerEntryPointExtensions.html#MinimalUtility_VContainer_VContainerEntryPointExtensions_WithEntryParameter__6_RegistrationBuilder_System_Action___0___1___2___3___4___5_System_Threading_CancellationToken__
+  commentId: M:MinimalUtility.VContainer.VContainerEntryPointExtensions.WithEntryParameter``6(RegistrationBuilder,System.Action{``0,``1,``2,``3,``4,``5,System.Threading.CancellationToken})
+  name.vb: WithEntryParameter(Of T1, T2, T3, T4, T5, T6)(RegistrationBuilder, Action(Of T1, T2, T3, T4, T5, T6, CancellationToken))
+  fullName: MinimalUtility.VContainer.VContainerEntryPointExtensions.WithEntryParameter<T1, T2, T3, T4, T5, T6>(RegistrationBuilder, System.Action<T1, T2, T3, T4, T5, T6, System.Threading.CancellationToken>)
+  fullName.vb: MinimalUtility.VContainer.VContainerEntryPointExtensions.WithEntryParameter(Of T1, T2, T3, T4, T5, T6)(RegistrationBuilder, System.Action(Of T1, T2, T3, T4, T5, T6, System.Threading.CancellationToken))
+  nameWithType: VContainerEntryPointExtensions.WithEntryParameter<T1, T2, T3, T4, T5, T6>(RegistrationBuilder, Action<T1, T2, T3, T4, T5, T6, CancellationToken>)
+  nameWithType.vb: VContainerEntryPointExtensions.WithEntryParameter(Of T1, T2, T3, T4, T5, T6)(RegistrationBuilder, Action(Of T1, T2, T3, T4, T5, T6, CancellationToken))
+- uid: MinimalUtility.VContainer.VContainerEntryPointExtensions.WithEntryParameter``7(RegistrationBuilder,System.Action{``0,``1,``2,``3,``4,``5,``6,System.Threading.CancellationToken})
+  name: WithEntryParameter<T1, T2, T3, T4, T5, T6, T7>(RegistrationBuilder, Action<T1, T2, T3, T4, T5, T6, T7, CancellationToken>)
+  href: api/MinimalUtility.VContainer.VContainerEntryPointExtensions.html#MinimalUtility_VContainer_VContainerEntryPointExtensions_WithEntryParameter__7_RegistrationBuilder_System_Action___0___1___2___3___4___5___6_System_Threading_CancellationToken__
+  commentId: M:MinimalUtility.VContainer.VContainerEntryPointExtensions.WithEntryParameter``7(RegistrationBuilder,System.Action{``0,``1,``2,``3,``4,``5,``6,System.Threading.CancellationToken})
+  name.vb: WithEntryParameter(Of T1, T2, T3, T4, T5, T6, T7)(RegistrationBuilder, Action(Of T1, T2, T3, T4, T5, T6, T7, CancellationToken))
+  fullName: MinimalUtility.VContainer.VContainerEntryPointExtensions.WithEntryParameter<T1, T2, T3, T4, T5, T6, T7>(RegistrationBuilder, System.Action<T1, T2, T3, T4, T5, T6, T7, System.Threading.CancellationToken>)
+  fullName.vb: MinimalUtility.VContainer.VContainerEntryPointExtensions.WithEntryParameter(Of T1, T2, T3, T4, T5, T6, T7)(RegistrationBuilder, System.Action(Of T1, T2, T3, T4, T5, T6, T7, System.Threading.CancellationToken))
+  nameWithType: VContainerEntryPointExtensions.WithEntryParameter<T1, T2, T3, T4, T5, T6, T7>(RegistrationBuilder, Action<T1, T2, T3, T4, T5, T6, T7, CancellationToken>)
+  nameWithType.vb: VContainerEntryPointExtensions.WithEntryParameter(Of T1, T2, T3, T4, T5, T6, T7)(RegistrationBuilder, Action(Of T1, T2, T3, T4, T5, T6, T7, CancellationToken))
+- uid: MinimalUtility.VContainer.VContainerEntryPointExtensions.WithEntryParameter``8(RegistrationBuilder,System.Action{``0,``1,``2,``3,``4,``5,``6,``7,System.Threading.CancellationToken})
+  name: WithEntryParameter<T1, T2, T3, T4, T5, T6, T7, T8>(RegistrationBuilder, Action<T1, T2, T3, T4, T5, T6, T7, T8, CancellationToken>)
+  href: api/MinimalUtility.VContainer.VContainerEntryPointExtensions.html#MinimalUtility_VContainer_VContainerEntryPointExtensions_WithEntryParameter__8_RegistrationBuilder_System_Action___0___1___2___3___4___5___6___7_System_Threading_CancellationToken__
+  commentId: M:MinimalUtility.VContainer.VContainerEntryPointExtensions.WithEntryParameter``8(RegistrationBuilder,System.Action{``0,``1,``2,``3,``4,``5,``6,``7,System.Threading.CancellationToken})
+  name.vb: WithEntryParameter(Of T1, T2, T3, T4, T5, T6, T7, T8)(RegistrationBuilder, Action(Of T1, T2, T3, T4, T5, T6, T7, T8, CancellationToken))
+  fullName: MinimalUtility.VContainer.VContainerEntryPointExtensions.WithEntryParameter<T1, T2, T3, T4, T5, T6, T7, T8>(RegistrationBuilder, System.Action<T1, T2, T3, T4, T5, T6, T7, T8, System.Threading.CancellationToken>)
+  fullName.vb: MinimalUtility.VContainer.VContainerEntryPointExtensions.WithEntryParameter(Of T1, T2, T3, T4, T5, T6, T7, T8)(RegistrationBuilder, System.Action(Of T1, T2, T3, T4, T5, T6, T7, T8, System.Threading.CancellationToken))
+  nameWithType: VContainerEntryPointExtensions.WithEntryParameter<T1, T2, T3, T4, T5, T6, T7, T8>(RegistrationBuilder, Action<T1, T2, T3, T4, T5, T6, T7, T8, CancellationToken>)
+  nameWithType.vb: VContainerEntryPointExtensions.WithEntryParameter(Of T1, T2, T3, T4, T5, T6, T7, T8)(RegistrationBuilder, Action(Of T1, T2, T3, T4, T5, T6, T7, T8, CancellationToken))
+- uid: MinimalUtility.VContainer.VContainerEntryPointExtensions.WithEntryParameter``9(RegistrationBuilder,System.Action{``0,``1,``2,``3,``4,``5,``6,``7,``8,System.Threading.CancellationToken})
+  name: WithEntryParameter<T1, T2, T3, T4, T5, T6, T7, T8, T9>(RegistrationBuilder, Action<T1, T2, T3, T4, T5, T6, T7, T8, T9, CancellationToken>)
+  href: api/MinimalUtility.VContainer.VContainerEntryPointExtensions.html#MinimalUtility_VContainer_VContainerEntryPointExtensions_WithEntryParameter__9_RegistrationBuilder_System_Action___0___1___2___3___4___5___6___7___8_System_Threading_CancellationToken__
+  commentId: M:MinimalUtility.VContainer.VContainerEntryPointExtensions.WithEntryParameter``9(RegistrationBuilder,System.Action{``0,``1,``2,``3,``4,``5,``6,``7,``8,System.Threading.CancellationToken})
+  name.vb: WithEntryParameter(Of T1, T2, T3, T4, T5, T6, T7, T8, T9)(RegistrationBuilder, Action(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, CancellationToken))
+  fullName: MinimalUtility.VContainer.VContainerEntryPointExtensions.WithEntryParameter<T1, T2, T3, T4, T5, T6, T7, T8, T9>(RegistrationBuilder, System.Action<T1, T2, T3, T4, T5, T6, T7, T8, T9, System.Threading.CancellationToken>)
+  fullName.vb: MinimalUtility.VContainer.VContainerEntryPointExtensions.WithEntryParameter(Of T1, T2, T3, T4, T5, T6, T7, T8, T9)(RegistrationBuilder, System.Action(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, System.Threading.CancellationToken))
+  nameWithType: VContainerEntryPointExtensions.WithEntryParameter<T1, T2, T3, T4, T5, T6, T7, T8, T9>(RegistrationBuilder, Action<T1, T2, T3, T4, T5, T6, T7, T8, T9, CancellationToken>)
+  nameWithType.vb: VContainerEntryPointExtensions.WithEntryParameter(Of T1, T2, T3, T4, T5, T6, T7, T8, T9)(RegistrationBuilder, Action(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, CancellationToken))
 - uid: MinimalUtility.ValueDisposable
   name: ValueDisposable
   href: api/MinimalUtility.ValueDisposable.html
