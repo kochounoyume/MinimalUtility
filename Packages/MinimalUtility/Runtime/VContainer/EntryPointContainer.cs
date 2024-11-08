@@ -1,7 +1,10 @@
-﻿#pragma warning disable SA1402
+﻿#pragma warning disable SA1204
+#pragma warning disable SA1402
 
 using System;
+using System.Runtime.CompilerServices;
 using System.Threading;
+using VContainer;
 using VContainer.Unity;
 
 namespace MinimalUtility.VContainer
@@ -1040,6 +1043,312 @@ namespace MinimalUtility.VContainer
             start(instance1, instance2, instance3, instance4, instance5, instance6, instance7, instance8, instance9, instance10, instance11, instance12, instance13, instance14, instance15, cancellationToken);
         }
     }
-}
 
+    /// <summary>
+    /// <see cref="VContainer"/>の拡張メソッド.
+    /// </summary>
+    public static class VContainerEntryPointExtensions
+    {
+        /// <summary>
+        /// <see cref="EntryPointContainer{T1}"/>に登録するエントリーポイント制御引数.
+        /// </summary>
+        /// <param name="builder"><see cref="RegistrationBuilder"/>.</param>
+        /// <param name="entry">エントリーポイント制御引数.</param>
+        /// <typeparam name="T1">エントリーポイント制御引数の1番目の型.</typeparam>
+        /// <returns><see cref="RegistrationBuilder.WithParameter{T}(T)"/>で登録済みの<see cref="RegistrationBuilder"/>.</returns>
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        public static RegistrationBuilder WithEntryParameter<T1>(this RegistrationBuilder builder, Action<T1, CancellationToken> entry)
+        {
+            return builder.WithParameter(entry);
+        }
+
+        /// <summary>
+        /// <see cref="EntryPointContainer{T1, T2}"/>に登録するエントリーポイント制御引数.
+        /// </summary>
+        /// <param name="builder"><see cref="RegistrationBuilder"/>.</param>
+        /// <param name="entry">エントリーポイント制御引数.</param>
+        /// <typeparam name="T1">エントリーポイント制御引数の1番目の型.</typeparam>
+        /// <typeparam name="T2">エントリーポイント制御引数の2番目の型.</typeparam>
+        /// <returns><see cref="RegistrationBuilder.WithParameter{T}(T)"/>で登録済みの<see cref="RegistrationBuilder"/>.</returns>
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        public static RegistrationBuilder WithEntryParameter<T1, T2>(this RegistrationBuilder builder, Action<T1, T2, CancellationToken> entry)
+        {
+            return builder.WithParameter(entry);
+        }
+
+        /// <summary>
+        /// <see cref="EntryPointContainer{T1, T2, T3}"/>に登録するエントリーポイント制御引数.
+        /// </summary>
+        /// <param name="builder"><see cref="RegistrationBuilder"/>.</param>
+        /// <param name="entry">エントリーポイント制御引数.</param>
+        /// <typeparam name="T1">エントリーポイント制御引数の1番目の型.</typeparam>
+        /// <typeparam name="T2">エントリーポイント制御引数の2番目の型.</typeparam>
+        /// <typeparam name="T3">エントリーポイント制御引数の3番目の型.</typeparam>
+        /// <returns><see cref="RegistrationBuilder.WithParameter{T}(T)"/>で登録済みの<see cref="RegistrationBuilder"/>.</returns>
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        public static RegistrationBuilder WithEntryParameter<T1, T2, T3>(this RegistrationBuilder builder, Action<T1, T2, T3, CancellationToken> entry)
+        {
+            return builder.WithParameter(entry);
+        }
+
+        /// <summary>
+        /// <see cref="EntryPointContainer{T1, T2, T3, T4}"/>に登録するエントリーポイント制御引数.
+        /// </summary>
+        /// <param name="builder"><see cref="RegistrationBuilder"/>.</param>
+        /// <param name="entry">エントリーポイント制御引数.</param>
+        /// <typeparam name="T1">エントリーポイント制御引数の1番目の型.</typeparam>
+        /// <typeparam name="T2">エントリーポイント制御引数の2番目の型.</typeparam>
+        /// <typeparam name="T3">エントリーポイント制御引数の3番目の型.</typeparam>
+        /// <typeparam name="T4">エントリーポイント制御引数の4番目の型.</typeparam>
+        /// <returns><see cref="RegistrationBuilder.WithParameter{T}(T)"/>で登録済みの<see cref="RegistrationBuilder"/>.</returns>
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        public static RegistrationBuilder WithEntryParameter<T1, T2, T3, T4>(this RegistrationBuilder builder, Action<T1, T2, T3, T4, CancellationToken> entry)
+        {
+            return builder.WithParameter(entry);
+        }
+
+        /// <summary>
+        /// <see cref="EntryPointContainer{T1, T2, T3, T4, T5}"/>に登録するエントリーポイント制御引数.
+        /// </summary>
+        /// <param name="builder"><see cref="RegistrationBuilder"/>.</param>
+        /// <param name="entry">エントリーポイント制御引数.</param>
+        /// <typeparam name="T1">エントリーポイント制御引数の1番目の型.</typeparam>
+        /// <typeparam name="T2">エントリーポイント制御引数の2番目の型.</typeparam>
+        /// <typeparam name="T3">エントリーポイント制御引数の3番目の型.</typeparam>
+        /// <typeparam name="T4">エントリーポイント制御引数の4番目の型.</typeparam>
+        /// <typeparam name="T5">エントリーポイント制御引数の5番目の型.</typeparam>
+        /// <returns><see cref="RegistrationBuilder.WithParameter{T}(T)"/>で登録済みの<see cref="RegistrationBuilder"/>.</returns>
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        public static RegistrationBuilder WithEntryParameter<T1, T2, T3, T4, T5>(this RegistrationBuilder builder, Action<T1, T2, T3, T4, T5, CancellationToken> entry)
+        {
+            return builder.WithParameter(entry);
+        }
+
+        /// <summary>
+        /// <see cref="EntryPointContainer{T1, T2, T3, T4, T5, T6}"/>に登録するエントリーポイント制御引数.
+        /// </summary>
+        /// <param name="builder"><see cref="RegistrationBuilder"/>.</param>
+        /// <param name="entry">エントリーポイント制御引数.</param>
+        /// <typeparam name="T1">エントリーポイント制御引数の1番目の型.</typeparam>
+        /// <typeparam name="T2">エントリーポイント制御引数の2番目の型.</typeparam>
+        /// <typeparam name="T3">エントリーポイント制御引数の3番目の型.</typeparam>
+        /// <typeparam name="T4">エントリーポイント制御引数の4番目の型.</typeparam>
+        /// <typeparam name="T5">エントリーポイント制御引数の5番目の型.</typeparam>
+        /// <typeparam name="T6">エントリーポイント制御引数の6番目の型.</typeparam>
+        /// <returns><see cref="RegistrationBuilder.WithParameter{T}(T)"/>で登録済みの<see cref="RegistrationBuilder"/>.</returns>
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        public static RegistrationBuilder WithEntryParameter<T1, T2, T3, T4, T5, T6>(this RegistrationBuilder builder, Action<T1, T2, T3, T4, T5, T6, CancellationToken> entry)
+        {
+            return builder.WithParameter(entry);
+        }
+
+        /// <summary>
+        /// <see cref="EntryPointContainer{T1, T2, T3, T4, T5, T6, T7}"/>に登録するエントリーポイント制御引数.
+        /// </summary>
+        /// <param name="builder"><see cref="RegistrationBuilder"/>.</param>
+        /// <param name="entry">エントリーポイント制御引数.</param>
+        /// <typeparam name="T1">エントリーポイント制御引数の1番目の型.</typeparam>
+        /// <typeparam name="T2">エントリーポイント制御引数の2番目の型.</typeparam>
+        /// <typeparam name="T3">エントリーポイント制御引数の3番目の型.</typeparam>
+        /// <typeparam name="T4">エントリーポイント制御引数の4番目の型.</typeparam>
+        /// <typeparam name="T5">エントリーポイント制御引数の5番目の型.</typeparam>
+        /// <typeparam name="T6">エントリーポイント制御引数の6番目の型.</typeparam>
+        /// <typeparam name="T7">エントリーポイント制御引数の7番目の型.</typeparam>
+        /// <returns><see cref="RegistrationBuilder.WithParameter{T}(T)"/>で登録済みの<see cref="RegistrationBuilder"/>.</returns>
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        public static RegistrationBuilder WithEntryParameter<T1, T2, T3, T4, T5, T6, T7>(this RegistrationBuilder builder, Action<T1, T2, T3, T4, T5, T6, T7, CancellationToken> entry)
+        {
+            return builder.WithParameter(entry);
+        }
+
+        /// <summary>
+        /// <see cref="EntryPointContainer{T1, T2, T3, T4, T5, T6, T7, T8}"/>に登録するエントリーポイント制御引数.
+        /// </summary>
+        /// <param name="builder"><see cref="RegistrationBuilder"/>.</param>
+        /// <param name="entry">エントリーポイント制御引数.</param>
+        /// <typeparam name="T1">エントリーポイント制御引数の1番目の型.</typeparam>
+        /// <typeparam name="T2">エントリーポイント制御引数の2番目の型.</typeparam>
+        /// <typeparam name="T3">エントリーポイント制御引数の3番目の型.</typeparam>
+        /// <typeparam name="T4">エントリーポイント制御引数の4番目の型.</typeparam>
+        /// <typeparam name="T5">エントリーポイント制御引数の5番目の型.</typeparam>
+        /// <typeparam name="T6">エントリーポイント制御引数の6番目の型.</typeparam>
+        /// <typeparam name="T7">エントリーポイント制御引数の7番目の型.</typeparam>
+        /// <typeparam name="T8">エントリーポイント制御引数の8番目の型.</typeparam>
+        /// <returns><see cref="RegistrationBuilder.WithParameter{T}(T)"/>で登録済みの<see cref="RegistrationBuilder"/>.</returns>
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        public static RegistrationBuilder WithEntryParameter<T1, T2, T3, T4, T5, T6, T7, T8>(this RegistrationBuilder builder, Action<T1, T2, T3, T4, T5, T6, T7, T8, CancellationToken> entry)
+        {
+            return builder.WithParameter(entry);
+        }
+
+        /// <summary>
+        /// <see cref="EntryPointContainer{T1, T2, T3, T4, T5, T6, T7, T8, T9}"/>に登録するエントリーポイント制御引数.
+        /// </summary>
+        /// <param name="builder"><see cref="RegistrationBuilder"/>.</param>
+        /// <param name="entry">エントリーポイント制御引数.</param>
+        /// <typeparam name="T1">エントリーポイント制御引数の1番目の型.</typeparam>
+        /// <typeparam name="T2">エントリーポイント制御引数の2番目の型.</typeparam>
+        /// <typeparam name="T3">エントリーポイント制御引数の3番目の型.</typeparam>
+        /// <typeparam name="T4">エントリーポイント制御引数の4番目の型.</typeparam>
+        /// <typeparam name="T5">エントリーポイント制御引数の5番目の型.</typeparam>
+        /// <typeparam name="T6">エントリーポイント制御引数の6番目の型.</typeparam>
+        /// <typeparam name="T7">エントリーポイント制御引数の7番目の型.</typeparam>
+        /// <typeparam name="T8">エントリーポイント制御引数の8番目の型.</typeparam>
+        /// <typeparam name="T9">エントリーポイント制御引数の9番目の型.</typeparam>
+        /// <returns><see cref="RegistrationBuilder.WithParameter{T}(T)"/>で登録済みの<see cref="RegistrationBuilder"/>.</returns>
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        public static RegistrationBuilder WithEntryParameter<T1, T2, T3, T4, T5, T6, T7, T8, T9>(this RegistrationBuilder builder, Action<T1, T2, T3, T4, T5, T6, T7, T8, T9, CancellationToken> entry)
+        {
+            return builder.WithParameter(entry);
+        }
+
+        /// <summary>
+        /// <see cref="EntryPointContainer{T1, T2, T3, T4, T5, T6, T7, T8, T9, T10}"/>に登録するエントリーポイント制御引数.
+        /// </summary>
+        /// <param name="builder"><see cref="RegistrationBuilder"/>.</param>
+        /// <param name="entry">エントリーポイント制御引数.</param>
+        /// <typeparam name="T1">エントリーポイント制御引数の1番目の型.</typeparam>
+        /// <typeparam name="T2">エントリーポイント制御引数の2番目の型.</typeparam>
+        /// <typeparam name="T3">エントリーポイント制御引数の3番目の型.</typeparam>
+        /// <typeparam name="T4">エントリーポイント制御引数の4番目の型.</typeparam>
+        /// <typeparam name="T5">エントリーポイント制御引数の5番目の型.</typeparam>
+        /// <typeparam name="T6">エントリーポイント制御引数の6番目の型.</typeparam>
+        /// <typeparam name="T7">エントリーポイント制御引数の7番目の型.</typeparam>
+        /// <typeparam name="T8">エントリーポイント制御引数の8番目の型.</typeparam>
+        /// <typeparam name="T9">エントリーポイント制御引数の9番目の型.</typeparam>
+        /// <typeparam name="T10">エントリーポイント制御引数の10番目の型.</typeparam>
+        /// <returns><see cref="RegistrationBuilder.WithParameter{T}(T)"/>で登録済みの<see cref="RegistrationBuilder"/>.</returns>
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        public static RegistrationBuilder WithEntryParameter<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10>(this RegistrationBuilder builder, Action<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, CancellationToken> entry)
+        {
+            return builder.WithParameter(entry);
+        }
+
+        /// <summary>
+        /// <see cref="EntryPointContainer{T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11}"/>に登録するエントリーポイント制御引数.
+        /// </summary>
+        /// <param name="builder"><see cref="RegistrationBuilder"/>.</param>
+        /// <param name="entry">エントリーポイント制御引数.</param>
+        /// <typeparam name="T1">エントリーポイント制御引数の1番目の型.</typeparam>
+        /// <typeparam name="T2">エントリーポイント制御引数の2番目の型.</typeparam>
+        /// <typeparam name="T3">エントリーポイント制御引数の3番目の型.</typeparam>
+        /// <typeparam name="T4">エントリーポイント制御引数の4番目の型.</typeparam>
+        /// <typeparam name="T5">エントリーポイント制御引数の5番目の型.</typeparam>
+        /// <typeparam name="T6">エントリーポイント制御引数の6番目の型.</typeparam>
+        /// <typeparam name="T7">エントリーポイント制御引数の7番目の型.</typeparam>
+        /// <typeparam name="T8">エントリーポイント制御引数の8番目の型.</typeparam>
+        /// <typeparam name="T9">エントリーポイント制御引数の9番目の型.</typeparam>
+        /// <typeparam name="T10">エントリーポイント制御引数の10番目の型.</typeparam>
+        /// <typeparam name="T11">エントリーポイント制御引数の11番目の型.</typeparam>
+        /// <returns><see cref="RegistrationBuilder.WithParameter{T}(T)"/>で登録済みの<see cref="RegistrationBuilder"/>.</returns>
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        public static RegistrationBuilder WithEntryParameter<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11>(this RegistrationBuilder builder, Action<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, CancellationToken> entry)
+        {
+            return builder.WithParameter(entry);
+        }
+
+        /// <summary>
+        /// <see cref="EntryPointContainer{T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12}"/>に登録するエントリーポイント制御引数.
+        /// </summary>
+        /// <param name="builder"><see cref="RegistrationBuilder"/>.</param>
+        /// <param name="entry">エントリーポイント制御引数.</param>
+        /// <typeparam name="T1">エントリーポイント制御引数の1番目の型.</typeparam>
+        /// <typeparam name="T2">エントリーポイント制御引数の2番目の型.</typeparam>
+        /// <typeparam name="T3">エントリーポイント制御引数の3番目の型.</typeparam>
+        /// <typeparam name="T4">エントリーポイント制御引数の4番目の型.</typeparam>
+        /// <typeparam name="T5">エントリーポイント制御引数の5番目の型.</typeparam>
+        /// <typeparam name="T6">エントリーポイント制御引数の6番目の型.</typeparam>
+        /// <typeparam name="T7">エントリーポイント制御引数の7番目の型.</typeparam>
+        /// <typeparam name="T8">エントリーポイント制御引数の8番目の型.</typeparam>
+        /// <typeparam name="T9">エントリーポイント制御引数の9番目の型.</typeparam>
+        /// <typeparam name="T10">エントリーポイント制御引数の10番目の型.</typeparam>
+        /// <typeparam name="T11">エントリーポイント制御引数の11番目の型.</typeparam>
+        /// <typeparam name="T12">エントリーポイント制御引数の12番目の型.</typeparam>
+        /// <returns><see cref="RegistrationBuilder.WithParameter{T}(T)"/>で登録済みの<see cref="RegistrationBuilder"/>.</returns>
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        public static RegistrationBuilder WithEntryParameter<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12>(this RegistrationBuilder builder, Action<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, CancellationToken> entry)
+        {
+            return builder.WithParameter(entry);
+        }
+
+        /// <summary>
+        /// <see cref="EntryPointContainer{T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13}"/>に登録するエントリーポイント制御引数.
+        /// </summary>
+        /// <param name="builder"><see cref="RegistrationBuilder"/>.</param>
+        /// <param name="entry">エントリーポイント制御引数.</param>
+        /// <typeparam name="T1">エントリーポイント制御引数の1番目の型.</typeparam>
+        /// <typeparam name="T2">エントリーポイント制御引数の2番目の型.</typeparam>
+        /// <typeparam name="T3">エントリーポイント制御引数の3番目の型.</typeparam>
+        /// <typeparam name="T4">エントリーポイント制御引数の4番目の型.</typeparam>
+        /// <typeparam name="T5">エントリーポイント制御引数の5番目の型.</typeparam>
+        /// <typeparam name="T6">エントリーポイント制御引数の6番目の型.</typeparam>
+        /// <typeparam name="T7">エントリーポイント制御引数の7番目の型.</typeparam>
+        /// <typeparam name="T8">エントリーポイント制御引数の8番目の型.</typeparam>
+        /// <typeparam name="T9">エントリーポイント制御引数の9番目の型.</typeparam>
+        /// <typeparam name="T10">エントリーポイント制御引数の10番目の型.</typeparam>
+        /// <typeparam name="T11">エントリーポイント制御引数の11番目の型.</typeparam>
+        /// <typeparam name="T12">エントリーポイント制御引数の12番目の型.</typeparam>
+        /// <typeparam name="T13">エントリーポイント制御引数の13番目の型.</typeparam>
+        /// <returns><see cref="RegistrationBuilder.WithParameter{T}(T)"/>で登録済みの<see cref="RegistrationBuilder"/>.</returns>
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        public static RegistrationBuilder WithEntryParameter<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13>(this RegistrationBuilder builder, Action<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, CancellationToken> entry)
+        {
+            return builder.WithParameter(entry);
+        }
+
+        /// <summary>
+        /// <see cref="EntryPointContainer{T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14}"/>に登録するエントリーポイント制御引数.
+        /// </summary>
+        /// <param name="builder"><see cref="RegistrationBuilder"/>.</param>
+        /// <param name="entry">エントリーポイント制御引数.</param>
+        /// <typeparam name="T1">エントリーポイント制御引数の1番目の型.</typeparam>
+        /// <typeparam name="T2">エントリーポイント制御引数の2番目の型.</typeparam>
+        /// <typeparam name="T3">エントリーポイント制御引数の3番目の型.</typeparam>
+        /// <typeparam name="T4">エントリーポイント制御引数の4番目の型.</typeparam>
+        /// <typeparam name="T5">エントリーポイント制御引数の5番目の型.</typeparam>
+        /// <typeparam name="T6">エントリーポイント制御引数の6番目の型.</typeparam>
+        /// <typeparam name="T7">エントリーポイント制御引数の7番目の型.</typeparam>
+        /// <typeparam name="T8">エントリーポイント制御引数の8番目の型.</typeparam>
+        /// <typeparam name="T9">エントリーポイント制御引数の9番目の型.</typeparam>
+        /// <typeparam name="T10">エントリーポイント制御引数の10番目の型.</typeparam>
+        /// <typeparam name="T11">エントリーポイント制御引数の11番目の型.</typeparam>
+        /// <typeparam name="T12">エントリーポイント制御引数の12番目の型.</typeparam>
+        /// <typeparam name="T13">エントリーポイント制御引数の13番目の型.</typeparam>
+        /// <typeparam name="T14">エントリーポイント制御引数の14番目の型.</typeparam>
+        /// <returns><see cref="RegistrationBuilder.WithParameter{T}(T)"/>で登録済みの<see cref="RegistrationBuilder"/>.</returns>
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        public static RegistrationBuilder WithEntryParameter<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14>(this RegistrationBuilder builder, Action<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, CancellationToken> entry)
+        {
+            return builder.WithParameter(entry);
+        }
+
+        /// <summary>
+        /// <see cref="EntryPointContainer{T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15}"/>に登録するエントリーポイント制御引数.
+        /// </summary>
+        /// <param name="builder"><see cref="RegistrationBuilder"/>.</param>
+        /// <param name="entry">エントリーポイント制御引数.</param>
+        /// <typeparam name="T1">エントリーポイント制御引数の1番目の型.</typeparam>
+        /// <typeparam name="T2">エントリーポイント制御引数の2番目の型.</typeparam>
+        /// <typeparam name="T3">エントリーポイント制御引数の3番目の型.</typeparam>
+        /// <typeparam name="T4">エントリーポイント制御引数の4番目の型.</typeparam>
+        /// <typeparam name="T5">エントリーポイント制御引数の5番目の型.</typeparam>
+        /// <typeparam name="T6">エントリーポイント制御引数の6番目の型.</typeparam>
+        /// <typeparam name="T7">エントリーポイント制御引数の7番目の型.</typeparam>
+        /// <typeparam name="T8">エントリーポイント制御引数の8番目の型.</typeparam>
+        /// <typeparam name="T9">エントリーポイント制御引数の9番目の型.</typeparam>
+        /// <typeparam name="T10">エントリーポイント制御引数の10番目の型.</typeparam>
+        /// <typeparam name="T11">エントリーポイント制御引数の11番目の型.</typeparam>
+        /// <typeparam name="T12">エントリーポイント制御引数の12番目の型.</typeparam>
+        /// <typeparam name="T13">エントリーポイント制御引数の13番目の型.</typeparam>
+        /// <typeparam name="T14">エントリーポイント制御引数の14番目の型.</typeparam>
+        /// <typeparam name="T15">エントリーポイント制御引数の15番目の型.</typeparam>
+        /// <returns><see cref="RegistrationBuilder.WithParameter{T}(T)"/>で登録済みの<see cref="RegistrationBuilder"/>.</returns>
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        public static RegistrationBuilder WithEntryParameter<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15>(this RegistrationBuilder builder, Action<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, CancellationToken> entry)
+        {
+            return builder.WithParameter(entry);
+        }
+    }
+}
+#pragma warning restore SA1204
 #pragma warning restore SA1402
