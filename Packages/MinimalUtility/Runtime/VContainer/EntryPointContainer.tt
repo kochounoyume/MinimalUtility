@@ -5,11 +5,12 @@
 #pragma warning disable SA1402
 
 using System;
+using System.Threading;
 using VContainer.Unity;
 
 namespace MinimalUtility.VContainer
 {
-<# for (int i = 1; i < 17; i++) { var genericStr = "T" + string.Join(", T", Enumerable.Range(1, i)); #>
+<# for (int i = 1; i < 16; i++) { var genericStr = "T" + string.Join(", T", Enumerable.Range(1, i)); #>
     /// <summary>
     /// エントリーポイントを一括管理するコンテナクラス.
     /// </summary>
@@ -22,7 +23,8 @@ namespace MinimalUtility.VContainer
 <# for (int j = 1; j < i + 1; j++) { #>
         private readonly T<#= j #> instance<#= j #>;
 <# } #>
-        private readonly Action<<#= genericStr #>> start;
+        private readonly CancellationToken cancellationToken;
+        private readonly Action<<#= genericStr #>, CancellationToken> start;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="EntryPointContainer{<#= genericStr #>}"/> class.
@@ -30,26 +32,29 @@ namespace MinimalUtility.VContainer
 <# for (int j = 1; j < i + 1; j++) { #>
         /// <param name="instance<#= j #>">発火する<#= j #>番目のインスタンス.</param>
 <# } #>
+        /// <param name="cancellationToken">キャンセルトークン.</param>
         /// <param name="start">発火する処理.</param>
         public EntryPointContainer(
 <# for (int j = 1; j < i + 1; j++) { #>
             T<#= j #> instance<#= j #>,
 <# } #>
-            Action<<#= genericStr #>> start)
+            CancellationToken cancellationToken,
+            Action<<#= genericStr #>, CancellationToken> start)
         {
 <# for (int j = 1; j < i + 1; j++) { #>
             this.instance<#= j #> = instance<#= j #>;
 <# } #>
+            this.cancellationToken = cancellationToken;
             this.start = start;
         }
 
         /// <inheritdoc />
         void IStartable.Start()
         {
-            start(instance<#= string.Join(", instance", Enumerable.Range(1, i)) #>);
+            start(instance<#= string.Join(", instance", Enumerable.Range(1, i)) #>, cancellationToken);
         }
     }
-<#= i == 16 ? "}" : "" #>
+<#= i == 15 ? "}" : "" #>
 <# } #>
 
 #pragma warning restore SA1402
