@@ -1,6 +1,5 @@
 ﻿using UnityEditor;
 using UnityEngine;
-using UnityEngine.UIElements;
 
 namespace MinimalUtility.Editor
 {
@@ -17,21 +16,15 @@ namespace MinimalUtility.Editor
         protected override string InspectorTypeName => "UnityEditor.TransformInspector";
 
         /// <inheritdoc/>
-        public override VisualElement CreateInspectorGUI()
+        public override void OnInspectorGUI()
         {
-            transformCache = (Transform)target;
-
-            VisualElement root = base.CreateInspectorGUI();
-            root.Add(new IMGUIContainer(() =>
+            base.OnInspectorGUI();
+            transformCache.position = EditorGUILayout.Vector3Field("World Position", transformCache.position);
+            using (new EditorGUI.DisabledScope(true))
             {
-                transformCache.position = EditorGUILayout.Vector3Field("World Position", transformCache.position);
-                using (new EditorGUI.DisabledScope(true))
-                {
-                    EditorGUILayout.Vector3Field("World Rotation", transformCache.rotation.eulerAngles);
-                    EditorGUILayout.Vector3Field("World Scale", transformCache.lossyScale);
-                }
-            }));
-            return root;
+                EditorGUILayout.Vector3Field("World Rotation", transformCache.rotation.eulerAngles);
+                EditorGUILayout.Vector3Field("World Scale", transformCache.lossyScale);
+            }
         }
     }
 }

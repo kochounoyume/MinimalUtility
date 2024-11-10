@@ -17,14 +17,9 @@ namespace MinimalUtility.Editor
         protected abstract string InspectorTypeName { get; }
 
         /// <inheritdoc/>
-        public override VisualElement CreateInspectorGUI()
+        public override void OnInspectorGUI()
         {
-            VisualElement root = new ();
-            root.Add(new IMGUIContainer(() =>
-            {
-                editor?.OnInspectorGUI();
-            }) { style = { paddingBottom = 2 } });
-            return root;
+            editor?.OnInspectorGUI();
         }
 
         private void OnEnable()
