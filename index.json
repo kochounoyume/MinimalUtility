@@ -47,7 +47,7 @@
   "api/MinimalUtility.Editor.AnimatorInspector.html": {
     "href": "api/MinimalUtility.Editor.AnimatorInspector.html",
     "title": "Class AnimatorInspector | |",
-    "keywords": "Class AnimatorInspector Namespace MinimalUtility.Editor Animator.keepAnimatorStateOnDisableやAnimator.writeDefaultValuesOnDisableも編集できる Animatorカスタムエディタ. public class AnimatorInspector : UnityComponentInspector<Animator> Inheritance object UnityComponentInspector<Animator> AnimatorInspector Properties InspectorTypeName 対象となるコンポーネントのインスペクター拡張既存クラスの名前. protected override string InspectorTypeName { get; } Property Value string Methods CreateInspectorGUI() public override VisualElement CreateInspectorGUI() Returns VisualElement"
+    "keywords": "Class AnimatorInspector Namespace MinimalUtility.Editor Animator.keepAnimatorStateOnDisableやAnimator.writeDefaultValuesOnDisableも編集できる Animatorカスタムエディタ. public class AnimatorInspector : UnityComponentInspector<Animator> Inheritance object UnityComponentInspector<Animator> AnimatorInspector Properties InspectorTypeName 対象となるコンポーネントのインスペクター拡張既存クラスの名前. protected override string InspectorTypeName { get; } Property Value string Methods OnInspectorGUI() public override void OnInspectorGUI()"
   },
   "api/MinimalUtility.Editor.DefaultInspector.html": {
     "href": "api/MinimalUtility.Editor.DefaultInspector.html",
@@ -57,12 +57,12 @@
   "api/MinimalUtility.Editor.TransformInspector.html": {
     "href": "api/MinimalUtility.Editor.TransformInspector.html",
     "title": "Class TransformInspector | |",
-    "keywords": "Class TransformInspector Namespace MinimalUtility.Editor ワールドの座標・回転・大きさも表示するTransformカスタムエディタ. public class TransformInspector : UnityComponentInspector<Transform> Inheritance object UnityComponentInspector<Transform> TransformInspector Properties InspectorTypeName 対象となるコンポーネントのインスペクター拡張既存クラスの名前. protected override string InspectorTypeName { get; } Property Value string Methods CreateInspectorGUI() public override VisualElement CreateInspectorGUI() Returns VisualElement"
+    "keywords": "Class TransformInspector Namespace MinimalUtility.Editor ワールドの座標・回転・大きさも表示するTransformカスタムエディタ. public class TransformInspector : UnityComponentInspector<Transform> Inheritance object UnityComponentInspector<Transform> TransformInspector Properties InspectorTypeName 対象となるコンポーネントのインスペクター拡張既存クラスの名前. protected override string InspectorTypeName { get; } Property Value string Methods OnInspectorGUI() public override void OnInspectorGUI()"
   },
   "api/MinimalUtility.Editor.UnityComponentInspector-1.html": {
     "href": "api/MinimalUtility.Editor.UnityComponentInspector-1.html",
     "title": "Class UnityComponentInspector<T> | |",
-    "keywords": "Class UnityComponentInspector<T> Namespace MinimalUtility.Editor 既存のUnityコンポーネントのカスタムエディタを作成するための基底クラスです. public abstract class UnityComponentInspector<T> : Editor where T : UnityEngine.Component Type Parameters T カスタムエディタを作成するコンポーネントの型. Inheritance object UnityComponentInspector<T> Derived AnimatorInspector TransformInspector Properties InspectorTypeName 対象となるコンポーネントのインスペクター拡張既存クラスの名前. protected abstract string InspectorTypeName { get; } Property Value string Methods CreateInspectorGUI() public override VisualElement CreateInspectorGUI() Returns VisualElement"
+    "keywords": "Class UnityComponentInspector<T> Namespace MinimalUtility.Editor 既存のUnityコンポーネントのカスタムエディタを作成するための基底クラスです. public abstract class UnityComponentInspector<T> : Editor where T : UnityEngine.Component Type Parameters T カスタムエディタを作成するコンポーネントの型. Inheritance object UnityComponentInspector<T> Derived AnimatorInspector TransformInspector Properties InspectorTypeName 対象となるコンポーネントのインスペクター拡張既存クラスの名前. protected abstract string InspectorTypeName { get; } Property Value string Methods OnInspectorGUI() public override void OnInspectorGUI()"
   },
   "api/MinimalUtility.Editor.html": {
     "href": "api/MinimalUtility.Editor.html",
@@ -88,6 +88,11 @@
     "href": "api/MinimalUtility.MemoryExtensions.html",
     "title": "Class MemoryExtensions | |",
     "keywords": "Class MemoryExtensions Namespace MinimalUtility Memory<T>, ReadOnlyMemory<T>の拡張メソッド. public static class MemoryExtensions Inheritance object MemoryExtensions Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Methods GetEnumerator<T>(in Memory<T>) Memory<T>のforeach対応. public static MemoryExtensions.Enumerator<T> GetEnumerator<T>(this in Memory<T> memory) Parameters memory Memory<T> 対象のMemory<T>. Returns MemoryExtensions.Enumerator<T> 要素を列挙するSpan<T>.Enumerator. Type Parameters T 要素の型. GetEnumerator<T>(in ReadOnlyMemory<T>) ReadOnlyMemory<T>のforeach対応. public static MemoryExtensions.Enumerator<T> GetEnumerator<T>(this in ReadOnlyMemory<T> memory) Parameters memory ReadOnlyMemory<T> 対象のReadOnlyMemory<T>. Returns MemoryExtensions.Enumerator<T> 要素を列挙するReadOnlySpan<T>.Enumerator. Type Parameters T 要素の型."
+  },
+  "api/MinimalUtility.MeshConst.html": {
+    "href": "api/MinimalUtility.MeshConst.html",
+    "title": "Class MeshConst | |",
+    "keywords": "Class MeshConst Namespace MinimalUtility プログラムで扱う頻度が高そうなMeshの定数群. public static class MeshConst Inheritance object MeshConst Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Properties Cube プリミティブキューブ. public static Mesh Cube { get; } Property Value Mesh"
   },
   "api/MinimalUtility.PooledObject-1.html": {
     "href": "api/MinimalUtility.PooledObject-1.html",
@@ -287,7 +292,7 @@
   "api/MinimalUtility.html": {
     "href": "api/MinimalUtility.html",
     "title": "Namespace MinimalUtility | |",
-    "keywords": "Namespace MinimalUtility Classes ButtonAttribute 指定したメソッドをUnityのInspector上に表示したボタンでテスト実行できるようになる属性. ComponentExtensions Componentの拡張メソッド. DisposableExtensions IDisposableの拡張メソッド. EqualityComparer EqualityComparer<T>の拡張クラス. GameObjectPool<T> ゲームオブジェクトのプール. 単一のルートオブジェクト下でのプーリングを想定. MemoryExtensions Memory<T>, ReadOnlyMemory<T>の拡張メソッド. RectTransformExtensions RectTransformの拡張メソッド. SafeAreaAdjuster セーフエリア調整スクリプト. StringUtils 文字列を扱うための静的メソッド群を提供します. ValueDisposable 値型で軽量なIDisposableのファクトリ. usingステートメントでの仕様を想定しており、IDisposableにキャストするとアロケーションが発生する. IDisposableにキャストして使用したい場合は素直に専用クラス実装するか、RxライブラリのIDisposableファクトリを使用する. Structs MemoryExtensions.Enumerator<T> ReadOnlyMemory<T>のforeach対応. PooledObject<T> usingステートメントスコープを抜けた際にインスタンスをプールに返却する構造体. ValueDisposable.Disposable usingステートメントスコープを抜けた際にコールバックを呼び出すための構造体. ValueDisposable.Disposable<T> usingステートメントスコープを抜けた際にコールバックを呼び出すための構造体."
+    "keywords": "Namespace MinimalUtility Classes ButtonAttribute 指定したメソッドをUnityのInspector上に表示したボタンでテスト実行できるようになる属性. ComponentExtensions Componentの拡張メソッド. DisposableExtensions IDisposableの拡張メソッド. EqualityComparer EqualityComparer<T>の拡張クラス. GameObjectPool<T> ゲームオブジェクトのプール. 単一のルートオブジェクト下でのプーリングを想定. MemoryExtensions Memory<T>, ReadOnlyMemory<T>の拡張メソッド. MeshConst プログラムで扱う頻度が高そうなMeshの定数群. RectTransformExtensions RectTransformの拡張メソッド. SafeAreaAdjuster セーフエリア調整スクリプト. StringUtils 文字列を扱うための静的メソッド群を提供します. ValueDisposable 値型で軽量なIDisposableのファクトリ. usingステートメントでの仕様を想定しており、IDisposableにキャストするとアロケーションが発生する. IDisposableにキャストして使用したい場合は素直に専用クラス実装するか、RxライブラリのIDisposableファクトリを使用する. Structs MemoryExtensions.Enumerator<T> ReadOnlyMemory<T>のforeach対応. PooledObject<T> usingステートメントスコープを抜けた際にインスタンスをプールに返却する構造体. ValueDisposable.Disposable usingステートメントスコープを抜けた際にコールバックを呼び出すための構造体. ValueDisposable.Disposable<T> usingステートメントスコープを抜けた際にコールバックを呼び出すための構造体."
   },
   "api/System.Runtime.CompilerServices.CallerArgumentExpressionAttribute.html": {
     "href": "api/System.Runtime.CompilerServices.CallerArgumentExpressionAttribute.html",

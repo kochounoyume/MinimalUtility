@@ -269,19 +269,6 @@ references:
   commentId: T:MinimalUtility.Editor.AnimatorInspector
   fullName: MinimalUtility.Editor.AnimatorInspector
   nameWithType: AnimatorInspector
-- uid: MinimalUtility.Editor.AnimatorInspector.CreateInspectorGUI
-  name: CreateInspectorGUI()
-  href: api/MinimalUtility.Editor.AnimatorInspector.html#MinimalUtility_Editor_AnimatorInspector_CreateInspectorGUI
-  commentId: M:MinimalUtility.Editor.AnimatorInspector.CreateInspectorGUI
-  fullName: MinimalUtility.Editor.AnimatorInspector.CreateInspectorGUI()
-  nameWithType: AnimatorInspector.CreateInspectorGUI()
-- uid: MinimalUtility.Editor.AnimatorInspector.CreateInspectorGUI*
-  name: CreateInspectorGUI
-  href: api/MinimalUtility.Editor.AnimatorInspector.html#MinimalUtility_Editor_AnimatorInspector_CreateInspectorGUI_
-  commentId: Overload:MinimalUtility.Editor.AnimatorInspector.CreateInspectorGUI
-  isSpec: "True"
-  fullName: MinimalUtility.Editor.AnimatorInspector.CreateInspectorGUI
-  nameWithType: AnimatorInspector.CreateInspectorGUI
 - uid: MinimalUtility.Editor.AnimatorInspector.InspectorTypeName
   name: InspectorTypeName
   href: api/MinimalUtility.Editor.AnimatorInspector.html#MinimalUtility_Editor_AnimatorInspector_InspectorTypeName
@@ -295,6 +282,19 @@ references:
   isSpec: "True"
   fullName: MinimalUtility.Editor.AnimatorInspector.InspectorTypeName
   nameWithType: AnimatorInspector.InspectorTypeName
+- uid: MinimalUtility.Editor.AnimatorInspector.OnInspectorGUI
+  name: OnInspectorGUI()
+  href: api/MinimalUtility.Editor.AnimatorInspector.html#MinimalUtility_Editor_AnimatorInspector_OnInspectorGUI
+  commentId: M:MinimalUtility.Editor.AnimatorInspector.OnInspectorGUI
+  fullName: MinimalUtility.Editor.AnimatorInspector.OnInspectorGUI()
+  nameWithType: AnimatorInspector.OnInspectorGUI()
+- uid: MinimalUtility.Editor.AnimatorInspector.OnInspectorGUI*
+  name: OnInspectorGUI
+  href: api/MinimalUtility.Editor.AnimatorInspector.html#MinimalUtility_Editor_AnimatorInspector_OnInspectorGUI_
+  commentId: Overload:MinimalUtility.Editor.AnimatorInspector.OnInspectorGUI
+  isSpec: "True"
+  fullName: MinimalUtility.Editor.AnimatorInspector.OnInspectorGUI
+  nameWithType: AnimatorInspector.OnInspectorGUI
 - uid: MinimalUtility.Editor.DefaultInspector
   name: DefaultInspector
   href: api/MinimalUtility.Editor.DefaultInspector.html
@@ -320,19 +320,6 @@ references:
   commentId: T:MinimalUtility.Editor.TransformInspector
   fullName: MinimalUtility.Editor.TransformInspector
   nameWithType: TransformInspector
-- uid: MinimalUtility.Editor.TransformInspector.CreateInspectorGUI
-  name: CreateInspectorGUI()
-  href: api/MinimalUtility.Editor.TransformInspector.html#MinimalUtility_Editor_TransformInspector_CreateInspectorGUI
-  commentId: M:MinimalUtility.Editor.TransformInspector.CreateInspectorGUI
-  fullName: MinimalUtility.Editor.TransformInspector.CreateInspectorGUI()
-  nameWithType: TransformInspector.CreateInspectorGUI()
-- uid: MinimalUtility.Editor.TransformInspector.CreateInspectorGUI*
-  name: CreateInspectorGUI
-  href: api/MinimalUtility.Editor.TransformInspector.html#MinimalUtility_Editor_TransformInspector_CreateInspectorGUI_
-  commentId: Overload:MinimalUtility.Editor.TransformInspector.CreateInspectorGUI
-  isSpec: "True"
-  fullName: MinimalUtility.Editor.TransformInspector.CreateInspectorGUI
-  nameWithType: TransformInspector.CreateInspectorGUI
 - uid: MinimalUtility.Editor.TransformInspector.InspectorTypeName
   name: InspectorTypeName
   href: api/MinimalUtility.Editor.TransformInspector.html#MinimalUtility_Editor_TransformInspector_InspectorTypeName
@@ -346,6 +333,19 @@ references:
   isSpec: "True"
   fullName: MinimalUtility.Editor.TransformInspector.InspectorTypeName
   nameWithType: TransformInspector.InspectorTypeName
+- uid: MinimalUtility.Editor.TransformInspector.OnInspectorGUI
+  name: OnInspectorGUI()
+  href: api/MinimalUtility.Editor.TransformInspector.html#MinimalUtility_Editor_TransformInspector_OnInspectorGUI
+  commentId: M:MinimalUtility.Editor.TransformInspector.OnInspectorGUI
+  fullName: MinimalUtility.Editor.TransformInspector.OnInspectorGUI()
+  nameWithType: TransformInspector.OnInspectorGUI()
+- uid: MinimalUtility.Editor.TransformInspector.OnInspectorGUI*
+  name: OnInspectorGUI
+  href: api/MinimalUtility.Editor.TransformInspector.html#MinimalUtility_Editor_TransformInspector_OnInspectorGUI_
+  commentId: Overload:MinimalUtility.Editor.TransformInspector.OnInspectorGUI
+  isSpec: "True"
+  fullName: MinimalUtility.Editor.TransformInspector.OnInspectorGUI
+  nameWithType: TransformInspector.OnInspectorGUI
 - uid: MinimalUtility.Editor.UnityComponentInspector`1
   name: UnityComponentInspector<T>
   href: api/MinimalUtility.Editor.UnityComponentInspector-1.html
@@ -355,23 +355,6 @@ references:
   fullName.vb: MinimalUtility.Editor.UnityComponentInspector(Of T)
   nameWithType: UnityComponentInspector<T>
   nameWithType.vb: UnityComponentInspector(Of T)
-- uid: MinimalUtility.Editor.UnityComponentInspector`1.CreateInspectorGUI
-  name: CreateInspectorGUI()
-  href: api/MinimalUtility.Editor.UnityComponentInspector-1.html#MinimalUtility_Editor_UnityComponentInspector_1_CreateInspectorGUI
-  commentId: M:MinimalUtility.Editor.UnityComponentInspector`1.CreateInspectorGUI
-  fullName: MinimalUtility.Editor.UnityComponentInspector<T>.CreateInspectorGUI()
-  fullName.vb: MinimalUtility.Editor.UnityComponentInspector(Of T).CreateInspectorGUI()
-  nameWithType: UnityComponentInspector<T>.CreateInspectorGUI()
-  nameWithType.vb: UnityComponentInspector(Of T).CreateInspectorGUI()
-- uid: MinimalUtility.Editor.UnityComponentInspector`1.CreateInspectorGUI*
-  name: CreateInspectorGUI
-  href: api/MinimalUtility.Editor.UnityComponentInspector-1.html#MinimalUtility_Editor_UnityComponentInspector_1_CreateInspectorGUI_
-  commentId: Overload:MinimalUtility.Editor.UnityComponentInspector`1.CreateInspectorGUI
-  isSpec: "True"
-  fullName: MinimalUtility.Editor.UnityComponentInspector<T>.CreateInspectorGUI
-  fullName.vb: MinimalUtility.Editor.UnityComponentInspector(Of T).CreateInspectorGUI
-  nameWithType: UnityComponentInspector<T>.CreateInspectorGUI
-  nameWithType.vb: UnityComponentInspector(Of T).CreateInspectorGUI
 - uid: MinimalUtility.Editor.UnityComponentInspector`1.InspectorTypeName
   name: InspectorTypeName
   href: api/MinimalUtility.Editor.UnityComponentInspector-1.html#MinimalUtility_Editor_UnityComponentInspector_1_InspectorTypeName
@@ -389,6 +372,23 @@ references:
   fullName.vb: MinimalUtility.Editor.UnityComponentInspector(Of T).InspectorTypeName
   nameWithType: UnityComponentInspector<T>.InspectorTypeName
   nameWithType.vb: UnityComponentInspector(Of T).InspectorTypeName
+- uid: MinimalUtility.Editor.UnityComponentInspector`1.OnInspectorGUI
+  name: OnInspectorGUI()
+  href: api/MinimalUtility.Editor.UnityComponentInspector-1.html#MinimalUtility_Editor_UnityComponentInspector_1_OnInspectorGUI
+  commentId: M:MinimalUtility.Editor.UnityComponentInspector`1.OnInspectorGUI
+  fullName: MinimalUtility.Editor.UnityComponentInspector<T>.OnInspectorGUI()
+  fullName.vb: MinimalUtility.Editor.UnityComponentInspector(Of T).OnInspectorGUI()
+  nameWithType: UnityComponentInspector<T>.OnInspectorGUI()
+  nameWithType.vb: UnityComponentInspector(Of T).OnInspectorGUI()
+- uid: MinimalUtility.Editor.UnityComponentInspector`1.OnInspectorGUI*
+  name: OnInspectorGUI
+  href: api/MinimalUtility.Editor.UnityComponentInspector-1.html#MinimalUtility_Editor_UnityComponentInspector_1_OnInspectorGUI_
+  commentId: Overload:MinimalUtility.Editor.UnityComponentInspector`1.OnInspectorGUI
+  isSpec: "True"
+  fullName: MinimalUtility.Editor.UnityComponentInspector<T>.OnInspectorGUI
+  fullName.vb: MinimalUtility.Editor.UnityComponentInspector(Of T).OnInspectorGUI
+  nameWithType: UnityComponentInspector<T>.OnInspectorGUI
+  nameWithType.vb: UnityComponentInspector(Of T).OnInspectorGUI
 - uid: MinimalUtility.EqualityComparer
   name: EqualityComparer
   href: api/MinimalUtility.EqualityComparer.html
@@ -700,6 +700,25 @@ references:
   fullName.vb: MinimalUtility.MemoryExtensions.GetEnumerator(Of T)(System.ReadOnlyMemory(Of T))
   nameWithType: MemoryExtensions.GetEnumerator<T>(in ReadOnlyMemory<T>)
   nameWithType.vb: MemoryExtensions.GetEnumerator(Of T)(ReadOnlyMemory(Of T))
+- uid: MinimalUtility.MeshConst
+  name: MeshConst
+  href: api/MinimalUtility.MeshConst.html
+  commentId: T:MinimalUtility.MeshConst
+  fullName: MinimalUtility.MeshConst
+  nameWithType: MeshConst
+- uid: MinimalUtility.MeshConst.Cube
+  name: Cube
+  href: api/MinimalUtility.MeshConst.html#MinimalUtility_MeshConst_Cube
+  commentId: P:MinimalUtility.MeshConst.Cube
+  fullName: MinimalUtility.MeshConst.Cube
+  nameWithType: MeshConst.Cube
+- uid: MinimalUtility.MeshConst.Cube*
+  name: Cube
+  href: api/MinimalUtility.MeshConst.html#MinimalUtility_MeshConst_Cube_
+  commentId: Overload:MinimalUtility.MeshConst.Cube
+  isSpec: "True"
+  fullName: MinimalUtility.MeshConst.Cube
+  nameWithType: MeshConst.Cube
 - uid: MinimalUtility.PooledObject`1
   name: PooledObject<T>
   href: api/MinimalUtility.PooledObject-1.html
