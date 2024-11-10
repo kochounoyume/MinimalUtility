@@ -10,8 +10,6 @@ namespace MinimalUtility.Editor
     [CustomEditor(typeof(Transform))]
     public class TransformInspector : UnityComponentInspector<Transform>
     {
-        private Transform transformCache;
-
         /// <inheritdoc/>
         protected override string InspectorTypeName => "UnityEditor.TransformInspector";
 
@@ -19,11 +17,12 @@ namespace MinimalUtility.Editor
         public override void OnInspectorGUI()
         {
             base.OnInspectorGUI();
-            transformCache.position = EditorGUILayout.Vector3Field("World Position", transformCache.position);
+            var transform = (Transform)target;
+            transform.position = EditorGUILayout.Vector3Field("World Position", transform.position);
             using (new EditorGUI.DisabledScope(true))
             {
-                EditorGUILayout.Vector3Field("World Rotation", transformCache.rotation.eulerAngles);
-                EditorGUILayout.Vector3Field("World Scale", transformCache.lossyScale);
+                EditorGUILayout.Vector3Field("World Rotation", transform.rotation.eulerAngles);
+                EditorGUILayout.Vector3Field("World Scale", transform.lossyScale);
             }
         }
     }
