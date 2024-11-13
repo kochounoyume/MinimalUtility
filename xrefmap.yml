@@ -805,6 +805,49 @@ references:
   fullName.vb: MinimalUtility.R3.ObservableExtensions.SubscribeLock(Of T, TGate)(Observable(Of T), TGate, System.Action(Of T))
   nameWithType: ObservableExtensions.SubscribeLock<T, TGate>(Observable<T>, TGate, Action<T>)
   nameWithType.vb: ObservableExtensions.SubscribeLock(Of T, TGate)(Observable(Of T), TGate, Action(Of T))
+- uid: MinimalUtility.R3.ObservableExtensions.Tween*
+  name: Tween
+  href: api/MinimalUtility.R3.ObservableExtensions.html#MinimalUtility_R3_ObservableExtensions_Tween_
+  commentId: Overload:MinimalUtility.R3.ObservableExtensions.Tween
+  isSpec: "True"
+  fullName: MinimalUtility.R3.ObservableExtensions.Tween
+  nameWithType: ObservableExtensions.Tween
+- uid: MinimalUtility.R3.ObservableExtensions.Tween``1(Observable{``0},Color,Color,System.Single,System.TimeProvider)
+  name: Tween<T>(Observable<T>, Color, Color, float, TimeProvider)
+  href: api/MinimalUtility.R3.ObservableExtensions.html#MinimalUtility_R3_ObservableExtensions_Tween__1_Observable___0__Color_Color_System_Single_System_TimeProvider_
+  commentId: M:MinimalUtility.R3.ObservableExtensions.Tween``1(Observable{``0},Color,Color,System.Single,System.TimeProvider)
+  name.vb: Tween(Of T)(Observable(Of T), Color, Color, Single, TimeProvider)
+  fullName: MinimalUtility.R3.ObservableExtensions.Tween<T>(Observable<T>, Color, Color, float, System.TimeProvider)
+  fullName.vb: MinimalUtility.R3.ObservableExtensions.Tween(Of T)(Observable(Of T), Color, Color, Single, System.TimeProvider)
+  nameWithType: ObservableExtensions.Tween<T>(Observable<T>, Color, Color, float, TimeProvider)
+  nameWithType.vb: ObservableExtensions.Tween(Of T)(Observable(Of T), Color, Color, Single, TimeProvider)
+- uid: MinimalUtility.R3.ObservableExtensions.Tween``1(Observable{``0},System.Single,System.Single,System.Single,System.TimeProvider)
+  name: Tween<T>(Observable<T>, float, float, float, TimeProvider)
+  href: api/MinimalUtility.R3.ObservableExtensions.html#MinimalUtility_R3_ObservableExtensions_Tween__1_Observable___0__System_Single_System_Single_System_Single_System_TimeProvider_
+  commentId: M:MinimalUtility.R3.ObservableExtensions.Tween``1(Observable{``0},System.Single,System.Single,System.Single,System.TimeProvider)
+  name.vb: Tween(Of T)(Observable(Of T), Single, Single, Single, TimeProvider)
+  fullName: MinimalUtility.R3.ObservableExtensions.Tween<T>(Observable<T>, float, float, float, System.TimeProvider)
+  fullName.vb: MinimalUtility.R3.ObservableExtensions.Tween(Of T)(Observable(Of T), Single, Single, Single, System.TimeProvider)
+  nameWithType: ObservableExtensions.Tween<T>(Observable<T>, float, float, float, TimeProvider)
+  nameWithType.vb: ObservableExtensions.Tween(Of T)(Observable(Of T), Single, Single, Single, TimeProvider)
+- uid: MinimalUtility.R3.ObservableExtensions.Tween``1(Observable{``0},Vector2,Vector2,System.Single,System.TimeProvider)
+  name: Tween<T>(Observable<T>, Vector2, Vector2, float, TimeProvider)
+  href: api/MinimalUtility.R3.ObservableExtensions.html#MinimalUtility_R3_ObservableExtensions_Tween__1_Observable___0__Vector2_Vector2_System_Single_System_TimeProvider_
+  commentId: M:MinimalUtility.R3.ObservableExtensions.Tween``1(Observable{``0},Vector2,Vector2,System.Single,System.TimeProvider)
+  name.vb: Tween(Of T)(Observable(Of T), Vector2, Vector2, Single, TimeProvider)
+  fullName: MinimalUtility.R3.ObservableExtensions.Tween<T>(Observable<T>, Vector2, Vector2, float, System.TimeProvider)
+  fullName.vb: MinimalUtility.R3.ObservableExtensions.Tween(Of T)(Observable(Of T), Vector2, Vector2, Single, System.TimeProvider)
+  nameWithType: ObservableExtensions.Tween<T>(Observable<T>, Vector2, Vector2, float, TimeProvider)
+  nameWithType.vb: ObservableExtensions.Tween(Of T)(Observable(Of T), Vector2, Vector2, Single, TimeProvider)
+- uid: MinimalUtility.R3.ObservableExtensions.Tween``1(Observable{``0},Vector3,Vector3,System.Single,System.TimeProvider)
+  name: Tween<T>(Observable<T>, Vector3, Vector3, float, TimeProvider)
+  href: api/MinimalUtility.R3.ObservableExtensions.html#MinimalUtility_R3_ObservableExtensions_Tween__1_Observable___0__Vector3_Vector3_System_Single_System_TimeProvider_
+  commentId: M:MinimalUtility.R3.ObservableExtensions.Tween``1(Observable{``0},Vector3,Vector3,System.Single,System.TimeProvider)
+  name.vb: Tween(Of T)(Observable(Of T), Vector3, Vector3, Single, TimeProvider)
+  fullName: MinimalUtility.R3.ObservableExtensions.Tween<T>(Observable<T>, Vector3, Vector3, float, System.TimeProvider)
+  fullName.vb: MinimalUtility.R3.ObservableExtensions.Tween(Of T)(Observable(Of T), Vector3, Vector3, Single, System.TimeProvider)
+  nameWithType: ObservableExtensions.Tween<T>(Observable<T>, Vector3, Vector3, float, TimeProvider)
+  nameWithType.vb: ObservableExtensions.Tween(Of T)(Observable(Of T), Vector3, Vector3, Single, TimeProvider)
 - uid: MinimalUtility.R3.ObservableExtensions.WaitValueChangedAsync*
   name: WaitValueChangedAsync
   href: api/MinimalUtility.R3.ObservableExtensions.html#MinimalUtility_R3_ObservableExtensions_WaitValueChangedAsync_

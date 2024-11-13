@@ -360,6 +360,234 @@ Class ObservableExtensions  <a class="header-action link-secondary" title="View 
 
 
 
+  <a id="MinimalUtility_R3_ObservableExtensions_Tween_" data-uid="MinimalUtility.R3.ObservableExtensions.Tween*"></a>
+
+  <h3 id="MinimalUtility_R3_ObservableExtensions_Tween__1_Observable___0__Color_Color_System_Single_System_TimeProvider_" data-uid="MinimalUtility.R3.ObservableExtensions.Tween``1(Observable{``0},Color,Color,System.Single,System.TimeProvider)">
+  Tween&lt;T&gt;(Observable&lt;T&gt;, Color, Color, float, TimeProvider)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/R3/ObservableExtensions.Tween.cs/#L67"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>指定した時間で指定した値から指定した値まで補間するObservableを生成する.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Observable&lt;Color&gt; Tween&lt;T&gt;(this Observable&lt;T&gt; source, Color start, Color end, float duration, TimeProvider timeProvider = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>source</code> <span class="xref">Observable</span>&lt;T&gt;</dt>
+    <dd><p>元のObservable.</p>
+</dd>
+    <dt><code>start</code> <span class="xref">Color</span></dt>
+    <dd><p>開始値.</p>
+</dd>
+    <dt><code>end</code> <span class="xref">Color</span></dt>
+    <dd><p>終了値.</p>
+</dd>
+    <dt><code>duration</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>補間時間.</p>
+</dd>
+    <dt><code>timeProvider</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.timeprovider">TimeProvider</a></dt>
+    <dd><p>時間プロバイダ.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Observable</span>&lt;<span class="xref">Color</span>&gt;</dt>
+    <dd><p>補間するObservable.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>元のObservableの型.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="MinimalUtility_R3_ObservableExtensions_Tween_" data-uid="MinimalUtility.R3.ObservableExtensions.Tween*"></a>
+
+  <h3 id="MinimalUtility_R3_ObservableExtensions_Tween__1_Observable___0__System_Single_System_Single_System_Single_System_TimeProvider_" data-uid="MinimalUtility.R3.ObservableExtensions.Tween``1(Observable{``0},System.Single,System.Single,System.Single,System.TimeProvider)">
+  Tween&lt;T&gt;(Observable&lt;T&gt;, float, float, float, TimeProvider)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/R3/ObservableExtensions.Tween.cs/#L22"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>指定した時間で指定した値から指定した値まで補間するObservableを生成する.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Observable&lt;float&gt; Tween&lt;T&gt;(this Observable&lt;T&gt; source, float start, float end, float duration, TimeProvider timeProvider = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>source</code> <span class="xref">Observable</span>&lt;T&gt;</dt>
+    <dd><p>元のObservable.</p>
+</dd>
+    <dt><code>start</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>開始値.</p>
+</dd>
+    <dt><code>end</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>終了値.</p>
+</dd>
+    <dt><code>duration</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>補間時間.</p>
+</dd>
+    <dt><code>timeProvider</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.timeprovider">TimeProvider</a></dt>
+    <dd><p>時間プロバイダ.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Observable</span>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>&gt;</dt>
+    <dd><p>補間するObservable.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>元のObservableの型.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="MinimalUtility_R3_ObservableExtensions_Tween_" data-uid="MinimalUtility.R3.ObservableExtensions.Tween*"></a>
+
+  <h3 id="MinimalUtility_R3_ObservableExtensions_Tween__1_Observable___0__Vector2_Vector2_System_Single_System_TimeProvider_" data-uid="MinimalUtility.R3.ObservableExtensions.Tween``1(Observable{``0},Vector2,Vector2,System.Single,System.TimeProvider)">
+  Tween&lt;T&gt;(Observable&lt;T&gt;, Vector2, Vector2, float, TimeProvider)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/R3/ObservableExtensions.Tween.cs/#L52"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>指定した時間で指定した値から指定した値まで補間するObservableを生成する.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Observable&lt;Vector2&gt; Tween&lt;T&gt;(this Observable&lt;T&gt; source, Vector2 start, Vector2 end, float duration, TimeProvider timeProvider = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>source</code> <span class="xref">Observable</span>&lt;T&gt;</dt>
+    <dd><p>元のObservable.</p>
+</dd>
+    <dt><code>start</code> <span class="xref">Vector2</span></dt>
+    <dd><p>開始値.</p>
+</dd>
+    <dt><code>end</code> <span class="xref">Vector2</span></dt>
+    <dd><p>終了値.</p>
+</dd>
+    <dt><code>duration</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>補間時間.</p>
+</dd>
+    <dt><code>timeProvider</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.timeprovider">TimeProvider</a></dt>
+    <dd><p>時間プロバイダ.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Observable</span>&lt;<span class="xref">Vector2</span>&gt;</dt>
+    <dd><p>補間するObservable.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>元のObservableの型.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="MinimalUtility_R3_ObservableExtensions_Tween_" data-uid="MinimalUtility.R3.ObservableExtensions.Tween*"></a>
+
+  <h3 id="MinimalUtility_R3_ObservableExtensions_Tween__1_Observable___0__Vector3_Vector3_System_Single_System_TimeProvider_" data-uid="MinimalUtility.R3.ObservableExtensions.Tween``1(Observable{``0},Vector3,Vector3,System.Single,System.TimeProvider)">
+  Tween&lt;T&gt;(Observable&lt;T&gt;, Vector3, Vector3, float, TimeProvider)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/kochounoyume/MinimalUtility/blob/main/Packages/MinimalUtility/Runtime/R3/ObservableExtensions.Tween.cs/#L37"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>指定した時間で指定した値から指定した値まで補間するObservableを生成する.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Observable&lt;Vector3&gt; Tween&lt;T&gt;(this Observable&lt;T&gt; source, Vector3 start, Vector3 end, float duration, TimeProvider timeProvider = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>source</code> <span class="xref">Observable</span>&lt;T&gt;</dt>
+    <dd><p>元のObservable.</p>
+</dd>
+    <dt><code>start</code> <span class="xref">Vector3</span></dt>
+    <dd><p>開始値.</p>
+</dd>
+    <dt><code>end</code> <span class="xref">Vector3</span></dt>
+    <dd><p>終了値.</p>
+</dd>
+    <dt><code>duration</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>補間時間.</p>
+</dd>
+    <dt><code>timeProvider</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.timeprovider">TimeProvider</a></dt>
+    <dd><p>時間プロバイダ.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Observable</span>&lt;<span class="xref">Vector3</span>&gt;</dt>
+    <dd><p>補間するObservable.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>元のObservableの型.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
   <a id="MinimalUtility_R3_ObservableExtensions_WaitValueChangedAsync_" data-uid="MinimalUtility.R3.ObservableExtensions.WaitValueChangedAsync*"></a>
 
   <h3 id="MinimalUtility_R3_ObservableExtensions_WaitValueChangedAsync__1_ReadOnlyReactiveProperty___0__System_Func___0_System_Boolean__System_Threading_CancellationToken__" data-uid="MinimalUtility.R3.ObservableExtensions.WaitValueChangedAsync``1(ReadOnlyReactiveProperty{``0},System.Func{``0,System.Boolean},System.Threading.CancellationToken@)">
