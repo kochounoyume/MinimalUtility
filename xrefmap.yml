@@ -1926,6 +1926,44 @@ references:
   fullName.vb: MinimalUtility.ValueDisposable.Disposable(Of T)
   nameWithType: ValueDisposable.Disposable<T>
   nameWithType.vb: ValueDisposable.Disposable(Of T)
+- uid: MinimalUtility.VectorExtensions
+  name: VectorExtensions
+  href: api/MinimalUtility.VectorExtensions.html
+  commentId: T:MinimalUtility.VectorExtensions
+  fullName: MinimalUtility.VectorExtensions
+  nameWithType: VectorExtensions
+- uid: MinimalUtility.VectorExtensions.XZ(Vector3@)
+  name: XZ(in Vector3)
+  href: api/MinimalUtility.VectorExtensions.html#MinimalUtility_VectorExtensions_XZ_Vector3__
+  commentId: M:MinimalUtility.VectorExtensions.XZ(Vector3@)
+  name.vb: XZ(Vector3)
+  fullName: MinimalUtility.VectorExtensions.XZ(in Vector3)
+  fullName.vb: MinimalUtility.VectorExtensions.XZ(Vector3)
+  nameWithType: VectorExtensions.XZ(in Vector3)
+  nameWithType.vb: VectorExtensions.XZ(Vector3)
+- uid: MinimalUtility.VectorExtensions.XZ*
+  name: XZ
+  href: api/MinimalUtility.VectorExtensions.html#MinimalUtility_VectorExtensions_XZ_
+  commentId: Overload:MinimalUtility.VectorExtensions.XZ
+  isSpec: "True"
+  fullName: MinimalUtility.VectorExtensions.XZ
+  nameWithType: VectorExtensions.XZ
+- uid: MinimalUtility.VectorExtensions.YZ(Vector3@)
+  name: YZ(in Vector3)
+  href: api/MinimalUtility.VectorExtensions.html#MinimalUtility_VectorExtensions_YZ_Vector3__
+  commentId: M:MinimalUtility.VectorExtensions.YZ(Vector3@)
+  name.vb: YZ(Vector3)
+  fullName: MinimalUtility.VectorExtensions.YZ(in Vector3)
+  fullName.vb: MinimalUtility.VectorExtensions.YZ(Vector3)
+  nameWithType: VectorExtensions.YZ(in Vector3)
+  nameWithType.vb: VectorExtensions.YZ(Vector3)
+- uid: MinimalUtility.VectorExtensions.YZ*
+  name: YZ
+  href: api/MinimalUtility.VectorExtensions.html#MinimalUtility_VectorExtensions_YZ_
+  commentId: Overload:MinimalUtility.VectorExtensions.YZ
+  isSpec: "True"
+  fullName: MinimalUtility.VectorExtensions.YZ
+  nameWithType: VectorExtensions.YZ
 - uid: MinimalUtility.WebRequest
   name: MinimalUtility.WebRequest
   href: api/MinimalUtility.WebRequest.html
