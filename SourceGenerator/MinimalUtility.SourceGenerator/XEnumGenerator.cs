@@ -25,12 +25,25 @@ internal sealed class XEnumGenerator : IIncrementalGenerator
             .Where(static method => method is
             {
                 IsGenericMethod: true,
-                Name: "GetValues" or "GetNames" or "GetName" or "IsDefined" or "Parse" or "TryParse"
-                or "ToXEnumString" or "HasBitFlag" or "GetEnumMemberValue"
+                Name: "GetValues" or "GetLength" or "GetNames" or "GetName" or "IsDefined" or "Parse" or "TryParse"
+                or "ToXEnumString" or "GetEnumMemberValue" or "HasBitFlag" or "ConstructFlags"
             }
             && method.ContainingType.ToDisplayString() != "MinimalUtility.XEnum.Cache<T>")
             .Collect();
         context.RegisterSourceOutput(methods, RegisterCoreImplementation);
+        var flagsAttributeSources = context.SyntaxProvider.ForAttributeWithMetadataName(
+            typeof(FlagsAttribute).FullName!,
+            static (_, token) =>
+            {
+                token.ThrowIfCancellationRequested();
+                return true;
+            },
+            static (context, token) =>
+            {
+                token.ThrowIfCancellationRequested();
+                return context;
+            }).Collect();
+        context.RegisterSourceOutput(flagsAttributeSources, RegisterGetEnumeratorExtensions);
     }
 
     private static void RegisterBasisClass(IncrementalGeneratorPostInitializationContext context)
@@ -64,9 +77,11 @@ internal sealed class XEnumGenerator : IIncrementalGenerator
                 [MethodImpl(MethodImplOptions.AggressiveInlining)]
                 public static string ToXEnumString<T>(this T value) where T : struct, Enum => Cache<T>.Default.GetName(value);
                 [MethodImpl(MethodImplOptions.AggressiveInlining)]
+                public static string GetEnumMemberValue<T>(this T value) where T : struct, Enum => Cache<T>.Default.GetEnumMemberValue(value);
+                [MethodImpl(MethodImplOptions.AggressiveInlining)]
                 public static bool HasBitFlag<T>(this T value, in T flag) where T : struct, Enum => Cache<T>.Default.HasBitFlag(value, flag);
                 [MethodImpl(MethodImplOptions.AggressiveInlining)]
-                public static string GetEnumMemberValue<T>(this T value) where T : struct, Enum => Cache<T>.Default.GetEnumMemberValue(value);
+                public static bool ConstructFlags<T>(this T value) where T : struct, Enum => Cache<T>.Default.ConstructFlags(value);
 
                 private abstract partial class Cache<T> where T : struct, Enum
                 {
@@ -79,8 +94,9 @@ internal sealed class XEnumGenerator : IIncrementalGenerator
                     public abstract bool IsDefined<TValue>(in TValue value) where TValue : struct;
                     public abstract T Parse(in string value);
                     public abstract bool TryParse(in string value, out T result);
-                    public abstract bool HasBitFlag(in T value, in T flag);
                     public abstract string GetEnumMemberValue(in T value);
+                    public abstract bool HasBitFlag(in T value, in T flag);
+                    public virtual bool ConstructFlags(in T value) => false;
                 }
             }
         }
@@ -344,18 +360,8 @@ internal sealed class XEnumGenerator : IIncrementalGenerator
                                                    return false;
                                            }
                                        }
-                                       public override bool HasBitFlag(in 
+                                       public override string GetEnumMemberValue(in 
                            """);
-            cacheSb.Append(typeFullName).Append(" value, in ").Append(typeFullName).Append(" flag) => ");
-            if (genericSymbol.ContainFlagsAttribute())
-            {
-                cacheSb.AppendLine("(value & flag) == flag;");
-            }
-            else
-            {
-                cacheSb.AppendLine("value == flag;");
-            }
-            cacheSb.Append("            public override string GetEnumMemberValue(in ");
             cacheSb.Append(typeFullName);
             cacheSb.Append(" value) => ");
 
@@ -371,6 +377,28 @@ internal sealed class XEnumGenerator : IIncrementalGenerator
                                                _ => throw new ArgumentOutOfRangeException(nameof(value), value, default)
                                            };
                                """);
+            }
+
+            var containsFlags = genericSymbol.ContainFlagsAttribute();
+            cacheSb.Append("            public override bool HasBitFlag(in ");
+            cacheSb.Append(typeFullName).Append(" value, in ").Append(typeFullName).Append(" flag) => ");
+            cacheSb.AppendLine(containsFlags ? "(value & flag) == flag;" : "value == flag;");
+
+            if (containsFlags)
+            {
+                cacheSb.Append("            public override bool ConstructFlags(in ");
+                cacheSb.Append(typeFullName);
+                cacheSb.Append("""
+                                value)
+                                           {
+                                                var flags = (
+                               """);
+                cacheSb.Append(baseType);
+                cacheSb.AppendLine("""
+                                    )value;
+                                                     return (flags & (flags - 1)) != 0;
+                                                }
+                                    """);
             }
 
             cacheSb.Append("""
@@ -395,5 +423,119 @@ internal sealed class XEnumGenerator : IIncrementalGenerator
                       """);
 
         context.AddSource("XEnum.Core.g.cs", mainSb.ToString());
+    }
+
+    private static void RegisterGetEnumeratorExtensions(SourceProductionContext context, ImmutableArray<GeneratorAttributeSyntaxContext> metaDataArray)
+    {
+        context.CancellationToken.ThrowIfCancellationRequested();
+        if (metaDataArray.IsEmpty) return;
+
+        foreach (var syntax in metaDataArray)
+        {
+            // using System.Runtime.CompilerServices;
+            //
+            // namespace MinimalUtility
+            // {
+            //     internal static class HogeExtensions
+            //     {
+            //
+            //         [MethodImpl(MethodImplOptions.AggressiveInlining)]
+            //         public static Enumerator GetEnumerator(this Hoge value)
+            //         {
+            //             return new Enumerator(value);
+            //         }
+            //
+            //         public struct Enumerator
+            //         {
+            //             private Hoge value;
+            //
+            //             public Hoge Current { get; private set; }
+            //
+            //             internal Enumerator(Hoge value)
+            //             {
+            //                 this.value = value;
+            //                 Current = default;
+            //             }
+            //
+            //             /// <inheritdoc/>
+            //             public bool MoveNext()
+            //             {
+            //                 var flags = (int)value;
+            //                 if (flags == 0) return false;
+            //                 Current = (Hoge)(flags & -flags); // get lowest flag
+            //                 value &= ~Current;
+            //                 return true;
+            //             }
+            //         }
+            //     }
+            // }
+
+            var baseType = ((INamedTypeSymbol)syntax.TargetSymbol).GetEnumBaseTypeStr();
+            var typeName = syntax.TargetSymbol.Name;
+            var fullTypeName = syntax.TargetSymbol.GetFullTypeName();
+
+            var sb = new StringBuilder("""
+                                       using System.Runtime.CompilerServices;
+                                       
+                                       namespace MinimalUtility
+                                       {
+                                           internal static class 
+                                       """);
+            sb.Append(typeName);
+            sb.Append("""
+                      Extensions
+                          {
+                              [MethodImpl(MethodImplOptions.AggressiveInlining)]
+                              public static Enumerator GetEnumerator(this 
+                      """);
+            sb.Append(fullTypeName);
+            sb.Append("""
+                       value) => new Enumerator(value);
+                      
+                              public struct Enumerator
+                              {
+                                  private 
+                      """);
+            sb.Append(fullTypeName);
+            sb.Append("""
+                       value;
+                                  public 
+                      """);
+            sb.Append(fullTypeName);
+            sb.Append("""
+                       Current { get; private set; }
+                      
+                                  internal Enumerator(
+                      """);
+            sb.Append(fullTypeName);
+            sb.Append("""
+                       value)
+                                  {
+                                      this.value = value;
+                                      Current = default;
+                                  }
+                      
+                                  public bool MoveNext()
+                                  {
+                                      var flags = (
+                      """);
+            sb.Append(baseType);
+            sb.Append("""
+                      )value;
+                                      if (flags == 0) return false;
+                                      Current = (
+                      """);
+            sb.Append(fullTypeName);
+            sb.Append("""
+                      )(flags & -flags); // get lowest flag
+                                      value &= ~Current;
+                                      return true;
+                                  }
+                              }
+                          }
+                      }
+                      """);
+            context.AddSource(fullTypeName + "Extensions.g.cs", sb.ToString());
+        }
     }
 }

@@ -68,19 +68,6 @@ internal static class SymbolExtensions
     }
 
     /// <summary>
-    /// 入れ子クラスであれば親クラス名を含めた型名を取得します
-    /// </summary>
-    /// <param name="typeSymbol">型情報</param>
-    /// <returns>入れ子クラスであれば親クラス名を含めた型名</returns>
-    [MethodImpl(MethodImplOptions.AggressiveInlining)]
-    public static string GetNestedName(this ISymbol typeSymbol)
-    {
-        return typeSymbol.ContainingType is null
-            ? typeSymbol.Name
-            : $"{typeSymbol.ContainingType.GetNestedName()}.{typeSymbol.Name}";
-    }
-
-    /// <summary>
     /// 列挙型が <see cref="FlagsAttribute"/> を持っているかどうかを取得します
     /// </summary>
     /// <param name="typeSymbol">列挙型の型情報</param>
