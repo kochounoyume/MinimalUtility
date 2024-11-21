@@ -411,6 +411,31 @@ references:
   fullName.vb: MinimalUtility.EqualityComparer.Create(Of T)(System.Func(Of T, T, Boolean), System.Func(Of T, Integer))
   nameWithType: EqualityComparer.Create<T>(Func<T, T, bool>, Func<T, int>)
   nameWithType.vb: EqualityComparer.Create(Of T)(Func(Of T, T, Boolean), Func(Of T, Integer))
+- uid: MinimalUtility.FlagsExAttribute
+  name: FlagsExAttribute
+  href: api/MinimalUtility.FlagsExAttribute.html
+  commentId: T:MinimalUtility.FlagsExAttribute
+  fullName: MinimalUtility.FlagsExAttribute
+  nameWithType: FlagsExAttribute
+- uid: MinimalUtility.FlagsExAttribute.#ctor
+  name: FlagsExAttribute()
+  href: api/MinimalUtility.FlagsExAttribute.html#MinimalUtility_FlagsExAttribute__ctor
+  commentId: M:MinimalUtility.FlagsExAttribute.#ctor
+  name.vb: New()
+  fullName: MinimalUtility.FlagsExAttribute.FlagsExAttribute()
+  fullName.vb: MinimalUtility.FlagsExAttribute.New()
+  nameWithType: FlagsExAttribute.FlagsExAttribute()
+  nameWithType.vb: FlagsExAttribute.New()
+- uid: MinimalUtility.FlagsExAttribute.#ctor*
+  name: FlagsExAttribute
+  href: api/MinimalUtility.FlagsExAttribute.html#MinimalUtility_FlagsExAttribute__ctor_
+  commentId: Overload:MinimalUtility.FlagsExAttribute.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: MinimalUtility.FlagsExAttribute.FlagsExAttribute
+  fullName.vb: MinimalUtility.FlagsExAttribute.New
+  nameWithType: FlagsExAttribute.FlagsExAttribute
+  nameWithType.vb: FlagsExAttribute.New
 - uid: MinimalUtility.GameObjectPool`1
   name: GameObjectPool<T>
   href: api/MinimalUtility.GameObjectPool-1.html

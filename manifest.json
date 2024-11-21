@@ -165,6 +165,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/MinimalUtility.FlagsExAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MinimalUtility.FlagsExAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/MinimalUtility.GameObjectPool-1.yml",
       "output": {
         ".html": {
