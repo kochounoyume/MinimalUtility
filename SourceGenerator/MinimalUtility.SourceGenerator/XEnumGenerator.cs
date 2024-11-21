@@ -32,7 +32,7 @@ internal sealed class XEnumGenerator : IIncrementalGenerator
             .Collect();
         context.RegisterSourceOutput(methods, RegisterCoreImplementation);
         var flagsAttributeSources = context.SyntaxProvider.ForAttributeWithMetadataName(
-            typeof(FlagsAttribute).FullName!,
+            "MinimalUtility.FlagsExAttribute",
             static (_, token) =>
             {
                 token.ThrowIfCancellationRequested();
