@@ -457,7 +457,6 @@ internal sealed class XEnumGenerator : IIncrementalGenerator
             //                 Current = default;
             //             }
             //
-            //             /// <inheritdoc/>
             //             public bool MoveNext()
             //             {
             //                 var flags = (int)value;
