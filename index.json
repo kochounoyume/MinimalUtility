@@ -54,6 +54,11 @@
     "title": "Class DefaultInspector | |",
     "keywords": "Class DefaultInspector Namespace MinimalUtility.Editor デフォルトのインスペクタービュー. public class DefaultInspector : Editor Inheritance object DefaultInspector Methods CreateInspectorGUI() public override VisualElement CreateInspectorGUI() Returns VisualElement"
   },
+  "api/MinimalUtility.Editor.TestUtils.html": {
+    "href": "api/MinimalUtility.Editor.TestUtils.html",
+    "title": "Class TestUtils | |",
+    "keywords": "Class TestUtils Namespace MinimalUtility.Editor テスト関連のユーティリティ. public static class TestUtils Inheritance object TestUtils Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Methods SuccessCompile(BuildTarget, string, params string[]) 指定したビルドターゲットでスクリプトをコンパイルし、成功したかどうかを返す. public static bool SuccessCompile(BuildTarget buildTarget, string outputPath = \"Temp/TestOutput\", params string[] scriptingDefines) Parameters buildTarget BuildTarget テスト対象環境. outputPath string 出力先パス. scriptingDefines string[] スクリプト条件コンパイル定義があれば登録. Returns bool 成功したかどうか."
+  },
   "api/MinimalUtility.Editor.TransformInspector.html": {
     "href": "api/MinimalUtility.Editor.TransformInspector.html",
     "title": "Class TransformInspector | |",
@@ -67,7 +72,7 @@
   "api/MinimalUtility.Editor.html": {
     "href": "api/MinimalUtility.Editor.html",
     "title": "Namespace MinimalUtility.Editor | |",
-    "keywords": "Namespace MinimalUtility.Editor Classes AnimatorInspector Animator.keepAnimatorStateOnDisableやAnimator.writeDefaultValuesOnDisableも編集できる Animatorカスタムエディタ. DefaultInspector デフォルトのインスペクタービュー. TransformInspector ワールドの座標・回転・大きさも表示するTransformカスタムエディタ. UnityComponentInspector<T> 既存のUnityコンポーネントのカスタムエディタを作成するための基底クラスです."
+    "keywords": "Namespace MinimalUtility.Editor Classes AnimatorInspector Animator.keepAnimatorStateOnDisableやAnimator.writeDefaultValuesOnDisableも編集できる Animatorカスタムエディタ. DefaultInspector デフォルトのインスペクタービュー. TestUtils テスト関連のユーティリティ. TransformInspector ワールドの座標・回転・大きさも表示するTransformカスタムエディタ. UnityComponentInspector<T> 既存のUnityコンポーネントのカスタムエディタを作成するための基底クラスです."
   },
   "api/MinimalUtility.EqualityComparer.html": {
     "href": "api/MinimalUtility.EqualityComparer.html",

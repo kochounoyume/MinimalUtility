@@ -314,6 +314,28 @@ references:
   isSpec: "True"
   fullName: MinimalUtility.Editor.DefaultInspector.CreateInspectorGUI
   nameWithType: DefaultInspector.CreateInspectorGUI
+- uid: MinimalUtility.Editor.TestUtils
+  name: TestUtils
+  href: api/MinimalUtility.Editor.TestUtils.html
+  commentId: T:MinimalUtility.Editor.TestUtils
+  fullName: MinimalUtility.Editor.TestUtils
+  nameWithType: TestUtils
+- uid: MinimalUtility.Editor.TestUtils.SuccessCompile(BuildTarget,System.String,System.String[])
+  name: SuccessCompile(BuildTarget, string, params string[])
+  href: api/MinimalUtility.Editor.TestUtils.html#MinimalUtility_Editor_TestUtils_SuccessCompile_BuildTarget_System_String_System_String___
+  commentId: M:MinimalUtility.Editor.TestUtils.SuccessCompile(BuildTarget,System.String,System.String[])
+  name.vb: SuccessCompile(BuildTarget, String, ParamArray String())
+  fullName: MinimalUtility.Editor.TestUtils.SuccessCompile(BuildTarget, string, params string[])
+  fullName.vb: MinimalUtility.Editor.TestUtils.SuccessCompile(BuildTarget, String, ParamArray String())
+  nameWithType: TestUtils.SuccessCompile(BuildTarget, string, params string[])
+  nameWithType.vb: TestUtils.SuccessCompile(BuildTarget, String, ParamArray String())
+- uid: MinimalUtility.Editor.TestUtils.SuccessCompile*
+  name: SuccessCompile
+  href: api/MinimalUtility.Editor.TestUtils.html#MinimalUtility_Editor_TestUtils_SuccessCompile_
+  commentId: Overload:MinimalUtility.Editor.TestUtils.SuccessCompile
+  isSpec: "True"
+  fullName: MinimalUtility.Editor.TestUtils.SuccessCompile
+  nameWithType: TestUtils.SuccessCompile
 - uid: MinimalUtility.Editor.TransformInspector
   name: TransformInspector
   href: api/MinimalUtility.Editor.TransformInspector.html
