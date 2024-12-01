@@ -705,23 +705,6 @@ references:
   fullName.vb: MinimalUtility.MemoryExtensions.Enumerator(Of T).MoveNext
   nameWithType: MemoryExtensions.Enumerator<T>.MoveNext
   nameWithType.vb: MemoryExtensions.Enumerator(Of T).MoveNext
-- uid: MinimalUtility.MemoryExtensions.Enumerator`1.Reset
-  name: Reset()
-  href: api/MinimalUtility.MemoryExtensions.Enumerator-1.html#MinimalUtility_MemoryExtensions_Enumerator_1_Reset
-  commentId: M:MinimalUtility.MemoryExtensions.Enumerator`1.Reset
-  fullName: MinimalUtility.MemoryExtensions.Enumerator<T>.Reset()
-  fullName.vb: MinimalUtility.MemoryExtensions.Enumerator(Of T).Reset()
-  nameWithType: MemoryExtensions.Enumerator<T>.Reset()
-  nameWithType.vb: MemoryExtensions.Enumerator(Of T).Reset()
-- uid: MinimalUtility.MemoryExtensions.Enumerator`1.Reset*
-  name: Reset
-  href: api/MinimalUtility.MemoryExtensions.Enumerator-1.html#MinimalUtility_MemoryExtensions_Enumerator_1_Reset_
-  commentId: Overload:MinimalUtility.MemoryExtensions.Enumerator`1.Reset
-  isSpec: "True"
-  fullName: MinimalUtility.MemoryExtensions.Enumerator<T>.Reset
-  fullName.vb: MinimalUtility.MemoryExtensions.Enumerator(Of T).Reset
-  nameWithType: MemoryExtensions.Enumerator<T>.Reset
-  nameWithType.vb: MemoryExtensions.Enumerator(Of T).Reset
 - uid: MinimalUtility.MemoryExtensions.GetEnumerator*
   name: GetEnumerator
   href: api/MinimalUtility.MemoryExtensions.html#MinimalUtility_MemoryExtensions_GetEnumerator_
@@ -1973,6 +1956,116 @@ references:
   fullName.vb: MinimalUtility.ValueDisposable.Disposable(Of T)
   nameWithType: ValueDisposable.Disposable<T>
   nameWithType.vb: ValueDisposable.Disposable(Of T)
+- uid: MinimalUtility.ValueTupleExtensions
+  name: ValueTupleExtensions
+  href: api/MinimalUtility.ValueTupleExtensions.html
+  commentId: T:MinimalUtility.ValueTupleExtensions
+  fullName: MinimalUtility.ValueTupleExtensions
+  nameWithType: ValueTupleExtensions
+- uid: MinimalUtility.ValueTupleExtensions.Enumerator`2
+  name: ValueTupleExtensions.Enumerator<T, TTuple>
+  href: api/MinimalUtility.ValueTupleExtensions.Enumerator-2.html
+  commentId: T:MinimalUtility.ValueTupleExtensions.Enumerator`2
+  name.vb: ValueTupleExtensions.Enumerator(Of T, TTuple)
+  fullName: MinimalUtility.ValueTupleExtensions.Enumerator<T, TTuple>
+  fullName.vb: MinimalUtility.ValueTupleExtensions.Enumerator(Of T, TTuple)
+  nameWithType: ValueTupleExtensions.Enumerator<T, TTuple>
+  nameWithType.vb: ValueTupleExtensions.Enumerator(Of T, TTuple)
+- uid: MinimalUtility.ValueTupleExtensions.Enumerator`2.Current
+  name: Current
+  href: api/MinimalUtility.ValueTupleExtensions.Enumerator-2.html#MinimalUtility_ValueTupleExtensions_Enumerator_2_Current
+  commentId: P:MinimalUtility.ValueTupleExtensions.Enumerator`2.Current
+  fullName: MinimalUtility.ValueTupleExtensions.Enumerator<T, TTuple>.Current
+  fullName.vb: MinimalUtility.ValueTupleExtensions.Enumerator(Of T, TTuple).Current
+  nameWithType: ValueTupleExtensions.Enumerator<T, TTuple>.Current
+  nameWithType.vb: ValueTupleExtensions.Enumerator(Of T, TTuple).Current
+- uid: MinimalUtility.ValueTupleExtensions.Enumerator`2.Current*
+  name: Current
+  href: api/MinimalUtility.ValueTupleExtensions.Enumerator-2.html#MinimalUtility_ValueTupleExtensions_Enumerator_2_Current_
+  commentId: Overload:MinimalUtility.ValueTupleExtensions.Enumerator`2.Current
+  isSpec: "True"
+  fullName: MinimalUtility.ValueTupleExtensions.Enumerator<T, TTuple>.Current
+  fullName.vb: MinimalUtility.ValueTupleExtensions.Enumerator(Of T, TTuple).Current
+  nameWithType: ValueTupleExtensions.Enumerator<T, TTuple>.Current
+  nameWithType.vb: ValueTupleExtensions.Enumerator(Of T, TTuple).Current
+- uid: MinimalUtility.ValueTupleExtensions.Enumerator`2.MoveNext
+  name: MoveNext()
+  href: api/MinimalUtility.ValueTupleExtensions.Enumerator-2.html#MinimalUtility_ValueTupleExtensions_Enumerator_2_MoveNext
+  commentId: M:MinimalUtility.ValueTupleExtensions.Enumerator`2.MoveNext
+  fullName: MinimalUtility.ValueTupleExtensions.Enumerator<T, TTuple>.MoveNext()
+  fullName.vb: MinimalUtility.ValueTupleExtensions.Enumerator(Of T, TTuple).MoveNext()
+  nameWithType: ValueTupleExtensions.Enumerator<T, TTuple>.MoveNext()
+  nameWithType.vb: ValueTupleExtensions.Enumerator(Of T, TTuple).MoveNext()
+- uid: MinimalUtility.ValueTupleExtensions.Enumerator`2.MoveNext*
+  name: MoveNext
+  href: api/MinimalUtility.ValueTupleExtensions.Enumerator-2.html#MinimalUtility_ValueTupleExtensions_Enumerator_2_MoveNext_
+  commentId: Overload:MinimalUtility.ValueTupleExtensions.Enumerator`2.MoveNext
+  isSpec: "True"
+  fullName: MinimalUtility.ValueTupleExtensions.Enumerator<T, TTuple>.MoveNext
+  fullName.vb: MinimalUtility.ValueTupleExtensions.Enumerator(Of T, TTuple).MoveNext
+  nameWithType: ValueTupleExtensions.Enumerator<T, TTuple>.MoveNext
+  nameWithType.vb: ValueTupleExtensions.Enumerator(Of T, TTuple).MoveNext
+- uid: MinimalUtility.ValueTupleExtensions.GetEnumerator*
+  name: GetEnumerator
+  href: api/MinimalUtility.ValueTupleExtensions.html#MinimalUtility_ValueTupleExtensions_GetEnumerator_
+  commentId: Overload:MinimalUtility.ValueTupleExtensions.GetEnumerator
+  isSpec: "True"
+  fullName: MinimalUtility.ValueTupleExtensions.GetEnumerator
+  nameWithType: ValueTupleExtensions.GetEnumerator
+- uid: MinimalUtility.ValueTupleExtensions.GetEnumerator``1(System.ValueTuple{``0,``0,``0,``0,``0,``0,``0}@)
+  name: GetEnumerator<T>(in (T, T, T, T, T, T, T))
+  href: api/MinimalUtility.ValueTupleExtensions.html#MinimalUtility_ValueTupleExtensions_GetEnumerator__1_System_ValueTuple___0___0___0___0___0___0___0___
+  commentId: M:MinimalUtility.ValueTupleExtensions.GetEnumerator``1(System.ValueTuple{``0,``0,``0,``0,``0,``0,``0}@)
+  name.vb: GetEnumerator(Of T)((T, T, T, T, T, T, T))
+  fullName: MinimalUtility.ValueTupleExtensions.GetEnumerator<T>(in (T, T, T, T, T, T, T))
+  fullName.vb: MinimalUtility.ValueTupleExtensions.GetEnumerator(Of T)((T, T, T, T, T, T, T))
+  nameWithType: ValueTupleExtensions.GetEnumerator<T>(in (T, T, T, T, T, T, T))
+  nameWithType.vb: ValueTupleExtensions.GetEnumerator(Of T)((T, T, T, T, T, T, T))
+- uid: MinimalUtility.ValueTupleExtensions.GetEnumerator``1(System.ValueTuple{``0,``0,``0,``0,``0,``0}@)
+  name: GetEnumerator<T>(in (T, T, T, T, T, T))
+  href: api/MinimalUtility.ValueTupleExtensions.html#MinimalUtility_ValueTupleExtensions_GetEnumerator__1_System_ValueTuple___0___0___0___0___0___0___
+  commentId: M:MinimalUtility.ValueTupleExtensions.GetEnumerator``1(System.ValueTuple{``0,``0,``0,``0,``0,``0}@)
+  name.vb: GetEnumerator(Of T)((T, T, T, T, T, T))
+  fullName: MinimalUtility.ValueTupleExtensions.GetEnumerator<T>(in (T, T, T, T, T, T))
+  fullName.vb: MinimalUtility.ValueTupleExtensions.GetEnumerator(Of T)((T, T, T, T, T, T))
+  nameWithType: ValueTupleExtensions.GetEnumerator<T>(in (T, T, T, T, T, T))
+  nameWithType.vb: ValueTupleExtensions.GetEnumerator(Of T)((T, T, T, T, T, T))
+- uid: MinimalUtility.ValueTupleExtensions.GetEnumerator``1(System.ValueTuple{``0,``0,``0,``0,``0}@)
+  name: GetEnumerator<T>(in (T, T, T, T, T))
+  href: api/MinimalUtility.ValueTupleExtensions.html#MinimalUtility_ValueTupleExtensions_GetEnumerator__1_System_ValueTuple___0___0___0___0___0___
+  commentId: M:MinimalUtility.ValueTupleExtensions.GetEnumerator``1(System.ValueTuple{``0,``0,``0,``0,``0}@)
+  name.vb: GetEnumerator(Of T)((T, T, T, T, T))
+  fullName: MinimalUtility.ValueTupleExtensions.GetEnumerator<T>(in (T, T, T, T, T))
+  fullName.vb: MinimalUtility.ValueTupleExtensions.GetEnumerator(Of T)((T, T, T, T, T))
+  nameWithType: ValueTupleExtensions.GetEnumerator<T>(in (T, T, T, T, T))
+  nameWithType.vb: ValueTupleExtensions.GetEnumerator(Of T)((T, T, T, T, T))
+- uid: MinimalUtility.ValueTupleExtensions.GetEnumerator``1(System.ValueTuple{``0,``0,``0,``0}@)
+  name: GetEnumerator<T>(in (T, T, T, T))
+  href: api/MinimalUtility.ValueTupleExtensions.html#MinimalUtility_ValueTupleExtensions_GetEnumerator__1_System_ValueTuple___0___0___0___0___
+  commentId: M:MinimalUtility.ValueTupleExtensions.GetEnumerator``1(System.ValueTuple{``0,``0,``0,``0}@)
+  name.vb: GetEnumerator(Of T)((T, T, T, T))
+  fullName: MinimalUtility.ValueTupleExtensions.GetEnumerator<T>(in (T, T, T, T))
+  fullName.vb: MinimalUtility.ValueTupleExtensions.GetEnumerator(Of T)((T, T, T, T))
+  nameWithType: ValueTupleExtensions.GetEnumerator<T>(in (T, T, T, T))
+  nameWithType.vb: ValueTupleExtensions.GetEnumerator(Of T)((T, T, T, T))
+- uid: MinimalUtility.ValueTupleExtensions.GetEnumerator``1(System.ValueTuple{``0,``0,``0}@)
+  name: GetEnumerator<T>(in (T, T, T))
+  href: api/MinimalUtility.ValueTupleExtensions.html#MinimalUtility_ValueTupleExtensions_GetEnumerator__1_System_ValueTuple___0___0___0___
+  commentId: M:MinimalUtility.ValueTupleExtensions.GetEnumerator``1(System.ValueTuple{``0,``0,``0}@)
+  name.vb: GetEnumerator(Of T)((T, T, T))
+  fullName: MinimalUtility.ValueTupleExtensions.GetEnumerator<T>(in (T, T, T))
+  fullName.vb: MinimalUtility.ValueTupleExtensions.GetEnumerator(Of T)((T, T, T))
+  nameWithType: ValueTupleExtensions.GetEnumerator<T>(in (T, T, T))
+  nameWithType.vb: ValueTupleExtensions.GetEnumerator(Of T)((T, T, T))
+- uid: MinimalUtility.ValueTupleExtensions.GetEnumerator``1(System.ValueTuple{``0,``0}@)
+  name: GetEnumerator<T>(in (T, T))
+  href: api/MinimalUtility.ValueTupleExtensions.html#MinimalUtility_ValueTupleExtensions_GetEnumerator__1_System_ValueTuple___0___0___
+  commentId: M:MinimalUtility.ValueTupleExtensions.GetEnumerator``1(System.ValueTuple{``0,``0}@)
+  name.vb: GetEnumerator(Of T)((T, T))
+  fullName: MinimalUtility.ValueTupleExtensions.GetEnumerator<T>(in (T, T))
+  fullName.vb: MinimalUtility.ValueTupleExtensions.GetEnumerator(Of T)((T, T))
+  nameWithType: ValueTupleExtensions.GetEnumerator<T>(in (T, T))
+  nameWithType.vb: ValueTupleExtensions.GetEnumerator(Of T)((T, T))
 - uid: MinimalUtility.VectorExtensions
   name: VectorExtensions
   href: api/MinimalUtility.VectorExtensions.html

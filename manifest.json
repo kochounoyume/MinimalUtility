@@ -595,6 +595,26 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/MinimalUtility.ValueTupleExtensions.Enumerator-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MinimalUtility.ValueTupleExtensions.Enumerator-2.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MinimalUtility.ValueTupleExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MinimalUtility.ValueTupleExtensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/MinimalUtility.VectorExtensions.yml",
       "output": {
         ".html": {
