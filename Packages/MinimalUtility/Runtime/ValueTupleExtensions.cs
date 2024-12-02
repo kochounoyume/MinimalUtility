@@ -98,6 +98,7 @@ namespace MinimalUtility
         /// <param name="tuple">対象の<see cref="ValueTuple{T1, T2, T3, T4, T5, T6, T7}"/>.</param>
         /// <typeparam name="T">要素の型.</typeparam>
         /// <returns>要素を列挙する<see cref="Enumerator{T, TTuple}"/>.</returns>
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static Enumerator<T, (T, T, T, T, T, T, T)> GetEnumerator<T>(in this (T, T, T, T, T, T, T) tuple)
         {
             return new (tuple, 7, static (t, i) => i switch
