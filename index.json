@@ -292,7 +292,7 @@
   "api/MinimalUtility.ValueTupleExtensions.Enumerator-2.html": {
     "href": "api/MinimalUtility.ValueTupleExtensions.Enumerator-2.html",
     "title": "Struct ValueTupleExtensions.Enumerator<T, TTuple> | |",
-    "keywords": "Struct ValueTupleExtensions.Enumerator<T, TTuple> Namespace MinimalUtility ValueTupleのforeach対応. public struct ValueTupleExtensions.Enumerator<T, TTuple> Type Parameters T 要素の型. TTuple ValueTupleの型. Inherited Members ValueType.Equals(object) ValueType.GetHashCode() ValueType.ToString() object.Equals(object, object) object.GetType() object.ReferenceEquals(object, object) Properties Current Currentに同じ. public T Current { get; } Property Value T Methods MoveNext() System.Collections.Generic.IEnumerator<T>.MoveNextに同じ. public bool MoveNext() Returns bool 列挙が可能な場合はtrue."
+    "keywords": "Struct ValueTupleExtensions.Enumerator<T, TTuple> Namespace MinimalUtility ValueTupleのforeach対応. public struct ValueTupleExtensions.Enumerator<T, TTuple> where TTuple : struct, ITuple Type Parameters T 要素の型. TTuple ValueTupleの型. Inherited Members ValueType.Equals(object) ValueType.GetHashCode() ValueType.ToString() object.Equals(object, object) object.GetType() object.ReferenceEquals(object, object) Properties Current Currentに同じ. public T Current { get; } Property Value T Methods MoveNext() System.Collections.Generic.IEnumerator<T>.MoveNextに同じ. public bool MoveNext() Returns bool 列挙が可能な場合はtrue."
   },
   "api/MinimalUtility.ValueTupleExtensions.html": {
     "href": "api/MinimalUtility.ValueTupleExtensions.html",
