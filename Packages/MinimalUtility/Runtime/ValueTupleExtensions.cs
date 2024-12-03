@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Runtime.CompilerServices;
 
 namespace MinimalUtility
@@ -16,7 +16,14 @@ namespace MinimalUtility
         /// <returns>要素を列挙する<see cref="Enumerator{T, TTuple}"/>.</returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static Enumerator<T, (T, T)> GetEnumerator<T>(in this (T, T) tuple)
-            => new (tuple, 2, static (t, i) => i == 0 ? t.Item1 : t.Item2);
+        {
+            return new (tuple, static (t, i) => i switch
+            {
+                0 => t.Item1,
+                1 => t.Item2,
+                _ => throw new IndexOutOfRangeException(),
+            });
+        }
 
         /// <summary>
         /// <see cref="ValueTuple{T1, T2, T3}"/>のforeach対応.
@@ -27,11 +34,12 @@ namespace MinimalUtility
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static Enumerator<T, (T, T, T)> GetEnumerator<T>(in this (T, T, T) tuple)
         {
-            return new (tuple, 3, static (t, i) => i switch
+            return new (tuple, static (t, i) => i switch
             {
                 0 => t.Item1,
                 1 => t.Item2,
-                _ => t.Item3,
+                2 => t.Item3,
+                _ => throw new IndexOutOfRangeException(),
             });
         }
 
@@ -44,12 +52,13 @@ namespace MinimalUtility
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static Enumerator<T, (T, T, T, T)> GetEnumerator<T>(in this (T, T, T, T) tuple)
         {
-            return new (tuple, 4, static (t, i) => i switch
+            return new (tuple, static (t, i) => i switch
             {
                 0 => t.Item1,
                 1 => t.Item2,
                 2 => t.Item3,
-                _ => t.Item4,
+                3 => t.Item4,
+                _ => throw new IndexOutOfRangeException(),
             });
         }
 
@@ -62,13 +71,14 @@ namespace MinimalUtility
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static Enumerator<T, (T, T, T, T, T)> GetEnumerator<T>(in this (T, T, T, T, T) tuple)
         {
-            return new (tuple, 5, static (t, i) => i switch
+            return new (tuple, static (t, i) => i switch
             {
                 0 => t.Item1,
                 1 => t.Item2,
                 2 => t.Item3,
                 3 => t.Item4,
-                _ => t.Item5,
+                4 => t.Item5,
+                _ => throw new IndexOutOfRangeException(),
             });
         }
 
@@ -81,14 +91,15 @@ namespace MinimalUtility
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static Enumerator<T, (T, T, T, T, T, T)> GetEnumerator<T>(in this (T, T, T, T, T, T) tuple)
         {
-            return new (tuple, 6, static (t, i) => i switch
+            return new (tuple, static (t, i) => i switch
             {
                 0 => t.Item1,
                 1 => t.Item2,
                 2 => t.Item3,
                 3 => t.Item4,
                 4 => t.Item5,
-                _ => t.Item6,
+                5 => t.Item6,
+                _ => throw new IndexOutOfRangeException(),
             });
         }
 
@@ -101,7 +112,7 @@ namespace MinimalUtility
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static Enumerator<T, (T, T, T, T, T, T, T)> GetEnumerator<T>(in this (T, T, T, T, T, T, T) tuple)
         {
-            return new (tuple, 7, static (t, i) => i switch
+            return new (tuple, static (t, i) => i switch
             {
                 0 => t.Item1,
                 1 => t.Item2,
@@ -109,7 +120,8 @@ namespace MinimalUtility
                 3 => t.Item4,
                 4 => t.Item5,
                 5 => t.Item6,
-                _ => t.Item7,
+                6 => t.Item7,
+                _ => throw new IndexOutOfRangeException(),
             });
         }
 
@@ -118,10 +130,9 @@ namespace MinimalUtility
         /// </summary>
         /// <typeparam name="T">要素の型.</typeparam>
         /// <typeparam name="TTuple">ValueTupleの型.</typeparam>
-        public struct Enumerator<T, TTuple>
+        public struct Enumerator<T, TTuple> where TTuple : struct, ITuple
         {
             private readonly TTuple tuple;
-            private readonly int length;
             private readonly Func<TTuple, int, T> current;
             private int index;
 
@@ -134,12 +145,10 @@ namespace MinimalUtility
             /// Initializes a new instance of the <see cref="ValueTupleExtensions.Enumerator{T, Tuple}"/> struct.
             /// </summary>
             /// <param name="tuple">ValueTuple.</param>
-            /// <param name="length">列挙する要素数.</param>
             /// <param name="current"><see cref="Current"/>で実行する処理.</param>
-            internal Enumerator(in TTuple tuple, int length, Func<TTuple, int, T> current)
+            internal Enumerator(in TTuple tuple, Func<TTuple, int, T> current)
             {
                 this.tuple = tuple;
-                this.length = length;
                 this.current = current;
                 index = -1;
             }
@@ -148,7 +157,7 @@ namespace MinimalUtility
             /// <see cref="System.Collections.Generic.IEnumerator{T}.MoveNext"/>に同じ.
             /// </summary>
             /// <returns>列挙が可能な場合はtrue.</returns>
-            public bool MoveNext() => index < length && ++index < length;
+            public bool MoveNext() => index < tuple.Length && ++index < tuple.Length;
         }
     }
 }
