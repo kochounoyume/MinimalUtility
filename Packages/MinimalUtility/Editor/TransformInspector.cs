@@ -6,7 +6,6 @@ namespace MinimalUtility.Editor
     /// <summary>
     /// ワールドの座標・回転・大きさも表示する<see cref="Transform"/>カスタムエディタ.
     /// </summary>
-    [CanEditMultipleObjects]
     [CustomEditor(typeof(Transform))]
     public class TransformInspector : UnityComponentInspector<Transform>
     {
