@@ -1,14 +1,18 @@
-﻿using UnityEngine;
+﻿using UnityEditor;
+using UnityEngine;
 
-namespace UnityEditor.UI
+namespace MinimalUtility.Editor
 {
     /// <summary>
     /// ワールドの座標・回転・大きさも表示する<see cref="Transform"/>カスタムエディタ.
     /// </summary>
     [CanEditMultipleObjects]
     [CustomEditor(typeof(Transform))]
-    internal sealed class TransformInspector : UnityEditor.TransformInspector
+    public class TransformInspector : UnityComponentInspector<Transform>
     {
+        /// <inheritdoc/>
+        protected override string InspectorTypeName => "UnityEditor.TransformInspector";
+
         /// <inheritdoc/>
         public override void OnInspectorGUI()
         {
