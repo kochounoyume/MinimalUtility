@@ -38,6 +38,7 @@ namespace MinimalUtility.Debugging
                 }
                 PanelSettings.themeStyleSheet = ThemeStyleSheet;
                 PanelSettings.scaleMode = PanelScaleMode.ScaleWithScreenSize;
+                PanelSettings.screenMatchMode = PanelScreenMatchMode.Expand;
             }
             uiDocument.panelSettings = PanelSettings;
 
