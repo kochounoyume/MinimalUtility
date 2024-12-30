@@ -1,4 +1,6 @@
-﻿using System;
+﻿#nullable enable
+
+using System;
 using System.Diagnostics;
 using System.Runtime.CompilerServices;
 
@@ -14,12 +16,12 @@ namespace MinimalUtility
         /// <summary>
         /// 引数.
         /// </summary>
-        public readonly object[] Parameters;
+        public readonly object[] parameters;
 
         /// <summary>
         /// ボタンの名前.
         /// </summary>
-        public readonly string ButtonName;
+        public readonly string buttonName;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="ButtonAttribute"/> class.
@@ -28,8 +30,8 @@ namespace MinimalUtility
         /// <param name="parameters">引数.</param>
         public ButtonAttribute([CallerMemberName] string buttonName = "", params object[] parameters)
         {
-            ButtonName = buttonName;
-            Parameters = parameters;
+            this.buttonName = buttonName;
+            this.parameters = parameters;
         }
     }
 }

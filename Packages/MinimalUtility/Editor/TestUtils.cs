@@ -1,4 +1,6 @@
-﻿using System.IO;
+﻿#nullable enable
+
+using System.IO;
 using System.Runtime.CompilerServices;
 using UnityEditor;
 using UnityEditor.Build.Player;
@@ -20,7 +22,7 @@ namespace MinimalUtility.Editor
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static bool SuccessCompile(BuildTarget buildTarget, string outputPath = "Temp/TestOutput", params string[] scriptingDefines)
         {
-            ScriptCompilationSettings settings = new ()
+            var settings = new ScriptCompilationSettings()
             {
                 extraScriptingDefines = scriptingDefines,
                 group = BuildPipeline.GetBuildTargetGroup(buildTarget),
@@ -28,12 +30,8 @@ namespace MinimalUtility.Editor
             };
             try
             {
-                ScriptCompilationResult result = PlayerBuildInterface.CompilePlayerScripts(settings, outputPath);
+                var result = PlayerBuildInterface.CompilePlayerScripts(settings, outputPath);
                 return result is { assemblies: { Count: > 0 }, typeDB: not null };
-            }
-            catch
-            {
-                throw;
             }
             finally
             {

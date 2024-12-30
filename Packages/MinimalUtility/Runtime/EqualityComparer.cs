@@ -1,4 +1,6 @@
-﻿using System;
+﻿#nullable enable
+
+using System;
 using System.Collections.Generic;
 
 namespace MinimalUtility
@@ -17,7 +19,7 @@ namespace MinimalUtility
         /// <returns>生成された<see cref="EqualityComparer{T}"/>.</returns>
         /// <exception cref="ArgumentNullException"><see cref="equals"/>がnullです.</exception>
         /// <exception cref="NotSupportedException"><see cref="getHashCode"/>がnullです.</exception>
-        public static EqualityComparer<T> Create<T>(Func<T, T, bool> equals, Func<T, int> getHashCode)
+        public static EqualityComparer<T> Create<T>(Func<T, T, bool> equals, Func<T, int>? getHashCode)
         {
             if (equals == null)
             {
@@ -45,7 +47,7 @@ namespace MinimalUtility
 
             public override int GetHashCode(T obj) => getHashCode(obj);
 
-            public override bool Equals(object obj) =>
+            public override bool Equals(object? obj) =>
                 obj is DelegateEqualityComparer<T> other &&
                 equals == other.equals &&
                 getHashCode == other.getHashCode;

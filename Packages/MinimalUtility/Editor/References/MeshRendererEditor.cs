@@ -8,14 +8,14 @@ namespace UnityEditor.UI
     {
         private SerializedProperty m_SortingOrder;
         private SerializedProperty m_SortingLayerID;
-        private GUIContent extraSettingsStyle;
+        private GUIContent m_extraSettingsStyle;
 
         public override void OnEnable()
         {
             base.OnEnable();
             m_SortingOrder = serializedObject.FindProperty(nameof(m_SortingOrder));
             m_SortingLayerID = serializedObject.FindProperty(nameof(m_SortingLayerID));
-            extraSettingsStyle = EditorGUIUtility.TrTextContent("Extra Settings");
+            m_extraSettingsStyle = EditorGUIUtility.TrTextContent("Extra Settings");
         }
 
         public override void OnInspectorGUI()
@@ -27,7 +27,7 @@ namespace UnityEditor.UI
 
         private void ExtraSettingsGUI()
         {
-            m_ShowOtherSettings.value = EditorGUILayout.BeginFoldoutHeaderGroup(m_ShowOtherSettings.value, extraSettingsStyle);
+            m_ShowOtherSettings.value = EditorGUILayout.BeginFoldoutHeaderGroup(m_ShowOtherSettings.value, m_extraSettingsStyle);
             if (m_ShowOtherSettings.value)
             {
                 ++EditorGUI.indentLevel;

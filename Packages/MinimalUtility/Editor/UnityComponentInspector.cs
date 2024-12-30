@@ -1,5 +1,6 @@
-﻿using UnityEditor;
-using UnityEngine.UIElements;
+﻿#nullable enable
+
+using UnityEditor;
 
 namespace MinimalUtility.Editor
 {
@@ -9,27 +10,27 @@ namespace MinimalUtility.Editor
     /// <typeparam name="T">カスタムエディタを作成するコンポーネントの型.</typeparam>
     public abstract class UnityComponentInspector<T> : UnityEditor.Editor where T : UnityEngine.Component
     {
-        private UnityEditor.Editor editor;
+        private UnityEditor.Editor? _editor;
 
         /// <summary>
         /// 対象となるコンポーネントのインスペクター拡張既存クラスの名前.
         /// </summary>
-        protected abstract string InspectorTypeName { get; }
+        protected abstract string inspectorTypeName { get; }
 
         /// <inheritdoc/>
         public override void OnInspectorGUI()
         {
-            editor?.OnInspectorGUI();
+            _editor?.OnInspectorGUI();
         }
 
         private void OnEnable()
         {
-            CreateCachedEditor(target, typeof(EditorApplication).Assembly.GetType(InspectorTypeName), ref editor);
+            CreateCachedEditor(target, typeof(EditorApplication).Assembly.GetType(inspectorTypeName), ref _editor);
         }
 
         private void OnDisable()
         {
-            DestroyImmediate(editor);
+            DestroyImmediate(_editor);
         }
     }
 }

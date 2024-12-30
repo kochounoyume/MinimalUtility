@@ -1,7 +1,12 @@
-﻿using System.Net;
+﻿#nullable enable
+
+using System.IO;
+using System.Net;
 using System.Net.Http;
 using System.Threading;
+using System.Threading.Tasks;
 using Cysharp.Threading.Tasks;
+using Unity.Collections;
 using UnityEngine.Networking;
 
 namespace MinimalUtility.WebRequest
@@ -10,17 +15,17 @@ namespace MinimalUtility.WebRequest
     /// UniTaskのサポートを活用した、<see cref="UnityWebRequest"/>を使用する<see cref="HttpMessageHandler"/>.
     /// </summary>
     /// <exception cref="UnityWebRequestException">通信結果のエラーはUniTask製のExceptionクラスで発行される.</exception>
-    public class UnityWebRequestHttpMessageHandler : HttpMessageHandler
+    public sealed class UnityWebRequestHttpMessageHandler : HttpMessageHandler
     {
         /// <inheritdoc/>
-        protected override async System.Threading.Tasks.Task<HttpResponseMessage> SendAsync(HttpRequestMessage requestMessage, CancellationToken cancellationToken)
+        protected override async Task<HttpResponseMessage> SendAsync(HttpRequestMessage requestMessage, CancellationToken cancellationToken)
         {
-            byte[] data = requestMessage.Content == null ? null : await requestMessage.Content.ReadAsByteArrayAsync();
-            using UploadHandlerRaw uploadHandler = new (data);
+            var data = requestMessage.Content == null ? null : await requestMessage.Content.ReadAsByteArrayAsync();
+            using var uploadHandler = new UploadHandlerRaw(data);
             uploadHandler.contentType = requestMessage.Headers.Accept.ToString();
 
-            using DownloadHandlerBuffer downloadHandler = new ();
-            using UnityWebRequest webRequest = new (requestMessage.RequestUri, requestMessage.Method.ToString(), downloadHandler, uploadHandler);
+            using var downloadHandler = new DownloadHandlerBuffer();
+            using var webRequest = new UnityWebRequest(requestMessage.RequestUri, requestMessage.Method.ToString(), downloadHandler, uploadHandler);
 
             foreach (var (key, values) in requestMessage.Headers)
             {
@@ -32,8 +37,7 @@ namespace MinimalUtility.WebRequest
             var response = new HttpResponseMessage((HttpStatusCode)webRequest.responseCode)
             {
                 RequestMessage = requestMessage,
-                // HACK:本当はdownloadHandler.nativeDataを活用できるとよいのだが、今のところ思いつかない
-                Content = new ByteArrayContent(downloadHandler.data),
+                Content = new NativeArrayContent(downloadHandler.nativeData),
                 Version = HttpVersion.Version10
             };
 
@@ -44,6 +48,31 @@ namespace MinimalUtility.WebRequest
             }
 
             return response;
+        }
+    }
+
+    /// <summary>
+    /// <see cref="NativeArray{T}"/>を基盤とする<see cref="HttpContent"/>.
+    /// </summary>
+    public sealed class NativeArrayContent : HttpContent
+    {
+        private readonly NativeArray<byte>.ReadOnly _data;
+
+        public NativeArrayContent(NativeArray<byte>.ReadOnly data)
+        {
+            _data = data;
+        }
+
+        protected override Task SerializeToStreamAsync(Stream stream, TransportContext _)
+        {
+            stream.Write(_data.AsReadOnlySpan());
+            return Task.CompletedTask;
+        }
+
+        protected override bool TryComputeLength(out long length)
+        {
+            length = _data.Length;
+            return true;
         }
     }
 }

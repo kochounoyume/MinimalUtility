@@ -1,4 +1,6 @@
-﻿using System;
+﻿#nullable enable
+
+using System;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -15,24 +17,21 @@ namespace MinimalUtility.UGUI
         /// <summary>
         /// 子オブジェクト以下のGraphicのキャッシュ.
         /// </summary>
-        private ReadOnlyMemory<Graphic> childGraphics;
+        private ReadOnlyMemory<Graphic> _childGraphics;
 
         /// <inheritdoc>
         /// Selectableの押下時の色変化はここを呼び出しているみたいなので、ちょっと処理を上書き.
         /// </inheritdoc>
         public override void CrossFadeColor(Color targetColor, float duration, bool ignoreTimeScale, bool useAlpha)
         {
-            foreach (Graphic childGraphic in childGraphics)
+            if (_childGraphics.IsEmpty)
+            {
+                _childGraphics = this.GetComponentsInOnlyChildren<Graphic>();
+            }
+            foreach (var childGraphic in _childGraphics)
             {
                 childGraphic.CrossFadeColor(targetColor, duration, ignoreTimeScale, useAlpha);
             }
-        }
-
-        /// <inheritdoc/>
-        protected override void Start()
-        {
-            base.Start();
-            childGraphics = this.GetComponentsInOnlyChildren<Graphic>();
         }
     }
 }

@@ -1,4 +1,6 @@
-﻿namespace MinimalUtility
+﻿#nullable enable
+
+namespace MinimalUtility
 {
     /// <summary>
     /// <see cref="System.FlagsAttribute"/>の拡張版.

@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿#nullable enable
+
 using UnityEngine.UIElements;
 #if UNITY_EDITOR
 using Screen = UnityEngine.Device.Screen;
@@ -28,26 +29,18 @@ namespace MinimalUtility.UIToolkit
             style.flexGrow = 1;
             style.flexShrink = 1;
 
-            RegisterCallback<GeometryChangedEvent>(OnGeometryChanged);
-
-#pragma warning disable SA1313
-            void OnGeometryChanged(GeometryChangedEvent _)
-#pragma warning restore SA1313
+            RegisterCallback<GeometryChangedEvent, SafeAreaContainer>(static (_, self) =>
             {
-#if UNITY_EDITOR
-                if (panel.GetType().Name == "EditorPanel") return;
-#endif
-                Rect safeArea = Screen.safeArea;
-                Vector2 leftTop
-                    = RuntimePanelUtils.ScreenToPanel(panel, new (safeArea.xMin, Screen.height - safeArea.yMax));
-                Vector2 rightBottom
-                    = RuntimePanelUtils.ScreenToPanel(panel, new (Screen.width - safeArea.xMax, safeArea.yMin));
+                if (self.panel.GetType().Name == "EditorPanel") return;
+                var safeArea = Screen.safeArea;
+                var leftTop = RuntimePanelUtils.ScreenToPanel(self.panel, new(safeArea.xMin, Screen.height - safeArea.yMax));
+                var rightBottom = RuntimePanelUtils.ScreenToPanel(self.panel, new(Screen.width - safeArea.xMax, safeArea.yMin));
 
-                style.marginLeft = leftTop.x;
-                style.marginTop = leftTop.y;
-                style.marginRight = rightBottom.x;
-                style.marginBottom = rightBottom.y;
-            }
+                self.style.marginLeft = leftTop.x;
+                self.style.marginTop = leftTop.y;
+                self.style.marginRight = rightBottom.x;
+                self.style.marginBottom = rightBottom.y;
+            }, this);
         }
     }
 }

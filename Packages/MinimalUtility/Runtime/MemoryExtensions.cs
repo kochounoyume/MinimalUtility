@@ -1,4 +1,6 @@
-﻿using System;
+﻿#nullable enable
+
+using System;
 using System.Runtime.CompilerServices;
 
 namespace MinimalUtility
@@ -32,13 +34,13 @@ namespace MinimalUtility
         /// <typeparam name="T">要素の型.</typeparam>
         public struct Enumerator<T>
         {
-            private readonly ReadOnlyMemory<T> memory;
-            private int index;
+            private readonly ReadOnlyMemory<T> _memory;
+            private int _index;
 
             /// <summary>
             /// <see cref="System.Collections.Generic.IEnumerator{T}.Current"/>に同じ.
             /// </summary>
-            public T Current => memory.Span[index];
+            public T Current => _memory.Span[_index];
 
             /// <summary>
             /// Initializes a new instance of the <see cref="Enumerator{T}"/> struct.
@@ -46,15 +48,15 @@ namespace MinimalUtility
             /// <param name="memory"><see cref="ReadOnlyMemory{T}"/>.</param>
             internal Enumerator(in ReadOnlyMemory<T> memory)
             {
-                this.memory = memory;
-                index = -1;
+                this._memory = memory;
+                _index = -1;
             }
 
             /// <summary>
             /// <see cref="System.Collections.Generic.IEnumerator{T}.MoveNext"/>に同じ.
             /// </summary>
             /// <returns>列挙が可能な場合はtrue.</returns>
-            public bool MoveNext() => index < memory.Length && ++index < memory.Length;
+            public bool MoveNext() => _index < _memory.Length && ++_index < _memory.Length;
         }
     }
 }

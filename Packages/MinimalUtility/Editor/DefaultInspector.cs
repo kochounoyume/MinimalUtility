@@ -1,3 +1,5 @@
+#nullable enable
+
 using System;
 using System.Reflection;
 using UnityEditor;
@@ -18,17 +20,17 @@ namespace MinimalUtility.Editor
         {
             const BindingFlags flags = BindingFlags.Instance | BindingFlags.Static | BindingFlags.Public | BindingFlags.NonPublic;
 
-            VisualElement root = new ();
+            var root = new VisualElement();
             InspectorElement.FillDefaultInspector(root, serializedObject, this);
 
-            foreach (MethodInfo methodInfo in target.GetType().GetMethods(flags).AsSpan())
+            foreach (var methodInfo in target.GetType().GetMethods(flags).AsSpan())
             {
-                foreach (ButtonAttribute attr in methodInfo.GetCustomAttributes<ButtonAttribute>())
+                foreach (var attr in methodInfo.GetCustomAttributes<ButtonAttribute>())
                 {
                     if (attr == null) continue;
-                    root.Add(new Button(() => methodInfo.Invoke(target, attr.Parameters))
+                    root.Add(new Button(() => methodInfo.Invoke(target, attr.parameters))
                     {
-                        text = attr.ButtonName
+                        text = attr.buttonName
                     });
                 }
             }
