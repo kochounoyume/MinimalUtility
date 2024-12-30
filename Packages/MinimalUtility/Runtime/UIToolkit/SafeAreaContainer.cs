@@ -1,4 +1,5 @@
-﻿#nullable enable
+﻿#if ENABLE_UITOOLKIT
+#nullable enable
 
 using UnityEngine.UIElements;
 #if UNITY_EDITOR
@@ -44,3 +45,4 @@ namespace MinimalUtility.UIToolkit
         }
     }
 }
+#endif

@@ -2,15 +2,52 @@
     "name": "MinimalUtility.Runtime",
     "rootNamespace": "MinimalUtility",
     "references": [
-        "GUID:eb014bd0dae606c44a234c52ffeb53e2"
+        "GUID:eb014bd0dae606c44a234c52ffeb53e2",
+        "GUID:77221876cc6b8244180b96e320b1bcd4",
+        "GUID:f51ebe6a0ceec4240a699833d6309b23",
+        "GUID:b0214a6008ed146ff8f122a6a9c2f6cc"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
     "overrideReferences": true,
-    "precompiledReferences": [],
+    "precompiledReferences": [
+        "R3.dll",
+        "Microsoft.Bcl.TimeProvider.dll"
+    ],
     "autoReferenced": true,
     "defineConstraints": [],
-    "versionDefines": [],
+    "versionDefines": [
+        {
+            "name": "com.cysharp.unitask",
+            "expression": "",
+            "define": "ENABLE_UNITASK"
+        },
+        {
+            "name": "com.cysharp.r3",
+            "expression": "",
+            "define": "ENABLE_R3"
+        },
+        {
+            "name": "com.unity.ugui",
+            "expression": "",
+            "define": "ENABLE_UGUI"
+        },
+        {
+            "name": "com.unity.modules.uielements",
+            "expression": "",
+            "define": "ENABLE_UITOOLKIT"
+        },
+        {
+            "name": "jp.hadashikick.vcontainer",
+            "expression": "",
+            "define": "ENABLE_VCONTAINER"
+        },
+        {
+            "name": "com.unity.modules.unitywebrequest",
+            "expression": "",
+            "define": "ENABLE_WEBREQUEST"
+        }
+    ],
     "noEngineReferences": false
 }

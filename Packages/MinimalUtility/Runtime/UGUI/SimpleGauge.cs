@@ -1,4 +1,5 @@
-﻿#nullable enable
+﻿#if ENABLE_UGUI
+#nullable enable
 
 using System;
 using UnityEngine;
@@ -67,19 +68,5 @@ namespace MinimalUtility.UGUI
         }
 #endif
     }
-
-#if UNITY_EDITOR
-    [UnityEditor.CustomEditor(typeof(SimpleGauge))]
-    public class SimpleGaugeEditor : UnityEditor.Editor
-    {
-        /// <inheritdoc/>
-        public override UnityEngine.UIElements.VisualElement CreateInspectorGUI()
-        {
-            var root = new UnityEngine.UIElements.VisualElement();
-            root.Add(new UnityEditor.UIElements.PropertyField(serializedObject.FindProperty("_mode")));
-            root.Add(new UnityEditor.UIElements.PropertyField(serializedObject.FindProperty("_value")));
-            return root;
-        }
-    }
-#endif
 }
+#endif

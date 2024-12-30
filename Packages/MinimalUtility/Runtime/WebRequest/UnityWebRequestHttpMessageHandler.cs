@@ -1,4 +1,5 @@
-﻿#nullable enable
+﻿#if ENABLE_WEBREQUEST && ENABLE_UNITASK
+#nullable enable
 
 using System.IO;
 using System.Net;
@@ -76,3 +77,4 @@ namespace MinimalUtility.WebRequest
         }
     }
 }
+#endif

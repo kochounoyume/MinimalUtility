@@ -1,4 +1,5 @@
-﻿#nullable enable
+﻿#if ENABLE_MINIMAL_DEBUGGING && ENABLE_UITOOLKIT
+#nullable enable
 
 using System.Buffers;
 using System.Runtime.CompilerServices;
@@ -77,3 +78,4 @@ Memory: {GetTotalMemory(MemoryUnit.GB):F}GB
         }
     }
 }
+#endif

@@ -1,3 +1,4 @@
+#if ENABLE_VCONTAINER
 #nullable enable
 
 using System;
@@ -64,3 +65,4 @@ namespace MinimalUtility.VContainer
         }
     }
 }
+#endif

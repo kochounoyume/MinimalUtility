@@ -1,4 +1,5 @@
-﻿#nullable enable
+﻿#if ENABLE_UGUI
+#nullable enable
 
 using System;
 using UnityEngine;
@@ -35,3 +36,4 @@ namespace MinimalUtility.UGUI
         }
     }
 }
+#endif

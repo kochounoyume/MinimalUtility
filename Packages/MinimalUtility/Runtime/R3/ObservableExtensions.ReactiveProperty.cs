@@ -1,4 +1,5 @@
-﻿#nullable enable
+﻿#if ENABLE_R3
+#nullable enable
 
 using System;
 using System.Runtime.CompilerServices;
@@ -41,3 +42,4 @@ namespace MinimalUtility.R3
         }
     }
 }
+#endif

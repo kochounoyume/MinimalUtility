@@ -1,4 +1,5 @@
-﻿#nullable enable
+﻿#if ENABLE_MINIMAL_DEBUGGING && ENABLE_UITOOLKIT
+#nullable enable
 
 using UnityEngine;
 using UnityEngine.UIElements;
@@ -50,3 +51,4 @@ namespace MinimalUtility.Debugging
         }
     }
 }
+#endif

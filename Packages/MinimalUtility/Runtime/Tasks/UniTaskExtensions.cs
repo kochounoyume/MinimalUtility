@@ -1,4 +1,5 @@
-﻿#nullable enable
+﻿#if ENABLE_UNITASK
+#nullable enable
 
 using System.Runtime.CompilerServices;
 using System.Threading;
@@ -21,7 +22,7 @@ namespace MinimalUtility.Tasks
         /// <param name="cancelImmediately">即座にキャンセルするかどうか.</param>
         /// <returns>フレーム終わりまで待機する<see cref="UniTask"/>.</returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static async UniTask WaitForEndFrameSafety(this MonoBehaviour monoBehaviour, bool cancelImmediately = false)
+        public static async UniTask WaitForEndFrameSafe(this MonoBehaviour monoBehaviour, bool cancelImmediately = false)
         {
             await UniTask.WaitUntil(
                 monoBehaviour,
@@ -41,7 +42,7 @@ namespace MinimalUtility.Tasks
         /// <param name="cancelImmediately">即座にキャンセルするかどうか.</param>
         /// <returns>フレーム終わりまで待機する<see cref="UniTask"/>.</returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static async UniTask WaitForEndFrameSafety(this MonoBehaviour monoBehaviour, CancellationToken cancellationToken, bool cancelImmediately = false)
+        public static async UniTask WaitForEndFrameSafe(this MonoBehaviour monoBehaviour, CancellationToken cancellationToken, bool cancelImmediately = false)
         {
             await UniTask.WaitUntil(
                 monoBehaviour,
@@ -52,3 +53,4 @@ namespace MinimalUtility.Tasks
         }
     }
 }
+#endif
