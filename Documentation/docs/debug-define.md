@@ -1,0 +1,2 @@
+﻿# デバッグdefineについて
+ENABLE_MINIMAL_DEBUGGING

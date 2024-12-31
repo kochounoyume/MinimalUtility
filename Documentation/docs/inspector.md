@@ -1,0 +1,4 @@
+﻿# Inspector拡張
+Transform, Animatorの拡張がある
+DefaultInspectorはButton属性のページで触れるのでこちらの対象外(触れるなら軽くで)
+SimpleGaugeEditorもSimpleGaugeのところで触れるので、これも除外で
