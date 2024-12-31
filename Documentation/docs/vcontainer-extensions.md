@@ -1,0 +1,2 @@
+﻿# VContainer拡張
+EntryPointContainerとLifetimeScopeBase
