@@ -1,5 +1,5 @@
-- name: サンプル
-- name: Introduction
-  href: introduction.md
+- name: ABOUT
+- name: MinimalUtilityとは
+  href: about.md
 - name: Getting Started
   href: getting-started.md
