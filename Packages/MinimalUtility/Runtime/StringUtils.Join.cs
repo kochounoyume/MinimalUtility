@@ -32,9 +32,9 @@ namespace MinimalUtility
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static string Join(in char separator, IEnumerable<string?> values)
         {
-            char[] separatorArray = ArrayPool<char>.Shared.Rent(1);
+            var separatorArray = ArrayPool<char>.Shared.Rent(1);
             separatorArray[0] = separator;
-            string result = Join(new ReadOnlySpan<char>(separatorArray), values);
+            var result = Join(new ReadOnlySpan<char>(separatorArray), values);
             ArrayPool<char>.Shared.Return(separatorArray);
             return result;
         }
@@ -54,20 +54,20 @@ namespace MinimalUtility
                 throw new ArgumentNullException(nameof(values));
             }
 
-            using IEnumerator<string?> en = values.GetEnumerator();
+            using var en = values.GetEnumerator();
             if (!en.MoveNext())
             {
                 return "";
             }
 
-            string? firstValue = en.Current;
+            var firstValue = en.Current;
 
             if (!en.MoveNext())
             {
                 return firstValue ?? "";
             }
 
-            DefaultInterpolatedStringHandler result = new ();
+            var result = new DefaultInterpolatedStringHandler();
 
             if (firstValue != null)
             {

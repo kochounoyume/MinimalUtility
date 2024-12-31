@@ -1,4 +1,7 @@
-﻿using System;
+﻿#if ENABLE_R3
+#nullable enable
+
+using System;
 using System.Runtime.CompilerServices;
 using R3;
 
@@ -17,10 +20,10 @@ namespace MinimalUtility.R3
         /// <typeparam name="T">Observableの型.</typeparam>
         /// <returns>ログ出力を行うObservable.</returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static Observable<T> Debug<T>(this Observable<T> source, string label = null)
+        public static Observable<T> Debug<T>(this Observable<T> source, string label = "")
         {
 #if UNITY_EDITOR || DEVELOPMENT_BUILD
-            string l = label == null ? "" : $"[{label}]";
+            var l = string.IsNullOrEmpty(label) ? "" : $"[{label}]";
             return source
                 .Do(
                     state: l,
@@ -60,3 +63,4 @@ namespace MinimalUtility.R3
         }
     }
 }
+#endif

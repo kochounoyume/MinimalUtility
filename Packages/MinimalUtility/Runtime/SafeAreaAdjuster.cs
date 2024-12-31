@@ -1,3 +1,5 @@
+#nullable enable
+
 using UnityEngine;
 #if UNITY_EDITOR
 using Screen = UnityEngine.Device.Screen;
@@ -19,10 +21,10 @@ namespace MinimalUtility
         [Button("Adjust SafeArea")]
         private void Padding()
         {
-            Rect safeArea = Screen.safeArea;
-            Vector2 screenSize = new Vector2(Screen.width, Screen.height);
+            var safeArea = Screen.safeArea;
+            var screenSize = new Vector2(Screen.width, Screen.height);
 
-            RectTransform rectTransform = transform as RectTransform;
+            var rectTransform = transform as RectTransform;
             if (rectTransform != null)
             {
                 rectTransform.anchorMin = safeArea.min / screenSize;

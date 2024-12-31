@@ -1,9 +1,12 @@
-﻿using UnityEngine;
+﻿#if ENABLE_MINIMAL_DEBUGGING && ENABLE_UITOOLKIT
+#nullable enable
+
+using UnityEngine;
 using UnityEngine.UIElements;
-using Object = UnityEngine.Object;
 
 namespace MinimalUtility.Debugging
 {
+    using Internal;
     using UIToolkit;
 
     /// <summary>
@@ -14,12 +17,12 @@ namespace MinimalUtility.Debugging
         /// <summary>
         /// パネル設定.
         /// </summary>
-        public PanelSettings PanelSettings { get; set; }
+        public PanelSettings? panelSettings { get; set; }
 
         /// <summary>
         /// tss.
         /// </summary>
-        public ThemeStyleSheet ThemeStyleSheet { get; set; }
+        public ThemeStyleSheet? themeStyleSheet { get; set; }
 
         /// <summary>
         /// エントリーポイント.
@@ -27,20 +30,19 @@ namespace MinimalUtility.Debugging
         /// <returns>ルート要素.</returns>
         public virtual VisualElement Start()
         {
-            var uiDocument = new GameObject("DebugViewer").AddComponent<UIDocument>();
-            Object.DontDestroyOnLoad(uiDocument);
-            if (PanelSettings == null)
+            var uiDocument = DontDestroyObject.Default.AddComponent<UIDocument>();
+            if (panelSettings == null)
             {
-                PanelSettings = ScriptableObject.CreateInstance<PanelSettings>();
-                if (ThemeStyleSheet == null)
+                panelSettings = ScriptableObject.CreateInstance<PanelSettings>();
+                if (themeStyleSheet == null)
                 {
-                    ThemeStyleSheet = Resources.Load<ThemeStyleSheet>("DefaultRuntimeTheme");
+                    themeStyleSheet = Resources.Load<ThemeStyleSheet>("DefaultRuntimeTheme");
                 }
-                PanelSettings.themeStyleSheet = ThemeStyleSheet;
-                PanelSettings.scaleMode = PanelScaleMode.ScaleWithScreenSize;
-                PanelSettings.screenMatchMode = PanelScreenMatchMode.Expand;
+                panelSettings.themeStyleSheet = themeStyleSheet;
+                panelSettings.scaleMode = PanelScaleMode.ScaleWithScreenSize;
+                panelSettings.screenMatchMode = PanelScreenMatchMode.Expand;
             }
-            uiDocument.panelSettings = PanelSettings;
+            uiDocument.panelSettings = panelSettings;
 
             var root = uiDocument.rootVisualElement;
             var safeAreaContainer = new SafeAreaContainer();
@@ -49,3 +51,4 @@ namespace MinimalUtility.Debugging
         }
     }
 }
+#endif

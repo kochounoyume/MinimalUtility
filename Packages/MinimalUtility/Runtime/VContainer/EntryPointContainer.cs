@@ -1,5 +1,5 @@
-﻿#pragma warning disable SA1204
-#pragma warning disable SA1402
+﻿#if ENABLE_VCONTAINER
+#nullable enable
 
 using System;
 using System.Runtime.CompilerServices;
@@ -1350,5 +1350,4 @@ namespace MinimalUtility.VContainer
         }
     }
 }
-#pragma warning restore SA1204
-#pragma warning restore SA1402
+#endif

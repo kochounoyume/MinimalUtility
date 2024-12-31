@@ -1,3 +1,5 @@
+#nullable enable
+
 using System;
 using System.Runtime.CompilerServices;
 
@@ -132,14 +134,14 @@ namespace MinimalUtility
         /// <typeparam name="TTuple">ValueTupleの型.</typeparam>
         public struct Enumerator<T, TTuple> where TTuple : struct, ITuple
         {
-            private readonly TTuple tuple;
-            private readonly Func<TTuple, int, T> current;
-            private int index;
+            private readonly TTuple _tuple;
+            private readonly Func<TTuple, int, T> _current;
+            private int _index;
 
             /// <summary>
             /// <see cref="System.Collections.Generic.IEnumerator{T}.Current"/>に同じ.
             /// </summary>
-            public T Current => current(tuple, index);
+            public T Current => _current(_tuple, _index);
 
             /// <summary>
             /// Initializes a new instance of the <see cref="ValueTupleExtensions.Enumerator{T, Tuple}"/> struct.
@@ -148,16 +150,16 @@ namespace MinimalUtility
             /// <param name="current"><see cref="Current"/>で実行する処理.</param>
             internal Enumerator(in TTuple tuple, Func<TTuple, int, T> current)
             {
-                this.tuple = tuple;
-                this.current = current;
-                index = -1;
+                this._tuple = tuple;
+                this._current = current;
+                _index = -1;
             }
 
             /// <summary>
             /// <see cref="System.Collections.Generic.IEnumerator{T}.MoveNext"/>に同じ.
             /// </summary>
             /// <returns>列挙が可能な場合はtrue.</returns>
-            public bool MoveNext() => index < tuple.Length && ++index < tuple.Length;
+            public bool MoveNext() => _index < _tuple.Length && ++_index < _tuple.Length;
         }
     }
 }

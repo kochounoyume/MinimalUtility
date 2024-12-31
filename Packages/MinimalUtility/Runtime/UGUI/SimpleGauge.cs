@@ -1,5 +1,9 @@
-﻿using System;
+﻿#if ENABLE_UGUI
+#nullable enable
+
+using System;
 using UnityEngine;
+using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 namespace MinimalUtility.UGUI
@@ -10,82 +14,59 @@ namespace MinimalUtility.UGUI
     [RequireComponent(typeof(MaskableGraphic))]
     public class SimpleGauge : RectMask2D
     {
+        [FormerlySerializedAs("mode")]
         [SerializeField]
         [Tooltip("ゲージの表示方向")]
-        private RectTransform.Edge mode = RectTransform.Edge.Right;
+        private RectTransform.Edge _mode = RectTransform.Edge.Right;
 
+        [FormerlySerializedAs("value")]
         [SerializeField]
         [Tooltip("ゲージの値(0.0 ～ 1.0)")]
         [Range(0, 1)]
-        private float value = 1.0f;
+        private float _value = 1.0f;
+
+        private MaskableGraphic? _graphic;
 
         /// <summary>
         /// ゲージの値(0.0 ～ 1.0).
         /// </summary>
-        public float Value
+        public float value
         {
-            get => value;
+            get => _value;
             set
             {
-                this.value = Mathf.Clamp01(value);
-                var currentPadding = padding;
-                switch (mode)
+                this._value = Mathf.Clamp01(value);
+                padding = (int)_mode switch
                 {
-                    case RectTransform.Edge.Left:
-                        currentPadding.x = rectTransform.rect.width * (1.0f - this.value);
-                        break;
-                    case RectTransform.Edge.Right:
-                        currentPadding.z = rectTransform.rect.width * (1.0f - this.value);
-                        break;
-                    case RectTransform.Edge.Top:
-                        currentPadding.w = rectTransform.rect.height * (1.0f - this.value);
-                        break;
-                    case RectTransform.Edge.Bottom:
-                        currentPadding.y = rectTransform.rect.height * (1.0f - this.value);
-                        break;
-                    default:
-                        throw new ArgumentOutOfRangeException(nameof(Value));
-                }
-                padding = currentPadding;
+                    (int)RectTransform.Edge.Left => new Vector4(rectTransform.rect.width * this._value, 0, 0, 0),
+                    (int)RectTransform.Edge.Right => new Vector4(0, 0, rectTransform.rect.width * this._value, 0),
+                    (int)RectTransform.Edge.Top => new Vector4(0, rectTransform.rect.height * this._value, 0, 0),
+                    (int)RectTransform.Edge.Bottom => new Vector4(0, 0, 0, rectTransform.rect.height * this._value),
+                    _ => throw new ArgumentOutOfRangeException(nameof(this.value))
+                };
             }
         }
-
-        private MaskableGraphic graphic;
 
         /// <summary>
         /// ゲージの表示に使用する<see cref="MaskableGraphic"/>.
         /// </summary>
-        public MaskableGraphic Graphic => graphic == null ? graphic = this.SafeGetComponent<MaskableGraphic>() : graphic;
+        public MaskableGraphic graphic => _graphic == null ? _graphic = this.SafeGetComponent<MaskableGraphic>() : _graphic;
 
         /// <inheritdoc/>
         protected override void OnEnable()
         {
             base.OnEnable();
-            AddClippable(Graphic);
+            AddClippable(graphic);
         }
 
 #if UNITY_EDITOR
         /// <inheritdoc/>
         protected override void OnValidate()
         {
-            Value = value;
+            value = _value;
             base.OnValidate();
         }
 #endif
     }
-
-#if UNITY_EDITOR
-    [UnityEditor.CustomEditor(typeof(SimpleGauge))]
-    public class SimpleGaugeEditor : UnityEditor.Editor
-    {
-        /// <inheritdoc/>
-        public override UnityEngine.UIElements.VisualElement CreateInspectorGUI()
-        {
-            UnityEngine.UIElements.VisualElement root = new ();
-            root.Add(new UnityEditor.UIElements.PropertyField(serializedObject.FindProperty("mode")));
-            root.Add(new UnityEditor.UIElements.PropertyField(serializedObject.FindProperty("value")));
-            return root;
-        }
-    }
-#endif
 }
+#endif

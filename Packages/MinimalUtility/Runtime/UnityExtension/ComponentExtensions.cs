@@ -1,4 +1,6 @@
-﻿using System;
+﻿#nullable enable
+
+using System;
 using System.Runtime.CompilerServices;
 using UnityEngine;
 
@@ -21,14 +23,14 @@ namespace MinimalUtility
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static ReadOnlyMemory<T> GetComponentsInOnlyChildren<T>(this Component self) where T : Component
         {
-            Transform transform = self.transform;
-            int limit = transform.childCount;
+            var transform = self.transform;
+            var limit = transform.childCount;
             if (limit == 0) return ReadOnlyMemory<T>.Empty;
 
-            T[] array = new T[limit];
-            Span<T> span = array.AsSpan();
-            int count = 0;
-            for (int i = 0; i < span.Length; i++)
+            var array = new T[limit];
+            var span = array.AsSpan();
+            var count = 0;
+            for (var i = 0; i < span.Length; i++)
             {
                 if (transform.GetChild(i).gameObject.TryGetComponent(out T component))
                 {

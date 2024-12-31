@@ -1,4 +1,6 @@
-﻿using System;
+﻿#if ENABLE_MINIMAL_DEBUGGING && ENABLE_UITOOLKIT
+#nullable enable
+
 using System.Buffers;
 using System.Runtime.CompilerServices;
 using UnityEngine;
@@ -60,30 +62,20 @@ namespace MinimalUtility.Debugging
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static Label GetProfileInfoLabel()
         {
-            const string title = "<b>Performance</b>";
-            var label = new Label(title)
+            var label = new Label("<b>Performance</b>")
             {
                 enableRichText = true
             };
             label.schedule.Execute(() =>
             {
                 var latest = GetLatestFrameTiming();
-                var sb = new DefaultInterpolatedStringHandler(0, 0);
-                var newlineSpan = Environment.NewLine.AsSpan();
-                sb.AppendLiteral(title);
-                sb.AppendFormatted(newlineSpan);
-                sb.AppendLiteral("CPU: ");
-                sb.AppendFormatted(1000 / latest.cpuFrameTime, "F0");
-                sb.AppendLiteral("fps (");
-                sb.AppendFormatted(latest.cpuFrameTime, "F1");
-                sb.AppendLiteral("ms)");
-                sb.AppendFormatted(newlineSpan);
-                sb.AppendLiteral("Memory: ");
-                sb.AppendFormatted(GetTotalMemory(MemoryUnit.GB), "F");
-                sb.AppendFormatted("GB");
-                label.text = sb.ToString();
+                label.text = $@"<b>Performance</b>
+CPU: {1000 / latest.cpuFrameTime:F0}fps ({latest.cpuFrameTime:F1}ms)
+Memory: {GetTotalMemory(MemoryUnit.GB):F}GB
+";
             }).Every(500);
             return label;
         }
     }
 }
+#endif

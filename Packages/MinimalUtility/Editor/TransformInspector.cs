@@ -1,4 +1,6 @@
-﻿using UnityEditor;
+﻿#nullable enable
+
+using UnityEditor;
 using UnityEngine;
 
 namespace MinimalUtility.Editor
@@ -10,7 +12,7 @@ namespace MinimalUtility.Editor
     public class TransformInspector : UnityComponentInspector<Transform>
     {
         /// <inheritdoc/>
-        protected override string InspectorTypeName => "UnityEditor.TransformInspector";
+        protected override string inspectorTypeName => "UnityEditor.TransformInspector";
 
         /// <inheritdoc/>
         public override void OnInspectorGUI()
