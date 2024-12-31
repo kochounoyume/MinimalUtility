@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace MinimalUtility.Internal
 {
-    public static class DontDestroyObject
+    internal static class DontDestroyObject
     {
         public static Transform Root => Default.transform;
 

@@ -10,7 +10,7 @@ using Cysharp.Threading.Tasks;
 using UnityEngine;
 using Object = UnityEngine.Object;
 
-namespace MinimalUtility
+namespace MinimalUtility.Pool
 {
     using Internal;
 
@@ -26,9 +26,13 @@ namespace MinimalUtility
         /// </summary>
         private readonly Stack<T> _pool;
 
+        /// <inheritdoc/>
         public int Count => _pool.Count;
 
-        private bool _isDisposed;
+        /// <summary>
+        /// 破棄済みかどうか.
+        /// </summary>
+        public bool isDisposed { get; private set; }
 
 #if ENABLE_UNITASK
         static GameObjectPool()
@@ -170,10 +174,10 @@ namespace MinimalUtility
         /// <inheritdoc/>
         public void Dispose()
         {
-            if (!_isDisposed)
+            if (!isDisposed)
             {
                 Clear();
-                _isDisposed = true;
+                isDisposed = true;
             }
         }
 
@@ -183,7 +187,7 @@ namespace MinimalUtility
         /// <exception cref="ObjectDisposedException">破棄済みの場合にスローされる例外.</exception>
         private void ThrowIfDisposed()
         {
-            if (_isDisposed)
+            if (isDisposed)
             {
                 throw new ObjectDisposedException(nameof(GameObjectPool<T>));
             }
