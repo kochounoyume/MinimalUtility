@@ -31,7 +31,7 @@ jobs:
         run: dotnet tool restore
 
       - name: Build
-        run: docfx docs/docfx.json
+        run: docfx Documentation/docfx.json
       
       - name: Upload artifacts
         uses: actions/upload-pages-artifact@v2
