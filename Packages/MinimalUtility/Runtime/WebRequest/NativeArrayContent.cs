@@ -23,9 +23,10 @@ namespace MinimalUtility.WebRequest
             _handler = handler;
         }
 
-        protected override async Task SerializeToStreamAsync(Stream stream, TransportContext _)
+        protected override Task SerializeToStreamAsync(Stream stream, TransportContext _)
         {
             stream.Write(_data.AsReadOnlySpan());
+            return Task.CompletedTask;
         }
 
         protected override bool TryComputeLength(out long length)
