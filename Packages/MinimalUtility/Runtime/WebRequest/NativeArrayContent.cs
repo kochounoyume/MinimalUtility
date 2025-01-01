@@ -1,4 +1,5 @@
-﻿#nullable enable
+﻿#if ENABLE_WEBREQUEST
+#nullable enable
 
 using System;
 using System.IO;
@@ -45,3 +46,4 @@ namespace MinimalUtility.WebRequest
         }
     }
 }
+#endif
