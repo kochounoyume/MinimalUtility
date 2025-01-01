@@ -1,7 +1,6 @@
 ﻿#nullable enable
 
 using System;
-using System.Buffers;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 
@@ -30,14 +29,7 @@ namespace MinimalUtility
         /// <returns>連結された文字列.</returns>
         /// <exception cref="ArgumentNullException"><paramref name="values"/>がnullの場合にスローされます.</exception>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static string Join(in char separator, IEnumerable<string?> values)
-        {
-            var separatorArray = ArrayPool<char>.Shared.Rent(1);
-            separatorArray[0] = separator;
-            var result = Join(new ReadOnlySpan<char>(separatorArray), values);
-            ArrayPool<char>.Shared.Return(separatorArray);
-            return result;
-        }
+        public static string Join(in char separator, IEnumerable<string?> values) => Join(stackalloc char[]{ separator }, values);
 
         /// <summary>
         /// 内部で<see cref="DefaultInterpolatedStringHandler"/>を使用したstring.Join.

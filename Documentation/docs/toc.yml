@@ -46,8 +46,6 @@
 - name: 実装Tips(他ライブラリ拡張)
 - name: uGUI拡張
   href: ugui-extensions.md
-- name: UniTask拡張
-  href: unitask-extensions.md
 - name: R3拡張
   href: r3-extensions.md
 - name: VContainer拡張

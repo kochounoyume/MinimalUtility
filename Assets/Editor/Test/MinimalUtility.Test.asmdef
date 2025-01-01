@@ -4,7 +4,9 @@
     "references": [
         "GUID:27619889b8ba8c24980f49ee34dbb44a",
         "GUID:0acc523941302664db1f4e527237feb3",
-        "GUID:bf0b7d05fd3af8e4aa4966bcda55ac92"
+        "GUID:2294a65d721f9974ca66d13b434e6b7b",
+        "GUID:bf0b7d05fd3af8e4aa4966bcda55ac92",
+        "GUID:f51ebe6a0ceec4240a699833d6309b23"
     ],
     "includePlatforms": [
         "Editor"
@@ -17,6 +19,12 @@
     ],
     "autoReferenced": false,
     "defineConstraints": [],
-    "versionDefines": [],
+    "versionDefines": [
+        {
+            "name": "com.cysharp.unitask",
+            "expression": "",
+            "define": "ENABLE_UNITASK"
+        }
+    ],
     "noEngineReferences": false
 }
