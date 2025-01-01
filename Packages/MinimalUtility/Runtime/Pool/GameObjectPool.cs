@@ -166,10 +166,10 @@ namespace MinimalUtility.Pool
         public Stack<T>.Enumerator GetEnumerator() => _pool.GetEnumerator();
 
         /// <inheritdoc/>
-        IEnumerator<T> IEnumerable<T>.GetEnumerator() => _pool.GetEnumerator();
+        IEnumerator<T> IEnumerable<T>.GetEnumerator() => ((IEnumerable<T>)_pool).GetEnumerator();
 
         /// <inheritdoc/>
-        IEnumerator IEnumerable.GetEnumerator() => _pool.GetEnumerator();
+        IEnumerator IEnumerable.GetEnumerator() => ((IEnumerable<T>)_pool).GetEnumerator();
 
         /// <inheritdoc/>
         public void Dispose()
