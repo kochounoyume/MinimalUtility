@@ -30,7 +30,7 @@ namespace MinimalUtility.Debugging
         /// <returns>ルート要素.</returns>
         public virtual VisualElement Start()
         {
-            var uiDocument = DontDestroyObject.Default.AddComponent<UIDocument>();
+            var uiDocument = DontDestroyObject.Shared.AddComponent<UIDocument>();
             if (panelSettings == null)
             {
                 panelSettings = ScriptableObject.CreateInstance<PanelSettings>();
