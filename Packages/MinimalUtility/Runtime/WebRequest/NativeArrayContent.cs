@@ -1,12 +1,10 @@
-﻿#if ENABLE_WEBREQUEST && ENABLE_UNITASK
-#nullable enable
+﻿#nullable enable
 
 using System;
 using System.IO;
 using System.Net;
 using System.Net.Http;
 using System.Threading.Tasks;
-using Cysharp.Threading.Tasks;
 using Unity.Collections;
 
 namespace MinimalUtility.WebRequest
@@ -27,10 +25,7 @@ namespace MinimalUtility.WebRequest
 
         protected override async Task SerializeToStreamAsync(Stream stream, TransportContext _)
         {
-            await using (UniTask.ReturnToMainThread())
-            {
-                stream.Write(_data.AsReadOnlySpan());
-            }
+            stream.Write(_data.AsReadOnlySpan());
         }
 
         protected override bool TryComputeLength(out long length)
@@ -49,4 +44,3 @@ namespace MinimalUtility.WebRequest
         }
     }
 }
-#endif
