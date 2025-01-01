@@ -1,26 +1,31 @@
 ﻿#nullable enable
 
+using System.Runtime.CompilerServices;
 using UnityEngine;
 
 namespace MinimalUtility.Internal
 {
     internal static class DontDestroyObject
     {
-        public static Transform Root => Default.transform;
+        public static Transform Root
+        {
+            [MethodImpl(MethodImplOptions.AggressiveInlining)]
+            get => Shared.transform;
+        }
 
-        public static GameObject Default
+        public static GameObject Shared
         {
             get
             {
-                if (s_default == null)
+                if (s_shared == null)
                 {
-                    s_default = new GameObject("MinimalUtility." + nameof(DontDestroyObject));
-                    Object.DontDestroyOnLoad(s_default);
+                    s_shared = new GameObject("MinimalUtility." + nameof(DontDestroyObject));
+                    Object.DontDestroyOnLoad(s_shared);
                 }
-                return s_default;
+                return s_shared;
             }
         }
 
-        private static GameObject? s_default;
+        private static GameObject? s_shared;
     }
 }

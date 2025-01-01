@@ -147,6 +147,7 @@ namespace MinimalUtility.Pool
         {
             ThrowIfDisposed();
             element.gameObject.SetActive(false);
+            element.transform.SetParent(DontDestroyObject.Root);
             _pool.Push(element);
         }
 
