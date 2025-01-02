@@ -71,8 +71,7 @@ namespace MinimalUtility.Debugging
                 var latest = GetLatestFrameTiming();
                 label.text = $@"<b>Performance</b>
 CPU: {1000 / latest.cpuFrameTime:F0}fps ({latest.cpuFrameTime:F1}ms)
-Memory: {GetTotalMemory(MemoryUnit.GB):F}GB
-";
+Memory: {GetTotalMemory(MemoryUnit.GB):F}GB";
             }).Every(500);
             return label;
         }
