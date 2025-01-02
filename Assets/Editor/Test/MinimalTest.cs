@@ -1,4 +1,6 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
+using System.Linq;
 using System.Net.Http;
 using NUnit.Framework;
 using UnityEngine.TestTools;
@@ -73,6 +75,17 @@ namespace MinimalUtility.Test
             Assert.IsTrue(result);
         }
 
+        [Test, Order(6)]
+        public void XEnumTest()
+        {
+            var fruits = Fruits.Apple | Fruits.Banana | Fruits.Orange;
+            foreach (var fruit in fruits)
+            {
+                TestContext.Out.WriteLine(XEnum.GetName(fruit));
+            }
+            Assert.Pass();
+        }
+
         private static IEnumerator PackageRemoveTest(string packageName)
         {
             var request = UnityEditor.PackageManager.Client.Remove(packageName);
@@ -84,6 +97,14 @@ namespace MinimalUtility.Test
             {
                 throw new System.Exception("Failed to remove package: " + packageName);
             }
+        }
+
+        [Flags, ForEach]
+        public enum Fruits
+        {
+            Apple = 1 << 0,
+            Banana = 1 << 1,
+            Orange = 1 << 2,
         }
     }
 }

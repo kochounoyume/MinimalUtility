@@ -3,7 +3,7 @@
 namespace MinimalUtility
 {
     /// <summary>
-    /// <see cref="System.FlagsAttribute"/>の拡張版.
+    /// <see cref="System.FlagsAttribute"/>と一緒に使うことでGetEnumerator拡張を生やす属性.
     /// </summary>
     /// <remarks>
     /// 以下のようなコードを自動生成して、foreach文で保持フラグの列挙を可能にする.その必要がなければ、<see cref="System.FlagsAttribute"/>を使用推奨.
@@ -50,12 +50,12 @@ namespace MinimalUtility
     /// ]]>
     /// </code>
     /// </example>
-    public sealed class FlagsExAttribute : System.FlagsAttribute
+    public sealed class ForEachAttribute : System.FlagsAttribute
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="FlagsExAttribute"/> class.
+        /// Initializes a new instance of the <see cref="ForEachAttribute"/> class.
         /// </summary>
-        public FlagsExAttribute() : base()
+        public ForEachAttribute() : base()
         {
         }
     }

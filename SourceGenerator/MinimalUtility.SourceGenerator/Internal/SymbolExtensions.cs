@@ -73,7 +73,7 @@ internal static class SymbolExtensions
     /// <param name="typeSymbol">列挙型の型情報</param>
     /// <returns><see cref="FlagsAttribute"/> を持っている場合は true、それ以外は false</returns>
     [MethodImpl(MethodImplOptions.AggressiveInlining)]
-    public static bool ContainFlagsAttribute(this ITypeSymbol typeSymbol)
+    public static bool ContainFlagsAttribute(this ISymbol typeSymbol)
     {
         foreach (var attribute in typeSymbol.GetAttributes())
         {
