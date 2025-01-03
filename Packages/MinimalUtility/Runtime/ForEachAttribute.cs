@@ -51,7 +51,7 @@ namespace MinimalUtility
     /// </code>
     /// </example>
     [AttributeUsage(AttributeTargets.Enum, Inherited = false)]
-    public sealed class ForEachAttribute : System.FlagsAttribute
+    public sealed class ForEachAttribute : System.Attribute
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="ForEachAttribute"/> class.
