@@ -50,6 +50,7 @@ namespace MinimalUtility
     /// ]]>
     /// </code>
     /// </example>
+    [AttributeUsage(AttributeTargets.Enum, Inherited = false)]
     public sealed class ForEachAttribute : System.FlagsAttribute
     {
         /// <summary>
