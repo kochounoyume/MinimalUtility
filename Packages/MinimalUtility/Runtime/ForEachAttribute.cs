@@ -1,5 +1,7 @@
 ﻿#nullable enable
 
+using System;
+
 namespace MinimalUtility
 {
     /// <summary>
@@ -51,7 +53,7 @@ namespace MinimalUtility
     /// </code>
     /// </example>
     [AttributeUsage(AttributeTargets.Enum, Inherited = false)]
-    public sealed class ForEachAttribute : System.Attribute
+    public sealed class ForEachAttribute : Attribute
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="ForEachAttribute"/> class.
