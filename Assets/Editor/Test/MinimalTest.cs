@@ -79,7 +79,7 @@ namespace MinimalUtility.Test
         public void XEnumTest()
         {
             var fruits = Fruits.Apple | Fruits.Banana | Fruits.Orange;
-            foreach (var fruit in fruits)
+            foreach (var fruit in fruits.Enumerate())
             {
                 TestContext.Out.WriteLine(XEnum.GetName(fruit));
             }
@@ -99,7 +99,7 @@ namespace MinimalUtility.Test
             }
         }
 
-        [Flags, ForEach]
+        [Flags]
         public enum Fruits
         {
             Apple = 1 << 0,
