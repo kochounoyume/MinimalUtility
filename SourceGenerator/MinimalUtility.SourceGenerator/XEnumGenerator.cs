@@ -26,7 +26,7 @@ internal sealed class XEnumGenerator : IIncrementalGenerator
             {
                 IsGenericMethod: true,
                 Name: "GetValues" or "GetLength" or "GetNames" or "GetName" or "IsDefined" or "Parse" or "TryParse"
-                or "ToXEnumString" or "GetEnumMemberValue" or "HasBitFlag" or "ConstructFlags" or "Enumerate"
+                or "ToXEnumString" or "GetEnumMemberValue" or "HasBitFlag" or "ConstructFlags" or "AsFlags"
             }
             && method.ContainingType.ToDisplayString() != "MinimalUtility.XEnum.Cache<T>")
             .Select((symbol, token) =>
@@ -74,7 +74,7 @@ internal sealed class XEnumGenerator : IIncrementalGenerator
                 [MethodImpl(MethodImplOptions.AggressiveInlining)]
                 public static bool ConstructFlags<T>(this T value) where T : struct, Enum => Cache<T>.Default.ConstructFlags(value);
                 [MethodImpl(MethodImplOptions.AggressiveInlining)]
-                public static EnumeratorFactory<T> Enumerate<T>(this T value) where T : struct, Enum => new(value);
+                public static EnumeratorFactory<T> AsFlags<T>(this T value) where T : struct, Enum => new(value);
 
                 private abstract partial class Cache<T> where T : struct, Enum
                 {
