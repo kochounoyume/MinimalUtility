@@ -7,11 +7,11 @@ namespace MinimalUtility
 {
     /// <summary>
     /// 値型で軽量な<see cref="IDisposable"/>のファクトリ.
+    /// </summary>
     /// <remarks>
     /// usingステートメントでの仕様を想定しており、<see cref="IDisposable"/>にキャストするとアロケーションが発生する.
     /// <see cref="IDisposable"/>にキャストして使用したい場合は素直に専用クラス実装するか、Rxライブラリの<see cref="IDisposable"/>ファクトリを使用する.
     /// </remarks>
-    /// </summary>
     public static class ValueDisposable
     {
         /// <summary>

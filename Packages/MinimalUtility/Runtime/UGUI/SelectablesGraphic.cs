@@ -9,10 +9,10 @@ namespace MinimalUtility.UGUI
 {
     /// <summary>
     /// <see cref="UnityEngine.UI.Selectable"/>を使用するうえで最低限の機能を持つグラフィック.
+    /// </summary>
     /// <remarks>
     /// 子オブジェクトのGraphicをキャッシュして選択時に色変化を伝播させる
     /// </remarks>
-    /// </summary>
     public sealed class SelectablesGraphic : EmptyGraphic
     {
         /// <summary>

@@ -85,10 +85,10 @@ namespace MinimalUtility
 
         /// <summary>
         /// ワールドスペースで計算された長方形の角を取得する.
+        /// </summary>
         /// <remarks>
         /// <see cref="RectTransform.GetWorldCorners(Vector3[])"/>に同じ.
         /// </remarks>
-        /// </summary>
         /// <param name="rectTransform">対象の<see cref="RectTransform"/>.</param>
         /// <param name="fourCornersSpan">取得した角の座標を格納する<see cref="Span{T}"/>.</param>
         /// <returns>取得した角の座標を格納した<see cref="ReadOnlySpan{T}"/>.</returns>
@@ -113,10 +113,10 @@ namespace MinimalUtility
 
         /// <summary>
         /// <see cref="RectTransform"/>のローカル空間で計算された長方形の角を取得する.
+        /// </summary>
         /// <remarks>
         /// <see cref="RectTransform.GetLocalCorners(Vector3[])"/>に同じ.
         /// </remarks>
-        /// </summary>
         /// <param name="rectTransform">対象の<see cref="RectTransform"/>.</param>
         /// <param name="fourCornersSpan">取得した角の座標を格納する<see cref="Span{T}"/>.</param>
         /// <returns>取得した角の座標を格納した<see cref="ReadOnlySpan{T}"/>.</returns>
@@ -136,10 +136,10 @@ namespace MinimalUtility
 
         /// <summary>
         /// <see cref="RectTransform"/>のローカル空間で計算された長方形の角を取得する.
+        /// </summary>
         /// <remarks>
         /// <see cref="RectTransform.GetLocalCorners(Vector3[])"/>に同じ.
         /// </remarks>
-        /// </summary>
         /// <param name="rectTransform">対象の<see cref="RectTransform"/>.</param>
         /// <param name="fourCornersSpan">取得した角の座標を格納する<see cref="Span{T}"/>.</param>
         /// <returns>取得した角の座標を格納した<see cref="ReadOnlySpan{T}"/>.</returns>

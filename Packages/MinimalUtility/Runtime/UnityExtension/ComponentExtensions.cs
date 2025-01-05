@@ -13,15 +13,51 @@ namespace MinimalUtility
     {
         /// <summary>
         /// 子オブジェクトの<typeparamref name="T"/>コンポーネントを全て取得する.
+        /// </summary>
         /// <remarks>
         /// <see cref="Component.GetComponentsInChildren{T}()"/>と異なり、孫オブジェクト以降は検索しない.
         /// </remarks>
-        /// </summary>
+        ///<example>
+        ///<code>
+        /// <![CDATA[
+        /// using System;
+        /// using MinimalUtility;
+        /// using UnityEngine;
+        ///
+        /// public class GetComponentsInOnlyChildrenExample : MonoBehaviour
+        /// {
+        ///     private void Start()
+        ///     {
+        ///         ReadOnlyMemory<HingeJoint> hingeJoints = this.GetComponentsInOnlyChildren<HingeJoint>();
+        ///
+        ///         if (!hingeJoints.IsEmpty)
+        ///         {
+        ///             foreach (HingeJoint joint in hingeJoints)
+        ///             {
+        ///                 joint.useSpring = false;
+        ///             }
+        ///         }
+        ///         else
+        ///         {
+        ///             // Try again, looking for inactive GameObjects
+        ///             ReadOnlyMemory<HingeJoint> hingesInactive = this.GetComponentsInOnlyChildren<HingeJoint>(true);
+        ///
+        ///             foreach (HingeJoint joint in hingesInactive)
+        ///             {
+        ///                 joint.useSpring = false;
+        ///             }
+        ///         }
+        ///     }
+        /// }
+        /// ]]>
+        ///</code>
+        ///</example>
         /// <param name="self">対象の<see cref="Component"/>.</param>
+        /// <param name="includeInactive">非アクティブのゲームオブジェクトも含めるかどうか.デフォルトは含めない.</param>
         /// <typeparam name="T">取得したいコンポーネントの型.</typeparam>
         /// <returns>取得したコンポーネントインスタンスのコレクション.</returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static ReadOnlyMemory<T> GetComponentsInOnlyChildren<T>(this Component self) where T : Component
+        public static ReadOnlyMemory<T> GetComponentsInOnlyChildren<T>(this Component self, bool includeInactive = false) where T : Component
         {
             var transform = self.transform;
             var limit = transform.childCount;
@@ -32,8 +68,10 @@ namespace MinimalUtility
             var count = 0;
             for (var i = 0; i < span.Length; i++)
             {
-                if (transform.GetChild(i).gameObject.TryGetComponent(out T component))
+                var gameObject = transform.GetChild(i).gameObject;
+                if (gameObject.TryGetComponent(out T component))
                 {
+                    if (!includeInactive && !gameObject.activeSelf) continue;
                     span[count++] = component;
                 }
             }
@@ -43,6 +81,25 @@ namespace MinimalUtility
         /// <summary>
         /// 安全な<see cref="Component.GetComponent{T}"/>.
         /// </summary>
+        ///<example>
+        ///<code>
+        /// <![CDATA[
+        /// using MinimalUtility;
+        /// using UnityEngine;
+        ///
+        /// public class SafeGetComponentExample : MonoBehaviour
+        /// {
+        ///     private HingeJoint hinge;
+        ///
+        ///     private void Update()
+        ///     {
+        ///         hinge ??= this.SafeGetComponent<HingeJoint>();
+        ///         hinge.useSpring = false;
+        ///     }
+        /// }
+        /// ]]>
+        /// </code>
+        /// </example>
         /// <param name="self">対象の<see cref="Component"/>.</param>
         /// <typeparam name="T">取得したいコンポーネントの型.</typeparam>
         /// <returns>取得したコンポーネントインスタンス.なお取得不可の場合はSystemのnullを返す.</returns>

@@ -8,10 +8,10 @@ namespace MinimalUtility.UGUI
 {
     /// <summary>
     /// 空処理のグラフィック.
+    /// </summary>
     /// <remarks>
     /// 想定用途：マスク時のベース, 画面全体を透明なuGUIで覆いたいとき、Buttonの判定領域を透明にしたいとき
     /// </remarks>
-    /// </summary>
     [RequireComponent(typeof(CanvasRenderer))]
     public class EmptyGraphic : Graphic
     {
