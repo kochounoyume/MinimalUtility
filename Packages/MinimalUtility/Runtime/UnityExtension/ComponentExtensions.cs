@@ -89,7 +89,7 @@ namespace MinimalUtility
         ///
         /// public class SafeGetComponentExample : MonoBehaviour
         /// {
-        ///     private HingeJoint hinge;
+        ///     private HingeJoint _hinge;
         ///
         ///     private void Update()
         ///     {

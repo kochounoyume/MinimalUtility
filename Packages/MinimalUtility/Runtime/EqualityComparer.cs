@@ -13,6 +13,39 @@ namespace MinimalUtility
         /// <summary>
         /// 指定した比較処理を使用して<see cref="EqualityComparer{T}"/>を生成します.
         /// </summary>
+        ///<example>
+        ///<code>
+        /// <![CDATA[
+        /// using System.Collections.Generic;
+        /// using MinimalUtility;
+        ///
+        /// public enum Fruits : int
+        /// {
+        ///     Apple,
+        ///     Orange,
+        ///     Banana,
+        /// }
+        ///
+        /// public class EqualityComparerFactoryExample
+        /// {
+        ///     private readonly Dictionary<Fruits, string> _fruits;
+        ///
+        ///     public EqualityComparerFactoryExample()
+        ///     {
+        ///         var equalityComparer = EqualityComparer.Create<Fruits>(
+        ///             static (x, y) => (int) x == (int) y,
+        ///             static x => ((int) x).GetHashCode());
+        ///         _fruits = new Dictionary<Fruits, string>(3, equalityComparer)
+        ///         {
+        ///             {Fruits.Apple, "Apple"},
+        ///             {Fruits.Orange, "Orange"},
+        ///             {Fruits.Banana, "Banana"},
+        ///         };
+        ///     }
+        /// }
+        /// ]]>
+        /// </code>
+        /// </example>
         /// <param name="equals"><see cref="EqualityComparer{T}.Equals(T, T)"/>に使用する処理.</param>
         /// <param name="getHashCode"><see cref="EqualityComparer{T}.GetHashCode(T)"/>に使用する処理.</param>
         /// <typeparam name="T">比較対象の型.</typeparam>
