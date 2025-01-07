@@ -13,8 +13,8 @@ namespace MinimalUtility
         /// <summary>
         /// 指定した比較処理を使用して<see cref="EqualityComparer{T}"/>を生成します.
         /// </summary>
-        ///<example>
-        ///<code>
+        /// <example>
+        /// <code>
         /// <![CDATA[
         /// using System.Collections.Generic;
         /// using MinimalUtility;
