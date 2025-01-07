@@ -17,8 +17,8 @@ namespace MinimalUtility
         /// <remarks>
         /// <see cref="Component.GetComponentsInChildren{T}()"/>と異なり、孫オブジェクト以降は検索しない.
         /// </remarks>
-        ///<example>
-        ///<code>
+        /// <example>
+        /// <code>
         /// <![CDATA[
         /// using System;
         /// using MinimalUtility;
@@ -50,8 +50,8 @@ namespace MinimalUtility
         ///     }
         /// }
         /// ]]>
-        ///</code>
-        ///</example>
+        /// </code>
+        /// </example>
         /// <param name="self">対象の<see cref="Component"/>.</param>
         /// <param name="includeInactive">非アクティブのゲームオブジェクトも含めるかどうか.デフォルトは含めない.</param>
         /// <typeparam name="T">取得したいコンポーネントの型.</typeparam>
@@ -81,8 +81,8 @@ namespace MinimalUtility
         /// <summary>
         /// 安全な<see cref="Component.GetComponent{T}"/>.
         /// </summary>
-        ///<example>
-        ///<code>
+        /// <example>
+        /// <code>
         /// <![CDATA[
         /// using MinimalUtility;
         /// using UnityEngine;
