@@ -13,6 +13,9 @@ namespace MinimalUtility
         /// <summary>
         /// <see cref="Memory{T}"/>のforeach対応.
         /// </summary>
+        /// <example>
+        /// <see cref="GetEnumerator{T}(in ReadOnlyMemory{T})"/>と使い方や機能は同じ.
+        /// </example>
         /// <param name="memory">対象の<see cref="Memory{T}"/>.</param>
         /// <typeparam name="T">要素の型.</typeparam>
         /// <returns>要素を列挙する<see cref="MemoryExtensions.Enumerator{T}"/>.</returns>
@@ -22,6 +25,38 @@ namespace MinimalUtility
         /// <summary>
         /// <see cref="ReadOnlyMemory{T}"/>のforeach対応.
         /// </summary>
+        /// <example>
+        /// <code>
+        /// <![CDATA[
+        /// using System;
+        /// using System.Collections;
+        /// using MinimalUtility;
+        /// using UnityEngine;
+        /// 
+        /// public class MemoryExtensionsSample : MonoBehaviour
+        /// {
+        ///     private ReadOnlyMemory<char> _text;
+        /// 
+        ///     private void Start()
+        ///     {
+        ///         const string text = "Hello, World!";
+        ///         _text = text.AsMemory().Slice(7, 5); // 'W', 'o', 'r', 'l', 'd'
+        /// 
+        ///         StartCoroutine(UpdateText());
+        ///     }
+        /// 
+        ///     private IEnumerator UpdateText()
+        ///     {
+        ///         foreach (var c in _text)
+        ///         {
+        ///             Debug.Log(c);
+        ///             yield return null; // Wait for next frame
+        ///         }
+        ///     }
+        /// }
+        /// ]]>
+        /// </code>
+        /// </example>
         /// <param name="memory">対象の<see cref="ReadOnlyMemory{T}"/>.</param>
         /// <typeparam name="T">要素の型.</typeparam>
         /// <returns>要素を列挙する<see cref="MemoryExtensions.Enumerator{T}"/>.</returns>
