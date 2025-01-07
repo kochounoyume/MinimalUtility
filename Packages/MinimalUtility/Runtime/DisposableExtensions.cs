@@ -13,8 +13,8 @@ namespace MinimalUtility
         /// <summary>
         /// <see cref="IDisposable"/>を指定した<see cref="IDisposable"/>コンテナに追加します.
         /// </summary>
-        ///<example>
-        ///<code>
+        /// <example>
+        /// <code>
         /// <![CDATA[
         /// using System;
         /// using MinimalUtility;
@@ -44,8 +44,8 @@ namespace MinimalUtility
         ///     }
         /// }
         /// ]]>
-        ///</code>
-        ///</example>
+        /// </code>
+        /// </example>
         /// <param name="disposable">任意の<see cref="IDisposable"/>実装クラスの参照.</param>
         /// <param name="disposableContainer">追加先の<see cref="IDisposable"/>コンテナ.</param>
         /// <typeparam name="T">追加した<see cref="IDisposable"/>.</typeparam>
@@ -58,8 +58,8 @@ namespace MinimalUtility
         /// <summary>
         /// <see cref="IDisposable"/>を指定した<see cref="IDisposable"/>コンテナに追加します.
         /// </summary>
-        ///<example>
-        ///<code>
+        /// <example>
+        /// <code>
         /// <![CDATA[
         /// using System.Threading;
         /// using MinimalUtility;
@@ -91,8 +91,8 @@ namespace MinimalUtility
         ///     }
         /// }
         /// ]]>
-        ///</code>
-        ///</example>
+        /// </code>
+        /// </example>
         /// <param name="disposable">任意の<see cref="IDisposable"/>実装構造体.</param>
         /// <param name="disposableContainer">追加先の<see cref="IDisposable"/>コンテナ.</param>
         /// <typeparam name="T">追加した<see cref="IDisposable"/>.</typeparam>
