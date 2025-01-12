@@ -5,6 +5,7 @@
     "com.github-glitchenzo.nugetforunity": "https://github.com/GlitchEnzo/NuGetForUnity.git?path=/src/NuGetForUnity",
     "com.unity.ide.rider": "3.0.34",
     "com.unity.test-framework": "1.1.33",
+    "com.unity.test-framework.performance": "3.0.3",
     "com.unity.textmeshpro": "3.0.9",
     "com.unity.ugui": "1.0.0",
     "jp.hadashikick.vcontainer": "https://github.com/hadashiA/VContainer.git?path=VContainer/Assets/VContainer",

@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections;
+using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
 using NUnit.Framework;
+using Unity.PerformanceTesting;
 using UnityEngine.TestTools;
 
 namespace MinimalUtility.Test
@@ -82,6 +84,18 @@ namespace MinimalUtility.Test
             foreach (var fruit in fruits.AsFlags())
             {
                 TestContext.Out.WriteLine(XEnum.GetName(fruit));
+            }
+            Assert.Pass();
+        }
+
+        [Test, Order(7), Performance]
+        public void ListSpanTest()
+        {
+            var list = new List<int> {1, 2, 3, 4, 5};
+            list.AsSpan()[1] = -555;
+            foreach (var i in list.AsSpan())
+            {
+                TestContext.Out.WriteLine(i.ToString());
             }
             Assert.Pass();
         }
