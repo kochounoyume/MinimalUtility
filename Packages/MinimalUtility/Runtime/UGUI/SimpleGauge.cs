@@ -11,7 +11,6 @@ namespace MinimalUtility.UGUI
     /// <summary>
     /// <see cref="RectMask2D"/>を継承利用したシンプルで綺麗なゲージ表示.
     /// </summary>
-    [RequireComponent(typeof(MaskableGraphic))]
     public class SimpleGauge : RectMask2D
     {
         [FormerlySerializedAs("mode")]
@@ -48,8 +47,9 @@ namespace MinimalUtility.UGUI
         }
 
         /// <summary>
-        /// ゲージの表示に使用する<see cref="MaskableGraphic"/>.
+        /// 本ゲージと一緒にアタッチされている<see cref="MaskableGraphic"/>.
         /// </summary>
+        /// <remarks>なければnullを返す.</remarks>
         public MaskableGraphic graphic => _graphic == null ? _graphic = this.SafeGetComponent<MaskableGraphic>() : _graphic;
 
         /// <inheritdoc/>
