@@ -5,7 +5,9 @@
         "GUID:eb014bd0dae606c44a234c52ffeb53e2",
         "GUID:77221876cc6b8244180b96e320b1bcd4",
         "GUID:f51ebe6a0ceec4240a699833d6309b23",
-        "GUID:b0214a6008ed146ff8f122a6a9c2f6cc"
+        "GUID:b0214a6008ed146ff8f122a6a9c2f6cc",
+        "GUID:2bafac87e7f4b9b418d9448d219b01ab",
+        "GUID:6055be8ebefd69e48b49212b09b47b2f"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
@@ -47,6 +49,16 @@
             "name": "com.unity.modules.unitywebrequest",
             "expression": "",
             "define": "ENABLE_WEBREQUEST"
+        },
+        {
+            "name": "com.unity.textmeshpro",
+            "expression": "",
+            "define": "ENABLE_TEXTMESHPRO"
+        },
+        {
+            "name": "com.unity.ugui",
+            "expression": "2.0.0",
+            "define": "ENABLE_TEXTMESHPRO"
         }
     ],
     "noEngineReferences": false
