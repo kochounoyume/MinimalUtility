@@ -28,10 +28,15 @@ namespace MinimalUtility.Editor
                 foreach (var attr in methodInfo.GetCustomAttributes<ButtonAttribute>())
                 {
                     if (attr == null) continue;
-                    root.Add(new Button(() => methodInfo.Invoke(target, attr.parameters))
+                    var btn = new Button()
                     {
                         text = attr.buttonName
-                    });
+                    };
+                    btn.RegisterCallback<ClickEvent, (MethodInfo method, UnityEngine.Object target, object[] args)>(static (_, method) =>
+                    {
+                        method.method.Invoke(method.target, method.args);
+                    }, (methodInfo, target, attr.parameters));
+                    root.Add(btn);
                 }
             }
             return root;
