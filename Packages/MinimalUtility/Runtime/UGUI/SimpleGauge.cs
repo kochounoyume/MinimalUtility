@@ -46,17 +46,14 @@ namespace MinimalUtility.UGUI
             }
         }
 
-        /// <summary>
-        /// 本ゲージと一緒にアタッチされている<see cref="MaskableGraphic"/>.
-        /// </summary>
-        /// <remarks>なければnullを返す.</remarks>
-        public MaskableGraphic graphic => _graphic == null ? _graphic = this.SafeGetComponent<MaskableGraphic>() : _graphic;
-
         /// <inheritdoc/>
-        protected override void OnEnable()
+        protected override void Start()
         {
-            base.OnEnable();
-            AddClippable(graphic);
+            base.Start();
+            if (TryGetComponent(out MaskableGraphic graphic))
+            {
+                AddClippable(graphic);
+            }
         }
 
 #if UNITY_EDITOR

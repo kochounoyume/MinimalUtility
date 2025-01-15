@@ -67,7 +67,7 @@ namespace MinimalUtility.Editor.DataBind
                     backgroundColor = Color.white
                 }
             };
-            removeBtn.RegisterCallback<ClickEvent, SerializedProperty>(static (eve, prop) =>
+            removeBtn.RegisterCallback<ClickEvent, SerializedProperty>(static (_, prop) =>
             {
                 prop.DeleteCommand();
                 prop.serializedObject.ApplyModifiedProperties();
