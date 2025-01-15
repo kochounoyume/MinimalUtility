@@ -11,7 +11,7 @@ using UnityEngine.UIElements;
 namespace MinimalUtility.Editor.DataBind
 {
     [CustomPropertyDrawer(typeof(TargetBindElement<>), true)]
-    public class TargetBindElementDrawer : PropertyDrawer
+    internal class TargetBindElementDrawer : PropertyDrawer
     {
         public override VisualElement CreatePropertyGUI(SerializedProperty property)
         {
