@@ -49,11 +49,18 @@ namespace MinimalUtility.DataBind
         }
     }
 
-    public abstract class EnableElement<T> : BindElement where T : Behaviour
+    public abstract class TargetBindElement<T> : BindElement where T : Component
     {
         [SerializeField]
-        private T? _target;
+        protected T? _target;
 
+        protected TargetBindElement(string propertyName) : base(propertyName)
+        {
+        }
+    }
+
+    public abstract class EnableElement<T> : TargetBindElement<T> where T : Behaviour
+    {
         protected EnableElement() : base(nameof(Behaviour.enabled))
         {
         }

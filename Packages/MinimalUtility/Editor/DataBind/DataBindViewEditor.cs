@@ -1,10 +1,10 @@
 ﻿#if ENABLE_UGUI
 #nullable enable
+
 using System;
 using System.Reflection;
 using UnityEditor;
 using UnityEditor.IMGUI.Controls;
-using UnityEditor.UIElements;
 using UnityEngine;
 using UnityEngine.UIElements;
 
@@ -25,8 +25,17 @@ namespace MinimalUtility.Editor.DataBind
 
             var box = CreateBox("Bind Elements");
 
-            //var field = new PropertyField(_bindElementsProperty);
-            //box.Add(field);
+            box.Add(new ListView
+            {
+                bindingPath = "_elements",
+                reorderMode = ListViewReorderMode.Animated,
+                showBorder = true,
+                showAddRemoveFooter = false,
+                showFoldoutHeader = false,
+                showBoundCollectionSize = false,
+                virtualizationMethod = CollectionVirtualizationMethod.DynamicHeight,
+                selectionType = SelectionType.None
+            });
 
             var addButton = new Button()
             {
@@ -47,34 +56,6 @@ namespace MinimalUtility.Editor.DataBind
             var root = new VisualElement();
             root.Add(box);
             return root;
-        }
-
-        bool IItemSelectHandler.AlreadyExist(Type type)
-        {
-            if (_bindElementsProperty == null) return false;
-            var size = _bindElementsProperty.arraySize;
-            for (var i = 0; i < size; i++)
-            {
-                var property = _bindElementsProperty.GetArrayElementAtIndex(i);
-                if (EqualTypeName(property.managedReferenceFullTypename, type.FullName))
-                {
-                    return true;
-                }
-            }
-            return false;
-
-            static bool EqualTypeName(in ReadOnlySpan<char> managedReferenceFullTypename, in ReadOnlySpan<char> fullName)
-            {
-                var index = managedReferenceFullTypename.IndexOf(' ');
-                var managed = managedReferenceFullTypename[(index + 1)..];
-                var span = (Span<char>)stackalloc char[managed.Length];
-                managed.CopyTo(span);
-                while (span.IndexOf('/') is var i && i != -1)
-                {
-                    span[i] = '.';
-                }
-                return span.SequenceEqual(fullName);
-            }
         }
 
         void IItemSelectHandler.OnItemSelected(Type type)

@@ -22,7 +22,7 @@ namespace MinimalUtility.DataBind
         private static readonly RuntimeTypeHandle s_spriteTypeHandle = typeof(Sprite).TypeHandle;
         private static readonly BindElement s_emptyElement = new("");
 
-        [SerializeReference, HideInInspector]
+        [SerializeReference]
         private BindElement[] _elements = Array.Empty<BindElement>();
 
         public void Bind(string propertyName, bool value)

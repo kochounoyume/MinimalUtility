@@ -12,11 +12,8 @@ namespace MinimalUtility.DataBind
 {
     using UGUI;
 
-    public abstract class ColorElement<T> : BindElement where T : Graphic
+    public abstract class ColorElement<T> : TargetBindElement<T> where T : Graphic
     {
-        [SerializeField]
-        private T? _target;
-
         protected ColorElement() : base(nameof(Graphic.color))
         {
         }
@@ -28,11 +25,8 @@ namespace MinimalUtility.DataBind
         }
     }
 
-    public abstract class RaycastTargetElement<T> : BindElement where T : Graphic
+    public abstract class RaycastTargetElement<T> : TargetBindElement<T> where T : Graphic
     {
-        [SerializeField]
-        private T? _target;
-
         protected RaycastTargetElement() : base(nameof(Graphic.raycastTarget))
         {
         }
@@ -44,11 +38,8 @@ namespace MinimalUtility.DataBind
         }
     }
 
-    public abstract class InteractableElement<T> : BindElement where T : Selectable
+    public abstract class InteractableElement<T> : TargetBindElement<T> where T : Selectable
     {
-        [SerializeField]
-        private T? _target;
-
         protected InteractableElement() : base(nameof(Selectable.interactable))
         {
         }
@@ -61,11 +52,8 @@ namespace MinimalUtility.DataBind
     }
 
     [DataBindMenu(nameof(Dropdown) + "/" + nameof(Dropdown.value))]
-    internal sealed class DropdownValueElement : BindElement
+    internal sealed class DropdownValueElement : TargetBindElement<Dropdown>
     {
-        [SerializeField]
-        private Dropdown? _target;
-
         private DropdownValueElement() : base(nameof(Dropdown.value))
         {
         }
@@ -78,11 +66,8 @@ namespace MinimalUtility.DataBind
     }
 
     [DataBindMenu(nameof(Image) + "/" + nameof(Image.sprite))]
-    internal sealed class ImageSpriteElement : BindElement
+    internal sealed class ImageSpriteElement : TargetBindElement<Image>
     {
-        [SerializeField]
-        private Image? _target;
-
         private ImageSpriteElement() : base(nameof(Image.sprite))
         {
         }
@@ -95,11 +80,8 @@ namespace MinimalUtility.DataBind
     }
 
     [DataBindMenu(nameof(RawImage) + "/" + nameof(RawImage.texture))]
-    internal sealed class RawImageTextureElement : BindElement
+    internal sealed class RawImageTextureElement : TargetBindElement<RawImage>
     {
-        [SerializeField]
-        private RawImage? _target;
-
         private RawImageTextureElement() : base(nameof(RawImage.texture))
         {
         }
@@ -112,11 +94,8 @@ namespace MinimalUtility.DataBind
     }
 
     [DataBindMenu(nameof(Scrollbar) + "/" + nameof(Scrollbar.value))]
-    internal sealed class ScrollBarValueElement : BindElement
+    internal sealed class ScrollBarValueElement : TargetBindElement<Scrollbar>
     {
-        [SerializeField]
-        private Scrollbar? _target;
-
         private ScrollBarValueElement() : base(nameof(Scrollbar.value))
         {
         }
@@ -129,11 +108,8 @@ namespace MinimalUtility.DataBind
     }
 
     [DataBindMenu(nameof(ScrollRect) + "/" + nameof(ScrollRect.horizontalNormalizedPosition))]
-    internal sealed class ScrollRectHorizontalNormalizedPositionElement : BindElement
+    internal sealed class ScrollRectHorizontalNormalizedPositionElement : TargetBindElement<ScrollRect>
     {
-        [SerializeField]
-        private ScrollRect? _target;
-
         private ScrollRectHorizontalNormalizedPositionElement() : base(nameof(ScrollRect.horizontalNormalizedPosition))
         {
         }
@@ -146,11 +122,8 @@ namespace MinimalUtility.DataBind
     }
 
     [DataBindMenu(nameof(ScrollRect) + "/" + nameof(ScrollRect.verticalNormalizedPosition))]
-    internal sealed class ScrollRectVerticalNormalizedPositionElement : BindElement
+    internal sealed class ScrollRectVerticalNormalizedPositionElement : TargetBindElement<ScrollRect>
     {
-        [SerializeField]
-        private ScrollRect? _target;
-
         private ScrollRectVerticalNormalizedPositionElement() : base(nameof(ScrollRect.verticalNormalizedPosition))
         {
         }
@@ -163,11 +136,8 @@ namespace MinimalUtility.DataBind
     }
 
     [DataBindMenu(nameof(SimpleGauge) + "/" + nameof(SimpleGauge.value))]
-    internal sealed class SimpleGaugeValueElement : BindElement
+    internal sealed class SimpleGaugeValueElement : TargetBindElement<SimpleGauge>
     {
-        [SerializeField]
-        private SimpleGauge? _target;
-
         private SimpleGaugeValueElement() : base(nameof(SimpleGauge.value))
         {
         }
@@ -180,11 +150,8 @@ namespace MinimalUtility.DataBind
     }
 
     [DataBindMenu(nameof(Slider) + "/" + nameof(Slider.value))]
-    internal sealed class SliderValueElement : BindElement
+    internal sealed class SliderValueElement : TargetBindElement<Slider>
     {
-        [SerializeField]
-        private Slider? _target;
-
         private SliderValueElement() : base(nameof(Slider.value))
         {
         }
@@ -198,11 +165,8 @@ namespace MinimalUtility.DataBind
 
 #if ENABLE_TEXTMESHPRO
     [DataBindMenu(nameof(TextMeshProUGUI) + "/" + nameof(TextMeshProUGUI.text))]
-    internal sealed class TextMeshProTextElement : BindElement
+    internal sealed class TextMeshProTextElement : TargetBindElement<TextMeshProUGUI>
     {
-        [SerializeField]
-        private TextMeshProUGUI? _target;
-
         private TextMeshProTextElement() : base(nameof(TextMeshProUGUI.text))
         {
         }
@@ -227,11 +191,8 @@ namespace MinimalUtility.DataBind
     }
 
     [DataBindMenu(nameof(TMP_InputField) + "/" + nameof(TMP_InputField.text))]
-    internal sealed class TMP_InputFieldTextElement : BindElement
+    internal sealed class TMP_InputFieldTextElement : TargetBindElement<TMP_InputField>
     {
-        [SerializeField]
-        private TMP_InputField? _target;
-
         private TMP_InputFieldTextElement() : base(nameof(TMP_InputField.text))
         {
         }
@@ -245,11 +206,8 @@ namespace MinimalUtility.DataBind
 #endif
 
     [DataBindMenu(nameof(Toggle) + "/" + nameof(Toggle.isOn))]
-    internal sealed class ToggleIsOnElement : BindElement
+    internal sealed class ToggleIsOnElement : TargetBindElement<Toggle>
     {
-        [SerializeField]
-        private Toggle? _target;
-
         private ToggleIsOnElement() : base(nameof(Toggle.isOn))
         {
         }

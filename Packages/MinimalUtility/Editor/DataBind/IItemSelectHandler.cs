@@ -1,9 +1,12 @@
-﻿namespace MinimalUtility.Editor.DataBind
+﻿#if ENABLE_UGUI
+#nullable enable
+
+namespace MinimalUtility.Editor.DataBind
 {
     internal interface IItemSelectHandler
     {
-        bool AlreadyExist(System.Type type);
-
         void OnItemSelected(System.Type type);
     }
 }
+
+#endif

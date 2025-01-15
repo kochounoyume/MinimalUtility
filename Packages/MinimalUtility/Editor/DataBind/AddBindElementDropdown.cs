@@ -1,4 +1,5 @@
-﻿#nullable enable
+﻿#if ENABLE_UGUI
+#nullable enable
 
 using System;
 using System.Linq;
@@ -52,11 +53,6 @@ namespace MinimalUtility.Editor.DataBind
             var root = new AdvancedDropdownItem("Add Bind Element");
             foreach (var (type, path) in s_cache)
             {
-                if (_handler?.AlreadyExist(type) ?? false)
-                {
-                    continue;
-                }
-
                 var splits = path.Split('/');
                 var parent = root;
 
@@ -69,7 +65,10 @@ namespace MinimalUtility.Editor.DataBind
                         continue;
                     }
 
-                    var child = new Item(split, type);
+                    var child = new Item(split, type)
+                    {
+                        icon = IconUtils.LoadUGUIIcon(split) ?? (parent == root ? IconUtils.LoadCsIcon() : null)
+                    };
                     parent.AddChild(child);
                     parent = child;
                 }
@@ -87,3 +86,5 @@ namespace MinimalUtility.Editor.DataBind
         }
     }
 }
+
+#endif
