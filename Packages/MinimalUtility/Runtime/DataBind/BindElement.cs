@@ -72,6 +72,14 @@ namespace MinimalUtility.DataBind
         }
     }
 
+    [DataBindMenu("Other/" + nameof(Behaviour.enabled))]
+    internal sealed class CommonEnableElement : EnableElement<Behaviour>
+    {
+        private CommonEnableElement() : base()
+        {
+        }
+    }
+
     [DataBindMenu(nameof(GameObject) + "/active")]
     internal sealed class ActiveElement : TargetBindElement<GameObject>
     {

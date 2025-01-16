@@ -5,6 +5,7 @@
 using System;
 using TMPro;
 #endif
+using Unity.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -187,6 +188,74 @@ namespace MinimalUtility.DataBind
         {
             ThrowIfNull(_target);
             _target!.SetCharArray(value.Array, value.Offset, value.Count);
+        }
+    }
+
+    public abstract class TextMeshProNumberTextElement : TargetBindElement<TextMeshProUGUI>
+    {
+        [SerializeField]
+        protected ParseOption _option;
+
+        protected TextMeshProNumberTextElement() : base(nameof(TextMeshProUGUI.text))
+        {
+        }
+    }
+
+    [DataBindMenu(nameof(TextMeshProUGUI) + "/" + nameof(TextMeshProUGUI.text) + " (int)")]
+    public sealed class TextMeshProIntTextElement : TextMeshProNumberTextElement
+    {
+        private TextMeshProIntTextElement() : base()
+        {
+        }
+
+        public override void Bind(int value)
+        {
+            ThrowIfNull(_target);
+            value = (int)_option.numberOption switch
+            {
+                (int)NumberOption.Absolute => Math.Abs(value),
+                (int)NumberOption.Negative => -1 * Math.Abs(value),
+                _ => value
+            };
+            var array = new NativeArray<char>(16, Allocator.Temp);
+            var written = 0;
+            var format = _option.format;
+            while (!value.TryFormat(array, out written, format))
+            {
+                array.Dispose();
+                array = new NativeArray<char>(array.Length * 2, Allocator.Temp);
+            }
+            _target!.SetCharArray(array.AsReadOnlySpan()[..written].ToArray());
+            array.Dispose();
+        }
+    }
+
+    [DataBindMenu(nameof(TextMeshProUGUI) + "/" + nameof(TextMeshProUGUI.text) + " (float)")]
+    internal sealed class TextMeshProFloatTextElement : TextMeshProNumberTextElement
+    {
+        private TextMeshProFloatTextElement() : base()
+        {
+        }
+
+        public override void Bind(float value)
+        {
+            ThrowIfNull(_target);
+            value = (int)_option.numberOption switch
+            {
+                (int)NumberOption.Absolute => Math.Abs(value),
+                (int)NumberOption.Negative => -1 * Math.Abs(value),
+                _ => value
+            };
+            var array = new NativeArray<char>(16, Allocator.Temp);
+            var written = 0;
+            var format = _option.format;
+            while (!value.TryFormat(array, out written, format))
+            {
+                array.Dispose();
+                array = new NativeArray<char>(array.Length * 2, Allocator.Temp);
+            }
+            _target!.SetCharArray(array.AsReadOnlySpan()[..written].ToArray());
+            array.Dispose();
         }
     }
 

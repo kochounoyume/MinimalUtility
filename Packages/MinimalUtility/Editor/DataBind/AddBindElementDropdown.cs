@@ -1,5 +1,4 @@
-﻿#if ENABLE_UGUI
-#nullable enable
+﻿#nullable enable
 
 using System;
 using System.Linq;
@@ -34,7 +33,8 @@ namespace MinimalUtility.Editor.DataBind
                     }
                     return (x, attribute.path);
                 })
-                .OrderBy(static x => x.path)
+                .OrderBy(static x => x.path.StartsWith("Other", StringComparison.Ordinal) ? 1 : 0)
+                .ThenBy(static x => x.path)
                 .ToArray();
 
         private readonly IItemSelectHandler? _handler;
@@ -65,9 +65,10 @@ namespace MinimalUtility.Editor.DataBind
                         continue;
                     }
 
+                    var genericType = DataBindUtils.GetTargetType(type);
                     var child = new Item(split, type)
                     {
-                        icon = IconUtils.LoadUGUIIcon(split) ?? (parent == root ? IconUtils.LoadCsIcon() : null)
+                        icon = genericType.Name == split ? DataBindUtils.LoadMiniTypeThumbnail(genericType) : null
                     };
                     parent.AddChild(child);
                     parent = child;
@@ -86,5 +87,3 @@ namespace MinimalUtility.Editor.DataBind
         }
     }
 }
-
-#endif

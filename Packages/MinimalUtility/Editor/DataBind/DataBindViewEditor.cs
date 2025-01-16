@@ -1,5 +1,4 @@
-﻿#if ENABLE_UGUI
-#nullable enable
+﻿#nullable enable
 
 using System;
 using System.Reflection;
@@ -96,5 +95,3 @@ namespace MinimalUtility.Editor.DataBind
         }
     }
 }
-
-#endif

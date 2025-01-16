@@ -1,5 +1,4 @@
-﻿#if ENABLE_UGUI
-#nullable enable
+﻿#nullable enable
 
 namespace MinimalUtility.Editor.DataBind
 {
@@ -8,5 +7,3 @@ namespace MinimalUtility.Editor.DataBind
         void OnItemSelected(System.Type type);
     }
 }
-
-#endif

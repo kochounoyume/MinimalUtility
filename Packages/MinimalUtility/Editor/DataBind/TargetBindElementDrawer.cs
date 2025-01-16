@@ -1,5 +1,4 @@
-﻿#if ENABLE_UGUI
-#nullable enable
+﻿#nullable enable
 
 using System.Reflection;
 using MinimalUtility.DataBind;
@@ -11,7 +10,7 @@ using UnityEngine.UIElements;
 namespace MinimalUtility.Editor.DataBind
 {
     [CustomPropertyDrawer(typeof(TargetBindElement<>), true)]
-    internal class TargetBindElementDrawer : PropertyDrawer
+    public class TargetBindElementDrawer : PropertyDrawer
     {
         public override VisualElement CreatePropertyGUI(SerializedProperty property)
         {
@@ -22,14 +21,7 @@ namespace MinimalUtility.Editor.DataBind
                 throw new System.InvalidOperationException($"Type {property.managedReferenceValue.GetType().Name} does not have {nameof(DataBindMenuAttribute)}.");
             }
             var splits = attr.path.Split('/');
-            var icon = IconUtils.LoadUGUIIcon(splits) ?? IconUtils.LoadCsIcon();
-
-            var baseType = type.BaseType;
-            while (baseType is { IsGenericType: true } && baseType.GetGenericTypeDefinition() != typeof(TargetBindElement<>))
-            {
-                baseType = baseType.BaseType;
-            }
-            var genericName = baseType?.GetGenericArguments()[0].Name;
+            var genericType = DataBindUtils.GetTargetType(type);
 
             var root = new Foldout()
             {
@@ -38,14 +30,14 @@ namespace MinimalUtility.Editor.DataBind
             var foldoutCheck = root.Q(className: Foldout.checkmarkUssClassName);
             foldoutCheck.parent.Add(new Image()
             {
-                image = icon,
+                image = DataBindUtils.LoadMiniTypeThumbnail(genericType),
                 style =
                 {
                     width = 18f,
                     height = 18f,
                 }
             });
-            foldoutCheck.parent.Add(new Label(genericName + " - " + splits[^1])
+            foldoutCheck.parent.Add(new Label(genericType.Name + " - " + splits[^1])
             {
                 style =
                 {
@@ -63,7 +55,7 @@ namespace MinimalUtility.Editor.DataBind
                     top = 4f,
                     right = 4f,
                     position = Position.Absolute,
-                    backgroundImage = IconUtils.LoadRemoveIcon(),
+                    backgroundImage = DataBindUtils.LoadRemoveIcon(),
                     backgroundColor = Color.white
                 }
             };
@@ -84,9 +76,12 @@ namespace MinimalUtility.Editor.DataBind
             });
             root.Add(new PropertyField(property.FindPropertyRelative("_target")));
             root.Add(new PropertyField(property.FindPropertyRelative("_propertyName")));
+            var optionProperty = property.FindPropertyRelative("_option");
+            if (optionProperty != null)
+            {
+                root.Add(new PropertyField(optionProperty));
+            }
             return root;
         }
     }
 }
-
-#endif
