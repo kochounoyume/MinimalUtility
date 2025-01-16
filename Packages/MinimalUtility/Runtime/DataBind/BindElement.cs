@@ -33,7 +33,7 @@ namespace MinimalUtility.DataBind
         public virtual void Bind(float value) => throw new InvalidOperationException("Type of float is specified, check that this is correct.");
         public virtual void Bind(int value) => throw new InvalidOperationException("Type of int is specified, check that this is correct.");
         public virtual void Bind(char[] value) => throw new InvalidOperationException("Type of char[] is specified, check that this is correct.");
-        public virtual void Bind(ArraySegment<char> value) => throw new InvalidOperationException("Type of ArraySegment<char> is specified, check that this is correct.");
+        public virtual void Bind(in ArraySegment<char> value) => throw new InvalidOperationException("Type of ArraySegment<char> is specified, check that this is correct.");
         public virtual void Bind(string value) => throw new InvalidOperationException("Type of string is specified, check that this is correct.");
         public virtual void Bind(Texture value) => throw new InvalidOperationException("Type of Texture is specified, check that this is correct.");
         public virtual void Bind(Sprite value) => throw new InvalidOperationException("Type of Sprite is specified, check that this is correct.");

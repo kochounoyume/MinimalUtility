@@ -184,7 +184,7 @@ namespace MinimalUtility.DataBind
             _target!.SetCharArray(value);
         }
 
-        public override void Bind(ArraySegment<char> value)
+        public override void Bind(in ArraySegment<char> value)
         {
             ThrowIfNull(_target);
             _target!.SetCharArray(value.Array, value.Offset, value.Count);
