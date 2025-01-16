@@ -49,7 +49,7 @@ namespace MinimalUtility.DataBind
         }
     }
 
-    public abstract class TargetBindElement<T> : BindElement where T : Component
+    public abstract class TargetBindElement<T> : BindElement where T : UnityEngine.Object
     {
         [SerializeField]
         protected T? _target;
@@ -69,6 +69,20 @@ namespace MinimalUtility.DataBind
         {
             ThrowIfNull(_target);
             _target!.enabled = value;
+        }
+    }
+
+    [DataBindMenu(nameof(GameObject) + "/active")]
+    internal sealed class ActiveElement : TargetBindElement<GameObject>
+    {
+        private ActiveElement() : base("active")
+        {
+        }
+
+        public override void Bind(bool value)
+        {
+            ThrowIfNull(_target);
+            _target!.SetActive(value);
         }
     }
 }
