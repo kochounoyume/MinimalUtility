@@ -76,11 +76,14 @@ namespace MinimalUtility.Editor.DataBind
             });
             root.Add(new PropertyField(property.FindPropertyRelative("_target")));
             root.Add(new PropertyField(property.FindPropertyRelative("_propertyName")));
+
+            // CustomPropertyDrawerAttribute.useForChildrenがバグってなければ、別クラス化したい
             var optionProperty = property.FindPropertyRelative("_option");
             if (optionProperty != null)
             {
                 root.Add(new PropertyField(optionProperty));
             }
+
             return root;
         }
     }
