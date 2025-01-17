@@ -15,45 +15,13 @@ namespace MinimalUtility.Editor.DataBind
     internal sealed class DataBindViewEditor : UnityEditor.Editor, IItemSelectHandler
     {
         private SerializedProperty? _bindElementsProperty;
-        private AddBindElementDropdown? _addBindElementDropdown;
 
         public override VisualElement CreateInspectorGUI()
         {
             _bindElementsProperty = serializedObject.FindProperty("_elements");
-            _addBindElementDropdown = new AddBindElementDropdown(new AdvancedDropdownState(), this);
-
-            var box = CreateBox("Bind Elements");
-
-            box.Add(new ListView
-            {
-                bindingPath = "_elements",
-                reorderMode = ListViewReorderMode.Animated,
-                showBorder = true,
-                showAddRemoveFooter = false,
-                showFoldoutHeader = false,
-                showBoundCollectionSize = false,
-                virtualizationMethod = CollectionVirtualizationMethod.DynamicHeight,
-                selectionType = SelectionType.None
-            });
-
-            var addButton = new Button()
-            {
-                text = "Add Element",
-                style =
-                {
-                    width = 200f,
-                    alignSelf = Align.Center
-                }
-            };
-            addButton.RegisterCallback<ClickEvent, AddBindElementDropdown>(static (eve, dropdown) =>
-            {
-                var button = (Button)eve.target;
-                dropdown.Show(button.worldBound);
-            }, _addBindElementDropdown);
-            box.Add(addButton);
 
             var root = new VisualElement();
-            root.Add(box);
+            root.Add(CreateBindElementsField(new AddBindElementDropdown(new AdvancedDropdownState(), this)));
             return root;
         }
 
@@ -67,6 +35,39 @@ namespace MinimalUtility.Editor.DataBind
                 null, Type.EmptyTypes, null);
             property.managedReferenceValue = constructor?.Invoke(null);
             serializedObject.ApplyModifiedProperties();
+        }
+
+        private static VisualElement CreateBindElementsField(AddBindElementDropdown addBindElementDropdown)
+        {
+            var addButton = new Button()
+            {
+                text = "Add Element",
+                style =
+                {
+                    width = 200f,
+                    alignSelf = Align.Center
+                }
+            };
+            addButton.RegisterCallback<ClickEvent, AddBindElementDropdown>(static (eve, dropdown) =>
+            {
+                var button = (Button)eve.target;
+                dropdown.Show(button.worldBound);
+            }, addBindElementDropdown);
+
+            var box = CreateBox("Bind Elements");
+            box.Add(new ListView
+            {
+                bindingPath = "_elements",
+                reorderMode = ListViewReorderMode.Animated,
+                showBorder = true,
+                showAddRemoveFooter = false,
+                showFoldoutHeader = false,
+                showBoundCollectionSize = false,
+                virtualizationMethod = CollectionVirtualizationMethod.DynamicHeight,
+                selectionType = SelectionType.None
+            });
+            box.Add(addButton);
+            return box;
         }
 
         private static VisualElement CreateBox(string label)

@@ -10,6 +10,8 @@ namespace MinimalUtility.Editor.DataBind
 
     internal static class DataBindUtils
     {
+        private static readonly Lazy<Texture2D?> s_removeIcon =
+            new(static () => EditorGUIUtility.Load("Toolbar Minus") as Texture2D);
         public static Type GetTargetType(Type type)
         {
             var baseType = type.BaseType;
@@ -22,11 +24,6 @@ namespace MinimalUtility.Editor.DataBind
                 baseType = baseType.BaseType;
             }
             throw new InvalidOperationException("TargetBindElement<> not found in the type hierarchy.");
-        }
-
-        public static Texture2D? LoadRemoveIcon()
-        {
-            return EditorGUIUtility.Load("Toolbar Minus") as Texture2D;
         }
 
         public static Texture2D? LoadMiniTypeThumbnail(Type type)

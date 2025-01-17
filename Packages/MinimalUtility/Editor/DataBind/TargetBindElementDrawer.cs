@@ -23,10 +23,7 @@ namespace MinimalUtility.Editor.DataBind
             var splits = attr.path.Split('/');
             var genericType = DataBindUtils.GetTargetType(type);
 
-            var root = new Foldout()
-            {
-                focusable = true
-            };
+            var root = new Foldout { focusable = true };
             var foldoutCheck = root.Q(className: Foldout.checkmarkUssClassName);
             foldoutCheck.parent.Add(new Image()
             {
@@ -55,7 +52,7 @@ namespace MinimalUtility.Editor.DataBind
                     top = 4f,
                     right = 4f,
                     position = Position.Absolute,
-                    backgroundImage = DataBindUtils.LoadRemoveIcon(),
+                    backgroundImage = DataBindUtils.removeIcon,
                     backgroundColor = Color.white
                 }
             };
