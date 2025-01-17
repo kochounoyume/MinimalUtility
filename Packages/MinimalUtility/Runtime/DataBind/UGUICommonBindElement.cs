@@ -19,15 +19,6 @@ namespace MinimalUtility.DataBind
     }
 
 
-    [DataBindMenu(nameof(Dropdown) + "/" + nameof(Dropdown.enabled))]
-    internal sealed class DropdownEnableElement : EnableElement<Dropdown>
-    {
-        private DropdownEnableElement() : base()
-        {
-        }
-    }
-
-
     [DataBindMenu(nameof(Image) + "/" + nameof(Image.enabled))]
     internal sealed class ImageEnableElement : EnableElement<Image>
     {
@@ -86,6 +77,15 @@ namespace MinimalUtility.DataBind
     internal sealed class TextMeshProUGUIEnableElement : EnableElement<TextMeshProUGUI>
     {
         private TextMeshProUGUIEnableElement() : base()
+        {
+        }
+    }
+#endif
+#if ENABLE_TEXTMESHPRO
+    [DataBindMenu(nameof(TMP_Dropdown) + "/" + nameof(TMP_Dropdown.enabled))]
+    internal sealed class TMP_DropdownEnableElement : EnableElement<TMP_Dropdown>
+    {
+        private TMP_DropdownEnableElement() : base()
         {
         }
     }
@@ -195,6 +195,15 @@ namespace MinimalUtility.DataBind
         }
     }
 
+#if ENABLE_TEXTMESHPRO
+    [DataBindMenu(nameof(TMP_Dropdown) + "/" + nameof(TMP_Dropdown.interactable))]
+    internal sealed class TMP_DropdownInteractableElement : InteractableElement<TMP_Dropdown>
+    {
+        private TMP_DropdownInteractableElement() : base()
+        {
+        }
+    }
+#endif
 #if ENABLE_TEXTMESHPRO
     [DataBindMenu(nameof(TMP_InputField) + "/" + nameof(TMP_InputField.interactable))]
     internal sealed class TMP_InputFieldInteractableElement : InteractableElement<TMP_InputField>

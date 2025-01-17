@@ -32,6 +32,8 @@ namespace MinimalUtility.DataBind
         public virtual void Bind(bool value) => throw new InvalidOperationException("Type of bool is specified, check that this is correct.");
         public virtual void Bind(float value) => throw new InvalidOperationException("Type of float is specified, check that this is correct.");
         public virtual void Bind(int value) => throw new InvalidOperationException("Type of int is specified, check that this is correct.");
+        public virtual void Bind(in DateTime value) => throw new InvalidOperationException("Type of DateTime is specified, check that this is correct.");
+        public virtual void Bind(in TimeSpan value) => throw new InvalidOperationException("Type of TimeSpan is specified, check that this is correct.");
         public virtual void Bind(char[] value) => throw new InvalidOperationException("Type of char[] is specified, check that this is correct.");
         public virtual void Bind(in ArraySegment<char> value) => throw new InvalidOperationException("Type of ArraySegment<char> is specified, check that this is correct.");
         public virtual void Bind(string value) => throw new InvalidOperationException("Type of string is specified, check that this is correct.");

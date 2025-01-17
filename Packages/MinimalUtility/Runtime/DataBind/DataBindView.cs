@@ -15,11 +15,14 @@ namespace MinimalUtility.DataBind
         private static readonly RuntimeTypeHandle s_boolTypeHandle = typeof(bool).TypeHandle;
         private static readonly RuntimeTypeHandle s_floatTypeHandle = typeof(float).TypeHandle;
         private static readonly RuntimeTypeHandle s_intTypeHandle = typeof(int).TypeHandle;
+        private static readonly RuntimeTypeHandle s_dateTimeTypeHandle = typeof(DateTime).TypeHandle;
+        private static readonly RuntimeTypeHandle s_timeSpanTypeHandle = typeof(TimeSpan).TypeHandle;
         private static readonly RuntimeTypeHandle s_charArrayTypeHandle = typeof(char[]).TypeHandle;
         private static readonly RuntimeTypeHandle s_arraySegmentTypeHandle = typeof(ArraySegment<char>).TypeHandle;
         private static readonly RuntimeTypeHandle s_stringTypeHandle = typeof(string).TypeHandle;
         private static readonly RuntimeTypeHandle s_textureTypeHandle = typeof(Texture).TypeHandle;
         private static readonly RuntimeTypeHandle s_spriteTypeHandle = typeof(Sprite).TypeHandle;
+        private static readonly RuntimeTypeHandle s_color32TypeHandle = typeof(Color32).TypeHandle;
         private static readonly BindElement s_emptyElement = new("");
 
         [SerializeReference]
@@ -294,6 +297,14 @@ namespace MinimalUtility.DataBind
             {
                 element.Bind(UnsafeUtility.As<T, int>(ref value));
             }
+            else if (typeof(T).TypeHandle.Equals(s_dateTimeTypeHandle))
+            {
+                element.Bind(UnsafeUtility.As<T, DateTime>(ref value));
+            }
+            else if (typeof(T).TypeHandle.Equals(s_timeSpanTypeHandle))
+            {
+                element.Bind(UnsafeUtility.As<T, TimeSpan>(ref value));
+            }
             else if (typeof(T).TypeHandle.Equals(s_charArrayTypeHandle))
             {
                 element.Bind(UnsafeUtility.As<T, char[]>(ref value));
@@ -313,6 +324,10 @@ namespace MinimalUtility.DataBind
             else if (typeof(T).TypeHandle.Equals(s_spriteTypeHandle))
             {
                 element.Bind(UnsafeUtility.As<T, Sprite>(ref value));
+            }
+            else if (typeof(T).TypeHandle.Equals(s_color32TypeHandle))
+            {
+                element.Bind(UnsafeUtility.As<T, Color32>(ref value));
             }
             else
             {

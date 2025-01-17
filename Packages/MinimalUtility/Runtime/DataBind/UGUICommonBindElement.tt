@@ -6,7 +6,6 @@
     var enables = new string[]
     {
         "Button",
-        "Dropdown",
         "Image",
         "RawImage",
         "Scrollbar",
@@ -14,6 +13,7 @@
         "SimpleGauge",
         "Slider",
         "TextMeshProUGUI",
+        "TMP_Dropdown",
         "TMP_InputField",
         "Toggle",
     };
@@ -31,8 +31,16 @@
         "Dropdown",
         "Scrollbar",
         "Slider",
+        "TMP_Dropdown",
         "TMP_InputField",
         "Toggle",
+    };
+
+    var textmeshpros = new string[]
+    {
+        "TextMeshProUGUI",
+        "TMP_Dropdown",
+        "TMP_InputField"
     };
 #>
 #if ENABLE_UGUI
@@ -47,7 +55,7 @@ using UnityEngine.UI;
 namespace MinimalUtility.DataBind
 {
 <# foreach (var typeStr in enables) { #>
-<#= typeStr is "TextMeshProUGUI" or "TMP_InputField" ? "#if ENABLE_TEXTMESHPRO" : "" #>
+<#= Array.IndexOf(textmeshpros, typeStr) != -1 ? "#if ENABLE_TEXTMESHPRO" : "" #>
     [DataBindMenu(nameof(<#= typeStr #>) + "/" + nameof(<#= typeStr #>.enabled))]
     internal sealed class <#= typeStr #>EnableElement : EnableElement<<#= typeStr #>>
     {
@@ -55,10 +63,10 @@ namespace MinimalUtility.DataBind
         {
         }
     }
-<#= typeStr is "TextMeshProUGUI" or "TMP_InputField" ? "#endif" : "" #>
+<#= Array.IndexOf(textmeshpros, typeStr) != -1 ? "#endif" : "" #>
 <# } #>
 <# foreach (var typeStr in graphics) { #>
-<#= typeStr is "TextMeshProUGUI" or "TMP_InputField" ? "#if ENABLE_TEXTMESHPRO" : "" #>
+<#= Array.IndexOf(textmeshpros, typeStr) != -1 ? "#if ENABLE_TEXTMESHPRO" : "" #>
     [DataBindMenu(nameof(<#= typeStr #>) + "/" + nameof(<#= typeStr #>.color))]
     internal sealed class <#= typeStr #>ColorElement : ColorElement<<#= typeStr #>>
     {
@@ -74,10 +82,10 @@ namespace MinimalUtility.DataBind
         {
         }
     }
-<#= typeStr is "TextMeshProUGUI" or "TMP_InputField" ? "#endif" : "" #>
+<#= Array.IndexOf(textmeshpros, typeStr) != -1 ? "#endif" : "" #>
 <# } #>
 <# foreach (var typeStr in interactables) { #>
-<#= typeStr is "TextMeshProUGUI" or "TMP_InputField" ? "#if ENABLE_TEXTMESHPRO" : "" #>
+<#= Array.IndexOf(textmeshpros, typeStr) != -1 ? "#if ENABLE_TEXTMESHPRO" : "" #>
     [DataBindMenu(nameof(<#= typeStr #>) + "/" + nameof(<#= typeStr #>.interactable))]
     internal sealed class <#= typeStr #>InteractableElement : InteractableElement<<#= typeStr #>>
     {
@@ -85,7 +93,7 @@ namespace MinimalUtility.DataBind
         {
         }
     }
-<#= typeStr is "TextMeshProUGUI" or "TMP_InputField" ? "#endif" : "" #>
+<#= Array.IndexOf(textmeshpros, typeStr) != -1 ? "#endif" : "" #>
 <# } #>
 }
 

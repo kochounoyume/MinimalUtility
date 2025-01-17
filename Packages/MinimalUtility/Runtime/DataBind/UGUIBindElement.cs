@@ -243,6 +243,54 @@ namespace MinimalUtility.DataBind
         }
     }
 
+    [DataBindMenu(nameof(TextMeshProUGUI) + "/" + nameof(TextMeshProUGUI.text) + " (" + nameof(DateTime) + ")")]
+    internal sealed class TextMeshProDateTimeTextElement : TargetBindElement<TextMeshProUGUI>
+    {
+        [SerializeField] private SimpleParseOption _option = new("");
+        private TextMeshProDateTimeTextElement() : base(nameof(TextMeshProUGUI.text))
+        {
+        }
+
+        public override void Bind(in DateTime value)
+        {
+            ThrowIfNull(_target);
+            var array = new NativeArray<char>(16, Allocator.Temp);
+            var written = 0;
+            var format = _option.format;
+            while (!value.TryFormat(array, out written, format))
+            {
+                array.Dispose();
+                array = new NativeArray<char>(array.Length * 2, Allocator.Temp);
+            }
+            _target!.SetCharArray(array.AsReadOnlySpan()[..written].ToArray());
+            array.Dispose();
+        }
+    }
+
+    [DataBindMenu(nameof(TextMeshProUGUI) + "/" + nameof(TextMeshProUGUI.text) + " (" + nameof(TimeSpan) + ")")]
+    internal sealed class TextMeshProTimeSpanTextElement : TargetBindElement<TextMeshProUGUI>
+    {
+        [SerializeField] private SimpleParseOption _option = new("");
+        private TextMeshProTimeSpanTextElement() : base(nameof(TextMeshProUGUI.text))
+        {
+        }
+
+        public override void Bind(in TimeSpan value)
+        {
+            ThrowIfNull(_target);
+            var array = new NativeArray<char>(16, Allocator.Temp);
+            var written = 0;
+            var format = _option.format;
+            while (!value.TryFormat(array, out written, format))
+            {
+                array.Dispose();
+                array = new NativeArray<char>(array.Length * 2, Allocator.Temp);
+            }
+            _target!.SetCharArray(array.AsReadOnlySpan()[..written].ToArray());
+            array.Dispose();
+        }
+    }
+
     [DataBindMenu(nameof(TMP_InputField) + "/" + nameof(TMP_InputField.text))]
     internal sealed class TMP_InputFieldTextElement : TargetBindElement<TMP_InputField>
     {
