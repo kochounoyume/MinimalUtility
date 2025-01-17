@@ -342,8 +342,16 @@ namespace MinimalUtility.DataBind
             {
                 span = span[(span.IndexOf(',') + 1)..];
             }
-            span = span[..Mathf.Min(span.IndexOf(':'), span.IndexOf(','))].Trim();
-            return new string(span);
+
+            var colonIndex = span.IndexOf(':');
+            var commaIndex = span.IndexOf(',');
+            if (colonIndex == -1 && commaIndex == -1)
+            {
+                return new string(span.Trim());
+            }
+
+            var length = Mathf.Min(colonIndex == -1 ? int.MaxValue : colonIndex, commaIndex == -1 ? int.MaxValue : commaIndex);
+            return new string(span[..length].Trim());
         }
     }
 }
