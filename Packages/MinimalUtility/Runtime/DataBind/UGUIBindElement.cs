@@ -191,32 +191,19 @@ namespace MinimalUtility.DataBind
         }
     }
 
-    public abstract class TextMeshProNumberTextElement : TargetBindElement<TextMeshProUGUI>
+    [DataBindMenu(nameof(TextMeshProUGUI) + "/" + nameof(TextMeshProUGUI.text) + " (int)")]
+    internal sealed class TextMeshProIntTextElement : TargetBindElement<TextMeshProUGUI>
     {
         [SerializeField]
-        protected ParseOption _option;
-
-        protected TextMeshProNumberTextElement() : base(nameof(TextMeshProUGUI.text))
-        {
-        }
-    }
-
-    [DataBindMenu(nameof(TextMeshProUGUI) + "/" + nameof(TextMeshProUGUI.text) + " (int)")]
-    public sealed class TextMeshProIntTextElement : TextMeshProNumberTextElement
-    {
-        private TextMeshProIntTextElement() : base()
+        private NumberParseOption<int> _option = new("", int.MinValue, int.MaxValue);
+        private TextMeshProIntTextElement() : base(nameof(TextMeshProUGUI.text))
         {
         }
 
         public override void Bind(int value)
         {
             ThrowIfNull(_target);
-            value = (int)_option.numberOption switch
-            {
-                (int)NumberOption.Absolute => Math.Abs(value),
-                (int)NumberOption.Negative => -1 * Math.Abs(value),
-                _ => value
-            };
+            value = Math.Clamp(value, _option.min, _option.max);
             var array = new NativeArray<char>(16, Allocator.Temp);
             var written = 0;
             var format = _option.format;
@@ -231,21 +218,18 @@ namespace MinimalUtility.DataBind
     }
 
     [DataBindMenu(nameof(TextMeshProUGUI) + "/" + nameof(TextMeshProUGUI.text) + " (float)")]
-    internal sealed class TextMeshProFloatTextElement : TextMeshProNumberTextElement
+    internal sealed class TextMeshProFloatTextElement : TargetBindElement<TextMeshProUGUI>
     {
-        private TextMeshProFloatTextElement() : base()
+        [SerializeField]
+        private NumberParseOption<float> _option = new("", float.MinValue, float.MaxValue);
+        private TextMeshProFloatTextElement() : base(nameof(TextMeshProUGUI.text))
         {
         }
 
         public override void Bind(float value)
         {
             ThrowIfNull(_target);
-            value = (int)_option.numberOption switch
-            {
-                (int)NumberOption.Absolute => Math.Abs(value),
-                (int)NumberOption.Negative => -1 * Math.Abs(value),
-                _ => value
-            };
+            value = Math.Clamp(value, _option.min, _option.max);
             var array = new NativeArray<char>(16, Allocator.Temp);
             var written = 0;
             var format = _option.format;
