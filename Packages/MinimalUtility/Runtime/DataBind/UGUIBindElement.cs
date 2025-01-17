@@ -1,11 +1,10 @@
 ﻿#if ENABLE_UGUI
 #nullable enable
 
-#if ENABLE_TEXTMESHPRO
 using System;
+#if ENABLE_TEXTMESHPRO
 using TMPro;
 #endif
-using Unity.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -204,16 +203,17 @@ namespace MinimalUtility.DataBind
         {
             ThrowIfNull(_target);
             value = Math.Clamp(value, _option.min, _option.max);
-            var array = new NativeArray<char>(16, Allocator.Temp);
-            var written = 0;
-            var format = _option.format;
-            while (!value.TryFormat(array, out written, format))
+            _target!.SetCharArray(GetCharArray(value, _option.format));
+
+            static char[] GetCharArray(int value, in ReadOnlySpan<char> format, int bufferLength = 16)
             {
-                array.Dispose();
-                array = new NativeArray<char>(array.Length * 2, Allocator.Temp);
+                var span = (Span<char>)stackalloc char[bufferLength];
+                if (value.TryFormat(span, out var written, format))
+                {
+                    return span[..written].ToArray();
+                }
+                return GetCharArray(value, format, bufferLength * 2);
             }
-            _target!.SetCharArray(array.AsReadOnlySpan()[..written].ToArray());
-            array.Dispose();
         }
     }
 
@@ -230,16 +230,17 @@ namespace MinimalUtility.DataBind
         {
             ThrowIfNull(_target);
             value = Math.Clamp(value, _option.min, _option.max);
-            var array = new NativeArray<char>(16, Allocator.Temp);
-            var written = 0;
-            var format = _option.format;
-            while (!value.TryFormat(array, out written, format))
+            _target!.SetCharArray(GetCharArray(value, _option.format));
+
+            static char[] GetCharArray(float value, in ReadOnlySpan<char> format, int bufferLength = 16)
             {
-                array.Dispose();
-                array = new NativeArray<char>(array.Length * 2, Allocator.Temp);
+                var span = (Span<char>)stackalloc char[bufferLength];
+                if (value.TryFormat(span, out var written, format))
+                {
+                    return span[..written].ToArray();
+                }
+                return GetCharArray(value, format, bufferLength * 2);
             }
-            _target!.SetCharArray(array.AsReadOnlySpan()[..written].ToArray());
-            array.Dispose();
         }
     }
 
@@ -254,16 +255,17 @@ namespace MinimalUtility.DataBind
         public override void Bind(in DateTime value)
         {
             ThrowIfNull(_target);
-            var array = new NativeArray<char>(16, Allocator.Temp);
-            var written = 0;
-            var format = _option.format;
-            while (!value.TryFormat(array, out written, format))
+            _target!.SetCharArray(GetCharArray(value, _option.format));
+
+            static char[] GetCharArray(in DateTime value, in ReadOnlySpan<char> format, int bufferLength = 16)
             {
-                array.Dispose();
-                array = new NativeArray<char>(array.Length * 2, Allocator.Temp);
+                var span = (Span<char>)stackalloc char[bufferLength];
+                if (value.TryFormat(span, out var written, format))
+                {
+                    return span[..written].ToArray();
+                }
+                return GetCharArray(value, format, bufferLength * 2);
             }
-            _target!.SetCharArray(array.AsReadOnlySpan()[..written].ToArray());
-            array.Dispose();
         }
     }
 
@@ -278,16 +280,16 @@ namespace MinimalUtility.DataBind
         public override void Bind(in TimeSpan value)
         {
             ThrowIfNull(_target);
-            var array = new NativeArray<char>(16, Allocator.Temp);
-            var written = 0;
-            var format = _option.format;
-            while (!value.TryFormat(array, out written, format))
+            _target!.SetCharArray(GetCharArray(value, _option.format));
+            static char[] GetCharArray(in TimeSpan value, in ReadOnlySpan<char> format, int bufferLength = 16)
             {
-                array.Dispose();
-                array = new NativeArray<char>(array.Length * 2, Allocator.Temp);
+                var span = (Span<char>)stackalloc char[bufferLength];
+                if (value.TryFormat(span, out var written, format))
+                {
+                    return span[..written].ToArray();
+                }
+                return GetCharArray(value, format, bufferLength * 2);
             }
-            _target!.SetCharArray(array.AsReadOnlySpan()[..written].ToArray());
-            array.Dispose();
         }
     }
 

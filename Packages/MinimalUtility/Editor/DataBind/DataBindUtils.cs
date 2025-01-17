@@ -12,6 +12,7 @@ namespace MinimalUtility.Editor.DataBind
     {
         private static readonly Lazy<Texture2D?> s_removeIcon =
             new(static () => EditorGUIUtility.Load("Toolbar Minus") as Texture2D);
+        public static Texture2D? removeIcon => s_removeIcon.Value;
         public static Type GetTargetType(Type type)
         {
             var baseType = type.BaseType;
