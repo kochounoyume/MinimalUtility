@@ -24,8 +24,6 @@ namespace MinimalUtility.UGUI
         [Range(0, 1)]
         private float _value = 1.0f;
 
-        private MaskableGraphic? _graphic;
-
         /// <summary>
         /// ゲージの値(0.0 ～ 1.0).
         /// </summary>
