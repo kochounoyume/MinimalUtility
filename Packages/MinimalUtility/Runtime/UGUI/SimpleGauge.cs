@@ -34,13 +34,13 @@ namespace MinimalUtility.UGUI
             get => _value;
             set
             {
-                this._value = Mathf.Clamp01(value);
+                _value = Mathf.Clamp01(value);
                 padding = (int)_mode switch
                 {
-                    (int)RectTransform.Edge.Left => new Vector4(rectTransform.rect.width * this._value, 0, 0, 0),
-                    (int)RectTransform.Edge.Right => new Vector4(0, 0, rectTransform.rect.width * this._value, 0),
-                    (int)RectTransform.Edge.Top => new Vector4(0, rectTransform.rect.height * this._value, 0, 0),
-                    (int)RectTransform.Edge.Bottom => new Vector4(0, 0, 0, rectTransform.rect.height * this._value),
+                    (int)RectTransform.Edge.Left => new Vector4(rectTransform.rect.width * (1 - _value), 0, 0, 0),
+                    (int)RectTransform.Edge.Right => new Vector4(0, 0, rectTransform.rect.width * (1 - _value), 0),
+                    (int)RectTransform.Edge.Top => new Vector4(0, 0, 0, rectTransform.rect.height * (1 - _value)),
+                    (int)RectTransform.Edge.Bottom => new Vector4(0, rectTransform.rect.height * (1 - _value), 0, 0),
                     _ => throw new ArgumentOutOfRangeException(nameof(this.value))
                 };
             }
