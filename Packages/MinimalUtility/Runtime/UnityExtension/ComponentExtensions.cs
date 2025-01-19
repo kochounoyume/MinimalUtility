@@ -69,7 +69,7 @@ namespace MinimalUtility
             for (var i = 0; i < span.Length; i++)
             {
                 var gameObject = transform.GetChild(i).gameObject;
-                if (gameObject.TryGetComponent(out T component))
+                if (gameObject.TryGetComponent<T>(out var component))
                 {
                     if (!includeInactive && !gameObject.activeSelf) continue;
                     span[count++] = component;
@@ -106,7 +106,7 @@ namespace MinimalUtility
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static T SafeGetComponent<T>(this Component self) where T : Component
         {
-            self.gameObject.TryGetComponent(out T component);
+            self.gameObject.TryGetComponent<T>(out var component);
             return component;
         }
     }

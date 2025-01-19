@@ -48,7 +48,7 @@ namespace MinimalUtility.UGUI
         protected override void Start()
         {
             base.Start();
-            if (TryGetComponent(out MaskableGraphic graphic))
+            if (TryGetComponent<MaskableGraphic>(out var graphic))
             {
                 AddClippable(graphic);
             }
