@@ -1,0 +1,15 @@
+C:\Users\masatake.iwasaki\UnityProject\MinimalUtility\SourceGenerator\MinimalUtility.SourceGenerator.Test\bin\Release\net8.0\MinimalUtility.SourceGenerator.Test.exe
+C:\Users\masatake.iwasaki\UnityProject\MinimalUtility\SourceGenerator\MinimalUtility.SourceGenerator.Test\bin\Release\net8.0\MinimalUtility.SourceGenerator.Test.deps.json
+C:\Users\masatake.iwasaki\UnityProject\MinimalUtility\SourceGenerator\MinimalUtility.SourceGenerator.Test\bin\Release\net8.0\MinimalUtility.SourceGenerator.Test.runtimeconfig.json
+C:\Users\masatake.iwasaki\UnityProject\MinimalUtility\SourceGenerator\MinimalUtility.SourceGenerator.Test\bin\Release\net8.0\MinimalUtility.SourceGenerator.Test.dll
+C:\Users\masatake.iwasaki\UnityProject\MinimalUtility\SourceGenerator\MinimalUtility.SourceGenerator.Test\bin\Release\net8.0\MinimalUtility.SourceGenerator.Test.pdb
+C:\Users\masatake.iwasaki\UnityProject\MinimalUtility\SourceGenerator\MinimalUtility.SourceGenerator.Test\obj\Release\net8.0\MinimalUtility.SourceGenerator.Test.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\masatake.iwasaki\UnityProject\MinimalUtility\SourceGenerator\MinimalUtility.SourceGenerator.Test\obj\Release\net8.0\MinimalUtility.SourceGenerator.Test.AssemblyInfoInputs.cache
+C:\Users\masatake.iwasaki\UnityProject\MinimalUtility\SourceGenerator\MinimalUtility.SourceGenerator.Test\obj\Release\net8.0\MinimalUtility.SourceGenerator.Test.AssemblyInfo.cs
+C:\Users\masatake.iwasaki\UnityProject\MinimalUtility\SourceGenerator\MinimalUtility.SourceGenerator.Test\obj\Release\net8.0\MinimalUtility.SourceGenerator.Test.csproj.CoreCompileInputs.cache
+C:\Users\masatake.iwasaki\UnityProject\MinimalUtility\SourceGenerator\MinimalUtility.SourceGenerator.Test\obj\Release\net8.0\MinimalUtility.SourceGenerator.Test.sourcelink.json
+C:\Users\masatake.iwasaki\UnityProject\MinimalUtility\SourceGenerator\MinimalUtility.SourceGenerator.Test\obj\Release\net8.0\MinimalUtility.SourceGenerator.Test.dll
+C:\Users\masatake.iwasaki\UnityProject\MinimalUtility\SourceGenerator\MinimalUtility.SourceGenerator.Test\obj\Release\net8.0\refint\MinimalUtility.SourceGenerator.Test.dll
+C:\Users\masatake.iwasaki\UnityProject\MinimalUtility\SourceGenerator\MinimalUtility.SourceGenerator.Test\obj\Release\net8.0\MinimalUtility.SourceGenerator.Test.pdb
+C:\Users\masatake.iwasaki\UnityProject\MinimalUtility\SourceGenerator\MinimalUtility.SourceGenerator.Test\obj\Release\net8.0\MinimalUtility.SourceGenerator.Test.genruntimeconfig.cache
+C:\Users\masatake.iwasaki\UnityProject\MinimalUtility\SourceGenerator\MinimalUtility.SourceGenerator.Test\obj\Release\net8.0\ref\MinimalUtility.SourceGenerator.Test.dll
