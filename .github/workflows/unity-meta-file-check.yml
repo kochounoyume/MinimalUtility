@@ -8,8 +8,8 @@ on:
     branches:
       - main
     paths:
-      - Assets/**
-      - Packages/**
+      - src/MinimalUtility.Unity/Assets/**
+      - src/MinimalUtility.Unity/Packages/**
   workflow_dispatch: {}
 
 jobs:
@@ -17,10 +17,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout This Repository
-        uses: actions/checkout@v4.1.1
+        uses: actions/checkout@v4.2.2
         with:
           submodules: false
           lfs: true
-
       - name: Unity meta files check (github-hosted ubuntu-latest)
-        uses: DeNA/unity-meta-check@v3.2.2
+        uses: DeNA/unity-meta-check@v4.0.0
+        with:
+          target_path: src/MinimalUtility.Unity

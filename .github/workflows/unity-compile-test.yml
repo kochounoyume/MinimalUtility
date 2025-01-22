@@ -8,9 +8,9 @@ on:
     branches:
     - main
     paths:
-    - Assets/**
-    - Packages/**
-    - ProjectSettings/**
+    - src/MinimalUtility.Unity/Assets/**
+    - src/MinimalUtility.Unity/Packages/**
+    - src/MinimalUtility.Unity/ProjectSettings/**
   workflow_dispatch: {}
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
@@ -28,8 +28,8 @@ jobs:
           run: echo "sha_short=$(git rev-parse --short HEAD)" >> $GITHUB_OUTPUT
         - uses: actions/cache@v4.2.0
           with:
-            path: Library
-            key: Library-${{ hashFiles('Assets/**', 'Packages/**', 'ProjectSettings/**') }}
+            path: src/MinimalUtility.Unity/Library
+            key: Library-${{ hashFiles('src/MinimalUtility.Unity/Assets/**', 'src/MinimalUtility.Unity/Packages/**', 'src/MinimalUtility.Unity/ProjectSettings/**') }}
             restore-keys: |
               Library-
         - name: Free disk space
@@ -47,6 +47,7 @@ jobs:
             githubToken: ${{ secrets.GITHUB_TOKEN }}
             unityVersion: auto
             testMode: editmode
+            projectPath: "src/MinimalUtility.Unity"
         - uses: actions/upload-artifact@v4.5.0
           if: always()
           with:
