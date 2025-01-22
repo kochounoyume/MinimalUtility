@@ -65,5 +65,5 @@ jobs:
           UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
         with:
           targetPlatform: StandaloneWindows
-          unityVersion: auto
+          unityVersion: 2022.3.22f1
           projectPath: "src/MinimalUtility.Unity"
