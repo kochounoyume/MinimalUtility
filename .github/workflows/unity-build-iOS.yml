@@ -8,9 +8,9 @@ on:
     branches:
     - main
     paths:
-    - Assets/**
-    - Packages/**
-    - ProjectSettings/**
+    - src/MinimalUtility.Unity/Assets/**
+    - src/MinimalUtility.Unity/Packages/**
+    - src/MinimalUtility.Unity/ProjectSettings/**
   workflow_dispatch: {}
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
@@ -50,8 +50,8 @@ jobs:
       # Cache
       - uses: actions/cache@v4.0.2
         with:
-          path: Library
-          key: Library-${{ hashFiles('Assets/**', 'Packages/**', 'ProjectSettings/**') }}
+          path: src/MinimalUtility.Unity/Library
+          key: Library-${{ hashFiles('src/MinimalUtility.Unity/Assets/**', 'src/MinimalUtility.Unity/Packages/**', 'src/MinimalUtility.Unity/ProjectSettings/**') }}
           restore-keys: |
             Library-
 
@@ -65,4 +65,5 @@ jobs:
           UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
         with:
           targetPlatform: iOS
-          unityVersion: 2022.3.22f1
+          unityVersion: auto
+          projectPath: "src/MinimalUtility.Unity"
