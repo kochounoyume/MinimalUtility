@@ -18,8 +18,8 @@ jobs:
       - uses: actions/setup-dotnet@v4.2.0
         with:
           dotnet-version: 8.0.x
-      - run: dotnet restore
-      - run: dotnet build --configuration Release --no-restore
+      - run: dotnet restore src/MinimalUtility.SourceGenerator/MinimalUtility.SourceGenerator.csproj
+      - run: dotnet build src/MinimalUtility.SourceGenerator/MinimalUtility.SourceGenerator.csproj --configuration Release --no-restore
       - run: dotnet pack src/MinimalUtility.SourceGenerator/MinimalUtility.SourceGenerator.csproj -o artifacts/
       - uses: actions/upload-artifact@v4.6.0
         with:
