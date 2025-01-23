@@ -212,7 +212,7 @@ namespace MinimalUtility
         ///
         ///     private void DisplayWorldCorners()
         ///     {
-        ///         Span<Vector3> v = stackalloc Vector3[4];
+        ///         var v = (stackalloc Vector3[4]);
         ///         _rectTransform.GetWorldCorners(v);
         ///
         ///         Debug.Log("World Corners");
@@ -272,7 +272,7 @@ namespace MinimalUtility
         ///
         ///     private void DisplayLocalCorners()
         ///     {
-        ///         Span<Vector3> v = stackalloc Vector3[4];
+        ///         var v = (stackalloc Vector3[4]);
         ///
         ///         _rectTransform.rotation = Quaternion.AngleAxis(45, Vector3.forward);
         ///         _rectTransform.GetLocalCorners(v);
