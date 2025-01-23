@@ -20,7 +20,7 @@ jobs:
           dotnet-version: 8.0.x
       - run: dotnet restore src/MinimalUtility.SourceGenerator/MinimalUtility.SourceGenerator.csproj
       - run: dotnet build src/MinimalUtility.SourceGenerator/MinimalUtility.SourceGenerator.csproj --configuration Release --no-restore
-      - run: dotnet pack src/MinimalUtility.SourceGenerator/MinimalUtility.SourceGenerator.csproj -o artifacts/
+      - run: dotnet pack src/MinimalUtility.SourceGenerator/MinimalUtility.SourceGenerator.csproj  --configuration Release --output ./nupkgs -o artifacts/
       - uses: actions/upload-artifact@v4.6.0
         with:
           name: artifacts
