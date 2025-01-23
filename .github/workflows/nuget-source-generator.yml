@@ -22,5 +22,5 @@ jobs:
       - run: dotnet build src/MinimalUtility.SourceGenerator/MinimalUtility.SourceGenerator.csproj --configuration Release --no-restore
       - run: dotnet pack src/MinimalUtility.SourceGenerator/MinimalUtility.SourceGenerator.csproj  --configuration Release -o src/MinimalUtility.SourceGenerator/artifacts/
       - run: |
-          dotnet nuget add source --username kochounoyume --password ${{ secrets.GH_PACKAGES_PAT }} --store-password-in-clear-text --name github "https://nuget.pkg.github.com/kochounoyume/index.json"
-          dotnet nuget push "src/MinimalUtility.SourceGenerator/artifacts/*.nupkg" --api-key ${{ secrets.GH_PACKAGES_PAT }} --source "github" --skip-duplicate
+          dotnet nuget add source "https://nuget.pkg.github.com/kochounoyume/index.json" -n "github" -u <user> -p ${{secrets.GH_PACKAGES_PAT}} --store-password-in-clear-text
+          dotnet nuget push "src/MinimalUtility.SourceGenerator/MinimalUtility.SourceGenerator/*.nupkg" --api-key ${{secrets.GH_PACKAGES_PAT}} --source "github" --skip-duplicate
