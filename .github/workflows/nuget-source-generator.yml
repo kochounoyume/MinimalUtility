@@ -1,0 +1,30 @@
+name: Publish source generator project to Github Packages
+on:
+  push:
+    branches:
+    - main
+    paths:
+    - src/MinimalUtility.SourceGenerator/**
+  workflow_dispatch: {}
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4.2.2
+      - uses: actions/setup-dotnet@v4.2.0
+        with:
+          dotnet-version: 8.0.x
+      - run: dotnet restore
+      - run: dotnet build --configuration Release --no-restore
+      - run: dotnet pack src/MinimalUtility.SourceGenerator/MinimalUtility.SourceGenerator.csproj -o artifacts/
+      - uses: actions/upload-artifact@v4.6.0
+        with:
+          name: artifacts
+          path: artifacts
+      - run: |
+          dotnet nuget add source --username kochounoyume --password ${{ secrets.GH_PACKAGES_PAT }} --store-password-in-clear-text --name github "https://nuget.pkg.github.com/kochounoyume/index.json"
+          dotnet nuget push "*.nupkg" --api-key ${{ secrets.GH_PACKAGES_PAT }} --source "github" --skip-duplicate
