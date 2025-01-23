@@ -20,11 +20,11 @@ jobs:
           dotnet-version: 8.0.x
       - run: dotnet restore src/MinimalUtility.SourceGenerator/MinimalUtility.SourceGenerator.csproj
       - run: dotnet build src/MinimalUtility.SourceGenerator/MinimalUtility.SourceGenerator.csproj --configuration Release --no-restore
-      - run: dotnet pack src/MinimalUtility.SourceGenerator/MinimalUtility.SourceGenerator.csproj  --configuration Release --output ./nupkgs -o artifacts/
+      - run: dotnet pack src/MinimalUtility.SourceGenerator/MinimalUtility.SourceGenerator.csproj  --configuration Release -o src/MinimalUtility.SourceGenerator/artifacts/
       - uses: actions/upload-artifact@v4.6.0
         with:
           name: artifacts
-          path: artifacts
+          path: src/MinimalUtility.SourceGenerator/artifacts/*.nupkg
       - run: |
           dotnet nuget add source --username kochounoyume --password ${{ secrets.GH_PACKAGES_PAT }} --store-password-in-clear-text --name github "https://nuget.pkg.github.com/kochounoyume/index.json"
           dotnet nuget push "*.nupkg" --api-key ${{ secrets.GH_PACKAGES_PAT }} --source "github" --skip-duplicate
