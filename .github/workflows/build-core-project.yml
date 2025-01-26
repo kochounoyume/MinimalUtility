@@ -1,0 +1,30 @@
+name: Build core project
+on:
+  push:
+    branches:
+    - main
+    paths:
+    - src/MinimalUtility.Core/**
+  workflow_dispatch: {}
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4.2.2
+      - uses: actions/setup-dotnet@v4.2.0
+        with:
+          dotnet-version: 8.0.x
+      - name: Restore
+        run: dotnet restore src/MinimalUtility.Core/MinimalUtility.Core.csproj
+      - name: Build
+        run: dotnet build src/MinimalUtility.Core/MinimalUtility.Core.csproj --configuration Release
+      - name: Pack
+        run: dotnet pack src/MinimalUtility.Core/MinimalUtility.Core.csproj  --configuration Release -o src/MinimalUtility.Core/artifacts/
+      - uses: actions/upload-artifact@master
+        with:
+          path: src/MinimalUtility.Core/artifacts
+          retention-days: 2
