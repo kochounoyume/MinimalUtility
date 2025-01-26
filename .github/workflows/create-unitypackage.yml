@@ -17,9 +17,14 @@ jobs:
 
     - run: mkdir a
 
+    - name: Extract version from package.json
+      run: |
+        version=$(jq -r '.version' src/MinimalUtility.Unity/Packages/MinimalUtility/package.json)
+        echo "PACKAGE_VERSION=${version}" >> $GITHUB_ENV
+
     - uses: pCYSl5EDgo/create-unitypackage@master
       with:
-        package-path: "a/MinimalUtility.unitypackage"
+        package-path: "a/MinimalUtility_${{ env.PACKAGE_VERSION }}.unitypackage"
         include-files: metaList
     - uses: actions/upload-artifact@master
       with:
