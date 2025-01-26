@@ -13,10 +13,6 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      packages: write
-      actions : write
     steps:
       - uses: actions/checkout@v4.2.2
       - uses: actions/setup-dotnet@v4.2.0
