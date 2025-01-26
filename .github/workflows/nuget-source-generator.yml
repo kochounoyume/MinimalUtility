@@ -26,6 +26,5 @@ jobs:
       - run: dotnet restore src/MinimalUtility.SourceGenerator/MinimalUtility.SourceGenerator.csproj
       - run: dotnet build src/MinimalUtility.SourceGenerator/MinimalUtility.SourceGenerator.csproj --configuration Release
       - run: dotnet pack src/MinimalUtility.SourceGenerator/MinimalUtility.SourceGenerator.csproj  --configuration Release -o src/MinimalUtility.SourceGenerator/artifacts/
-      - run: |
-          dotnet nuget add source --username kochounoyume --password ${{ secrets.GITHUB_TOKEN }} --store-password-in-clear-text --name github "https://nuget.pkg.github.com/kochounoyume/index.json"
-          dotnet nuget push src/MinimalUtility.SourceGenerator/artifacts/*.nupkg --api-key ${{secrets.GITHUB_TOKEN}} --source https://nuget.pkg.github.com/kochounoyume/index.json --skip-duplicate
+      - run: dotnet nuget add source --username kochounoyume --password ${{ secrets.GITHUB_TOKEN }} --store-password-in-clear-text --name github "https://nuget.pkg.github.com/kochounoyume/index.json"
+      - run: dotnet nuget push src/MinimalUtility.SourceGenerator/artifacts/*.nupkg --api-key ${{secrets.GITHUB_TOKEN}} --source https://nuget.pkg.github.com/kochounoyume/index.json --skip-duplicate
