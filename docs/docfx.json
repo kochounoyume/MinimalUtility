@@ -8,6 +8,12 @@
             "MinimalUtility/Runtime/**/*.cs",
             "MinimalUtility/Editor/**/*.cs"
           ]
+        },
+	{
+          "src": "../src/MinimalUtility.Core",
+          "files": [
+            "*.cs"
+          ]
         }
       ],
       "dest": "api",
