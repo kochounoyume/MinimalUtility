@@ -1,0 +1,30 @@
+name: Build source generator project
+on:
+  push:
+    branches:
+    - main
+    paths:
+    - src/MinimalUtility.SourceGenerator/**
+  workflow_dispatch: {}
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4.2.2
+      - uses: actions/setup-dotnet@v4.2.0
+        with:
+          dotnet-version: 8.0.x
+      - name: Restore
+        run: dotnet restore src/MinimalUtility.SourceGenerator/MinimalUtility.SourceGenerator.csproj
+      - name: Build
+        run: dotnet build src/MinimalUtility.SourceGenerator/MinimalUtility.SourceGenerator.csproj --configuration Release
+      - name: Pack
+        run: dotnet pack src/MinimalUtility.SourceGenerator/MinimalUtility.SourceGenerator.csproj  --configuration Release -o src/MinimalUtility.SourceGenerator/artifacts/
+      - uses: actions/upload-artifact@master
+        with:
+          path: src/MinimalUtility.SourceGenerator/artifacts
+          retention-days: 2
