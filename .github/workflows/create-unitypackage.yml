@@ -24,7 +24,7 @@ jobs:
 
     - uses: pCYSl5EDgo/create-unitypackage@master
       with:
-        package-path: "a/MinimalUtility_${{ env.PACKAGE_VERSION }}.unitypackage"
+        package-path: "a/MinimalUtility.${{ env.PACKAGE_VERSION }}.unitypackage"
         include-files: metaList
     - uses: actions/upload-artifact@master
       with:
