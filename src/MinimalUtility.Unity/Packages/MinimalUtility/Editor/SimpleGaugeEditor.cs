@@ -1,4 +1,5 @@
-﻿#nullable enable
+﻿#if ENABLE_UGUI
+#nullable enable
 
 using UnityEditor;
 using UnityEditor.UIElements;
@@ -6,7 +7,6 @@ using UnityEngine.UIElements;
 
 namespace MinimalUtility.Editor
 {
-#if ENABLE_UGUI
     [CustomEditor(typeof(UGUI.SimpleGauge))]
     public class SimpleGaugeEditor : UnityEditor.Editor
     {
@@ -19,5 +19,6 @@ namespace MinimalUtility.Editor
             return root;
         }
     }
-#endif
 }
+
+#endif
