@@ -10,7 +10,7 @@
         <IsRoslynComponent>true</IsRoslynComponent>
         <AnalyzerLanguage>cs</AnalyzerLanguage>
         <PackageId>MinimalUtility.SourceGenerator</PackageId>
-        <PackageVersion>2.0.3</PackageVersion>
+        <PackageVersion>2.0.4</PackageVersion>
         <Authors>kochounoyume</Authors>
         <Copyright>© kochounoyume</Copyright>
         <RepositoryUrl>https://github.com/kochounoyume/MinimalUtility</RepositoryUrl>
