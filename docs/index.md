@@ -16,7 +16,7 @@ Unity2019.3以降のバージョンであれば、Git経由でパッケージマ
 以下のURLを指定して、MinimalUtilityを追加してください。
 
 ```
-https://github.com/kochounoyume/MinimalUtility.git?path=Packages/MinimalUtility
+https://github.com/kochounoyume/MinimalUtility.git?path=src/MinimalUtility.Unity/Packages/MinimalUtility
 ```
 ### 2. unitypackageでインポートする方法
 GitHubのリリースページから、unitypackageファイルをダウンロードしてインポートしてください。
