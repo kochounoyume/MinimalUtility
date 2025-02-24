@@ -15,12 +15,26 @@ namespace MinimalUtility.Editor
         private static readonly Type s_toolbatType = typeof(UnityEditor.Editor).Assembly.GetType("UnityEditor.Toolbar");
 
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static void AddRight(Func<VisualElement> factory) 
-            => EditorApplication.delayCall += () => GetToolbarRoot()?.Q("ToolbarZoneRightAlign")?.Add(factory());
+        public static void AddRight(Func<VisualElement> factory)
+        {
+            EditorApplication.delayCall += () =>
+            {
+                var element = factory();
+                element.style.overflow = Overflow.Visible;
+                GetToolbarRoot()?.Q("ToolbarZoneRightAlign")?.Add(element);
+            };
+        }
 
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static void AddLeft(Func<VisualElement> factory) 
-            => EditorApplication.delayCall += () => GetToolbarRoot()?.Q("ToolbarZoneLeftAlign")?.Add(factory());
+        public static void AddLeft(Func<VisualElement> factory)
+        {
+            EditorApplication.delayCall += () =>
+            {
+                var element = factory();
+                element.style.overflow = Overflow.Visible;
+                GetToolbarRoot()?.Q("ToolbarZoneLeftAlign")?.Add(element);
+            };
+        }
 
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static void AddCenter(bool rightSide, Func<VisualElement> factory)
@@ -28,14 +42,15 @@ namespace MinimalUtility.Editor
             EditorApplication.delayCall += () =>
             {
                 var center = GetToolbarRoot()?.Q("ToolbarZonePlayMode");
-                center.Add(new Button(){ text = "a" });
+                var element = factory();
+                element.style.overflow = Overflow.Visible;
                 if (rightSide)
                 {
-                    center?.Add(factory());
+                    center?.Add(element);
                 }
                 else
                 {
-                    center?.Insert(0, factory());
+                    center?.Insert(0, element);
                 }
             };
         }
