@@ -30,7 +30,7 @@ namespace MinimalUtility.UIToolkit
             style.flexGrow = 1;
             style.flexShrink = 1;
 
-            RegisterCallback<GeometryChangedEvent, SafeAreaContainer>(static evt =>
+            RegisterCallback<GeometryChangedEvent>(static evt =>
             {
                 var self = evt.target as SafeAreaContainer;
                 if (self == null || self.panel.GetType().Name == "EditorPanel") return;
