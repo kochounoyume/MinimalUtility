@@ -1,18 +1,15 @@
 ﻿#if ENABLE_UGUI
 #nullable enable
 
-using System;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
 namespace MinimalUtility.UGUI
 {
-    using Internal;
-
     /// <summary>
     /// uGUIの全入力を一時的に剥奪するなどの入力制御を行う.
     /// </summary>
-    public sealed class UIInputHandler
+    public sealed class UIInputController
     {
         private sealed class EmptyBaseInput : BaseInput
         {
@@ -40,29 +37,28 @@ namespace MinimalUtility.UGUI
             public override bool GetButtonDown(string _) => false;
         }
 
-        private readonly Lazy<EmptyBaseInput> _emptyInput = new(static () => DontDestroyObject.Shared.AddComponent<EmptyBaseInput>());
-        private readonly Lazy<BaseInput> _originalInput = new(static () => EventSystem.current.currentInputModule.input);
+        private readonly BaseInput _originalInput = EventSystem.current.currentInputModule.input;
+        private readonly BaseInput _emptyInput = EventSystem.current.TryGetComponent<EmptyBaseInput>(out var input) ? input : EventSystem.current.gameObject.AddComponent<EmptyBaseInput>();
 
-        private int _refCount;
+        private uint _refCount;
 
         /// <summary>
         /// 入力を一時的に剥奪します.
         /// </summary>
         /// <returns>入力を復元するためのハンドル.</returns>
-        public ValueDisposable.Disposable<UIInputHandler> Acquire()
+        public ValueDisposable.Disposable<UIInputController> Deactivate()
         {
             if (_refCount == 0)
             {
-                _ = _originalInput.Value;
-                EventSystem.current.currentInputModule.inputOverride = _emptyInput.Value;
+                EventSystem.current.currentInputModule.inputOverride = _emptyInput;
             }
             _refCount++;
             return ValueDisposable.Create(this, static self =>
             {
-                self._refCount = Math.Max(0, self._refCount - 1);
+                self._refCount--;
                 if (self._refCount == 0)
                 {
-                    EventSystem.current.currentInputModule.inputOverride = self._originalInput.Value;
+                    EventSystem.current.currentInputModule.inputOverride = self._originalInput;
                 }
             });
         }
