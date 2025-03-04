@@ -48,7 +48,7 @@ jobs:
         run: echo "sha_short=$(git rev-parse --short HEAD)" >> $GITHUB_OUTPUT
 
       # Cache
-      - uses: actions/cache@v4.0.2
+      - uses: actions/cache@v4
         with:
           path: src/MinimalUtility.Unity/Library
           key: Library-${{ hashFiles('src/MinimalUtility.Unity/Assets/**', 'src/MinimalUtility.Unity/Packages/**', 'src/MinimalUtility.Unity/ProjectSettings/**') }}
