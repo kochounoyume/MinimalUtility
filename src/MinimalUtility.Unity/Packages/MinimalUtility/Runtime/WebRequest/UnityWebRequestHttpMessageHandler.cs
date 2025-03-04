@@ -21,7 +21,7 @@ namespace MinimalUtility.WebRequest
         {
             var data = requestMessage.Content == null ? null : await requestMessage.Content.ReadAsByteArrayAsync();
             var uploadHandler = new UploadHandlerRaw(data);
-            uploadHandler.contentType = requestMessage.Headers.Accept.ToString();
+            uploadHandler.contentType = requestMessage.Content.Headers.ContentType.ToString();
 
             var downloadHandler = new DownloadHandlerBuffer();
             var webRequest = new UnityWebRequest(requestMessage.RequestUri, requestMessage.Method.ToString(), downloadHandler, uploadHandler);
