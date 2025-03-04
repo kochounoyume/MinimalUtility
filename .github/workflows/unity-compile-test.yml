@@ -22,7 +22,7 @@ jobs:
       runs-on: ubuntu-latest
       steps:
         - name: Check out my unity project.
-          uses: actions/checkout@v4.2.2
+          uses: actions/checkout@v4
         - name: Set outputs
           id: vars
           run: echo "sha_short=$(git rev-parse --short HEAD)" >> $GITHUB_OUTPUT
