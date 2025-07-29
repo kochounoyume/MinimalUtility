@@ -1,3 +1,6 @@
+> [!IMPORTANT]
+> I have started distributing an evolved version of MinimalUtility in [AndanteTribe/Utils](https://github.com/AndanteTribe/Utils), please use it instead of MinimalUtility.
+
 # MinimalUtility
 Minimal utility library.
 
